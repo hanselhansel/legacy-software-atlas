@@ -1,0 +1,46 @@
+# Jev passes, one per count family (spec section 7, plan 1 task 4).
+# Values are filled from measured samples before the gate: tokens_per_item from
+# a per-family text sample and prefilter_keep from the free prefilters' keep
+# rate. Until then every pass falls back to the default tokens per item and the
+# estimate flags tokens_measured = false.
+# Packing defaults: items_per_call = 5, overhead_tokens_per_call = 120.
+
+[[pass]]
+name = "procurement"
+family = "procurement"
+prefilter_keep = 1.0
+
+[[pass]]
+name = "jobs"
+family = "jobs"
+prefilter_keep = 1.0
+
+[[pass]]
+name = "vendor"
+family = "vendor"
+prefilter_keep = 1.0
+
+[[pass]]
+name = "integrator"
+family = "integrator"
+prefilter_keep = 1.0
+
+[[pass]]
+name = "events"
+family = "events"
+prefilter_keep = 1.0
+
+[[pass]]
+name = "reviews"
+family = "reviews"
+prefilter_keep = 1.0
+
+[[pass]]
+name = "social"
+family = "social"
+prefilter_keep = 1.0
+
+[[pass]]
+name = "hn"
+family = "hn"
+prefilter_keep = 1.0
