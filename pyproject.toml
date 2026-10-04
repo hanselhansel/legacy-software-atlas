@@ -1,0 +1,28 @@
+[project]
+name = "lsa"
+version = "0.1.0"
+description = "Legacy Software Atlas: which legacy software is ready for AI-native replacement"
+readme = "README.md"
+authors = [{ name = "Hansel" }]
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.5.6",
+    "httpx>=0.28.1",
+    "pyarrow>=25.0.1",
+]
+
+[project.scripts]
+lsa = "lsa.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["uv_build>=0.9.2,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.9",
+]
