@@ -10,8 +10,27 @@ from pathlib import Path
 from lsa import paths
 
 
-def _not_implemented(_args: argparse.Namespace) -> None:
-    print("not implemented")
+def _count(args: argparse.Namespace) -> None:
+    from lsa import count as cnt
+
+    if args.family != "hn":
+        raise SystemExit(
+            f"family {args.family!r} has no counter yet (implemented: hn)"
+        )
+    if not args.terms.exists():
+        raise SystemExit(f"terms csv not found: {args.terms}")
+    from lsa.sources import hn
+
+    snapshot = args.snapshot or hn.snapshot_path()
+    if not snapshot.exists():
+        raise SystemExit(f"snapshot not found: {snapshot}")
+    terms = cnt.load_terms(args.terms)
+    records = hn.count_terms(snapshot, terms)
+    out = cnt.append_counts(records, args.counts)
+    proxy = hn.sample_token_lengths(snapshot, terms)
+    print(cnt.format_table(records))
+    print(f"token proxy: {proxy:.1f} tokens/comment (word_count x 1.33)")
+    print(f"wrote {len(records)} rows to {out}")
 
 
 def _estimate(args: argparse.Namespace) -> None:
@@ -33,7 +52,29 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="lsa")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
-    sub.add_parser("count").set_defaults(func=_not_implemented)
+    p_count = sub.add_parser(
+        "count", help="count items per source and upsert counts.parquet"
+    )
+    p_count.add_argument("--family", required=True, help="count family to run")
+    p_count.add_argument(
+        "--terms",
+        type=Path,
+        default=paths.RESEARCH / "search_terms.csv",
+        help="category,region,term csv of search terms",
+    )
+    p_count.add_argument(
+        "--counts",
+        type=Path,
+        default=None,
+        help="counts parquet to upsert (default: data/derived/counts.parquet)",
+    )
+    p_count.add_argument(
+        "--snapshot",
+        type=Path,
+        default=None,
+        help="override LSA_HN_SNAPSHOT / the default HN snapshot path",
+    )
+    p_count.set_defaults(func=_count)
 
     p_est = sub.add_parser(
         "estimate", help="print a Jev cost estimate from counted items"
