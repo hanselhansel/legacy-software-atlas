@@ -75,7 +75,7 @@ def test_load_terms_reads_category_term_pairs():
     assert terms == TERMS
 
 
-def test_format_table_lists_counts(tmp_path):
+def test_format_table_lists_counts():
     out = cnt.format_table([_record(count=5), _record(category="_any", count=9)])
     assert "core-banking" in out
     assert "_any" in out
