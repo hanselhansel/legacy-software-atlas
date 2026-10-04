@@ -1,0 +1,6 @@
+# Jev spend caps in USD of TypeSafe credit. Target: under $25 total (spec section 7).
+# account_total is enforced across every budget name together.
+# Only Hansel sets account_total, at the pre-Jev gate (plan 1, task 5). Until then
+# it stays 0.00 and no paid call is allowed.
+
+account_total = 0.00
