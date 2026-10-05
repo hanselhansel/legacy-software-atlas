@@ -34,6 +34,7 @@ def fetch(
     client: httpx.Client,
     *,
     get_kwargs: dict | None = None,
+    per_query: int | None = None,
     log: Callable[[str], None] | None = print,
     **_unused,
 ) -> Iterator[common.Produced]:
@@ -41,6 +42,8 @@ def fetch(
     log = log or (lambda _m: None)
     sites = {s.key: s for s in jobpages.SITES}
     for row in rows:
+        if per_query is not None and per_query <= 0:
+            continue
         site = sites.get(row.source)
         if site is None:
             log(f"fetch jobs-pages: no site for source {row.source}")
@@ -63,4 +66,5 @@ def fetch(
             row.region,
             row.category,
             row.query,
+            query_count=row.count,
         )

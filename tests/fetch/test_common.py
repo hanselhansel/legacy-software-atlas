@@ -198,5 +198,34 @@ def test_append_items_creates_and_upserts(tmp_path):
     assert list(rows[0]) == [
         "item_id", "family", "source", "region",
         "category_hint", "url", "fetched_at", "text_sha256",
+        "query_count", "sampled",
     ]
     assert asdict(newer) == by_id["src:a1"]
+
+
+def test_append_items_reads_rows_written_before_weight_columns(tmp_path):
+    """A parquet from before the weight columns reads them as null."""
+    import pyarrow as pa
+
+    out = tmp_path / "items.parquet"
+    old = {
+        "item_id": "src:old",
+        "family": "jobs",
+        "source": "src",
+        "region": "US",
+        "category_hint": "cat",
+        "url": "https://x/0",
+        "fetched_at": "T0",
+        "text_sha256": "sha0",
+    }
+    pq.write_table(pa.Table.from_pylist([old]), out)
+    new = common.ItemRow(
+        "src:new", "jobs", "src", "US", "cat", "https://x/1", "T1", "sha1",
+        query_count=10, sampled=4,
+    )
+    common.append_items([new], out)
+    rows = {r["item_id"]: r for r in pq.read_table(out).to_pylist()}
+    assert rows["src:old"]["query_count"] is None
+    assert rows["src:old"]["sampled"] is None
+    assert rows["src:new"]["query_count"] == 10
+    assert rows["src:new"]["sampled"] == 4

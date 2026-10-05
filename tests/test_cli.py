@@ -97,6 +97,8 @@ def _fetch_args(family, **overrides):
         "snapshot": None,
         "dry_run": False,
         "limit": None,
+        "per_query": None,
+        "seed": 20261005,
     }
     base.update(overrides)
     return Namespace(**base)

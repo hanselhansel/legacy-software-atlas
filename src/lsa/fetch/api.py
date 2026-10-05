@@ -6,11 +6,16 @@ Each counted row already names its source module; ``fetch`` maps
 match-all rows never arrive here: ``plan_rows`` applies the shared
 ``common.fetchable`` rule. A source that raises is logged and skipped, the
 same skip-never-crashes discipline ``count.run_api_counts`` uses.
+
+``per_query`` keeps at most N items per count row: the first N in the
+source's own ordering, so paging stops early. Each produced item carries
+the row's ``count`` as ``query_count`` for the sampling weight.
 """
 
 from __future__ import annotations
 
 from collections.abc import Callable, Iterator
+from itertools import islice
 from types import ModuleType
 
 import httpx
@@ -29,6 +34,7 @@ def fetch(
     rows: list[CountRecord],
     client: httpx.Client,
     *,
+    per_query: int | None = None,
     log: Callable[[str], None] | None = print,
     **_unused,
 ) -> Iterator[common.Produced]:
@@ -43,9 +49,15 @@ def fetch(
             log(f"fetch {family}: no searcher for source {row.source}")
             continue
         try:
-            for item in mod.search(row.query, row.region, client):
+            items = mod.search(row.query, row.region, client)
+            for item in islice(items, per_query):
                 yield common.Produced(
-                    item, row.source, row.region, row.category, row.query
+                    item,
+                    row.source,
+                    row.region,
+                    row.category,
+                    row.query,
+                    query_count=row.count,
                 )
         except Exception as exc:  # noqa: BLE001 - one bad row never stops a run
             log(f"fetch {row.source} {row.region} {row.query!r}: {exc}")

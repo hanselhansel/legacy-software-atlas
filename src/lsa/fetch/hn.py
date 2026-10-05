@@ -43,10 +43,15 @@ def fetch(
     client=None,
     *,
     snapshot: Path | None = None,
+    per_query: int | None = None,
     log: Callable[[str], None] | None = print,
     **_unused,
 ) -> Iterator[common.Produced]:
-    """``client`` is unused: the HN source is a local parquet snapshot."""
+    """``client`` is unused: the HN source is a local parquet snapshot.
+
+    ``per_query`` keeps the first N comments per row in id order, the
+    snapshot's default ordering (``ORDER BY id LIMIT``).
+    """
     import duckdb
 
     log = log or (lambda _m: None)
@@ -59,12 +64,16 @@ def fetch(
             terms = [t.strip() for t in row.query.split(" | ") if t.strip()]
             if not terms:
                 continue
+            sql = (
+                f"SELECT id, {col} FROM {comments} "
+                f"WHERE {hn._ELIGIBLE} AND regexp_matches(text_norm, ?)"
+            )
+            params: list = [hn._pattern(terms)]
+            if per_query is not None:
+                sql += " ORDER BY id LIMIT ?"
+                params.append(per_query)
             try:
-                result = con.execute(
-                    f"SELECT id, {col} FROM {comments} "
-                    f"WHERE {hn._ELIGIBLE} AND regexp_matches(text_norm, ?)",
-                    [hn._pattern(terms)],
-                )
+                result = con.execute(sql, params)
             except Exception as exc:  # noqa: BLE001 - a bad row never stops
                 log(f"fetch hn {row.category}: {exc}")
                 continue
@@ -77,6 +86,7 @@ def fetch(
                     row.region,
                     row.category,
                     row.query,
+                    query_count=row.count,
                 )
     finally:
         con.close()

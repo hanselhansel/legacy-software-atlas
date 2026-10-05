@@ -229,6 +229,8 @@ def _fetch(args: argparse.Namespace) -> None:
         )
     if not args.counts.exists():
         raise SystemExit(f"counts parquet not found: {args.counts}")
+    if args.per_query is not None and args.per_query < 1:
+        raise SystemExit("--per-query must be a positive integer")
     rows = common.counted_rows(args.counts, args.family)
     planned = mod.plan_rows(rows)
     if args.dry_run:
@@ -238,8 +240,13 @@ def _fetch(args: argparse.Namespace) -> None:
                 f"{r.source:<18} {r.region}  "
                 f"{r.category:<20} count={total:<8} {r.query}"
             )
+        cap = (
+            f", per-query cap {args.per_query}"
+            if args.per_query is not None
+            else ""
+        )
         print(
-            f"dry run: {len(planned)} queries to page "
+            f"dry run: {len(planned)} queries to page{cap} "
             f"({len(rows) - len(planned)} rows skipped), nothing written"
         )
         return
@@ -259,6 +266,8 @@ def _fetch(args: argparse.Namespace) -> None:
             client,
             sites_path=args.sites,
             snapshot=args.snapshot,
+            per_query=args.per_query,
+            seed=args.seed,
             log=print,
         )
         item_rows = common.collect_items(
@@ -268,6 +277,7 @@ def _fetch(args: argparse.Namespace) -> None:
             max_words=max_words,
             fetched_at=_stamp(),
             limit=args.limit,
+            per_query=args.per_query,
         )
     items_path = args.items or paths.DERIVED / "items.parquet"
     if item_rows:
@@ -404,6 +414,8 @@ def _sample_tokens(args: argparse.Namespace) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    from lsa.fetch import common
+
     parser = argparse.ArgumentParser(prog="lsa")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
@@ -529,6 +541,24 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=None,
         help="cap kept items to N (smoke runs; stops paging early)",
+    )
+    p_fetch.add_argument(
+        "--per-query",
+        type=int,
+        default=None,
+        help=(
+            "keep at most N items per count row (first N in the source's "
+            "order; sitemap families draw a seeded random N of the matching "
+            "URLs). query_count and sampled on each items.parquet row give "
+            "the sampling weight"
+        ),
+    )
+    p_fetch.add_argument(
+        "--seed",
+        type=int,
+        default=common.DEFAULT_SEED,
+        help="random seed for --per-query sitemap sampling "
+        "(default: %(default)s)",
     )
     p_fetch.add_argument(
         "--dry-run",

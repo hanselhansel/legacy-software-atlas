@@ -18,8 +18,9 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from collections import Counter
 from collections.abc import Iterable
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from pathlib import Path
 
 from lsa import estimate as est
@@ -30,24 +31,38 @@ WORDS_TO_TOKENS = 1.33
 # Passes without a measured tokens_per_item fall back to the estimator's
 # stated default (estimate.estimate default_tokens_per_item).
 DEFAULT_TOKENS_PER_ITEM = 400
+# Default seed for --per-query sitemap sampling (`lsa fetch --seed`).
+DEFAULT_SEED = 20261005
 
 _UPSERT_KEY = ("source", "region", "category", "query")
 
 
 @dataclass(frozen=True)
 class Produced:
-    """A source item tied to the counted row that surfaced it."""
+    """A source item tied to the counted row that surfaced it.
+
+    ``query_count`` is the row's reported total (None when the source gave
+    none); together with the kept-per-row ``sampled`` on ItemRow it gives
+    the sampling weight ``query_count / sampled``.
+    """
 
     item: SourceItem
     source: str
     region: str
     category_hint: str
     query: str
+    query_count: int | None = None
 
 
 @dataclass(frozen=True)
 class ItemRow:
-    """One ``data/derived/items.parquet`` row."""
+    """One ``data/derived/items.parquet`` row.
+
+    ``query_count`` is the count row's total and ``sampled`` the items kept
+    for that row in this run, so ``weight = query_count / sampled`` scales
+    estimates from a sampled or capped fetch (spec section 6). Both are
+    null on rows written before the columns existed.
+    """
 
     item_id: str
     family: str
@@ -57,6 +72,8 @@ class ItemRow:
     url: str
     fetched_at: str
     text_sha256: str
+    query_count: int | None = None
+    sampled: int | None = None
 
 
 def counted_rows(counts_path: Path, family: str) -> list[CountRecord]:
@@ -137,6 +154,7 @@ def collect_items(
     max_words: int,
     fetched_at: str,
     limit: int | None = None,
+    per_query: int | None = None,
 ) -> list[ItemRow]:
     """Dedupe, window and write produced items; return the parquet rows.
 
@@ -144,10 +162,18 @@ def collect_items(
     under another query or page never reaches the raw store or the parquet
     twice. Items with no text after windowing are dropped. ``limit`` caps
     the kept items; because ``produced`` is lazy, hitting the cap stops the
-    source's paging mid-flight.
+    source's paging mid-flight. ``per_query`` caps kept items per
+    (source, region, category_hint, query) count row; the fetchers apply
+    the same cap upstream so they stop paging early.
+
+    Every kept row is stamped with the row's ``query_count`` and, once the
+    run ends, ``sampled`` (items kept for the row), so
+    ``weight = query_count / sampled`` scales estimates from the sample.
     """
     seen_ids: set[str] = set()
     seen_urls: set[str] = set()
+    kept: Counter[tuple[str, ...]] = Counter()
+    keys: list[tuple[str, ...]] = []
     rows = []
     for p in produced:
         if limit is not None and len(rows) >= limit:
@@ -159,6 +185,9 @@ def collect_items(
             continue
         text = window_text(p.item.text, max_words)
         if not text:
+            continue
+        key = (p.source, p.region, p.category_hint, p.query)
+        if per_query is not None and kept[key] >= per_query:
             continue
         seen_ids.add(iid)
         if p.item.url:
@@ -180,6 +209,8 @@ def collect_items(
             + "\n",
             encoding="utf-8",
         )
+        kept[key] += 1
+        keys.append(key)
         rows.append(
             ItemRow(
                 item_id=iid,
@@ -190,9 +221,12 @@ def collect_items(
                 url=p.item.url,
                 fetched_at=fetched_at,
                 text_sha256=hashlib.sha256(text.encode()).hexdigest(),
+                query_count=p.query_count,
             )
         )
-    return rows
+    return [
+        replace(r, sampled=kept[k]) for r, k in zip(rows, keys, strict=True)
+    ]
 
 
 def _items_schema():
@@ -208,6 +242,8 @@ def _items_schema():
             ("url", pa.string()),
             ("fetched_at", pa.string()),
             ("text_sha256", pa.string()),
+            ("query_count", pa.int64()),
+            ("sampled", pa.int64()),
         ]
     )
 
