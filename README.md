@@ -29,6 +29,32 @@ The repo stores URLs, dates, short quotes under 30 words, and derived labels. It
 not redistribute full third-party text or personal data. Code is MIT licensed;
 derived labels and aggregates are CC BY 4.0.
 
+## Scoring and exports
+
+`lsa export` writes `exports/site/`:
+
+- `categories.json` and `scores.json`: per category, the five parts
+  (size, pain, ai_fit, lockin, crowding) plus the weighted total rescaled
+  to 0..100. Pain, lock-in and crowding are means of sub-scores, each a raw
+  measure ranked across the categories into quintiles 1..5 (ties share the
+  lower quintile; a sub-score below its minimum count in
+  `configs/rubric.toml`, or with no source data, is skipped and shown with
+  `score: null`). Pain draws on award keep-alive share, app-review backend
+  failures, inverted app ratings, the failed-replacement rate and the S3
+  grade; lock-in on award duration, non-competitive award share,
+  replacement duration and regulator approval; crowding on AI-native
+  challengers at traction, 24-month AI-native funding per $1B of legacy
+  spend, and YC 2024+ companies.
+- `regions.json`: region x category buyer, value and usage estimates.
+- `workflows.json`: every row of `research/workflows.csv` sorted by an
+  opportunity index, best first. Per workflow the index is
+  `rank(labour_value) + rank(ai_usage or the category's ai_fit)
+  + rank(the category's pain) - rank(crowding)`, where crowding is the
+  count of `ai_native_rounds_24m.csv` rounds mapped to the workflow, ranks
+  ascend by value across the workflow set, and a workflow with
+  `touches_core` is penalized by the full rank spread so core-touching
+  work lands below edge work (it is the lock-in proxy).
+
 ## Design
 
 - Design: `docs/superpowers/specs/2026-10-05-legacy-software-atlas-design.md`

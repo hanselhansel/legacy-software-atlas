@@ -13,6 +13,9 @@ labelled items and the score inputs once, then writes:
 - ``exports/site/regions.json``: every study region x kept category with
   possible buyers, market value, the usage estimate when one exists and an
   evidence level, plus a per-region summary.
+- ``exports/site/workflows.json``: the lane O workflow rows from
+  ``research/workflows.csv`` sorted by opportunity index descending
+  (see ``lsa.workflows``).
 
 Missing per-category TOML files under ``configs/categories/`` are generated
 with the documented defaults first; existing files are read, never
@@ -36,6 +39,7 @@ from lsa import (
     score_inputs,
     scores,
     topdown,
+    workflows,
 )
 
 DESK = "desk-research-2026-10-05.json"
@@ -195,6 +199,7 @@ def _measure_data(
     jev_root: Path,
     items_path: Path,
     challengers: dict[str, list[dict]],
+    rounds: list[dict] | None,
 ) -> measures.MeasureData:
     """Load every lane O measure source once (absent files -> None)."""
     s3 = {
@@ -215,7 +220,7 @@ def _measure_data(
             measures.load_csv(research / "regulator_approval.csv")
         ),
         challengers=challengers,
-        rounds=measures.load_csv(research / "ai_native_rounds_24m.csv"),
+        rounds=rounds,
         legacy_mid=measures.legacy_midpoints(
             measures.load_csv(research / "market_size.csv")
         ),
@@ -257,9 +262,12 @@ def run_export(
     ai_answers = score_inputs.load_task_answers(jev_root)
     ai_present = (jev / score_inputs.AI_FIT_PASS).exists()
     rubric = scores.load_rubric(rubric_path)
+    rounds = measures.load_csv(research / "ai_native_rounds_24m.csv")
     sub_map = measures.collect(
         [c["slug"] for c in cats],
-        _measure_data(cats, regrade, research, derived, jev, items_p, challengers),
+        _measure_data(
+            cats, regrade, research, derived, jev, items_p, challengers, rounds
+        ),
         rubric.measures,
     )
 
@@ -310,11 +318,19 @@ def run_export(
         region_data.append((slug, est, mv))
 
     score_objs.sort(key=lambda s: s["total"], reverse=True)
+    wf_scores = workflows.score_workflows(
+        workflows.load_workflows(research / "workflows.csv"),
+        workflows.load_metrics(derived / "workflows.parquet"),
+        workflows.rounds_by_workflow(rounds or []),
+        {s["slug"]: s["parts"]["pain"]["score"] for s in score_objs},
+        {s["slug"]: s["parts"]["ai_fit"]["score"] for s in score_objs},
+    )
     site = out_dir / "site"
     site.mkdir(exist_ok=True)
     cat_path = site / "categories.json"
     sco_path = site / "scores.json"
     reg_path = site / "regions.json"
+    wf_path = site / "workflows.json"
     cat_path.write_text(
         json.dumps(cat_objs, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
@@ -330,15 +346,20 @@ def run_export(
         + "\n",
         encoding="utf-8",
     )
+    wf_path.write_text(
+        json.dumps(wf_scores, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
     return {
         "categories": cat_path,
         "scores": sco_path,
         "regions": reg_path,
+        "workflows": wf_path,
         "configs": written_configs,
     }
 
 
 def print_summary(result: dict) -> None:
-    for name in ("categories", "scores", "regions"):
+    for name in ("categories", "scores", "regions", "workflows"):
         print(f"wrote {result[name]}")
     print(f"{len(result['configs'])} category configs checked")

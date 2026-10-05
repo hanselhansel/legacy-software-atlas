@@ -239,6 +239,36 @@ def _research_dir(tmp_path: Path) -> Path:
                 }
             ]
         )
+    with open(r / "workflows.csv", "w", newline="") as f:
+        w = csv.DictWriter(
+            f,
+            fieldnames=[
+                "category",
+                "workflow_id",
+                "workflow",
+                "description",
+                "touches_core",
+            ],
+        )
+        w.writeheader()
+        w.writerows(
+            [
+                {
+                    "category": "core-banking",
+                    "workflow_id": "core-banking:wf_a",
+                    "workflow": "Reconciliation",
+                    "description": "match ledgers",
+                    "touches_core": "False",
+                },
+                {
+                    "category": "core-banking",
+                    "workflow_id": "core-banking:wf_core",
+                    "workflow": "Posting",
+                    "description": "post to the ledger",
+                    "touches_core": "True",
+                },
+            ]
+        )
     with open(r / "buyer_universe.csv", "w", newline="") as f:
         w = csv.DictWriter(
             f,
@@ -638,6 +668,23 @@ def test_export_shape(tmp_path):
     assert len(scores_list) == 1
     assert scores_list[0]["slug"] == "core-banking"
     assert scores_list[0]["flags"] == sco["flags"]
+
+    # workflows.json: sorted by opportunity index desc; wf_a has the round
+    # crowding, wf_core carries the touches_core penalty; they tie at -1.
+    wf_path = result["workflows"]
+    assert wf_path.name == "workflows.json"
+    wf = json.loads(wf_path.read_text())
+    assert [w["workflow_id"] for w in wf] == [
+        "core-banking:wf_a",
+        "core-banking:wf_core",
+    ]
+    assert wf[0]["crowding"] == 1
+    assert wf[1]["crowding"] == 0
+    assert wf[0]["pain"] == 1  # category pain part score
+    assert wf[0]["touches_core"] is False
+    assert wf[1]["touches_core"] is True
+    idx = [w["opportunity_index"] for w in wf]
+    assert idx == sorted(idx, reverse=True)
 
     # market value: US 4500 buyers x (0.5x150k + 0.5x30k) + UK 100 x 150k
     mk = cat["market"]
