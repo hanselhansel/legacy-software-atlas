@@ -25,8 +25,7 @@ def test_choose_file_falls_back_to_task_pct():
     names = [n for n in SIBLINGS if "penetration" not in n]
     pick = aiuse.choose_file(names)
     assert pick is not None
-    assert "task_pct" in pick
-    assert "v2" in pick or "v1" in pick
+    assert "task_pct_v2" in pick
 
 
 def test_choose_file_none_without_usage_files():

@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import csv
 import logging
+import re
 from pathlib import Path
 from urllib.parse import quote
 
@@ -64,7 +65,11 @@ def list_files(repo: str, client) -> list[str]:
 
 
 def choose_file(names: list[str]) -> str | None:
-    """Pick the task-level usage csv among dataset siblings."""
+    """Pick the task-level usage csv among dataset siblings.
+
+    Preference order on the basename: penetration, usage, share, pct;
+    then the shallowest, shortest name for determinism.
+    """
     cands = []
     for n in names:
         base = n.rsplit("/", 1)[-1].lower()
@@ -75,11 +80,14 @@ def choose_file(names: list[str]) -> str | None:
         cands.append(n)
 
     def rank(name: str):
-        base = name.lower()
-        hits = sum(
-            k in base for k in ("penetration", "pct", "usage", "share")
+        base = name.rsplit("/", 1)[-1].lower()
+        ver = max(
+            (int(d) for d in re.findall(r"_v(\d+)", base)), default=0
         )
-        return (-hits, name.count("/"), len(name), name)
+        for i, k in enumerate(("penetration", "usage", "share", "pct")):
+            if k in base:
+                return (i, -ver, name.count("/"), len(name), name)
+        return (9, -ver, name.count("/"), len(name), name)
 
     return min(cands, key=rank) if cands else None
 
@@ -141,7 +149,8 @@ def usage_file(
     raw_dir = Path(raw_dir)
     cached = sorted(raw_dir.glob("*.csv"))
     if cached and not refresh:
-        return cached[0]
+        pick = choose_file([c.name for c in cached]) or cached[0].name
+        return raw_dir / pick
     own = client is None
     if own:
         from lsa.sources import http

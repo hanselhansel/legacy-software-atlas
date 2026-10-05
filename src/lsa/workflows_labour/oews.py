@@ -88,6 +88,7 @@ def fetch_values(
     if cache_path.exists() and not refresh:
         have = json.loads(cache_path.read_text(encoding="utf-8"))
     missing = [s for s in series if s not in have]
+    fetched = False
     t0 = time.monotonic()
     for i in range(0, len(missing), BATCH):
         if time.monotonic() - t0 > deadline_s:
@@ -104,7 +105,7 @@ def fetch_values(
             body = resp.json()
         except Exception as exc:  # noqa: BLE001 - note and continue
             log.warning("oews api batch failed: %s", exc)
-            body = {}
+            continue  # not cached; the next run retries them
         got = {
             s["seriesID"]: _latest_value(s)
             for s in body.get("Results", {}).get("series", [])
@@ -112,7 +113,8 @@ def fetch_values(
         }
         for s in chunk:
             have[s] = got.get(s)
-    if missing:
+        fetched = True
+    if fetched:
         cache_path.parent.mkdir(parents=True, exist_ok=True)
         cache_path.write_text(
             json.dumps(have, indent=1, sort_keys=True), encoding="utf-8"
