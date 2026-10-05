@@ -106,8 +106,8 @@
     },
     "scores": {
       "slug": "agriculture-commodity",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 64.0,
+      "total_raw": 5.8,
       "flags": [],
       "parts": {
         "size": {
@@ -144,7 +144,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -194,7 +194,7 @@
           ]
         },
         "lockin": {
-          "score": 2,
+          "score": 1.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -226,7 +226,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -599,8 +599,8 @@
     },
     "scores": {
       "slug": "airline-pss",
-      "total": 70.0,
-      "total_raw": 7.0,
+      "total": 56.5,
+      "total_raw": 4.3,
       "flags": [],
       "parts": {
         "size": {
@@ -646,7 +646,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -697,7 +697,7 @@
           ]
         },
         "lockin": {
-          "score": 1,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -716,20 +716,20 @@
                 "score": 1
               },
               "regulator_approval": {
-                "raw": false,
+                "raw": true,
                 "n": 1,
-                "score": 1
+                "score": 5
               }
             },
-            "mean": 1.0
+            "mean": 3.0
           },
           "evidence": [
             "replacement_duration_months: raw 14.5 (n=12) -> 1",
-            "regulator_approval: raw False (n=1) -> 1"
+            "regulator_approval: raw True (n=1) -> 5"
           ]
         },
         "crowding": {
-          "score": 1,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -740,7 +740,7 @@
               "funding_per_billion": {
                 "raw": 13913311.85999869,
                 "n": 2,
-                "score": 1
+                "score": 2
               },
               "yc_2024_plus": {
                 "raw": 2.0,
@@ -748,11 +748,11 @@
                 "score": 2
               }
             },
-            "mean": 1.3333333333333333
+            "mean": 1.6666666666666667
           },
           "evidence": [
             "ai_native_traction: raw 1.0 (n=1) -> 1",
-            "funding_per_billion: raw 13913311.85999869 (n=2) -> 1",
+            "funding_per_billion: raw 13913311.85999869 (n=2) -> 2",
             "yc_2024_plus: raw 2.0 (n=2) -> 2"
           ]
         }
@@ -1077,8 +1077,8 @@
     },
     "scores": {
       "slug": "capital-markets-trading-clearing",
-      "total": 50.0,
-      "total_raw": 3.0,
+      "total": 50.5,
+      "total_raw": 3.1000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -1125,7 +1125,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 1.8,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -1176,7 +1176,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -1208,7 +1208,7 @@
           ]
         },
         "crowding": {
-          "score": 3,
+          "score": 2.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -1566,8 +1566,8 @@
     },
     "scores": {
       "slug": "card-payments-processing",
-      "total": 55.0,
-      "total_raw": 4.0,
+      "total": 56.5,
+      "total_raw": 4.3,
       "flags": [],
       "parts": {
         "size": {
@@ -1611,7 +1611,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -1662,7 +1662,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -1694,7 +1694,7 @@
           ]
         },
         "crowding": {
-          "score": 3,
+          "score": 2.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -2018,8 +2018,8 @@
     },
     "scores": {
       "slug": "construction-project-accounting",
-      "total": 70.0,
-      "total_raw": 7.0,
+      "total": 67.0,
+      "total_raw": 6.3999999999999995,
       "flags": [],
       "parts": {
         "size": {
@@ -2058,7 +2058,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.7,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -2108,7 +2108,7 @@
           ]
         },
         "lockin": {
-          "score": 1,
+          "score": 1.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -2140,7 +2140,7 @@
           ]
         },
         "crowding": {
-          "score": 3,
+          "score": 3.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -2511,8 +2511,8 @@
     },
     "scores": {
       "slug": "cooperative-rural-microfinance-banking",
-      "total": 50.0,
-      "total_raw": 3.0,
+      "total": 55.0,
+      "total_raw": 3.999999999999999,
       "flags": [],
       "parts": {
         "size": {
@@ -2557,7 +2557,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.2,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -2608,7 +2608,7 @@
           ]
         },
         "lockin": {
-          "score": 4,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -2640,7 +2640,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -3068,8 +3068,8 @@
     },
     "scores": {
       "slug": "core-banking",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 61.0,
+      "total_raw": 5.199999999999999,
       "flags": [],
       "parts": {
         "size": {
@@ -3119,7 +3119,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.2,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -3171,7 +3171,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -3204,7 +3204,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -3637,8 +3637,8 @@
     },
     "scores": {
       "slug": "courts-justice",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 60.5,
+      "total_raw": 5.1000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -3694,7 +3694,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.8,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -3745,7 +3745,7 @@
           ]
         },
         "lockin": {
-          "score": 4,
+          "score": 3.7,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -3778,7 +3778,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -3788,7 +3788,7 @@
               },
               "funding_per_billion": {
                 "raw": 5989162.235167385,
-                "n": 4,
+                "n": 3,
                 "score": 1
               },
               "yc_2024_plus": {
@@ -3801,7 +3801,7 @@
           },
           "evidence": [
             "ai_native_traction: raw 2.0 (n=2) -> 2",
-            "funding_per_billion: raw 5989162.235167385 (n=4) -> 1",
+            "funding_per_billion: raw 5989162.235167385 (n=3) -> 1",
             "yc_2024_plus: raw 6.0 (n=6) -> 3"
           ]
         }
@@ -4093,8 +4093,8 @@
     },
     "scores": {
       "slug": "ehr-hospital",
-      "total": 45.0,
-      "total_raw": 2.0,
+      "total": 43.0,
+      "total_raw": 1.6000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -4134,7 +4134,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 2.8,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -4186,7 +4186,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -4205,22 +4205,22 @@
                 "score": 5
               },
               "regulator_approval": {
-                "raw": false,
+                "raw": true,
                 "n": 1,
-                "score": 1
+                "score": 5
               }
             },
-            "mean": 2.5
+            "mean": 3.5
           },
           "evidence": [
             "award_duration_months: raw 48.0 (n=14) -> 3",
             "noncompetitive_share: raw 0.0 (n=17) -> 1",
             "replacement_duration_months: raw 104.0 (n=5) -> 5",
-            "regulator_approval: raw False (n=1) -> 1"
+            "regulator_approval: raw True (n=1) -> 5"
           ]
         },
         "crowding": {
-          "score": 5,
+          "score": 4.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -4230,7 +4230,7 @@
               },
               "funding_per_billion": {
                 "raw": 156142942.39837757,
-                "n": 17,
+                "n": 16,
                 "score": 5
               },
               "yc_2024_plus": {
@@ -4243,7 +4243,7 @@
           },
           "evidence": [
             "ai_native_traction: raw 5.0 (n=5) -> 5",
-            "funding_per_billion: raw 156142942.39837757 (n=17) -> 5",
+            "funding_per_billion: raw 156142942.39837757 (n=16) -> 5",
             "yc_2024_plus: raw 11.0 (n=11) -> 4"
           ]
         }
@@ -4581,7 +4581,7 @@
     "scores": {
       "slug": "erp-distribution",
       "total": 55.0,
-      "total_raw": 4.0,
+      "total_raw": 4.000000000000001,
       "flags": [],
       "parts": {
         "size": {
@@ -4619,7 +4619,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 4.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -4669,7 +4669,7 @@
           ]
         },
         "lockin": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -4701,7 +4701,7 @@
           ]
         },
         "crowding": {
-          "score": 4,
+          "score": 4.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -5110,8 +5110,8 @@
     },
     "scores": {
       "slug": "erp-manufacturing",
-      "total": 65.0,
-      "total_raw": 6.0,
+      "total": 67.0,
+      "total_raw": 6.400000000000001,
       "flags": [],
       "parts": {
         "size": {
@@ -5152,7 +5152,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 4.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -5202,7 +5202,7 @@
           ]
         },
         "lockin": {
-          "score": 1,
+          "score": 1.2,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -5236,7 +5236,7 @@
           ]
         },
         "crowding": {
-          "score": 4,
+          "score": 3.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -5674,7 +5674,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -5725,7 +5725,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 2.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -5759,7 +5759,7 @@
           ]
         },
         "crowding": {
-          "score": 5,
+          "score": 5.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -6131,8 +6131,8 @@
     },
     "scores": {
       "slug": "financial-close-gl",
-      "total": 45.0,
-      "total_raw": 2.0,
+      "total": 46.5,
+      "total_raw": 2.3000000000000007,
       "flags": [],
       "parts": {
         "size": {
@@ -6173,7 +6173,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -6223,7 +6223,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -6255,7 +6255,7 @@
           ]
         },
         "crowding": {
-          "score": 5,
+          "score": 5.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -6707,8 +6707,8 @@
     },
     "scores": {
       "slug": "gov-benefits",
-      "total": 65.0,
-      "total_raw": 6.0,
+      "total": 62.5,
+      "total_raw": 5.500000000000001,
       "flags": [],
       "parts": {
         "size": {
@@ -6759,7 +6759,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.8,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -6810,7 +6810,7 @@
           ]
         },
         "lockin": {
-          "score": 5,
+          "score": 5.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -6842,7 +6842,7 @@
           ]
         },
         "crowding": {
-          "score": 1,
+          "score": 1.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -7206,8 +7206,8 @@
     },
     "scores": {
       "slug": "gov-licensing-permits",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 60.5,
+      "total_raw": 5.1000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -7246,7 +7246,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 4.4,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -7298,7 +7298,7 @@
           ]
         },
         "lockin": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -7330,7 +7330,7 @@
           ]
         },
         "crowding": {
-          "score": 4,
+          "score": 4.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -7341,7 +7341,7 @@
               "funding_per_billion": {
                 "raw": 118807556.48866324,
                 "n": 9,
-                "score": 4
+                "score": 5
               },
               "yc_2024_plus": {
                 "raw": 14.0,
@@ -7349,11 +7349,11 @@
                 "score": 4
               }
             },
-            "mean": 4.0
+            "mean": 4.333333333333333
           },
           "evidence": [
             "ai_native_traction: raw 4.0 (n=4) -> 4",
-            "funding_per_billion: raw 118807556.48866324 (n=9) -> 4",
+            "funding_per_billion: raw 118807556.48866324 (n=9) -> 5",
             "yc_2024_plus: raw 14.0 (n=14) -> 4"
           ]
         }
@@ -7756,8 +7756,8 @@
     },
     "scores": {
       "slug": "gov-tax",
-      "total": 55.0,
-      "total_raw": 4.0,
+      "total": 66.5,
+      "total_raw": 6.300000000000001,
       "flags": [],
       "parts": {
         "size": {
@@ -7804,7 +7804,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 3.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -7854,7 +7854,7 @@
           ]
         },
         "lockin": {
-          "score": 5,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -7873,20 +7873,20 @@
                 "score": 5
               },
               "regulator_approval": {
-                "raw": true,
+                "raw": false,
                 "n": 1,
-                "score": 5
+                "score": 1
               }
             },
-            "mean": 5.0
+            "mean": 3.0
           },
           "evidence": [
             "replacement_duration_months: raw 72.0 (n=6) -> 5",
-            "regulator_approval: raw True (n=1) -> 5"
+            "regulator_approval: raw False (n=1) -> 1"
           ]
         },
         "crowding": {
-          "score": 1,
+          "score": 1.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -7895,9 +7895,9 @@
                 "score": 1
               },
               "funding_per_billion": {
-                "raw": 25199682.695155267,
-                "n": 2,
-                "score": 2
+                "raw": 549350.2655735357,
+                "n": 1,
+                "score": 1
               },
               "yc_2024_plus": {
                 "raw": 0.0,
@@ -7905,11 +7905,11 @@
                 "score": 1
               }
             },
-            "mean": 1.3333333333333333
+            "mean": 1.0
           },
           "evidence": [
             "ai_native_traction: raw 0.0 (n=0) -> 1",
-            "funding_per_billion: raw 25199682.695155267 (n=2) -> 2",
+            "funding_per_billion: raw 549350.2655735357 (n=1) -> 1",
             "yc_2024_plus: raw 0.0 (n=0) -> 1"
           ]
         }
@@ -8233,8 +8233,8 @@
     },
     "scores": {
       "slug": "insurance-claims",
-      "total": 30.0,
-      "total_raw": -1.0,
+      "total": 31.0,
+      "total_raw": -0.7999999999999998,
       "flags": [],
       "parts": {
         "size": {
@@ -8278,7 +8278,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -8329,7 +8329,7 @@
           ]
         },
         "lockin": {
-          "score": 5,
+          "score": 4.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -8361,7 +8361,7 @@
           ]
         },
         "crowding": {
-          "score": 4,
+          "score": 4.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -8763,8 +8763,8 @@
     },
     "scores": {
       "slug": "insurance-policy-admin",
-      "total": 40.0,
-      "total_raw": 1.0,
+      "total": 42.0,
+      "total_raw": 1.3999999999999995,
       "flags": [],
       "parts": {
         "size": {
@@ -8808,7 +8808,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.2,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -8859,7 +8859,7 @@
           ]
         },
         "lockin": {
-          "score": 4,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -8891,7 +8891,7 @@
           ]
         },
         "crowding": {
-          "score": 4,
+          "score": 4.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -9255,8 +9255,8 @@
     },
     "scores": {
       "slug": "lab-information",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 58.0,
+      "total_raw": 4.6000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -9297,7 +9297,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 2.8,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -9349,7 +9349,7 @@
           ]
         },
         "lockin": {
-          "score": 2,
+          "score": 2.2,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -9383,7 +9383,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -9393,8 +9393,8 @@
               },
               "funding_per_billion": {
                 "raw": 14832396.974191325,
-                "n": 4,
-                "score": 1
+                "n": 3,
+                "score": 2
               },
               "yc_2024_plus": {
                 "raw": 7.0,
@@ -9402,11 +9402,11 @@
                 "score": 3
               }
             },
-            "mean": 1.6666666666666667
+            "mean": 2.0
           },
           "evidence": [
             "ai_native_traction: raw 1.0 (n=1) -> 1",
-            "funding_per_billion: raw 14832396.974191325 (n=4) -> 1",
+            "funding_per_billion: raw 14832396.974191325 (n=3) -> 2",
             "yc_2024_plus: raw 7.0 (n=7) -> 3"
           ]
         }
@@ -9800,8 +9800,8 @@
     },
     "scores": {
       "slug": "land-registry",
-      "total": 45.0,
-      "total_raw": 2.0,
+      "total": 55.0,
+      "total_raw": 4.000000000000001,
       "flags": [],
       "parts": {
         "size": {
@@ -9852,7 +9852,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 2.8,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -9903,7 +9903,7 @@
           ]
         },
         "lockin": {
-          "score": 5,
+          "score": 2.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -9922,20 +9922,20 @@
                 "score": 4
               },
               "regulator_approval": {
-                "raw": true,
+                "raw": false,
                 "n": 1,
-                "score": 5
+                "score": 1
               }
             },
-            "mean": 4.5
+            "mean": 2.5
           },
           "evidence": [
             "replacement_duration_months: raw 60.0 (n=5) -> 4",
-            "regulator_approval: raw True (n=1) -> 5"
+            "regulator_approval: raw False (n=1) -> 1"
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 2.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -10231,8 +10231,8 @@
     },
     "scores": {
       "slug": "loan-origination-servicing",
-      "total": 45.0,
-      "total_raw": 2.0,
+      "total": 45.5,
+      "total_raw": 2.1000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -10270,7 +10270,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 2.8,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -10321,7 +10321,7 @@
           ]
         },
         "lockin": {
-          "score": 4,
+          "score": 4.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -10353,7 +10353,7 @@
           ]
         },
         "crowding": {
-          "score": 5,
+          "score": 4.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -10363,7 +10363,7 @@
               },
               "funding_per_billion": {
                 "raw": 105926429.81958196,
-                "n": 17,
+                "n": 16,
                 "score": 4
               },
               "yc_2024_plus": {
@@ -10376,7 +10376,7 @@
           },
           "evidence": [
             "ai_native_traction: raw 8.0 (n=8) -> 5",
-            "funding_per_billion: raw 105926429.81958196 (n=17) -> 4",
+            "funding_per_billion: raw 105926429.81958196 (n=16) -> 4",
             "yc_2024_plus: raw 19.0 (n=19) -> 5"
           ]
         }
@@ -10842,8 +10842,8 @@
     },
     "scores": {
       "slug": "mainframe-cobol-general",
-      "total": 65.0,
-      "total_raw": 6.0,
+      "total": 69.0,
+      "total_raw": 6.800000000000001,
       "flags": [],
       "parts": {
         "size": {
@@ -10888,7 +10888,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 3.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -10938,7 +10938,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 2.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -10970,7 +10970,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -11299,8 +11299,8 @@
     },
     "scores": {
       "slug": "medical-billing-rcm",
-      "total": 50.0,
-      "total_raw": 3.0,
+      "total": 42.5,
+      "total_raw": 1.4999999999999991,
       "flags": [],
       "parts": {
         "size": {
@@ -11337,7 +11337,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.7,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -11387,7 +11387,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 4.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -11406,20 +11406,20 @@
                 "score": 4
               },
               "regulator_approval": {
-                "raw": false,
+                "raw": true,
                 "n": 1,
-                "score": 1
+                "score": 5
               }
             },
-            "mean": 2.5
+            "mean": 4.5
           },
           "evidence": [
             "replacement_duration_months: raw 60.0 (n=6) -> 4",
-            "regulator_approval: raw False (n=1) -> 1"
+            "regulator_approval: raw True (n=1) -> 5"
           ]
         },
         "crowding": {
-          "score": 5,
+          "score": 4.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -11428,9 +11428,9 @@
                 "score": 5
               },
               "funding_per_billion": {
-                "raw": 134028688.15388647,
-                "n": 19,
-                "score": 5
+                "raw": 83226986.0459557,
+                "n": 18,
+                "score": 4
               },
               "yc_2024_plus": {
                 "raw": 31.0,
@@ -11438,11 +11438,11 @@
                 "score": 5
               }
             },
-            "mean": 5.0
+            "mean": 4.666666666666667
           },
           "evidence": [
             "ai_native_traction: raw 5.0 (n=5) -> 5",
-            "funding_per_billion: raw 134028688.15388647 (n=19) -> 5",
+            "funding_per_billion: raw 83226986.0459557 (n=18) -> 4",
             "yc_2024_plus: raw 31.0 (n=31) -> 5"
           ]
         }
@@ -11796,8 +11796,8 @@
     },
     "scores": {
       "slug": "mortgage-servicing",
-      "total": 55.0,
-      "total_raw": 4.0,
+      "total": 52.0,
+      "total_raw": 3.3999999999999995,
       "flags": [],
       "parts": {
         "size": {
@@ -11839,7 +11839,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -11889,7 +11889,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -11921,7 +11921,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 2.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -11931,7 +11931,7 @@
               },
               "funding_per_billion": {
                 "raw": 108624016.47302732,
-                "n": 5,
+                "n": 4,
                 "score": 4
               },
               "yc_2024_plus": {
@@ -11944,7 +11944,7 @@
           },
           "evidence": [
             "ai_native_traction: raw 2.0 (n=2) -> 2",
-            "funding_per_billion: raw 108624016.47302732 (n=5) -> 4",
+            "funding_per_billion: raw 108624016.47302732 (n=4) -> 4",
             "yc_2024_plus: raw 0.0 (n=0) -> 1"
           ]
         }
@@ -12234,8 +12234,8 @@
     },
     "scores": {
       "slug": "payroll-hr",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 60.5,
+      "total_raw": 5.1000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -12273,7 +12273,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 3.4,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -12325,7 +12325,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -12357,7 +12357,7 @@
           ]
         },
         "crowding": {
-          "score": 3,
+          "score": 3.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -12810,8 +12810,8 @@
     },
     "scores": {
       "slug": "pension-provident-fund-admin",
-      "total": 55.0,
-      "total_raw": 4.0,
+      "total": 57.5,
+      "total_raw": 4.499999999999999,
       "flags": [],
       "parts": {
         "size": {
@@ -12859,7 +12859,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 3.2,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -12910,7 +12910,7 @@
           ]
         },
         "lockin": {
-          "score": 4,
+          "score": 4.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -12943,7 +12943,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -13293,8 +13293,8 @@
     },
     "scores": {
       "slug": "port-terminal-operating-system",
-      "total": 55.0,
-      "total_raw": 4.0,
+      "total": 58.0,
+      "total_raw": 4.6,
       "flags": [],
       "parts": {
         "size": {
@@ -13337,7 +13337,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -13387,7 +13387,7 @@
           ]
         },
         "lockin": {
-          "score": 1,
+          "score": 1.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -13419,7 +13419,7 @@
           ]
         },
         "crowding": {
-          "score": 2,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -13784,8 +13784,8 @@
     },
     "scores": {
       "slug": "procurement-ap",
-      "total": 50.0,
-      "total_raw": 3.0,
+      "total": 54.0,
+      "total_raw": 3.8000000000000007,
       "flags": [],
       "parts": {
         "size": {
@@ -13830,7 +13830,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 2.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -13880,7 +13880,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 2.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -13912,7 +13912,7 @@
           ]
         },
         "crowding": {
-          "score": 4,
+          "score": 4.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -13923,7 +13923,7 @@
               "funding_per_billion": {
                 "raw": 78129369.7190654,
                 "n": 12,
-                "score": 3
+                "score": 4
               },
               "yc_2024_plus": {
                 "raw": 21.0,
@@ -13931,11 +13931,11 @@
                 "score": 5
               }
             },
-            "mean": 3.6666666666666665
+            "mean": 4.0
           },
           "evidence": [
             "ai_native_traction: raw 3.0 (n=3) -> 3",
-            "funding_per_billion: raw 78129369.7190654 (n=12) -> 3",
+            "funding_per_billion: raw 78129369.7190654 (n=12) -> 4",
             "yc_2024_plus: raw 21.0 (n=21) -> 5"
           ]
         }
@@ -14291,8 +14291,8 @@
     },
     "scores": {
       "slug": "retail-pos-merch",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 54.0,
+      "total_raw": 3.8,
       "flags": [],
       "parts": {
         "size": {
@@ -14327,7 +14327,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 4.0,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -14376,7 +14376,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 4.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -14395,20 +14395,20 @@
                 "score": 4
               },
               "regulator_approval": {
-                "raw": false,
+                "raw": true,
                 "n": 1,
-                "score": 1
+                "score": 5
               }
             },
-            "mean": 2.5
+            "mean": 4.5
           },
           "evidence": [
             "replacement_duration_months: raw 63.0 (n=6) -> 4",
-            "regulator_approval: raw False (n=1) -> 1"
+            "regulator_approval: raw True (n=1) -> 5"
           ]
         },
         "crowding": {
-          "score": 3,
+          "score": 2.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -14417,8 +14417,8 @@
                 "score": 3
               },
               "funding_per_billion": {
-                "raw": 17397981.339504726,
-                "n": 8,
+                "raw": 16695224.45133696,
+                "n": 7,
                 "score": 2
               },
               "yc_2024_plus": {
@@ -14431,7 +14431,7 @@
           },
           "evidence": [
             "ai_native_traction: raw 3.0 (n=3) -> 3",
-            "funding_per_billion: raw 17397981.339504726 (n=8) -> 2",
+            "funding_per_billion: raw 16695224.45133696 (n=7) -> 2",
             "yc_2024_plus: raw 6.0 (n=6) -> 3"
           ]
         }
@@ -14857,8 +14857,8 @@
     },
     "scores": {
       "slug": "student-information",
-      "total": 65.0,
-      "total_raw": 6.0,
+      "total": 64.0,
+      "total_raw": 5.8,
       "flags": [],
       "parts": {
         "size": {
@@ -14905,7 +14905,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.6,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -14957,7 +14957,7 @@
           ]
         },
         "lockin": {
-          "score": 4,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -14991,7 +14991,7 @@
           ]
         },
         "crowding": {
-          "score": 1,
+          "score": 1.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -15305,8 +15305,8 @@
     },
     "scores": {
       "slug": "telecom-bss",
-      "total": 70.0,
-      "total_raw": 7.0,
+      "total": 66.5,
+      "total_raw": 6.3,
       "flags": [],
       "parts": {
         "size": {
@@ -15345,7 +15345,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -15396,7 +15396,7 @@
           ]
         },
         "lockin": {
-          "score": 2,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -15415,20 +15415,20 @@
                 "score": 2
               },
               "regulator_approval": {
-                "raw": false,
+                "raw": true,
                 "n": 1,
-                "score": 1
+                "score": 5
               }
             },
-            "mean": 1.5
+            "mean": 3.5
           },
           "evidence": [
             "replacement_duration_months: raw 36.0 (n=11) -> 2",
-            "regulator_approval: raw False (n=1) -> 1"
+            "regulator_approval: raw True (n=1) -> 5"
           ]
         },
         "crowding": {
-          "score": 3,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -15437,9 +15437,9 @@
                 "score": 3
               },
               "funding_per_billion": {
-                "raw": 87243766.23848116,
-                "n": 6,
-                "score": 4
+                "raw": 2148861.237401014,
+                "n": 1,
+                "score": 1
               },
               "yc_2024_plus": {
                 "raw": 1.0,
@@ -15447,11 +15447,11 @@
                 "score": 1
               }
             },
-            "mean": 2.6666666666666665
+            "mean": 1.6666666666666667
           },
           "evidence": [
             "ai_native_traction: raw 3.0 (n=3) -> 3",
-            "funding_per_billion: raw 87243766.23848116 (n=6) -> 4",
+            "funding_per_billion: raw 2148861.237401014 (n=1) -> 1",
             "yc_2024_plus: raw 1.0 (n=1) -> 1"
           ]
         }
@@ -15719,8 +15719,8 @@
     },
     "scores": {
       "slug": "trade-finance",
-      "total": 60.0,
-      "total_raw": 5.0,
+      "total": 57.0,
+      "total_raw": 4.3999999999999995,
       "flags": [],
       "parts": {
         "size": {
@@ -15757,7 +15757,7 @@
           ]
         },
         "pain": {
-          "score": 2,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -15807,7 +15807,7 @@
           ]
         },
         "lockin": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -15839,7 +15839,7 @@
           ]
         },
         "crowding": {
-          "score": 1,
+          "score": 1.3,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -16151,8 +16151,8 @@
     },
     "scores": {
       "slug": "utility-billing-cis",
-      "total": 75.0,
-      "total_raw": 8.0,
+      "total": 69.5,
+      "total_raw": 6.8999999999999995,
       "flags": [],
       "parts": {
         "size": {
@@ -16194,7 +16194,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 3.6,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -16246,7 +16246,7 @@
           ]
         },
         "lockin": {
-          "score": 2,
+          "score": 2.0,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -16280,7 +16280,7 @@
           ]
         },
         "crowding": {
-          "score": 1,
+          "score": 1.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -16290,8 +16290,8 @@
               },
               "funding_per_billion": {
                 "raw": 30318965.72344912,
-                "n": 4,
-                "score": 2
+                "n": 3,
+                "score": 3
               },
               "yc_2024_plus": {
                 "raw": 0.0,
@@ -16299,11 +16299,11 @@
                 "score": 1
               }
             },
-            "mean": 1.3333333333333333
+            "mean": 1.6666666666666667
           },
           "evidence": [
             "ai_native_traction: raw 0.0 (n=0) -> 1",
-            "funding_per_billion: raw 30318965.72344912 (n=4) -> 2",
+            "funding_per_billion: raw 30318965.72344912 (n=3) -> 3",
             "yc_2024_plus: raw 0.0 (n=0) -> 1"
           ]
         }
@@ -16622,8 +16622,8 @@
     },
     "scores": {
       "slug": "warehouse-management",
-      "total": 45.0,
-      "total_raw": 2.0,
+      "total": 50.5,
+      "total_raw": 3.1000000000000005,
       "flags": [],
       "parts": {
         "size": {
@@ -16661,7 +16661,7 @@
           ]
         },
         "pain": {
-          "score": 3,
+          "score": 3.3,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -16711,7 +16711,7 @@
           ]
         },
         "lockin": {
-          "score": 2,
+          "score": 1.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -16745,7 +16745,7 @@
           ]
         },
         "crowding": {
-          "score": 4,
+          "score": 3.7,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {
@@ -17121,8 +17121,8 @@
     },
     "scores": {
       "slug": "wealth-portfolio-accounting",
-      "total": 55.0,
-      "total_raw": 4.0,
+      "total": 57.5,
+      "total_raw": 4.5,
       "flags": [],
       "parts": {
         "size": {
@@ -17164,7 +17164,7 @@
           ]
         },
         "pain": {
-          "score": 4,
+          "score": 4.0,
           "detail": {
             "sub_scores": {
               "keep_alive_share": {
@@ -17214,7 +17214,7 @@
           ]
         },
         "lockin": {
-          "score": 4,
+          "score": 3.5,
           "detail": {
             "sub_scores": {
               "award_duration_months": {
@@ -17246,7 +17246,7 @@
           ]
         },
         "crowding": {
-          "score": 3,
+          "score": 3.0,
           "detail": {
             "sub_scores": {
               "ai_native_traction": {

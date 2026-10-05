@@ -1,8 +1,8 @@
 [
   {
     "slug": "utility-billing-cis",
-    "total": 75.0,
-    "total_raw": 8.0,
+    "total": 69.5,
+    "total_raw": 6.8999999999999995,
     "flags": [],
     "parts": {
       "size": {
@@ -44,7 +44,7 @@
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 3.6,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -96,7 +96,7 @@
         ]
       },
       "lockin": {
-        "score": 2,
+        "score": 2.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -130,7 +130,7 @@
         ]
       },
       "crowding": {
-        "score": 1,
+        "score": 1.7,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -140,8 +140,8 @@
             },
             "funding_per_billion": {
               "raw": 30318965.72344912,
-              "n": 4,
-              "score": 2
+              "n": 3,
+              "score": 3
             },
             "yc_2024_plus": {
               "raw": 0.0,
@@ -149,34 +149,34 @@
               "score": 1
             }
           },
-          "mean": 1.3333333333333333
+          "mean": 1.6666666666666667
         },
         "evidence": [
           "ai_native_traction: raw 0.0 (n=0) -> 1",
-          "funding_per_billion: raw 30318965.72344912 (n=4) -> 2",
+          "funding_per_billion: raw 30318965.72344912 (n=3) -> 3",
           "yc_2024_plus: raw 0.0 (n=0) -> 1"
         ]
       }
     }
   },
   {
-    "slug": "airline-pss",
-    "total": 70.0,
-    "total_raw": 7.0,
+    "slug": "mainframe-cobol-general",
+    "total": 69.0,
+    "total_raw": 6.800000000000001,
     "flags": [],
     "parts": {
       "size": {
-        "score": 3,
+        "score": 4,
         "detail": {
-          "users_midpoint": 399.5,
+          "users_midpoint": 10033.0,
           "basis": "market_value",
-          "buyers_mid": 889.0,
+          "buyers_mid": 6369.0,
           "value_usd": {
-            "low": 2250000000.0,
-            "mid": 3018691769.6247163,
-            "high": 4050000000.0
+            "low": 11050000000.0,
+            "mid": 14489651479.590528,
+            "high": 19000000000.0
           },
-          "midpoint": 3018691769.6247163,
+          "midpoint": 14489651479.590528,
           "bins": [
             100000000.0,
             1000000000.0,
@@ -184,31 +184,30 @@
             20000000000.0
           ],
           "notes": [
-            "total from top-down legacy spend $2.2B to $4.0B (research/market_size.csv); bottom-up $28.1B used only for the split"
+            "no spend data for segment(s) smb; those shares add no value",
+            "total from top-down legacy spend $11.1B to $19.0B (research/market_size.csv); bottom-up $19.1B used only for the split"
           ]
         },
         "evidence": [
-          "market value $3,018,691,770 mid (889 buyers x segment spend)",
-          "EU: 9-27 grade C",
-          "https://transport.ec.europa.eu/document/download/7d7c51df-f11d-4a0c-815c-28a5ae4264b5_en?filename=eu_air_carriers_by_country_holding_an_active_operating_licence.pdf",
-          "SG: 1-3 grade C",
-          "https://www.caas.gov.sg/industry/aircraft-operators/singapore-air-operator/air-operator-certificate/",
-          "UK: 28-28 grade C",
-          "https://www.videcom.com/videcom-airline-systems.aspx",
-          "https://www.caa.co.uk/commercial-industry/airlines/licensing/licence-types/airline-licence-holders/",
-          "US: 13-39 grade C",
-          "https://www.sec.gov/Archives/edgar/data/0001386355/000104746909002555/a2190554z10-k.htm",
-          "https://www.govinfo.gov/content/pkg/FR-2025-06-17/pdf/2025-10965.pdf",
-          "global: 273-378 grade B",
-          "https://amadeus.com/en/airlines/products/altea-passenger-service-system",
-          "https://amadeus.com/en/airlines/overview",
-          "https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
-          "https://en.wikipedia.org/wiki/Transaction_Processing_Facility",
-          "https://www.iata.org/en/about/members/airline-list/"
+          "market value $14,489,651,480 mid (6369 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/register-of-authorised-deposit-taking-institutions",
+          "EU: 2-6 grade C",
+          "https://www.bankingsupervision.europa.eu/banking/list/html/index.en.html",
+          "SG: 14-20 grade B",
+          "https://eservices.mas.gov.sg/fid/institution?sector=Banking&category=Full%20Bank",
+          "TH: 2-6 grade B",
+          "https://app.bot.or.th/BTWS_STAT/statistics/BOTWEBSTAT.aspx?reportID=158&language=eng",
+          "US: 2-6 grade C",
+          "https://api.fdic.gov/banks/institutions?filters=ACTIVE:1&limit=1&fields=NAME",
+          "global: 5001-15003 grade C",
+          "https://newsroom.ibm.com/2022-04-05-Announcing-IBM-z16-Real-time-AI-for-Transaction-Processing-at-Scale-and-Industrys-First-Quantum-Safe-System",
+          "https://en.wikipedia.org/wiki/IBM_Information_Management_System",
+          "https://www.sec.gov/Archives/edgar/data/0000356028/000035602818000064/ca-20180331x10k.htm"
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 3.3,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -217,19 +216,19 @@
               "score": null
             },
             "backend_failure_share": {
-              "raw": 0.11578947368421053,
-              "n": 380,
-              "score": 2
+              "raw": null,
+              "n": 0,
+              "score": null
             },
             "app_rating_inverted": {
-              "raw": 4.276398148148148,
-              "n": 27,
-              "score": 2
+              "raw": 3.845473333333333,
+              "n": 3,
+              "score": 3
             },
             "failed_rate": {
-              "raw": 0.08333333333333333,
-              "n": 12,
-              "score": 1
+              "raw": 0.5555555555555556,
+              "n": 9,
+              "score": 4
             },
             "s3_grade": {
               "raw": "weak",
@@ -237,19 +236,18 @@
               "score": 3
             }
           },
-          "mean": 2.0
+          "mean": 3.3333333333333335
         },
         "evidence": [
-          "backend_failure_share: raw 0.11578947368421053 (n=380) -> 2",
-          "app_rating_inverted: raw 4.276398148148148 (n=27) -> 2",
-          "failed_rate: raw 0.08333333333333333 (n=12) -> 1",
+          "app_rating_inverted: raw 3.845473333333333 (n=3) -> 3",
+          "failed_rate: raw 0.5555555555555556 (n=9) -> 4",
           "s3_grade: raw weak (n=1) -> 3"
         ]
       },
       "ai_fit": {
         "score": 4,
         "detail": {
-          "mean": 3.6578260869565216,
+          "mean": 3.7060000000000004,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -259,7 +257,7 @@
         ]
       },
       "lockin": {
-        "score": 1,
+        "score": 2.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -273,9 +271,9 @@
               "score": null
             },
             "replacement_duration_months": {
-              "raw": 14.5,
-              "n": 12,
-              "score": 1
+              "raw": 69.0,
+              "n": 6,
+              "score": 4
             },
             "regulator_approval": {
               "raw": false,
@@ -283,47 +281,47 @@
               "score": 1
             }
           },
-          "mean": 1.0
+          "mean": 2.5
         },
         "evidence": [
-          "replacement_duration_months: raw 14.5 (n=12) -> 1",
+          "replacement_duration_months: raw 69.0 (n=6) -> 4",
           "regulator_approval: raw False (n=1) -> 1"
         ]
       },
       "crowding": {
-        "score": 1,
+        "score": 2.0,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
-              "raw": 1.0,
-              "n": 1,
-              "score": 1
+              "raw": 4.0,
+              "n": 4,
+              "score": 4
             },
             "funding_per_billion": {
-              "raw": 13913311.85999869,
-              "n": 2,
+              "raw": 1608044.1984970674,
+              "n": 4,
               "score": 1
             },
             "yc_2024_plus": {
-              "raw": 2.0,
-              "n": 2,
-              "score": 2
+              "raw": 1.0,
+              "n": 1,
+              "score": 1
             }
           },
-          "mean": 1.3333333333333333
+          "mean": 2.0
         },
         "evidence": [
-          "ai_native_traction: raw 1.0 (n=1) -> 1",
-          "funding_per_billion: raw 13913311.85999869 (n=2) -> 1",
-          "yc_2024_plus: raw 2.0 (n=2) -> 2"
+          "ai_native_traction: raw 4.0 (n=4) -> 4",
+          "funding_per_billion: raw 1608044.1984970674 (n=4) -> 1",
+          "yc_2024_plus: raw 1.0 (n=1) -> 1"
         ]
       }
     }
   },
   {
     "slug": "construction-project-accounting",
-    "total": 70.0,
-    "total_raw": 7.0,
+    "total": 67.0,
+    "total_raw": 6.3999999999999995,
     "flags": [],
     "parts": {
       "size": {
@@ -362,7 +360,7 @@
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 3.7,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -412,7 +410,7 @@
         ]
       },
       "lockin": {
-        "score": 1,
+        "score": 1.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -444,7 +442,7 @@
         ]
       },
       "crowding": {
-        "score": 3,
+        "score": 3.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -474,9 +472,327 @@
     }
   },
   {
+    "slug": "erp-manufacturing",
+    "total": 67.0,
+    "total_raw": 6.400000000000001,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 120272.0,
+          "basis": "market_value",
+          "buyers_mid": 3322585.5,
+          "value_usd": {
+            "low": 6000000000.0,
+            "mid": 8712060605.8498,
+            "high": 12650000000.0
+          },
+          "midpoint": 8712060605.8498,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $6.0B to $12.7B (research/market_size.csv); bottom-up $158.9B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $8,712,060,606 mid (3.32259e+06 buyers x segment spend)",
+          "AU: 3-9 grade C",
+          "https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/jul2022-jun2026/8165DC01.xlsx",
+          "EU: 16-48 grade C",
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_the_manufacturing_sector",
+          "SG: 17-51 grade C",
+          "https://data.gov.sg/datasets/d_b58ac78d1926815a12d2574d2dcab331/view",
+          "global: 60100-180300 grade C",
+          "https://en.wikipedia.org/wiki/SAP_ERP",
+          "https://www.infor.com/solutions/erp/ln",
+          "https://www.itjungle.com/2022/08/03/jd-edwards-customers-face-support-decisions/",
+          "https://www.stacksync.com/blog/two-companies-from-1972-the-origin-story-of-epicor"
+        ]
+      },
+      "pain": {
+        "score": 4.3,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": 0.7058823529411765,
+              "n": 17,
+              "score": 5
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "failed_rate": {
+              "raw": 0.8,
+              "n": 10,
+              "score": 5
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 4.333333333333333
+        },
+        "evidence": [
+          "keep_alive_share: raw 0.7058823529411765 (n=17) -> 5",
+          "failed_rate: raw 0.8 (n=10) -> 5",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 3.139,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 1.2,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": 12.0,
+              "n": 15,
+              "score": 1
+            },
+            "noncompetitive_share": {
+              "raw": 0.0,
+              "n": 14,
+              "score": 1
+            },
+            "replacement_duration_months": {
+              "raw": 38.0,
+              "n": 5,
+              "score": 2
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 1.25
+        },
+        "evidence": [
+          "award_duration_months: raw 12.0 (n=15) -> 1",
+          "noncompetitive_share: raw 0.0 (n=14) -> 1",
+          "replacement_duration_months: raw 38.0 (n=5) -> 2",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 3.7,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 5.0,
+              "n": 5,
+              "score": 5
+            },
+            "funding_per_billion": {
+              "raw": 16276287.139782634,
+              "n": 13,
+              "score": 2
+            },
+            "yc_2024_plus": {
+              "raw": 17.0,
+              "n": 17,
+              "score": 4
+            }
+          },
+          "mean": 3.6666666666666665
+        },
+        "evidence": [
+          "ai_native_traction: raw 5.0 (n=5) -> 5",
+          "funding_per_billion: raw 16276287.139782634 (n=13) -> 2",
+          "yc_2024_plus: raw 17.0 (n=17) -> 4"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "gov-tax",
+    "total": 66.5,
+    "total_raw": 6.300000000000001,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 135.0,
+          "basis": "market_value",
+          "buyers_mid": 139707.5,
+          "value_usd": {
+            "low": 4500000000.0,
+            "mid": 7099295739.71954,
+            "high": 11200000000.0
+          },
+          "midpoint": 7099295739.71954,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $4.5B to $11.2B (research/market_size.csv); bottom-up $121.0B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $7,099,295,740 mid (139708 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.payrolltax.gov.au/",
+          "ID: 1-3 grade C",
+          "https://nasional.kontan.co.id/news/mengenal-perusahaan-asing-di-balik-coretax-seharga-rp-13-triliun",
+          "https://nasional.kompas.com/read/2023/09/24/00450011/pengertian-daerah-otonom-dan-jumlahnya",
+          "IN: 1-3 grade C",
+          "https://www.millenniumpost.in/business/govt-selects-infosys-as-rs-4242-crore-income-tax-filing-project-developer-336648",
+          "https://cleartax.in/s/gst-council-members",
+          "US: 4-12 grade C",
+          "https://www.everycrsreport.com/reports/IF12525.html",
+          "https://taxadmin.org/",
+          "https://www.census.gov/library/publications/2026/econ/govtorg2225.html",
+          "VN: 1-1 grade B",
+          "https://thoibaotaichinhvietnam.vn/mo-rong-ung-dung-phan-mem-quan-ly-thue-tap-trung-50013.html",
+          "https://luatvietnam.vn/tin-van-ban-moi/to-chuc-lai-20-chi-cuc-thue-khu-vuc-thanh-34-don-vi-thue-cap-tinh-186-102773-article.html",
+          "global: 60-180 grade C",
+          "https://www.fastenterprises.com/solutions/"
+        ]
+      },
+      "pain": {
+        "score": 3.3,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 7,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": 3.0453669230769234,
+              "n": 13,
+              "score": 4
+            },
+            "failed_rate": {
+              "raw": 0.45454545454545453,
+              "n": 11,
+              "score": 3
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 3.3333333333333335
+        },
+        "evidence": [
+          "app_rating_inverted: raw 3.0453669230769234 (n=13) -> 4",
+          "failed_rate: raw 0.45454545454545453 (n=11) -> 3",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 3.4556,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3.0,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 6,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 8,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 72.0,
+              "n": 6,
+              "score": 5
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 3.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 72.0 (n=6) -> 5",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 1.0,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 0.0,
+              "n": 0,
+              "score": 1
+            },
+            "funding_per_billion": {
+              "raw": 549350.2655735357,
+              "n": 1,
+              "score": 1
+            },
+            "yc_2024_plus": {
+              "raw": 0.0,
+              "n": 0,
+              "score": 1
+            }
+          },
+          "mean": 1.0
+        },
+        "evidence": [
+          "ai_native_traction: raw 0.0 (n=0) -> 1",
+          "funding_per_billion: raw 549350.2655735357 (n=1) -> 1",
+          "yc_2024_plus: raw 0.0 (n=0) -> 1"
+        ]
+      }
+    }
+  },
+  {
     "slug": "telecom-bss",
-    "total": 70.0,
-    "total_raw": 7.0,
+    "total": 66.5,
+    "total_raw": 6.3,
     "flags": [],
     "parts": {
       "size": {
@@ -515,7 +831,7 @@
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 3.5,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -566,7 +882,7 @@
         ]
       },
       "lockin": {
-        "score": 2,
+        "score": 3.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -585,20 +901,20 @@
               "score": 2
             },
             "regulator_approval": {
-              "raw": false,
+              "raw": true,
               "n": 1,
-              "score": 1
+              "score": 5
             }
           },
-          "mean": 1.5
+          "mean": 3.5
         },
         "evidence": [
           "replacement_duration_months: raw 36.0 (n=11) -> 2",
-          "regulator_approval: raw False (n=1) -> 1"
+          "regulator_approval: raw True (n=1) -> 5"
         ]
       },
       "crowding": {
-        "score": 3,
+        "score": 1.7,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -607,9 +923,9 @@
               "score": 3
             },
             "funding_per_billion": {
-              "raw": 87243766.23848116,
-              "n": 6,
-              "score": 4
+              "raw": 2148861.237401014,
+              "n": 1,
+              "score": 1
             },
             "yc_2024_plus": {
               "raw": 1.0,
@@ -617,481 +933,150 @@
               "score": 1
             }
           },
-          "mean": 2.6666666666666665
+          "mean": 1.6666666666666667
         },
         "evidence": [
           "ai_native_traction: raw 3.0 (n=3) -> 3",
-          "funding_per_billion: raw 87243766.23848116 (n=6) -> 4",
+          "funding_per_billion: raw 2148861.237401014 (n=1) -> 1",
           "yc_2024_plus: raw 1.0 (n=1) -> 1"
         ]
       }
     }
   },
   {
-    "slug": "erp-manufacturing",
-    "total": 65.0,
-    "total_raw": 6.0,
+    "slug": "agriculture-commodity",
+    "total": 64.0,
+    "total_raw": 5.8,
     "flags": [],
     "parts": {
       "size": {
-        "score": 4,
-        "detail": {
-          "users_midpoint": 120272.0,
-          "basis": "market_value",
-          "buyers_mid": 3322585.5,
-          "value_usd": {
-            "low": 6000000000.0,
-            "mid": 8712060605.8498,
-            "high": 12650000000.0
-          },
-          "midpoint": 8712060605.8498,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $6.0B to $12.7B (research/market_size.csv); bottom-up $158.9B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $8,712,060,606 mid (3.32259e+06 buyers x segment spend)",
-          "AU: 3-9 grade C",
-          "https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/jul2022-jun2026/8165DC01.xlsx",
-          "EU: 16-48 grade C",
-          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_the_manufacturing_sector",
-          "SG: 17-51 grade C",
-          "https://data.gov.sg/datasets/d_b58ac78d1926815a12d2574d2dcab331/view",
-          "global: 60100-180300 grade C",
-          "https://en.wikipedia.org/wiki/SAP_ERP",
-          "https://www.infor.com/solutions/erp/ln",
-          "https://www.itjungle.com/2022/08/03/jd-edwards-customers-face-support-decisions/",
-          "https://www.stacksync.com/blog/two-companies-from-1972-the-origin-story-of-epicor"
-        ]
-      },
-      "pain": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": 0.7058823529411765,
-              "n": 17,
-              "score": 5
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "failed_rate": {
-              "raw": 0.8,
-              "n": 10,
-              "score": 5
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 4.333333333333333
-        },
-        "evidence": [
-          "keep_alive_share: raw 0.7058823529411765 (n=17) -> 5",
-          "failed_rate: raw 0.8 (n=10) -> 5",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 3.139,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 1,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": 12.0,
-              "n": 15,
-              "score": 1
-            },
-            "noncompetitive_share": {
-              "raw": 0.0,
-              "n": 14,
-              "score": 1
-            },
-            "replacement_duration_months": {
-              "raw": 38.0,
-              "n": 5,
-              "score": 2
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 1.25
-        },
-        "evidence": [
-          "award_duration_months: raw 12.0 (n=15) -> 1",
-          "noncompetitive_share: raw 0.0 (n=14) -> 1",
-          "replacement_duration_months: raw 38.0 (n=5) -> 2",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 5.0,
-              "n": 5,
-              "score": 5
-            },
-            "funding_per_billion": {
-              "raw": 16276287.139782634,
-              "n": 13,
-              "score": 2
-            },
-            "yc_2024_plus": {
-              "raw": 17.0,
-              "n": 17,
-              "score": 4
-            }
-          },
-          "mean": 3.6666666666666665
-        },
-        "evidence": [
-          "ai_native_traction: raw 5.0 (n=5) -> 5",
-          "funding_per_billion: raw 16276287.139782634 (n=13) -> 2",
-          "yc_2024_plus: raw 17.0 (n=17) -> 4"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "gov-benefits",
-    "total": 65.0,
-    "total_raw": 6.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "users_midpoint": 68.0,
-          "basis": "market_value",
-          "buyers_mid": 3470.5,
-          "value_usd": {
-            "low": 7500000000.0,
-            "mid": 12549900398.011133,
-            "high": 21000000000.0
-          },
-          "midpoint": 12549900398.011133,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "no spend data for segment(s) enterprise, mid_market; those shares add no value",
-            "total from top-down legacy spend $7.5B to $21.0B (research/market_size.csv); bottom-up $100.2B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $12,549,900,398 mid (3470.5 buyers x segment spend)",
-          "AU: 1-1 grade C",
-          "https://www.itnews.com.au/news/centrelink-it-system-risks-largely-managed-during-wpit-overhaul-553896",
-          "EU: 2-6 grade C",
-          "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/digitalisation-social-security-coordination/electronic-exchange-social-security-information-eessi_en",
-          "SG: 1-1 grade B",
-          "https://www.accenture.com/sg-en/case-studies/public-service/social-security-securing-life-goals",
-          "https://www.asean-ssa.org/member-institutions/singapore/",
-          "TH: 1-3 grade C",
-          "https://www.asean-ssa.org/member-institutions/thailand/",
-          "UK: 1-3 grade C",
-          "https://www.oneadvanced.com/resources/dwp-completes-large-scale-modernisation-project-for-nations-benefit-systems/",
-          "https://www.gov.uk/government/publications/dwp-statistical-summary-policies-and-statements/housing-benefit-caseload-and-flows-statistics-methodology-statement",
-          "US: 25-75 grade C",
-          "https://kffhealthnews.org/news/article/medicaid-deloitte-run-eligibility-systems-plagued-by-errors/",
-          "https://www.macpac.gov/medicaid-101/",
-          "https://www.gao.gov/assets/gao-22-104251.pdf",
-          "global: 4-12 grade C",
-          "https://en.wikipedia.org/wiki/Model_204",
-          "https://www.microfocus.com/de-de/media/success-story/german_pension_fund_baden_wurttemberg_ss_de.pdf",
-          "https://en.wikipedia.org/wiki/International_Social_Security_Association"
-        ]
-      },
-      "pain": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 3,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": 0.18,
-              "n": 100,
-              "score": 3
-            },
-            "app_rating_inverted": {
-              "raw": 3.3731975,
-              "n": 20,
-              "score": 4
-            },
-            "failed_rate": {
-              "raw": 0.7272727272727273,
-              "n": 11,
-              "score": 5
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 3.75
-        },
-        "evidence": [
-          "backend_failure_share: raw 0.18 (n=100) -> 3",
-          "app_rating_inverted: raw 3.3731975 (n=20) -> 4",
-          "failed_rate: raw 0.7272727272727273 (n=11) -> 5",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.7139130434782603,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 5,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 1,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 4,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 84.0,
-              "n": 9,
-              "score": 5
-            },
-            "regulator_approval": {
-              "raw": true,
-              "n": 1,
-              "score": 5
-            }
-          },
-          "mean": 5.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 84.0 (n=9) -> 5",
-          "regulator_approval: raw True (n=1) -> 5"
-        ]
-      },
-      "crowding": {
-        "score": 1,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 2.0,
-              "n": 2,
-              "score": 2
-            },
-            "funding_per_billion": {
-              "raw": 8008031.682540438,
-              "n": 6,
-              "score": 1
-            },
-            "yc_2024_plus": {
-              "raw": 1.0,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 1.3333333333333333
-        },
-        "evidence": [
-          "ai_native_traction: raw 2.0 (n=2) -> 2",
-          "funding_per_billion: raw 8008031.682540438 (n=6) -> 1",
-          "yc_2024_plus: raw 1.0 (n=1) -> 1"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "mainframe-cobol-general",
-    "total": 65.0,
-    "total_raw": 6.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "users_midpoint": 10033.0,
-          "basis": "market_value",
-          "buyers_mid": 6369.0,
-          "value_usd": {
-            "low": 11050000000.0,
-            "mid": 14489651479.590528,
-            "high": 19000000000.0
-          },
-          "midpoint": 14489651479.590528,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "no spend data for segment(s) smb; those shares add no value",
-            "total from top-down legacy spend $11.1B to $19.0B (research/market_size.csv); bottom-up $19.1B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $14,489,651,480 mid (6369 buyers x segment spend)",
-          "AU: 1-3 grade C",
-          "https://www.apra.gov.au/register-of-authorised-deposit-taking-institutions",
-          "EU: 2-6 grade C",
-          "https://www.bankingsupervision.europa.eu/banking/list/html/index.en.html",
-          "SG: 14-20 grade B",
-          "https://eservices.mas.gov.sg/fid/institution?sector=Banking&category=Full%20Bank",
-          "TH: 2-6 grade B",
-          "https://app.bot.or.th/BTWS_STAT/statistics/BOTWEBSTAT.aspx?reportID=158&language=eng",
-          "US: 2-6 grade C",
-          "https://api.fdic.gov/banks/institutions?filters=ACTIVE:1&limit=1&fields=NAME",
-          "global: 5001-15003 grade C",
-          "https://newsroom.ibm.com/2022-04-05-Announcing-IBM-z16-Real-time-AI-for-Transaction-Processing-at-Scale-and-Industrys-First-Quantum-Safe-System",
-          "https://en.wikipedia.org/wiki/IBM_Information_Management_System",
-          "https://www.sec.gov/Archives/edgar/data/0000356028/000035602818000064/ca-20180331x10k.htm"
-        ]
-      },
-      "pain": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 6,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": 3.845473333333333,
-              "n": 3,
-              "score": 3
-            },
-            "failed_rate": {
-              "raw": 0.5555555555555556,
-              "n": 9,
-              "score": 4
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 3.3333333333333335
-        },
-        "evidence": [
-          "app_rating_inverted: raw 3.845473333333333 (n=3) -> 3",
-          "failed_rate: raw 0.5555555555555556 (n=9) -> 4",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.7060000000000004,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 4,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 4,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 69.0,
-              "n": 6,
-              "score": 4
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 2.5
-        },
-        "evidence": [
-          "replacement_duration_months: raw 69.0 (n=6) -> 4",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
         "score": 2,
         "detail": {
+          "users_midpoint": 1400.0,
+          "basis": "market_value",
+          "buyers_mid": 156495.5,
+          "value_usd": {
+            "low": 385000000.0,
+            "mid": 612678545.4053373,
+            "high": 975000000.0
+          },
+          "midpoint": 612678545.4053373,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (PH Bureau of Plant Industry rice import clearances (SPSICs); NFA grains business licensing): counts transactions, not buyers",
+            "total from top-down legacy spend $0.4B to $1.0B (research/market_size.csv); bottom-up $38.9B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $612,678,545 mid (156496 buyers x segment spend)",
+          "US: 50-150 grade C",
+          "https://agvance.net/about-ssi",
+          "https://esmis.nal.usda.gov/sites/default/release-files/xg94hp534/5d86qt759/xp68nc84m/grst0125.pdf",
+          "global: 650-1950 grade C",
+          "https://www.westportnow.com/westports_triple_point_technology_sold_for_900m/",
+          "https://iongroup.com/industries/commodities/agriculture-and-cpg/"
+        ]
+      },
+      "pain": {
+        "score": 3.0,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": 3.6600099999999998,
+              "n": 6,
+              "score": 3
+            },
+            "failed_rate": {
+              "raw": 0.18181818181818182,
+              "n": 11,
+              "score": 1
+            },
+            "s3_grade": {
+              "raw": "strong",
+              "n": 1,
+              "score": 5
+            }
+          },
+          "mean": 3.0
+        },
+        "evidence": [
+          "app_rating_inverted: raw 3.6600099999999998 (n=6) -> 3",
+          "failed_rate: raw 0.18181818181818182 (n=11) -> 1",
+          "s3_grade: raw strong (n=1) -> 5"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.6743478260869566,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 1.5,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 39.5,
+              "n": 4,
+              "score": 2
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 1.5
+        },
+        "evidence": [
+          "replacement_duration_months: raw 39.5 (n=4) -> 2",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 1.7,
+        "detail": {
           "sub_scores": {
             "ai_native_traction": {
-              "raw": 4.0,
-              "n": 4,
-              "score": 4
+              "raw": 1.0,
+              "n": 1,
+              "score": 1
             },
             "funding_per_billion": {
-              "raw": 1608044.1984970674,
-              "n": 4,
-              "score": 1
+              "raw": 41375693.975425385,
+              "n": 3,
+              "score": 3
             },
             "yc_2024_plus": {
               "raw": 1.0,
@@ -1099,11 +1084,11 @@
               "score": 1
             }
           },
-          "mean": 2.0
+          "mean": 1.6666666666666667
         },
         "evidence": [
-          "ai_native_traction: raw 4.0 (n=4) -> 4",
-          "funding_per_billion: raw 1608044.1984970674 (n=4) -> 1",
+          "ai_native_traction: raw 1.0 (n=1) -> 1",
+          "funding_per_billion: raw 41375693.975425385 (n=3) -> 3",
           "yc_2024_plus: raw 1.0 (n=1) -> 1"
         ]
       }
@@ -1111,8 +1096,8 @@
   },
   {
     "slug": "student-information",
-    "total": 65.0,
-    "total_raw": 6.0,
+    "total": 64.0,
+    "total_raw": 5.8,
     "flags": [],
     "parts": {
       "size": {
@@ -1159,7 +1144,7 @@
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 3.6,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -1211,7 +1196,7 @@
         ]
       },
       "lockin": {
-        "score": 4,
+        "score": 3.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -1245,7 +1230,7 @@
         ]
       },
       "crowding": {
-        "score": 1,
+        "score": 1.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -1275,23 +1260,23 @@
     }
   },
   {
-    "slug": "agriculture-commodity",
-    "total": 60.0,
-    "total_raw": 5.0,
+    "slug": "gov-benefits",
+    "total": 62.5,
+    "total_raw": 5.500000000000001,
     "flags": [],
     "parts": {
       "size": {
-        "score": 2,
+        "score": 4,
         "detail": {
-          "users_midpoint": 1400.0,
+          "users_midpoint": 68.0,
           "basis": "market_value",
-          "buyers_mid": 156495.5,
+          "buyers_mid": 3470.5,
           "value_usd": {
-            "low": 385000000.0,
-            "mid": 612678545.4053373,
-            "high": 975000000.0
+            "low": 7500000000.0,
+            "mid": 12549900398.011133,
+            "high": 21000000000.0
           },
-          "midpoint": 612678545.4053373,
+          "midpoint": 12549900398.011133,
           "bins": [
             100000000.0,
             1000000000.0,
@@ -1299,62 +1284,77 @@
             20000000000.0
           ],
           "notes": [
-            "universe skip (PH Bureau of Plant Industry rice import clearances (SPSICs); NFA grains business licensing): counts transactions, not buyers",
-            "total from top-down legacy spend $0.4B to $1.0B (research/market_size.csv); bottom-up $38.9B used only for the split"
+            "no spend data for segment(s) enterprise, mid_market; those shares add no value",
+            "total from top-down legacy spend $7.5B to $21.0B (research/market_size.csv); bottom-up $100.2B used only for the split"
           ]
         },
         "evidence": [
-          "market value $612,678,545 mid (156496 buyers x segment spend)",
-          "US: 50-150 grade C",
-          "https://agvance.net/about-ssi",
-          "https://esmis.nal.usda.gov/sites/default/release-files/xg94hp534/5d86qt759/xp68nc84m/grst0125.pdf",
-          "global: 650-1950 grade C",
-          "https://www.westportnow.com/westports_triple_point_technology_sold_for_900m/",
-          "https://iongroup.com/industries/commodities/agriculture-and-cpg/"
+          "market value $12,549,900,398 mid (3470.5 buyers x segment spend)",
+          "AU: 1-1 grade C",
+          "https://www.itnews.com.au/news/centrelink-it-system-risks-largely-managed-during-wpit-overhaul-553896",
+          "EU: 2-6 grade C",
+          "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/digitalisation-social-security-coordination/electronic-exchange-social-security-information-eessi_en",
+          "SG: 1-1 grade B",
+          "https://www.accenture.com/sg-en/case-studies/public-service/social-security-securing-life-goals",
+          "https://www.asean-ssa.org/member-institutions/singapore/",
+          "TH: 1-3 grade C",
+          "https://www.asean-ssa.org/member-institutions/thailand/",
+          "UK: 1-3 grade C",
+          "https://www.oneadvanced.com/resources/dwp-completes-large-scale-modernisation-project-for-nations-benefit-systems/",
+          "https://www.gov.uk/government/publications/dwp-statistical-summary-policies-and-statements/housing-benefit-caseload-and-flows-statistics-methodology-statement",
+          "US: 25-75 grade C",
+          "https://kffhealthnews.org/news/article/medicaid-deloitte-run-eligibility-systems-plagued-by-errors/",
+          "https://www.macpac.gov/medicaid-101/",
+          "https://www.gao.gov/assets/gao-22-104251.pdf",
+          "global: 4-12 grade C",
+          "https://en.wikipedia.org/wiki/Model_204",
+          "https://www.microfocus.com/de-de/media/success-story/german_pension_fund_baden_wurttemberg_ss_de.pdf",
+          "https://en.wikipedia.org/wiki/International_Social_Security_Association"
         ]
       },
       "pain": {
-        "score": 3,
+        "score": 3.8,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
               "raw": null,
-              "n": 0,
+              "n": 3,
               "score": null
             },
             "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": 3.6600099999999998,
-              "n": 6,
+              "raw": 0.18,
+              "n": 100,
               "score": 3
             },
+            "app_rating_inverted": {
+              "raw": 3.3731975,
+              "n": 20,
+              "score": 4
+            },
             "failed_rate": {
-              "raw": 0.18181818181818182,
+              "raw": 0.7272727272727273,
               "n": 11,
-              "score": 1
+              "score": 5
             },
             "s3_grade": {
-              "raw": "strong",
+              "raw": "weak",
               "n": 1,
-              "score": 5
+              "score": 3
             }
           },
-          "mean": 3.0
+          "mean": 3.75
         },
         "evidence": [
-          "app_rating_inverted: raw 3.6600099999999998 (n=6) -> 3",
-          "failed_rate: raw 0.18181818181818182 (n=11) -> 1",
-          "s3_grade: raw strong (n=1) -> 5"
+          "backend_failure_share: raw 0.18 (n=100) -> 3",
+          "app_rating_inverted: raw 3.3731975 (n=20) -> 4",
+          "failed_rate: raw 0.7272727272727273 (n=11) -> 5",
+          "s3_grade: raw weak (n=1) -> 3"
         ]
       },
       "ai_fit": {
         "score": 4,
         "detail": {
-          "mean": 3.6743478260869566,
+          "mean": 3.7139130434782603,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -1364,50 +1364,50 @@
         ]
       },
       "lockin": {
-        "score": 2,
+        "score": 5.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
               "raw": null,
-              "n": 0,
+              "n": 1,
               "score": null
             },
             "noncompetitive_share": {
               "raw": null,
-              "n": 0,
+              "n": 4,
               "score": null
             },
             "replacement_duration_months": {
-              "raw": 39.5,
-              "n": 4,
-              "score": 2
+              "raw": 84.0,
+              "n": 9,
+              "score": 5
             },
             "regulator_approval": {
-              "raw": false,
+              "raw": true,
               "n": 1,
-              "score": 1
+              "score": 5
             }
           },
-          "mean": 1.5
+          "mean": 5.0
         },
         "evidence": [
-          "replacement_duration_months: raw 39.5 (n=4) -> 2",
-          "regulator_approval: raw False (n=1) -> 1"
+          "replacement_duration_months: raw 84.0 (n=9) -> 5",
+          "regulator_approval: raw True (n=1) -> 5"
         ]
       },
       "crowding": {
-        "score": 2,
+        "score": 1.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
-              "raw": 1.0,
-              "n": 1,
-              "score": 1
+              "raw": 2.0,
+              "n": 2,
+              "score": 2
             },
             "funding_per_billion": {
-              "raw": 41375693.975425385,
-              "n": 3,
-              "score": 3
+              "raw": 8008031.682540438,
+              "n": 6,
+              "score": 1
             },
             "yc_2024_plus": {
               "raw": 1.0,
@@ -1415,11 +1415,11 @@
               "score": 1
             }
           },
-          "mean": 1.6666666666666667
+          "mean": 1.3333333333333333
         },
         "evidence": [
-          "ai_native_traction: raw 1.0 (n=1) -> 1",
-          "funding_per_billion: raw 41375693.975425385 (n=3) -> 3",
+          "ai_native_traction: raw 2.0 (n=2) -> 2",
+          "funding_per_billion: raw 8008031.682540438 (n=6) -> 1",
           "yc_2024_plus: raw 1.0 (n=1) -> 1"
         ]
       }
@@ -1427,8 +1427,8 @@
   },
   {
     "slug": "core-banking",
-    "total": 60.0,
-    "total_raw": 5.0,
+    "total": 61.0,
+    "total_raw": 5.199999999999999,
     "flags": [],
     "parts": {
       "size": {
@@ -1478,7 +1478,7 @@
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 2.2,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -1530,7 +1530,7 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 3.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -1563,7 +1563,7 @@
         ]
       },
       "crowding": {
-        "score": 2,
+        "score": 2.0,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -1594,8 +1594,8 @@
   },
   {
     "slug": "courts-justice",
-    "total": 60.0,
-    "total_raw": 5.0,
+    "total": 60.5,
+    "total_raw": 5.1000000000000005,
     "flags": [],
     "parts": {
       "size": {
@@ -1651,7 +1651,7 @@
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 3.8,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -1702,7 +1702,7 @@
         ]
       },
       "lockin": {
-        "score": 4,
+        "score": 3.7,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -1735,7 +1735,7 @@
         ]
       },
       "crowding": {
-        "score": 2,
+        "score": 2.0,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -1745,7 +1745,7 @@
             },
             "funding_per_billion": {
               "raw": 5989162.235167385,
-              "n": 4,
+              "n": 3,
               "score": 1
             },
             "yc_2024_plus": {
@@ -1758,7 +1758,7 @@
         },
         "evidence": [
           "ai_native_traction: raw 2.0 (n=2) -> 2",
-          "funding_per_billion: raw 5989162.235167385 (n=4) -> 1",
+          "funding_per_billion: raw 5989162.235167385 (n=3) -> 1",
           "yc_2024_plus: raw 6.0 (n=6) -> 3"
         ]
       }
@@ -1766,8 +1766,8 @@
   },
   {
     "slug": "gov-licensing-permits",
-    "total": 60.0,
-    "total_raw": 5.0,
+    "total": 60.5,
+    "total_raw": 5.1000000000000005,
     "flags": [],
     "parts": {
       "size": {
@@ -1806,7 +1806,7 @@
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 4.4,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -1858,7 +1858,7 @@
         ]
       },
       "lockin": {
-        "score": 2,
+        "score": 2.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -1890,7 +1890,7 @@
         ]
       },
       "crowding": {
-        "score": 4,
+        "score": 4.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -1901,7 +1901,7 @@
             "funding_per_billion": {
               "raw": 118807556.48866324,
               "n": 9,
-              "score": 4
+              "score": 5
             },
             "yc_2024_plus": {
               "raw": 14.0,
@@ -1909,179 +1909,20 @@
               "score": 4
             }
           },
-          "mean": 4.0
+          "mean": 4.333333333333333
         },
         "evidence": [
           "ai_native_traction: raw 4.0 (n=4) -> 4",
-          "funding_per_billion: raw 118807556.48866324 (n=9) -> 4",
+          "funding_per_billion: raw 118807556.48866324 (n=9) -> 5",
           "yc_2024_plus: raw 14.0 (n=14) -> 4"
         ]
       }
     }
   },
   {
-    "slug": "lab-information",
-    "total": 60.0,
-    "total_raw": 5.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 3,
-        "detail": {
-          "users_midpoint": 416.0,
-          "basis": "market_value",
-          "buyers_mid": 27841.5,
-          "value_usd": {
-            "low": 880000000.0,
-            "mid": 1334915727.6772194,
-            "high": 2025000000.0
-          },
-          "midpoint": 1334915727.6772194,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "universe skip (EU Eurostat healthcare resource statistics (hospital beds)): counts other, not buyers",
-            "universe skip (SG MOH Healthcare Services Act (HCSA) Clinical Laboratory Service licence): counts other, not buyers",
-            "universe skip (TH DMSc Bureau of Laboratory Quality Standards: list of MOPH-standard and ISO 15189 medical laboratories): counts other, not buyers",
-            "universe skip (PH DOH Health Facilities and Services Regulatory Bureau (HFSRB) list of licensed clinical laboratories): counts other, not buyers",
-            "universe skip (AU Services Australia Approved Pathology Authorities / accredited pathology laboratories (NPAAC/NATA)): counts other, not buyers",
-            "total from top-down legacy spend $0.9B to $2.0B (research/market_size.csv); bottom-up $14.1B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $1,334,915,728 mid (27841.5 buyers x segment spend)",
-          "AU: 1-3 grade C",
-          "https://www.pulseit.news/australian-digital-health/sunquest-to-roll-out-68-5m-queensland-health-pathology-system-replacement/",
-          "EU: 15-45 grade C",
-          "US: 192-576 grade C",
-          "https://www.captodayonline.com/2020/ProductGuides/11-20_CAPTODAY_LIS.pdf",
-          "https://www.cms.gov/regulations-and-guidance/legislation/clia/downloads/statupda.pdf"
-        ]
-      },
-      "pain": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": 0.45,
-              "n": 20,
-              "score": 3
-            },
-            "backend_failure_share": {
-              "raw": 0.2,
-              "n": 100,
-              "score": 4
-            },
-            "app_rating_inverted": {
-              "raw": 3.627564090909091,
-              "n": 22,
-              "score": 3
-            },
-            "failed_rate": {
-              "raw": 0.2,
-              "n": 10,
-              "score": 1
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 2.8
-        },
-        "evidence": [
-          "keep_alive_share: raw 0.45 (n=20) -> 3",
-          "backend_failure_share: raw 0.2 (n=100) -> 4",
-          "app_rating_inverted: raw 3.627564090909091 (n=22) -> 3",
-          "failed_rate: raw 0.2 (n=10) -> 1",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 2.9156,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": 36.1,
-              "n": 19,
-              "score": 2
-            },
-            "noncompetitive_share": {
-              "raw": 0.1,
-              "n": 20,
-              "score": 4
-            },
-            "replacement_duration_months": {
-              "raw": 36.0,
-              "n": 5,
-              "score": 2
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 2.25
-        },
-        "evidence": [
-          "award_duration_months: raw 36.1 (n=19) -> 2",
-          "noncompetitive_share: raw 0.1 (n=20) -> 4",
-          "replacement_duration_months: raw 36.0 (n=5) -> 2",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 1.0,
-              "n": 1,
-              "score": 1
-            },
-            "funding_per_billion": {
-              "raw": 14832396.974191325,
-              "n": 4,
-              "score": 1
-            },
-            "yc_2024_plus": {
-              "raw": 7.0,
-              "n": 7,
-              "score": 3
-            }
-          },
-          "mean": 1.6666666666666667
-        },
-        "evidence": [
-          "ai_native_traction: raw 1.0 (n=1) -> 1",
-          "funding_per_billion: raw 14832396.974191325 (n=4) -> 1",
-          "yc_2024_plus: raw 7.0 (n=7) -> 3"
-        ]
-      }
-    }
-  },
-  {
     "slug": "payroll-hr",
-    "total": 60.0,
-    "total_raw": 5.0,
+    "total": 60.5,
+    "total_raw": 5.1000000000000005,
     "flags": [],
     "parts": {
       "size": {
@@ -2119,7 +1960,7 @@
         ]
       },
       "pain": {
-        "score": 3,
+        "score": 3.4,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -2171,7 +2012,7 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 3.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -2203,7 +2044,7 @@
         ]
       },
       "crowding": {
-        "score": 3,
+        "score": 3.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -2233,23 +2074,23 @@
     }
   },
   {
-    "slug": "retail-pos-merch",
-    "total": 60.0,
-    "total_raw": 5.0,
+    "slug": "lab-information",
+    "total": 58.0,
+    "total_raw": 4.6000000000000005,
     "flags": [],
     "parts": {
       "size": {
-        "score": 4,
+        "score": 3,
         "detail": {
-          "users_midpoint": 1722.0,
+          "users_midpoint": 416.0,
           "basis": "market_value",
-          "buyers_mid": 37736028.0,
+          "buyers_mid": 27841.5,
           "value_usd": {
-            "low": 3150000000.0,
-            "mid": 5264978632.435273,
-            "high": 8800000000.0
+            "low": 880000000.0,
+            "mid": 1334915727.6772194,
+            "high": 2025000000.0
           },
-          "midpoint": 5264978632.435273,
+          "midpoint": 1334915727.6772194,
           "bins": [
             100000000.0,
             1000000000.0,
@@ -2257,814 +2098,42 @@
             20000000000.0
           ],
           "notes": [
-            "total from top-down legacy spend $3.1B to $8.8B (research/market_size.csv); bottom-up $3795.9B used only for the split"
+            "universe skip (EU Eurostat healthcare resource statistics (hospital beds)): counts other, not buyers",
+            "universe skip (SG MOH Healthcare Services Act (HCSA) Clinical Laboratory Service licence): counts other, not buyers",
+            "universe skip (TH DMSc Bureau of Laboratory Quality Standards: list of MOPH-standard and ISO 15189 medical laboratories): counts other, not buyers",
+            "universe skip (PH DOH Health Facilities and Services Regulatory Bureau (HFSRB) list of licensed clinical laboratories): counts other, not buyers",
+            "universe skip (AU Services Australia Approved Pathology Authorities / accredited pathology laboratories (NPAAC/NATA)): counts other, not buyers",
+            "total from top-down legacy spend $0.9B to $2.0B (research/market_size.csv); bottom-up $14.1B used only for the split"
           ]
         },
         "evidence": [
-          "market value $5,264,978,632 mid (3.7736e+07 buyers x segment spend)",
-          "EU: 1-3 grade C",
-          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_distributive_trade_sector",
-          "global: 860-2580 grade C",
-          "https://www.itjungle.com/2014/04/01/fhs040114-story09-2/",
-          "https://www.globenewswire.com/en/news-release/2015/06/17/951521/0/en/Newly-Independent-Company-Aptos-Launches-New-Brand-Readies-Retailers-to-Engage-Customers-Differently.html"
-        ]
-      },
-      "pain": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 1,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "failed_rate": {
-              "raw": 0.75,
-              "n": 8,
-              "score": 5
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 4.0
-        },
-        "evidence": [
-          "failed_rate: raw 0.75 (n=8) -> 5",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 3.070909090909091,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 63.0,
-              "n": 6,
-              "score": 4
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 2.5
-        },
-        "evidence": [
-          "replacement_duration_months: raw 63.0 (n=6) -> 4",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 3.0,
-              "n": 3,
-              "score": 3
-            },
-            "funding_per_billion": {
-              "raw": 17397981.339504726,
-              "n": 8,
-              "score": 2
-            },
-            "yc_2024_plus": {
-              "raw": 6.0,
-              "n": 6,
-              "score": 3
-            }
-          },
-          "mean": 2.6666666666666665
-        },
-        "evidence": [
-          "ai_native_traction: raw 3.0 (n=3) -> 3",
-          "funding_per_billion: raw 17397981.339504726 (n=8) -> 2",
-          "yc_2024_plus: raw 6.0 (n=6) -> 3"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "trade-finance",
-    "total": 60.0,
-    "total_raw": 5.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 3,
-        "detail": {
-          "users_midpoint": 1052.0,
-          "basis": "market_value",
-          "buyers_mid": 5461.5,
-          "value_usd": {
-            "low": 660000000.0,
-            "mid": 1171665481.2701447,
-            "high": 2080000000.0
-          },
-          "midpoint": 1171665481.2701447,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $0.7B to $2.1B (research/market_size.csv); bottom-up $2.6B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $1,171,665,481 mid (5461.5 buyers x segment spend)",
-          "UK: 1-3 grade C",
-          "https://www.cgi.com/sites/default/files/2025-04/cgi-trade360-short-overview-brochure-2025.pdf",
-          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
-          "global: 525-1575 grade C",
-          "https://wikibin.org/articles/china-systems.html",
-          "https://www.cioapplicationseurope.com/surecomp",
-          "https://gfmag.com/award/winner-insights/finastra-anastasia-mcalpine-revamping-trade-finance/"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": 4.334216111111111,
-              "n": 6,
-              "score": 1
-            },
-            "failed_rate": {
-              "raw": 0.14285714285714285,
-              "n": 7,
-              "score": 1
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 1.6666666666666667
-        },
-        "evidence": [
-          "app_rating_inverted: raw 4.334216111111111 (n=6) -> 1",
-          "failed_rate: raw 0.14285714285714285 (n=7) -> 1",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.605909090909091,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 27.0,
-              "n": 4,
-              "score": 1
-            },
-            "regulator_approval": {
-              "raw": true,
-              "n": 1,
-              "score": 5
-            }
-          },
-          "mean": 3.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 27.0 (n=4) -> 1",
-          "regulator_approval: raw True (n=1) -> 5"
-        ]
-      },
-      "crowding": {
-        "score": 1,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 1.0,
-              "n": 1,
-              "score": 1
-            },
-            "funding_per_billion": {
-              "raw": 8534859.274986485,
-              "n": 2,
-              "score": 1
-            },
-            "yc_2024_plus": {
-              "raw": 3.0,
-              "n": 3,
-              "score": 2
-            }
-          },
-          "mean": 1.3333333333333333
-        },
-        "evidence": [
-          "ai_native_traction: raw 1.0 (n=1) -> 1",
-          "funding_per_billion: raw 8534859.274986485 (n=2) -> 1",
-          "yc_2024_plus: raw 3.0 (n=3) -> 2"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "card-payments-processing",
-    "total": 55.0,
-    "total_raw": 4.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "users_midpoint": 1556.0,
-          "basis": "market_value",
-          "buyers_mid": 12097.5,
-          "value_usd": {
-            "low": 8400000000.0,
-            "mid": 12158947322.856531,
-            "high": 17600000000.0
-          },
-          "midpoint": 12158947322.856531,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $8.4B to $17.6B (research/market_size.csv); bottom-up $26.2B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $12,158,947,323 mid (12097.5 buyers x segment spend)",
-          "EU: 3-9 grade C",
-          "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260213~590707b254.en.html",
-          "SG: 4-12 grade C",
-          "https://eservices.mas.gov.sg/fid/institution?sector=Banking",
-          "TH: 1-3 grade C",
-          "https://en.wikipedia.org/wiki/List_of_banks_in_Thailand",
-          "US: 1-3 grade C",
-          "https://www.fdic.gov/quarterly-banking-profile/quarterly-banking-profile-second-quarter-2026.pdf",
-          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
-          "global: 769-2307 grade C",
-          "https://www.mphasis.com/home/thought-leadership/blog/mainframe-based-credit-card-products.html",
-          "https://www.aciworldwide.com/about-aci/history",
-          "https://www.hps-worldwide.com/about-hps",
-          "https://vir.com.vn/opening-way-for-digital-payments-71356.html"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 3,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": 0.136,
-              "n": 250,
-              "score": 2
-            },
-            "app_rating_inverted": {
-              "raw": 4.3265536,
-              "n": 25,
-              "score": 1
-            },
-            "failed_rate": {
-              "raw": 0.3333333333333333,
-              "n": 12,
-              "score": 2
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 2.0
-        },
-        "evidence": [
-          "backend_failure_share: raw 0.136 (n=250) -> 2",
-          "app_rating_inverted: raw 4.3265536 (n=25) -> 1",
-          "failed_rate: raw 0.3333333333333333 (n=12) -> 2",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.5195833333333333,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 3,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 6,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 16.0,
-              "n": 9,
-              "score": 1
-            },
-            "regulator_approval": {
-              "raw": true,
-              "n": 1,
-              "score": 5
-            }
-          },
-          "mean": 3.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 16.0 (n=9) -> 1",
-          "regulator_approval: raw True (n=1) -> 5"
-        ]
-      },
-      "crowding": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 2.0,
-              "n": 2,
-              "score": 2
-            },
-            "funding_per_billion": {
-              "raw": 35948835.73336438,
-              "n": 13,
-              "score": 3
-            },
-            "yc_2024_plus": {
-              "raw": 6.0,
-              "n": 6,
-              "score": 3
-            }
-          },
-          "mean": 2.6666666666666665
-        },
-        "evidence": [
-          "ai_native_traction: raw 2.0 (n=2) -> 2",
-          "funding_per_billion: raw 35948835.73336438 (n=13) -> 3",
-          "yc_2024_plus: raw 6.0 (n=6) -> 3"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "erp-distribution",
-    "total": 55.0,
-    "total_raw": 4.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 3,
-        "detail": {
-          "users_midpoint": 22402.0,
-          "basis": "market_value",
-          "buyers_mid": 10444312.0,
-          "value_usd": {
-            "low": 825000000.0,
-            "mid": 1816590212.458495,
-            "high": 4000000000.0
-          },
-          "midpoint": 1816590212.458495,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $0.8B to $4.0B (research/market_size.csv); bottom-up $489.5B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $1,816,590,212 mid (1.04443e+07 buyers x segment spend)",
-          "SG: 1-3 grade C",
-          "https://data.gov.sg/datasets/d_38d62de582eb7ee2c58d1bba4cd4132d/view",
-          "US: 6200-18600 grade C",
-          "https://www.itjungle.com/2011/05/03/fhs050311-story07/",
-          "https://www.infor.com/industries/distribution",
-          "https://www.bls.gov/iag/tgs/iag42.htm",
-          "global: 5000-15000 grade C",
-          "https://www.erpresearch.com/en-us/epicor-prophet-21"
-        ]
-      },
-      "pain": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 1,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": 1.6632232638888889,
-              "n": 8,
-              "score": 5
-            },
-            "failed_rate": {
-              "raw": 0.7,
-              "n": 10,
-              "score": 5
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 4.333333333333333
-        },
-        "evidence": [
-          "app_rating_inverted: raw 1.6632232638888889 (n=8) -> 5",
-          "failed_rate: raw 0.7 (n=10) -> 5",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 3.217826086956521,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 41.0,
-              "n": 5,
-              "score": 3
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 2.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 41.0 (n=5) -> 3",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 6.0,
-              "n": 6,
-              "score": 5
-            },
-            "funding_per_billion": {
-              "raw": 117637978.30375163,
-              "n": 16,
-              "score": 4
-            },
-            "yc_2024_plus": {
-              "raw": 15.0,
-              "n": 15,
-              "score": 4
-            }
-          },
-          "mean": 4.333333333333333
-        },
-        "evidence": [
-          "ai_native_traction: raw 6.0 (n=6) -> 5",
-          "funding_per_billion: raw 117637978.30375163 (n=16) -> 4",
-          "yc_2024_plus: raw 15.0 (n=15) -> 4"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "gov-tax",
-    "total": 55.0,
-    "total_raw": 4.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "users_midpoint": 135.0,
-          "basis": "market_value",
-          "buyers_mid": 139707.5,
-          "value_usd": {
-            "low": 4500000000.0,
-            "mid": 7099295739.71954,
-            "high": 11200000000.0
-          },
-          "midpoint": 7099295739.71954,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $4.5B to $11.2B (research/market_size.csv); bottom-up $121.0B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $7,099,295,740 mid (139708 buyers x segment spend)",
+          "market value $1,334,915,728 mid (27841.5 buyers x segment spend)",
           "AU: 1-3 grade C",
-          "https://www.payrolltax.gov.au/",
-          "ID: 1-3 grade C",
-          "https://nasional.kontan.co.id/news/mengenal-perusahaan-asing-di-balik-coretax-seharga-rp-13-triliun",
-          "https://nasional.kompas.com/read/2023/09/24/00450011/pengertian-daerah-otonom-dan-jumlahnya",
-          "IN: 1-3 grade C",
-          "https://www.millenniumpost.in/business/govt-selects-infosys-as-rs-4242-crore-income-tax-filing-project-developer-336648",
-          "https://cleartax.in/s/gst-council-members",
-          "US: 4-12 grade C",
-          "https://www.everycrsreport.com/reports/IF12525.html",
-          "https://taxadmin.org/",
-          "https://www.census.gov/library/publications/2026/econ/govtorg2225.html",
-          "VN: 1-1 grade B",
-          "https://thoibaotaichinhvietnam.vn/mo-rong-ung-dung-phan-mem-quan-ly-thue-tap-trung-50013.html",
-          "https://luatvietnam.vn/tin-van-ban-moi/to-chuc-lai-20-chi-cuc-thue-khu-vuc-thanh-34-don-vi-thue-cap-tinh-186-102773-article.html",
-          "global: 60-180 grade C",
-          "https://www.fastenterprises.com/solutions/"
+          "https://www.pulseit.news/australian-digital-health/sunquest-to-roll-out-68-5m-queensland-health-pathology-system-replacement/",
+          "EU: 15-45 grade C",
+          "US: 192-576 grade C",
+          "https://www.captodayonline.com/2020/ProductGuides/11-20_CAPTODAY_LIS.pdf",
+          "https://www.cms.gov/regulations-and-guidance/legislation/clia/downloads/statupda.pdf"
         ]
       },
       "pain": {
-        "score": 3,
+        "score": 2.8,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
-              "raw": null,
-              "n": 7,
-              "score": null
+              "raw": 0.45,
+              "n": 20,
+              "score": 3
             },
             "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": 3.0453669230769234,
-              "n": 13,
+              "raw": 0.2,
+              "n": 100,
               "score": 4
             },
-            "failed_rate": {
-              "raw": 0.45454545454545453,
-              "n": 11,
-              "score": 3
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 3.3333333333333335
-        },
-        "evidence": [
-          "app_rating_inverted: raw 3.0453669230769234 (n=13) -> 4",
-          "failed_rate: raw 0.45454545454545453 (n=11) -> 3",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 3.4556,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 5,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 6,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 8,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 72.0,
-              "n": 6,
-              "score": 5
-            },
-            "regulator_approval": {
-              "raw": true,
-              "n": 1,
-              "score": 5
-            }
-          },
-          "mean": 5.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 72.0 (n=6) -> 5",
-          "regulator_approval: raw True (n=1) -> 5"
-        ]
-      },
-      "crowding": {
-        "score": 1,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 0.0,
-              "n": 0,
-              "score": 1
-            },
-            "funding_per_billion": {
-              "raw": 25199682.695155267,
-              "n": 2,
-              "score": 2
-            },
-            "yc_2024_plus": {
-              "raw": 0.0,
-              "n": 0,
-              "score": 1
-            }
-          },
-          "mean": 1.3333333333333333
-        },
-        "evidence": [
-          "ai_native_traction: raw 0.0 (n=0) -> 1",
-          "funding_per_billion: raw 25199682.695155267 (n=2) -> 2",
-          "yc_2024_plus: raw 0.0 (n=0) -> 1"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "mortgage-servicing",
-    "total": 55.0,
-    "total_raw": 4.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 3,
-        "detail": {
-          "users_midpoint": 542.0,
-          "basis": "market_value",
-          "buyers_mid": 10761.0,
-          "value_usd": {
-            "low": 1350000000.0,
-            "mid": 2062159062.730128,
-            "high": 3150000000.0
-          },
-          "midpoint": 2062159062.730128,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "universe unparsed (TH Bank of Thailand, Thailand Financial Institutions and Financial Service Providers (depositary corporations)): no buyer count (organisations)",
-            "total from top-down legacy spend $1.4B to $3.1B (research/market_size.csv); bottom-up $25.8B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $2,062,159,063 mid (10761 buyers x segment spend)",
-          "AU: 1-3 grade C",
-          "https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions",
-          "UK: 30-90 grade C",
-          "https://www.targetgroup.com/our-capabilities/servicing-solutions/",
-          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
-          "US: 40-120 grade C",
-          "https://sagent.com/about/",
-          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
-          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
-          "global: 200-600 grade C",
-          "https://www.nucleussoftware.com/about-us/"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
             "app_rating_inverted": {
-              "raw": 4.834093333333334,
-              "n": 3,
-              "score": 1
+              "raw": 3.627564090909091,
+              "n": 22,
+              "score": 3
             },
             "failed_rate": {
               "raw": 0.2,
@@ -3077,18 +2146,20 @@
               "score": 3
             }
           },
-          "mean": 1.6666666666666667
+          "mean": 2.8
         },
         "evidence": [
-          "app_rating_inverted: raw 4.834093333333334 (n=3) -> 1",
+          "keep_alive_share: raw 0.45 (n=20) -> 3",
+          "backend_failure_share: raw 0.2 (n=100) -> 4",
+          "app_rating_inverted: raw 3.627564090909091 (n=22) -> 3",
           "failed_rate: raw 0.2 (n=10) -> 1",
           "s3_grade: raw weak (n=1) -> 3"
         ]
       },
       "ai_fit": {
-        "score": 4,
+        "score": 3,
         "detail": {
-          "mean": 3.566666666666666,
+          "mean": 2.9156,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -3098,50 +2169,209 @@
         ]
       },
       "lockin": {
+        "score": 2.2,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": 36.1,
+              "n": 19,
+              "score": 2
+            },
+            "noncompetitive_share": {
+              "raw": 0.1,
+              "n": 20,
+              "score": 4
+            },
+            "replacement_duration_months": {
+              "raw": 36.0,
+              "n": 5,
+              "score": 2
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 2.25
+        },
+        "evidence": [
+          "award_duration_months: raw 36.1 (n=19) -> 2",
+          "noncompetitive_share: raw 0.1 (n=20) -> 4",
+          "replacement_duration_months: raw 36.0 (n=5) -> 2",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 2.0,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 1.0,
+              "n": 1,
+              "score": 1
+            },
+            "funding_per_billion": {
+              "raw": 14832396.974191325,
+              "n": 3,
+              "score": 2
+            },
+            "yc_2024_plus": {
+              "raw": 7.0,
+              "n": 7,
+              "score": 3
+            }
+          },
+          "mean": 2.0
+        },
+        "evidence": [
+          "ai_native_traction: raw 1.0 (n=1) -> 1",
+          "funding_per_billion: raw 14832396.974191325 (n=3) -> 2",
+          "yc_2024_plus: raw 7.0 (n=7) -> 3"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "port-terminal-operating-system",
+    "total": 58.0,
+    "total_raw": 4.6,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 2,
+        "detail": {
+          "users_midpoint": 1373.5,
+          "basis": "market_value",
+          "buyers_mid": 444.5,
+          "value_usd": {
+            "low": 270000000.0,
+            "mid": 440908153.7009721,
+            "high": 720000000.0
+          },
+          "midpoint": 440908153.7009721,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (VN Government decision listing Vietnam's seaports (Prime Minister's decision, 2022)): no buyer count (sites)",
+            "total from top-down legacy spend $0.3B to $0.7B (research/market_size.csv); bottom-up $1.3B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $440,908,154 mid (444.5 buyers x segment spend)",
+          "EU: 1-3 grade C",
+          "https://www.eca.europa.eu/lists/ecadocuments/sr16_23/sr_maritime_en.pdf",
+          "SG: 1-2 grade B",
+          "https://arxiv.org/pdf/1904.13251",
+          "https://www.mpa.gov.sg/port-marine-ops/operations/port-infrastructure/terminals",
+          "global: 685-2055 grade C",
+          "https://kaleris.com/news/northport-partners-with-kaleris-to-enhance-terminal-operating-system/",
+          "https://www.globenewswire.com/en/news-release/2012/04/05/1771866/0/en/50th-site-now-live-with-Navis-SPARCS-N4-investments-continue-in-port-automation-technologies.html",
+          "https://www.yict.com.cn/about-event/milestones.html?locale=en_US",
+          "https://tideworks.com/about-us/",
+          "https://itea4.org/organisation/total-soft-bank-ltd-1.html",
+          "https://rbs-tops.com/how-it-all-started/"
+        ]
+      },
+      "pain": {
+        "score": 2.3,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 2,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 12,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": 3.620521071428571,
+              "n": 14,
+              "score": 3
+            },
+            "failed_rate": {
+              "raw": 0.16666666666666666,
+              "n": 12,
+              "score": 1
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 2.3333333333333335
+        },
+        "evidence": [
+          "app_rating_inverted: raw 3.620521071428571 (n=14) -> 3",
+          "failed_rate: raw 0.16666666666666666 (n=12) -> 1",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
         "score": 3,
+        "detail": {
+          "mean": 2.873333333333333,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 1.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
               "raw": null,
-              "n": 0,
+              "n": 2,
               "score": null
             },
             "noncompetitive_share": {
               "raw": null,
-              "n": 1,
+              "n": 0,
               "score": null
             },
             "replacement_duration_months": {
-              "raw": 24.0,
-              "n": 3,
+              "raw": 34.0,
+              "n": 4,
               "score": 1
             },
             "regulator_approval": {
-              "raw": true,
+              "raw": false,
               "n": 1,
-              "score": 5
+              "score": 1
             }
           },
-          "mean": 3.0
+          "mean": 1.0
         },
         "evidence": [
-          "replacement_duration_months: raw 24.0 (n=3) -> 1",
-          "regulator_approval: raw True (n=1) -> 5"
+          "replacement_duration_months: raw 34.0 (n=4) -> 1",
+          "regulator_approval: raw False (n=1) -> 1"
         ]
       },
       "crowding": {
-        "score": 2,
+        "score": 1.7,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
-              "raw": 2.0,
-              "n": 2,
-              "score": 2
+              "raw": 0.0,
+              "n": 0,
+              "score": 1
             },
             "funding_per_billion": {
-              "raw": 108624016.47302732,
-              "n": 5,
-              "score": 4
+              "raw": 47628967.220784016,
+              "n": 1,
+              "score": 3
             },
             "yc_2024_plus": {
               "raw": 0.0,
@@ -3149,11 +2379,11 @@
               "score": 1
             }
           },
-          "mean": 2.3333333333333335
+          "mean": 1.6666666666666667
         },
         "evidence": [
-          "ai_native_traction: raw 2.0 (n=2) -> 2",
-          "funding_per_billion: raw 108624016.47302732 (n=5) -> 4",
+          "ai_native_traction: raw 0.0 (n=0) -> 1",
+          "funding_per_billion: raw 47628967.220784016 (n=1) -> 3",
           "yc_2024_plus: raw 0.0 (n=0) -> 1"
         ]
       }
@@ -3161,8 +2391,8 @@
   },
   {
     "slug": "pension-provident-fund-admin",
-    "total": 55.0,
-    "total_raw": 4.0,
+    "total": 57.5,
+    "total_raw": 4.499999999999999,
     "flags": [],
     "parts": {
       "size": {
@@ -3210,7 +2440,7 @@
         ]
       },
       "pain": {
-        "score": 3,
+        "score": 3.2,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -3261,7 +2491,7 @@
         ]
       },
       "lockin": {
-        "score": 4,
+        "score": 4.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -3294,7 +2524,7 @@
         ]
       },
       "crowding": {
-        "score": 2,
+        "score": 1.7,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -3324,166 +2554,9 @@
     }
   },
   {
-    "slug": "port-terminal-operating-system",
-    "total": 55.0,
-    "total_raw": 4.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 2,
-        "detail": {
-          "users_midpoint": 1373.5,
-          "basis": "market_value",
-          "buyers_mid": 444.5,
-          "value_usd": {
-            "low": 270000000.0,
-            "mid": 440908153.7009721,
-            "high": 720000000.0
-          },
-          "midpoint": 440908153.7009721,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "universe unparsed (VN Government decision listing Vietnam's seaports (Prime Minister's decision, 2022)): no buyer count (sites)",
-            "total from top-down legacy spend $0.3B to $0.7B (research/market_size.csv); bottom-up $1.3B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $440,908,154 mid (444.5 buyers x segment spend)",
-          "EU: 1-3 grade C",
-          "https://www.eca.europa.eu/lists/ecadocuments/sr16_23/sr_maritime_en.pdf",
-          "SG: 1-2 grade B",
-          "https://arxiv.org/pdf/1904.13251",
-          "https://www.mpa.gov.sg/port-marine-ops/operations/port-infrastructure/terminals",
-          "global: 685-2055 grade C",
-          "https://kaleris.com/news/northport-partners-with-kaleris-to-enhance-terminal-operating-system/",
-          "https://www.globenewswire.com/en/news-release/2012/04/05/1771866/0/en/50th-site-now-live-with-Navis-SPARCS-N4-investments-continue-in-port-automation-technologies.html",
-          "https://www.yict.com.cn/about-event/milestones.html?locale=en_US",
-          "https://tideworks.com/about-us/",
-          "https://itea4.org/organisation/total-soft-bank-ltd-1.html",
-          "https://rbs-tops.com/how-it-all-started/"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 2,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 12,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": 3.620521071428571,
-              "n": 14,
-              "score": 3
-            },
-            "failed_rate": {
-              "raw": 0.16666666666666666,
-              "n": 12,
-              "score": 1
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 2.3333333333333335
-        },
-        "evidence": [
-          "app_rating_inverted: raw 3.620521071428571 (n=14) -> 3",
-          "failed_rate: raw 0.16666666666666666 (n=12) -> 1",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 2.873333333333333,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 1,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 2,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 34.0,
-              "n": 4,
-              "score": 1
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 1.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 34.0 (n=4) -> 1",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 0.0,
-              "n": 0,
-              "score": 1
-            },
-            "funding_per_billion": {
-              "raw": 47628967.220784016,
-              "n": 1,
-              "score": 3
-            },
-            "yc_2024_plus": {
-              "raw": 0.0,
-              "n": 0,
-              "score": 1
-            }
-          },
-          "mean": 1.6666666666666667
-        },
-        "evidence": [
-          "ai_native_traction: raw 0.0 (n=0) -> 1",
-          "funding_per_billion: raw 47628967.220784016 (n=1) -> 3",
-          "yc_2024_plus: raw 0.0 (n=0) -> 1"
-        ]
-      }
-    }
-  },
-  {
     "slug": "wealth-portfolio-accounting",
-    "total": 55.0,
-    "total_raw": 4.0,
+    "total": 57.5,
+    "total_raw": 4.5,
     "flags": [],
     "parts": {
       "size": {
@@ -3525,7 +2598,7 @@
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 4.0,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -3575,7 +2648,7 @@
         ]
       },
       "lockin": {
-        "score": 4,
+        "score": 3.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -3607,7 +2680,7 @@
         ]
       },
       "crowding": {
-        "score": 3,
+        "score": 3.0,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -3637,23 +2710,23 @@
     }
   },
   {
-    "slug": "capital-markets-trading-clearing",
-    "total": 50.0,
-    "total_raw": 3.0,
+    "slug": "trade-finance",
+    "total": 57.0,
+    "total_raw": 4.3999999999999995,
     "flags": [],
     "parts": {
       "size": {
         "score": 3,
         "detail": {
-          "users_midpoint": 670.0,
+          "users_midpoint": 1052.0,
           "basis": "market_value",
-          "buyers_mid": 13391.0,
+          "buyers_mid": 5461.5,
           "value_usd": {
-            "low": 1500000000.0,
-            "mid": 2711088342.345192,
-            "high": 4900000000.0
+            "low": 660000000.0,
+            "mid": 1171665481.2701447,
+            "high": 2080000000.0
           },
-          "midpoint": 2711088342.345192,
+          "midpoint": 1171665481.2701447,
           "bins": [
             100000000.0,
             1000000000.0,
@@ -3661,53 +2734,43 @@
             20000000000.0
           ],
           "notes": [
-            "universe unparsed (EU ESMA MiFID investment firms register (registers.esma.europa.eu)): no buyer count (organisations)",
-            "universe unparsed (MY Bursa Malaysia list of Participating Organisations): no buyer count (organisations)",
-            "total from top-down legacy spend $1.5B to $4.9B (research/market_size.csv); bottom-up $10.1B used only for the split"
+            "total from top-down legacy spend $0.7B to $2.1B (research/market_size.csv); bottom-up $2.6B used only for the split"
           ]
         },
         "evidence": [
-          "market value $2,711,088,342 mid (13391 buyers x segment spend)",
-          "AU: 1-3 grade C",
-          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
-          "https://www.asx.com.au/content/dam/asx/participants/lists-of-participants/asx-trading-participant.pdf",
-          "EU: 6-18 grade C",
-          "IN: 272-816 grade C",
-          "https://www.moneylife.in/article/sebi-slaps-rs25-lakh-penalty-on-mcx-for-delay-in-disclosures-linked-to-63-moons-contract/77238.html",
-          "https://www.moneylife.in/article/nse-pulls-plug-from-its-now-trading-software-63-moons-offers-its-odin-at-50-percentage-discount/60586.html",
-          "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=30",
-          "US: 1-3 grade C",
-          "https://www.finra.org/media-center/blog/four-insights-from-finras-2026-industry-snapshot",
-          "VN: 35-105 grade C",
-          "https://fss.com.vn/en/capital-market/",
-          "https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/asia-pacific/ho-chi-minh-stock-exchange/topics/overview-of-exchange",
-          "global: 20-60 grade C",
-          "https://www.broadridge.com/about/history"
+          "market value $1,171,665,481 mid (5461.5 buyers x segment spend)",
+          "UK: 1-3 grade C",
+          "https://www.cgi.com/sites/default/files/2025-04/cgi-trade360-short-overview-brochure-2025.pdf",
+          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
+          "global: 525-1575 grade C",
+          "https://wikibin.org/articles/china-systems.html",
+          "https://www.cioapplicationseurope.com/surecomp",
+          "https://gfmag.com/award/winner-insights/finastra-anastasia-mcalpine-revamping-trade-finance/"
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 1.7,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
               "raw": null,
-              "n": 2,
+              "n": 0,
               "score": null
             },
             "backend_failure_share": {
-              "raw": 0.08,
-              "n": 50,
-              "score": 1
+              "raw": null,
+              "n": 0,
+              "score": null
             },
             "app_rating_inverted": {
-              "raw": 4.574142857142857,
-              "n": 7,
+              "raw": 4.334216111111111,
+              "n": 6,
               "score": 1
             },
             "failed_rate": {
-              "raw": 0.4166666666666667,
-              "n": 12,
-              "score": 2
+              "raw": 0.14285714285714285,
+              "n": 7,
+              "score": 1
             },
             "s3_grade": {
               "raw": "weak",
@@ -3715,19 +2778,18 @@
               "score": 3
             }
           },
-          "mean": 1.75
+          "mean": 1.6666666666666667
         },
         "evidence": [
-          "backend_failure_share: raw 0.08 (n=50) -> 1",
-          "app_rating_inverted: raw 4.574142857142857 (n=7) -> 1",
-          "failed_rate: raw 0.4166666666666667 (n=12) -> 2",
+          "app_rating_inverted: raw 4.334216111111111 (n=6) -> 1",
+          "failed_rate: raw 0.14285714285714285 (n=7) -> 1",
           "s3_grade: raw weak (n=1) -> 3"
         ]
       },
       "ai_fit": {
         "score": 4,
         "detail": {
-          "mean": 3.907200000000001,
+          "mean": 3.605909090909091,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -3737,22 +2799,22 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 3.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
               "raw": null,
-              "n": 1,
+              "n": 0,
               "score": null
             },
             "noncompetitive_share": {
               "raw": null,
-              "n": 1,
+              "n": 0,
               "score": null
             },
             "replacement_duration_months": {
-              "raw": 30.5,
-              "n": 10,
+              "raw": 27.0,
+              "n": 4,
               "score": 1
             },
             "regulator_approval": {
@@ -3764,44 +2826,364 @@
           "mean": 3.0
         },
         "evidence": [
-          "replacement_duration_months: raw 30.5 (n=10) -> 1",
+          "replacement_duration_months: raw 27.0 (n=4) -> 1",
           "regulator_approval: raw True (n=1) -> 5"
         ]
       },
       "crowding": {
-        "score": 3,
+        "score": 1.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
-              "raw": 0.0,
-              "n": 0,
+              "raw": 1.0,
+              "n": 1,
               "score": 1
             },
             "funding_per_billion": {
-              "raw": 43635612.36727023,
-              "n": 7,
+              "raw": 8534859.274986485,
+              "n": 2,
+              "score": 1
+            },
+            "yc_2024_plus": {
+              "raw": 3.0,
+              "n": 3,
+              "score": 2
+            }
+          },
+          "mean": 1.3333333333333333
+        },
+        "evidence": [
+          "ai_native_traction: raw 1.0 (n=1) -> 1",
+          "funding_per_billion: raw 8534859.274986485 (n=2) -> 1",
+          "yc_2024_plus: raw 3.0 (n=3) -> 2"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "airline-pss",
+    "total": 56.5,
+    "total_raw": 4.3,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 399.5,
+          "basis": "market_value",
+          "buyers_mid": 889.0,
+          "value_usd": {
+            "low": 2250000000.0,
+            "mid": 3018691769.6247163,
+            "high": 4050000000.0
+          },
+          "midpoint": 3018691769.6247163,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $2.2B to $4.0B (research/market_size.csv); bottom-up $28.1B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $3,018,691,770 mid (889 buyers x segment spend)",
+          "EU: 9-27 grade C",
+          "https://transport.ec.europa.eu/document/download/7d7c51df-f11d-4a0c-815c-28a5ae4264b5_en?filename=eu_air_carriers_by_country_holding_an_active_operating_licence.pdf",
+          "SG: 1-3 grade C",
+          "https://www.caas.gov.sg/industry/aircraft-operators/singapore-air-operator/air-operator-certificate/",
+          "UK: 28-28 grade C",
+          "https://www.videcom.com/videcom-airline-systems.aspx",
+          "https://www.caa.co.uk/commercial-industry/airlines/licensing/licence-types/airline-licence-holders/",
+          "US: 13-39 grade C",
+          "https://www.sec.gov/Archives/edgar/data/0001386355/000104746909002555/a2190554z10-k.htm",
+          "https://www.govinfo.gov/content/pkg/FR-2025-06-17/pdf/2025-10965.pdf",
+          "global: 273-378 grade B",
+          "https://amadeus.com/en/airlines/products/altea-passenger-service-system",
+          "https://amadeus.com/en/airlines/overview",
+          "https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
+          "https://en.wikipedia.org/wiki/Transaction_Processing_Facility",
+          "https://www.iata.org/en/about/members/airline-list/"
+        ]
+      },
+      "pain": {
+        "score": 2.0,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 6,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": 0.11578947368421053,
+              "n": 380,
+              "score": 2
+            },
+            "app_rating_inverted": {
+              "raw": 4.276398148148148,
+              "n": 27,
+              "score": 2
+            },
+            "failed_rate": {
+              "raw": 0.08333333333333333,
+              "n": 12,
+              "score": 1
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 2.0
+        },
+        "evidence": [
+          "backend_failure_share: raw 0.11578947368421053 (n=380) -> 2",
+          "app_rating_inverted: raw 4.276398148148148 (n=27) -> 2",
+          "failed_rate: raw 0.08333333333333333 (n=12) -> 1",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.6578260869565216,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3.0,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 4,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 4,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 14.5,
+              "n": 12,
+              "score": 1
+            },
+            "regulator_approval": {
+              "raw": true,
+              "n": 1,
+              "score": 5
+            }
+          },
+          "mean": 3.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 14.5 (n=12) -> 1",
+          "regulator_approval: raw True (n=1) -> 5"
+        ]
+      },
+      "crowding": {
+        "score": 1.7,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 1.0,
+              "n": 1,
+              "score": 1
+            },
+            "funding_per_billion": {
+              "raw": 13913311.85999869,
+              "n": 2,
+              "score": 2
+            },
+            "yc_2024_plus": {
+              "raw": 2.0,
+              "n": 2,
+              "score": 2
+            }
+          },
+          "mean": 1.6666666666666667
+        },
+        "evidence": [
+          "ai_native_traction: raw 1.0 (n=1) -> 1",
+          "funding_per_billion: raw 13913311.85999869 (n=2) -> 2",
+          "yc_2024_plus: raw 2.0 (n=2) -> 2"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "card-payments-processing",
+    "total": 56.5,
+    "total_raw": 4.3,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 1556.0,
+          "basis": "market_value",
+          "buyers_mid": 12097.5,
+          "value_usd": {
+            "low": 8400000000.0,
+            "mid": 12158947322.856531,
+            "high": 17600000000.0
+          },
+          "midpoint": 12158947322.856531,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $8.4B to $17.6B (research/market_size.csv); bottom-up $26.2B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $12,158,947,323 mid (12097.5 buyers x segment spend)",
+          "EU: 3-9 grade C",
+          "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260213~590707b254.en.html",
+          "SG: 4-12 grade C",
+          "https://eservices.mas.gov.sg/fid/institution?sector=Banking",
+          "TH: 1-3 grade C",
+          "https://en.wikipedia.org/wiki/List_of_banks_in_Thailand",
+          "US: 1-3 grade C",
+          "https://www.fdic.gov/quarterly-banking-profile/quarterly-banking-profile-second-quarter-2026.pdf",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 769-2307 grade C",
+          "https://www.mphasis.com/home/thought-leadership/blog/mainframe-based-credit-card-products.html",
+          "https://www.aciworldwide.com/about-aci/history",
+          "https://www.hps-worldwide.com/about-hps",
+          "https://vir.com.vn/opening-way-for-digital-payments-71356.html"
+        ]
+      },
+      "pain": {
+        "score": 2.0,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 3,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": 0.136,
+              "n": 250,
+              "score": 2
+            },
+            "app_rating_inverted": {
+              "raw": 4.3265536,
+              "n": 25,
+              "score": 1
+            },
+            "failed_rate": {
+              "raw": 0.3333333333333333,
+              "n": 12,
+              "score": 2
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 2.0
+        },
+        "evidence": [
+          "backend_failure_share: raw 0.136 (n=250) -> 2",
+          "app_rating_inverted: raw 4.3265536 (n=25) -> 1",
+          "failed_rate: raw 0.3333333333333333 (n=12) -> 2",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.5195833333333333,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3.0,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 3,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 6,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 16.0,
+              "n": 9,
+              "score": 1
+            },
+            "regulator_approval": {
+              "raw": true,
+              "n": 1,
+              "score": 5
+            }
+          },
+          "mean": 3.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 16.0 (n=9) -> 1",
+          "regulator_approval: raw True (n=1) -> 5"
+        ]
+      },
+      "crowding": {
+        "score": 2.7,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 2.0,
+              "n": 2,
+              "score": 2
+            },
+            "funding_per_billion": {
+              "raw": 35948835.73336438,
+              "n": 13,
               "score": 3
             },
             "yc_2024_plus": {
-              "raw": 18.0,
-              "n": 18,
-              "score": 4
+              "raw": 6.0,
+              "n": 6,
+              "score": 3
             }
           },
           "mean": 2.6666666666666665
         },
         "evidence": [
-          "ai_native_traction: raw 0.0 (n=0) -> 1",
-          "funding_per_billion: raw 43635612.36727023 (n=7) -> 3",
-          "yc_2024_plus: raw 18.0 (n=18) -> 4"
+          "ai_native_traction: raw 2.0 (n=2) -> 2",
+          "funding_per_billion: raw 35948835.73336438 (n=13) -> 3",
+          "yc_2024_plus: raw 6.0 (n=6) -> 3"
         ]
       }
     }
   },
   {
     "slug": "cooperative-rural-microfinance-banking",
-    "total": 50.0,
-    "total_raw": 3.0,
+    "total": 55.0,
+    "total_raw": 3.999999999999999,
     "flags": [],
     "parts": {
       "size": {
@@ -3846,7 +3228,7 @@
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 2.2,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -3897,7 +3279,7 @@
         ]
       },
       "lockin": {
-        "score": 4,
+        "score": 3.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -3929,7 +3311,7 @@
         ]
       },
       "crowding": {
-        "score": 2,
+        "score": 1.7,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -3959,23 +3341,23 @@
     }
   },
   {
-    "slug": "medical-billing-rcm",
-    "total": 50.0,
-    "total_raw": 3.0,
+    "slug": "erp-distribution",
+    "total": 55.0,
+    "total_raw": 4.000000000000001,
     "flags": [],
     "parts": {
       "size": {
         "score": 3,
         "detail": {
-          "users_midpoint": 3002.0,
+          "users_midpoint": 22402.0,
           "basis": "market_value",
-          "buyers_mid": 299653.5,
+          "buyers_mid": 10444312.0,
           "value_usd": {
-            "low": 2600000000.0,
-            "mid": 4783304297.24056,
-            "high": 8800000000.0
+            "low": 825000000.0,
+            "mid": 1816590212.458495,
+            "high": 4000000000.0
           },
-          "midpoint": 4783304297.24056,
+          "midpoint": 1816590212.458495,
           "bins": [
             100000000.0,
             1000000000.0,
@@ -3983,22 +3365,23 @@
             20000000000.0
           ],
           "notes": [
-            "universe skip (EU Eurostat healthcare resource statistics (beds). No EU hospital-count table found): counts other, not buyers",
-            "total from top-down legacy spend $2.6B to $8.8B (research/market_size.csv); bottom-up $1054.7B used only for the split"
+            "total from top-down legacy spend $0.8B to $4.0B (research/market_size.csv); bottom-up $489.5B used only for the split"
           ]
         },
         "evidence": [
-          "market value $4,783,304,297 mid (299654 buyers x segment spend)",
-          "AU: 1-3 grade C",
-          "https://www.itnews.com.au/news/qld-health-risks-patient-admin-system-failure-after-halting-overhaul-534656",
-          "https://www.pc.gov.au/ongoing/report-on-government-services/health/public-hospitals/",
-          "US: 1500-4500 grade C",
-          "https://www.sec.gov/Archives/edgar/data/1169445/000116944526000006/tbrg-20251231.htm",
-          "https://www.aha.org/statistics/fast-facts-us-hospitals"
+          "market value $1,816,590,212 mid (1.04443e+07 buyers x segment spend)",
+          "SG: 1-3 grade C",
+          "https://data.gov.sg/datasets/d_38d62de582eb7ee2c58d1bba4cd4132d/view",
+          "US: 6200-18600 grade C",
+          "https://www.itjungle.com/2011/05/03/fhs050311-story07/",
+          "https://www.infor.com/industries/distribution",
+          "https://www.bls.gov/iag/tgs/iag42.htm",
+          "global: 5000-15000 grade C",
+          "https://www.erpresearch.com/en-us/epicor-prophet-21"
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 4.3,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -4008,37 +3391,37 @@
             },
             "backend_failure_share": {
               "raw": null,
-              "n": 36,
+              "n": 0,
               "score": null
             },
             "app_rating_inverted": {
-              "raw": 3.412524666666667,
-              "n": 10,
-              "score": 4
+              "raw": 1.6632232638888889,
+              "n": 8,
+              "score": 5
             },
             "failed_rate": {
-              "raw": 0.2222222222222222,
-              "n": 9,
-              "score": 2
+              "raw": 0.7,
+              "n": 10,
+              "score": 5
             },
             "s3_grade": {
-              "raw": "strong",
+              "raw": "weak",
               "n": 1,
-              "score": 5
+              "score": 3
             }
           },
-          "mean": 3.6666666666666665
+          "mean": 4.333333333333333
         },
         "evidence": [
-          "app_rating_inverted: raw 3.412524666666667 (n=10) -> 4",
-          "failed_rate: raw 0.2222222222222222 (n=9) -> 2",
-          "s3_grade: raw strong (n=1) -> 5"
+          "app_rating_inverted: raw 1.6632232638888889 (n=8) -> 5",
+          "failed_rate: raw 0.7 (n=10) -> 5",
+          "s3_grade: raw weak (n=1) -> 3"
         ]
       },
       "ai_fit": {
-        "score": 4,
+        "score": 3,
         "detail": {
-          "mean": 3.887407407407408,
+          "mean": 3.217826086956521,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -4048,12 +3431,12 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 2.0,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
               "raw": null,
-              "n": 2,
+              "n": 0,
               "score": null
             },
             "noncompetitive_share": {
@@ -4062,8 +3445,174 @@
               "score": null
             },
             "replacement_duration_months": {
-              "raw": 60.0,
+              "raw": 41.0,
+              "n": 5,
+              "score": 3
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 2.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 41.0 (n=5) -> 3",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 4.3,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 6.0,
               "n": 6,
+              "score": 5
+            },
+            "funding_per_billion": {
+              "raw": 117637978.30375163,
+              "n": 16,
+              "score": 4
+            },
+            "yc_2024_plus": {
+              "raw": 15.0,
+              "n": 15,
+              "score": 4
+            }
+          },
+          "mean": 4.333333333333333
+        },
+        "evidence": [
+          "ai_native_traction: raw 6.0 (n=6) -> 5",
+          "funding_per_billion: raw 117637978.30375163 (n=16) -> 4",
+          "yc_2024_plus: raw 15.0 (n=15) -> 4"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "land-registry",
+    "total": 55.0,
+    "total_raw": 4.000000000000001,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 2,
+        "detail": {
+          "users_midpoint": 3065.5,
+          "basis": "market_value",
+          "buyers_mid": 3308.0,
+          "value_usd": {
+            "low": 450000000.0,
+            "mid": 725603197.3468695,
+            "high": 1170000000.0
+          },
+          "midpoint": 725603197.3468695,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $0.5B to $1.2B (research/market_size.csv); bottom-up $3.8B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $725,603,197 mid (3308 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.titlesqld.com.au/wp-content/uploads/2026/04/ltpm-part-00.pdf",
+          "https://www.arnecc.gov.au/about_us/membership/",
+          "ID: 1-1 grade B",
+          "https://id.wikipedia.org/wiki/Kantor_Pertanahan",
+          "IN: 19-36 grade B",
+          "https://en.wikipedia.org/wiki/Bhoomi_(software)",
+          "https://dolr.gov.in/en/national-generic-document-registration-system/",
+          "MY: 1-3 grade C",
+          "https://ptg.penang.gov.my/index.php/en/services/e-tanah/e-tanah-profile",
+          "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/sistem-e-tanah-diguna-sepenuhnya-di-seluruh-semenanjung-menjelang-2030",
+          "PH: 1-1 grade B",
+          "https://www.sahi.com.ph/project/land-registration-systems-lares/",
+          "SG: 1-1 grade B",
+          "https://www.nas.gov.sg/archivesonline/data/pdfdoc/1998102401.htm",
+          "US: 3031-3031 grade B",
+          "https://www.washingtontechnology.com/2006/03/tyler-stakes-out-utah-land-records-work/351549/",
+          "https://aws.amazon.com/blogs/publicsector/how-kofile-modernizes-county-records-with-ai-on-aws/",
+          "https://www.localgovhub.com/infocon",
+          "https://ir.theice.com/press/news-details/2019/Simplifile-Adds-51-New-Counties-in-17-States-to-E-Recording-Network/default.aspx",
+          "https://www.census.gov/content/dam/Census/library/publications/2025/econ/govtorg2225.pdf"
+        ]
+      },
+      "pain": {
+        "score": 2.8,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 6,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": 0.0,
+              "n": 51,
+              "score": 1
+            },
+            "app_rating_inverted": {
+              "raw": 2.796736,
+              "n": 10,
+              "score": 5
+            },
+            "failed_rate": {
+              "raw": 0.3,
+              "n": 10,
+              "score": 2
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 2.75
+        },
+        "evidence": [
+          "backend_failure_share: raw 0.0 (n=51) -> 1",
+          "app_rating_inverted: raw 2.796736 (n=10) -> 5",
+          "failed_rate: raw 0.3 (n=10) -> 2",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.8917391304347815,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 2.5,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 5,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 5,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 60.0,
+              "n": 5,
               "score": 4
             },
             "regulator_approval": {
@@ -4075,44 +3624,44 @@
           "mean": 2.5
         },
         "evidence": [
-          "replacement_duration_months: raw 60.0 (n=6) -> 4",
+          "replacement_duration_months: raw 60.0 (n=5) -> 4",
           "regulator_approval: raw False (n=1) -> 1"
         ]
       },
       "crowding": {
-        "score": 5,
+        "score": 2.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
-              "raw": 5.0,
-              "n": 5,
-              "score": 5
+              "raw": 2.0,
+              "n": 2,
+              "score": 2
             },
             "funding_per_billion": {
-              "raw": 134028688.15388647,
-              "n": 19,
-              "score": 5
+              "raw": 107910219.09261136,
+              "n": 6,
+              "score": 4
             },
             "yc_2024_plus": {
-              "raw": 31.0,
-              "n": 31,
-              "score": 5
+              "raw": 1.0,
+              "n": 1,
+              "score": 1
             }
           },
-          "mean": 5.0
+          "mean": 2.3333333333333335
         },
         "evidence": [
-          "ai_native_traction: raw 5.0 (n=5) -> 5",
-          "funding_per_billion: raw 134028688.15388647 (n=19) -> 5",
-          "yc_2024_plus: raw 31.0 (n=31) -> 5"
+          "ai_native_traction: raw 2.0 (n=2) -> 2",
+          "funding_per_billion: raw 107910219.09261136 (n=6) -> 4",
+          "yc_2024_plus: raw 1.0 (n=1) -> 1"
         ]
       }
     }
   },
   {
     "slug": "procurement-ap",
-    "total": 50.0,
-    "total_raw": 3.0,
+    "total": 54.0,
+    "total_raw": 3.8000000000000007,
     "flags": [],
     "parts": {
       "size": {
@@ -4157,7 +3706,7 @@
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 2.3,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -4207,7 +3756,7 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 2.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -4239,7 +3788,7 @@
         ]
       },
       "crowding": {
-        "score": 4,
+        "score": 4.0,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -4250,7 +3799,7 @@
             "funding_per_billion": {
               "raw": 78129369.7190654,
               "n": 12,
-              "score": 3
+              "score": 4
             },
             "yc_2024_plus": {
               "raw": 21.0,
@@ -4258,20 +3807,1106 @@
               "score": 5
             }
           },
-          "mean": 3.6666666666666665
+          "mean": 4.0
         },
         "evidence": [
           "ai_native_traction: raw 3.0 (n=3) -> 3",
-          "funding_per_billion: raw 78129369.7190654 (n=12) -> 3",
+          "funding_per_billion: raw 78129369.7190654 (n=12) -> 4",
           "yc_2024_plus: raw 21.0 (n=21) -> 5"
         ]
       }
     }
   },
   {
-    "slug": "ehr-hospital",
+    "slug": "retail-pos-merch",
+    "total": 54.0,
+    "total_raw": 3.8,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 1722.0,
+          "basis": "market_value",
+          "buyers_mid": 37736028.0,
+          "value_usd": {
+            "low": 3150000000.0,
+            "mid": 5264978632.435273,
+            "high": 8800000000.0
+          },
+          "midpoint": 5264978632.435273,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $3.1B to $8.8B (research/market_size.csv); bottom-up $3795.9B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $5,264,978,632 mid (3.7736e+07 buyers x segment spend)",
+          "EU: 1-3 grade C",
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_distributive_trade_sector",
+          "global: 860-2580 grade C",
+          "https://www.itjungle.com/2014/04/01/fhs040114-story09-2/",
+          "https://www.globenewswire.com/en/news-release/2015/06/17/951521/0/en/Newly-Independent-Company-Aptos-Launches-New-Brand-Readies-Retailers-to-Engage-Customers-Differently.html"
+        ]
+      },
+      "pain": {
+        "score": 4.0,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 1,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "failed_rate": {
+              "raw": 0.75,
+              "n": 8,
+              "score": 5
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 4.0
+        },
+        "evidence": [
+          "failed_rate: raw 0.75 (n=8) -> 5",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 3.070909090909091,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4.5,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 63.0,
+              "n": 6,
+              "score": 4
+            },
+            "regulator_approval": {
+              "raw": true,
+              "n": 1,
+              "score": 5
+            }
+          },
+          "mean": 4.5
+        },
+        "evidence": [
+          "replacement_duration_months: raw 63.0 (n=6) -> 4",
+          "regulator_approval: raw True (n=1) -> 5"
+        ]
+      },
+      "crowding": {
+        "score": 2.7,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 3.0,
+              "n": 3,
+              "score": 3
+            },
+            "funding_per_billion": {
+              "raw": 16695224.45133696,
+              "n": 7,
+              "score": 2
+            },
+            "yc_2024_plus": {
+              "raw": 6.0,
+              "n": 6,
+              "score": 3
+            }
+          },
+          "mean": 2.6666666666666665
+        },
+        "evidence": [
+          "ai_native_traction: raw 3.0 (n=3) -> 3",
+          "funding_per_billion: raw 16695224.45133696 (n=7) -> 2",
+          "yc_2024_plus: raw 6.0 (n=6) -> 3"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "mortgage-servicing",
+    "total": 52.0,
+    "total_raw": 3.3999999999999995,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 542.0,
+          "basis": "market_value",
+          "buyers_mid": 10761.0,
+          "value_usd": {
+            "low": 1350000000.0,
+            "mid": 2062159062.730128,
+            "high": 3150000000.0
+          },
+          "midpoint": 2062159062.730128,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (TH Bank of Thailand, Thailand Financial Institutions and Financial Service Providers (depositary corporations)): no buyer count (organisations)",
+            "total from top-down legacy spend $1.4B to $3.1B (research/market_size.csv); bottom-up $25.8B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $2,062,159,063 mid (10761 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions",
+          "UK: 30-90 grade C",
+          "https://www.targetgroup.com/our-capabilities/servicing-solutions/",
+          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
+          "US: 40-120 grade C",
+          "https://sagent.com/about/",
+          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 200-600 grade C",
+          "https://www.nucleussoftware.com/about-us/"
+        ]
+      },
+      "pain": {
+        "score": 1.7,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": 4.834093333333334,
+              "n": 3,
+              "score": 1
+            },
+            "failed_rate": {
+              "raw": 0.2,
+              "n": 10,
+              "score": 1
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 1.6666666666666667
+        },
+        "evidence": [
+          "app_rating_inverted: raw 4.834093333333334 (n=3) -> 1",
+          "failed_rate: raw 0.2 (n=10) -> 1",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.566666666666666,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3.0,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 1,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 24.0,
+              "n": 3,
+              "score": 1
+            },
+            "regulator_approval": {
+              "raw": true,
+              "n": 1,
+              "score": 5
+            }
+          },
+          "mean": 3.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 24.0 (n=3) -> 1",
+          "regulator_approval: raw True (n=1) -> 5"
+        ]
+      },
+      "crowding": {
+        "score": 2.3,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 2.0,
+              "n": 2,
+              "score": 2
+            },
+            "funding_per_billion": {
+              "raw": 108624016.47302732,
+              "n": 4,
+              "score": 4
+            },
+            "yc_2024_plus": {
+              "raw": 0.0,
+              "n": 0,
+              "score": 1
+            }
+          },
+          "mean": 2.3333333333333335
+        },
+        "evidence": [
+          "ai_native_traction: raw 2.0 (n=2) -> 2",
+          "funding_per_billion: raw 108624016.47302732 (n=4) -> 4",
+          "yc_2024_plus: raw 0.0 (n=0) -> 1"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "capital-markets-trading-clearing",
+    "total": 50.5,
+    "total_raw": 3.1000000000000005,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 670.0,
+          "basis": "market_value",
+          "buyers_mid": 13391.0,
+          "value_usd": {
+            "low": 1500000000.0,
+            "mid": 2711088342.345192,
+            "high": 4900000000.0
+          },
+          "midpoint": 2711088342.345192,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (EU ESMA MiFID investment firms register (registers.esma.europa.eu)): no buyer count (organisations)",
+            "universe unparsed (MY Bursa Malaysia list of Participating Organisations): no buyer count (organisations)",
+            "total from top-down legacy spend $1.5B to $4.9B (research/market_size.csv); bottom-up $10.1B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $2,711,088,342 mid (13391 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
+          "https://www.asx.com.au/content/dam/asx/participants/lists-of-participants/asx-trading-participant.pdf",
+          "EU: 6-18 grade C",
+          "IN: 272-816 grade C",
+          "https://www.moneylife.in/article/sebi-slaps-rs25-lakh-penalty-on-mcx-for-delay-in-disclosures-linked-to-63-moons-contract/77238.html",
+          "https://www.moneylife.in/article/nse-pulls-plug-from-its-now-trading-software-63-moons-offers-its-odin-at-50-percentage-discount/60586.html",
+          "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=30",
+          "US: 1-3 grade C",
+          "https://www.finra.org/media-center/blog/four-insights-from-finras-2026-industry-snapshot",
+          "VN: 35-105 grade C",
+          "https://fss.com.vn/en/capital-market/",
+          "https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/asia-pacific/ho-chi-minh-stock-exchange/topics/overview-of-exchange",
+          "global: 20-60 grade C",
+          "https://www.broadridge.com/about/history"
+        ]
+      },
+      "pain": {
+        "score": 1.8,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 2,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": 0.08,
+              "n": 50,
+              "score": 1
+            },
+            "app_rating_inverted": {
+              "raw": 4.574142857142857,
+              "n": 7,
+              "score": 1
+            },
+            "failed_rate": {
+              "raw": 0.4166666666666667,
+              "n": 12,
+              "score": 2
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 1.75
+        },
+        "evidence": [
+          "backend_failure_share: raw 0.08 (n=50) -> 1",
+          "app_rating_inverted: raw 4.574142857142857 (n=7) -> 1",
+          "failed_rate: raw 0.4166666666666667 (n=12) -> 2",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.907200000000001,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3.0,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 1,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 1,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 30.5,
+              "n": 10,
+              "score": 1
+            },
+            "regulator_approval": {
+              "raw": true,
+              "n": 1,
+              "score": 5
+            }
+          },
+          "mean": 3.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 30.5 (n=10) -> 1",
+          "regulator_approval: raw True (n=1) -> 5"
+        ]
+      },
+      "crowding": {
+        "score": 2.7,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 0.0,
+              "n": 0,
+              "score": 1
+            },
+            "funding_per_billion": {
+              "raw": 43635612.36727023,
+              "n": 7,
+              "score": 3
+            },
+            "yc_2024_plus": {
+              "raw": 18.0,
+              "n": 18,
+              "score": 4
+            }
+          },
+          "mean": 2.6666666666666665
+        },
+        "evidence": [
+          "ai_native_traction: raw 0.0 (n=0) -> 1",
+          "funding_per_billion: raw 43635612.36727023 (n=7) -> 3",
+          "yc_2024_plus: raw 18.0 (n=18) -> 4"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "warehouse-management",
+    "total": 50.5,
+    "total_raw": 3.1000000000000005,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 9100.0,
+          "basis": "market_value",
+          "buyers_mid": 491373.0,
+          "value_usd": {
+            "low": 990000000.0,
+            "mid": 1431537634.852818,
+            "high": 2070000000.0
+          },
+          "midpoint": 1431537634.852818,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $1.0B to $2.1B (research/market_size.csv); bottom-up $34.7B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $1,431,537,635 mid (491373 buyers x segment spend)",
+          "EU: 20-60 grade C",
+          "https://fr.wikipedia.org/wiki/Hardis",
+          "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sbs_ovw_act?geo=EU27_2020&nace_r2=H521&indic_sbs=ENT_NR&format=JSON&lang=en",
+          "US: 30-90 grade C",
+          "https://www.bls.gov/iag/tgs/iag493.htm",
+          "global: 4500-13500 grade C",
+          "https://www.itjungle.com/2009/12/15/fhs121509-story02/",
+          "https://www.koerber.com/en/about-us/news-and-press/highjump-acquisition"
+        ]
+      },
+      "pain": {
+        "score": 3.3,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": 0.47297297297297297,
+              "n": 74,
+              "score": 3
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "failed_rate": {
+              "raw": 0.625,
+              "n": 8,
+              "score": 4
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 3.3333333333333335
+        },
+        "evidence": [
+          "keep_alive_share: raw 0.47297297297297297 (n=74) -> 3",
+          "failed_rate: raw 0.625 (n=8) -> 4",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 2,
+        "detail": {
+          "mean": 2.4985714285714287,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 1.5,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": 12.0,
+              "n": 65,
+              "score": 1
+            },
+            "noncompetitive_share": {
+              "raw": 0.0,
+              "n": 30,
+              "score": 1
+            },
+            "replacement_duration_months": {
+              "raw": 48.0,
+              "n": 3,
+              "score": 3
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 1.5
+        },
+        "evidence": [
+          "award_duration_months: raw 12.0 (n=65) -> 1",
+          "noncompetitive_share: raw 0.0 (n=30) -> 1",
+          "replacement_duration_months: raw 48.0 (n=3) -> 3",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 3.7,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 3.0,
+              "n": 3,
+              "score": 3
+            },
+            "funding_per_billion": {
+              "raw": 182321437.90396014,
+              "n": 10,
+              "score": 5
+            },
+            "yc_2024_plus": {
+              "raw": 8.0,
+              "n": 8,
+              "score": 3
+            }
+          },
+          "mean": 3.6666666666666665
+        },
+        "evidence": [
+          "ai_native_traction: raw 3.0 (n=3) -> 3",
+          "funding_per_billion: raw 182321437.90396014 (n=10) -> 5",
+          "yc_2024_plus: raw 8.0 (n=8) -> 3"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "financial-close-gl",
+    "total": 46.5,
+    "total_raw": 2.3000000000000007,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 5050034.0,
+          "basis": "market_value",
+          "buyers_mid": 116210.0,
+          "value_usd": {
+            "low": 3000000000.0,
+            "mid": 5796550698.475776,
+            "high": 11200000000.0
+          },
+          "midpoint": 5796550698.475776,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $3.0B to $11.2B (research/market_size.csv); bottom-up $45.6B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $5,796,550,698 mid (116210 buyers x segment spend)",
+          "EU: 5-15 grade C",
+          "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251209-2",
+          "SG: 10-30 grade C",
+          "https://www.sid.org.sg/Web/Web/About/News-and-Press/News_2025/2025-02-06_The_Edge_Revitalising_SGX.aspx",
+          "TH: 2-6 grade C",
+          "https://en.wikipedia.org/wiki/Stock_Exchange_of_Thailand",
+          "global: 2525000-7575000 grade C",
+          "https://en.wikipedia.org/wiki/JD_Edwards",
+          "https://en.wikipedia.org/wiki/Hyperion_Solutions",
+          "https://www.infor.com/solutions/erp/sunsystems",
+          "https://tallysolutions.com/about-tally/"
+        ]
+      },
+      "pain": {
+        "score": 2.3,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": 0.4166666666666667,
+              "n": 12,
+              "score": 2
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": null,
+              "n": 0,
+              "score": null
+            },
+            "failed_rate": {
+              "raw": 0.3,
+              "n": 10,
+              "score": 2
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 2.3333333333333335
+        },
+        "evidence": [
+          "keep_alive_share: raw 0.4166666666666667 (n=12) -> 2",
+          "failed_rate: raw 0.3 (n=10) -> 2",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.925652173913043,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3.0,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 6,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 5,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 73.0,
+              "n": 4,
+              "score": 5
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 3.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 73.0 (n=4) -> 5",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 5.0,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 5.0,
+              "n": 5,
+              "score": 5
+            },
+            "funding_per_billion": {
+              "raw": 126903056.36305894,
+              "n": 18,
+              "score": 5
+            },
+            "yc_2024_plus": {
+              "raw": 20.0,
+              "n": 20,
+              "score": 5
+            }
+          },
+          "mean": 5.0
+        },
+        "evidence": [
+          "ai_native_traction: raw 5.0 (n=5) -> 5",
+          "funding_per_billion: raw 126903056.36305894 (n=18) -> 5",
+          "yc_2024_plus: raw 20.0 (n=20) -> 5"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "loan-origination-servicing",
+    "total": 45.5,
+    "total_raw": 2.1000000000000005,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 516.0,
+          "basis": "market_value",
+          "buyers_mid": 18287.0,
+          "value_usd": {
+            "low": 3500000000.0,
+            "mid": 5191338940.966964,
+            "high": 7700000000.0
+          },
+          "midpoint": 5191338940.966964,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "total from top-down legacy spend $3.5B to $7.7B (research/market_size.csv); bottom-up $16.5B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $5,191,338,941 mid (18287 buyers x segment spend)",
+          "US: 40-120 grade C",
+          "https://sagent.com/about/",
+          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 218-654 grade C",
+          "https://sourceforge.net/software/product/Finastra-Loan-IQ/",
+          "https://www.appsruntheworld.com/customers-database/products/view/fis-commercial-loan-servicing-formerly-acbs",
+          "https://www.nucleussoftware.com/our-news/nucleus-software-marks-30-years-bse-listing/"
+        ]
+      },
+      "pain": {
+        "score": 2.8,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": null,
+              "n": 2,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": 0.46,
+              "n": 50,
+              "score": 5
+            },
+            "app_rating_inverted": {
+              "raw": 4.86552,
+              "n": 3,
+              "score": 1
+            },
+            "failed_rate": {
+              "raw": 0.3,
+              "n": 10,
+              "score": 2
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 2.75
+        },
+        "evidence": [
+          "backend_failure_share: raw 0.46 (n=50) -> 5",
+          "app_rating_inverted: raw 4.86552 (n=3) -> 1",
+          "failed_rate: raw 0.3 (n=10) -> 2",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.625555555555556,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4.0,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": null,
+              "n": 2,
+              "score": null
+            },
+            "noncompetitive_share": {
+              "raw": null,
+              "n": 2,
+              "score": null
+            },
+            "replacement_duration_months": {
+              "raw": 40.0,
+              "n": 5,
+              "score": 3
+            },
+            "regulator_approval": {
+              "raw": true,
+              "n": 1,
+              "score": 5
+            }
+          },
+          "mean": 4.0
+        },
+        "evidence": [
+          "replacement_duration_months: raw 40.0 (n=5) -> 3",
+          "regulator_approval: raw True (n=1) -> 5"
+        ]
+      },
+      "crowding": {
+        "score": 4.7,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 8.0,
+              "n": 8,
+              "score": 5
+            },
+            "funding_per_billion": {
+              "raw": 105926429.81958196,
+              "n": 16,
+              "score": 4
+            },
+            "yc_2024_plus": {
+              "raw": 19.0,
+              "n": 19,
+              "score": 5
+            }
+          },
+          "mean": 4.666666666666667
+        },
+        "evidence": [
+          "ai_native_traction: raw 8.0 (n=8) -> 5",
+          "funding_per_billion: raw 105926429.81958196 (n=16) -> 4",
+          "yc_2024_plus: raw 19.0 (n=19) -> 5"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "field-service-maintenance",
     "total": 45.0,
     "total_raw": 2.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 27608.0,
+          "basis": "market_value",
+          "buyers_mid": 2893037.0,
+          "value_usd": {
+            "low": 1750000000.0,
+            "mid": 2474873734.1529164,
+            "high": 3500000000.0
+          },
+          "midpoint": 2474873734.1529164,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (US US Census Bureau, 2022 Economic Census Sector 31-33 Manufacturing (EC2231BASIC) / County Business Patterns): counts other, not buyers",
+            "universe skip (ID BPS Statistik Industri Manufaktur (Survei Tahunan Perusahaan Industri Manufaktur, large and medium establishments / IBS)): counts other, not buyers",
+            "universe skip (AU ABS Counts of Australian Businesses, including Entries and Exits (ANZSIC Division C Manufacturing)): counts other, not buyers",
+            "total from top-down legacy spend $1.8B to $3.5B (research/market_size.csv); bottom-up $33.6B used only for the split"
+          ]
+        },
+        "evidence": [
+          "market value $2,474,873,734 mid (2.89304e+06 buyers x segment spend)",
+          "EU: 5-15 grade C",
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_the_manufacturing_sector",
+          "SG: 7-21 grade C",
+          "https://www.edb.gov.sg/content/dam/edb-en/about-edb/media-releases/manufacturing-statistics/Census_of_Manufacturing_Activities/EDB%20Annual%20Mftg%20Performance%202024.pdf",
+          "US: 7092-21276 grade C",
+          "https://en.wikipedia.org/wiki/Maximo_(software)",
+          "global: 6700-20100 grade C",
+          "https://www.sec.gov/Archives/edgar/data/0000938481/000119312506001715/dex991.htm"
+        ]
+      },
+      "pain": {
+        "score": 3.5,
+        "detail": {
+          "sub_scores": {
+            "keep_alive_share": {
+              "raw": 0.6176470588235294,
+              "n": 34,
+              "score": 4
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 6,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": 4.2465325,
+              "n": 4,
+              "score": 2
+            },
+            "failed_rate": {
+              "raw": 0.6666666666666666,
+              "n": 9,
+              "score": 5
+            },
+            "s3_grade": {
+              "raw": "weak",
+              "n": 1,
+              "score": 3
+            }
+          },
+          "mean": 3.5
+        },
+        "evidence": [
+          "keep_alive_share: raw 0.6176470588235294 (n=34) -> 4",
+          "app_rating_inverted: raw 4.2465325 (n=4) -> 2",
+          "failed_rate: raw 0.6666666666666666 (n=9) -> 5",
+          "s3_grade: raw weak (n=1) -> 3"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 2.9840909090909093,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 2.5,
+        "detail": {
+          "sub_scores": {
+            "award_duration_months": {
+              "raw": 12.0,
+              "n": 43,
+              "score": 1
+            },
+            "noncompetitive_share": {
+              "raw": 0.05357142857142857,
+              "n": 56,
+              "score": 3
+            },
+            "replacement_duration_months": {
+              "raw": 94.0,
+              "n": 7,
+              "score": 5
+            },
+            "regulator_approval": {
+              "raw": false,
+              "n": 1,
+              "score": 1
+            }
+          },
+          "mean": 2.5
+        },
+        "evidence": [
+          "award_duration_months: raw 12.0 (n=43) -> 1",
+          "noncompetitive_share: raw 0.05357142857142857 (n=56) -> 3",
+          "replacement_duration_months: raw 94.0 (n=7) -> 5",
+          "regulator_approval: raw False (n=1) -> 1"
+        ]
+      },
+      "crowding": {
+        "score": 5.0,
+        "detail": {
+          "sub_scores": {
+            "ai_native_traction": {
+              "raw": 5.0,
+              "n": 5,
+              "score": 5
+            },
+            "funding_per_billion": {
+              "raw": 209081373.67141658,
+              "n": 15,
+              "score": 5
+            },
+            "yc_2024_plus": {
+              "raw": 34.0,
+              "n": 34,
+              "score": 5
+            }
+          },
+          "mean": 5.0
+        },
+        "evidence": [
+          "ai_native_traction: raw 5.0 (n=5) -> 5",
+          "funding_per_billion: raw 209081373.67141658 (n=15) -> 5",
+          "yc_2024_plus: raw 34.0 (n=34) -> 5"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "ehr-hospital",
+    "total": 43.0,
+    "total_raw": 1.6000000000000005,
     "flags": [],
     "parts": {
       "size": {
@@ -4311,7 +4946,7 @@
         ]
       },
       "pain": {
-        "score": 3,
+        "score": 2.8,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -4363,7 +4998,7 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 3.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -4382,22 +5017,22 @@
               "score": 5
             },
             "regulator_approval": {
-              "raw": false,
+              "raw": true,
               "n": 1,
-              "score": 1
+              "score": 5
             }
           },
-          "mean": 2.5
+          "mean": 3.5
         },
         "evidence": [
           "award_duration_months: raw 48.0 (n=14) -> 3",
           "noncompetitive_share: raw 0.0 (n=17) -> 1",
           "replacement_duration_months: raw 104.0 (n=5) -> 5",
-          "regulator_approval: raw False (n=1) -> 1"
+          "regulator_approval: raw True (n=1) -> 5"
         ]
       },
       "crowding": {
-        "score": 5,
+        "score": 4.7,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -4407,7 +5042,7 @@
             },
             "funding_per_billion": {
               "raw": 156142942.39837757,
-              "n": 17,
+              "n": 16,
               "score": 5
             },
             "yc_2024_plus": {
@@ -4420,30 +5055,30 @@
         },
         "evidence": [
           "ai_native_traction: raw 5.0 (n=5) -> 5",
-          "funding_per_billion: raw 156142942.39837757 (n=17) -> 5",
+          "funding_per_billion: raw 156142942.39837757 (n=16) -> 5",
           "yc_2024_plus: raw 11.0 (n=11) -> 4"
         ]
       }
     }
   },
   {
-    "slug": "field-service-maintenance",
-    "total": 45.0,
-    "total_raw": 2.0,
+    "slug": "medical-billing-rcm",
+    "total": 42.5,
+    "total_raw": 1.4999999999999991,
     "flags": [],
     "parts": {
       "size": {
         "score": 3,
         "detail": {
-          "users_midpoint": 27608.0,
+          "users_midpoint": 3002.0,
           "basis": "market_value",
-          "buyers_mid": 2893037.0,
+          "buyers_mid": 299653.5,
           "value_usd": {
-            "low": 1750000000.0,
-            "mid": 2474873734.1529164,
-            "high": 3500000000.0
+            "low": 2600000000.0,
+            "mid": 4783304297.24056,
+            "high": 8800000000.0
           },
-          "midpoint": 2474873734.1529164,
+          "midpoint": 4783304297.24056,
           "bins": [
             100000000.0,
             1000000000.0,
@@ -4451,67 +5086,62 @@
             20000000000.0
           ],
           "notes": [
-            "universe skip (US US Census Bureau, 2022 Economic Census Sector 31-33 Manufacturing (EC2231BASIC) / County Business Patterns): counts other, not buyers",
-            "universe skip (ID BPS Statistik Industri Manufaktur (Survei Tahunan Perusahaan Industri Manufaktur, large and medium establishments / IBS)): counts other, not buyers",
-            "universe skip (AU ABS Counts of Australian Businesses, including Entries and Exits (ANZSIC Division C Manufacturing)): counts other, not buyers",
-            "total from top-down legacy spend $1.8B to $3.5B (research/market_size.csv); bottom-up $33.6B used only for the split"
+            "universe skip (EU Eurostat healthcare resource statistics (beds). No EU hospital-count table found): counts other, not buyers",
+            "total from top-down legacy spend $2.6B to $8.8B (research/market_size.csv); bottom-up $1054.7B used only for the split"
           ]
         },
         "evidence": [
-          "market value $2,474,873,734 mid (2.89304e+06 buyers x segment spend)",
-          "EU: 5-15 grade C",
-          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_the_manufacturing_sector",
-          "SG: 7-21 grade C",
-          "https://www.edb.gov.sg/content/dam/edb-en/about-edb/media-releases/manufacturing-statistics/Census_of_Manufacturing_Activities/EDB%20Annual%20Mftg%20Performance%202024.pdf",
-          "US: 7092-21276 grade C",
-          "https://en.wikipedia.org/wiki/Maximo_(software)",
-          "global: 6700-20100 grade C",
-          "https://www.sec.gov/Archives/edgar/data/0000938481/000119312506001715/dex991.htm"
+          "market value $4,783,304,297 mid (299654 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.itnews.com.au/news/qld-health-risks-patient-admin-system-failure-after-halting-overhaul-534656",
+          "https://www.pc.gov.au/ongoing/report-on-government-services/health/public-hospitals/",
+          "US: 1500-4500 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1169445/000116944526000006/tbrg-20251231.htm",
+          "https://www.aha.org/statistics/fast-facts-us-hospitals"
         ]
       },
       "pain": {
-        "score": 4,
+        "score": 3.7,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
-              "raw": 0.6176470588235294,
-              "n": 34,
+              "raw": null,
+              "n": 1,
+              "score": null
+            },
+            "backend_failure_share": {
+              "raw": null,
+              "n": 36,
+              "score": null
+            },
+            "app_rating_inverted": {
+              "raw": 3.412524666666667,
+              "n": 10,
               "score": 4
             },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 6,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": 4.2465325,
-              "n": 4,
-              "score": 2
-            },
             "failed_rate": {
-              "raw": 0.6666666666666666,
+              "raw": 0.2222222222222222,
               "n": 9,
-              "score": 5
+              "score": 2
             },
             "s3_grade": {
-              "raw": "weak",
+              "raw": "strong",
               "n": 1,
-              "score": 3
+              "score": 5
             }
           },
-          "mean": 3.5
+          "mean": 3.6666666666666665
         },
         "evidence": [
-          "keep_alive_share: raw 0.6176470588235294 (n=34) -> 4",
-          "app_rating_inverted: raw 4.2465325 (n=4) -> 2",
-          "failed_rate: raw 0.6666666666666666 (n=9) -> 5",
-          "s3_grade: raw weak (n=1) -> 3"
+          "app_rating_inverted: raw 3.412524666666667 (n=10) -> 4",
+          "failed_rate: raw 0.2222222222222222 (n=9) -> 2",
+          "s3_grade: raw strong (n=1) -> 5"
         ]
       },
       "ai_fit": {
-        "score": 3,
+        "score": 4,
         "detail": {
-          "mean": 2.9840909090909093,
+          "mean": 3.887407407407408,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -4521,345 +5151,22 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 4.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
-              "raw": 12.0,
-              "n": 43,
-              "score": 1
+              "raw": null,
+              "n": 2,
+              "score": null
             },
             "noncompetitive_share": {
-              "raw": 0.05357142857142857,
-              "n": 56,
-              "score": 3
-            },
-            "replacement_duration_months": {
-              "raw": 94.0,
-              "n": 7,
-              "score": 5
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 2.5
-        },
-        "evidence": [
-          "award_duration_months: raw 12.0 (n=43) -> 1",
-          "noncompetitive_share: raw 0.05357142857142857 (n=56) -> 3",
-          "replacement_duration_months: raw 94.0 (n=7) -> 5",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 5.0,
-              "n": 5,
-              "score": 5
-            },
-            "funding_per_billion": {
-              "raw": 209081373.67141658,
-              "n": 15,
-              "score": 5
-            },
-            "yc_2024_plus": {
-              "raw": 34.0,
-              "n": 34,
-              "score": 5
-            }
-          },
-          "mean": 5.0
-        },
-        "evidence": [
-          "ai_native_traction: raw 5.0 (n=5) -> 5",
-          "funding_per_billion: raw 209081373.67141658 (n=15) -> 5",
-          "yc_2024_plus: raw 34.0 (n=34) -> 5"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "financial-close-gl",
-    "total": 45.0,
-    "total_raw": 2.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "users_midpoint": 5050034.0,
-          "basis": "market_value",
-          "buyers_mid": 116210.0,
-          "value_usd": {
-            "low": 3000000000.0,
-            "mid": 5796550698.475776,
-            "high": 11200000000.0
-          },
-          "midpoint": 5796550698.475776,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $3.0B to $11.2B (research/market_size.csv); bottom-up $45.6B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $5,796,550,698 mid (116210 buyers x segment spend)",
-          "EU: 5-15 grade C",
-          "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251209-2",
-          "SG: 10-30 grade C",
-          "https://www.sid.org.sg/Web/Web/About/News-and-Press/News_2025/2025-02-06_The_Edge_Revitalising_SGX.aspx",
-          "TH: 2-6 grade C",
-          "https://en.wikipedia.org/wiki/Stock_Exchange_of_Thailand",
-          "global: 2525000-7575000 grade C",
-          "https://en.wikipedia.org/wiki/JD_Edwards",
-          "https://en.wikipedia.org/wiki/Hyperion_Solutions",
-          "https://www.infor.com/solutions/erp/sunsystems",
-          "https://tallysolutions.com/about-tally/"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": 0.4166666666666667,
-              "n": 12,
-              "score": 2
-            },
-            "backend_failure_share": {
               "raw": null,
               "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "failed_rate": {
-              "raw": 0.3,
-              "n": 10,
-              "score": 2
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 2.3333333333333335
-        },
-        "evidence": [
-          "keep_alive_share: raw 0.4166666666666667 (n=12) -> 2",
-          "failed_rate: raw 0.3 (n=10) -> 2",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.925652173913043,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 6,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 5,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 73.0,
-              "n": 4,
-              "score": 5
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 3.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 73.0 (n=4) -> 5",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 5.0,
-              "n": 5,
-              "score": 5
-            },
-            "funding_per_billion": {
-              "raw": 126903056.36305894,
-              "n": 18,
-              "score": 5
-            },
-            "yc_2024_plus": {
-              "raw": 20.0,
-              "n": 20,
-              "score": 5
-            }
-          },
-          "mean": 5.0
-        },
-        "evidence": [
-          "ai_native_traction: raw 5.0 (n=5) -> 5",
-          "funding_per_billion: raw 126903056.36305894 (n=18) -> 5",
-          "yc_2024_plus: raw 20.0 (n=20) -> 5"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "land-registry",
-    "total": 45.0,
-    "total_raw": 2.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 2,
-        "detail": {
-          "users_midpoint": 3065.5,
-          "basis": "market_value",
-          "buyers_mid": 3308.0,
-          "value_usd": {
-            "low": 450000000.0,
-            "mid": 725603197.3468695,
-            "high": 1170000000.0
-          },
-          "midpoint": 725603197.3468695,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $0.5B to $1.2B (research/market_size.csv); bottom-up $3.8B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $725,603,197 mid (3308 buyers x segment spend)",
-          "AU: 1-3 grade C",
-          "https://www.titlesqld.com.au/wp-content/uploads/2026/04/ltpm-part-00.pdf",
-          "https://www.arnecc.gov.au/about_us/membership/",
-          "ID: 1-1 grade B",
-          "https://id.wikipedia.org/wiki/Kantor_Pertanahan",
-          "IN: 19-36 grade B",
-          "https://en.wikipedia.org/wiki/Bhoomi_(software)",
-          "https://dolr.gov.in/en/national-generic-document-registration-system/",
-          "MY: 1-3 grade C",
-          "https://ptg.penang.gov.my/index.php/en/services/e-tanah/e-tanah-profile",
-          "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/sistem-e-tanah-diguna-sepenuhnya-di-seluruh-semenanjung-menjelang-2030",
-          "PH: 1-1 grade B",
-          "https://www.sahi.com.ph/project/land-registration-systems-lares/",
-          "SG: 1-1 grade B",
-          "https://www.nas.gov.sg/archivesonline/data/pdfdoc/1998102401.htm",
-          "US: 3031-3031 grade B",
-          "https://www.washingtontechnology.com/2006/03/tyler-stakes-out-utah-land-records-work/351549/",
-          "https://aws.amazon.com/blogs/publicsector/how-kofile-modernizes-county-records-with-ai-on-aws/",
-          "https://www.localgovhub.com/infocon",
-          "https://ir.theice.com/press/news-details/2019/Simplifile-Adds-51-New-Counties-in-17-States-to-E-Recording-Network/default.aspx",
-          "https://www.census.gov/content/dam/Census/library/publications/2025/econ/govtorg2225.pdf"
-        ]
-      },
-      "pain": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 6,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": 0.0,
-              "n": 51,
-              "score": 1
-            },
-            "app_rating_inverted": {
-              "raw": 2.796736,
-              "n": 10,
-              "score": 5
-            },
-            "failed_rate": {
-              "raw": 0.3,
-              "n": 10,
-              "score": 2
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 2.75
-        },
-        "evidence": [
-          "backend_failure_share: raw 0.0 (n=51) -> 1",
-          "app_rating_inverted: raw 2.796736 (n=10) -> 5",
-          "failed_rate: raw 0.3 (n=10) -> 2",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.8917391304347815,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 5,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 5,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 5,
               "score": null
             },
             "replacement_duration_months": {
               "raw": 60.0,
-              "n": 5,
+              "n": 6,
               "score": 4
             },
             "regulator_approval": {
@@ -4871,351 +5178,44 @@
           "mean": 4.5
         },
         "evidence": [
-          "replacement_duration_months: raw 60.0 (n=5) -> 4",
+          "replacement_duration_months: raw 60.0 (n=6) -> 4",
           "regulator_approval: raw True (n=1) -> 5"
         ]
       },
       "crowding": {
-        "score": 2,
+        "score": 4.7,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
-              "raw": 2.0,
-              "n": 2,
-              "score": 2
-            },
-            "funding_per_billion": {
-              "raw": 107910219.09261136,
-              "n": 6,
-              "score": 4
-            },
-            "yc_2024_plus": {
-              "raw": 1.0,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 2.3333333333333335
-        },
-        "evidence": [
-          "ai_native_traction: raw 2.0 (n=2) -> 2",
-          "funding_per_billion: raw 107910219.09261136 (n=6) -> 4",
-          "yc_2024_plus: raw 1.0 (n=1) -> 1"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "loan-origination-servicing",
-    "total": 45.0,
-    "total_raw": 2.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "users_midpoint": 516.0,
-          "basis": "market_value",
-          "buyers_mid": 18287.0,
-          "value_usd": {
-            "low": 3500000000.0,
-            "mid": 5191338940.966964,
-            "high": 7700000000.0
-          },
-          "midpoint": 5191338940.966964,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $3.5B to $7.7B (research/market_size.csv); bottom-up $16.5B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $5,191,338,941 mid (18287 buyers x segment spend)",
-          "US: 40-120 grade C",
-          "https://sagent.com/about/",
-          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
-          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
-          "global: 218-654 grade C",
-          "https://sourceforge.net/software/product/Finastra-Loan-IQ/",
-          "https://www.appsruntheworld.com/customers-database/products/view/fis-commercial-loan-servicing-formerly-acbs",
-          "https://www.nucleussoftware.com/our-news/nucleus-software-marks-30-years-bse-listing/"
-        ]
-      },
-      "pain": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": null,
-              "n": 2,
-              "score": null
-            },
-            "backend_failure_share": {
-              "raw": 0.46,
-              "n": 50,
-              "score": 5
-            },
-            "app_rating_inverted": {
-              "raw": 4.86552,
-              "n": 3,
-              "score": 1
-            },
-            "failed_rate": {
-              "raw": 0.3,
-              "n": 10,
-              "score": 2
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 2.75
-        },
-        "evidence": [
-          "backend_failure_share: raw 0.46 (n=50) -> 5",
-          "app_rating_inverted: raw 4.86552 (n=3) -> 1",
-          "failed_rate: raw 0.3 (n=10) -> 2",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.625555555555556,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": null,
-              "n": 2,
-              "score": null
-            },
-            "noncompetitive_share": {
-              "raw": null,
-              "n": 2,
-              "score": null
-            },
-            "replacement_duration_months": {
-              "raw": 40.0,
+              "raw": 5.0,
               "n": 5,
-              "score": 3
-            },
-            "regulator_approval": {
-              "raw": true,
-              "n": 1,
-              "score": 5
-            }
-          },
-          "mean": 4.0
-        },
-        "evidence": [
-          "replacement_duration_months: raw 40.0 (n=5) -> 3",
-          "regulator_approval: raw True (n=1) -> 5"
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 8.0,
-              "n": 8,
               "score": 5
             },
             "funding_per_billion": {
-              "raw": 105926429.81958196,
-              "n": 17,
+              "raw": 83226986.0459557,
+              "n": 18,
               "score": 4
             },
             "yc_2024_plus": {
-              "raw": 19.0,
-              "n": 19,
+              "raw": 31.0,
+              "n": 31,
               "score": 5
             }
           },
           "mean": 4.666666666666667
         },
         "evidence": [
-          "ai_native_traction: raw 8.0 (n=8) -> 5",
-          "funding_per_billion: raw 105926429.81958196 (n=17) -> 4",
-          "yc_2024_plus: raw 19.0 (n=19) -> 5"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "warehouse-management",
-    "total": 45.0,
-    "total_raw": 2.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 3,
-        "detail": {
-          "users_midpoint": 9100.0,
-          "basis": "market_value",
-          "buyers_mid": 491373.0,
-          "value_usd": {
-            "low": 990000000.0,
-            "mid": 1431537634.852818,
-            "high": 2070000000.0
-          },
-          "midpoint": 1431537634.852818,
-          "bins": [
-            100000000.0,
-            1000000000.0,
-            5000000000.0,
-            20000000000.0
-          ],
-          "notes": [
-            "total from top-down legacy spend $1.0B to $2.1B (research/market_size.csv); bottom-up $34.7B used only for the split"
-          ]
-        },
-        "evidence": [
-          "market value $1,431,537,635 mid (491373 buyers x segment spend)",
-          "EU: 20-60 grade C",
-          "https://fr.wikipedia.org/wiki/Hardis",
-          "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sbs_ovw_act?geo=EU27_2020&nace_r2=H521&indic_sbs=ENT_NR&format=JSON&lang=en",
-          "US: 30-90 grade C",
-          "https://www.bls.gov/iag/tgs/iag493.htm",
-          "global: 4500-13500 grade C",
-          "https://www.itjungle.com/2009/12/15/fhs121509-story02/",
-          "https://www.koerber.com/en/about-us/news-and-press/highjump-acquisition"
-        ]
-      },
-      "pain": {
-        "score": 3,
-        "detail": {
-          "sub_scores": {
-            "keep_alive_share": {
-              "raw": 0.47297297297297297,
-              "n": 74,
-              "score": 3
-            },
-            "backend_failure_share": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "app_rating_inverted": {
-              "raw": null,
-              "n": 0,
-              "score": null
-            },
-            "failed_rate": {
-              "raw": 0.625,
-              "n": 8,
-              "score": 4
-            },
-            "s3_grade": {
-              "raw": "weak",
-              "n": 1,
-              "score": 3
-            }
-          },
-          "mean": 3.3333333333333335
-        },
-        "evidence": [
-          "keep_alive_share: raw 0.47297297297297297 (n=74) -> 3",
-          "failed_rate: raw 0.625 (n=8) -> 4",
-          "s3_grade: raw weak (n=1) -> 3"
-        ]
-      },
-      "ai_fit": {
-        "score": 2,
-        "detail": {
-          "mean": 2.4985714285714287,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 2,
-        "detail": {
-          "sub_scores": {
-            "award_duration_months": {
-              "raw": 12.0,
-              "n": 65,
-              "score": 1
-            },
-            "noncompetitive_share": {
-              "raw": 0.0,
-              "n": 30,
-              "score": 1
-            },
-            "replacement_duration_months": {
-              "raw": 48.0,
-              "n": 3,
-              "score": 3
-            },
-            "regulator_approval": {
-              "raw": false,
-              "n": 1,
-              "score": 1
-            }
-          },
-          "mean": 1.5
-        },
-        "evidence": [
-          "award_duration_months: raw 12.0 (n=65) -> 1",
-          "noncompetitive_share: raw 0.0 (n=30) -> 1",
-          "replacement_duration_months: raw 48.0 (n=3) -> 3",
-          "regulator_approval: raw False (n=1) -> 1"
-        ]
-      },
-      "crowding": {
-        "score": 4,
-        "detail": {
-          "sub_scores": {
-            "ai_native_traction": {
-              "raw": 3.0,
-              "n": 3,
-              "score": 3
-            },
-            "funding_per_billion": {
-              "raw": 182321437.90396014,
-              "n": 10,
-              "score": 5
-            },
-            "yc_2024_plus": {
-              "raw": 8.0,
-              "n": 8,
-              "score": 3
-            }
-          },
-          "mean": 3.6666666666666665
-        },
-        "evidence": [
-          "ai_native_traction: raw 3.0 (n=3) -> 3",
-          "funding_per_billion: raw 182321437.90396014 (n=10) -> 5",
-          "yc_2024_plus: raw 8.0 (n=8) -> 3"
+          "ai_native_traction: raw 5.0 (n=5) -> 5",
+          "funding_per_billion: raw 83226986.0459557 (n=18) -> 4",
+          "yc_2024_plus: raw 31.0 (n=31) -> 5"
         ]
       }
     }
   },
   {
     "slug": "insurance-policy-admin",
-    "total": 40.0,
-    "total_raw": 1.0,
+    "total": 42.0,
+    "total_raw": 1.3999999999999995,
     "flags": [],
     "parts": {
       "size": {
@@ -5259,7 +5259,7 @@
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 2.2,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -5310,7 +5310,7 @@
         ]
       },
       "lockin": {
-        "score": 4,
+        "score": 3.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -5342,7 +5342,7 @@
         ]
       },
       "crowding": {
-        "score": 4,
+        "score": 4.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
@@ -5373,8 +5373,8 @@
   },
   {
     "slug": "insurance-claims",
-    "total": 30.0,
-    "total_raw": -1.0,
+    "total": 31.0,
+    "total_raw": -0.7999999999999998,
     "flags": [],
     "parts": {
       "size": {
@@ -5418,7 +5418,7 @@
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 2.0,
         "detail": {
           "sub_scores": {
             "keep_alive_share": {
@@ -5469,7 +5469,7 @@
         ]
       },
       "lockin": {
-        "score": 5,
+        "score": 4.5,
         "detail": {
           "sub_scores": {
             "award_duration_months": {
@@ -5501,7 +5501,7 @@
         ]
       },
       "crowding": {
-        "score": 4,
+        "score": 4.3,
         "detail": {
           "sub_scores": {
             "ai_native_traction": {
