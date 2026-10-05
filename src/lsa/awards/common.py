@@ -140,6 +140,19 @@ def window(text: str, max_words: int = MAX_WINDOW_WORDS) -> str:
     return " ".join((text or "").split()[:max_words])
 
 
+def matches_phrase(text: str, query: str) -> bool:
+    """Exact-phrase containment on normalized text; empty query matches all.
+
+    Same normalization as ``sources/gebiz.py``: casefold plus whitespace
+    collapse on both sides. UK/AU/SG endpoints take no keyword filter, so
+    the collectors window their releases and match locally.
+    """
+    needle = " ".join((query or "").casefold().split())
+    if not needle:
+        return True
+    return needle in " ".join((text or "").casefold().split())
+
+
 def ocds_procedure(method: str | None) -> str:
     """OCDS procurementMethod code -> study procedure label."""
     if method is None:
