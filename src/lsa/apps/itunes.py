@@ -164,13 +164,17 @@ def _entry(entry: dict, page_url: str) -> Review | None:
         rating = int(raw_rating)
     except ValueError:
         rating = None
+    review_id = _label(entry.get("id"))
+    # The feed's link points at the app's review page, shared by every review,
+    # so add the review id; collect_items dedupes on URL.
+    base = _link_href(entry.get("link")) or page_url
     return Review(
-        review_id=_label(entry.get("id")),
+        review_id=review_id,
         rating=rating,
         date=_label(entry.get("updated")),
         title=_label(entry.get("title")),
         text=text,
-        url=_link_href(entry.get("link")) or page_url,
+        url=base if not review_id or review_id in base else f"{base}#review-{review_id}",
     )
 
 

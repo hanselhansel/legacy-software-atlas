@@ -247,3 +247,18 @@ def test_reviews_content_list_picks_text(mock_client, no_sleep):
     client = mock_client(_handler(pages={1: [entry], 2: []}))
     result = list(itunes.reviews("42", "us", client))
     assert result[0].text == "real words here"
+
+
+def test_shared_review_page_link_gets_unique_review_anchor():
+    from lsa.apps import itunes
+
+    entry = {
+        "id": {"label": "14624090122"},
+        "im:rating": {"label": "2"},
+        "updated": {"label": "2026-10-03T13:00:43-07:00"},
+        "title": {"label": "t"},
+        "content": {"label": "body text"},
+        "link": {"attributes": {"href": "https://itunes.apple.com/us/review?id=382952264&type=Purple%20Software"}},
+    }
+    rev = itunes._entry(entry, "https://page")
+    assert rev is not None and rev.url.endswith("#review-14624090122")
