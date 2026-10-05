@@ -440,6 +440,10 @@ def build_parser() -> argparse.ArgumentParser:
     p_est.add_argument("--target", type=float, default=25.0)
     p_est.add_argument("--json", action="store_true")
     p_est.set_defaults(func=_estimate)
+
+    from lsa.jev.cli import register as register_jev
+
+    register_jev(sub)
     return parser
 
 
