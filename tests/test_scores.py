@@ -1,6 +1,6 @@
 import pytest
 
-from lsa import estimates, labels, scores
+from lsa import estimates, labels, score_inputs, scores
 from lsa.rubric import Rubric
 
 RUBRIC = Rubric(
@@ -253,7 +253,7 @@ def test_job_in_use_share_and_hn_count():
             pain=0.9, reason=None,
         ),
     ]
-    w, u = scores.job_in_use_share(items, "x")
+    w, u = score_inputs.job_in_use_share(items, "x")
     assert w == pytest.approx(2 / 3)
     assert u == pytest.approx(1 / 2)
-    assert scores.hn_pain_comments(items, "x") == 1
+    assert score_inputs.hn_pain_comments(items, "x") == 1
