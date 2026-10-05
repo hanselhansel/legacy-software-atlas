@@ -9,7 +9,7 @@ pass over ``research/tasks.csv``. Pain, lock-in and crowding are the lane O
 means of sub-scores computed by ``lsa.measures``: each sub-score is a raw
 measurement ranked across the categories into quintiles 1..5 (or a direct
 score for the S3 grade and regulator approval), and the part is the
-rounded mean of the available sub-scores (half up, like ``ai_fit``) with
+mean of the available sub-scores kept to one decimal with
 every sub-score, its raw value and its input count in the detail.
 
 Every part scores 1 to 5. The opportunity total is the weighted

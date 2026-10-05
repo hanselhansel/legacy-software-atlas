@@ -268,7 +268,7 @@ Across the ledger, 158 of 353 documented replacements (45%) were cancelled or fi
 | Warehouse management | 3.3 (3.33) | 47% (74): **3** | no data | no data | 63% (8): **4** | weak: **3** |
 | Financial close and general ledger | 2.3 (2.33) | 42% (12): **2** | no data | no data | 30% (10): **2** | weak: **3** |
 | Loan origination and servicing | 2.8 (2.75) | too few (2) | 46% (50): **5** | 4.87 (3): **1** | 30% (10): **2** | weak: **3** |
-| Field service and maintenance | 3.5 (3.50) | 63% (34): **4** | too few (6) | 4.25 (4): **2** | 67% (9): **5** | weak: **3** |
+| Field service and maintenance | 3.5 (3.50) | 62% (34): **4** | too few (6) | 4.25 (4): **2** | 67% (9): **5** | weak: **3** |
 | Hospital records (EHR) | 2.8 (2.80) | 0% (63): **1** | 31% (100): **5** | 3.84 (27): **3** | 42% (12): **2** | weak: **3** |
 | Medical billing | 3.7 (3.67) | too few (1) | too few (36) | 3.41 (10): **4** | 22% (9): **2** | strong: **5** |
 | Insurance policy administration | 2.2 (2.25) | no data | 12% (50): **2** | 4.39 (31): **1** | 50% (8): **3** | weak: **3** |
