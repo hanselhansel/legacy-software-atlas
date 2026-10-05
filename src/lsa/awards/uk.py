@@ -16,13 +16,13 @@ from __future__ import annotations
 
 from collections import Counter
 from collections.abc import Callable, Iterator
-from datetime import UTC, datetime, timedelta
 
 import httpx
 
 from lsa.awards.common import (
     AwardRow,
     QueryRow,
+    date_chunks,
     matches_phrase,
     ocds_procedure,
 )
@@ -55,16 +55,6 @@ _ENDPOINTS = (
         "https://www.contractsfinder.service.gov.uk/Notice/",
     ),
 )
-
-
-def _chunks() -> Iterator[tuple[str, str]]:
-    """(start, end) ISO dates, newest first, across the window."""
-    end = datetime.now(UTC).date()
-    floor = end - timedelta(days=_WINDOW_DAYS)
-    while end > floor:
-        start = max(floor, end - timedelta(days=_CHUNK_DAYS))
-        yield start.isoformat(), end.isoformat()
-        end = start
 
 
 def _party(release: dict, role: str) -> str:
@@ -189,7 +179,7 @@ def _collect_endpoint(
     """Award-stage releases in date chunks; first free matching query wins."""
     seen: set[str] = set()
     kept: Counter[str] = Counter()
-    for start, end in _chunks():
+    for start, end in date_chunks(_WINDOW_DAYS, _CHUNK_DAYS):
         if per_query is not None and all(
             kept[r.query] >= per_query for r in rows
         ):

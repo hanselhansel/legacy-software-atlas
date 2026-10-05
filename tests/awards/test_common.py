@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pytest
 import pyarrow.parquet as pq
 
 from lsa.awards import common

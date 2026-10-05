@@ -51,7 +51,7 @@ def _handler(notices, total_pages=1):
 
 
 def test_collect_maps_notice_fields(mock_client, no_sleep):
-    handler, calls = _handler([_notice()])
+    handler, _ = _handler([_notice()])
     rows = list(
         ted.collect(
             [QueryRow("core-banking", "EU", "core banking")],

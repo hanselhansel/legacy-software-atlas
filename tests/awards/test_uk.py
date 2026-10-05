@@ -75,7 +75,7 @@ def _handler(pages_by_host):
 
 
 def test_collect_maps_uk_ocds_release(mock_client, no_sleep):
-    handler, seen = _handler({httpx.URL(_CF).host: [[_release()]]})
+    handler, _ = _handler({httpx.URL(_CF).host: [[_release()]]})
     rows = list(
         uk.collect(
             [QueryRow("core-banking", "UK", "core banking")],
@@ -126,10 +126,7 @@ def test_collect_fetches_both_endpoints(mock_client, no_sleep):
 def test_collect_filters_locally_by_keyword(mock_client, no_sleep):
     match = _release()
     other = _release(
-        **{
-            "ocid": "ocds-b5fd17-bbbb-0002",
-            "tender": {"title": "School dinners", "description": "Catering."},
-        }
+        ocid="ocds-b5fd17-bbbb-0002", tender={"title": "School dinners", "description": "Catering."}
     )
     handler, _ = _handler({httpx.URL(_CF).host: [[match, other]], httpx.URL(_FTS).host: [[other]]})
     rows = list(
@@ -160,7 +157,7 @@ def test_collect_follows_cursor_pages(mock_client, no_sleep):
 
 
 def test_collect_per_query_caps_matches(mock_client, no_sleep):
-    releases = [_release(**{"ocid": f"ocds-{i}"}) for i in range(5)]
+    releases = [_release(ocid=f"ocds-{i}") for i in range(5)]
     handler, _ = _handler({httpx.URL(_CF).host: [releases], httpx.URL(_FTS).host: [[]]})
     rows = list(
         uk.collect(
@@ -191,8 +188,8 @@ def test_collect_window_params(mock_client, no_sleep):
             log=None,
         )
     )
-    cf = [u for u in seen if u.host == httpx.URL(_CF).host][0]
+    cf = next(u for u in seen if u.host == httpx.URL(_CF).host)
     assert cf.params.get("stages") == "award"
     assert cf.params.get("publishedFrom")
-    fts = [u for u in seen if u.host == httpx.URL(_FTS).host][0]
+    fts = next(u for u in seen if u.host == httpx.URL(_FTS).host)
     assert fts.params.get("updatedFrom")

@@ -88,8 +88,7 @@ def _search(query: str, client: httpx.Client) -> Iterator[dict]:
         )
         response.raise_for_status()
         payload = response.json()
-        for row in payload.get("results") or []:
-            yield row
+        yield from payload.get("results") or []
         if not (payload.get("page_metadata") or {}).get("hasNext"):
             return
         page += 1
@@ -122,7 +121,6 @@ def _date(value: object) -> str:
 
 def _award_row(hit: dict, detail: dict, row: QueryRow) -> AwardRow:
     gid = str(hit.get("generated_internal_id") or hit.get("internal_id") or "")
-    contract = detail.get("latest_transaction_contract_data") or {}
     pop = detail.get("period_of_performance") or {}
     psc = hit.get("PSC")
     if isinstance(psc, dict):

@@ -74,7 +74,7 @@ def _handler(search_rows, detail=None, detail_status=200):
 
 
 def test_collect_maps_search_and_detail_fields(mock_client, no_sleep):
-    handler, seen = _handler([_search_row()], detail=_detail())
+    handler, _ = _handler([_search_row()], detail=_detail())
     rows = list(
         usaspending.collect(
             [QueryRow("core-banking", "US", "mainframe")],

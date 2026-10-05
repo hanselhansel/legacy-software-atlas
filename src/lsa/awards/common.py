@@ -23,9 +23,9 @@ import hashlib
 import json
 import tomllib
 from collections import Counter
-from collections.abc import Iterable
+from collections.abc import Iterable, Iterator
 from dataclasses import dataclass, replace
-from datetime import date
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 
 from lsa.fetch import common as fcommon
@@ -151,6 +151,16 @@ def matches_phrase(text: str, query: str) -> bool:
     if not needle:
         return True
     return needle in " ".join((text or "").casefold().split())
+
+
+def date_chunks(window_days: int, chunk_days: int) -> Iterator[tuple[str, str]]:
+    """``(start, end)`` ISO date pairs, newest first, covering the window."""
+    end = datetime.now(UTC).date()
+    floor = end - timedelta(days=window_days)
+    while end > floor:
+        start = max(floor, end - timedelta(days=chunk_days))
+        yield start.isoformat(), end.isoformat()
+        end = start
 
 
 def ocds_procedure(method: str | None) -> str:
