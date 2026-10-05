@@ -43,6 +43,8 @@ from pathlib import Path
 from lsa import catconfig, labels, parse_counts, paths
 
 FAM_UNIVERSE = "buyer_universe"
+# Units that count organisations able to buy (research/buyer_universe.csv `unit`).
+BUYER_UNITS = ("organisations", "sites")
 FAM_VENDOR = "vendor_disclosed"
 FAM_CONFIRMED = "confirmed_signals"
 
@@ -92,9 +94,18 @@ def _universe(
             notes.append(f"universe skip: {register}")
             continue
         region = parse_counts.norm_universe_region(row.get("region", ""))
-        low, high, pnotes = parse_counts.parse_sum_or_range(
-            row.get("approx_count", "")
-        )
+        unit = row.get("unit", "")
+        if unit and unit not in BUYER_UNITS:
+            notes.append(f"universe skip ({region} {register}): counts {unit}, not buyers")
+            continue
+        if row.get("buyers_low"):
+            low = float(row["buyers_low"])
+            high = float(row.get("buyers_high") or row["buyers_low"])
+            pnotes = [f"classified buyers ({unit})"]
+        else:
+            low, high, pnotes = parse_counts.parse_sum_or_range(
+                row.get("approx_count", "")
+            )
         if region in cfg.universe_overrides:
             low, high = cfg.universe_overrides[region]
             pnotes = ["override"]
@@ -187,6 +198,13 @@ def _slice(
     notes: list[str],
     sources: list[str],
 ) -> SliceEstimate:
+    if universe_high is not None and low > universe_high:
+        # Users cannot outnumber possible buyers: a larger vendor figure counts
+        # something else (loans, titles, cases), so cap it at the universe.
+        notes.append(
+            f"low capped at buyer universe {round(universe_high)}: vendor figure exceeds possible buyers"
+        )
+        low = universe_high
     low_i = round(low)
     cap = low_i * cfg.multiplier
     if universe_high is not None:

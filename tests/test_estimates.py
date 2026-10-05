@@ -300,3 +300,22 @@ def test_load_config_overrides(tmp_path):
     assert cfg.detection_rate == 2.0
     assert cfg.agree_within == 1.5
     assert cfg.multi_region_policy == "each"
+
+
+def test_universe_skips_non_buyer_units_and_uses_classified_counts():
+    cfg = catconfig.CategoryConfig(slug="x")
+    rows = [
+        {"category": "x", "region": "US", "register": "loans", "approx_count": "36,000,000 loans", "unit": "accounts_or_loans", "buyers_low": "", "buyers_high": ""},
+        {"category": "x", "region": "US", "register": "banks", "approx_count": "about 4,000", "unit": "organisations", "buyers_low": "4000", "buyers_high": "4200"},
+    ]
+    per, notes = estimates._universe("x", rows, cfg)
+    assert per["US"]["low"] == 4000 and per["US"]["high"] == 4200
+    assert any("not buyers" in n for n in notes)
+
+
+def test_slice_caps_low_at_buyer_universe():
+    notes: list[str] = []
+    cfg = catconfig.CategoryConfig(slug="x")
+    sl = estimates._slice("AU", 2_600_000, 8, {"buyer_universe": 8}, cfg, notes, [])
+    assert sl.companies_low == 8 and sl.companies_high == 8
+    assert any("capped at buyer universe" in n for n in notes)
