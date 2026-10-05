@@ -1,0 +1,483 @@
+category,region,app_name,country,apple_id
+agriculture-commodity,US,MyCHS,us,6714482624
+agriculture-commodity,US,CGB Grain Mobile,us,1022969608
+agriculture-commodity,AU,GrainCorp,au,550937198
+agriculture-commodity,AU,CBH CDF,au,1281906332
+agriculture-commodity,AU,Bunge Australia,au,654885742
+agriculture-commodity,UK,Grainmate,gb,532600021
+airline-pss,US,American Airlines,us,382698565
+airline-pss,US,Fly Delta,us,388491656
+airline-pss,US,United Airlines,us,449945214
+airline-pss,EU,Lufthansa,de,299219152
+airline-pss,EU,Air France - Réserver un vol,fr,391968627
+airline-pss,EU,Ryanair,ie,504270602
+airline-pss,UK,British Airways,gb,284793089
+airline-pss,UK,easyJet: Travel App,gb,483568103
+airline-pss,UK,Virgin Atlantic,gb,6755313143
+airline-pss,SG,Singapore Airlines,sg,515287841
+airline-pss,SG,Scoot Mobile,sg,898287610
+airline-pss,IN,IndiGo: Flight Booking App,in,726070762
+airline-pss,IN,Air India: Book Flight Tickets,in,932302964
+airline-pss,ID,FlyGaruda,id,961859722
+airline-pss,ID,Citilink,id,1483779543
+airline-pss,ID,Lion Air,id,931907072
+airline-pss,VN,Vietnam Airlines,vn,1472323081
+airline-pss,VN,VietJet Air,vn,867009161
+airline-pss,MY,Malaysia Airlines,my,1220318722
+airline-pss,MY,AirAsia MOVE: Flights & Hotels,my,565050268
+airline-pss,TH,Thai Airways,th,1393912966
+airline-pss,TH,Bangkok Airways,th,781290048
+airline-pss,PH,Philippine Airlines,ph,1538570065
+airline-pss,PH,Cebu Pacific,ph,1210712639
+airline-pss,AU,Qantas Airways,au,640437525
+airline-pss,AU,Virgin Australia,au,1060472593
+airline-pss,AU,Jetstar,au,821234247
+capital-markets-trading-clearing,AU,CommSec,au,880540304
+capital-markets-trading-clearing,AU,nabtrade,au,1515859075
+capital-markets-trading-clearing,AU,CMC Invest,au,1559149606
+capital-markets-trading-clearing,VN,VNDIRECT DStock,vn,1478350268
+capital-markets-trading-clearing,VN,VCBS Mobile,vn,1559554802
+capital-markets-trading-clearing,VN,TCInvest,vn,1037255487
+capital-markets-trading-clearing,ID,Vista (Victoria Trading Apps),id,1553718694
+card-payments-processing,US,Chase Mobile®: Bank & Invest,us,298867247
+card-payments-processing,US,Capital One Mobile,us,407558537
+card-payments-processing,US,Amex,us,362348516
+card-payments-processing,EU,ING Deutschland,de,1176527145
+card-payments-processing,EU,Mes Comptes BNP Paribas,fr,377884617
+card-payments-processing,UK,Barclaycard,gb,596487185
+card-payments-processing,UK,Tesco Bank,gb,857834425
+card-payments-processing,SG,DBS digibank,sg,1068403826
+card-payments-processing,SG,UOB TMRW,sg,1049286296
+card-payments-processing,IN,SBI Card: Manage Credit Card,in,694549848
+card-payments-processing,IN,HDFC Bank App: Banking & Cards,in,6504402552
+card-payments-processing,IN,Axis Bank Mobile Banking,in,699582556
+card-payments-processing,ID,BCA mobile,id,551587254
+card-payments-processing,ID,Livin' by Mandiri,id,1555414743
+card-payments-processing,VN,BIDV SmartBanking,vn,1061867449
+card-payments-processing,VN,VCB Digibank,vn,561433133
+card-payments-processing,MY,MAE by Maybank2u,my,1481028763
+card-payments-processing,MY,UOB TMRW Malaysia,my,1239716055
+card-payments-processing,TH,KTC Mobile,th,723657868
+card-payments-processing,TH,UOB TMRW Thailand,th,1220331876
+card-payments-processing,TH,UCHOOSE,th,1136616669
+card-payments-processing,PH,UnionBank Online,ph,1242291412
+card-payments-processing,PH,BDO Online,ph,1551584630
+card-payments-processing,AU,CommBank,au,310251202
+card-payments-processing,AU,NAB Mobile Banking,au,373434223
+construction-project-accounting,US,Viewpoint Team,us,1264886008
+construction-project-accounting,US,Construct ESS (CMiC),us,1524631491
+construction-project-accounting,US,FOUNDATION Field Log,us,1348050684
+construction-project-accounting,UK,Coins mCDR,gb,1079876874
+construction-project-accounting,UK,Coins mTick,gb,1254423939
+construction-project-accounting,UK,Viewpoint Team,gb,1264886008
+construction-project-accounting,AU,Jobpac Mobile,au,6741144561
+construction-project-accounting,AU,Viewpoint Team,au,1264886008
+construction-project-accounting,AU,Viewpoint Field View,au,1051411527
+cooperative-rural-microfinance-banking,US,"SECU (State Employees' Credit Union, NC; legacy in-house core until the KeyStone conversion)",us,1435916976
+cooperative-rural-microfinance-banking,EU,VR Banking - einfach sicher (Atruvia; agree21 backend for Volks- und Raiffeisenbanken),de,1505855171
+cooperative-rural-microfinance-banking,EU,Ma Banque (Credit Agricole Technologies; NICE backend for the regional banks),fr,376202925
+cooperative-rural-microfinance-banking,UK,Co-operative Bank,gb,1439204021
+cooperative-rural-microfinance-banking,MY,iRakyat Mobile Banking (Bank Rakyat),my,1585944651
+cooperative-rural-microfinance-banking,TH,BAAC Mobile (FIS Profile core),th,1591473167
+cooperative-rural-microfinance-banking,AU,"TMBank (Teachers Mutual Bank, Ultradata Ultracs core)",au,710017344
+cooperative-rural-microfinance-banking,AU,UniBank Australia (division of Teachers Mutual Bank),au,1176297898
+core-banking,US,Chase Mobile: Bank & Invest,us,298867247
+core-banking,US,Bank of America Mobile Banking,us,284847138
+core-banking,US,Wells Fargo Mobile,us,311548709
+core-banking,EU,Postbank,de,6444706327
+core-banking,EU,Deutsche Bank,de,1040475847
+core-banking,EU,Intesa Sanpaolo Mobile,it,597360475
+core-banking,UK,TSB Mobile Banking,gb,1160720878
+core-banking,UK,Barclays,gb,536248734
+core-banking,UK,Lloyds Mobile Banking,gb,469964520
+core-banking,SG,DBS digibank,sg,1068403826
+core-banking,SG,OCBC Singapore,sg,292506828
+core-banking,SG,UOB TMRW,sg,1049286296
+core-banking,IN,"YONO SBI: Banking, UPI & Pay",in,1231393474
+core-banking,IN,HDFC Bank App: Banking & Cards,in,6504402552
+core-banking,IN,"iMobile: Loan, Cards & Banking (ICICI Bank)",in,375276006
+core-banking,ID,BRImo BRI,id,1439730817
+core-banking,ID,Livin' by Mandiri,id,1555414743
+core-banking,ID,BCA mobile,id,551587254
+core-banking,VN,VCB Digibank,vn,561433133
+core-banking,VN,BIDV SmartBanking,vn,1061867449
+core-banking,VN,VietinBank iPay,vn,689963454
+core-banking,MY,MAE by Maybank2u,my,1481028763
+core-banking,MY,CIMB OCTO MY,my,1591184221
+core-banking,MY,MyPB by Public Bank,my,6446102283
+core-banking,TH,K PLUS,th,361170631
+core-banking,TH,SCB EASY,th,568388474
+core-banking,TH,Krungthai NEXT,th,436753378
+core-banking,PH,BDO Online,ph,1551584630
+core-banking,PH,BPI,ph,6443950982
+core-banking,PH,LANDBANK Mobile Banking,ph,950232162
+core-banking,AU,CommBank,au,310251202
+core-banking,AU,NAB Mobile Banking,au,373434223
+core-banking,AU,Westpac,au,299111811
+courts-justice,US,PAeDocket,us,943932164
+courts-justice,US,Miami-Dade Clerk of Court,us,6747407894
+courts-justice,US,Alameda Superior Court,us,1549272782
+courts-justice,IN,eCourts Services,in,1260905816
+courts-justice,IN,Supreme Court of India,in,1523266644
+courts-justice,ID,Direktori Putusan,id,6443490467
+courts-justice,MY,eKehakiman,my,1286619455
+courts-justice,MY,eKSS,my,1626444458
+courts-justice,SG,SG Courts Mobile App,sg,1496738072
+courts-justice,TH,COJ App - ศาลยุติธรรม,th,1502946550
+courts-justice,TH,COJ Connect,th,1639835818
+courts-justice,AU,Search NSW Court Lists,au,950906816
+courts-justice,EU,Carpeta Justicia,es,6504570707
+courts-justice,EU,Giustizia Civile,it,598913361
+courts-justice,EU,justice.fr,fr,6447356459
+ehr-hospital,US,MyChart,us,382952264
+ehr-hospital,US,HealtheLife,us,912509516
+ehr-hospital,US,VA: Health and Benefits,us,1559609596
+ehr-hospital,UK,NHS App,gb,1388411277
+ehr-hospital,UK,MyChart,gb,382952264
+ehr-hospital,EU,MinSP,dk,1357104360
+ehr-hospital,EU,Maisa,fi,1412054160
+ehr-hospital,EU,mijnRadboud,nl,1185546397
+ehr-hospital,SG,HealthHub SG,sg,1034200875
+ehr-hospital,SG,Health Buddy,sg,448572997
+ehr-hospital,IN,ABHA ABDM,in,1630917266
+ehr-hospital,IN,Apollo 247 - Health & Medicine,in,1496740273
+ehr-hospital,IN,Max MyHealth,in,965797580
+ehr-hospital,ID,SATUSEHAT Mobile,id,1504600374
+ehr-hospital,ID,MySiloam,id,1456325611
+ehr-hospital,ID,Mobile JKN,id,1237601115
+ehr-hospital,VN,Sổ sức khỏe điện tử,vn,1555911794
+ehr-hospital,VN,UMC Care,vn,1484775684
+ehr-hospital,VN,MyVinmec,vn,1494832536
+ehr-hospital,MY,MySejahtera,my,1504055630
+ehr-hospital,MY,KPJ Cares,my,6446163793
+ehr-hospital,MY,MyHealth360 Malaysia,my,1600046091
+ehr-hospital,TH,หมอพร้อม (MohPrompt),th,1559337829
+ehr-hospital,TH,Bumrungrad,th,1504603205
+ehr-hospital,TH,My B+,th,1465713681
+ehr-hospital,PH,St. Luke's eHealth Hub App,ph,6504464587
+ehr-hospital,PH,The Medical City - Connect,ph,6741252233
+ehr-hospital,AU,MyChart,au,382952264
+ehr-hospital,AU,1800MEDICARE (was my health),au,1596846961
+erp-distribution,US,Epicor Prophet 21 Bin Mgmt,us,1488570980
+erp-distribution,US,Epicor Showcase for Eclipse,us,6670196593
+erp-distribution,US,BisTrack Delivery,us,1228385709
+erp-distribution,UK,BisTrack Picking,gb,1379038387
+erp-distribution,UK,BisTrack Delivery,gb,1228385709
+erp-distribution,UK,Web Track (Epicor BisTrack customer portal),gb,469537336
+erp-distribution,EU,SAP Business One,de,392606876
+erp-distribution,EU,SAP Business One Sales,de,1087151812
+erp-distribution,EU,Epicor Prophet 21 Bin Mgmt,de,1488570980
+erp-distribution,AU,Pronto Proof of Delivery,au,1453124737
+erp-distribution,AU,Epicor Prophet 21 Bin Mgmt,au,1488570980
+erp-distribution,AU,SAP Business One,au,392606876
+erp-distribution,SG,SAP Business One,sg,392606876
+erp-distribution,SG,SAP Business One Sales,sg,1087151812
+erp-distribution,MY,SAP Business One,my,392606876
+erp-distribution,MY,SAP Business One Sales,my,1087151812
+erp-distribution,PH,SAP Business One,ph,392606876
+erp-distribution,PH,SAP Business One Sales,ph,1087151812
+erp-distribution,ID,SAP Business One,id,392606876
+erp-distribution,ID,SAP Business One Sales,id,1087151812
+erp-distribution,TH,SAP Business One,th,392606876
+erp-distribution,TH,SAP Business One Sales,th,1087151812
+erp-distribution,VN,SAP Business One,vn,392606876
+erp-distribution,VN,SAP Business One Sales,vn,1087151812
+erp-distribution,IN,SAP Business One,in,392606876
+erp-distribution,IN,SAP Business One Sales,in,1087151812
+field-service-maintenance,US,IBM Maximo Mobile for EAM,us,1547495854
+field-service-maintenance,US,SAP Service and Asset Manager,us,1314568950
+field-service-maintenance,US,Octave Attune EAM Digital Work (formerly HxGN EAM),us,1501590650
+field-service-maintenance,UK,"Fieldreach Work Manager (front end to Ellipse, Maximo, SAP; used by Network Rail)",gb,1115745950
+gov-benefits,US,VA: Health and Benefits,us,1559609596
+gov-benefits,US,Your Texas Benefits,us,931986739
+gov-benefits,US,SSA Mobile Wage Reporting,us,563535561
+gov-benefits,EU,Caf - Mon Compte,fr,797511732
+gov-benefits,EU,Compte ameli,fr,620447173
+gov-benefits,EU,Mon compte retraite,fr,1176066236
+gov-benefits,UK,HMRC,gb,514561561
+gov-benefits,SG,CPF Mobile,sg,389277976
+gov-benefits,IN,UMANG,in,1236448857
+gov-benefits,ID,JMO - Jamsostek Mobile,id,1444834757
+gov-benefits,ID,Mobile JKN,id,1237601115
+gov-benefits,VN,VssID,vn,1521647264
+gov-benefits,MY,KWSP i-Akaun,my,1660153573
+gov-benefits,MY,Prihatin (PERKESO),my,1523496062
+gov-benefits,TH,SSO+,th,6450181256
+gov-benefits,PH,MySSS,ph,6502824776
+gov-benefits,PH,GSIS Touch,ph,1532700340
+gov-benefits,PH,Virtual Pag-IBIG,ph,6444034285
+gov-benefits,AU,Express Plus Centrelink,au,881710955
+gov-benefits,AU,myGov,au,938033081
+gov-licensing-permits,US,NYC Buildings,us,589095573
+gov-licensing-permits,US,LADBS Go,us,970486795
+gov-licensing-permits,US,Accela Mobile,us,1287193922
+gov-licensing-permits,ID,OSS Indonesia,id,1602303484
+gov-licensing-permits,PH,eGovPH,ph,6447682225
+gov-licensing-permits,VN,Dịch vụ công trực tuyến,vn,1528684278
+gov-tax,US,IRS (IRS2Go),us,414113282
+gov-tax,US,FTB Mobile (California Franchise Tax Board),us,1272359471
+gov-tax,UK,HMRC,gb,514561561
+gov-tax,EU,"AEAT (Agencia Tributaria, Spain)",es,737744527
+gov-tax,EU,"Impots.gouv (DGFiP, France)",fr,505488770
+gov-tax,EU,"Aangifte Inkomstenbelasting (Belastingdienst, Netherlands)",nl,1496619169
+gov-tax,AU,Australian Taxation Office,au,664461825
+gov-tax,IN,AIS for Taxpayers (Income Tax Department),in,1571076423
+gov-tax,IN,GSTN e-Services,in,6736352933
+gov-tax,ID,M-Pajak (DJP),id,1567847630
+gov-tax,VN,eTax Mobile (General Department of Taxation),vn,1589750682
+gov-tax,MY,MyTax (LHDN),my,1632195676
+gov-tax,TH,RD Smart Tax (Revenue Department),th,616843710
+insurance-claims,US,GEICO Mobile - Car Insurance,us,331763096
+insurance-claims,US,State Farm,us,318142137
+insurance-claims,US,Progressive,us,349731802
+insurance-claims,EU,Mon AXA Assurance,fr,1609965221
+insurance-claims,EU,Meine Allianz,de,1116091166
+insurance-claims,EU,MyGenerali,it,1098178981
+insurance-claims,UK,MyAviva - Insurance & finance,gb,852352703
+insurance-claims,UK,Direct Line,gb,6547853209
+insurance-claims,UK,Admiral Insurance,gb,1461457136
+insurance-claims,SG,My Income (Insurance),sg,1337461269
+insurance-claims,SG,Great Eastern Singapore,sg,1498027173
+insurance-claims,SG,AIA+ Singapore,sg,1394337344
+insurance-claims,IN,ILTakeCare Insurance App (ICICI Lombard),in,1462026635
+insurance-claims,IN,Star Health,in,1477621177
+insurance-claims,IN,Here by HDFC ERGO,in,1670377706
+insurance-claims,ID,Mobile JKN (BPJS Kesehatan),id,1237601115
+insurance-claims,ID,myGarda (Asuransi Astra),id,984437789
+insurance-claims,ID,Allianz eAZy connect,id,6446101297
+insurance-claims,VN,Baoviet Direct,vn,1372421282
+insurance-claims,VN,myPVI,vn,1581312110
+insurance-claims,VN,VssID (Vietnam Social Security),vn,1521647264
+insurance-claims,MY,Etiqa+,my,1446536120
+insurance-claims,MY,MyAllianz MY,my,1573523529
+insurance-claims,MY,AIA+ Malaysia,my,1286476389
+insurance-claims,TH,TIP Insure (Dhipaya),th,1182286345
+insurance-claims,TH,MTL Click (Muang Thai Life),th,1440560140
+insurance-claims,TH,Muang Thai Friends (Muang Thai Insurance),th,1384030132
+insurance-claims,PH,My Sun Life PH,ph,6478769852
+insurance-claims,PH,Emma by AXA PH,ph,1483188126
+insurance-claims,PH,Manulife Philippines,ph,6450944214
+insurance-claims,AU,NRMA Insurance,au,667318376
+insurance-claims,AU,AAMI App,au,1510690149
+insurance-claims,AU,My Medibank,au,465576269
+insurance-policy-admin,US,State Farm,us,318142137
+insurance-policy-admin,US,GEICO Mobile - Car Insurance,us,331763096
+insurance-policy-admin,US,Progressive,us,349731802
+insurance-policy-admin,EU,Meine Allianz,de,1116091166
+insurance-policy-admin,EU,Mon AXA Assurance,fr,1609965221
+insurance-policy-admin,UK,MyAviva - Insurance & finance,gb,852352703
+insurance-policy-admin,UK,Direct Line,gb,6547853209
+insurance-policy-admin,UK,Admiral Insurance,gb,1461457136
+insurance-policy-admin,SG,Great Eastern Singapore,sg,1498027173
+insurance-policy-admin,SG,My Income (Insurance),sg,1337461269
+insurance-policy-admin,SG,AIA+ Singapore,sg,1394337344
+insurance-policy-admin,IN,LIC Digital,in,1324159013
+insurance-policy-admin,IN,Star Health,in,1477621177
+insurance-policy-admin,IN,ILTakeCare Insurance App,in,1462026635
+insurance-policy-admin,ID,myGarda,id,984437789
+insurance-policy-admin,ID,Allianz eAZy connect,id,6446101297
+insurance-policy-admin,ID,MyAstraLife,id,1303419690
+insurance-policy-admin,VN,Baoviet Direct,vn,1372421282
+insurance-policy-admin,VN,AIA+,vn,1562613698
+insurance-policy-admin,VN,Manulife Vietnam,vn,6478363539
+insurance-policy-admin,MY,Etiqa+,my,1446536120
+insurance-policy-admin,MY,MyAllianz MY,my,1573523529
+insurance-policy-admin,MY,AIA+ Malaysia,my,1286476389
+insurance-policy-admin,TH,AIA+ Thailand,th,1480183242
+insurance-policy-admin,TH,MTL Click,th,1440560140
+insurance-policy-admin,TH,TIP Insure,th,1182286345
+insurance-policy-admin,PH,My Sun Life PH,ph,6478769852
+insurance-policy-admin,PH,Emma by AXA PH,ph,1483188126
+insurance-policy-admin,PH,Manulife Philippines,ph,6450944214
+insurance-policy-admin,AU,NRMA Insurance,au,667318376
+insurance-policy-admin,AU,AAMI App,au,1510690149
+lab-information,US,MyChart,us,382952264
+lab-information,US,MyQuest for Patients,us,748920931
+lab-information,US,MyLabcorp,us,1361264072
+lab-information,UK,NHS App,gb,1388411277
+lab-information,UK,Patient Access,gb,612905214
+lab-information,EU,SYNLAB,it,1556232069
+lab-information,EU,Laboratoires Labazur,fr,919059142
+lab-information,EU,mein amedes Laborergebnis,de,6736357906
+lab-information,SG,HealthHub SG,sg,1034200875
+lab-information,SG,Health Buddy,sg,448572997
+lab-information,IN,Dr Lal PathLabs,in,1111250276
+lab-information,IN,Metropolis Healthcare,in,1609222176
+lab-information,IN,Thyrocare,in,1117762349
+lab-information,ID,U by Prodia: Health Test,id,6443986153
+lab-information,VN,My Medlatec,vn,1628288322
+lab-information,VN,DIAG,vn,6755990639
+lab-information,MY,Pathlab Malaysia,my,6753067548
+lab-information,MY,Doctor2U by BP Healthcare,my,1001949029
+lab-information,TH,N Health LabOnline,th,1466772831
+lab-information,PH,Hi-Precision,ph,938014011
+lab-information,AU,1800MEDICARE (was my health),au,1596846961
+lab-information,AU,eResults (Australian Clinical Labs),au,1542144822
+land-registry,US,Porter County Recorder IN,us,6636497291
+land-registry,US,Shelby Co Register of Deeds,us,6449469782
+land-registry,US,Nashville-Davidson Co ROD,us,6749372132
+land-registry,IN,TNREGINET,in,6446497477
+land-registry,IN,mHimBhoomi,in,1244425942
+land-registry,IN,Dishaank(KSRSAC),in,6741137784
+land-registry,ID,Sentuh Tanahku,id,1287142144
+land-registry,MY,eSemakan PTGS,my,1546957396
+land-registry,MY,e-Tanah Perak,my,6742736334
+land-registry,TH,SmartLands Plus,th,1528456941
+loan-origination-servicing,US,Rocket Mortgage,us,431156417
+loan-origination-servicing,US,Newrez,us,1435999022
+loan-origination-servicing,US,Shellpoint,us,6443957708
+mainframe-cobol-general,US,IRS (formerly IRS2Go),us,414113282
+mainframe-cobol-general,AU,myGov (Centrelink services; ISIS backend),au,938033081
+mainframe-cobol-general,EU,Aangifte Inkomstenbelasting (Belastingdienst),nl,1496619169
+medical-billing-rcm,US,MyChart,us,382952264
+medical-billing-rcm,US,HealtheLife,us,912509516
+medical-billing-rcm,US,MEDITECH MHealth,us,1143209032
+medical-billing-rcm,SG,HealthHub SG,sg,1034200875
+medical-billing-rcm,SG,NUHS App,sg,1533213621
+medical-billing-rcm,SG,Health Buddy,sg,448572997
+medical-billing-rcm,UK,MyChart,gb,382952264
+medical-billing-rcm,EU,MyChart,nl,382952264
+medical-billing-rcm,ID,Mobile JKN,id,1237601115
+medical-billing-rcm,VN,VssID,vn,1521647264
+medical-billing-rcm,TH,สปสช.,th,1111681040
+medical-billing-rcm,IN,Ayushman App,in,6740080642
+mortgage-servicing,US,"Chase Mobile: Bank & Invest (JPMorgan Chase mortgage servicing on MSP, multi-year renewal Oct 2022 per Black Knight 8-K)",us,298867247
+mortgage-servicing,US,Cenlar Mobile (Cenlar FSB subservicer; MSP renewal Feb 2022),us,1490450466
+mortgage-servicing,US,My LoanCare Go (LoanCare subservicer; MSP contract renewed 2023 per HousingWire),us,6467651368
+payroll-hr,US,ADP Mobile Solutions,us,444553167
+payroll-hr,US,Self-Service HR for EBS,us,1082459310
+payroll-hr,UK,MyESR,gb,1200762096
+payroll-hr,UK,ADP Mobile Solutions,gb,444553167
+payroll-hr,EU,ADP Mobile Solutions,de,444553167
+payroll-hr,EU,ADP Mobile Solutions,fr,444553167
+payroll-hr,AU,ADP Mobile Solutions,au,444553167
+payroll-hr,IN,ADP Mobile Solutions,in,444553167
+payroll-hr,SG,ADP Mobile Solutions,sg,444553167
+payroll-hr,MY,MyHRMIS Mobile,my,976019876
+payroll-hr,MY,ePayslip JANM,my,1481434530
+payroll-hr,PH,ADP Mobile Solutions,ph,444553167
+pension-provident-fund-admin,US,NetBenefits,us,640179084
+pension-provident-fund-admin,US,Empower,us,1001257338
+pension-provident-fund-admin,US,"Vanguard: Save, Invest, Retire",us,335186209
+pension-provident-fund-admin,UK,Nest Pensions,gb,6477530993
+pension-provident-fund-admin,UK,Standard Life,gb,485692917
+pension-provident-fund-admin,UK,Legal & General,gb,6449426245
+pension-provident-fund-admin,EU,ABP Pensioen,nl,1545144099
+pension-provident-fund-admin,EU,Pensioenchecker,nl,1534306436
+pension-provident-fund-admin,SG,CPF Mobile,sg,389277976
+pension-provident-fund-admin,SG,CPF EZPay Mobile,sg,1072317364
+pension-provident-fund-admin,IN,UMANG,in,1236448857
+pension-provident-fund-admin,MY,KWSP i-Akaun,my,1660153573
+pension-provident-fund-admin,ID,JMO - Jamsostek Mobile,id,1444834757
+pension-provident-fund-admin,ID,Andal by Taspen,id,6472796492
+pension-provident-fund-admin,VN,VssID,vn,1521647264
+pension-provident-fund-admin,PH,MySSS,ph,6502824776
+pension-provident-fund-admin,PH,GSIS Touch,ph,1532700340
+pension-provident-fund-admin,PH,Virtual Pag-IBIG,ph,6444034285
+pension-provident-fund-admin,TH,SSO+,th,6450181256
+pension-provident-fund-admin,TH,My GPF,th,874811566
+pension-provident-fund-admin,AU,AustralianSuper,au,1020067456
+pension-provident-fund-admin,AU,Australian Retirement Trust,au,1232128380
+pension-provident-fund-admin,AU,HESTA,au,1663706652
+port-terminal-operating-system,US,GPA Trucker (Georgia Ports Authority),us,6480420589
+port-terminal-operating-system,US,POV Reservations (Port of Virginia truck reservations),us,1625117934
+port-terminal-operating-system,US,APMT TERMPoint Appointments,us,1503148325
+port-terminal-operating-system,EU,ECT app (Hutchison Ports ECT Rotterdam),nl,1594851451
+port-terminal-operating-system,UK,Hutchison Ports ubi,gb,1108388291
+port-terminal-operating-system,UK,Port of Tilbury VBS,gb,1304238574
+port-terminal-operating-system,UK,Forth Ports VBS,gb,1213714368
+port-terminal-operating-system,VN,ePort (Saigon Newport / Tan Cang),vn,1301122056
+port-terminal-operating-system,VN,ePORT DNP (Da Nang Port),vn,1627691218
+port-terminal-operating-system,VN,VICT EPORT,vn,6478642779
+port-terminal-operating-system,MY,WESTPORTS,my,1480381634
+port-terminal-operating-system,MY,PTP Connect (Port of Tanjung Pelepas),my,1555999871
+port-terminal-operating-system,TH,Hutchison Ports ubi,th,1108388291
+port-terminal-operating-system,PH,ICTSI Radar,ph,1598307053
+port-terminal-operating-system,PH,ATI MPort (Asian Terminals Inc.),ph,1022617126
+student-information,US,PowerSchool Mobile,us,973741088
+student-information,US,Campus Parent (Infinite Campus),us,1384542785
+student-information,US,Campus Student (Infinite Campus),us,1384542200
+student-information,UK,SIMS Parent,gb,1106452691
+student-information,UK,SIMS Student,gb,1191484989
+student-information,ID,Sister For Student (Universitas Jember),id,1018726247
+student-information,ID,Siakad UIN Malang,id,6770408307
+student-information,TH,RegSeeU (Chulalongkorn University Office of the Registrar),th,1584066315
+student-information,VN,ASC-STUDENT,vn,1291851721
+telecom-bss,US,My Verizon,us,416023011
+telecom-bss,US,AT&T,us,309172177
+telecom-bss,US,T-Life (T-Mobile),us,1111876388
+telecom-bss,EU,MeinMagenta (Telekom Deutschland),de,407932476
+telecom-bss,EU,Mi Movistar (Telefonica Espana),es,1246644017
+telecom-bss,EU,Orange et moi France,fr,367722531
+telecom-bss,UK,"EE: Mobile, broadband & tech",gb,567457151
+telecom-bss,UK,My Vodafone (UK),gb,370901726
+telecom-bss,UK,My O2,gb,325533754
+telecom-bss,SG,My Singtel app,sg,1054859191
+telecom-bss,SG,StarHub App,sg,470460379
+telecom-bss,SG,My M1+,sg,1494104254
+telecom-bss,IN,MyJio,in,1074964262
+telecom-bss,IN,Airtel Thanks (Airtel App),in,543184334
+telecom-bss,IN,Vi: Recharges & Payments,in,623834540
+telecom-bss,ID,MyTelkomsel,id,651412430
+telecom-bss,ID,myXL,id,683141076
+telecom-bss,ID,myIM3,id,888610275
+telecom-bss,VN,Viettel Tammi,vn,6749427319
+telecom-bss,VN,My MobiFone,vn,719320091
+telecom-bss,VN,My VNPT,vn,1017188399
+telecom-bss,MY,Maxis,my,945986209
+telecom-bss,MY,CelcomDigi,my,6482219793
+telecom-bss,MY,MyUMobile,my,986248783
+telecom-bss,TH,myAIS,th,399758084
+telecom-bss,TH,True,th,394602822
+telecom-bss,TH,dtac,th,366758142
+telecom-bss,PH,GlobeOne,ph,1555659963
+telecom-bss,PH,Smart App PH,ph,1492443773
+telecom-bss,PH,DITO,ph,1562625494
+telecom-bss,AU,My Telstra,au,543829966
+telecom-bss,AU,My Optus,au,503716230
+telecom-bss,AU,My Vodafone Australia,au,473879501
+trade-finance,US,HSBCnet Mobile,us,887385854
+trade-finance,UK,HSBCnet Mobile,gb,887385854
+trade-finance,UK,Straight2Bank,gb,1169270682
+trade-finance,SG,Straight2Bank,sg,1169270682
+trade-finance,SG,HSBCnet Mobile,sg,887385854
+trade-finance,IN,Yono Business SBI,in,1056093690
+trade-finance,IN,InstaBIZ by ICICI Bank,in,731936356
+trade-finance,ID,Kopra Mobile,id,1644521340
+trade-finance,VN,Straight2Bank,vn,1169270682
+trade-finance,VN,HSBCnet Mobile,vn,887385854
+trade-finance,MY,Straight2Bank,my,1169270682
+trade-finance,MY,HSBCnet Mobile,my,887385854
+trade-finance,TH,Straight2Bank,th,1169270682
+trade-finance,PH,Straight2Bank,ph,1169270682
+trade-finance,PH,HSBCnet Mobile,ph,887385854
+trade-finance,AU,ANZ Transactive - Global,au,1404684767
+trade-finance,AU,HSBCnet Mobile,au,887385854
+utility-billing-cis,US,Duke Energy,us,1325217974
+utility-billing-cis,US,Con Edison,us,654677047
+utility-billing-cis,US,Dominion Energy,us,1525917880
+utility-billing-cis,UK,British Gas,gb,6444313203
+utility-billing-cis,UK,ScottishPower - YourEnergy,gb,562202559
+utility-billing-cis,EU,Mein E.ON,de,691972021
+utility-billing-cis,EU,Iberdrola Clientes,es,883078092
+utility-billing-cis,SG,SP: Utilities & EV Charging,sg,596749130
+utility-billing-cis,IN,My Tata Power- Consumer App,in,1606674128
+utility-billing-cis,IN,Mahavitaran Consumer App,in,1128838189
+utility-billing-cis,IN,BYPL Connect,in,1524511018
+utility-billing-cis,ID,PLN Mobile,id,1299581030
+utility-billing-cis,VN,EVN CSKH,vn,6754793134
+utility-billing-cis,VN,EVNHCMC,vn,1098174684
+utility-billing-cis,VN,EVNHANOI – Điện lực Hà Nội,vn,1195739399
+utility-billing-cis,MY,myTNB,my,1297089591
+utility-billing-cis,MY,Air Selangor,my,6469747536
+utility-billing-cis,TH,PEA Smart Plus,th,1063710354
+utility-billing-cis,TH,MEA Smart Life,th,651825361
+utility-billing-cis,TH,MWA onMobile,th,967874956
+utility-billing-cis,PH,My Meralco,ph,6499568124
+utility-billing-cis,PH,Manila Water App,ph,1571240282
+utility-billing-cis,AU,AGL,au,979410553
+utility-billing-cis,AU,EnergyAustralia,au,1336806967
+wealth-portfolio-accounting,AU,BT Panorama,au,1000509933
+wealth-portfolio-accounting,UK,MyBrewin,gb,1444439902
+wealth-portfolio-accounting,EU,Julius Baer Mobile,lu,1174398119
+wealth-portfolio-accounting,SG,Julius Baer Mobile,sg,1174398119
