@@ -80,11 +80,17 @@ def load_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def _universe(
+def _universe_rows(
     slug: str, rows: list[dict], cfg: catconfig.CategoryConfig
-) -> tuple[dict[str, dict], list[str]]:
-    """Per-region buyer universe ``{region: {low, high, sources, detail}}``."""
-    per: dict[str, dict] = {}
+) -> tuple[list[dict], list[str]]:
+    """Per-row buyer counts ``{region, register, low, high, source, row}``.
+
+    Rows whose ``unit`` counts something other than buyers are skipped;
+    classified rows read ``buyers_low``/``buyers_high`` and never fall back
+    to the free-text count. ``row`` keeps the original csv row so callers
+    can read extra columns (segment shares) without re-parsing.
+    """
+    out: list[dict] = []
     notes: list[str] = []
     for row in rows:
         if row["category"] != slug:
@@ -118,14 +124,35 @@ def _universe(
                 + "; ".join(pnotes)
             )
             continue
-        ent = per.setdefault(
-            region, {"low": 0.0, "high": 0.0, "sources": [], "detail": []}
+        out.append(
+            {
+                "region": region,
+                "register": register,
+                "low": low,
+                "high": high if high is not None else low,
+                "source": row.get("source", ""),
+                "detail": f"{register}: " + "; ".join(pnotes),
+                "row": row,
+            }
         )
-        ent["low"] += low
-        ent["high"] += high if high is not None else low
-        if row.get("source"):
-            ent["sources"].append(row["source"])
-        ent["detail"].append(f"{register}: " + "; ".join(pnotes))
+    return out, notes
+
+
+def _universe(
+    slug: str, rows: list[dict], cfg: catconfig.CategoryConfig
+) -> tuple[dict[str, dict], list[str]]:
+    """Per-region buyer universe ``{region: {low, high, sources, detail}}``."""
+    recs, notes = _universe_rows(slug, rows, cfg)
+    per: dict[str, dict] = {}
+    for r in recs:
+        ent = per.setdefault(
+            r["region"], {"low": 0.0, "high": 0.0, "sources": [], "detail": []}
+        )
+        ent["low"] += r["low"]
+        ent["high"] += r["high"]
+        if r["source"]:
+            ent["sources"].append(r["source"])
+        ent["detail"].append(r["detail"])
     return per, notes
 
 

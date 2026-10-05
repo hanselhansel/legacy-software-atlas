@@ -1,12 +1,15 @@
 """Five-part opportunity scores per category (plan 2, task 6).
 
 The parts and their evidence are exactly ``configs/rubric.toml`` (spec
-section 8): size from the estimate midpoints summed over regions; pain from
-the S3 grade, HN firsthand-pain comments at p >= 0.7 and the weighted share
-of job posts showing the legacy system in use; ai_fit the share-weighted
-mean of the ``tasks-ai-fit`` Jev pass over ``research/tasks.csv``; lockin
-from the S2 and S4 grades plus a regulation/certification reason to stay;
-crowding from the challenger count and disclosed funding.
+section 8): size is market value (buyer-universe buyers x segment spend
+from ``research/criticality.csv``, binned on ``value_bins_usd``) and falls
+back to the buyer-count midpoint on ``buyer_bins`` when a category has no
+spend data; pain from the S3 grade, HN firsthand-pain comments at p >= 0.7
+and the weighted share of job posts showing the legacy system in use;
+ai_fit the share-weighted mean of the ``tasks-ai-fit`` Jev pass over
+``research/tasks.csv``; lockin from the S2 and S4 grades plus a
+regulation/certification reason to stay; crowding from the challenger
+count and disclosed funding.
 
 Every part scores 1 to 5. The opportunity total is the weighted
 ``size + pain + ai_fit - lockin - crowding`` rescaled to 0..100 over the
@@ -17,15 +20,13 @@ score carries the ``ai_fit_missing`` flag.
 
 from __future__ import annotations
 
-import csv
 import re
-from dataclasses import dataclass, field
-from pathlib import Path
+from dataclasses import dataclass
 
-from lsa import catconfig, estimates, labels, parse_counts, paths
+from lsa import catconfig, estimates, labels, market, parse_counts
 from lsa.rubric import Rubric, load_rubric
+from lsa.score_inputs import AI_FIT_PASS, ScoreInputs
 
-AI_FIT_PASS = "tasks-ai-fit"
 AI_FIT_FLAG = "ai_fit_missing"
 
 
@@ -53,25 +54,56 @@ def size_part(
     estimate: estimates.CategoryEstimate,
     rubric: Rubric,
     universe_mid: float | None = None,
+    market_view: market.MarketValue | None = None,
 ) -> ScorePart:
-    """Possible buyers: the buyer-universe midpoint summed over regions, binned.
+    """Market value: buyers x segment spend, binned on ``value_bins_usd``.
 
-    Vendor disclosures are too sparse to count users (many name one customer),
-    so size measures the organisations a challenger could sell to. Falls back
-    to the companies-using midpoint when no universe row exists."""
+    ``market_view`` comes from ``market.market_value``. When the category
+    has no spend data the score falls back to the buyer-universe midpoint
+    (or the companies-using midpoint) binned on ``buyer_bins``, the old
+    behaviour.
+    """
     users_mid = estimate.midpoint()
-    mid = universe_mid if universe_mid else users_mid
-    score = 1 + sum(1 for b in rubric.size_bins if mid >= b)
-    evidence = [
-        f"possible buyers {mid:g} (buyer universe)" if universe_mid
-        else f"estimates: region midpoints sum to {mid:g} companies using"
-    ]
+    detail: dict = {"users_midpoint": users_mid}
+    if market_view is not None and market_view.has_spend:
+        mid = market_view.value_mid
+        bins = rubric.value_bins_usd
+        detail["basis"] = "market_value"
+        detail["buyers_mid"] = market_view.buyers_mid
+        detail["value_usd"] = {
+            "low": market_view.value_low,
+            "mid": market_view.value_mid,
+            "high": market_view.value_high,
+        }
+        evidence = [
+            (
+                f"market value ${mid:,.0f} mid "
+                f"({market_view.buyers_mid:g} buyers x segment spend)"
+            )
+        ]
+    else:
+        mid = universe_mid if universe_mid else users_mid
+        bins = rubric.buyer_bins
+        detail["basis"] = (
+            "buyer_universe" if universe_mid else "companies_using"
+        )
+        evidence = [
+            f"possible buyers {mid:g} (buyer universe)" if universe_mid
+            else f"estimates: region midpoints sum to {mid:g} companies using"
+        ]
+        if market_view is not None:
+            evidence.append("no spend data; buyer-count bins used")
+    detail["midpoint"] = mid
+    detail["bins"] = list(bins)
+    if market_view is not None and market_view.notes:
+        detail["notes"] = list(market_view.notes)
+    score = 1 + sum(1 for b in bins if mid >= b)
     for region, s in estimate.regions.items():
         evidence.append(
             f"{region}: {s.companies_low}-{s.companies_high} grade {s.grade}"
         )
         evidence.extend(s.sources)
-    return ScorePart(score, {"midpoint": mid, "users_midpoint": users_mid, "basis": "buyer_universe" if universe_mid else "companies_using", "bins": list(rubric.size_bins)}, tuple(evidence))
+    return ScorePart(score, detail, tuple(evidence))
 
 
 def pain_part(
@@ -296,49 +328,6 @@ def combine(
 AI_FIT_SCORE_OFFSET = 1.0
 
 
-def load_task_answers(jev_root: Path | None = None) -> dict[str, dict]:
-    """``{item_id: answer row}`` for the ``ai_fit`` question, or {} when the
-    pass has not run."""
-    import pyarrow.parquet as pq
-
-    root = Path(jev_root or paths.DERIVED / "jev") / AI_FIT_PASS / "answers"
-    out: dict[str, dict] = {}
-    if not root.exists():
-        return out
-    for part in sorted(root.glob("part-*.parquet")):
-        for row in pq.read_table(part).to_pylist():
-            if row.get("question_id") == "ai_fit":
-                out[row["item_id"]] = row
-    return out
-
-
-def load_tasks(path: Path | None = None) -> list[dict]:
-    p = Path(path or paths.RESEARCH / "tasks.csv")
-    if not p.exists():
-        return []
-    with open(p, newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
-
-
-@dataclass
-class ScoreInputs:
-    """Everything ``score_category`` needs, so callers load it once."""
-
-    estimate: estimates.CategoryEstimate
-    signs: dict[str, str] = field(default_factory=dict)  # s1..s4 grades
-    sign_evidence: dict[str, str] = field(default_factory=dict)
-    reasons_to_stay: list[str] = field(default_factory=list)
-    challengers: list[dict] = field(default_factory=list)
-    hn_pain_comments: int = 0
-    in_use_share: float | None = None
-    labelled_share: float | None = None
-    tasks: list[dict] = field(default_factory=list)
-    ai_answers: dict[str, dict] = field(default_factory=dict)
-    ai_pass_present: bool = False
-    config: catconfig.CategoryConfig | None = None
-    universe_mid: float | None = None
-
-
 def score_category(
     slug: str, inp: ScoreInputs, rubric: Rubric | None = None
 ) -> CategoryScore:
@@ -346,7 +335,9 @@ def score_category(
     rubric = rubric or load_rubric()
     cfg = inp.config or catconfig.CategoryConfig(slug=slug)
     parts = {
-        "size": size_part(inp.estimate, rubric, inp.universe_mid),
+        "size": size_part(
+            inp.estimate, rubric, inp.universe_mid, inp.market
+        ),
         "pain": pain_part(
             inp.signs.get("s3", "not_met"),
             inp.hn_pain_comments,
@@ -381,32 +372,4 @@ def score_category(
     raw, scaled, flags = combine(parts, rubric.weights)
     return CategoryScore(
         slug=slug, parts=parts, total_raw=raw, total=scaled, flags=flags
-    )
-
-
-def job_in_use_share(
-    items: list[labels.LabelledItem], slug: str
-) -> tuple[float | None, float | None]:
-    """``(weighted, unweighted)`` share of labelled job posts in use."""
-    posts = labels.labelled_job_posts(items, slug)
-    if not posts:
-        return None, None
-    w_in = sum(i.weight for i in posts if i.status == "in_use")
-    w_all = sum(i.weight for i in posts)
-    n_in = sum(1 for i in posts if i.status == "in_use")
-    return (
-        w_in / w_all if w_all else None,
-        n_in / len(posts),
-    )
-
-
-def hn_pain_comments(items: list[labels.LabelledItem], slug: str) -> int:
-    """HN firsthand-pain comments for the category at p >= 0.7."""
-    return sum(
-        1
-        for i in items
-        if i.family == "hn"
-        and i.category == slug
-        and i.pain is not None
-        and i.pain >= labels.HN_PAIN_YES
     )

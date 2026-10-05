@@ -16,7 +16,8 @@ lockin = 1.0
 crowding = 1.0
 
 [size]
-bins = [100, 1000, 10000, 100000]
+value_bins_usd = [100000000, 1000000000, 5000000000, 20000000000]
+buyer_bins = [100, 1000, 10000, 100000]
 
 [pain]
 s3_strong = 2.0
@@ -161,7 +162,17 @@ def _research_dir(tmp_path: Path) -> Path:
     with open(r / "buyer_universe.csv", "w", newline="") as f:
         w = csv.DictWriter(
             f,
-            fieldnames=["category", "region", "register", "approx_count", "source"],
+            fieldnames=[
+                "category",
+                "region",
+                "register",
+                "approx_count",
+                "source",
+                "seg_enterprise",
+                "seg_mid_market",
+                "seg_smb",
+                "seg_government",
+            ],
         )
         w.writeheader()
         w.writerows(
@@ -172,7 +183,62 @@ def _research_dir(tmp_path: Path) -> Path:
                     "register": "reg",
                     "approx_count": "4,000 to 5,000",
                     "source": "https://f",
-                }
+                    "seg_enterprise": "0.5",
+                    "seg_mid_market": "0.5",
+                },
+                {
+                    "category": "core-banking",
+                    "region": "UK",
+                    "register": "reg-uk",
+                    "approx_count": "100",
+                    "source": "https://uk",
+                    "seg_enterprise": "1.0",
+                },
+            ]
+        )
+    with open(r / "criticality.csv", "w", newline="") as f:
+        w = csv.DictWriter(
+            f,
+            fieldnames=[
+                "category",
+                "criticality",
+                "criticality_why",
+                "best_icp",
+                "segment",
+                "build_in_house",
+                "spend_low",
+                "spend_high",
+                "evidence",
+                "sources",
+            ],
+        )
+        w.writeheader()
+        w.writerows(
+            [
+                {
+                    "category": "core-banking",
+                    "criticality": "critical",
+                    "criticality_why": "runs the ledger",
+                    "best_icp": "mid_market",
+                    "segment": "enterprise",
+                    "build_in_house": "common",
+                    "spend_low": "100000",
+                    "spend_high": "200000",
+                    "evidence": "bank IT budgets",
+                    "sources": "https://a; https://b",
+                },
+                {
+                    "category": "core-banking",
+                    "criticality": "critical",
+                    "criticality_why": "runs the ledger",
+                    "best_icp": "mid_market",
+                    "segment": "mid_market",
+                    "build_in_house": "rare",
+                    "spend_low": "20000",
+                    "spend_high": "40000",
+                    "evidence": "smaller budgets",
+                    "sources": "https://c",
+                },
             ]
         )
     with open(r / "vendors.csv", "w", newline="") as f:
@@ -365,6 +431,38 @@ def test_export_shape(tmp_path):
     assert len(scores_list) == 1
     assert scores_list[0]["slug"] == "core-banking"
     assert scores_list[0]["flags"] == sco["flags"]
+
+    # market value: US 4500 buyers x (0.5x150k + 0.5x30k) + UK 100 x 150k
+    mk = cat["market"]
+    assert mk["basis"] == "market_value"
+    assert mk["buyers_mid"] == 4600
+    assert mk["value_mid_usd"] == 420_000_000
+    assert mk["value_low_usd"] == 250_000_000
+    assert mk["value_high_usd"] == 620_000_000
+    assert sco["parts"]["size"]["detail"]["basis"] == "market_value"
+    assert sco["parts"]["size"]["score"] == 2  # 420M >= 100M bin
+
+    lens = cat["build_vs_buy"]
+    assert lens["criticality"] == "critical"
+    assert lens["best_icp"] == "mid_market"
+    assert lens["segments"]["enterprise"]["build_in_house"] == "common"
+    assert lens["segments"]["enterprise"]["buyable"] is False
+    assert lens["segments"]["enterprise"]["buyers"] == 2350
+    assert lens["segments"]["mid_market"]["buyable"] is True
+    # only mid_market is buyable: 4500 x 0.5 x 30k
+    assert lens["buyable_value_usd"] == 67_500_000
+
+    regions = json.loads(result["regions"].read_text())["regions"]
+    assert regions["US"]["categories"]["core-banking"]["evidence"] == "usage"
+    uk = regions["UK"]["categories"]["core-banking"]
+    assert uk["evidence"] == "buyers only"
+    assert uk["buyers"]["mid"] == 100
+    assert regions["EU"]["categories"]["core-banking"]["evidence"] == "none"
+    assert regions["US"]["summary"] == {
+        "categories_with_usage": 1,
+        "categories_with_buyers": 1,
+        "total_value_usd": 405_000_000,
+    }
 
     cfg = configs / "core-banking.toml"
     assert cfg.exists()

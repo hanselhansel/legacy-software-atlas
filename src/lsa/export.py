@@ -5,10 +5,14 @@ labelled items and the score inputs once, then writes:
 
 - ``exports/site/categories.json``: one object per kept category with name,
   systems, signs (grade, why, source), estimates per region and segment,
-  the five score parts with their evidence links, reasons to stay, and the
-  challenger list.
+  the five score parts with their evidence links, the market block
+  (possible buyers and value) and the build-vs-buy lens, reasons to stay,
+  and the challenger list.
 - ``exports/site/scores.json``: the same score blocks plus totals, sorted
   by total descending so the site can rank categories.
+- ``exports/site/regions.json``: every study region x kept category with
+  possible buyers, market value, the usage estimate when one exists and an
+  evidence level, plus a per-region summary.
 
 Missing per-category TOML files under ``configs/categories/`` are generated
 with the documented defaults first; existing files are read, never
@@ -21,7 +25,16 @@ import csv
 import json
 from pathlib import Path
 
-from lsa import catconfig, estimates, labels, paths, scores
+from lsa import (
+    catconfig,
+    criticality,
+    estimates,
+    labels,
+    market,
+    paths,
+    score_inputs,
+    scores,
+)
 
 DESK = "desk-research-2026-10-05.json"
 REGRADE = "regrade-2026-10-05.json"
@@ -108,6 +121,7 @@ def build_category(
     estimate: estimates.CategoryEstimate,
     score: scores.CategoryScore,
     challengers: list[dict],
+    mv: market.MarketValue | None = None,
 ) -> dict:
     """The site object for one kept category."""
     slug = cat_row["slug"]
@@ -144,11 +158,13 @@ def build_category(
             "notes": list(estimate.notes),
         },
         "scores": _score_json(score),
+        "market": market.market_json(mv) if mv is not None else None,
+        "build_vs_buy": market.lens_json(mv) if mv is not None else None,
         "challengers": chal,
     }
 
 
-def score_inputs(
+def _score_inputs(
     slug: str,
     desk: dict | None,
     regrade_row: dict | None,
@@ -159,7 +175,8 @@ def score_inputs(
     ai_answers: dict[str, dict],
     ai_pass_present: bool,
     cfg: catconfig.CategoryConfig,
-) -> scores.ScoreInputs:
+    mv: market.MarketValue | None = None,
+) -> score_inputs.ScoreInputs:
     """Assemble everything ``score_category`` consumes for one slug."""
     desk = desk or {}
     signs = {
@@ -170,16 +187,15 @@ def score_inputs(
         k: ((regrade_row or {}).get(k) or {}).get("source", "")
         for k in ("s1", "s2", "s3", "s4")
     }
-    weighted, unweighted = scores.job_in_use_share(items, slug)
-    uni, _ = estimates._universe(slug, estimates.load_csv(paths.RESEARCH / "buyer_universe.csv"), cfg)
-    universe_mid = sum((v["low"] + v["high"]) / 2 for v in uni.values()) or None
-    return scores.ScoreInputs(
+    weighted, unweighted = score_inputs.job_in_use_share(items, slug)
+    universe_mid = mv.buyers_mid if mv and mv.buyers_mid else None
+    return score_inputs.ScoreInputs(
         estimate=estimate,
         signs=signs,
         sign_evidence=sign_evidence,
         reasons_to_stay=list(desk.get("reasons_to_stay", [])),
         challengers=challenger_rows,
-        hn_pain_comments=scores.hn_pain_comments(items, slug),
+        hn_pain_comments=score_inputs.hn_pain_comments(items, slug),
         in_use_share=weighted,
         labelled_share=unweighted,
         tasks=tasks,
@@ -187,6 +203,7 @@ def score_inputs(
         ai_pass_present=ai_pass_present,
         config=cfg,
         universe_mid=universe_mid,
+        market=mv,
     )
 
 
@@ -214,14 +231,18 @@ def run_export(
     items = labels.load_labels(items_path=items_path, jev_root=jev_root)
     buyer_universe = estimates.load_csv(research / "buyer_universe.csv")
     vendors = estimates.load_csv(research / "vendors.csv")
-    tasks = scores.load_tasks(research / "tasks.csv")
-    ai_answers = scores.load_task_answers(jev_root)
-    ai_root = Path(jev_root or paths.DERIVED / "jev") / scores.AI_FIT_PASS
+    crit_map = criticality.load_criticality(research / "criticality.csv")
+    tasks = score_inputs.load_tasks(research / "tasks.csv")
+    ai_answers = score_inputs.load_task_answers(jev_root)
+    ai_root = Path(jev_root or paths.DERIVED / "jev") / score_inputs.AI_FIT_PASS
     ai_present = ai_root.exists()
     rubric = scores.load_rubric(rubric_path)
 
     written_configs = []
     cat_objs, score_objs = [], []
+    region_data: list[
+        tuple[str, estimates.CategoryEstimate, market.MarketValue]
+    ] = []
     for cat in cats:
         slug = cat["slug"]
         cfg_path = catconfig.ensure_config(
@@ -236,7 +257,10 @@ def run_export(
             vendors=vendors,
             config=cfg,
         )
-        inp = score_inputs(
+        mv = market.market_value(
+            slug, buyer_universe, crit_map.get(slug), cfg
+        )
+        inp = _score_inputs(
             slug,
             desk.get(slug),
             regrade.get(slug),
@@ -247,6 +271,7 @@ def run_export(
             ai_answers,
             ai_present,
             cfg,
+            mv,
         )
         sc = scores.score_category(slug, inp, rubric)
         cat_objs.append(
@@ -257,15 +282,18 @@ def run_export(
                 est,
                 sc,
                 challengers.get(slug, []),
+                mv,
             )
         )
         score_objs.append(_score_json(sc))
+        region_data.append((slug, est, mv))
 
     score_objs.sort(key=lambda s: s["total"], reverse=True)
     site = out_dir / "site"
     site.mkdir(exist_ok=True)
     cat_path = site / "categories.json"
     sco_path = site / "scores.json"
+    reg_path = site / "regions.json"
     cat_path.write_text(
         json.dumps(cat_objs, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
@@ -274,14 +302,22 @@ def run_export(
         json.dumps(score_objs, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
+    reg_path.write_text(
+        json.dumps(
+            market.regions_view(region_data), indent=2, ensure_ascii=False
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     return {
         "categories": cat_path,
         "scores": sco_path,
+        "regions": reg_path,
         "configs": written_configs,
     }
 
 
 def print_summary(result: dict) -> None:
-    for name in ("categories", "scores"):
+    for name in ("categories", "scores", "regions"):
         print(f"wrote {result[name]}")
     print(f"{len(result['configs'])} category configs checked")

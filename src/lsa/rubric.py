@@ -18,7 +18,8 @@ from lsa import paths
 @dataclass(frozen=True)
 class Rubric:
     weights: dict[str, float]
-    size_bins: tuple[float, ...]
+    value_bins_usd: tuple[float, ...]
+    buyer_bins: tuple[float, ...]
     s3_strong: float
     s3_weak: float
     hn_pain_min_comments: int
@@ -41,7 +42,13 @@ def load_rubric(path: Path | None = None) -> Rubric:
     pain, lockin, crowd = data["pain"], data["lockin"], data["crowding"]
     return Rubric(
         weights={k: float(v) for k, v in data["weights"].items()},
-        size_bins=tuple(float(b) for b in data["size"]["bins"]),
+        value_bins_usd=tuple(
+            float(b) for b in data["size"].get("value_bins_usd", ())
+        ),
+        buyer_bins=tuple(
+            float(b)
+            for b in data["size"].get("buyer_bins", data["size"].get("bins", ()))
+        ),
         s3_strong=float(pain["s3_strong"]),
         s3_weak=float(pain["s3_weak"]),
         hn_pain_min_comments=int(pain["hn_pain_min_comments"]),

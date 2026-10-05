@@ -10,9 +10,12 @@ lockin = 1.0
 crowding = 1.0
 
 [size]
-# Midpoint of the "companies using" range summed over all regions.
-evidence = "estimates: companies_using low/high per category"
-bins = [100, 1000, 10000, 100000]   # <100 -> 1, <1k -> 2, <10k -> 3, <100k -> 4, else 5
+# Market value: buyer-universe buyers x per-segment annual spend
+# (research/criticality.csv). Binned on the value midpoint in USD.
+evidence = "buyer universe x criticality spend; falls back to buyer count when no spend"
+value_bins_usd = [100_000_000, 1_000_000_000, 5_000_000_000, 20_000_000_000]  # <$0.1B -> 1 ... >=$20B -> 5
+# Fallback when a category has no spend data: bin the buyer-count midpoint.
+buyer_bins = [100, 1000, 10000, 100000]   # <100 -> 1, <1k -> 2, <10k -> 3, <100k -> 4, else 5
 
 [pain]
 # Start at 1 and add points, capped at 5.
