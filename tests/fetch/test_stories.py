@@ -91,7 +91,8 @@ def test_fetch_yields_story_pages_only(mock_client, no_sleep, tmp_path):
 
 
 def test_fetch_dedupes_pages_across_category_rows(mock_client, no_sleep, tmp_path):
-    """Two category rows for one domain share the sitemap and the story."""
+    """Two category rows for one domain share the sitemap and the story;
+    the page is produced once with the first row's category hint."""
     requests = []
     client = mock_client(_handler(requests))
     rows = [_record(category="core-banking"), _record(category="payroll-hr")]
@@ -102,10 +103,10 @@ def test_fetch_dedupes_pages_across_category_rows(mock_client, no_sleep, tmp_pat
         )
     )
     story_fetches = [u for u in requests if "/stories/" in u]
-    assert len(produced) == 2  # one item per category row is fine upstream...
-    assert len(story_fetches) == 1  # ...but the page itself is fetched once
+    assert len(produced) == 1
+    assert len(story_fetches) == 1
     assert produced[0].category_hint == "core-banking"
-    assert produced[1].category_hint == "payroll-hr"
+    assert produced[0].region == ""
 
 
 def test_fetch_skips_unknown_domains(mock_client, no_sleep, tmp_path):

@@ -46,11 +46,12 @@ _FIELDS = [
     "Description",
 ]
 # Contracts plus the IDV family, matching the count's ``contracts`` +
-# ``idvs`` groups.
-_PROCUREMENT_TYPES = (
-    "A", "B", "C", "D",
-    "IDV_A", "IDV_B", "IDV_B_A", "IDV_B_B", "IDV_B_C",
-    "IDV_C", "IDV_D", "IDV_E",
+# ``idvs`` groups. The award-search endpoint requires award_type_codes from
+# ONE group per call (verified live 2026-10-05: mixing groups returns 422),
+# so search pages contracts first, then IDVs.
+_PROCUREMENT_GROUPS = (
+    ("A", "B", "C", "D"),
+    ("IDV_A", "IDV_B", "IDV_B_A", "IDV_B_B", "IDV_B_C", "IDV_C", "IDV_D", "IDV_E"),
 )
 _PAGE = 100
 _AWARD_URL = "https://www.usaspending.gov/award/"
@@ -95,27 +96,31 @@ def _award_item(row: dict) -> SourceItem:
 
 
 def search(query: str, region: str, client: httpx.Client) -> Iterator[SourceItem]:
-    """Paged award rows for the query; item text is the award row itself."""
+    """Paged award rows for the query; item text is the award row itself.
+
+    Runs one paged loop per award-type group (contracts, then IDVs) because
+    the endpoint refuses mixed ``award_type_codes``.
+    """
     filters = _filters(query)
-    filters["award_type_codes"] = list(_PROCUREMENT_TYPES)
-    page = 1
-    while True:
-        response = http.post_with_backoff(
-            client,
-            _URL_SEARCH,
-            json={
-                "filters": filters,
-                "fields": _FIELDS,
-                "page": page,
-                "limit": _PAGE,
-                "sort": "Start Date",
-                "order": "desc",
-            },
-        )
-        response.raise_for_status()
-        payload = response.json()
-        for row in payload.get("results") or []:
-            yield _award_item(row)
-        if not (payload.get("page_metadata") or {}).get("hasNext"):
-            return
-        page += 1
+    for type_codes in _PROCUREMENT_GROUPS:
+        page = 1
+        while True:
+            response = http.post_with_backoff(
+                client,
+                _URL_SEARCH,
+                json={
+                    "filters": filters | {"award_type_codes": list(type_codes)},
+                    "fields": _FIELDS,
+                    "page": page,
+                    "limit": _PAGE,
+                    "sort": "Start Date",
+                    "order": "desc",
+                },
+            )
+            response.raise_for_status()
+            payload = response.json()
+            for row in payload.get("results") or []:
+                yield _award_item(row)
+            if not (payload.get("page_metadata") or {}).get("hasNext"):
+                break
+            page += 1

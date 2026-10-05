@@ -245,6 +245,12 @@ def _fetch(args: argparse.Namespace) -> None:
         return
     max_words = common.window_words(args.passes, args.family)
     raw_dir = paths.RAW / args.family
+    if args.family == "hn":
+        from lsa.sources import hn
+
+        snapshot = args.snapshot or hn.snapshot_path()
+        if not snapshot.exists():
+            raise SystemExit(f"snapshot not found: {snapshot}")
     from lsa.sources import http
 
     with http.make_client() as client:

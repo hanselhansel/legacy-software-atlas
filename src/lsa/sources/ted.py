@@ -31,10 +31,17 @@ _URL = "https://api.ted.europa.eu/v3/notices/search"
 _MATCH_ALL = "publication-date >= 20000101"
 
 # Item search pages the same endpoint; ``fields`` widen from just the
-# publication number to the fields Jev reads. ``page`` is 1-based and the
-# API caps ``limit`` at 250.
+# publication number to the fields Jev reads. Only TED's enumerated field
+# names are accepted (verified live 2026-10-05: ``buyer-name``/``description``
+# 400; ``organisation-name-buyer``/``description-lot`` work). ``page`` is
+# 1-based and the API caps ``limit`` at 250.
 _PAGE = 50
-_ITEM_FIELDS = ["publication-number", "notice-title", "buyer-name", "description"]
+_ITEM_FIELDS = [
+    "publication-number",
+    "notice-title",
+    "organisation-name-buyer",
+    "description-lot",
+]
 _DETAIL = "https://ted.europa.eu/en/notice/-/detail/"
 
 
@@ -76,8 +83,8 @@ def _item(notice: dict) -> SourceItem:
         t
         for t in (
             _texts(notice.get("notice-title")),
-            _texts(notice.get("buyer-name")),
-            _texts(notice.get("description")),
+            _texts(notice.get("organisation-name-buyer")),
+            _texts(notice.get("description-lot")),
         )
         if t
     )

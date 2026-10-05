@@ -59,11 +59,15 @@ def fetch(
             terms = [t.strip() for t in row.query.split(" | ") if t.strip()]
             if not terms:
                 continue
-            result = con.execute(
-                f"SELECT id, {col} FROM {comments} "
-                f"WHERE {hn._ELIGIBLE} AND regexp_matches(text_norm, ?)",
-                [hn._pattern(terms)],
-            )
+            try:
+                result = con.execute(
+                    f"SELECT id, {col} FROM {comments} "
+                    f"WHERE {hn._ELIGIBLE} AND regexp_matches(text_norm, ?)",
+                    [hn._pattern(terms)],
+                )
+            except Exception as exc:  # noqa: BLE001 - a bad row never stops
+                log(f"fetch hn {row.category}: {exc}")
+                continue
             for cid, body in result.fetchall():
                 yield common.Produced(
                     SourceItem(

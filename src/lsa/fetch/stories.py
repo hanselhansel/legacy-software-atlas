@@ -4,10 +4,10 @@ Counted rows hold ``method == "sitemap-url-count"`` when the site's
 sitemap parse worked. ``fetch`` groups rows by source domain so each site's
 sitemap walk runs once, filters page URLs through the site's own story
 regex (reusing ``sitemaps.story_urls``), checks robots on every story page,
-and yields the page's visible text. A page is fetched once even when
-several category rows cover the domain; the item is yielded once per row
-so its ``category_hint`` reflects that row, and ``collect_items``'s URL
-dedupe keeps a single raw copy.
+and yields each page's visible text as it is fetched, so a ``--limit`` run
+stops after the first few pages instead of reading a whole site. A domain's
+category rows share the same story URL set; each page is produced once with
+the first row's category as the hint.
 """
 
 from __future__ import annotations
@@ -55,7 +55,11 @@ def fetch(
         if urls is None:
             log(f"fetch {domain}: sitemap walk failed ({method})")
             continue
-        bodies: dict[str, str] = {}
+        # A domain's category rows share the same story URL set; each page
+        # is yielded once with the first row's category as the hint, so a
+        # --limit run stops after the first few story fetches.
+        hint = domain_rows[0].category
+        query = domain_rows[0].query
         for url in urls:
             if not robots.allowed(url, client, get_kwargs=kwargs):
                 continue
@@ -67,13 +71,13 @@ def fetch(
             if response.status_code != 200:
                 log(f"fetch {domain} {url} -> HTTP {response.status_code}")
                 continue
-            bodies[url] = text.html_to_text(response.text)
-        for row in domain_rows:
-            for url, body in bodies.items():
-                yield common.Produced(
-                    SourceItem("", url, body),
-                    domain,
-                    row.region,
-                    row.category,
-                    row.query,
-                )
+            yield common.Produced(
+                SourceItem("", url, text.html_to_text(response.text)),
+                domain,
+                # region is a Jev label for story families; the count
+                # row's "US" is the site registry's region, not the
+                # story's. Leave it empty for Jev to fill.
+                "",
+                hint,
+                query,
+            )

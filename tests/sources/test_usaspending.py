@@ -97,8 +97,9 @@ def test_count_429_then_success(mock_client, no_sleep):
     assert len(calls) == 2
 
 
-def test_search_pages_awards_until_has_next_false(mock_client, no_sleep):
-    pages = []
+def test_search_pages_each_award_type_group(mock_client, no_sleep):
+    """One paged loop per group: the endpoint refuses mixed type codes."""
+    calls = []
     row = {
         "internal_id": 1,
         "generated_internal_id": "CONT_AWD_9",
@@ -111,20 +112,22 @@ def test_search_pages_awards_until_has_next_false(mock_client, no_sleep):
 
     def handler(request: httpx.Request) -> httpx.Response:
         body = json.loads(request.read())
-        pages.append(body["page"])
-        results = [row] if body["page"] == 1 else [{**row, "internal_id": 2}]
+        calls.append(body)
+        first_group = body["filters"]["award_type_codes"] == ["A", "B", "C", "D"]
+        results = [row] if first_group else []
         return httpx.Response(
-            200,
-            json={
-                "results": results,
-                "page_metadata": {"hasNext": body["page"] == 1},
-            },
+            200, json={"results": results, "page_metadata": {"hasNext": False}}
         )
 
     client = mock_client(handler)
     items = list(usaspending.search("mainframe", "US", client))
-    assert pages == [1, 2]
-    assert len(items) == 2
+    # one call per group, single-group type codes per call
+    assert len(calls) == len(usaspending._PROCUREMENT_GROUPS)
+    contracts, idvs = (set(g) for g in usaspending._PROCUREMENT_GROUPS)
+    for c in calls:
+        codes = set(c["filters"]["award_type_codes"])
+        assert codes <= contracts or codes <= idvs
+    assert len(items) == 1
     item = items[0]
     assert item.source_id == "CONT_AWD_9"
     assert item.url == "https://www.usaspending.gov/award/CONT_AWD_9"
@@ -133,21 +136,19 @@ def test_search_pages_awards_until_has_next_false(mock_client, no_sleep):
 
 
 def test_search_posts_to_award_search_not_count(mock_client, no_sleep):
-    seen = {}
+    seen = []
 
     def handler(request: httpx.Request) -> httpx.Response:
-        seen["url"] = str(request.url)
-        seen["body"] = json.loads(request.read())
+        seen.append({"url": str(request.url), "body": json.loads(request.read())})
         return httpx.Response(
             200, json={"results": [], "page_metadata": {"hasNext": False}}
         )
 
     client = mock_client(handler)
     assert list(usaspending.search("core banking", "US", client)) == []
-    assert seen["url"].endswith("/search/spending_by_award/")
-    assert seen["body"]["filters"]["keywords"] == ['"core banking"']
-    assert seen["body"]["filters"]["time_period"] == usaspending._TIME_PERIOD
-    # Procurement instruments only: contracts A-D plus the IDV family.
-    assert "A" in seen["body"]["filters"]["award_type_codes"]
-    assert "IDV_E" in seen["body"]["filters"]["award_type_codes"]
-    assert "Award ID" in seen["body"]["fields"]
+    first = seen[0]
+    assert first["url"].endswith("/search/spending_by_award/")
+    assert first["body"]["filters"]["keywords"] == ['"core banking"']
+    assert first["body"]["filters"]["time_period"] == usaspending._TIME_PERIOD
+    assert first["body"]["filters"]["award_type_codes"] == ["A", "B", "C", "D"]
+    assert "Award ID" in first["body"]["fields"]

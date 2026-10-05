@@ -83,9 +83,9 @@ def test_search_pages_notices_and_flattens_multilingual(mock_client, no_sleep):
             notices = [
                 {
                     "publication-number": f"000{i}-2026",
-                    "notice-title": {"eng": ["core banking refresh"]},
-                    "buyer-name": {"eng": ["bank of test"]},
-                    "description": {"eng": ["replace the ledger"]},
+                    "notice-title": {"eng": "core banking refresh"},
+                    "organisation-name-buyer": {"eng": "bank of test"},
+                    "description-lot": {"eng": "replace the ledger"},
                 }
                 for i in range(ted._PAGE)
             ]
@@ -119,3 +119,5 @@ def test_search_sends_query_fields_and_page(mock_client, no_sleep):
     assert seen["body"]["page"] == 1
     assert "publication-number" in seen["body"]["fields"]
     assert "notice-title" in seen["body"]["fields"]
+    # only TED's enumerated field names; the live API rejects anything else
+    assert set(seen["body"]["fields"]) == set(ted._ITEM_FIELDS)
