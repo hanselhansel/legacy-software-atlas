@@ -1,0 +1,14 @@
+{
+ "pass": "vendor-stories-category-in-use-or-replaced-segment-region",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "vendor-stories-category-in-use-or-replaced-segment-region@v1",
+   "file_sha256": "4bf9c7d36b2a5311f01430e28209c09f866bfc7416fe5b3ce752dfbd5b8b2b26"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.9,
+ "git_commit": "b47341e921e03a27730ea899d22fcb1ec18b1c3d",
+ "started_at": "2026-10-05T04:31:23.946926+00:00"
+}

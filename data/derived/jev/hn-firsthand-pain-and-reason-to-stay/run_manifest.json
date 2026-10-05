@@ -1,0 +1,14 @@
+{
+ "pass": "hn-firsthand-pain-and-reason-to-stay",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "hn-firsthand-pain-and-reason-to-stay@v1",
+   "file_sha256": "032a4bedcb904f479d2f1cac82c34b821c13b9b04ab12589c19d1ff6c080e3a2"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.15,
+ "git_commit": "4174f3ff1ef2b7779c210bb1c0c0f12296827cc3",
+ "started_at": "2026-10-05T04:10:12.664039+00:00"
+}

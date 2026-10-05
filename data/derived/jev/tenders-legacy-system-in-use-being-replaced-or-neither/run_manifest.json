@@ -1,0 +1,14 @@
+{
+ "pass": "tenders-legacy-system-in-use-being-replaced-or-neither",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "tenders-legacy-system-in-use-being-replaced-or-neither@v1",
+   "file_sha256": "abd23592be38a1cc0588e69c01b04e31ee5104d86e0c616eb792505a54779816"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.3,
+ "git_commit": "b47341e921e03a27730ea899d22fcb1ec18b1c3d",
+ "started_at": "2026-10-05T04:26:45.842239+00:00"
+}

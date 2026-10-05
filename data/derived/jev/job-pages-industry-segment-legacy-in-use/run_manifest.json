@@ -1,0 +1,14 @@
+{
+ "pass": "job-pages-industry-segment-legacy-in-use",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "job-pages-industry-segment-legacy-in-use@v1",
+   "file_sha256": "25d85fabad4a1c10951207c2787c6eb9144a77d14c3084188cdc3041e4d535b2"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 3.5,
+ "git_commit": "b47341e921e03a27730ea899d22fcb1ec18b1c3d",
+ "started_at": "2026-10-05T04:30:17.616547+00:00"
+}

@@ -1,0 +1,14 @@
+{
+ "pass": "si-stories-category-in-use-or-replaced-segment-region",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "si-stories-category-in-use-or-replaced-segment-region@v1",
+   "file_sha256": "f4f93e6e81327ec6e343b65461c9568912188a18556eeb5691fa197f84742bdf"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.2,
+ "git_commit": "b47341e921e03a27730ea899d22fcb1ec18b1c3d",
+ "started_at": "2026-10-05T04:33:28.431151+00:00"
+}

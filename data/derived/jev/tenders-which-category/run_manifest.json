@@ -1,0 +1,14 @@
+{
+ "pass": "tenders-which-category",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "tenders-which-category@v1",
+   "file_sha256": "3eb27af908a6c294f43d8d7bde74e230da356676b52b4eb32494c04cff03fcc2"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.3,
+ "git_commit": "b47341e921e03a27730ea899d22fcb1ec18b1c3d",
+ "started_at": "2026-10-05T04:27:55.294641+00:00"
+}

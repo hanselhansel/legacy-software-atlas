@@ -1,0 +1,14 @@
+{
+ "pass": "job-apis-industry-segment-legacy-in-use",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "job-apis-industry-segment-legacy-in-use@v1",
+   "file_sha256": "7aad6fc70c7eed593734820bf0e87a3a238fb5442319637d6ff58ff842f3c419"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.2,
+ "git_commit": "b47341e921e03a27730ea899d22fcb1ec18b1c3d",
+ "started_at": "2026-10-05T04:29:12.996637+00:00"
+}
