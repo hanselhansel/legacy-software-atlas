@@ -1,0 +1,36 @@
+# Assumptions for "Cooperative, rural and microfinance banking (core + ERP for small lenders)" (cooperative-rural-microfinance-banking), plan 2 tasks 5 and 6.
+# `lsa export` wrote this file once and reads it on every run: edit values and
+# rerun the export to apply. Every assumed number lives here, not in code.
+slug = "cooperative-rural-microfinance-banking"
+
+[estimate]
+multiplier = 3.0        # high = min(buyer universe high, low x multiplier)
+penetration = 1.0       # buyer-universe family estimate = universe midpoint x this
+detection_rate = 1.0    # confirmed-signal estimate = weighted confirmed / this
+agree_within = 2.0      # two family estimates agree within this factor
+
+[confirmed]
+# One confirmed item counts as one organisation; org names are not extracted.
+tender_question_set = "tenders-which-category@v2"
+tender_require_status = []   # e.g. ["in_use", "being_replaced"] to also need a status
+job_question_sets = ["job-apis-industry-segment-legacy-in-use@v2", "job-pages-industry-segment-legacy-in-use@v2"]
+job_in_use_choices = ["in_use"]   # legacy_in_use answers counted as "legacy in use"
+
+[buyer_universe]
+skip = []   # register-name substrings whose rows are dropped before parsing
+# [buyer_universe.override.US]   # hand-set a region's universe when parsing is wrong
+# low = 0
+# high = 0
+
+[vendors]
+# Every row for the category counts as a legacy product unless excluded here.
+exclude_products = []      # product-name substrings whose rows are dropped
+count_overrides = {}       # "Vendor | Product" -> exact customer count
+multi_region_policy = "global"   # "each" counts a multi-region row in every named region
+
+[challengers]
+exclude_companies = []
+funding_overrides = {}     # "Company" -> disclosed USD total (replaces parsed funding)
+
+[lockin]
+regulation_patterns = ["regulat", "certif"]   # reason-to-stay substring match
