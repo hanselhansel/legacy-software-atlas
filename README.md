@@ -29,6 +29,15 @@ The repo stores URLs, dates, short quotes under 30 words, and derived labels. It
 not redistribute full third-party text or personal data. Code is MIT licensed;
 derived labels and aggregates are CC BY 4.0.
 
+Lane N source data (downloaded to git-ignored `data/raw/` at run time):
+
+- O*NET database Task Statements, U.S. Department of Labor/ETA, CC BY 4.0
+  (onetcenter.org).
+- BLS OEWS national employment and wages, public domain, via the BLS
+  Public Data API v2.
+- Anthropic Economic Index task usage, Hugging Face dataset
+  `Anthropic/EconomicIndex`, MIT license.
+
 ## Scoring and exports
 
 `lsa export` writes `exports/site/`:
