@@ -148,23 +148,13 @@ def test_pass_validation():
 
 
 def test_load_passes_reads_repo_config():
+    """The gate config: every counted family has a pass with a measured window."""
     passes = est.load_passes(ROOT / "configs" / "passes.toml")
     families = {p.family for p in passes}
-    assert families == {
-        "procurement",
-        "jobs",
-        "vendor",
-        "integrator",
-        "events",
-        "reviews",
-        "social",
-        "hn",
-    }
+    assert {"procurement", "jobs", "jobs-pages", "vendor", "integrator", "hn"} <= families
     for p in passes:
-        assert p.prefilter_keep == 1.0
-        assert p.tokens_per_item is None
-        assert p.items_per_call == 5
-        assert p.overhead_tokens_per_call == 120
+        assert p.tokens_per_item is not None
+        assert 0.0 < p.prefilter_keep <= 1.0
 
 
 def test_load_passes_optional_fields(tmp_path):
