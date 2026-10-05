@@ -56,3 +56,21 @@ name = "tasks: ai fit"
 family = "tasks"
 prefilter_keep = 1.0
 tokens_per_item = 40
+
+[[pass]]
+name = "awards: keep-alive or replace"
+family = "awards"
+prefilter_keep = 1.0
+tokens_per_item = 170
+
+[[pass]]
+name = "app reviews: backend failure"
+family = "app_reviews"
+prefilter_keep = 1.0
+tokens_per_item = 110
+
+[[pass]]
+name = "yc: category"
+family = "yc"
+prefilter_keep = 1.0
+tokens_per_item = 120

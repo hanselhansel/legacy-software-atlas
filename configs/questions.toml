@@ -365,3 +365,112 @@ criteria = [
   "4: most of it; a person only reviews exceptions.",
   "5: nearly all of it; the task is reading, matching, entering or reconciling data.",
 ]
+
+
+["awards: keep-alive or replace"]
+version = 1
+
+["awards: keep-alive or replace".questions.action]
+type = "choice"
+instructions = "`item` is a public contract award or notice about software or IT. What does the buyer pay for?"
+
+["awards: keep-alive or replace".questions.action.criteria]
+maintain = "Maintenance, support, licences or hosting for an existing system."
+extend = "Extending, renewing or enhancing an existing system, or staff to run it."
+replace = "Replacing, migrating off or modernising an existing system, or buying a new one."
+consult = "Advice, audits or strategy, not the system itself."
+other = "Not about a software system."
+
+["awards: keep-alive or replace".questions.category]
+type = "choice"
+instructions = "`item` is a public contract award or notice. Which software category is it mainly about? Answer unclear unless the text is clearly about software for that job."
+
+["awards: keep-alive or replace".questions.category.criteria]
+agriculture-commodity = "Agriculture and commodity trading"
+airline-pss = "Airline reservations and passenger service"
+capital-markets-trading-clearing = "Capital markets trading, clearing and brokerage back-office"
+card-payments-processing = "Card issuing and payments processing"
+construction-project-accounting = "Construction project accounting"
+cooperative-rural-microfinance-banking = "Cooperative, rural and microfinance banking (core + ERP for small lenders)"
+core-banking = "Core banking"
+courts-justice = "Courts and justice case management"
+ehr-hospital = "Hospital records (EHR)"
+erp-distribution = "Wholesale distribution ERP"
+erp-manufacturing = "Manufacturing ERP"
+field-service-maintenance = "Field service and maintenance (EAM/CMMS)"
+financial-close-gl = "Financial close and general ledger"
+gov-benefits = "Government benefits and social security"
+gov-licensing-permits = "Licensing, permits and case management"
+gov-tax = "Government tax administration"
+insurance-claims = "Insurance claims management"
+insurance-policy-admin = "Insurance policy administration"
+lab-information = "Laboratory information systems"
+land-registry = "Land and property registry"
+loan-origination-servicing = "Loan origination and servicing"
+mainframe-cobol-general = "Custom COBOL and mainframe applications (cross-industry)"
+medical-billing-rcm = "Medical billing and revenue cycle"
+mortgage-servicing = "Mortgage servicing"
+payroll-hr = "Payroll and HR administration"
+pension-provident-fund-admin = "Pension, provident fund and superannuation administration"
+port-terminal-operating-system = "Port and container terminal operating systems (TOS)"
+procurement-ap = "Procurement and accounts payable"
+retail-pos-merch = "Retail point of sale and merchandising"
+student-information = "Student information systems"
+telecom-bss = "Telecom billing and BSS"
+trade-finance = "Trade finance"
+utility-billing-cis = "Utility billing and customer information"
+warehouse-management = "Warehouse management"
+wealth-portfolio-accounting = "Wealth and portfolio accounting"
+unclear = "Not clearly about one of these categories."
+
+["app reviews: backend failure"]
+version = 1
+
+["app reviews: backend failure".questions.backend_failure]
+type = "probability"
+instructions = "Probability that `item`, an app review, complains about a backend or system failure: outages, maintenance downtime, failed or delayed transactions, wrong balances or records, sync errors. Design or feature complaints do not count."
+
+["yc: category"]
+version = 1
+
+["yc: category".questions.category]
+type = "choice"
+instructions = "`item` describes a startup. Which legacy software category does it mainly sell into? Answer none unless it builds software for that job."
+
+["yc: category".questions.category.criteria]
+agriculture-commodity = "Agriculture and commodity trading"
+airline-pss = "Airline reservations and passenger service"
+capital-markets-trading-clearing = "Capital markets trading, clearing and brokerage back-office"
+card-payments-processing = "Card issuing and payments processing"
+construction-project-accounting = "Construction project accounting"
+cooperative-rural-microfinance-banking = "Cooperative, rural and microfinance banking (core + ERP for small lenders)"
+core-banking = "Core banking"
+courts-justice = "Courts and justice case management"
+ehr-hospital = "Hospital records (EHR)"
+erp-distribution = "Wholesale distribution ERP"
+erp-manufacturing = "Manufacturing ERP"
+field-service-maintenance = "Field service and maintenance (EAM/CMMS)"
+financial-close-gl = "Financial close and general ledger"
+gov-benefits = "Government benefits and social security"
+gov-licensing-permits = "Licensing, permits and case management"
+gov-tax = "Government tax administration"
+insurance-claims = "Insurance claims management"
+insurance-policy-admin = "Insurance policy administration"
+lab-information = "Laboratory information systems"
+land-registry = "Land and property registry"
+loan-origination-servicing = "Loan origination and servicing"
+mainframe-cobol-general = "Custom COBOL and mainframe applications (cross-industry)"
+medical-billing-rcm = "Medical billing and revenue cycle"
+mortgage-servicing = "Mortgage servicing"
+payroll-hr = "Payroll and HR administration"
+pension-provident-fund-admin = "Pension, provident fund and superannuation administration"
+port-terminal-operating-system = "Port and container terminal operating systems (TOS)"
+procurement-ap = "Procurement and accounts payable"
+retail-pos-merch = "Retail point of sale and merchandising"
+student-information = "Student information systems"
+telecom-bss = "Telecom billing and BSS"
+trade-finance = "Trade finance"
+utility-billing-cis = "Utility billing and customer information"
+warehouse-management = "Warehouse management"
+wealth-portfolio-accounting = "Wealth and portfolio accounting"
+none = "None of these categories."

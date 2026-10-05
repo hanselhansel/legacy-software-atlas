@@ -16,10 +16,13 @@ worst_case_tokens_per_unknown_attempt = 4000
 "tenders-legacy-system-in-use-being-replaced-or-neither" = 0.30
 "tenders-which-category" = 0.30
 "job-apis-industry-segment-legacy-in-use" = 0.20
-"job-pages-industry-segment-legacy-in-use" = 3.50
-"vendor-stories-category-in-use-or-replaced-segment-region" = 0.90
+"job-pages-industry-segment-legacy-in-use" = 0.10   # lowered 2026-10-05: spent $0.02
+"vendor-stories-category-in-use-or-replaced-segment-region" = 0.10   # lowered 2026-10-05: spent $0.04
 "si-stories-category-in-use-or-replaced-segment-region" = 0.20
 "hn-firsthand-pain-and-reason-to-stay" = 0.15
 "tasks-ai-fit" = 0.05
+"awards-keep-alive-or-replace" = 1.50
+"app-reviews-backend-failure" = 1.50
+"yc-category" = 0.30
 # Caps are about 2.5x each pass's estimate in docs/reports/2026-10-05-pre-jev.md.
 # Unallocated reserve for pilots, the audit replay and reruns: 8.00 - 5.55 = 2.45.
