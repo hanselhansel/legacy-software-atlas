@@ -85,3 +85,110 @@ def test_sample_tokens_word_count():
     )
     # title + h1 + p visible; script and style dropped, head dropped too.
     assert cli._word_count(html) == 5
+
+
+def _fetch_args(family, **overrides):
+    base = {
+        "family": family,
+        "counts": None,
+        "items": None,
+        "sites": paths.RESEARCH / "vendor_sites.csv",
+        "passes": paths.ROOT / "configs" / "passes.toml",
+        "snapshot": None,
+        "dry_run": False,
+        "limit": None,
+    }
+    base.update(overrides)
+    return Namespace(**base)
+
+
+def _count_rec(source, family, method="x api total", query="cobol", count=5):
+    from lsa.contracts import CountRecord
+
+    return CountRecord(
+        source=source,
+        family=family,
+        region="US",
+        category="mainframe-cobol",
+        system="",
+        query=query,
+        count=count,
+        method=method,
+        counted_at="T",
+    )
+
+
+def test_fetch_dry_run_lists_plan_writes_nothing(tmp_path, capsys):
+    from lsa import count as cnt
+
+    counts = tmp_path / "counts.parquet"
+    cnt.append_counts(
+        [
+            _count_rec("usaspending", "procurement"),
+            _count_rec(
+                "kalibrr", "jobs",
+                method="kalibrr api total; rejected by sanity guard",
+            ),
+            _count_rec("hn-snapshot", "hn", method="local snapshot regex"),
+        ],
+        counts,
+    )
+    items = tmp_path / "items.parquet"
+    args = _fetch_args(
+        "procurement", counts=counts, items=items, dry_run=True
+    )
+    cli._fetch(args)
+    out = capsys.readouterr().out
+    assert "usaspending" in out and "cobol" in out
+    assert "kalibrr" not in out
+    assert "dry run" in out
+    assert not items.exists()
+
+
+def test_fetch_unknown_family_exits(tmp_path):
+    import pytest
+
+    args = _fetch_args("nope", counts=tmp_path / "c.parquet")
+    with pytest.raises(SystemExit):
+        cli._fetch(args)
+
+
+def test_fetch_missing_counts_exits(tmp_path):
+    import pytest
+
+    args = _fetch_args("procurement", counts=tmp_path / "nope.parquet")
+    with pytest.raises(SystemExit):
+        cli._fetch(args)
+
+
+def test_fetch_end_to_end_with_fake_source(tmp_path, monkeypatch, capsys):
+    """A fake API source flows through fetch -> raw -> items.parquet."""
+    from types import SimpleNamespace
+
+    from lsa import count as cnt
+    from lsa.contracts import SourceItem
+
+    def search(query, region, client):
+        yield SourceItem("id1", "https://x.test/1", "alpha beta gamma")
+        yield SourceItem("id2", "https://x.test/2", "delta epsilon")
+
+    fake = SimpleNamespace(SOURCE="fakesrc", search=search)
+    monkeypatch.setitem(cnt.API_SOURCES, "procurement", (fake,))
+    monkeypatch.setattr(paths, "RAW", tmp_path / "raw")
+
+    counts = tmp_path / "counts.parquet"
+    cnt.append_counts([_count_rec("fakesrc", "procurement")], counts)
+    items = tmp_path / "items.parquet"
+    args = _fetch_args("procurement", counts=counts, items=items, limit=1)
+    cli._fetch(args)
+
+    import pyarrow.parquet as pq
+
+    rows = pq.read_table(items).to_pylist()
+    assert len(rows) == 1  # limit honoured
+    assert rows[0]["item_id"] == "fakesrc:id1"
+    assert rows[0]["family"] == "procurement"
+    assert rows[0]["category_hint"] == "mainframe-cobol"
+    raw_files = list((tmp_path / "raw" / "procurement").glob("*.json"))
+    assert len(raw_files) == 1
+    cnt.API_SOURCES.pop("procurement", None)

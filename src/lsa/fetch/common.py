@@ -136,17 +136,22 @@ def collect_items(
     raw_dir: Path,
     max_words: int,
     fetched_at: str,
+    limit: int | None = None,
 ) -> list[ItemRow]:
     """Dedupe, window and write produced items; return the parquet rows.
 
     Dedupe is on URL or source id (plan 2, task 1): an item already seen
     under another query or page never reaches the raw store or the parquet
-    twice. Items with no text after windowing are dropped.
+    twice. Items with no text after windowing are dropped. ``limit`` caps
+    the kept items; because ``produced`` is lazy, hitting the cap stops the
+    source's paging mid-flight.
     """
     seen_ids: set[str] = set()
     seen_urls: set[str] = set()
     rows = []
     for p in produced:
+        if limit is not None and len(rows) >= limit:
+            break
         if not p.item.source_id and not p.item.url:
             continue
         iid = item_id(p.source, p.item)
