@@ -213,7 +213,7 @@ def test_run_api_counts_builds_records_and_skips_errors(monkeypatch):
     assert any("bad-src" in line for line in logs)
 
 
-def test_run_api_counts_skips_unknown_region(monkeypatch):
+def test_run_api_counts_skips_unknown_region():
     logs: list[str] = []
     records = cnt.run_api_counts(
         [cnt.QueryRow("cat", "XX", "q", "en")],
@@ -223,6 +223,42 @@ def test_run_api_counts_skips_unknown_region(monkeypatch):
     )
     assert records == []
     assert logs
+
+
+def test_run_api_counts_skips_bad_count_values(monkeypatch):
+    """A source returning an invalid count is skipped, not fatal."""
+    neg = _stub_source("neg-src", ("US",), result=-1)
+    text = _stub_source("text-src", ("US",), result="lots")
+    ok = _stub_source("ok-src", ("US",), result=3)
+    monkeypatch.setattr(
+        cnt, "API_SOURCES", {"procurement": (neg, text, ok)}
+    )
+    logs: list[str] = []
+    records = cnt.run_api_counts(
+        [cnt.QueryRow("cat", "US", "q", "en")],
+        "procurement",
+        client=None,
+        log=logs.append,
+    )
+    assert [r.source for r in records] == ["ok-src"]
+    assert len(logs) == 2
+
+
+def test_run_api_counts_none_count_survives_to_parquet(
+    monkeypatch, tmp_path
+):
+    none_src = _stub_source("none-src", ("US",), result=None)
+    monkeypatch.setattr(cnt, "API_SOURCES", {"procurement": (none_src,)})
+    records = cnt.run_api_counts(
+        [cnt.QueryRow("cat", "US", "q", "en")],
+        "procurement",
+        client=None,
+        log=lambda m: None,
+    )
+    assert len(records) == 1
+    assert records[0].count is None
+    out = cnt.append_counts(records, tmp_path / "counts.parquet")
+    assert pq.read_table(out).to_pylist()[0]["count"] is None
 
 
 def test_cli_count_api_family_writes_counts(tmp_path, monkeypatch, capsys):
@@ -264,6 +300,10 @@ def test_cli_count_api_family_writes_counts(tmp_path, monkeypatch, capsys):
     assert by_source["us-src"]["system"] == ""
     assert by_source["eu-src"]["count"] == 20
     assert by_source["eu-src"]["category"] == "erp"
+
+    # A rerun upserts rather than duplicating rows.
+    main()
+    assert len(pq.read_table(out).to_pylist()) == 2
 
 
 def test_cli_count_dry_run_prints_plan_without_writing(

@@ -103,6 +103,75 @@ def test_5xx_is_retried(mock_client, no_sleep):
     assert len(calls) == http.MAX_TRIES
 
 
+def test_5xx_then_success(mock_client, no_sleep):
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        if len(calls) == 1:
+            return httpx.Response(503)
+        return httpx.Response(200, json={"ok": True})
+
+    client = mock_client(handler)
+    response = http.get_with_backoff(client, "https://a.example/x")
+    assert response.status_code == 200
+    assert len(calls) == 2
+
+
+def test_transport_error_then_success(mock_client, no_sleep):
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        if len(calls) == 1:
+            raise httpx.ConnectError("boom", request=request)
+        return httpx.Response(200, json={"ok": True})
+
+    client = mock_client(handler)
+    response = http.get_with_backoff(client, "https://a.example/x")
+    assert response.status_code == 200
+    assert len(calls) == 2
+
+
+def test_transport_error_raises_after_max_tries(mock_client, no_sleep):
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        raise httpx.ConnectError("boom", request=request)
+
+    client = mock_client(handler)
+    with pytest.raises(httpx.ConnectError):
+        http.get_with_backoff(client, "https://a.example/x")
+    assert len(calls) == http.MAX_TRIES
+
+
+def test_retry_after_is_capped(mock_client, no_sleep):
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        if len(calls) == 1:
+            return httpx.Response(429, headers={"Retry-After": "9999"})
+        return httpx.Response(200, json={"ok": True})
+
+    client = mock_client(handler)
+    http.get_with_backoff(client, "https://a.example/x")
+    assert http.RETRY_AFTER_MAX in no_sleep
+    assert max(no_sleep) <= http.RETRY_AFTER_MAX
+
+
+def test_min_interval_paces_call_slower(mock_client, no_sleep):
+    client = mock_client(_ok)
+    http.get_with_backoff(
+        client, "https://a.example/x", min_interval=2.5
+    )
+    http.get_with_backoff(
+        client, "https://a.example/y", min_interval=2.5
+    )
+    assert no_sleep and no_sleep[0] > 2.0
+
+
 def test_other_4xx_is_not_retried(mock_client, no_sleep):
     calls = []
 

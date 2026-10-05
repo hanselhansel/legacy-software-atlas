@@ -34,6 +34,10 @@ def test_count_sums_procurement_award_groups(mock_client, no_sleep):
         "https://api.usaspending.gov/api/v2/search/spending_by_award_count/"
     )
     assert seen["body"]["filters"]["keywords"] == ["mainframe"]
+    # Same FY2025 window the sources.csv live test verified.
+    assert seen["body"]["filters"]["time_period"] == [
+        {"start_date": "2024-10-01", "end_date": "2025-09-30"}
+    ]
 
 
 def test_count_missing_results_returns_none(mock_client, no_sleep):

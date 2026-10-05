@@ -23,6 +23,16 @@ def test_count_reads_result_total(mock_client, no_sleep):
     assert seen["params"]["limit"] == "1"
 
 
+def test_calls_stay_under_datagovsg_rate_limit(mock_client, no_sleep):
+    """datastore_search allows 4 calls per 10 s; calls must wait >=2.5 s."""
+    client = mock_client(
+        lambda r: httpx.Response(200, json={"result": {"total": 1}})
+    )
+    gebiz.count("a", "SG", client)
+    gebiz.count("b", "SG", client)
+    assert no_sleep and no_sleep[0] > 2.0
+
+
 def test_count_missing_total_returns_none(mock_client, no_sleep):
     client = mock_client(
         lambda r: httpx.Response(200, json={"result": {"records": []}})

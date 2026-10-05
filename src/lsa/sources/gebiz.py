@@ -20,10 +20,13 @@ RESOURCE_ID = "d_acde1106003906a75c3fa052592f2fcb"
 
 
 def count(query: str, region: str, client: httpx.Client) -> int | None:
+    # datastore_search allows 4 calls per 10 s without a developer key, so
+    # calls are paced at 2.5 s rather than the 1 s default.
     response = http.get_with_backoff(
         client,
         _URL,
         params={"resource_id": RESOURCE_ID, "q": query, "limit": 1},
+        min_interval=2.5,
     )
     response.raise_for_status()
     result = response.json().get("result")

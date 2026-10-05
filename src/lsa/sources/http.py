@@ -23,6 +23,7 @@ TIMEOUT = 30.0
 MAX_TRIES = 5
 MIN_HOST_INTERVAL = 1.0
 BACKOFF_MAX = 30.0
+RETRY_AFTER_MAX = 120.0
 
 _last_call: dict[str, float] = {}
 
@@ -55,37 +56,63 @@ def _retry_after(response: httpx.Response) -> float | None:
         return None
 
 
-def _pace(url: str) -> None:
-    """Sleep so calls to one host stay at least ``MIN_HOST_INTERVAL`` apart."""
+def _pace(url: str, interval: float = MIN_HOST_INTERVAL) -> None:
+    """Sleep so calls to one host stay at least ``interval`` seconds apart."""
     host = httpx.URL(url).host or ""
     last = _last_call.get(host)
     if last is not None:
-        _sleep(MIN_HOST_INTERVAL - (time.monotonic() - last))
+        _sleep(interval - (time.monotonic() - last))
     _last_call[host] = time.monotonic()
 
 
+def _wait(response: httpx.Response, attempt: int) -> float:
+    """Seconds to wait before a retry: Retry-After or exponential, capped."""
+    wait = _retry_after(response)
+    if wait is None:
+        wait = min(2.0**attempt, BACKOFF_MAX)
+    return min(wait, RETRY_AFTER_MAX)
+
+
 def _with_backoff(
-    client: httpx.Client, method: str, url: str, **kwargs
+    client: httpx.Client,
+    method: str,
+    url: str,
+    min_interval: float = MIN_HOST_INTERVAL,
+    **kwargs,
 ) -> httpx.Response:
     for attempt in range(MAX_TRIES):
-        _pace(url)
-        response = client.request(method, url, **kwargs)
+        _pace(url, min_interval)
+        try:
+            response = client.request(method, url, **kwargs)
+        except httpx.TransportError:
+            if attempt == MAX_TRIES - 1:
+                raise
+            _sleep(min(2.0**attempt, BACKOFF_MAX))
+            continue
         retryable = response.status_code == 429 or response.status_code >= 500
         if not retryable:
             return response
         if attempt == MAX_TRIES - 1:
             response.raise_for_status()
-        _sleep(_retry_after(response) or min(2.0**attempt, BACKOFF_MAX))
+        _sleep(_wait(response, attempt))
     raise AssertionError("unreachable")
 
 
 def get_with_backoff(
-    client: httpx.Client, url: str, **kwargs
+    client: httpx.Client,
+    url: str,
+    *,
+    min_interval: float = MIN_HOST_INTERVAL,
+    **kwargs,
 ) -> httpx.Response:
-    return _with_backoff(client, "GET", url, **kwargs)
+    return _with_backoff(client, "GET", url, min_interval, **kwargs)
 
 
 def post_with_backoff(
-    client: httpx.Client, url: str, **kwargs
+    client: httpx.Client,
+    url: str,
+    *,
+    min_interval: float = MIN_HOST_INTERVAL,
+    **kwargs,
 ) -> httpx.Response:
-    return _with_backoff(client, "POST", url, **kwargs)
+    return _with_backoff(client, "POST", url, min_interval, **kwargs)

@@ -126,22 +126,22 @@ def run_api_counts(
                 continue
             try:
                 total = mod.count(row.query, row.region, client)
+                records.append(
+                    CountRecord(
+                        source=mod.SOURCE,
+                        family=mod.FAMILY,
+                        region=row.region,
+                        category=row.category,
+                        system="",
+                        query=row.query,
+                        count=total,
+                        method=f"{mod.SOURCE} api total",
+                        counted_at=counted_at,
+                    )
+                )
             except Exception as exc:  # noqa: BLE001 - any source error skips, never crashes
                 log(f"skip {mod.SOURCE} {row.region} {row.query!r}: {exc}")
                 continue
-            records.append(
-                CountRecord(
-                    source=mod.SOURCE,
-                    family=mod.FAMILY,
-                    region=row.region,
-                    category=row.category,
-                    system="",
-                    query=row.query,
-                    count=total,
-                    method=f"{mod.SOURCE} api total",
-                    counted_at=counted_at,
-                )
-            )
     return records
 
 
