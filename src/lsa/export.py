@@ -34,6 +34,7 @@ from lsa import (
     paths,
     score_inputs,
     scores,
+    topdown,
 )
 
 DESK = "desk-research-2026-10-05.json"
@@ -232,6 +233,7 @@ def run_export(
     buyer_universe = estimates.load_csv(research / "buyer_universe.csv")
     vendors = estimates.load_csv(research / "vendors.csv")
     crit_map = criticality.load_criticality(research / "criticality.csv")
+    topdown_rows = topdown.load(research / "market_size.csv")
     tasks = score_inputs.load_tasks(research / "tasks.csv")
     ai_answers = score_inputs.load_task_answers(jev_root)
     ai_root = Path(jev_root or paths.DERIVED / "jev") / score_inputs.AI_FIT_PASS
@@ -257,8 +259,9 @@ def run_export(
             vendors=vendors,
             config=cfg,
         )
-        mv = market.market_value(
-            slug, buyer_universe, crit_map.get(slug), cfg
+        mv = topdown.calibrate(
+            market.market_value(slug, buyer_universe, crit_map.get(slug), cfg),
+            topdown_rows.get(slug),
         )
         inp = _score_inputs(
             slug,
