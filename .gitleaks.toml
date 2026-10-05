@@ -12,4 +12,5 @@ keywords = ["apikey"]
 # Item ids are "<site>:<16 hex of the URL hash>" (src/lsa/fetch). They are not secrets.
 [allowlist]
 description = "fetched item ids"
+regexTarget = "match"
 regexes = ['''[a-z0-9.-]+\.[a-z]{2,}:[0-9a-f]{16}''']
