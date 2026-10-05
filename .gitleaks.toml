@@ -8,3 +8,8 @@ id = "typesafe-api-key"
 description = "TypeSafe API key"
 regex = '''(?i)apikey(?:_|%5f)[0-9a-f]{36}(?:_|%5f)[0-9a-f]{64}'''
 keywords = ["apikey"]
+
+# Item ids are "<site>:<16 hex of the URL hash>" (src/lsa/fetch). They are not secrets.
+[allowlist]
+description = "fetched item ids"
+regexes = ['''[a-z0-9.-]+\.[a-z]{2,}:[0-9a-f]{16}''']
