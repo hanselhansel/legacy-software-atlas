@@ -45,3 +45,18 @@ re-labelled blind with the v2 wording.
 Finding from the audit itself: blind labellers put about 80% of keyword-matched tenders in no
 legacy category at all. Raw tender keyword counts overstate legacy demand several times over;
 only Jev-confirmed tenders (v2 category) are used in estimates.
+
+## Tasks: AI fit (2026-10-05)
+
+420 tasks (12 per kept category) scored 1 to 5. Jev returns a continuous score on a 0 to 4 scale;
+it is shifted by +1 before use. Blind sample: 60 tasks, seed 20261005.
+
+| Measure | Result |
+|---|---|
+| Exact match after rounding | 55% |
+| Within one point | 85% (bar for ordinal scores) |
+| Rank correlation (Spearman) | 0.83 |
+| Mean score, Jev vs labels | 3.46 vs 2.97 |
+
+Jev rates tasks about half a point more automatable than the labellers. AI fit is therefore used
+to rank categories against each other, never as an absolute claim about what AI can do.

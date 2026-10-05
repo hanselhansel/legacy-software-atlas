@@ -1,0 +1,362 @@
+[
+{
+"item_id": "task:field-service-maintenance:09",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:mortgage-servicing:03",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:financial-close-gl:07",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:insurance-policy-admin:00",
+"answers": {
+"ai_fit": 5
+}
+},
+{
+"item_id": "task:core-banking:07",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:construction-project-accounting:00",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:mortgage-servicing:07",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:medical-billing-rcm:03",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:agriculture-commodity:11",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:card-payments-processing:10",
+"answers": {
+"ai_fit": 1
+}
+},
+{
+"item_id": "task:construction-project-accounting:09",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:telecom-bss:06",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:financial-close-gl:03",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:medical-billing-rcm:10",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:financial-close-gl:01",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:trade-finance:05",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:lab-information:10",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:procurement-ap:04",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:insurance-policy-admin:07",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:pension-provident-fund-admin:00",
+"answers": {
+"ai_fit": 5
+}
+},
+{
+"item_id": "task:telecom-bss:01",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:insurance-claims:02",
+"answers": {
+"ai_fit": 1
+}
+},
+{
+"item_id": "task:erp-distribution:08",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:agriculture-commodity:04",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:core-banking:04",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:gov-tax:07",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:insurance-policy-admin:03",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:gov-tax:08",
+"answers": {
+"ai_fit": 1
+}
+},
+{
+"item_id": "task:financial-close-gl:06",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:insurance-claims:00",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:field-service-maintenance:08",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:core-banking:05",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:capital-markets-trading-clearing:03",
+"answers": {
+"ai_fit": 5
+}
+},
+{
+"item_id": "task:utility-billing-cis:10",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:erp-distribution:03",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:utility-billing-cis:04",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:core-banking:08",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:field-service-maintenance:01",
+"answers": {
+"ai_fit": 1
+}
+},
+{
+"item_id": "task:gov-benefits:03",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:port-terminal-operating-system:03",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:telecom-bss:05",
+"answers": {
+"ai_fit": 1
+}
+},
+{
+"item_id": "task:telecom-bss:04",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:warehouse-management:00",
+"answers": {
+"ai_fit": 1
+}
+},
+{
+"item_id": "task:mainframe-cobol-general:03",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:erp-distribution:10",
+"answers": {
+"ai_fit": 5
+}
+},
+{
+"item_id": "task:agriculture-commodity:07",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:utility-billing-cis:02",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:trade-finance:08",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:courts-justice:04",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:medical-billing-rcm:02",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:loan-origination-servicing:02",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:port-terminal-operating-system:07",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:cooperative-rural-microfinance-banking:09",
+"answers": {
+"ai_fit": 1
+}
+},
+{
+"item_id": "task:lab-information:00",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:warehouse-management:06",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:payroll-hr:02",
+"answers": {
+"ai_fit": 4
+}
+},
+{
+"item_id": "task:gov-benefits:08",
+"answers": {
+"ai_fit": 3
+}
+},
+{
+"item_id": "task:gov-tax:05",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:erp-manufacturing:05",
+"answers": {
+"ai_fit": 2
+}
+},
+{
+"item_id": "task:field-service-maintenance:00",
+"answers": {
+"ai_fit": 1
+}
+}
+]
