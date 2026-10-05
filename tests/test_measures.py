@@ -8,7 +8,8 @@ TH = measures.Thresholds(
     pain_min_awards=3,
     min_reviews=3,
     min_apps=2,
-    min_cases=2,
+    pain_min_cases=2,
+    lockin_min_cases=2,
     failure_yes=0.7,
     lockin_min_awards=3,
 )

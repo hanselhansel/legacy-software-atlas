@@ -97,12 +97,13 @@ class Thresholds:
     pain_min_awards: int = 10
     min_reviews: int = 50
     min_apps: int = 3
-    min_cases: int = 3
+    pain_min_cases: int = 3
     failure_yes: float = 0.7
     s3_strong: float = 5.0
     s3_weak: float = 3.0
     s3_other: float = 1.0
     lockin_min_awards: int = 10
+    lockin_min_cases: int = 3
     noncompetitive: tuple[str, ...] = ("negotiated_no_competition", "direct")
     regulator_true: float = 5.0
     regulator_false: float = 1.0
@@ -300,7 +301,7 @@ def _raw_sub_scores(
             else None
         ),
         "failed_rate": (
-            _under_min(failed_rates(data.cases), th.min_cases)
+            _under_min(failed_rates(data.cases), th.pain_min_cases)
             if data.cases is not None
             else None
         ),
@@ -323,7 +324,7 @@ def _raw_sub_scores(
             else None
         ),
         "replacement_duration_months": (
-            _under_min(replacement_durations(data.cases), th.min_cases)
+            _under_min(replacement_durations(data.cases), th.lockin_min_cases)
             if data.cases is not None
             else None
         ),
