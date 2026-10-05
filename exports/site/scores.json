@@ -1,0 +1,3410 @@
+[
+  {
+    "slug": "construction-project-accounting",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 362800.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 362800 companies using",
+          "US: 43400-130200 grade C",
+          "https://www.foundationsoft.com/about/",
+          "https://www.erpresearch.com/en-us/cmic-erp",
+          "https://www.bls.gov/iag/tgs/iag23.htm",
+          "global: 138000-414000 grade C",
+          "https://www.sec.gov/Archives/edgar/data/0000864749/000119312518127126/d573173dex991.htm",
+          "https://www.theaccessgroup.com/en-gb/construction/products/coins/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.constructiondive.com/news/construction-app-usage-increases-despite-continued-lack-of-integration/592922/ ; https://www.fieldmaterials.com/integrations/viewpoint-vista",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.constructionnews.co.uk/tech/progress-at-what-cost-24-10-2019/",
+          "https://freehire.me/jobs/coins-erp-developer-square-one-resources-nxrazmwz ; https://www.top-sage-resellers.com/sage-construction-software-partners.html",
+          "regulation reason to stay: Job costing, payroll and union/certified payroll are embedded in decades of data. Construction payroll (prevailing wage, union fringes, multi-state) is hard to replicate."
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 124300000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Field Materials",
+            "Novade"
+          ]
+        },
+        "evidence": [
+          "https://fundraiseinsider.com/blog/tidemark-leads-30m-series-b-for-construction-accounting-startup-adaptive/",
+          "https://constructiondigital.com/technology-and-ai/briq-raises-usdollar30mn-funding-led-tiger-global",
+          "https://www.siteline.com/blog/siteline-announces-series-a-funding",
+          "https://www.fieldmaterials.com/integrations/viewpoint-vista",
+          "https://archdesk.com/about/investors",
+          "https://inc42.com/buzz/powerplay-raises-5-2-mn-led-by-accel-partners-and-surge/",
+          "https://www.novade.net/news/construction-tech-startup-novade-completes-series-b-funding/",
+          "funding unparsed: Field Materials, Novade"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "courts-justice",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 319532.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 319532 companies using",
+          "AU: 300000-300000 grade C",
+          "https://www.computerworld.com/article/1677146/vic-courts-prepare-to-replace-aging-mainframe-system.html",
+          "https://courts.nsw.gov.au/about-us/about-the-courts-and-tribunals.html",
+          "EU: 16-48 grade C",
+          "https://www.bmjv.de/DE/themen/digitales/digitalisierung_justiz/digitalisierungsinitiative/laendervorhaben/_doc/artikel_vorhaben_02_gefa.html",
+          "https://eucrim.eu/news/cepej-2024-report-on-european-judicial-systems/",
+          "IN: 2852-2877 grade B",
+          "https://services.ecourts.gov.in/ecourtindia_v6/?p=about_us/index",
+          "PH: 327-484 grade B",
+          "https://3ieimpact.org/sites/default/files/2021-02/SC-PWP-IE-brief.pdf",
+          "SG: 14000-14000 grade B",
+          "https://www.crimsonlogic.com/case-study-crimsonlogic-elitigation",
+          "US: 2156-2156 grade C",
+          "https://equivant-court.com/about-us/",
+          "https://hiepro.ehawaii.gov/resources/108209/ATTACHMENT%207-Attachment%207%20Judiciary%20Technical%20Background%20and%20Current%20Systems.pdf",
+          "https://www.uscourts.gov/data-news/judiciary-news/2026/03/10/judges-outline-accelerated-modernization-case-management-system",
+          "https://bjs.ojp.gov/content/pub/pdf/sco11.pdf",
+          "global: 37-111 grade C",
+          "https://www.sec.gov/Archives/edgar/data/783412/000143774925038836/djco20250930_10k.htm"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 3,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://hiepro.ehawaii.gov/resources/108209/ATTACHMENT%207-Attachment%207%20Judiciary%20Technical%20Background%20and%20Current%20Systems.pdf",
+          "hn firsthand pain >= 0.7: 3 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.courts.state.md.us/media/news/2024/pr20240506 ; https://www.bmjv.de/DE/themen/digitales/digitalisierung_justiz/digitalisierungsinitiative/laendervorhaben/_doc/artikel_vorhaben_02_gefa.html",
+          "https://www.law.georgetown.edu/tech-institute/wp-content/uploads/sites/42/2023/02/Judicial-Innovation-Fellowship-Roadmap-1.pdf"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 17139000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "eCourtDate",
+            "Tyler Technologies (Enterprise Justice SaaS)",
+            "CaseLines (Thomson Reuters)"
+          ]
+        },
+        "evidence": [
+          "https://www.abajournal.com/news/article/clio-acquires-learned-hand-an-ai-company-for-courts-and-judges",
+          "https://ssir.org/articles/entry/legal-tech-nonprofit-court-ai-injustices-india-court-system",
+          "https://getlatka.com/companies/ecourtdate",
+          "https://www.sec.gov/Archives/edgar/data/783412/000143774925038836/djco20250930_10k.htm",
+          "https://investors.tylertech.com/news/news-details/2024/Tyler-Technologies-to-Enhance-Court-Case-Accessibility-and-Efficiency-for-the-Commonwealth-of-Kentucky/default.aspx",
+          "https://www.artificiallawyer.com/2020/08/13/thomson-reuters-buys-caselines/",
+          "funding unparsed: eCourtDate, Tyler Technologies (Enterprise Justice SaaS), CaseLines (Thomson Reuters)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "erp-manufacturing",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 62272.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 62272 companies using",
+          "AU: 3-9 grade C",
+          "https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/jul2022-jun2026/8165DC01.xlsx",
+          "EU: 16-48 grade C",
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_the_manufacturing_sector",
+          "SG: 17-51 grade C",
+          "https://data.gov.sg/datasets/d_b58ac78d1926815a12d2574d2dcab331/view",
+          "global: 31100-93300 grade C",
+          "https://www.infor.com/solutions/erp/ln",
+          "https://www.itjungle.com/2022/08/03/jd-edwards-customers-face-support-decisions/",
+          "https://www.sec.gov/Archives/edgar/data/1036188/000136231009005308/c83836e10vk.htm",
+          "https://www.stacksync.com/blog/two-companies-from-1972-the-origin-story-of-epicor"
+        ]
+      },
+      "pain": {
+        "score": 3,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 1,
+          "in_use_share": 0.5862264150943396,
+          "in_use_share_unweighted": 0.47619047619047616
+        },
+        "evidence": [
+          "https://www.qlector.com/resources/insights/how-leading-manufacturers-plan-production-50-still-depend-on-excel-and-paper ; https://iot-analytics.com/mes-vendors-replace-pen-paper-spreadsheets/",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.5862264150943396 (unweighted 0.47619047619047616, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 2,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.theregister.com/2026/02/27/dsag_ecc_sap/ ; https://www.panorama-consulting.com/resource-center/erp-report/",
+          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/ ; https://www.liminalarc.co/2026/08/the-rpg-skills-cliff/"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 2304000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Odoo"
+          ]
+        },
+        "evidence": [
+          "https://katanamrp.com/newsroom/",
+          "https://fulcrumpro.com/article/fulcrum-raises-18m-to-fuel-the-future-of-manufacturing",
+          "https://techcrunch.com/2026/03/24/doss-raises-55m-for-ai-inventory-management-that-plugs-into-erp/",
+          "https://www.odoo.com/blog/odoo-news-5/odoo-s-a-announces-a-500-million-transaction-increasing-the-belgian-unicorn-s-valuation-to-5-billion-1508",
+          "https://www.rockwellautomation.com/en-fi/company/news/press-releases/rockwell-automation-to-expand-industrial-cloud-software-offering.html",
+          "funding unparsed: Odoo"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "gov-benefits",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 6600296.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 6.6003e+06 companies using",
+          "AU: 1-1 grade C",
+          "https://www.itnews.com.au/news/centrelink-it-system-risks-largely-managed-during-wpit-overhaul-553896",
+          "EU: 2-6 grade C",
+          "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/digitalisation-social-security-coordination/electronic-exchange-social-security-information-eessi_en",
+          "SG: 76-76 grade C",
+          "https://www.accenture.com/sg-en/case-studies/public-service/social-security-securing-life-goals",
+          "https://www.asean-ssa.org/member-institutions/singapore/",
+          "TH: 1-3 grade C",
+          "https://www.asean-ssa.org/member-institutions/thailand/",
+          "UK: 11-11 grade C",
+          "https://www.oneadvanced.com/resources/dwp-completes-large-scale-modernisation-project-for-nations-benefit-systems/",
+          "https://www.gov.uk/government/publications/dwp-statistical-summary-policies-and-statements/housing-benefit-caseload-and-flows-statistics-methodology-statement",
+          "US: 25-75 grade C",
+          "https://kffhealthnews.org/news/article/medicaid-deloitte-run-eligibility-systems-plagued-by-errors/",
+          "https://www.macpac.gov/medicaid-101/",
+          "https://www.gao.gov/assets/gao-22-104251.pdf",
+          "global: 6600152-6600152 grade C",
+          "https://www.merative.com/curam",
+          "https://en.wikipedia.org/wiki/Model_204",
+          "https://www.microfocus.com/de-de/media/success-story/german_pension_fund_baden_wurttemberg_ss_de.pdf",
+          "https://en.wikipedia.org/wiki/International_Social_Security_Association"
+        ]
+      },
+      "pain": {
+        "score": 3,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.4567901234567901,
+          "in_use_share_unweighted": 0.18181818181818182
+        },
+        "evidence": [
+          "https://www.nao.org.uk/wp-content/uploads/2021/09/Investigation-into-underpayments-of-State-Pension-Summary.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.4567901234567901 (unweighted 0.18181818181818182, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "strong",
+          "s4_hit": true,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.nao.org.uk/wp-content/uploads/2024/02/progress-in-implementing-universal-credit-report.pdf",
+          "https://files.gao.gov/reports/GAO-25-107795/index.html ; https://www.gao.gov/products/gao-23-105478"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 307900000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Nava PBC"
+          ]
+        },
+        "evidence": [
+          "https://www.navapbc.com/nava-timeline",
+          "https://www.prnewswire.com/news-releases/unite-us-announces-it-has-raised-150m-to-scale-nationwide-social-care-infrastructure-301247923.html",
+          "https://en.wikipedia.org/wiki/Propel_(company)",
+          "https://techcrunch.com/2022/02/24/promise-government-installment-plans-raises-25m/",
+          "https://www.gv.com/news/mechanical-orchard-ai",
+          "https://inc42.com/buzz/haqdarshak-raises-funding-to-enable-easy-information-access-through-technology/",
+          "funding unparsed: Nava PBC"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "gov-licensing-permits",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 17980.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 17980 companies using",
+          "AU: 70-210 grade C",
+          "https://www.infor.com/en-au/products/pathway",
+          "https://alga.com.au/about/local-government/facts-and-figures/",
+          "UK: 90-270 grade C",
+          "https://cp-catapult.s3.amazonaws.com/uploads/2021/01/Transforming-the-digital-architecture-of-planning.pdf",
+          "https://www.gov.uk/government/statistics/planning-applications-in-england-july-to-september-2025/planning-applications-in-england-july-to-september-2025-technical-notes",
+          "US: 8360-25080 grade C",
+          "https://www.govcon.com/doc/accela-announces-pending-acquisition-of-tidem-0001",
+          "https://s201.q4cdn.com/385562537/files/doc_news/2014/09/156925.pdf",
+          "https://www.centralsquare.com/solutions/public-administration-software/naviline",
+          "https://www.stlouisfed.org/publications/regional-economist/2024/march/local-governments-us-number-type",
+          "global: 470-1410 grade C",
+          "https://www.washingtontechnology.com/2007/05/infor-grabs-hansen/333198/"
+        ]
+      },
+      "pain": {
+        "score": 3,
+        "detail": {
+          "s3": "strong",
+          "s3_points": 2.0,
+          "hn_pain_comments": 1,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://cp-catapult.s3.amazonaws.com/uploads/2021/01/Transforming-the-digital-architecture-of-planning.pdf ; https://www.rva.gov/sites/default/files/2019-09/2020-02_PermitsAndInspections.pdf",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://information.auditor.ca.gov/reports/summary/2014-116 ; https://www.sandiego.gov/sites/default/files/19-011_accela.pdf",
+          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/ ; https://www.sandiego.gov/sites/default/files/19-011_accela.pdf"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 252800000.0,
+          "funding_over": 500000000.0,
+          "unparsed": []
+        },
+        "evidence": [
+          "https://www.prnewswire.com/news-releases/opengov-acquires-permitting-and-licensing-cloud-leader-viewpoint-300911777.html",
+          "https://tracxn.com/d/companies/clariti/__uRg_ulp1qJBX17dM9KEigu9cIqcK3Ij79prtuj7lfek",
+          "https://www.finsmes.com/2025/12/govstream-ai-raises-3-6m-in-seed-funding.html",
+          "https://www.canarymedia.com/articles/solar/ai-powered-permitting-is-speeding-up-solar-deployments-in-california",
+          "https://www.alleywatch.com/2025/12/permitflow-permit-automation-software-construction-ai-platform-francis-thumpasery/"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "land-registry",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 2605828.5,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 2.60583e+06 companies using",
+          "AU: 2600000-2600000 grade C",
+          "https://www.titlesqld.com.au/wp-content/uploads/2026/04/ltpm-part-00.pdf",
+          "https://www.arnecc.gov.au/about_us/membership/",
+          "ID: 400-401 grade B",
+          "https://id.wikipedia.org/wiki/Kantor_Pertanahan",
+          "IN: 196-196 grade C",
+          "https://en.wikipedia.org/wiki/Bhoomi_(software)",
+          "https://dolr.gov.in/en/national-generic-document-registration-system/",
+          "MY: 10-23 grade C",
+          "https://ptg.penang.gov.my/index.php/en/services/e-tanah/e-tanah-profile",
+          "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/sistem-e-tanah-diguna-sepenuhnya-di-seluruh-semenanjung-menjelang-2030",
+          "PH: 164-165 grade B",
+          "https://www.sahi.com.ph/project/land-registration-systems-lares/",
+          "SG: 2-2 grade C",
+          "https://www.nas.gov.sg/archivesonline/data/pdfdoc/1998102401.htm",
+          "US: 5049-5049 grade B",
+          "https://aws.amazon.com/blogs/publicsector/how-kofile-modernizes-county-records-with-ai-on-aws/",
+          "https://www.localgovhub.com/infocon",
+          "https://ir.theice.com/press/news-details/2019/Simplifile-Adds-51-New-Counties-in-17-States-to-E-Recording-Network/default.aspx",
+          "https://www.census.gov/content/dam/Census/library/publications/2025/econ/govtorg2225.pdf"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.gov.uk/government/publications/hm-land-registry-strategy-2025/hm-land-registry-strategy-2025 ; https://www.uipath.com/resources/automation-case-studies/hm-land-registry-rpa-government",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "not_met",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.premier.vic.gov.au/land-use-victoria-proceeds-deliver-infrastructure-boost-0 ; https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/sistem-e-tanah-diguna-sepenuhnya-di-seluruh-semenanjung-menjelang-2030 ; https://todaysconveyancer.co.uk/local-land-charges-programme-completion-date-pushed-back-end-2028/",
+          "https://www.route-fifty.com/emerging-tech/2023/11/government-runs-64-year-old-language-could-ai-help-change/392380/"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 107000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Kofile (Kleio)",
+            "Medici Land Governance",
+            "PEXA"
+          ]
+        },
+        "evidence": [
+          "https://www.ycombinator.com/companies/landeed",
+          "https://www.governmentnews.com.au/digitally-disrupted-land-registry/",
+          "https://aws.amazon.com/blogs/publicsector/how-kofile-modernizes-county-records-with-ai-on-aws/",
+          "https://www.mediciland.com/mediciland-about",
+          "https://ventureburn.com/propy-100m-expansion-ai-blockchain/",
+          "https://www.pexa-group.com/content-hub/news/same-day-remortgaging-a-step-closer-as-pexa-completes-first-digitised-transaction-in-uk/",
+          "funding unparsed: Kofile (Kleio), Medici Land Governance, PEXA"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "retail-pos-merch",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 1124802.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 1.1248e+06 companies using",
+          "EU: 1-3 grade C",
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_distributive_trade_sector",
+          "global: 562400-1687200 grade C",
+          "https://www.itjungle.com/2014/04/01/fhs040114-story09-2/",
+          "https://www.sec.gov/Archives/edgar/data/0001341439/000119312514246160/d748380dex992.htm",
+          "https://www.globenewswire.com/en/news-release/2015/06/17/951521/0/en/Newly-Independent-Company-Aptos-Launches-New-Brand-Readies-Retailers-to-Engage-Customers-Differently.html",
+          "https://www.lsretail.com/about-us"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.logility.com/press-release/logility-sponsors-boston-retail-partners-2014-annual-merchandise-planning-and-allocation-survey/",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.retaildetail.eu/news/food/lidls-failed-it-project-cost-half-billion/ ; https://www.jumpmind.com/blog/retail-trends/the-legacy-pos-crisis-quietly-brewing-in-retail-stores/",
+          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/",
+          "regulation reason to stay: Integration web of payments certification (EMV/PCI), loyalty, fuel and scale peripherals, and ERP batch interfaces that would all need re-testing."
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 8,
+          "funding_usd": 86300000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Shopify (Shopify POS)",
+            "Flooid (ex-PCMS)",
+            "LS Retail (LS Central)"
+          ]
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/1594805/000159480525000011/exhibit991pressreleaseq420.htm",
+          "https://www.prnewswire.com/news-releases/pcms-announces-rebrand-to-flooid-300982302.html",
+          "https://www.finsmes.com/2021/10/toolio-raises-10-3m-in-series-a-funding.html",
+          "https://www.prnewswire.com/news-releases/increff-raises-12-million-in-series-b-led-by-tvs-capital-funds-along-with-premji-invest--binny-bansals-021-capital-eyes-expansion-in-global-markets-301489343.html",
+          "https://nextail.co/press-release/nextail-raises-10-million-to-accelerate-product-development",
+          "https://www.kiotviet.vn/phan-mem-quan-ly-ban-hang-kiotviet-goi-von-thanh-cong-45-trieu-usd/",
+          "https://www.storehub.com/blog/storehub-stadium-new-regional-headquarters",
+          "https://www.lsretail.com/about-us",
+          "funding unparsed: Shopify (Shopify POS), Flooid (ex-PCMS), LS Retail (LS Central)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "warehouse-management",
+    "total": 56.2,
+    "total_raw": 1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 23100.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 23100 companies using",
+          "EU: 20-60 grade C",
+          "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sbs_ovw_act?geo=EU27_2020&nace_r2=H521&indic_sbs=ENT_NR&format=JSON&lang=en",
+          "US: 30-90 grade C",
+          "https://www.bls.gov/iag/tgs/iag493.htm",
+          "global: 11500-34500 grade C",
+          "https://www.itjungle.com/2009/12/15/fhs121509-story02/",
+          "https://www.mwpvl.com/html/wms_links.html",
+          "https://www.socius24.com/blue-yonder-wms/",
+          "https://www.koerber.com/en/about-us/news-and-press/highjump-acquisition"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 4,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.ivanti.com/company/press-releases/2021/ivanti-velocity-a-market-leading-mobile-enterprise-application-software-provides-capabilities-for-further-expansion-to-supercharge-supply-chain-warehouse-operations ; https://www.kardex.com/en-us/blog/integrated-warehouse-system-statistics",
+          "hn firsthand pain >= 0.7: 4 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 2,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.nextgov.com/modernization/2023/01/defense-logistics-agency-shift-warehouse-management-commercial-software/381544/",
+          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 173000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": []
+        },
+        "evidence": [
+          "https://deposco.com/blog/deposco-secures-35-million-in-new-growth-funding-led-by-newspring/",
+          "https://www.logiwa.com/press-release/logiwa-raises-16-4m-in-series-b-funding-as-company-aims-to-modernize-the-wms-market",
+          "https://unicommerce.com/Unicommerce-Investor-Presentation-Q4FY25.pdf",
+          "https://www.finsmes.com/2020/10/anchanto-raises-s16-6m-in-series-c-funding.html",
+          "https://kr-asia.com/indonesian-logistics-company-shipper-bags-usd-63-million-in-series-b-funding",
+          "https://retailtechinnovationhub.com/home/2026/3/12/backops-bags-26-million-series-a-to-build-ai-powered-operating-system-for-supply-chains"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "agriculture-commodity",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 8900.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 8900 companies using",
+          "US: 3800-11400 grade C",
+          "https://agvance.net/about-ssi",
+          "https://esmis.nal.usda.gov/sites/default/release-files/xg94hp534/5d86qt759/xp68nc84m/grst0125.pdf",
+          "global: 650-1950 grade C",
+          "https://www.westportnow.com/westports_triple_point_technology_sold_for_900m/",
+          "https://iongroup.com/industries/commodities/agriculture-and-cpg/"
+        ]
+      },
+      "pain": {
+        "score": 3,
+        "detail": {
+          "s3": "strong",
+          "s3_points": 2.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://consensys.io/blockchain-use-cases/global-trade-and-commerce/covantis ; https://quoreka.com/news/new-eka-survey-finds-two-out-of-three-commodities-companies-using-spreadsheets-for-analysis",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/7084/000000708425000011/adm-20241231.htm",
+          "https://cititec.com/trading-risk-management-systems-talent/ ; https://www.capco.com/-/media/CapcoMedia/Subfolder-Unsorted/Capco-2/PDFs/Implementation_Pitfalls_Openlink_Endur.ashx",
+          "regulation reason to stay: Grain accounting systems embed scale-ticket, contract, settlement, warehouse-receipt and patronage logic tied to local regulation (e.g. USWA licensing, farmer tax exemptions), so replacement means rebuilding compliance-critical workflows"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 192000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Covantis"
+          ]
+        },
+        "evidence": [
+          "https://agfundernews.com/bushel-bags-47m-series-c-as-it-scales-up-and-eyes-new-fintech-offering",
+          "https://covantis.io/about-us/",
+          "https://agfundernews.com/agridigital-banks-18m-to-help-grain-players-collateralize-their-crop",
+          "https://quoreka.com/news/eka-secures-us-10-million-in-funding-from-nexus-venture-partners",
+          "https://entrackr.com/2024/07/agritech-startup-arya-ag-raises-29-mn-at-valuation-of-325-mn/",
+          "funding unparsed: Covantis"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "ehr-hospital",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 650046852.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 6.50047e+08 companies using",
+          "EU: 40-120 grade C",
+          "MY: 35-105 grade C",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12227897/",
+          "US: 1129-3387 grade C",
+          "https://www.nextgov.com/modernization/2023/03/official-vas-legacy-ehr-must-be-maintained-not-long-term-solution/383753/",
+          "https://www.aha.org/statistics/fast-facts-us-hospitals",
+          "global: 325022222-975066666 grade C",
+          "https://www.epic.com/about/",
+          "https://healthsystemcio.com/2026/05/14/acute-care-ehr-market-share-2026/",
+          "https://www.sec.gov/Archives/edgar/data/1011452/000101145220000002/tenk.htm",
+          "https://www.alterahealth.com/newsroom/altera-digital-health-signs-new-agreement-with-singhealth-to-enhance-healthcare-delivery-through-technology/"
+        ]
+      },
+      "pain": {
+        "score": 3,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 5,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://pubmed.ncbi.nlm.nih.gov/35289752/",
+          "hn firsthand pain >= 0.7: 5 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.gao.gov/products/gao-25-106874 ; https://www.digitalhealth.net/2026/03/somerset-and-dorset-sign-222m-contract-with-epic-for-unified-epr/ ; https://htn.co.uk/2026/04/21/lewisham-and-greenwich-nhs-awards-52-million-epr-contract/",
+          "https://www.nextgov.com/modernization/2023/03/official-vas-legacy-ehr-must-be-maintained-not-long-term-solution/383753/",
+          "regulation reason to stay: Regulatory and certification requirements (ONC, NHS DSPT, Kemenkes PMK 24/2022 RME and SATUSEHAT integration) favour incumbent certified vendors."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 28600000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": []
+        },
+        "evidence": [
+          "https://tech.eu/2025/02/06/avelios-raises-30m-series-b-led-by-sequoia-for-hospital-data-system-overhaul/",
+          "https://techcrunch.com/2025/06/24/in-just-4-months-ai-medical-scribe-abridge-doubles-valuation-to-5-3b/",
+          "https://www.medicaleconomics.com/view/heidi-raises-65-million-to-expand-ai-care-partner-for-clinicians",
+          "https://www.techtarget.com/searchhealthit/news/366629120/Oracle-Health-releases-AI-powered-ambulatory-EHR",
+          "https://thebiostartups.com/news/10/28/saas-based-digital-health-platform-karexpert-technologies-pvt-ltd.html"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "erp-distribution",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 22402.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 22402 companies using",
+          "SG: 1-3 grade C",
+          "https://data.gov.sg/datasets/d_38d62de582eb7ee2c58d1bba4cd4132d/view",
+          "US: 6200-18600 grade C",
+          "https://www.itjungle.com/2011/05/03/fhs050311-story07/",
+          "https://www.infor.com/industries/distribution",
+          "https://www.bls.gov/iag/tgs/iag42.htm",
+          "global: 5000-15000 grade C",
+          "https://www.erpresearch.com/en-us/epicor-prophet-21"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.007255520504731861,
+          "in_use_share_unweighted": 0.023255813953488372
+        },
+        "evidence": [
+          "https://distributionstrategy.com/report/state-of-distributor-technology-2026/ ; https://www.prnewswire.com/news-releases/conexiom-launches-ai-powered-ideal-order-platform-to-revolutionize-sales-order-automation-302386165.html",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.007255520504731861 (unweighted 0.023255813953488372, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 2,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.digitalcommerce360.com/2025/02/12/wesco-500-million-digital-transformation-plans/ ; https://www.crestwood.com/blog/prophet-21-phase-out/",
+          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 2212000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": []
+        },
+        "evidence": [
+          "https://www.mdm.com/news/operations/finance/proton-ai-closes-20m-in-funding/",
+          "https://betakit.com/conexiom-secures-130-million-in-growth-investment/",
+          "https://industrialmachinerydigest.com/software/endeavor-raises-7m-to-revitalize-american-manufacturing-with-ai/",
+          "https://techcrunch.com/2026/03/24/doss-raises-55m-for-ai-inventory-management-that-plugs-into-erp/",
+          "https://www.vistaequitypartners.com/news/acumatica-to-be-acquired-by-vista-equity-partners/"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "field-service-maintenance",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 1013440.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 1.01344e+06 companies using",
+          "EU: 500000-1500000 grade C",
+          "https://en.wikipedia.org/wiki/IFS_AB",
+          "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_the_manufacturing_sector",
+          "SG: 7-21 grade C",
+          "https://www.edb.gov.sg/content/dam/edb-en/about-edb/media-releases/manufacturing-statistics/Census_of_Manufacturing_Activities/EDB%20Annual%20Mftg%20Performance%202024.pdf",
+          "US: 13-39 grade C",
+          "global: 6700-20100 grade C",
+          "https://www.sec.gov/Archives/edgar/data/0000938481/000119312506001715/dex991.htm"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 1,
+          "in_use_share": 0.00034246575342465754,
+          "in_use_share_unweighted": 0.023529411764705882
+        },
+        "evidence": [
+          "https://www.plantengineering.com/the-maintenance-function-like-manufacturing-itself-is-a-rapidly-changing-environment/ ; https://upkeep.com/learning/maintenance-metrics/maintenance-statistics",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.00034246575342465754 (unweighted 0.023529411764705882, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.smartech-tn.com/blog/upgrade-to-ibm-maximo-application-suite-mas-in-2026-the-complete-guide-to-a-successful-migration-after-maximo-7-6-end-of-support/ ; https://www.erpresearch.com/en-us/blog/sap-ecc-6.0-end-of-support",
+          "https://www.itjobswatch.co.uk/jobs/england/maximo.do ; https://www.smartech-tn.com/blog/upgrade-to-ibm-maximo-application-suite-mas-in-2026-the-complete-guide-to-a-successful-migration-after-maximo-7-6-end-of-support/",
+          "regulation reason to stay: Regulated asset histories (nuclear, utilities, aviation, rail) with audit trails and compliance workflows built over decades"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 550800000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Fiix (Rockwell Automation)"
+          ]
+        },
+        "evidence": [
+          "https://news.crunchbase.com/venture/asset-management-ai-maintainx-raise-bessemer/",
+          "https://tractian.com/en/blog/tractian-raises-series-c-to-eliminate-industrial-downtime-worldwide",
+          "https://www.prnewswire.com/news-releases/limble-announces-58m-series-b-funding-round-led-by-goldman-sachs-asset-management-bringing-total-valuation-to-450m-301857646.html",
+          "https://www.rockwellautomation.com/en-us/company/news/press-releases/Rockwell-Automation-Acquires-Fiix-Inc--Cloud-Software-Company-for-Leading-Edge-Maintenance-Solutions.html",
+          "https://techcrunch.com/2020/05/12/upkeep-raises-36-million-series-b-to-help-facilities-and-maintenance-teams-go-mobile",
+          "https://www.finsmes.com/2026/01/fracttal-raises-35m-in-funding.html",
+          "https://www.finsmes.com/2022/02/facilio-raises-35m-in-series-b-funding.html",
+          "funding unparsed: Fiix (Rockwell Automation)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "financial-close-gl",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 299638.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 299638 companies using",
+          "EU: 5-15 grade C",
+          "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251209-2",
+          "SG: 10-30 grade C",
+          "https://www.sid.org.sg/Web/Web/About/News-and-Press/News_2025/2025-02-06_The_Edge_Revitalising_SGX.aspx",
+          "TH: 2-6 grade C",
+          "https://en.wikipedia.org/wiki/Stock_Exchange_of_Thailand",
+          "global: 149802-449406 grade C",
+          "https://news.sap.com/2020/02/sap-s4hana-maintenance-2040-clarity-choice-sap-business-suite-7/",
+          "https://www.sec.gov/Archives/edgar/data/758540/000091205700036189/a10-k405.htm",
+          "https://www.infor.com/solutions/erp/sunsystems",
+          "https://tallysolutions.com/about-tally/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 1,
+          "in_use_share": 0.16392857142857142,
+          "in_use_share_unweighted": 0.22916666666666666
+        },
+        "evidence": [
+          "https://www.ledge.co/content/month-end-close-benchmarks-for-2025 ; https://www.sec.gov/Archives/edgar/data/1666134/000162828026011915/bl-20251231.htm ; https://www.cfodive.com/news/half-accountants-make-errors-each-month-gartner-accounting-audit-auditing-PCAOB/708138/",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.16392857142857142 (unweighted 0.22916666666666666, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.theregister.com/2025/02/12/gartner_sap_maintenance_2030/ ; https://www.asug.com/insights/the-state-of-sap-s-4hana-adoption-trends-successes-and-challenges ; https://www.oracle.com/us/assets/lifetime-support-applications-069216.pdf",
+          "https://techchannel.com/cybersecurity/fortra-ibm-i-marketplace-survey/ ; https://www.asna.com/en/white-paper/ibm-i-crisis-decade ; https://www.asug.com/insights/the-state-of-sap-s-4hana-adoption-trends-successes-and-challenges",
+          "regulation reason to stay: Local statutory, tax and e-invoicing localizations (e.g. India GST in Tally, SE Asian tax packs) are already built and certified in the legacy product."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 589000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "BlackLine"
+          ]
+        },
+        "evidence": [
+          "https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/",
+          "https://campfire.ai/blog/campfire-65-million-series-b-co-led-by-accel-and-ribbit",
+          "https://www.dualentry.com/funding-announcement",
+          "https://www.cpapracticeadvisor.com/2025/11/20/ai-accounting-platform-numeric-raises-51m-series-b/173638/",
+          "https://www.globenewswire.com/news-release/2024/04/10/2860782/0/en/FloQast-Secures-100-Million-in-Series-E-Funding-Achieving-1-6-Billion-Valuation.html",
+          "https://www.sec.gov/Archives/edgar/data/1666134/000162828026011915/bl-20251231.htm",
+          "funding unparsed: BlackLine"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "loan-origination-servicing",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 48800598.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 4.88006e+07 companies using",
+          "US: 48800040-48800040 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1627014/000155837023002252/bki-20221231x10k.htm",
+          "https://www.ftc.gov/system/files/ftc_gov/pdf/d09413icebkp3complaintredacted.pdf",
+          "https://sagent.com/about/",
+          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 279-837 grade C",
+          "https://sourceforge.net/software/product/Finastra-Loan-IQ/",
+          "https://www.appsruntheworld.com/customers-database/products/view/fis-commercial-loan-servicing-formerly-acbs",
+          "https://www.nucleussoftware.com/our-news/nucleus-software-marks-30-years-bse-listing/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://consumerfinance.gov/about-us/newsroom/cfpb-sues-ocwen-failing-borrowers-throughout-mortgage-servicing-process",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.ftc.gov/system/files/ftc_gov/pdf/d09413icebkp3complaintredacted.pdf",
+          "https://freehire.me/jobs/senior-mainframe-developer-intercontinental-exchange-holdings-inc-mbjskvl3",
+          "regulation reason to stay: Investor and regulator reporting (GSEs, Ginnie Mae, CFPB servicing rules) is already built into incumbent systems. A rebuild risks compliance errors, as the CFPB's Ocwen case shows."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 8,
+          "funding_usd": 1298300000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Sagent"
+          ]
+        },
+        "evidence": [
+          "https://www.housingwire.com/articles/mortgage-servicing-startup-valon-100m-series-c-funding/",
+          "https://sagent.com/about/",
+          "https://www.ncino.com/news/ncino-fourth-quarter-fiscal-year-2026-results",
+          "https://www.housingwire.com/articles/mortgage-origination-startup-vesta-raises-30m/",
+          "https://www.prnewswire.com/news-releases/loanpro-secures-100-million-series-a-investment-from-ftv-capital-301325306.html",
+          "https://www.ftpartners.com/transactions/mambu-seriese",
+          "https://techcrunch.com/2022/11/13/citi-india-investment-saas-startup-lentra-funding",
+          "https://www.finsmes.com/2023/10/kennek-raises-12-5m-in-seed-funding.html",
+          "funding unparsed: Sagent"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "medical-billing-rcm",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 4060.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 4060 companies using",
+          "US: 1500-4500 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1169445/000116944526000006/tbrg-20251231.htm",
+          "https://www.aha.org/statistics/fast-facts-us-hospitals",
+          "global: 530-1590 grade C",
+          "https://www.fundinguniverse.com/company-histories/epic-systems-corporation-history/",
+          "https://healthsystemcio.com/2026/05/14/acute-care-ehr-market-share-2026/",
+          "https://en.wikipedia.org/wiki/Meditech",
+          "https://www.intersystems.com/news/intersystems-trakcare-supports-healthcare-providers-worldwide-to-deliver-better-patient-care-during-the-covid-19-pandemic/"
+        ]
+      },
+      "pain": {
+        "score": 3,
+        "detail": {
+          "s3": "strong",
+          "s3_points": 2.0,
+          "hn_pain_comments": 1,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.caqh.org/hubfs/Index/2024%20Index%20Report/CAQH_IndexReport_2024_FINAL.pdf",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.nychealthandhospitals.org/wp-content/uploads/2017/05/Public-hospitals-to-spend-289-million-on-Epics-revnue-cycle-software-implementation-Politico.pdf ; https://www.itnews.com.au/news/qld-health-risks-patient-admin-system-failure-after-halting-overhaul-534656",
+          "https://www.healthitoutcomes.com/doc/is-epic-future-proof-0001",
+          "regulation reason to stay: Payer and regulatory rules are encoded over decades (US payer edits, German DRG billing in IS-H, BPJS INA-CBG, PhilHealth case rates). Rebuilding them is risky."
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 152500026.25,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Smarter Technologies (Access Healthcare + SmarterDx + Thoughtful.ai)"
+          ]
+        },
+        "evidence": [
+          "https://akasa.com/press/akasa-raises-60-million-in-series-b-round",
+          "https://www.healthcaredive.com/news/new-mountain-capital-creates-ai-revenue-cycle-management-company-smarter-technologies/748748/",
+          "https://hitconsultant.net/2025/02/12/candid-health-raises-52-5m-for-autonomous-revenue-cycle-automation-platform/",
+          "https://fintech.global/2026/03/26/adonis-bags-40m-to-transform-ai-revenue-cycle-management/",
+          "https://www.sec.gov/Archives/edgar/data/0001169445/000119312526172139/d46312dex991.htm",
+          "funding unparsed: Smarter Technologies (Access Healthcare + SmarterDx + Thoughtful.ai)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "mortgage-servicing",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 36000502.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 3.60005e+07 companies using",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions",
+          "UK: 30-90 grade C",
+          "https://www.targetgroup.com/our-capabilities/servicing-solutions/",
+          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
+          "US: 36000040-36000040 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1627014/000155837023002252/bki-20221231x10k.htm",
+          "https://sagent.com/about/",
+          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 200-600 grade C",
+          "https://www.nucleussoftware.com/about-us/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.009279475982532752,
+          "in_use_share_unweighted": 0.125
+        },
+        "evidence": [
+          "https://files.consumerfinance.gov/f/documents/Mortgage_Servicing_Supervisory_Highlights_11_Final_web_.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.009279475982532752 (unweighted 0.125, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.marketscreener.com/quote/stock/BLACK-KNIGHT-INC-37958698/news/Black-Knight-Financial-Services-Inc-and-Cenlar-FSB-Sign-Five-Year-Renewal-for-LoanSphere-MSP-35213747/",
+          "https://freehire.me/jobs/senior-mainframe-developer-intercontinental-exchange-holdings-inc-mbjskvl3",
+          "regulation reason to stay: Regulators expect extensive testing and validation before a servicer changes major systems (PennyMac complaint)."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 890700000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Sagent (Dara cloud-native servicing)",
+            "PennyMac Servicing Systems Environment (in-house build)"
+          ]
+        },
+        "evidence": [
+          "https://www.housingwire.com/articles/carrington-acquires-valon-mortgage/",
+          "https://www.nationalmortgagenews.com/news/mr-cooper-gains-20-stake-in-sagent",
+          "https://s201.q4cdn.com/340896660/files/doc_presentations/2019/11/2019-Servicing-Systems-Environment-FAQ.pdf",
+          "https://www.housingwire.com/articles/brace-picks-up-15-7-million-in-series-b-funding-round/",
+          "https://www.thoughtmachine.net/press-releases/together-selects-thought-machine-to-modernise-technology-stack",
+          "https://techcrunch.com/2022/11/13/citi-india-investment-saas-startup-lentra-funding",
+          "funding unparsed: Sagent (Dara cloud-native servicing), PennyMac Servicing Systems Environment (in-house build)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "trade-finance",
+    "total": 50.0,
+    "total_raw": 0.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 2644.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 2644 companies using",
+          "UK: 322-966 grade C",
+          "https://www.cgi.com/sites/default/files/2025-04/cgi-trade360-short-overview-brochure-2025.pdf",
+          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
+          "global: 1000-3000 grade C",
+          "https://wikibin.org/articles/china-systems.html",
+          "https://www.cioapplicationseurope.com/surecomp",
+          "https://gfmag.com/award/winner-insights/finastra-anastasia-mcalpine-revamping-trade-finance/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://iccwbo.org/news-publications/news/new-icc-survey-shows-pace-trade-finance-digitalisation/ ; https://www.bcg.com/publications/2016/digital-revolution-trade-finance",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.cgi.com/en/hsbc-launches-digital-platform-that-revolutionises-trade-finance",
+          "https://itfa.org/the-silent-crisis-understanding-the-expertise-gap-in-global-trade-finance-operations-may-2025/",
+          "regulation reason to stay: SWIFT MT/ISO 20022 certification and UCP 600/URDG rule handling are built into the incumbents (IMEX is fully SWIFT certified)."
+        ]
+      },
+      "crowding": {
+        "score": 2,
+        "detail": {
+          "challengers": 4,
+          "funding_usd": 59300000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Conpend AI"
+          ]
+        },
+        "evidence": [
+          "https://www.gtreview.com/news/digital-trade/traydstream-raises-us11mn-in-latest-funding-round/",
+          "https://www.gtreview.com/news/digital-trade/95078/",
+          "https://tracxn.com/d/companies/conpend-ai/__3Chuz544X_bgP87U9dJ6LDn8b9AApG950MUPRxPhWv0",
+          "https://tracxn.com/d/companies/tradesun/__9ixOhU0yhGuXFxeQBsp36bbpCKKIEwRnj8c5kjCSAi8",
+          "funding unparsed: Conpend AI"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "cooperative-rural-microfinance-banking",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 94602.5,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 94602.5 companies using",
+          "EU: 341-1023 grade C",
+          "https://atruvia.de/pressemitteilungen/17-02-2020-nach-drei-jahren-serienmigration-nutzen-jetzt-alle-volks-und-raiffeisenbanken-ein-gemeinsames-it-verfahren",
+          "https://www.eacb.coop/en/european-association-of-co-operative-banks.html",
+          "ID: 300-900 grade C",
+          "https://ussi-software.com/profile-2/",
+          "https://ojk.go.id/en/berita-dan-kegiatan/siaran-pers/Pages/OJK-Issues-Regulation-On-Information-Technology-Implementation-For-BPR-And-BPRS-Digital-Security.aspx",
+          "IN: 50455-123786 grade C",
+          "https://www.indiancooperative.com/co-op-news-snippets/computerization-51k-pacs-onboarded-68k-secure-sanction-letters/",
+          "https://indianpsu.com/urban-cooperative-banks-growth-fy25-rbi/",
+          "US: 3100-9300 grade C",
+          "https://www.sec.gov/Archives/edgar/data/779152/000077915221000073/jkhy-20210630.htm",
+          "https://www.itjungle.com/2009/12/08/fhs120809-story01/",
+          "https://ncua.gov/newsroom/press-release/2026/ncua-releases-fourth-quarter-2025-credit-union-system-performance-data"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://techcrunch.com/2015/05/20/oradian/ ; https://technology.inquirer.net/86869/financial-technology-startup-targets-rural-banking-sector",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/779152/000077915221000073/jkhy-20210630.htm ; https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/ ; https://atruvia.de/pressemitteilungen/17-02-2020-nach-drei-jahren-serienmigration-nutzen-jetzt-alle-volks-und-raiffeisenbanken-ein-gemeinsames-it-verfahren",
+          "https://www.itjungle.com/2021/09/29/the-ibm-i-and-its-rpg-decade-of-crisis/ ; https://www.ilo.org/resource/news/joint-study-ilo-and-ojk-reveals-urgent-need-digital-transformation-rural",
+          "regulation reason to stay: Vendors bundle regulatory reporting (POJK compliance) into the core, which raises switching risk"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 443200000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "incuto",
+            "PearlPay"
+          ]
+        },
+        "evidence": [
+          "https://tech.eu/2021/12/09/mambu-mambos-on-over-to-e235-million-in-new-raise-at-e4-9-billion-valuation/",
+          "https://techcrunch.com/2015/05/20/oradian/",
+          "https://www.thesaasnews.com/news/nymbus-raises-70-million-in-series-d",
+          "https://www.incuto.com/newsandviews/incuto-investment",
+          "https://www.manilatimes.net/2020/01/10/public-square/pearlpay-partners-with-rural-banks-in-pangasinan/673175/",
+          "https://technode.global/2024/01/09/indonesias-komunal-raises-5-5m-in-series-a-funding-round-led-by-sumitomo-corporation-equity-asia/",
+          "https://m2pfintech.com/pressrelease/M2P-Fintech-raises-850-Crores-in-Series-D-led-by-Helios-valuation-surpasses-6550-Crores/",
+          "funding unparsed: incuto, PearlPay"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "gov-tax",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 1628.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 1628 companies using",
+          "AU: 1-3 grade C",
+          "https://www.payrolltax.gov.au/",
+          "ID: 228-684 grade C",
+          "https://nasional.kontan.co.id/news/mengenal-perusahaan-asing-di-balik-coretax-seharga-rp-13-triliun",
+          "https://nasional.kompas.com/read/2023/09/24/00450011/pengertian-daerah-otonom-dan-jumlahnya",
+          "IN: 242-242 grade C",
+          "https://www.millenniumpost.in/business/govt-selects-infosys-as-rs-4242-crore-income-tax-filing-project-developer-336648",
+          "https://cleartax.in/s/gst-council-members",
+          "US: 4-12 grade C",
+          "https://taxadmin.org/",
+          "https://www.census.gov/library/publications/2026/econ/govtorg2225.html",
+          "VN: 800-800 grade C",
+          "https://thoibaotaichinhvietnam.vn/mo-rong-ung-dung-phan-mem-quan-ly-thue-tap-trung-50013.html",
+          "https://luatvietnam.vn/tin-van-ban-moi/to-chuc-lai-20-chi-cuc-thue-khu-vuc-thanh-34-don-vi-thue-cap-tinh-186-102773-article.html",
+          "global: 60-180 grade C",
+          "https://www.fastenterprises.com/solutions/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0012008405884118883,
+          "in_use_share_unweighted": 0.08333333333333333
+        },
+        "evidence": [
+          "https://www.taxpayeradvocate.irs.gov/news/nta-blog/nta-blog-getting-rid-of-the-kryptonite-the-irs-should-quickly-implement-scanning-technology-to-process-paper-tax-returns/2022/03/",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0012008405884118883 (unweighted 0.08333333333333333, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.everycrsreport.com/reports/IF12525.html",
+          "https://files.gao.gov/reports/GAO-25-107795/index.html"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 473000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Fast Enterprises (FAST)"
+          ]
+        },
+        "evidence": [
+          "https://www.fastenterprises.com/solutions/",
+          "https://news.sap.com/uk/2026/02/sap-selected-by-hmrc-to-lead-major-technology-transformation-of-the-uk-tax-system/",
+          "https://siliconangle.com/2024/02/07/mechanical-orchard-raises-22m-funding-help-companies-ditch-mainframes-cloud/",
+          "https://thedocs.worldbank.org/en/doc/44647b8e0496f7f015307ba9317b41ea-0350052025/original/GovTech-Innovation-Challenge-Awards-joint-communication-Final-Dec-2-2025.pdf",
+          "https://nasional.kontan.co.id/news/mengenal-perusahaan-asing-di-balik-coretax-seharga-rp-13-triliun",
+          "funding unparsed: Fast Enterprises (FAST)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "lab-information",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 23444.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 23444 companies using",
+          "EU: 15-45 grade C",
+          "US: 2395-7185 grade C",
+          "https://www.captodayonline.com/2020/ProductGuides/11-20_CAPTODAY_LIS.pdf",
+          "https://www.cms.gov/regulations-and-guidance/legislation/clia/downloads/statupda.pdf",
+          "global: 9312-27936 grade C",
+          "https://www.clinisys.com/us/en/history/",
+          "https://www.captodayonline.com/2020/ProductGuides/11-20_CAPTODAY_LIS.pdf"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://academic.oup.com/jamia/article/26/3/269/5287977",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://assets.publishing.service.gov.uk/media/569e34bee5274a112c000030/Full_text_decision_Roper-CliniSys.pdf",
+          "https://www.captodayonline.com/lab-information-systems-where-the-needs-are-greatest/",
+          "regulation reason to stay: Regulated validation: every LIS change must be revalidated under CLIA/CAP/ISO 15189, so switching costs are high"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "LigoLab",
+            "CrelioHealth (formerly LiveHealth)",
+            "Scispot",
+            "Proscia",
+            "Flabs",
+            "Clinisys (consolidator)"
+          ]
+        },
+        "evidence": [
+          "https://www.ligolab.com/industry-insights/why-ligolabs-funding-choice-nearly-two-decades-ago-continues-to-benefit-the-company-and-its-customer",
+          "https://creliohealth.com/assets/all-brochures/Company-Profile-International-USA.pdf",
+          "https://www.scispot.com/blog/scispot-series-a-funding",
+          "https://proscia.com/press-release/proscia-raises-50m-to-advance-ai-driven-pathology-and-deliver-the-future-of-precision-medicine",
+          "https://flabslis.com/blogs/top-10-pathology-labs-in-india",
+          "https://www.clinisys.com/us/en/history/",
+          "funding unparsed: LigoLab, CrelioHealth (formerly LiveHealth), Scispot, Proscia, Flabs, Clinisys (consolidator)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "mainframe-cobol-general",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 2415121.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 2.41512e+06 companies using",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/register-of-authorised-deposit-taking-institutions",
+          "EU: 2-6 grade C",
+          "https://www.bankingsupervision.europa.eu/banking/list/html/index.en.html",
+          "SG: 14-20 grade B",
+          "https://eservices.mas.gov.sg/fid/institution?sector=Banking&category=Full%20Bank",
+          "TH: 2-6 grade B",
+          "https://app.bot.or.th/BTWS_STAT/statistics/BOTWEBSTAT.aspx?reportID=158&language=eng",
+          "US: 2-6 grade C",
+          "https://api.fdic.gov/banks/institutions?filters=ACTIVE:1&limit=1&fields=NAME",
+          "global: 1207545-3622635 grade C",
+          "https://newsroom.ibm.com/2022-04-05-Announcing-IBM-z16-Real-time-AI-for-Transaction-Processing-at-Scale-and-Industrys-First-Quantum-Safe-System",
+          "https://blog.share.org/Article/blog/cics-celebrates-its-golden-anniversary-in-2019",
+          "https://en.wikipedia.org/wiki/IBM_Information_Management_System",
+          "https://www.sec.gov/Archives/edgar/data/0000356028/000035602818000064/ca-20180331x10k.htm"
+        ]
+      },
+      "pain": {
+        "score": 3,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 44,
+          "in_use_share": 0.015664521854892387,
+          "in_use_share_unweighted": 0.6296296296296297
+        },
+        "evidence": [
+          "https://bipartisanpolicy.org/wp-content/uploads/2024/03/BPC_Unemployment_Insurance_RV2.pdf",
+          "hn firsthand pain >= 0.7: 44 comments (need 5)",
+          "job posts legacy in use, weighted share 0.015664521854892387 (unweighted 0.6296296296296297, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 5,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "strong",
+          "s4_hit": true,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://files.gao.gov/reports/GAO-25-107795/index.html",
+          "https://files.gao.gov/reports/GAO-25-107795/index.html",
+          "regulation reason to stay: Regulatory and operational risk of migrating core ledgers, payments and tax systems."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 2339300000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "AWS Transform for mainframe (Amazon)",
+            "Anthropic (Claude Code)",
+            "IBM watsonx Code Assistant for Z"
+          ]
+        },
+        "evidence": [
+          "https://www.mechanical-orchard.com/insights/mechanical-orchard-secures-50-million-to-safely-transition-large-organizations-off-risky-legacy-software",
+          "https://www.hypercubic.ai/insights/hypercubic-raises-usd5-3m-to-build-the-future-of-mainframe-modernization",
+          "https://www.zengines.ai/resource-collection/zengines-announces-major-new-software-release-after-closing-9m-round-of-financing",
+          "https://aws.amazon.com/blogs/migration-and-modernization/aws-transform-generally-available/",
+          "https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization",
+          "https://newsroom.ibm.com/2023-10-26-IBM-Launches-watsonx-Code-Assistant,-Delivers-Generative-AI-powered-Code-Generation-Capabilities-Built-for-Enterprise-Application-Modernization",
+          "https://en.wikipedia.org/wiki/Micro_Focus",
+          "funding unparsed: AWS Transform for mainframe (Amazon), Anthropic (Claude Code), IBM watsonx Code Assistant for Z"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "payroll-hr",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 4364074.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 4.36407e+06 companies using",
+          "EU: 6-18 grade C",
+          "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251013-2",
+          "SG: 4-12 grade C",
+          "https://data.gov.sg/datasets/d_f9c93c1ffcefe660272c101cd733711c/view",
+          "UK: 1900000-1900000 grade C",
+          "https://en.wikipedia.org/wiki/Electronic_Staff_Record",
+          "https://www.gov.uk/government/statistics/business-population-estimates-2025/business-population-estimates-for-the-uk-and-regions-2025-statistical-release",
+          "US: 260000-260000 grade C",
+          "https://lao.ca.gov/Publications/Report/3590",
+          "https://census.gov/data/tables/2022/econ/susb/2022-susb-annual.html",
+          "global: 1102027-3306081 grade C",
+          "https://en.wikipedia.org/wiki/SAP_R/3",
+          "https://www.sec.gov/Archives/edgar/data/8670/000000867025000037/adp-20250630.htm"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 3,
+          "in_use_share": 0.002531645569620253,
+          "in_use_share_unweighted": 0.16
+        },
+        "evidence": [
+          "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gl/services/tax/documents/en-gl-payroll-org-infographics.pdf ; https://killeentexas.gov/ArchiveCenter/ViewFile/Item/148",
+          "hn firsthand pain >= 0.7: 3 comments (need 5)",
+          "job posts legacy in use, weighted share 0.002531645569620253 (unweighted 0.16, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://lao.ca.gov/Publications/Report/5011 ; https://www.publictechnology.net/2025/11/13/health-and-social-care/nhs-sheds-light-on-plans-for-1-4bn-hr-system/",
+          "https://lao.ca.gov/Publications/Report/3590"
+        ]
+      },
+      "crowding": {
+        "score": 5,
+        "detail": {
+          "challengers": 10,
+          "funding_usd": 2017100000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Workday",
+            "Base.vn"
+          ]
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/1327811/000132781126000014/wday-20260131.htm",
+          "https://techcrunch.com/2025/05/09/rippling-raises-450m-at-a-16-8b-valuation-reveals-yc-is-a-customer",
+          "https://www.deel.com/blog/new-investment-valuation/",
+          "https://en.wikipedia.org/wiki/Gusto,_Inc.",
+          "https://darwinbox.com/blog/partners-group-kkr-investment-140m",
+          "https://www.capitalbrief.com/briefing/employment-hero-funding-round-pushes-valuation-towards-2b-f9fc280b-1f47-4952-b995-397a41ed9c72/",
+          "https://kaliber.asia/case-talenta",
+          "https://www.thesaasnews.com/news/sprout-solutions-raises-10-7-million-in-series-b/",
+          "https://www.omnihr.co/blog/omni-hr-funding-2024",
+          "https://e27.co/base-vn-raises-funding-500-startups-viisa-20180813/",
+          "funding unparsed: Workday, Base.vn"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "pension-provident-fund-admin",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 351006730.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 3.51007e+08 companies using",
+          "EU: 13-39 grade C",
+          "https://www.eiopa.europa.eu/document/download/83b77884-0677-4a06-9976-4fa006b79b01_en?filename=IORPs+Landscape+Factsheet+2024.pdf",
+          "IN: 340000000-340001704 grade B",
+          "https://currentaffairs.adda247.com/epfo-launches-cites-2-01-platform-fy26-pf-interest-to-be-credited-by-july-15/",
+          "SG: 2-6 grade C",
+          "https://www.cpf.gov.sg/content/dam/web/member/infohub/documents/CPF%20Annual%20Report%202024%20Part%201.pdf",
+          "UK: 874-2622 grade C",
+          "https://heywood.com/products/pension-administration/altair",
+          "https://democracy.eastsussex.gov.uk/documents/s16606/Item%2014%20Appendix%202%20-%20Pensions%20Software%20Market%20Review.pdf",
+          "https://www.thepensionsregulator.gov.uk/en/document-library/research-and-analysis/occupational-defined-benefit-landscape-in-the-uk-2025",
+          "US: 2050-6150 grade C",
+          "https://www.wealthmanagement.com/rpa-news/fis-new-cloud-based-record-keeping-system-could-unlock-the-potential-of-401-k-plans",
+          "https://www.prnewswire.com/news-releases/vitech-systems-group-and-international-union-of-painters-and-allied-trades-industry-pension-fund-elevate-partnership-with-v3locity-a-pioneering-advance-in-cloud-native-pension-administration-302020217.html",
+          "https://www.dol.gov/sites/dolgov/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletins-abstract-2022.pdf",
+          "https://www.census.gov/newsroom/press-releases/2026/2025-aspp.html",
+          "global: 5500000-16500000 grade C",
+          "https://gbst.com/news/member-security-suffers-with-legacy-superannuation-systems/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.sagitec.com/hubfs/docs/Neospin-TRS-case-study.pdf?hsLang=en-au",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.calstrs.com/files/f37ce6df1/TRB+2024-11+Item+09.00++Pension+Solution+Project+Update.pdf",
+          "https://www.computerworld.com/article/1392782/cobol-based-system-for-160-billion-pension-fund-is-a-political-football.html",
+          "regulation reason to stay: Regulatory and fiduciary risk: payment errors to retirees are highly visible, and boards prefer incumbent stability"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 544000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Sagitec Solutions",
+            "Vitech Systems Group (V3locity)"
+          ]
+        },
+        "evidence": [
+          "https://techcrunch.com/2023/05/15/uk-pension-platform-smart-nabs-95m/",
+          "https://www.alleywatch.com/2026/02/vestwell-retirement-infrastructure-workplace-savings-platform-ira-employment-aaron-schumm/",
+          "https://dealroom.co/news/147540-mufg-moves-to-acquire-australian-super-tech-firm-grow-inc/",
+          "https://www.sagitec.com/pension-software-company/press-releases/washington-state-department-of-retirement-systems-awards-pension-modernization-project-to-sagitec-solutions",
+          "https://www.prnewswire.com/news-releases/vitech-systems-group-and-international-union-of-painters-and-allied-trades-industry-pension-fund-elevate-partnership-with-v3locity-a-pioneering-advance-in-cloud-native-pension-administration-302020217.html",
+          "funding unparsed: Sagitec Solutions, Vitech Systems Group (V3locity)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "procurement-ap",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 6240612.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 6.24061e+06 companies using",
+          "AU: 1-3 grade C",
+          "https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/latest-release",
+          "EU: 4-12 grade C",
+          "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251209-2",
+          "ID: 600000-1800000 grade C",
+          "https://accurate.id/tentang-accurate/",
+          "https://se2016.bps.go.id/umkumb/files/buku/00_Indonesia.pdf",
+          "US: 1-3 grade C",
+          "https://www.census.gov/library/stories/2025/05/small-business-week.html",
+          "global: 2520300-7560900 grade C",
+          "https://www.prnewswire.com/news-releases/sap-extends-its-innovation-commitment-for-sap-s4hana-provides-clarity-and-choice-on-sap-business-suite-7-300997516.html",
+          "https://www.basware.com/en/about-basware",
+          "https://tallysolutions.com/about-tally/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 2,
+          "in_use_share": 0.0961768219832736,
+          "in_use_share_unweighted": 0.024390243902439025
+        },
+        "evidence": [
+          "https://d15fjz85703yz4.cloudfront.net/1517/5157/1685/Ardent_Partners_-_State_of_ePayables_2025_-_Bottomline_-_FINAL.pdf",
+          "hn firsthand pain >= 0.7: 2 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0961768219832736 (unweighted 0.024390243902439025, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.prnewswire.com/news-releases/sap-extends-its-innovation-commitment-for-sap-s4hana-provides-clarity-and-choice-on-sap-business-suite-7-300997516.html; https://www.theregister.com/2026/02/05/sap_migrations_research/; https://www.theregister.com/2026/01/29/birmingham_oracle_latest/",
+          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/"
+        ]
+      },
+      "crowding": {
+        "score": 5,
+        "detail": {
+          "challengers": 11,
+          "funding_usd": 10636000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": []
+        },
+        "evidence": [
+          "https://www.prnewswire.com/news-releases/ramp-raises-500-million-at-22-5-billion-valuation-to-accelerate-ai-and-build-the-future-of-finance-302516953.html",
+          "https://zip.com/blog/series-d",
+          "https://pulse2.com/tipalti-270-million-series-f-funding-and-8-3-billion-valuation/",
+          "https://www.vic.ai/news/vic-ai-secures-52m-in-series-c-funding-to-expand-suite-of-ai-enterprise-fintech-offerings",
+          "https://www.cpapracticeadvisor.com/2023/10/03/ap-automation-company-stampli-nets-61m-in-vc-funding/95365/",
+          "https://www.levelpath.com/blog/levelpath-raises-additional-55m-to-bring-ai-native-procurement-to-the-enterprise",
+          "https://www.omnea.co/resource/series-b-announcement",
+          "https://www.startup.eu/investments/pivot-40-m-series-b-05-2026",
+          "https://inc42.com/buzz/aerchain-bags-13-mn-to-scale-agentic-ai-platform-for-enterprise-procurement/",
+          "https://asiatechdaily.com/eezee-raises-us5m-to-scale-ai-procurement-across-southeast-asia-can-tail-end-spend-be-the-next-saas-frontier/",
+          "https://www.thomabravo.com/press-releases/thoma-bravo-completes-acquisition-of-coupa-software"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "telecom-bss",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 90401584.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 9.04016e+07 companies using",
+          "EU: 2-6 grade C",
+          "US: 45200000-135600000 grade C",
+          "https://www.sec.gov/Archives/edgar/data/0001005757/000119312506053833/d10k.htm",
+          "global: 790-2370 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1062579/000119312525319187/dox-20250930.htm",
+          "https://en.wikipedia.org/wiki/Business_Support_and_Control_System",
+          "https://en.wikipedia.org/wiki/NetCracker_Technology"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.cambridgemc.com/the-complexity-tax ; https://www.subex.com/article/what-is-revenue-assurance-the-ultimate-revenue-assurance-guide-for-telecom-operators/",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/1005757/000100575725000006/csgs-20250904.htm ; https://ir.csgi.com/press-releases/press-release-details/2024/CSG-Announces-Six-Year-Contract-Renewal-with-Comcast/default.aspx ; https://www.prnewswire.com/news-releases/globe-selects-amdocs-for-strategic-bss-transformation-project-under-seven-year-agreement-149718635.html",
+          "https://aws.amazon.com/blogs/industries/aws-mainframe-modernization-transforming-telco-from-legacy-constraints-to-digital-innovation/",
+          "regulation reason to stay: Billing is revenue-critical. A failed cutover hits cash and the regulator at once, so operators run parallel systems and byte-for-byte output comparisons (updraftworks case: a 14-month migration of a 30-year COBOL system)."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 2652600000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Totogi",
+            "Tecnotree"
+          ]
+        },
+        "evidence": [
+          "https://cloudcitynews.com/news/totogi-charges-into-the-cloud-future/",
+          "https://www.sdxcentral.com/news/telco-billing-company-matrixx-raises-40-million-in-series-c/",
+          "https://en.wikipedia.org/wiki/LotusFlare",
+          "https://en.wikipedia.org/wiki/Circles.Life",
+          "https://blog.qvantel.com/blog/qvantel-completes-acquisition-of-optiva-to-drive-the-next-evolution-of-ai-powered-bss",
+          "https://www.tecnotree.com/investors_eng/releases/tecnotree-corporation-full-year-financial-report-1st-jan-31st-december-2025-unaudited/",
+          "funding unparsed: Totogi, Tecnotree"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "utility-billing-cis",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "midpoint": 37655116.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 3.76551e+07 companies using",
+          "EU: 18-54 grade C",
+          "https://www.eurelectric.org/events/power-talks-2400-distribution-system-operators-one-european-entity/",
+          "MY: 10650000-10650000 grade C",
+          "https://juristech.net/tenaga-nasional-berhad-tnb/",
+          "https://myenergystats.st.gov.my/electricity1",
+          "US: 2400-7200 grade C",
+          "https://finance.yahoo.com/news/tyler-incode-utility-billing-solution-151203285.html",
+          "https://www.eia.gov/electricity/data/eia861/",
+          "https://www.epa.gov/dwreginfo/information-about-public-water-systems",
+          "https://www.publicpower.org/public-power/stats-and-facts",
+          "VN: 27000000-27000000 grade C",
+          "https://en.evn.com.vn/d6/news/CMIS-system-A-breakthrough-in-business-and-customer-service-of-EVN-66-163-2536.aspx",
+          "global: 140-420 grade C",
+          "https://www.newswire.ca/news-releases/hansen-technologies-announces-strategic-partnership-with-erth-holdings-to-expand-cis-solutions-across-canada-821975369.html",
+          "https://gentrack.com/fy25-annual-results-investor-briefing/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://mygulfport.us/wp-content/uploads/2026/03/Utility-Billing-Software-RFP-Requirements-and-Specifications.pdf ; https://sanantonioreport.org/cps-energy-oracle-trustees-approve-contract-rate-structure/",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://sanantonioreport.org/cps-energy-oracle-trustees-approve-contract-rate-structure/ ; https://newsroom.cpsenergy.com/new-integrated-technology-platform/ ; https://information.auditor.ca.gov/reports/summary/2014-105 ; https://www.utilitieslabs.com/utility-cis-modernization-legacy-to-cloud-ai-migration/",
+          "https://santafenm.gov/media/rfps_docs/Utility-Billing_City_of_Santa_Fe_Data_Services_RFPv3.3_.pdf ; https://henleymorgan.com/blog/2026/07/sap-s-4hana-migration-2027-the-us-talent-crunch-ahead",
+          "regulation reason to stay: Billing is regulated and revenue-critical. Failed cutovers cause bill shocks, such as Amarillo's 2026 new system overcharging 55,000+ customers and triggering an $85K audit, and LADWP's post-2013 billing breakdown."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 1010950000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Itineris (UMAX)",
+            "Gentrack (g2 / g2.0)"
+          ]
+        },
+        "evidence": [
+          "https://www.kraken.tech/press-releases/octopus-energy-group-to-spin-out-kraken-at-valuation-of-usd8-65bn",
+          "https://waterfm.com/billing-solutions-company-raises-2-75-million-seed-round/",
+          "https://www.gimv.com/en/portfolio/itineris",
+          "https://getlatka.com/companies/smart-energy-water",
+          "https://gentrack.com/fy25-annual-results-investor-briefing/",
+          "https://www.bynry.com/about-bynry",
+          "funding unparsed: Itineris (UMAX), Gentrack (g2 / g2.0)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "wealth-portfolio-accounting",
+    "total": 43.8,
+    "total_raw": -1.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 24240.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 24240 companies using",
+          "EU: 3-9 grade C",
+          "https://www.efama.org/sites/default/files/files/asset-management-report-2024_0.pdf",
+          "SG: 3-9 grade C",
+          "https://www.mas.gov.sg/-/media/mas-media-library/publications/singapore-asset-management-survey/asset-management-survey-report-2024.pdf",
+          "US: 154-462 grade C",
+          "https://www.microfocus.com/media/case-study/fis-cs.pdf",
+          "https://www.sec.gov/Archives/edgar/data/350894/000035089417000010/seic-123116form10xk.htm",
+          "https://www.investmentadviser.org/wp-content/uploads/2026/06/Snapshot-2026.pdf",
+          "global: 11960-35880 grade C",
+          "https://www.kitces.com/blog/portfolio-management-trading-rebalancing-software-review-fintech-competition-addressable-market-size/",
+          "https://a-teaminsight.com/blog/vendor-profile-advent-software/?brand=ati",
+          "https://www.avaloq.com/about",
+          "https://en.wikipedia.org/wiki/Temenos_AG",
+          "https://en.wikipedia.org/wiki/SimCorp"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0007663913913913914,
+          "in_use_share_unweighted": 0.07894736842105263
+        },
+        "evidence": [
+          "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/documents/campaign/the-north-america-family-office-report-2024.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0007663913913913914 (unweighted 0.07894736842105263, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/350894/000035089417000010/seic-123116form10xk.htm",
+          "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/events/approved/reinvent-2025/reinvent/2024/slides/fsi/FSI312_Replatforming-for-reinvention-Modernizing-mainframes-at-Goldman-Sachs.pdf",
+          "regulation reason to stay: Regulatory reporting and custodian feeds are already wired and certified"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 2023000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Privé Technologies"
+          ]
+        },
+        "evidence": [
+          "https://www.wealthmanagement.com/advisor-support-platforms/investment-management-platform-ridgeline-raises-250m-series-e",
+          "https://www.finsmes.com/2025/05/addepar-raises-230m-in-series-g-funding-at-3-25-billion-valuation.html",
+          "https://www.sec.gov/Archives/edgar/data/1866368/000186636826000011/cwan-20251231.htm",
+          "https://www.finsmes.com/2023/03/masttro-secures-43m-in-growth-equity-funding.html",
+          "https://www.privetechnologies.com/",
+          "funding unparsed: Privé Technologies"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "core-banking",
+    "total": 37.5,
+    "total_raw": -2.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 8402.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 8402 companies using",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions",
+          "EU: 16-48 grade C",
+          "https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.listofsupervisedentities202502.en.pdf",
+          "SG: 28-84 grade C",
+          "https://eservices.mas.gov.sg/fid/institution?sector=Banking",
+          "TH: 1-3 grade C",
+          "https://en.wikipedia.org/wiki/List_of_banks_in_Thailand",
+          "US: 1665-4995 grade C",
+          "https://www.sec.gov/Archives/edgar/data/779152/000077915225000055/jkhy-20250630.htm",
+          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 2490-7470 grade C",
+          "https://www.temenos.com/about-us/",
+          "https://en.wikipedia.org/wiki/Midas_(banking_system)",
+          "https://www.kgieworld.sg/securities/resources/ck/files/sg-report/Silverlake%20Axis%20(SILV%20SP)_Initiation%20OUTPERFORM_KGI%20Singapore%2020200709.pdf",
+          "https://www.retailbankerinternational.com/features/ecobank-deploys-oracle-flexcube-in-30-countries/",
+          "https://en.wikipedia.org/wiki/Finacle",
+          "https://business-news-today.com/what-is-tcs-bancs-the-platform-powering-30-of-global-banking-transactions/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.2703953101481423,
+          "in_use_share_unweighted": 0.4166666666666667
+        },
+        "evidence": [
+          "https://www.nysd.uscourts.gov/sites/default/files/2021-02/20cv6539%20Citibank%20Opinion.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.2703953101481423 (unweighted 0.4166666666666667, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.icba.org/web/payments/w/community-bank-guide-to-managing-core-processor-relationships ; https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/ ; https://www.itnews.com.au/news/commbank-declares-core-bank-overhaul-complete-321165",
+          "https://www.bmc.com/blogs/cobol-trends/",
+          "regulation reason to stay: Regulator expectations on operational resilience and outsourcing (PRA/FCA, MAS TRM, OJK, RBI) add approval and testing overhead to any switch."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 2751000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": []
+        },
+        "evidence": [
+          "https://www.thoughtmachine.net/press-releases/series-d",
+          "https://tech.eu/2021/12/09/mambu-mambos-on-over-to-e235-million-in-new-raise-at-e4-9-billion-valuation/",
+          "https://tech.eu/2026/08/04/10x-banking-banks-ps40m-in-debt-and-equity-raise/",
+          "https://finovate.com/visa-acquires-pismo-to-become-core-banking-provider/",
+          "https://www.bankingdive.com/news/fiserv-buys-finxact-for-650m/618465/",
+          "https://www.zeta.tech/in/press/zeta-funding-omni-stack",
+          "https://www.americanbanker.com/news/new-fintech-maximum-aims-to-take-on-the-core-banking-cabal"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "insurance-policy-admin",
+    "total": 37.5,
+    "total_raw": -2.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 8966.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 8966 companies using",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/registers/list-general-insurance",
+          "global: 4482-13446 grade C",
+          "https://www.lookupmainframesoftware.com/soft_detail/dispsoft/2696",
+          "https://dxc.com/industries/insurance/life-wealth",
+          "https://sapiens.com/about/",
+          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm",
+          "https://www.sec.gov/Archives/edgar/data/1160951/000095017022020470/dct-20220831.htm",
+          "https://www.sec.gov/Archives/edgar/data/1626853/000121390019009815/f10k2019_majesco.htm",
+          "https://www.prnewswire.com/in/news-releases/ebaotech-announces-global-launch-of-ebaocloud-insuremo-665854713.html"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0017301038062283738,
+          "in_use_share_unweighted": 0.09090909090909091
+        },
+        "evidence": [
+          "https://withpace.com/",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0017301038062283738 (unweighted 0.09090909090909091, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm",
+          "https://www.dig-in.com/opinion/insurance-it-leaders-have-an-ai-infrastructure-problem",
+          "regulation reason to stay: Regulatory reporting and actuarial logic embedded in legacy code, with outsourced AMS contracts. DXC has run application outsourcing for a VANTAGE-ONE annuity block for about 20 years (search snippet)."
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 237000162.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Zinnia (Eldridge)",
+            "eBaoTech"
+          ]
+        },
+        "evidence": [
+          "https://www.eisgroup.com/company/",
+          "https://www.insightpartners.com/ideas/socotra-raises-50-million-series-c-funding-round-led-by-insight-partners-to-fuel-growth-as-the-trusted-core-platform-for-insurtechs-and-innovative-carriers/",
+          "https://fintech.global/2026/06/01/pace-lands-46m-funding-round-to-automate-insurance-workflows/",
+          "https://zinnia.com/",
+          "https://instanda.com/news/instanda-secures-20-million-investment-round-led-by-commerzventures-to-accelerate-global-expansion",
+          "https://www.prnewswire.com/in/news-releases/ebaotech-announces-global-launch-of-ebaocloud-insuremo-665854713.html",
+          "funding unparsed: Zinnia (Eldridge), eBaoTech"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "port-terminal-operating-system",
+    "total": 37.5,
+    "total_raw": -2.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 2,
+        "detail": {
+          "midpoint": 752.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 752 companies using",
+          "EU: 1-3 grade C",
+          "https://www.eca.europa.eu/lists/ecadocuments/sr16_23/sr_maritime_en.pdf",
+          "global: 375-1125 grade C",
+          "https://kaleris.com/news/northport-partners-with-kaleris-to-enhance-terminal-operating-system/",
+          "https://www.globenewswire.com/en/news-release/2012/04/05/1771866/0/en/50th-site-now-live-with-Navis-SPARCS-N4-investments-continue-in-port-automation-technologies.html",
+          "https://tideworks.com/about-us/",
+          "https://itea4.org/organisation/total-soft-bank-ltd-1.html",
+          "https://rbs-tops.com/how-it-all-started/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://tideworks.com/tos-of-the-future-port-strategy/ ; https://www.portwiseconsultancy.com/blog/which-software-helps-with-efficient-berth-planning/",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://gaports.com/n4/n4-faqs/ ; https://www.apmterminals.com/en/news/news-releases/2020/200611-covid-19-brings-unexpected-benefits-to-apm-terminals-global-tos-roll-out ; https://www.apmterminals.com/en/aarhus/practical-information/news/2022/220519-preparing-for-the-future-with-new-operating-system",
+          "https://kitalent.com/articles/rijeka-port-talent-gap ; https://kitalent.com/articles/genoa-maritime-logistics-talent"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 13600000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Loadmaster.ai",
+            "ILCS (PT Integrasi Logistik Cipta Solusi), TOS Nusantara",
+            "Octopi (Cetus Labs), acquired by Navis/Cargotec in March 2019"
+          ]
+        },
+        "evidence": [
+          "https://smartmaritimenetwork.com/2024/02/20/portchain-raises-5m/",
+          "https://tracxn.com/d/companies/avlino/__0NcWT9m47aCD4jJSjLLkQhZTK7_Dl3n0sNNRgtZNLls",
+          "https://loadmaster.ai/about-us/",
+          "https://mimbarmaritim.com/2025/07/22/perkuat-digitalisasi-nasional-ilcs-dukung-implementasi-tos-nusantara-di-pelabuhan-sorong/",
+          "https://www.kalmarglobal.com/news--insights/press_releases/2019/cargotecs-navis-acquires-octopi-a-terminal-operating-system-for-small-container-and-mixed-cargo-terminals",
+          "funding unparsed: Loadmaster.ai, ILCS (PT Integrasi Logistik Cipta Solusi), TOS Nusantara, Octopi (Cetus Labs), acquired by Navis/Cargotec in March 2019"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "student-information",
+    "total": 37.5,
+    "total_raw": -2.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "midpoint": 36484.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 36484 companies using",
+          "AU: 10-30 grade C",
+          "https://www.tribalgroup.com/news/a-five-year-contract-with-the-callista-group",
+          "https://en.wikipedia.org/wiki/Tertiary_Education_Quality_and_Standards_Agency",
+          "EU: 4-12 grade C",
+          "https://eter-project.com/assets/pdf/ETER_poster.pdf",
+          "SG: 11-33 grade C",
+          "https://data.gov.sg/datasets/d_e24eb88daad6743854009265c61ee0d8/view",
+          "UK: 6897-20691 grade C",
+          "https://www.whichmis.com/mis-stats-from-the-october-census/",
+          "https://www.officeforstudents.org.uk/for-providers/registering-with-the-ofs/guide-to-the-ofs-register/",
+          "https://www.whichmis.com/arbor-takes-no-1-spot-from-ess-sims/",
+          "US: 19700-19700 grade B",
+          "https://listedtech.com/blog/ellucian-company/",
+          "https://www.sec.gov/Archives/edgar/data/1835681/000183568124000016/pwsc-20231231.htm",
+          "https://nces.ed.gov/fastfacts/display.asp?id=1122",
+          "global: 1470-4410 grade C",
+          "https://www.sigcorp.com/technologies/erp/ellucian-banner/",
+          "https://www.tribalgroup.com/hubfs/Tribal%20Group%20plc%20AR24_Low%20Res_V1.pdf"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.007501875468867217,
+          "in_use_share_unweighted": 0.375
+        },
+        "evidence": [
+          "https://edtechmagazine.com/higher/article/2026/03/shadow-data-higher-education-governing-unsanctioned-data-it-becomes-ferpa-problem-perfcon",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.007501875468867217 (unweighted 0.375, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://its.lehigh.edu/banner-saas-transition-driving-innovation-future-ready-lehigh ; https://www.studlife.com/news/2025/12/10/breaking-down-workdays-265-million-cost ; https://www.tribalgroup.com/news/a-five-year-contract-with-the-callista-group",
+          "https://www.tribalgroup.com/hubfs/Tribal%20Group%20plc%20AR24_Low%20Res_V1.pdf",
+          "regulation reason to stay: Decades of local customization, regulatory reporting (IPEDS, HESA/OfS returns, DfE census, PDDikti Feeder) and financial-aid logic are embedded in the old core."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 633900000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Workday (Workday Student)",
+            "Arbor Education (The Key Group)",
+            "Bromcom",
+            "SEVIMA (PT Sentra Vidya Utama)"
+          ]
+        },
+        "evidence": [
+          "https://newsroom.workday.com/2025-10-15-Workdays-Higher-Education-Momentum-Accelerates-as-Over-650-Institutions-Worldwide-Turn-to-AI-to-Navigate-Uncertainty-and-Transform-the-Student-Experience",
+          "https://www.whichmis.com/mis-stats-from-the-october-census/",
+          "https://www.whichmis.com/bromcom-reports-21-increase-in-revenue/",
+          "https://en.wikipedia.org/wiki/TechnologyOne",
+          "https://sevima.com/apa-itu-sevima-profil-dan-sejarah-edtech-yang-sudah-2-dekade-merevolusi-pendidikan-tinggi-indonesia/",
+          "https://inc42.com/company/teachmint/funding/",
+          "https://www.ycombinator.com/companies/risely-ai",
+          "funding unparsed: Workday (Workday Student), Arbor Education (The Key Group), Bromcom, SEVIMA (PT Sentra Vidya Utama)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "airline-pss",
+    "total": 31.2,
+    "total_raw": -3.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 2,
+        "detail": {
+          "midpoint": 554.5,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 554.5 companies using",
+          "EU: 9-27 grade C",
+          "https://transport.ec.europa.eu/document/download/7d7c51df-f11d-4a0c-815c-28a5ae4264b5_en?filename=eu_air_carriers_by_country_holding_an_active_operating_licence.pdf",
+          "SG: 1-3 grade C",
+          "https://www.caas.gov.sg/industry/aircraft-operators/singapore-air-operator/air-operator-certificate/",
+          "US: 10-30 grade C",
+          "https://www.sec.gov/Archives/edgar/data/0001386355/000104746909002555/a2190554z10-k.htm",
+          "https://www.govinfo.gov/content/pkg/FR-2025-06-17/pdf/2025-10965.pdf",
+          "global: 273-756 grade C",
+          "https://amadeus.com/en/airlines/products/altea-passenger-service-system",
+          "https://amadeus.com/en/airlines/overview",
+          "https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
+          "https://www.iata.org/en/about/members/airline-list/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.automationanywhere.com/company/press-room/automation-anywhere-bot-slashes-flight-cancellation-processing-times-from-20-minutes-to-3-minutes",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://investors.southwest.com/news-events/press-releases/detail/604/southwest-airlines-completes-transition-to-amadeus-alta",
+          "https://www.redbooks.ibm.com/redpapers/pdfs/redp4611.pdf"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 802000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Hitit Computer Services (Crane PSS)",
+            "Amadeus Nevio (incumbent's own replacement)"
+          ]
+        },
+        "evidence": [
+          "https://flyr.com/resource-hub/flyr-raises-295m-to-rebuild-the-foundation-of-travel-technology/",
+          "https://www.ibsplc.com/product/airline-passenger-solutions",
+          "https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
+          "https://www.altexsoft.com/travel-industry-news/fetcherr-raises-42m-targets-new-sectors-with-ai-pricing/",
+          "https://amadeus.com/en/newsroom/press-releases/new-era-connected-travel-amadeus-finnair-worlds-first-airline-native-orders",
+          "funding unparsed: Hitit Computer Services (Crane PSS), Amadeus Nevio (incumbent's own replacement)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "capital-markets-trading-clearing",
+    "total": 31.2,
+    "total_raw": -3.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 2447.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 2447 companies using",
+          "AU: 59-127 grade C",
+          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
+          "https://www.asx.com.au/content/dam/asx/participants/lists-of-participants/asx-trading-participant.pdf",
+          "EU: 6-18 grade C",
+          "ID: 500-500 grade B",
+          "https://marketnews.id/market-update/2020/12/pt-idx-solusi-teknologi-informasi-akuisisi-pt-micro-piranti-computer/",
+          "https://www.ojk.go.id/id/kanal/pasar-modal/data-dan-statistik/statistik-pasar-modal/Documents/3.%20STATISTIK%20MINGGU%20KE-3%20JUNI%202025.pdf",
+          "IN: 880-2640 grade C",
+          "https://www.63moons.com/discover-63-moons/evolution.html",
+          "https://www.moneylife.in/article/nse-pulls-plug-from-its-now-trading-software-63-moons-offers-its-odin-at-50-percentage-discount/60586.html",
+          "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=30",
+          "US: 1-3 grade C",
+          "https://www.finra.org/media-center/blog/four-insights-from-finras-2026-industry-snapshot",
+          "VN: 40-120 grade C",
+          "https://fss.com.vn/en/capital-market/",
+          "https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/asia-pacific/ho-chi-minh-stock-exchange/topics/overview-of-exchange"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 1,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.thetradenews.com/tradeplus/sell-side-stuck-at-a-crossroad-between-manual-processes-and-dominating-automation/",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.moneylife.in/article/sebi-slaps-rs25-lakh-penalty-on-mcx-for-delay-in-disclosures-linked-to-63-moons-contract/77238.html ; ASX release 17 Nov 2022 ; Broadridge FY2026 10-K",
+          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
+          "regulation reason to stay: Regulators gate cutover. SEBI asked MCX on 28 Sep 2023 to hold its planned 3 Oct go-live, and the RBA/ASIC oversee CHESS milestones, so switching takes regulatory sign-off and mock trading."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 5,
+          "funding_usd": 1385000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Tata Consultancy Services (TCS BaNCS / Commodity Derivatives Platform)"
+          ]
+        },
+        "evidence": [
+          "https://www.clearstreet.io/news/blog/this-is-only-the-beginning",
+          "https://alpaca.markets/blog/alpaca-raises-150-million-at-a-1-15b-valuation-to-build-the-global-standard-for-brokerage-infrastructure/",
+          "https://www.prnewswire.com/news-releases/drivewealth-raises-450m-series-d-valuing-the-company-at-2-85b-301359564.html",
+          "https://apexfintechsolutions.com/products/wealth-management/apex-direct-brokerage-as-a-service-with-cloud-native-tech/",
+          "https://www.businesstoday.in/markets/stocks/story/mcx-to-shift-to-new-trading-platform-on-october-3-shares-hit-52-week-high-400006-2023-09-28",
+          "funding unparsed: Tata Consultancy Services (TCS BaNCS / Commodity Derivatives Platform)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "card-payments-processing",
+    "total": 31.2,
+    "total_raw": -3.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 1550.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 1550 companies using",
+          "EU: 3-9 grade C",
+          "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260213~590707b254.en.html",
+          "SG: 4-12 grade C",
+          "https://eservices.mas.gov.sg/fid/institution?sector=Banking",
+          "TH: 1-3 grade C",
+          "https://en.wikipedia.org/wiki/List_of_banks_in_Thailand",
+          "US: 1-3 grade C",
+          "https://www.fdic.gov/quarterly-banking-profile/quarterly-banking-profile-second-quarter-2026.pdf",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 766-2298 grade C",
+          "https://www.aciworldwide.com/about-aci/history",
+          "https://www.hps-worldwide.com/about-hps",
+          "https://vir.com.vn/opening-way-for-digital-payments-71356.html"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 1,
+          "in_use_share": 0.018072289156626505,
+          "in_use_share_unweighted": 0.17391304347826086
+        },
+        "evidence": [
+          "https://rivero.tech/blog/issuer-banks-reconcile-mastercard-dispute-fund-movements-guide",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.018072289156626505 (unweighted 0.17391304347826086, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.americanbanker.com/payments/news/bank-of-america-returns-its-consumer-card-portfolio-to-tsys ; https://www.sec.gov/Archives/edgar/data/0000721683/000072168304000062/chaserelease.htm ; TSYS 10-K FY2007 https://www.sec.gov/Archives/edgar/data/0000721683/000095014408001510/g11668exv13w1.htm",
+          "https://www.bmc.com/blogs/mainframe-survey-financial-services-key-takeaways/ ; https://www.itjobboard.co.uk/job/16225533/visionplus-developer-cobol-and-cics/",
+          "regulation reason to stay: Scheme certifications, regulatory reporting and fraud and collections integrations are built up over decades around the core."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 6,
+          "funding_usd": 895000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Marqeta",
+            "Pismo (Visa)"
+          ]
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/1522540/000152254026000017/mq-20251231.htm",
+          "https://www.zeta.tech/in/press/zeta-funding-omni-stack",
+          "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.20301.html",
+          "https://techcrunch.com/2022/01/13/global-processing-services-adds-100m-to-its-coffers-to-grow-its-embedded-finance-and-api-payments-platform/",
+          "https://en.wikipedia.org/wiki/Highnote_(platform)",
+          "https://entrackr.com/2024/09/m2p-fintech-raises-over-100-mn-in-primary-and-secondary-funding/",
+          "funding unparsed: Marqeta, Pismo (Visa)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "insurance-claims",
+    "total": 31.2,
+    "total_raw": -3.0,
+    "flags": [
+      "ai_fit_missing"
+    ],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "midpoint": 3662.0,
+          "bins": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "evidence": [
+          "estimates: region midpoints sum to 3662 companies using",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/registers/list-registered-life-insurers-and-friendly-societies",
+          "TH: 2-6 grade C",
+          "https://www.thailandstarterkit.com/money/insurance-company-thailand/",
+          "US: 750-2250 grade C",
+          "https://dxc.com/platforms/assure/dxc-assure-claims",
+          "https://insurity.com/press-release/insurity-becomes-largest-cloud-software-vendor-serving-400-pc-insurers-cloud",
+          "https://content.naic.org/sites/default/files/publications-key-facts-market-trends-new-york.pdf",
+          "global: 1078-3234 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm",
+          "https://www.guidewire.com/products/core-products/insurancesuite/claimcenter-claims-management-software",
+          "https://www.sec.gov/Archives/edgar/data/1160951/000095017022020470/dct-20220831.htm",
+          "https://www.sec.gov/Archives/edgar/data/885740/000101376225003193/ea0235334-20f_sapiens.htm",
+          "https://www.majesco.com/press/majesco-delivers-record-fy25/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.001694915254237288,
+          "in_use_share_unweighted": 0.23076923076923078
+        },
+        "evidence": [
+          "https://assets.lloyds.com/media/472b74ba-fe3b-47d6-aa7b-d37c2ba2e179/lloyds-blueprint-two.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.001694915254237288 (unweighted 0.23076923076923078, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": null,
+        "detail": {
+          "status": "pass missing",
+          "tasks": 0
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm ; https://www.sec.gov/Archives/edgar/data/885740/000101376225003193/ea0235334-20f_sapiens.htm",
+          "https://www.dig-in.com/opinion/insurance-it-leaders-have-an-ai-infrastructure-problem",
+          "regulation reason to stay: Claims systems link to policy admin, payments, reserving, reinsurance, fraud tools and regulator reporting, so a swap touches many integrations."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 8,
+          "funding_usd": 1241000000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Sprout.ai"
+          ]
+        },
+        "evidence": [
+          "https://www.carriermanagement.com/news/2024/12/23/269761.htm",
+          "https://getlatka.com/companies/five-sigma",
+          "https://www.snapsheetclaims.com/post/snapsheet-claims-management-platform-leader-secures-30mm-in-series-e2-financing",
+          "https://www.builtinboston.com/articles/shift-technology-raises-220m-1b-valuation",
+          "https://coverager.com/tractable-raises-65-million-led-by-softbank/",
+          "https://claraanalytics.com/news/clara-analytics-raises-24m-in-series-c-funding-accelerating-ai-adoption-for-insurance-claims/",
+          "https://www.amadeuscapital.com/insurtech-sprout-ai-raises-5-4-million-from-global-investors-to-transform-claims-processing/",
+          "https://iglooinsure.com/press/regional-insurtech-igloo-extends-series-b-to-us46-million-will-build-on-core-capabilities-to-sustain-growth-and-strengthen-lead-across-key-markets-in-southeast-asia/",
+          "funding unparsed: Sprout.ai"
+        ]
+      }
+    }
+  }
+]
