@@ -591,6 +591,42 @@ def build_parser() -> argparse.ArgumentParser:
     p_est.add_argument("--json", action="store_true")
     p_est.set_defaults(func=_estimate)
 
+    p_exp = sub.add_parser(
+        "export",
+        help="write exports/site/{categories,scores}.json for kept categories",
+    )
+    p_exp.add_argument(
+        "--out",
+        type=Path,
+        default=paths.ROOT / "exports",
+        help="output directory; site/ is created inside it",
+    )
+    p_exp.add_argument(
+        "--configs-dir",
+        type=Path,
+        default=None,
+        help="category config dir (default: configs/categories)",
+    )
+    p_exp.add_argument(
+        "--items",
+        type=Path,
+        default=None,
+        help="items parquet (default: data/derived/items.parquet)",
+    )
+    p_exp.add_argument(
+        "--jev-root",
+        type=Path,
+        default=None,
+        help="jev passes dir (default: data/derived/jev)",
+    )
+    p_exp.add_argument(
+        "--only",
+        nargs="*",
+        default=None,
+        help="limit the export to these category slugs",
+    )
+    p_exp.set_defaults(func=_export)
+
     from lsa.jev.cli import register as register_jev
 
     register_jev(sub)
@@ -610,6 +646,19 @@ def _estimate(args: argparse.Namespace) -> None:
         print(json.dumps(asdict(out), indent=2))
     else:
         print(est.format_table(out))
+
+
+def _export(args: argparse.Namespace) -> None:
+    from lsa import export
+
+    result = export.run_export(
+        args.out,
+        configs_dir=args.configs_dir,
+        items_path=args.items,
+        jev_root=args.jev_root,
+        only=frozenset(args.only) if args.only else None,
+    )
+    export.print_summary(result)
 
 
 def main() -> None:
