@@ -1,0 +1,1466 @@
+category,region,query,lang
+agriculture-commodity,US,Agvance,en
+agriculture-commodity,US,AGRIS grain accounting,en
+agriculture-commodity,US,Merchant Ag,en
+agriculture-commodity,US,AgTrax,en
+agriculture-commodity,US,grain accounting,en
+agriculture-commodity,US,CTRM,en
+agriculture-commodity,EU,CTRM,en
+agriculture-commodity,EU,Openlink Endur,en
+agriculture-commodity,EU,SAP Commodity Management,en
+agriculture-commodity,EU,Agiboo,en
+agriculture-commodity,EU,Agrarhandel Software,de
+agriculture-commodity,UK,CTRM,en
+agriculture-commodity,UK,Openlink Endur,en
+agriculture-commodity,UK,TriplePoint,en
+agriculture-commodity,SG,CTRM,en
+agriculture-commodity,SG,Openlink Endur,en
+agriculture-commodity,SG,SAP Commodity Management,en
+agriculture-commodity,SG,TriplePoint,en
+agriculture-commodity,IN,CTRM,en
+agriculture-commodity,IN,SAP Commodity Management,en
+agriculture-commodity,IN,Openlink Endur,en
+agriculture-commodity,ID,CTRM,en
+agriculture-commodity,ID,SAP Commodity Management,en
+agriculture-commodity,ID,aplikasi timbangan sawit,id
+agriculture-commodity,VN,CTRM,en
+agriculture-commodity,VN,phần mềm quản lý nông sản,vi
+agriculture-commodity,VN,SAP Commodity Management,en
+agriculture-commodity,MY,CTRM,en
+agriculture-commodity,MY,Openlink Endur,en
+agriculture-commodity,MY,SAP Commodity Management,en
+agriculture-commodity,MY,sistem kilang sawit,ms
+agriculture-commodity,TH,CTRM,en
+agriculture-commodity,TH,SAP Commodity Management,en
+agriculture-commodity,TH,โปรแกรมโรงสีข้าว,th
+agriculture-commodity,PH,CTRM,en
+agriculture-commodity,PH,SAP Commodity Management,en
+agriculture-commodity,PH,grain trading system,en
+agriculture-commodity,AU,CTRM,en
+agriculture-commodity,AU,Openlink Endur,en
+agriculture-commodity,AU,AgriDigital,en
+agriculture-commodity,AU,grain accounting,en
+airline-pss,US,z/TPF,en
+airline-pss,US,TPF assembler,en
+airline-pss,US,Amadeus Altea,en
+airline-pss,US,SabreSonic,en
+airline-pss,US,Navitaire,en
+airline-pss,US,passenger service system,en
+airline-pss,EU,passenger service system,en
+airline-pss,EU,Amadeus Altea,en
+airline-pss,EU,z/TPF,en
+airline-pss,EU,Navitaire,en
+airline-pss,EU,departure control system,en
+airline-pss,EU,Reservierungssystem Airline,de
+airline-pss,UK,Videcom,en
+airline-pss,UK,Amadeus Altea,en
+airline-pss,UK,passenger service system,en
+airline-pss,UK,Navitaire,en
+airline-pss,SG,Amadeus Altea,en
+airline-pss,SG,Navitaire,en
+airline-pss,SG,passenger service system,en
+airline-pss,SG,departure control system,en
+airline-pss,IN,z/TPF,en
+airline-pss,IN,Navitaire,en
+airline-pss,IN,Amadeus Altea,en
+airline-pss,IN,passenger service system,en
+airline-pss,IN,airline reservation system,en
+airline-pss,ID,sistem reservasi maskapai,id
+airline-pss,ID,Amadeus Altea,en
+airline-pss,ID,Navitaire,en
+airline-pss,ID,departure control system,en
+airline-pss,VN,hệ thống đặt chỗ,vi
+airline-pss,VN,Amadeus Altéa,en
+airline-pss,VN,Navitaire,en
+airline-pss,VN,hệ thống làm thủ tục,vi
+airline-pss,MY,Navitaire,en
+airline-pss,MY,Amadeus Altea,en
+airline-pss,MY,sistem tempahan penerbangan,ms
+airline-pss,MY,passenger service system,en
+airline-pss,TH,ระบบสำรองที่นั่ง,th
+airline-pss,TH,Amadeus Altea,en
+airline-pss,TH,Navitaire,en
+airline-pss,PH,Navitaire,en
+airline-pss,PH,Amadeus Altea,en
+airline-pss,PH,passenger service system,en
+airline-pss,AU,Amadeus Altea,en
+airline-pss,AU,Navitaire,en
+airline-pss,AU,passenger service system,en
+airline-pss,AU,z/TPF,en
+capital-markets-trading-clearing,US,Broadridge BPS,en
+capital-markets-trading-clearing,US,broker-dealer back office,en
+capital-markets-trading-clearing,US,clearing operations COBOL,en
+capital-markets-trading-clearing,US,self-clearing conversion,en
+capital-markets-trading-clearing,UK,Broadridge Gloss,en
+capital-markets-trading-clearing,UK,post-trade settlement analyst,en
+capital-markets-trading-clearing,UK,stockbroker back office,en
+capital-markets-trading-clearing,EU,Wertpapierabwicklung,de
+capital-markets-trading-clearing,EU,back office titres,fr
+capital-markets-trading-clearing,EU,post-trade back office,en
+capital-markets-trading-clearing,SG,stockbroking back office,en
+capital-markets-trading-clearing,SG,CDP settlement operations,en
+capital-markets-trading-clearing,SG,securities operations analyst,en
+capital-markets-trading-clearing,IN,ODIN terminal support,en
+capital-markets-trading-clearing,IN,broking back office,en
+capital-markets-trading-clearing,IN,RMS stock broking,en
+capital-markets-trading-clearing,IN,DP back office,en
+capital-markets-trading-clearing,ID,back office sekuritas,id
+capital-markets-trading-clearing,ID,S21 BOFIS,id
+capital-markets-trading-clearing,ID,settlement perusahaan efek,id
+capital-markets-trading-clearing,VN,core chứng khoán,vi
+capital-markets-trading-clearing,VN,FLEX FSS,vi
+capital-markets-trading-clearing,VN,lưu ký chứng khoán,vi
+capital-markets-trading-clearing,MY,stockbroking back office,en
+capital-markets-trading-clearing,MY,Bursa settlement operations,en
+capital-markets-trading-clearing,MY,broking system analyst,en
+capital-markets-trading-clearing,TH,ระบบหลังบ้าน หลักทรัพย์,th
+capital-markets-trading-clearing,TH,back office หลักทรัพย์,th
+capital-markets-trading-clearing,TH,ชำระราคาหลักทรัพย์,th
+capital-markets-trading-clearing,PH,stockbroker back office,en
+capital-markets-trading-clearing,PH,PDTC settlement,en
+capital-markets-trading-clearing,PH,trading participant operations,en
+capital-markets-trading-clearing,AU,CHESS settlement,en
+capital-markets-trading-clearing,AU,stockbroking operations,en
+capital-markets-trading-clearing,AU,CHESS replacement,en
+card-payments-processing,US,VisionPLUS,en
+card-payments-processing,US,TSYS TS2,en
+card-payments-processing,US,BASE24,en
+card-payments-processing,US,Fiserv Optis,en
+card-payments-processing,US,card processing conversion,en
+card-payments-processing,EU,VisionPLUS,en
+card-payments-processing,EU,BASE24,en
+card-payments-processing,EU,PowerCARD,en
+card-payments-processing,EU,Way4,en
+card-payments-processing,EU,Kartenmanagementsystem,de
+card-payments-processing,EU,système monétique,fr
+card-payments-processing,UK,VisionPLUS,en
+card-payments-processing,UK,BASE24,en
+card-payments-processing,UK,TS2 card,en
+card-payments-processing,UK,card issuing platform,en
+card-payments-processing,SG,VisionPLUS,en
+card-payments-processing,SG,BASE24,en
+card-payments-processing,SG,Way4,en
+card-payments-processing,SG,card management system,en
+card-payments-processing,IN,VisionPLUS,en
+card-payments-processing,IN,BASE24,en
+card-payments-processing,IN,card management system,en
+card-payments-processing,IN,PowerCARD,en
+card-payments-processing,ID,VisionPLUS,id
+card-payments-processing,ID,BASE24,id
+card-payments-processing,ID,sistem kartu kredit,id
+card-payments-processing,ID,programmer COBOL bank,id
+card-payments-processing,VN,Way4,vi
+card-payments-processing,VN,hệ thống thẻ,vi
+card-payments-processing,VN,core thẻ,vi
+card-payments-processing,VN,VisionPLUS,vi
+card-payments-processing,MY,VisionPLUS,en
+card-payments-processing,MY,BASE24,en
+card-payments-processing,MY,card management system,en
+card-payments-processing,MY,sistem kad kredit,ms
+card-payments-processing,TH,VisionPLUS,th
+card-payments-processing,TH,ระบบบัตรเครดิต,th
+card-payments-processing,TH,BASE24,th
+card-payments-processing,TH,COBOL ธนาคาร,th
+card-payments-processing,PH,VisionPLUS,en
+card-payments-processing,PH,BASE24,en
+card-payments-processing,PH,card management system,en
+card-payments-processing,AU,VisionPLUS,en
+card-payments-processing,AU,BASE24,en
+card-payments-processing,AU,TS2 TSYS,en
+card-payments-processing,AU,card issuing platform,en
+construction-project-accounting,US,Sage 300 CRE,en
+construction-project-accounting,US,Timberline,en
+construction-project-accounting,US,Viewpoint Vista,en
+construction-project-accounting,US,Viewpoint Spectrum,en
+construction-project-accounting,US,Foundation Software,en
+construction-project-accounting,US,CMiC,en
+construction-project-accounting,US,construction accounting ERP,en
+construction-project-accounting,UK,COINS ERP,en
+construction-project-accounting,UK,Progress OpenEdge,en
+construction-project-accounting,UK,Viewpoint Vista,en
+construction-project-accounting,UK,Eque2,en
+construction-project-accounting,UK,construction ERP,en
+construction-project-accounting,EU,Bausoftware ERP,de
+construction-project-accounting,EU,Nevaris,de
+construction-project-accounting,EU,RIB iTWO,de
+construction-project-accounting,EU,logiciel comptabilité BTP,fr
+construction-project-accounting,EU,construction ERP,en
+construction-project-accounting,AU,Jobpac,en
+construction-project-accounting,AU,Viewpoint Vista,en
+construction-project-accounting,AU,Access Coins,en
+construction-project-accounting,AU,construction ERP,en
+construction-project-accounting,SG,construction accounting software,en
+construction-project-accounting,SG,construction ERP,en
+construction-project-accounting,SG,progress claim accountant,en
+construction-project-accounting,IN,construction ERP,en
+construction-project-accounting,IN,RA bill accountant,en
+construction-project-accounting,IN,SAP construction accountant,en
+construction-project-accounting,ID,akuntansi konstruksi,id
+construction-project-accounting,ID,ERP kontraktor,id
+construction-project-accounting,ID,akuntan proyek,id
+construction-project-accounting,VN,kế toán xây dựng,vi
+construction-project-accounting,VN,kế toán công trình,vi
+construction-project-accounting,VN,phần mềm ERP xây dựng,vi
+construction-project-accounting,MY,construction accounting software,en
+construction-project-accounting,MY,perakaunan pembinaan,ms
+construction-project-accounting,MY,construction ERP,en
+construction-project-accounting,TH,บัญชีก่อสร้าง,th
+construction-project-accounting,TH,ERP ก่อสร้าง,th
+construction-project-accounting,TH,บัญชีโครงการ,th
+construction-project-accounting,PH,construction accounting software,en
+construction-project-accounting,PH,project accountant construction,en
+construction-project-accounting,PH,construction ERP,en
+cooperative-rural-microfinance-banking,US,Symitar,en
+cooperative-rural-microfinance-banking,US,Episys PowerOn,en
+cooperative-rural-microfinance-banking,US,Jack Henry SilverLake,en
+cooperative-rural-microfinance-banking,US,Fiserv DNA,en
+cooperative-rural-microfinance-banking,US,credit union core conversion,en
+cooperative-rural-microfinance-banking,US,Fiserv Premier,en
+cooperative-rural-microfinance-banking,EU,agree21,de
+cooperative-rural-microfinance-banking,EU,Kernbankensystem Genossenschaftsbank,de
+cooperative-rural-microfinance-banking,EU,banca credito cooperativo informatica,it
+cooperative-rural-microfinance-banking,EU,cooperative bank core banking,en
+cooperative-rural-microfinance-banking,UK,credit union core system,en
+cooperative-rural-microfinance-banking,UK,credit union IT,en
+cooperative-rural-microfinance-banking,UK,credit union software,en
+cooperative-rural-microfinance-banking,SG,credit cooperative system,en
+cooperative-rural-microfinance-banking,SG,co-operative loan system,en
+cooperative-rural-microfinance-banking,SG,cooperative IT executive,en
+cooperative-rural-microfinance-banking,IN,cooperative bank CBS,en
+cooperative-rural-microfinance-banking,IN,PACS ERP,en
+cooperative-rural-microfinance-banking,IN,urban cooperative bank core,en
+cooperative-rural-microfinance-banking,IN,sahakari bank software,en
+cooperative-rural-microfinance-banking,IN,OMNIEnterprise,en
+cooperative-rural-microfinance-banking,ID,core banking BPR,id
+cooperative-rural-microfinance-banking,ID,programmer BPR,id
+cooperative-rural-microfinance-banking,ID,IBS Core USSI,id
+cooperative-rural-microfinance-banking,ID,aplikasi koperasi simpan pinjam,id
+cooperative-rural-microfinance-banking,ID,PowerBuilder perbankan,id
+cooperative-rural-microfinance-banking,VN,quỹ tín dụng nhân dân phần mềm,vi
+cooperative-rural-microfinance-banking,VN,core banking quỹ tín dụng,vi
+cooperative-rural-microfinance-banking,VN,Co-opBank công nghệ,vi
+cooperative-rural-microfinance-banking,MY,sistem koperasi kredit,ms
+cooperative-rural-microfinance-banking,MY,core banking koperasi,ms
+cooperative-rural-microfinance-banking,MY,Bank Rakyat core banking,en
+cooperative-rural-microfinance-banking,TH,ระบบสหกรณ์ออมทรัพย์,th
+cooperative-rural-microfinance-banking,TH,โปรแกรมสหกรณ์,th
+cooperative-rural-microfinance-banking,TH,ระบบสหกรณ์เครดิตยูเนี่ยน,th
+cooperative-rural-microfinance-banking,PH,rural bank core banking,en
+cooperative-rural-microfinance-banking,PH,rural bank IT,en
+cooperative-rural-microfinance-banking,PH,cooperative bank system,en
+cooperative-rural-microfinance-banking,PH,microfinance loan system,en
+cooperative-rural-microfinance-banking,AU,mutual bank core banking,en
+cooperative-rural-microfinance-banking,AU,customer-owned bank core,en
+cooperative-rural-microfinance-banking,AU,credit union core platform,en
+core-banking,US,Symitar,en
+core-banking,US,Jack Henry SilverLake,en
+core-banking,US,Fiserv DNA,en
+core-banking,US,Fiserv Premier,en
+core-banking,US,core conversion,en
+core-banking,US,IBM i RPG,en
+core-banking,EU,Temenos T24,en
+core-banking,EU,Kernbankensystem,de
+core-banking,EU,core banking,en
+core-banking,EU,Finastra Equation,en
+core-banking,EU,système bancaire central,fr
+core-banking,UK,Temenos Transact,en
+core-banking,UK,core banking,en
+core-banking,UK,COBOL developer,en
+core-banking,UK,Finastra Equation,en
+core-banking,SG,Temenos T24,en
+core-banking,SG,Finacle,en
+core-banking,SG,AS400 developer,en
+core-banking,SG,core banking,en
+core-banking,IN,Finacle,en
+core-banking,IN,TCS BaNCS,en
+core-banking,IN,Oracle FLEXCUBE,en
+core-banking,IN,core banking solution,en
+core-banking,IN,CBS migration,en
+core-banking,ID,core banking,id
+core-banking,ID,programmer AS400,id
+core-banking,ID,pengadaan core banking,id
+core-banking,ID,Temenos T24,id
+core-banking,ID,sistem inti perbankan,id
+core-banking,VN,core banking,vi
+core-banking,VN,chuyên viên core banking,vi
+core-banking,VN,lập trình viên AS400,vi
+core-banking,VN,T24,vi
+core-banking,MY,core banking,en
+core-banking,MY,Silverlake SIBS,en
+core-banking,MY,AS400 programmer,en
+core-banking,MY,sistem perbankan teras,ms
+core-banking,TH,ระบบ Core Banking,th
+core-banking,TH,โปรแกรมเมอร์ AS400,th
+core-banking,TH,core banking,en
+core-banking,PH,core banking,en
+core-banking,PH,AS400 programmer,en
+core-banking,PH,COBOL programmer,en
+core-banking,PH,Finacle,en
+core-banking,AU,core banking,en
+core-banking,AU,COBOL developer,en
+core-banking,AU,Temenos,en
+core-banking,AU,Ultracs,en
+courts-justice,US,Tyler Odyssey,en
+courts-justice,US,Enterprise Justice,en
+courts-justice,US,CM/ECF,en
+courts-justice,US,Journal Technologies eCourt,en
+courts-justice,US,CourtView,en
+courts-justice,US,court case management system,en
+courts-justice,UK,Common Platform HMCTS,en
+courts-justice,UK,Libra magistrates,en
+courts-justice,UK,court case management,en
+courts-justice,EU,forumSTAR,de
+courts-justice,EU,EUREKA-Fach,de
+courts-justice,EU,Fachverfahren Justiz,de
+courts-justice,EU,Cassiopée justice,fr
+courts-justice,EU,processo civile telematico,it
+courts-justice,SG,eLitigation,en
+courts-justice,SG,court case management,en
+courts-justice,IN,eCourts CIS,en
+courts-justice,IN,NJDG,en
+courts-justice,IN,court case management,en
+courts-justice,ID,SIPP pengadilan,id
+courts-justice,ID,e-Court Mahkamah Agung,id
+courts-justice,ID,sistem informasi perkara,id
+courts-justice,VN,phần mềm quản lý án,vi
+courts-justice,VN,tòa án điện tử,vi
+courts-justice,VN,quản lý vụ việc tòa án,vi
+courts-justice,MY,e-Kehakiman,ms
+courts-justice,MY,sistem pengurusan kes,ms
+courts-justice,MY,court case management,en
+courts-justice,TH,ระบบบริหารจัดการคดี,th
+courts-justice,TH,CIOS ศาลยุติธรรม,th
+courts-justice,TH,e-Filing ศาล,th
+courts-justice,PH,eCourt Philippines,en
+courts-justice,PH,court case management,en
+courts-justice,PH,eCourt 2.0,en
+courts-justice,AU,Courtlink Victoria,en
+courts-justice,AU,JusticeLink NSW,en
+courts-justice,AU,court case management,en
+ehr-hospital,US,Epic analyst,en
+ehr-hospital,US,Cerner CCL developer,en
+ehr-hospital,US,MEDITECH analyst,en
+ehr-hospital,US,MUMPS developer,en
+ehr-hospital,US,VistA developer,en
+ehr-hospital,US,EHR replacement RFP,en
+ehr-hospital,UK,EPR analyst,en
+ehr-hospital,UK,electronic patient record,en
+ehr-hospital,UK,Cerner Millennium,en
+ehr-hospital,UK,Epic analyst,en
+ehr-hospital,EU,SAP IS-H,de
+ehr-hospital,EU,i.s.h.med,de
+ehr-hospital,EU,Krankenhausinformationssystem,de
+ehr-hospital,EU,KIS Ausschreibung,de
+ehr-hospital,EU,Epic EPD,nl
+ehr-hospital,SG,Epic analyst,en
+ehr-hospital,SG,Sunrise Clinical Manager,en
+ehr-hospital,SG,NGEMR,en
+ehr-hospital,IN,HMIS hospital,en
+ehr-hospital,IN,hospital information system,en
+ehr-hospital,IN,HIS implementation,en
+ehr-hospital,ID,SIMRS,id
+ehr-hospital,ID,programmer SIMRS,id
+ehr-hospital,ID,rekam medis elektronik,id
+ehr-hospital,ID,tender SIMRS,id
+ehr-hospital,VN,phần mềm HIS,vi
+ehr-hospital,VN,bệnh án điện tử,vi
+ehr-hospital,VN,lập trình viên HIS,vi
+ehr-hospital,MY,hospital information system,en
+ehr-hospital,MY,sistem maklumat hospital,ms
+ehr-hospital,MY,Cerner Millennium,en
+ehr-hospital,TH,HOSxP,th
+ehr-hospital,TH,ระบบ HIS,th
+ehr-hospital,TH,โปรแกรมเมอร์ HOSxP,th
+ehr-hospital,PH,iHOMIS,en
+ehr-hospital,PH,hospital information system,en
+ehr-hospital,PH,EMR implementation,en
+ehr-hospital,AU,Epic analyst,en
+ehr-hospital,AU,Cerner Millennium,en
+ehr-hospital,AU,HBCIS,en
+ehr-hospital,AU,patient administration system,en
+erp-distribution,US,Prophet 21,en
+erp-distribution,US,Epicor Eclipse,en
+erp-distribution,US,Infor SX.e,en
+erp-distribution,US,Infor A+ RPG,en
+erp-distribution,US,DDI Inform,en
+erp-distribution,US,CloudSuite Distribution,en
+erp-distribution,EU,Warenwirtschaftssystem Großhandel,de
+erp-distribution,EU,SAP Business One Großhandel,de
+erp-distribution,EU,ERP négoce,fr
+erp-distribution,EU,ERP groothandel,nl
+erp-distribution,EU,ERP distribuzione all'ingrosso,it
+erp-distribution,UK,Prophet 21,en
+erp-distribution,UK,Epicor BisTrack,en
+erp-distribution,UK,Kerridge K8,en
+erp-distribution,UK,wholesale distribution ERP,en
+erp-distribution,SG,SAP Business One,en
+erp-distribution,SG,distribution ERP,en
+erp-distribution,SG,Dynamics GP,en
+erp-distribution,IN,SAP Business One,en
+erp-distribution,IN,distribution ERP,en
+erp-distribution,IN,Tally distributor,en
+erp-distribution,ID,ERP distributor,id
+erp-distribution,ID,sistem distribusi ERP,id
+erp-distribution,ID,SAP Business One,id
+erp-distribution,VN,ERP phân phối,vi
+erp-distribution,VN,phần mềm bán buôn,vi
+erp-distribution,VN,SAP Business One,vi
+erp-distribution,MY,SAP Business One,en
+erp-distribution,MY,AutoCount,en
+erp-distribution,MY,sistem ERP pengedar,ms
+erp-distribution,TH,ERP ขายส่ง,th
+erp-distribution,TH,ERP ธุรกิจจัดจำหน่าย,th
+erp-distribution,TH,SAP Business One,th
+erp-distribution,PH,SAP Business One,en
+erp-distribution,PH,distribution ERP,en
+erp-distribution,PH,Dynamics GP,en
+erp-distribution,AU,Pronto Xi,en
+erp-distribution,AU,Epicor BisTrack,en
+erp-distribution,AU,Prophet 21,en
+erp-distribution,AU,MYOB Advanced wholesale,en
+erp-manufacturing,US,SAP ECC PP,en
+erp-manufacturing,US,JD Edwards World,en
+erp-manufacturing,US,Infor XA,en
+erp-manufacturing,US,BPCS,en
+erp-manufacturing,US,QAD Progress,en
+erp-manufacturing,US,Epicor Vantage,en
+erp-manufacturing,US,RPG IBM i,en
+erp-manufacturing,EU,SAP ECC PP,en
+erp-manufacturing,EU,Infor LN,en
+erp-manufacturing,EU,Baan,nl
+erp-manufacturing,EU,RPG Entwickler AS400,de
+erp-manufacturing,EU,S/4HANA Fertigung,de
+erp-manufacturing,EU,développeur RPG AS400,fr
+erp-manufacturing,UK,SAP ECC manufacturing,en
+erp-manufacturing,UK,Infor LN,en
+erp-manufacturing,UK,Epicor ERP,en
+erp-manufacturing,UK,RPG IBM i,en
+erp-manufacturing,SG,SAP ECC,en
+erp-manufacturing,SG,SAP PP consultant,en
+erp-manufacturing,SG,Epicor ERP,en
+erp-manufacturing,SG,AS400 developer,en
+erp-manufacturing,IN,SAP PP consultant,en
+erp-manufacturing,IN,AS400 RPG developer,en
+erp-manufacturing,IN,Baan consultant,en
+erp-manufacturing,IN,JD Edwards,en
+erp-manufacturing,IN,QAD consultant,en
+erp-manufacturing,ID,SAP PP,id
+erp-manufacturing,ID,programmer AS400,id
+erp-manufacturing,ID,ERP manufaktur,id
+erp-manufacturing,VN,SAP PP,vi
+erp-manufacturing,VN,lập trình viên AS400,vi
+erp-manufacturing,VN,ERP sản xuất,vi
+erp-manufacturing,MY,SAP PP,en
+erp-manufacturing,MY,AS400 programmer,en
+erp-manufacturing,MY,Epicor ERP,en
+erp-manufacturing,MY,sistem ERP kilang,ms
+erp-manufacturing,TH,SAP PP,th
+erp-manufacturing,TH,โปรแกรมเมอร์ AS400,th
+erp-manufacturing,TH,ERP โรงงาน,th
+erp-manufacturing,PH,SAP PP,en
+erp-manufacturing,PH,AS400 developer,en
+erp-manufacturing,PH,JD Edwards,en
+erp-manufacturing,AU,SAP ECC,en
+erp-manufacturing,AU,JD Edwards,en
+erp-manufacturing,AU,Pronto Xi,en
+erp-manufacturing,AU,Epicor ERP,en
+erp-manufacturing,AU,RPG IBM i,en
+field-service-maintenance,US,Maximo,en
+field-service-maintenance,US,SAP PM planner,en
+field-service-maintenance,US,CMMS administrator,en
+field-service-maintenance,US,HxGN EAM,en
+field-service-maintenance,US,CMMS RFP,en
+field-service-maintenance,EU,Maximo,en
+field-service-maintenance,EU,SAP PM Instandhaltung,de
+field-service-maintenance,EU,GMAO,fr
+field-service-maintenance,EU,Instandhaltungssoftware,de
+field-service-maintenance,EU,GMAO mantenimiento,es
+field-service-maintenance,EU,onderhoudsbeheer software,nl
+field-service-maintenance,UK,Maximo,en
+field-service-maintenance,UK,SAP PM,en
+field-service-maintenance,UK,CAFM,en
+field-service-maintenance,UK,CMMS,en
+field-service-maintenance,UK,asset management system,en
+field-service-maintenance,SG,Maximo,en
+field-service-maintenance,SG,CMMS,en
+field-service-maintenance,SG,SAP PM,en
+field-service-maintenance,SG,asset management system,en
+field-service-maintenance,IN,Maximo,en
+field-service-maintenance,IN,SAP PM consultant,en
+field-service-maintenance,IN,CMMS,en
+field-service-maintenance,IN,enterprise asset management,en
+field-service-maintenance,ID,SAP PM,id
+field-service-maintenance,ID,Maximo,id
+field-service-maintenance,ID,aplikasi pemeliharaan aset,id
+field-service-maintenance,ID,sistem manajemen pemeliharaan,id
+field-service-maintenance,VN,SAP PM,vi
+field-service-maintenance,VN,phần mềm quản lý bảo trì,vi
+field-service-maintenance,VN,CMMS,vi
+field-service-maintenance,VN,Maximo,vi
+field-service-maintenance,MY,SAP PM,en
+field-service-maintenance,MY,Maximo,en
+field-service-maintenance,MY,CMMS,en
+field-service-maintenance,MY,sistem penyelenggaraan aset,ms
+field-service-maintenance,TH,SAP PM,th
+field-service-maintenance,TH,Maximo,th
+field-service-maintenance,TH,ระบบบริหารงานซ่อมบำรุง,th
+field-service-maintenance,TH,CMMS,th
+field-service-maintenance,PH,SAP PM,en
+field-service-maintenance,PH,Maximo,en
+field-service-maintenance,PH,CMMS,en
+field-service-maintenance,PH,asset management system,en
+field-service-maintenance,AU,Maximo,en
+field-service-maintenance,AU,SAP PM planner,en
+field-service-maintenance,AU,CMMS,en
+field-service-maintenance,AU,enterprise asset management,en
+financial-close-gl,US,SAP FICO,en
+financial-close-gl,US,Oracle EBS financials,en
+financial-close-gl,US,JD Edwards,en
+financial-close-gl,US,Hyperion HFM,en
+financial-close-gl,US,Dynamics GP,en
+financial-close-gl,US,PeopleSoft Financials,en
+financial-close-gl,EU,SAP FI/CO Berater,de
+financial-close-gl,EU,SAP ECC Finanzbuchhaltung,de
+financial-close-gl,EU,consultant SAP FI,fr
+financial-close-gl,EU,Oracle EBS GL,en
+financial-close-gl,EU,HFM consolidation,en
+financial-close-gl,UK,SunSystems,en
+financial-close-gl,UK,Dynamics GP,en
+financial-close-gl,UK,SAP FICO,en
+financial-close-gl,UK,Oracle EBS finance,en
+financial-close-gl,UK,HFM,en
+financial-close-gl,SG,SAP FICO,en
+financial-close-gl,SG,SunSystems,en
+financial-close-gl,SG,Oracle EBS,en
+financial-close-gl,SG,Dynamics GP,en
+financial-close-gl,IN,Tally ERP 9,en
+financial-close-gl,IN,TallyPrime,en
+financial-close-gl,IN,SAP FICO,en
+financial-close-gl,IN,Oracle EBS GL,en
+financial-close-gl,IN,JD Edwards finance,en
+financial-close-gl,ID,SAP FICO,id
+financial-close-gl,ID,Oracle EBS,id
+financial-close-gl,ID,akuntan SunSystems,id
+financial-close-gl,ID,sistem buku besar,id
+financial-close-gl,VN,SAP FICO,vi
+financial-close-gl,VN,kế toán Oracle EBS,vi
+financial-close-gl,VN,kế toán SunSystems,vi
+financial-close-gl,MY,SAP FICO,en
+financial-close-gl,MY,SunSystems,en
+financial-close-gl,MY,Oracle EBS,en
+financial-close-gl,MY,sistem perakaunan,ms
+financial-close-gl,TH,SAP FICO,th
+financial-close-gl,TH,Oracle EBS บัญชี,th
+financial-close-gl,TH,SunSystems,th
+financial-close-gl,PH,SAP FICO,en
+financial-close-gl,PH,Oracle EBS,en
+financial-close-gl,PH,SunSystems,en
+financial-close-gl,AU,JD Edwards,en
+financial-close-gl,AU,SAP FICO,en
+financial-close-gl,AU,Oracle EBS,en
+financial-close-gl,AU,Dynamics GP,en
+gov-benefits,US,COBOL unemployment insurance,en
+gov-benefits,US,Curam developer,en
+gov-benefits,US,integrated eligibility system,en
+gov-benefits,US,Medicaid eligibility system,en
+gov-benefits,US,SSA COBOL,en
+gov-benefits,US,UI modernization,en
+gov-benefits,EU,COBOL Rentenversicherung,de
+gov-benefits,EU,rvDialog,de
+gov-benefits,EU,COBOL UWV,nl
+gov-benefits,EU,COBOL CNAV,fr
+gov-benefits,EU,COBOL INPS,it
+gov-benefits,EU,EESSI,en
+gov-benefits,UK,DWP COBOL,en
+gov-benefits,UK,DWP mainframe,en
+gov-benefits,UK,Curam,en
+gov-benefits,UK,Housing Benefit system,en
+gov-benefits,UK,VME COBOL,en
+gov-benefits,SG,CPF COBOL,en
+gov-benefits,SG,CPF mainframe,en
+gov-benefits,SG,social assistance system,en
+gov-benefits,IN,EPFO software,en
+gov-benefits,IN,ESIC IT tender,en
+gov-benefits,IN,COBOL pension,en
+gov-benefits,IN,DBT portal,en
+gov-benefits,ID,BPJS Ketenagakerjaan sistem,id
+gov-benefits,ID,COBOL BPJS,id
+gov-benefits,ID,Taspen core system,id
+gov-benefits,VN,phần mềm BHXH,vi
+gov-benefits,VN,đấu thầu BHXH,vi
+gov-benefits,VN,VssID,vi
+gov-benefits,MY,KWSP sistem,ms
+gov-benefits,MY,PERKESO sistem ICT,ms
+gov-benefits,MY,COBOL KWSP,en
+gov-benefits,TH,ระบบประกันสังคม,th
+gov-benefits,TH,COBOL ประกันสังคม,th
+gov-benefits,TH,สปส. ระบบสารสนเทศ,th
+gov-benefits,PH,SSS core system,en
+gov-benefits,PH,GSIS legacy system,en
+gov-benefits,PH,COBOL SSS,en
+gov-benefits,AU,Model 204,en
+gov-benefits,AU,Centrelink ISIS,en
+gov-benefits,AU,Services Australia mainframe,en
+gov-benefits,AU,WPIT,en
+gov-licensing-permits,US,Accela,en
+gov-licensing-permits,US,EnerGov,en
+gov-licensing-permits,US,Naviline,en
+gov-licensing-permits,US,Infor Hansen,en
+gov-licensing-permits,US,TRAKiT,en
+gov-licensing-permits,US,permitting software,en
+gov-licensing-permits,UK,Idox Uniform,en
+gov-licensing-permits,UK,Northgate M3,en
+gov-licensing-permits,UK,NEC Assure,en
+gov-licensing-permits,UK,planning back office system,en
+gov-licensing-permits,EU,Baugenehmigung Software,de
+gov-licensing-permits,EU,VTH-systeem,nl
+gov-licensing-permits,EU,logiciel urbanisme,fr
+gov-licensing-permits,EU,Cart@ds,fr
+gov-licensing-permits,EU,licencias urbanísticas software,es
+gov-licensing-permits,SG,CORENET X,en
+gov-licensing-permits,SG,GoBusiness Licensing,en
+gov-licensing-permits,SG,CORENET,en
+gov-licensing-permits,IN,OBPAS,en
+gov-licensing-permits,IN,building plan approval system,en
+gov-licensing-permits,IN,trade licence software,en
+gov-licensing-permits,ID,aplikasi perizinan,id
+gov-licensing-permits,ID,SiCantik,id
+gov-licensing-permits,ID,SIMBG,id
+gov-licensing-permits,ID,OSS RBA,id
+gov-licensing-permits,VN,phần mềm một cửa,vi
+gov-licensing-permits,VN,cấp phép xây dựng,vi
+gov-licensing-permits,VN,dịch vụ công trực tuyến,vi
+gov-licensing-permits,MY,OSC 3.0 Plus,ms
+gov-licensing-permits,MY,sistem pelesenan PBT,ms
+gov-licensing-permits,MY,e-Lesen,ms
+gov-licensing-permits,TH,ระบบขออนุญาตก่อสร้าง,th
+gov-licensing-permits,TH,ระบบออกใบอนุญาต,th
+gov-licensing-permits,TH,Biz Portal,th
+gov-licensing-permits,PH,eBPLS,en
+gov-licensing-permits,PH,iBPLS,en
+gov-licensing-permits,PH,BPLS system,en
+gov-licensing-permits,AU,Infor Pathway,en
+gov-licensing-permits,AU,TechnologyOne Property Rating,en
+gov-licensing-permits,AU,Civica Authority,en
+gov-tax,US,GenTax,en
+gov-tax,US,Individual Master File,en
+gov-tax,US,COBOL department of revenue,en
+gov-tax,US,integrated tax system,en
+gov-tax,US,property tax system,en
+gov-tax,EU,GenTax,en
+gov-tax,EU,KONSENS Steuerverwaltung,de
+gov-tax,EU,Belastingdienst COBOL,nl
+gov-tax,EU,DGFiP COBOL,fr
+gov-tax,EU,system podatkowy KAS,pl
+gov-tax,UK,HMRC ETMP,en
+gov-tax,UK,HMRC COBOL,en
+gov-tax,UK,revenues and benefits system,en
+gov-tax,UK,council tax system,en
+gov-tax,SG,IRAS tax system,en
+gov-tax,SG,tax administration system,en
+gov-tax,SG,GeBIZ IRAS,en
+gov-tax,IN,CPC 2.0,en
+gov-tax,IN,income tax e-filing,en
+gov-tax,IN,commercial taxes software,en
+gov-tax,IN,GSTN backend,en
+gov-tax,ID,Coretax,id
+gov-tax,ID,aplikasi pajak daerah,id
+gov-tax,ID,SIMPBB,id
+gov-tax,ID,SIDJP,id
+gov-tax,VN,hệ thống TMS thuế,vi
+gov-tax,VN,phần mềm quản lý thuế,vi
+gov-tax,VN,lập trình viên thuế,vi
+gov-tax,MY,sistem cukai LHDN,ms
+gov-tax,MY,GenTax Malaysia,en
+gov-tax,MY,sistem cukai taksiran,ms
+gov-tax,TH,ระบบภาษี กรมสรรพากร,th
+gov-tax,TH,ระบบภาษีที่ดิน,th
+gov-tax,TH,กรมสรรพสามิต ระบบ,th
+gov-tax,PH,BIR Integrated Tax System,en
+gov-tax,PH,real property tax system,en
+gov-tax,PH,eTRACS,en
+gov-tax,AU,ATO COBOL,en
+gov-tax,AU,Integrated Core Processing,en
+gov-tax,AU,revenue office system,en
+insurance-claims,US,Guidewire ClaimCenter,en
+insurance-claims,US,RISKMASTER,en
+insurance-claims,US,Duck Creek Claims,en
+insurance-claims,US,claims system replacement,en
+insurance-claims,US,COBOL insurance claims,en
+insurance-claims,US,FINEOS,en
+insurance-claims,EU,Guidewire ClaimCenter,en
+insurance-claims,EU,Schadensystem Versicherung,de
+insurance-claims,EU,gestion des sinistres logiciel,fr
+insurance-claims,EU,gestione sinistri COBOL,it
+insurance-claims,EU,Sapiens IDIT,en
+insurance-claims,EU,Fadata INSIS,en
+insurance-claims,UK,Guidewire ClaimCenter,en
+insurance-claims,UK,claims bordereaux,en
+insurance-claims,UK,Lloyd's ECF claims,en
+insurance-claims,UK,claims handling system,en
+insurance-claims,SG,Guidewire ClaimCenter,en
+insurance-claims,SG,AS400 insurance,en
+insurance-claims,SG,claims system insurer,en
+insurance-claims,IN,Guidewire ClaimCenter,en
+insurance-claims,IN,Gosu developer,en
+insurance-claims,IN,TPA claims software,en
+insurance-claims,IN,claims management system,en
+insurance-claims,ID,AS400 asuransi,id
+insurance-claims,ID,sistem klaim asuransi,id
+insurance-claims,ID,COBOL asuransi,id
+insurance-claims,VN,phần mềm bồi thường bảo hiểm,vi
+insurance-claims,VN,AS400 bảo hiểm,vi
+insurance-claims,VN,hệ thống lõi bảo hiểm,vi
+insurance-claims,MY,AS400 insurance,en
+insurance-claims,MY,sistem tuntutan takaful,ms
+insurance-claims,MY,Guidewire Malaysia,en
+insurance-claims,TH,ระบบสินไหม ประกันภัย,th
+insurance-claims,TH,AS400 ประกันภัย,th
+insurance-claims,TH,COBOL ประกันภัย,th
+insurance-claims,PH,AS400 insurance,en
+insurance-claims,PH,claims processing system,en
+insurance-claims,PH,COBOL insurance,en
+insurance-claims,AU,Guidewire ClaimCenter,en
+insurance-claims,AU,FINEOS claims,en
+insurance-claims,AU,claims management system,en
+insurance-claims,AU,COBOL insurer,en
+insurance-policy-admin,US,Guidewire PolicyCenter,en
+insurance-policy-admin,US,Duck Creek Policy,en
+insurance-policy-admin,US,CyberLife COBOL,en
+insurance-policy-admin,US,Sapiens ALIS,en
+insurance-policy-admin,US,policy administration COBOL,en
+insurance-policy-admin,EU,Guidewire PolicyCenter,en
+insurance-policy-admin,EU,Bestandsführung COBOL Versicherung,de
+insurance-policy-admin,EU,Sapiens IDIT,en
+insurance-policy-admin,EU,COBOL assurance vie,fr
+insurance-policy-admin,UK,Guidewire PolicyCenter,en
+insurance-policy-admin,UK,Life/400,en
+insurance-policy-admin,UK,TCS BaNCS insurance,en
+insurance-policy-admin,UK,insurance COBOL developer,en
+insurance-policy-admin,SG,LifeAsia,en
+insurance-policy-admin,SG,AS400 insurance,en
+insurance-policy-admin,SG,Guidewire PolicyCenter,en
+insurance-policy-admin,IN,LifeAsia,en
+insurance-policy-admin,IN,Guidewire PolicyCenter,en
+insurance-policy-admin,IN,TCS BaNCS insurance,en
+insurance-policy-admin,IN,AS400 insurance,en
+insurance-policy-admin,ID,LifeAsia asuransi,id
+insurance-policy-admin,ID,programmer AS400 asuransi,id
+insurance-policy-admin,ID,core system asuransi,id
+insurance-policy-admin,VN,LifeAsia bảo hiểm,vi
+insurance-policy-admin,VN,AS400 bảo hiểm,vi
+insurance-policy-admin,VN,hệ thống lõi bảo hiểm,vi
+insurance-policy-admin,MY,LifeAsia,en
+insurance-policy-admin,MY,AS400 RPG insurance,en
+insurance-policy-admin,MY,takaful core system,en
+insurance-policy-admin,TH,AS400 ประกันชีวิต,th
+insurance-policy-admin,TH,LifeAsia,en
+insurance-policy-admin,TH,ระบบงานหลัก ประกันภัย,th
+insurance-policy-admin,PH,LifeAsia,en
+insurance-policy-admin,PH,AS400 RPG insurance,en
+insurance-policy-admin,PH,policy administration system,en
+insurance-policy-admin,AU,Guidewire PolicyCenter,en
+insurance-policy-admin,AU,insurance COBOL mainframe,en
+insurance-policy-admin,AU,policy administration system,en
+lab-information,US,Sunquest analyst,en
+lab-information,US,Epic Beaker analyst,en
+lab-information,US,Cerner PathNet,en
+lab-information,US,SoftLab administrator,en
+lab-information,US,LIS analyst,en
+lab-information,US,laboratory information system,en
+lab-information,UK,WinPath,en
+lab-information,UK,LIMS manager pathology,en
+lab-information,UK,Telepath LIMS,en
+lab-information,UK,laboratory information management system,en
+lab-information,EU,Laborinformationssystem,de
+lab-information,EU,système d'information de laboratoire,fr
+lab-information,EU,sistema informativo laboratorio,it
+lab-information,EU,laboratoriuminformatiesysteem,nl
+lab-information,EU,sistema información laboratorio,es
+lab-information,EU,GLIMS,en
+lab-information,SG,laboratory information system,en
+lab-information,SG,LIS analyst,en
+lab-information,SG,Sunquest,en
+lab-information,IN,laboratory information system,en
+lab-information,IN,LIS software lab,en
+lab-information,IN,pathology lab software,en
+lab-information,ID,sistem informasi laboratorium,id
+lab-information,ID,LIS laboratorium,id
+lab-information,ID,bridging LIS,id
+lab-information,VN,phần mềm LIS,vi
+lab-information,VN,phần mềm xét nghiệm,vi
+lab-information,VN,hệ thống LIS,vi
+lab-information,MY,laboratory information system,en
+lab-information,MY,sistem maklumat makmal,ms
+lab-information,MY,LIS hospital,en
+lab-information,TH,ระบบ LIS,th
+lab-information,TH,ระบบสารสนเทศห้องปฏิบัติการ,th
+lab-information,TH,ระบบห้องปฏิบัติการ,th
+lab-information,PH,laboratory information system,en
+lab-information,PH,LIS medical technologist,en
+lab-information,PH,clinical laboratory software,en
+lab-information,AU,Auslab,en
+lab-information,AU,laboratory information system,en
+lab-information,AU,LIS analyst pathology,en
+lab-information,AU,Sunquest,en
+land-registry,US,land records system,en
+land-registry,US,recorder of deeds,en
+land-registry,US,Eagle Recorder,en
+land-registry,US,AS/400 county,en
+land-registry,UK,HM Land Registry,en
+land-registry,UK,Land Registry mainframe,en
+land-registry,UK,local land charges,en
+land-registry,EU,land registry system,en
+land-registry,EU,Grundbuch Software,de
+land-registry,EU,kadaster applicatiebeheer,nl
+land-registry,EU,catasto sistema informativo,it
+land-registry,SG,INLIS,en
+land-registry,SG,Singapore Land Authority,en
+land-registry,IN,NGDRS,en
+land-registry,IN,DILRMP,en
+land-registry,IN,land records software,en
+land-registry,ID,KKP ATR/BPN,id
+land-registry,ID,sistem informasi pertanahan,id
+land-registry,ID,programmer BPN,id
+land-registry,VN,phần mềm quản lý đất đai,vi
+land-registry,VN,cơ sở dữ liệu đất đai,vi
+land-registry,VN,VILIS,vi
+land-registry,MY,e-Tanah,ms
+land-registry,MY,SPTB,ms
+land-registry,MY,sistem pendaftaran tanah,ms
+land-registry,TH,ระบบทะเบียนที่ดิน,th
+land-registry,TH,กรมที่ดิน ระบบสารสนเทศ,th
+land-registry,PH,Land Titling Computerization,en
+land-registry,PH,Registry of Deeds system,en
+land-registry,PH,LRA eSerbisyo,en
+land-registry,AU,Automated Titles System,en
+land-registry,AU,land titles system,en
+land-registry,AU,Advara,en
+loan-origination-servicing,US,Black Knight MSP,en
+loan-origination-servicing,US,Encompass administrator,en
+loan-origination-servicing,US,Loan IQ,en
+loan-origination-servicing,US,mortgage servicing COBOL,en
+loan-origination-servicing,US,loan origination system RFP,en
+loan-origination-servicing,US,nCino administrator,en
+loan-origination-servicing,EU,Loan IQ,en
+loan-origination-servicing,EU,ACBS loan servicing,en
+loan-origination-servicing,EU,Kreditplattform Ablösung,de
+loan-origination-servicing,EU,gestion des prêts,fr
+loan-origination-servicing,EU,loan management system tender,en
+loan-origination-servicing,UK,Loan IQ London,en
+loan-origination-servicing,UK,mortgage servicing platform,en
+loan-origination-servicing,UK,building society mortgage system,en
+loan-origination-servicing,UK,loan management system,en
+loan-origination-servicing,SG,Loan IQ Singapore,en
+loan-origination-servicing,SG,FinnOne,en
+loan-origination-servicing,SG,loan origination system,en
+loan-origination-servicing,IN,FinnOne,en
+loan-origination-servicing,IN,FinnOne Neo,en
+loan-origination-servicing,IN,loan management system NBFC,en
+loan-origination-servicing,IN,LOS LMS,en
+loan-origination-servicing,ID,FinnOne,id
+loan-origination-servicing,ID,loan origination system,id
+loan-origination-servicing,ID,sistem perkreditan,id
+loan-origination-servicing,ID,pengadaan sistem kredit,id
+loan-origination-servicing,VN,FinnOne,vi
+loan-origination-servicing,VN,hệ thống quản lý tín dụng,vi
+loan-origination-servicing,VN,khởi tạo khoản vay,vi
+loan-origination-servicing,MY,FinnOne,en
+loan-origination-servicing,MY,loan origination system,en
+loan-origination-servicing,MY,sistem pembiayaan,ms
+loan-origination-servicing,TH,FinnOne,th
+loan-origination-servicing,TH,ระบบสินเชื่อ,th
+loan-origination-servicing,TH,ระบบอนุมัติสินเชื่อ,th
+loan-origination-servicing,PH,FinnOne Manila,en
+loan-origination-servicing,PH,loan management system,en
+loan-origination-servicing,PH,loan origination system,en
+loan-origination-servicing,AU,Loan IQ Sydney,en
+loan-origination-servicing,AU,loan origination system,en
+loan-origination-servicing,AU,mortgage servicing platform,en
+mainframe-cobol-general,US,COBOL developer,en
+mainframe-cobol-general,US,mainframe CICS,en
+mainframe-cobol-general,US,z/OS system programmer,en
+mainframe-cobol-general,US,mainframe modernization,en
+mainframe-cobol-general,EU,COBOL Entwickler,de
+mainframe-cobol-general,EU,Host-Entwickler,de
+mainframe-cobol-general,EU,développeur COBOL,fr
+mainframe-cobol-general,EU,programador COBOL,es
+mainframe-cobol-general,EU,COBOL ontwikkelaar,nl
+mainframe-cobol-general,EU,sviluppatore COBOL,it
+mainframe-cobol-general,UK,COBOL developer,en
+mainframe-cobol-general,UK,mainframe engineer,en
+mainframe-cobol-general,UK,CICS DB2,en
+mainframe-cobol-general,UK,mainframe modernisation,en
+mainframe-cobol-general,SG,COBOL developer,en
+mainframe-cobol-general,SG,mainframe analyst,en
+mainframe-cobol-general,SG,mainframe,en
+mainframe-cobol-general,IN,COBOL developer,en
+mainframe-cobol-general,IN,mainframe CICS JCL,en
+mainframe-cobol-general,IN,z/OS administrator,en
+mainframe-cobol-general,IN,mainframe tester,en
+mainframe-cobol-general,ID,programmer COBOL,id
+mainframe-cobol-general,ID,mainframe developer,id
+mainframe-cobol-general,ID,mainframe,id
+mainframe-cobol-general,VN,lập trình viên COBOL,vi
+mainframe-cobol-general,VN,mainframe,vi
+mainframe-cobol-general,VN,COBOL,vi
+mainframe-cobol-general,MY,COBOL developer,en
+mainframe-cobol-general,MY,pengaturcara COBOL,ms
+mainframe-cobol-general,MY,mainframe,en
+mainframe-cobol-general,TH,โปรแกรมเมอร์ COBOL,th
+mainframe-cobol-general,TH,เมนเฟรม,th
+mainframe-cobol-general,TH,COBOL,en
+mainframe-cobol-general,PH,COBOL programmer,en
+mainframe-cobol-general,PH,mainframe developer,en
+mainframe-cobol-general,PH,CICS JCL,en
+mainframe-cobol-general,AU,COBOL developer,en
+mainframe-cobol-general,AU,mainframe engineer,en
+mainframe-cobol-general,AU,Unisys ClearPath,en
+mainframe-cobol-general,AU,mainframe modernisation,en
+medical-billing-rcm,US,Epic Resolute,en
+medical-billing-rcm,US,revenue cycle analyst,en
+medical-billing-rcm,US,Soarian Financials,en
+medical-billing-rcm,US,MEDITECH patient accounting,en
+medical-billing-rcm,US,medical billing specialist,en
+medical-billing-rcm,EU,SAP IS-H,de
+medical-billing-rcm,EU,Patientenabrechnung,de
+medical-billing-rcm,EU,KIS Abrechnung,de
+medical-billing-rcm,EU,Epic Resolute,en
+medical-billing-rcm,UK,Epic Resolute,en
+medical-billing-rcm,UK,overseas visitor charging,en
+medical-billing-rcm,UK,private patient billing,en
+medical-billing-rcm,UK,patient administration system,en
+medical-billing-rcm,SG,Epic Resolute,en
+medical-billing-rcm,SG,NGEMR,en
+medical-billing-rcm,SG,medical billing,en
+medical-billing-rcm,SG,patient billing executive,en
+medical-billing-rcm,IN,AR caller,en
+medical-billing-rcm,IN,medical billing,en
+medical-billing-rcm,IN,RCM executive,en
+medical-billing-rcm,IN,TPA executive hospital,en
+medical-billing-rcm,IN,Epic Resolute,en
+medical-billing-rcm,ID,SIMRS,id
+medical-billing-rcm,ID,petugas casemix,id
+medical-billing-rcm,ID,E-Klaim INA-CBG,id
+medical-billing-rcm,ID,bridging BPJS,id
+medical-billing-rcm,VN,phần mềm HIS,vi
+medical-billing-rcm,VN,giám định BHYT,vi
+medical-billing-rcm,VN,phần mềm viện phí,vi
+medical-billing-rcm,MY,TrakCare,en
+medical-billing-rcm,MY,panel claims executive,en
+medical-billing-rcm,MY,hospital billing executive,en
+medical-billing-rcm,MY,sistem maklumat hospital,ms
+medical-billing-rcm,TH,HOSxP,th
+medical-billing-rcm,TH,e-Claim สปสช,th
+medical-billing-rcm,TH,เรียกเก็บค่ารักษาพยาบาล,th
+medical-billing-rcm,PH,PhilHealth eClaims,en
+medical-billing-rcm,PH,iHOMIS,en
+medical-billing-rcm,PH,medical billing,en
+medical-billing-rcm,PH,hospital billing clerk,en
+medical-billing-rcm,AU,webPAS,en
+medical-billing-rcm,AU,TrakCare,en
+medical-billing-rcm,AU,patient billing officer,en
+medical-billing-rcm,AU,HBCIS,en
+mortgage-servicing,US,MSP mortgage servicing,en
+mortgage-servicing,US,Black Knight MSP,en
+mortgage-servicing,US,LoanServ,en
+mortgage-servicing,US,FICS Mortgage Servicer,en
+mortgage-servicing,US,mortgage servicing COBOL,en
+mortgage-servicing,US,servicing system conversion,en
+mortgage-servicing,EU,mortgage servicing platform,en
+mortgage-servicing,EU,Hypothekenverwaltung Software,de
+mortgage-servicing,EU,hypotheekadministratie systeem,nl
+mortgage-servicing,EU,gestión hipotecaria software,es
+mortgage-servicing,UK,Phoebus mortgage,en
+mortgage-servicing,UK,mortgage administration system,en
+mortgage-servicing,UK,mortgage servicing platform,en
+mortgage-servicing,UK,building society COBOL,en
+mortgage-servicing,SG,mortgage loan servicing,en
+mortgage-servicing,SG,FinnOne,en
+mortgage-servicing,SG,COBOL bank,en
+mortgage-servicing,IN,FinnOne home loan,en
+mortgage-servicing,IN,loan management system HFC,en
+mortgage-servicing,IN,home loan servicing,en
+mortgage-servicing,IN,COBOL mainframe bank,en
+mortgage-servicing,ID,sistem KPR,id
+mortgage-servicing,ID,loan management system KPR,id
+mortgage-servicing,ID,programmer COBOL bank,id
+mortgage-servicing,VN,quản lý khoản vay,vi
+mortgage-servicing,VN,cho vay mua nhà,vi
+mortgage-servicing,VN,lập trình viên COBOL,vi
+mortgage-servicing,MY,sistem pinjaman perumahan,ms
+mortgage-servicing,MY,home financing system,en
+mortgage-servicing,MY,COBOL bank Malaysia,en
+mortgage-servicing,TH,ระบบสินเชื่อบ้าน,th
+mortgage-servicing,TH,ระบบบริหารสินเชื่อ,th
+mortgage-servicing,TH,COBOL ธนาคาร,th
+mortgage-servicing,PH,housing loan system,en
+mortgage-servicing,PH,loan management system,en
+mortgage-servicing,PH,COBOL programmer,en
+mortgage-servicing,AU,home loan servicing,en
+mortgage-servicing,AU,loan servicing platform,en
+mortgage-servicing,AU,COBOL mainframe bank,en
+payroll-hr,US,PeopleSoft HCM,en
+payroll-hr,US,SAP HCM payroll,en
+payroll-hr,US,Kronos Workforce Central,en
+payroll-hr,US,Infor Lawson payroll,en
+payroll-hr,US,COBOL payroll,en
+payroll-hr,EU,SAP HCM payroll,en
+payroll-hr,EU,SAP HR Abrechnung,de
+payroll-hr,EU,SAP HCM paie,fr
+payroll-hr,EU,nómina SAP HCM,es
+payroll-hr,EU,SAP HCM loonadministratie,nl
+payroll-hr,UK,SAP HR payroll,en
+payroll-hr,UK,Oracle EBS HRMS,en
+payroll-hr,UK,NHS ESR,en
+payroll-hr,UK,iTrent payroll,en
+payroll-hr,UK,ResourceLink payroll,en
+payroll-hr,SG,SAP HCM payroll,en
+payroll-hr,SG,PeopleSoft HRMS,en
+payroll-hr,SG,Oracle HRMS,en
+payroll-hr,IN,SAP HCM payroll,en
+payroll-hr,IN,PeopleSoft HRMS,en
+payroll-hr,IN,Oracle HRMS payroll,en
+payroll-hr,IN,SAP HR consultant,en
+payroll-hr,ID,konsultan SAP HCM,id
+payroll-hr,ID,SAP HR penggajian,id
+payroll-hr,ID,staf payroll Excel,id
+payroll-hr,ID,sistem penggajian,id
+payroll-hr,VN,tư vấn SAP HCM,vi
+payroll-hr,VN,chuyên viên tính lương,vi
+payroll-hr,VN,phần mềm tính lương,vi
+payroll-hr,MY,SAP HCM payroll,en
+payroll-hr,MY,eksekutif gaji,ms
+payroll-hr,MY,sistem gaji,ms
+payroll-hr,MY,AS400 payroll,en
+payroll-hr,TH,SAP HCM,en
+payroll-hr,TH,เจ้าหน้าที่เงินเดือน,th
+payroll-hr,TH,ระบบเงินเดือน,th
+payroll-hr,TH,โปรแกรมเงินเดือน,th
+payroll-hr,PH,SAP HCM payroll,en
+payroll-hr,PH,PeopleSoft HRIS,en
+payroll-hr,PH,payroll specialist Excel,en
+payroll-hr,AU,SAP HCM payroll,en
+payroll-hr,AU,Chris21 payroll,en
+payroll-hr,AU,Aurion payroll,en
+payroll-hr,AU,PeopleSoft HCM,en
+payroll-hr,AU,Kronos Workforce Central,en
+pension-provident-fund-admin,US,OmniPlus,en
+pension-provident-fund-admin,US,OmniScript,en
+pension-provident-fund-admin,US,Relius,en
+pension-provident-fund-admin,US,pension administration system,en
+pension-provident-fund-admin,US,Neospin,en
+pension-provident-fund-admin,US,V3locity,en
+pension-provident-fund-admin,US,PensionGold,en
+pension-provident-fund-admin,UK,Altair pensions,en
+pension-provident-fund-admin,UK,Hartlink,en
+pension-provident-fund-admin,UK,Compendia pensions,en
+pension-provident-fund-admin,UK,Civica UPM,en
+pension-provident-fund-admin,UK,pensions administration software,en
+pension-provident-fund-admin,EU,pensioenadministratie,nl
+pension-provident-fund-admin,EU,Pensionsverwaltung Software,de
+pension-provident-fund-admin,EU,pension administration system,en
+pension-provident-fund-admin,AU,Bravura Sonata,en
+pension-provident-fund-admin,AU,GBST Composer,en
+pension-provident-fund-admin,AU,superannuation administration,en
+pension-provident-fund-admin,SG,CPF Board system,en
+pension-provident-fund-admin,SG,pension administration,en
+pension-provident-fund-admin,SG,provident fund system,en
+pension-provident-fund-admin,IN,EPFO CITES,en
+pension-provident-fund-admin,IN,PF trust software,en
+pension-provident-fund-admin,IN,provident fund software,en
+pension-provident-fund-admin,ID,sistem dana pensiun,id
+pension-provident-fund-admin,ID,aplikasi DPLK,id
+pension-provident-fund-admin,ID,core BPJS Ketenagakerjaan,id
+pension-provident-fund-admin,VN,phần mềm BHXH,vi
+pension-provident-fund-admin,VN,phần mềm TST,vi
+pension-provident-fund-admin,VN,quỹ hưu trí phần mềm,vi
+pension-provident-fund-admin,MY,sistem KWSP,ms
+pension-provident-fund-admin,MY,PRS administration,en
+pension-provident-fund-admin,MY,provident fund system,en
+pension-provident-fund-admin,TH,ระบบกองทุนสำรองเลี้ยงชีพ,th
+pension-provident-fund-admin,TH,นายทะเบียนกองทุนสำรองเลี้ยงชีพ,th
+pension-provident-fund-admin,TH,ระบบประกันสังคม,th
+pension-provident-fund-admin,PH,SSS core system,en
+pension-provident-fund-admin,PH,GSIS system,en
+pension-provident-fund-admin,PH,retirement plan administration,en
+port-terminal-operating-system,US,Navis N4,en
+port-terminal-operating-system,US,Tideworks Mainsail,en
+port-terminal-operating-system,US,terminal operating system,en
+port-terminal-operating-system,US,N4 Groovy,en
+port-terminal-operating-system,EU,Navis N4,en
+port-terminal-operating-system,EU,terminal operating system,en
+port-terminal-operating-system,EU,Terminalbetriebssystem,de
+port-terminal-operating-system,EU,sistema operativo terminal,es
+port-terminal-operating-system,EU,CATOS,en
+port-terminal-operating-system,UK,Navis N4,en
+port-terminal-operating-system,UK,terminal operating system,en
+port-terminal-operating-system,UK,CargoesTOS,en
+port-terminal-operating-system,SG,CITOS,en
+port-terminal-operating-system,SG,terminal operating system,en
+port-terminal-operating-system,SG,Navis N4,en
+port-terminal-operating-system,IN,Navis N4,en
+port-terminal-operating-system,IN,terminal operating system,en
+port-terminal-operating-system,IN,CATOS,en
+port-terminal-operating-system,ID,TOS Nusantara,id
+port-terminal-operating-system,ID,sistem operasi terminal,id
+port-terminal-operating-system,ID,terminal operating system,en
+port-terminal-operating-system,ID,Navis N4,en
+port-terminal-operating-system,VN,phần mềm TOS,vi
+port-terminal-operating-system,VN,quản lý khai thác cảng,vi
+port-terminal-operating-system,VN,Navis N4,en
+port-terminal-operating-system,VN,TOPX,en
+port-terminal-operating-system,MY,Navis N4,en
+port-terminal-operating-system,MY,terminal operating system,en
+port-terminal-operating-system,MY,sistem operasi terminal,ms
+port-terminal-operating-system,TH,Navis N4,en
+port-terminal-operating-system,TH,terminal operating system,en
+port-terminal-operating-system,TH,ระบบ TOS ท่าเรือ,th
+port-terminal-operating-system,PH,Navis N4,en
+port-terminal-operating-system,PH,terminal operating system,en
+port-terminal-operating-system,PH,TOS planner,en
+port-terminal-operating-system,AU,Navis N4,en
+port-terminal-operating-system,AU,terminal operating system,en
+port-terminal-operating-system,AU,RBS TOPS,en
+port-terminal-operating-system,AU,TOS analyst,en
+procurement-ap,US,SAP MM,en
+procurement-ap,US,Oracle EBS Payables,en
+procurement-ap,US,JD Edwards accounts payable,en
+procurement-ap,US,SAP Ariba,en
+procurement-ap,US,PeopleSoft AP,en
+procurement-ap,EU,SAP MM Einkauf,de
+procurement-ap,EU,Kreditorenbuchhaltung SAP,de
+procurement-ap,EU,comptabilité fournisseurs SAP,fr
+procurement-ap,EU,Basware,en
+procurement-ap,EU,purchase-to-pay,en
+procurement-ap,UK,purchase ledger SAP,en
+procurement-ap,UK,Oracle EBS purchasing,en
+procurement-ap,UK,Basware,en
+procurement-ap,UK,purchase to pay,en
+procurement-ap,SG,SAP MM,en
+procurement-ap,SG,accounts payable SAP,en
+procurement-ap,SG,Oracle EBS,en
+procurement-ap,IN,Tally ERP 9,en
+procurement-ap,IN,TallyPrime,en
+procurement-ap,IN,SAP MM,en
+procurement-ap,IN,Oracle EBS AP,en
+procurement-ap,ID,SAP MM,id
+procurement-ap,ID,staf hutang usaha,id
+procurement-ap,ID,Accurate akuntansi,id
+procurement-ap,ID,admin purchasing SAP,id
+procurement-ap,VN,kế toán công nợ,vi
+procurement-ap,VN,SAP MM,vi
+procurement-ap,VN,phần mềm MISA,vi
+procurement-ap,VN,nhân viên mua hàng,vi
+procurement-ap,MY,SAP MM,en
+procurement-ap,MY,accounts payable SAP,en
+procurement-ap,MY,AutoCount,en
+procurement-ap,MY,eksekutif perolehan,ms
+procurement-ap,TH,SAP MM,th
+procurement-ap,TH,บัญชีเจ้าหนี้,th
+procurement-ap,TH,จัดซื้อ SAP,th
+procurement-ap,TH,Express บัญชี,th
+procurement-ap,PH,SAP MM,en
+procurement-ap,PH,accounts payable SAP,en
+procurement-ap,PH,Oracle EBS,en
+procurement-ap,AU,SAP ECC accounts payable,en
+procurement-ap,AU,MYOB AccountRight,en
+procurement-ap,AU,TechnologyOne,en
+procurement-ap,AU,Oracle EBS,en
+retail-pos-merch,US,Oracle Xstore,en
+retail-pos-merch,US,Oracle Retail RMS,en
+retail-pos-merch,US,JDA MMS,en
+retail-pos-merch,US,Toshiba 4690,en
+retail-pos-merch,US,SurePOS ACE,en
+retail-pos-merch,US,NCR Retalix,en
+retail-pos-merch,EU,Oracle Xstore,en
+retail-pos-merch,EU,SAP IS-Retail,en
+retail-pos-merch,EU,Kassensystem Entwickler,de
+retail-pos-merch,EU,Oracle Retail RMS,en
+retail-pos-merch,EU,LS Nav,en
+retail-pos-merch,EU,logiciel caisse magasin,fr
+retail-pos-merch,UK,Xstore EPOS,en
+retail-pos-merch,UK,Toshiba 4690,en
+retail-pos-merch,UK,Oracle Retail RMS,en
+retail-pos-merch,UK,JDA MMS,en
+retail-pos-merch,UK,EPOS replacement,en
+retail-pos-merch,SG,Oracle Xstore,en
+retail-pos-merch,SG,Oracle Retail RMS,en
+retail-pos-merch,SG,JDA MMS,en
+retail-pos-merch,SG,AS400 retail,en
+retail-pos-merch,IN,Oracle Retail RMS,en
+retail-pos-merch,IN,Xstore developer,en
+retail-pos-merch,IN,SAP IS-Retail,en
+retail-pos-merch,IN,JDA MMS,en
+retail-pos-merch,IN,LS Retail NAV,en
+retail-pos-merch,ID,Oracle Retail RMS,en
+retail-pos-merch,ID,programmer AS400,id
+retail-pos-merch,ID,LS Nav,en
+retail-pos-merch,ID,sistem kasir ritel,id
+retail-pos-merch,VN,Oracle Retail,en
+retail-pos-merch,VN,LS Retail NAV,en
+retail-pos-merch,VN,phần mềm POS bán lẻ,vi
+retail-pos-merch,VN,lập trình viên AS400,vi
+retail-pos-merch,MY,JDA MMS,en
+retail-pos-merch,MY,Oracle Retail RMS,en
+retail-pos-merch,MY,LS Nav,en
+retail-pos-merch,MY,pengaturcara AS400,ms
+retail-pos-merch,TH,Oracle Retail RMS,en
+retail-pos-merch,TH,โปรแกรมเมอร์ AS400,th
+retail-pos-merch,TH,JDA MMS,en
+retail-pos-merch,TH,ระบบ POS ค้าปลีก,th
+retail-pos-merch,PH,JDA MMS,en
+retail-pos-merch,PH,RPG programmer,en
+retail-pos-merch,PH,Oracle Retail RMS,en
+retail-pos-merch,PH,Xstore,en
+retail-pos-merch,AU,Oracle Xstore,en
+retail-pos-merch,AU,Toshiba 4690,en
+retail-pos-merch,AU,Oracle Retail RMS,en
+retail-pos-merch,AU,JDA MMS,en
+student-information,US,Ellucian Banner,en
+student-information,US,Ellucian Colleague,en
+student-information,US,PeopleSoft Campus Solutions,en
+student-information,US,Jenzabar,en
+student-information,US,PowerSchool SIS,en
+student-information,US,Workday Student,en
+student-information,US,student information system,en
+student-information,UK,SITS Vision,en
+student-information,UK,Tribal SITS,en
+student-information,UK,SIMS MIS,en
+student-information,UK,student records system,en
+student-information,UK,Tribal ebs,en
+student-information,EU,student information system,en
+student-information,EU,Campus-Management-System,de
+student-information,EU,HISinOne,de
+student-information,EU,OSIRIS studentvolgsysteem,nl
+student-information,EU,Apogée scolarité,fr
+student-information,EU,Pegaso Esse3,it
+student-information,SG,student information system,en
+student-information,SG,SITS Vision,en
+student-information,SG,PeopleSoft Campus Solutions,en
+student-information,IN,student information system,en
+student-information,IN,university ERP,en
+student-information,IN,Samarth eGov,en
+student-information,IN,PeopleSoft Campus Solutions,en
+student-information,ID,SIAKAD,id
+student-information,ID,Feeder PDDikti,id
+student-information,ID,sistem informasi akademik,id
+student-information,ID,siakadcloud,id
+student-information,VN,phần mềm quản lý đào tạo,vi
+student-information,VN,quản lý sinh viên,vi
+student-information,VN,hệ thống quản lý đào tạo,vi
+student-information,MY,sistem maklumat pelajar,ms
+student-information,MY,student information system,en
+student-information,MY,SITS Vision,en
+student-information,TH,ระบบทะเบียนนักศึกษา,th
+student-information,TH,ระบบบริหารการศึกษา,th
+student-information,TH,student information system,en
+student-information,PH,student information system,en
+student-information,PH,enrollment system,en
+student-information,PH,registrar system,en
+student-information,AU,Callista,en
+student-information,AU,student management system,en
+student-information,AU,TechnologyOne Student,en
+student-information,AU,PeopleSoft Campus Solutions,en
+student-information,AU,SITS Vision,en
+telecom-bss,US,Amdocs billing,en
+telecom-bss,US,Oracle BRM,en
+telecom-bss,US,CSG ACP,en
+telecom-bss,US,BSCS,en
+telecom-bss,US,telecom billing COBOL,en
+telecom-bss,US,BSS transformation,en
+telecom-bss,EU,BSCS iX,en
+telecom-bss,EU,Oracle BRM,en
+telecom-bss,EU,Amdocs,en
+telecom-bss,EU,Netcracker,en
+telecom-bss,EU,Abrechnungssystem Telekommunikation,de
+telecom-bss,EU,système de facturation télécom,fr
+telecom-bss,UK,Amdocs billing,en
+telecom-bss,UK,Oracle BRM,en
+telecom-bss,UK,Kenan billing,en
+telecom-bss,UK,BSS transformation,en
+telecom-bss,SG,Amdocs,en
+telecom-bss,SG,Oracle BRM,en
+telecom-bss,SG,telecom billing system,en
+telecom-bss,IN,Amdocs billing,en
+telecom-bss,IN,Oracle BRM,en
+telecom-bss,IN,BSCS,en
+telecom-bss,IN,convergent billing,en
+telecom-bss,IN,telecom billing tender,en
+telecom-bss,ID,sistem billing telekomunikasi,id
+telecom-bss,ID,Amdocs,en
+telecom-bss,ID,Oracle BRM,en
+telecom-bss,ID,sistem penagihan telekomunikasi,id
+telecom-bss,VN,hệ thống tính cước,vi
+telecom-bss,VN,tính cước viễn thông,vi
+telecom-bss,VN,kỹ sư billing viễn thông,vi
+telecom-bss,MY,Amdocs,en
+telecom-bss,MY,telecom billing system,en
+telecom-bss,MY,sistem pengebilan telekomunikasi,ms
+telecom-bss,TH,ระบบบิลลิ่ง โทรคมนาคม,th
+telecom-bss,TH,ระบบเรียกเก็บเงิน โทรคมนาคม,th
+telecom-bss,TH,Amdocs,en
+telecom-bss,PH,Amdocs,en
+telecom-bss,PH,Oracle BRM,en
+telecom-bss,PH,telecom billing analyst,en
+telecom-bss,AU,Amdocs billing,en
+telecom-bss,AU,Oracle BRM,en
+telecom-bss,AU,BSS transformation,en
+telecom-bss,AU,telecommunications billing system,en
+trade-finance,US,Trade Innovation Finastra,en
+trade-finance,US,Surecomp IMEX,en
+trade-finance,US,letter of credit system,en
+trade-finance,US,trade finance analyst,en
+trade-finance,EU,Surecomp DOKA,de
+trade-finance,EU,Akkreditiv Software,de
+trade-finance,EU,crédit documentaire logiciel,fr
+trade-finance,EU,trade finance platform,en
+trade-finance,UK,TI Plus,en
+trade-finance,UK,CGI Trade360,en
+trade-finance,UK,trade finance systems,en
+trade-finance,SG,Eximbills,en
+trade-finance,SG,Surecomp IMEX,en
+trade-finance,SG,trade finance systems,en
+trade-finance,IN,trade finance software,en
+trade-finance,IN,FLEXCUBE trade finance,en
+trade-finance,IN,Eximbills,en
+trade-finance,ID,sistem trade finance,id
+trade-finance,ID,Eximbills,id
+trade-finance,ID,letter of credit,id
+trade-finance,VN,tài trợ thương mại,vi
+trade-finance,VN,thanh toán quốc tế,vi
+trade-finance,VN,Eximbills,vi
+trade-finance,MY,trade finance system,en
+trade-finance,MY,pembiayaan perdagangan,ms
+trade-finance,MY,Eximbills,en
+trade-finance,TH,สินเชื่อการค้าระหว่างประเทศ,th
+trade-finance,TH,Trade Finance ธนาคาร,th
+trade-finance,TH,Eximbills,en
+trade-finance,PH,trade finance system,en
+trade-finance,PH,letters of credit,en
+trade-finance,PH,Eximbills,en
+trade-finance,AU,trade finance platform,en
+trade-finance,AU,bank guarantee system,en
+trade-finance,AU,Trade Innovation,en
+utility-billing-cis,US,SAP IS-U,en
+utility-billing-cis,US,Oracle CC&B,en
+utility-billing-cis,US,utility billing CIS,en
+utility-billing-cis,US,CIS Infinity,en
+utility-billing-cis,US,Tyler Incode,en
+utility-billing-cis,EU,SAP IS-U Berater,de
+utility-billing-cis,EU,S/4HANA Utilities,en
+utility-billing-cis,EU,Abrechnungssystem Stadtwerke,de
+utility-billing-cis,EU,Oracle CC&B,en
+utility-billing-cis,EU,logiciel facturation énergie,fr
+utility-billing-cis,UK,SAP IS-U,en
+utility-billing-cis,UK,Junifer,en
+utility-billing-cis,UK,Gentrack Velocity,en
+utility-billing-cis,UK,Kraken Technologies,en
+utility-billing-cis,SG,SAP IS-U,en
+utility-billing-cis,SG,Oracle CC&B,en
+utility-billing-cis,SG,utility billing system,en
+utility-billing-cis,IN,SAP ISU,en
+utility-billing-cis,IN,Oracle CC&B,en
+utility-billing-cis,IN,discom billing software,en
+utility-billing-cis,IN,RDSS billing system,en
+utility-billing-cis,ID,SAP IS-U,en
+utility-billing-cis,ID,aplikasi billing PDAM,id
+utility-billing-cis,ID,AP2T PLN,id
+utility-billing-cis,VN,CMIS EVN,vi
+utility-billing-cis,VN,phần mềm hóa đơn nước,vi
+utility-billing-cis,VN,SAP IS-U,en
+utility-billing-cis,MY,SAP IS-U,en
+utility-billing-cis,MY,sistem bil air,ms
+utility-billing-cis,MY,e-CIBS TNB,en
+utility-billing-cis,TH,SAP IS-U,en
+utility-billing-cis,TH,ระบบบิลค่าไฟฟ้า,th
+utility-billing-cis,TH,ระบบออกบิลค่าน้ำ,th
+utility-billing-cis,PH,SAP IS-U,en
+utility-billing-cis,PH,electric cooperative billing,en
+utility-billing-cis,PH,water district billing,en
+utility-billing-cis,AU,SAP IS-U,en
+utility-billing-cis,AU,Gentrack Velocity,en
+utility-billing-cis,AU,Hansen Banner,en
+utility-billing-cis,AU,Oracle CC&B,en
+warehouse-management,US,SAP EWM consultant,en
+warehouse-management,US,Manhattan WMOS,en
+warehouse-management,US,Blue Yonder WMS,en
+warehouse-management,US,RPG warehouse developer,en
+warehouse-management,US,warehouse management system,en
+warehouse-management,EU,SAP EWM Berater,de
+warehouse-management,EU,Lagerverwaltungssystem,de
+warehouse-management,EU,consultant WMS Reflex,fr
+warehouse-management,EU,logiciel WMS,fr
+warehouse-management,EU,warehouse management system,en
+warehouse-management,UK,SAP EWM consultant,en
+warehouse-management,UK,Blue Yonder WMS,en
+warehouse-management,UK,WMS analyst,en
+warehouse-management,UK,warehouse management system,en
+warehouse-management,SG,SAP EWM,en
+warehouse-management,SG,WMS analyst,en
+warehouse-management,SG,warehouse management system,en
+warehouse-management,IN,SAP EWM consultant,en
+warehouse-management,IN,SAP WM consultant,en
+warehouse-management,IN,Manhattan WMOS,en
+warehouse-management,IN,warehouse management system,en
+warehouse-management,ID,SAP EWM,id
+warehouse-management,ID,sistem manajemen gudang,id
+warehouse-management,ID,aplikasi WMS,id
+warehouse-management,VN,SAP EWM,vi
+warehouse-management,VN,phần mềm quản lý kho,vi
+warehouse-management,VN,hệ thống quản lý kho,vi
+warehouse-management,MY,SAP EWM,en
+warehouse-management,MY,sistem pengurusan gudang,ms
+warehouse-management,MY,warehouse management system,en
+warehouse-management,TH,SAP EWM,th
+warehouse-management,TH,ระบบจัดการคลังสินค้า,th
+warehouse-management,TH,ระบบบริหารคลังสินค้า,th
+warehouse-management,PH,SAP EWM,en
+warehouse-management,PH,WMS analyst,en
+warehouse-management,PH,warehouse management system,en
+warehouse-management,AU,SAP EWM consultant,en
+warehouse-management,AU,Manhattan SCALE,en
+warehouse-management,AU,warehouse management system,en
+wealth-portfolio-accounting,US,Advent Axys,en
+wealth-portfolio-accounting,US,Advent APX,en
+wealth-portfolio-accounting,US,InvestOne,en
+wealth-portfolio-accounting,US,SEI TRUST 3000,en
+wealth-portfolio-accounting,US,portfolio accounting analyst,en
+wealth-portfolio-accounting,US,Addepar,en
+wealth-portfolio-accounting,EU,Avaloq,en
+wealth-portfolio-accounting,EU,SimCorp Dimension,en
+wealth-portfolio-accounting,EU,Triple'A Plus,en
+wealth-portfolio-accounting,EU,Avaloq Entwickler,de
+wealth-portfolio-accounting,EU,Wertschriftenbuchhaltung,de
+wealth-portfolio-accounting,EU,comptabilité titres,fr
+wealth-portfolio-accounting,UK,Avaloq,en
+wealth-portfolio-accounting,UK,SimCorp Dimension,en
+wealth-portfolio-accounting,UK,Advent Geneva,en
+wealth-portfolio-accounting,UK,SEI Wealth Platform,en
+wealth-portfolio-accounting,SG,Avaloq,en
+wealth-portfolio-accounting,SG,Triple'A Plus,en
+wealth-portfolio-accounting,SG,Temenos WealthSuite,en
+wealth-portfolio-accounting,SG,portfolio management system,en
+wealth-portfolio-accounting,IN,WealthSpectrum,en
+wealth-portfolio-accounting,IN,PMS back office,en
+wealth-portfolio-accounting,IN,Avaloq developer,en
+wealth-portfolio-accounting,IN,InvestOne,en
+wealth-portfolio-accounting,ID,sistem manajer investasi,id
+wealth-portfolio-accounting,ID,back office reksa dana,id
+wealth-portfolio-accounting,ID,Temenos wealth,en
+wealth-portfolio-accounting,VN,phần mềm quản lý quỹ,vi
+wealth-portfolio-accounting,VN,quản lý danh mục đầu tư,vi
+wealth-portfolio-accounting,VN,kế toán quỹ,vi
+wealth-portfolio-accounting,MY,unit trust system,en
+wealth-portfolio-accounting,MY,sistem pengurusan dana,ms
+wealth-portfolio-accounting,MY,Temenos wealth,en
+wealth-portfolio-accounting,TH,ระบบบัญชีกองทุน,th
+wealth-portfolio-accounting,TH,ระบบกองทุนส่วนบุคคล,th
+wealth-portfolio-accounting,TH,Temenos wealth,en
+wealth-portfolio-accounting,PH,trust accounting system,en
+wealth-portfolio-accounting,PH,UITF system,en
+wealth-portfolio-accounting,PH,Avaloq,en
+wealth-portfolio-accounting,AU,SimCorp,en
+wealth-portfolio-accounting,AU,Avaloq,en
+wealth-portfolio-accounting,AU,portfolio accounting,en
+wealth-portfolio-accounting,AU,Advent Axys,en
