@@ -164,3 +164,47 @@ def test_count_429_then_success(mock_client, no_sleep):
     client = mock_client(handler)
     assert gebiz.count("cobol", "SG", client) == 1
     assert len(calls) == 2
+
+
+def test_search_yields_exact_phrase_records_as_items(mock_client, no_sleep):
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            200,
+            json={
+                "success": True,
+                "result": {
+                    "total": 3,
+                    "records": [
+                        {
+                            "tender_no": "AGO000ETT21000001",
+                            "tender_description": "core banking system refresh",
+                            "agency": "MHA",
+                            "supplier_name": "acme bank tech",
+                            "awarded_amt": "100000.00",
+                            "award_date": "2024-05-01",
+                        },
+                        {"tender_description": "core sampling"},
+                        {
+                            "tender_description": "CORE BANKING upgrade",
+                            "_id": 42,
+                        },
+                    ],
+                },
+            },
+        )
+
+    client = mock_client(handler)
+    items = list(gebiz.search("core banking", "SG", client))
+    assert [i.source_id for i in items] == ["AGO000ETT21000001", "42"]
+    first = items[0]
+    assert "core banking system refresh" in first.text
+    assert "MHA" in first.text
+    assert "acme bank tech" in first.text
+    assert "data.gov.sg" in first.url
+
+
+def test_search_empty_query_yields_nothing(mock_client, no_sleep):
+    """The match-all probe stays a count-only path; fetching it would
+    stream the whole dataset."""
+    client = mock_client(lambda r: httpx.Response(500))
+    assert list(gebiz.search("", "SG", client)) == []

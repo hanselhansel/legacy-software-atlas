@@ -14,8 +14,11 @@ sanity guard's match-all probe.
 
 from __future__ import annotations
 
+from collections.abc import Iterator
+
 import httpx
 
+from lsa.contracts import SourceItem
 from lsa.sources import http
 
 SOURCE = "gebiz"
@@ -48,21 +51,14 @@ def _total(result: dict) -> int | None:
     return int(total) if isinstance(total, int | float) else None
 
 
-def count(query: str, region: str, client: httpx.Client) -> int | None:
-    params: dict = {"resource_id": RESOURCE_ID, "limit": 1}
-    if phrase := _normalize(query):
-        params["q"] = query
-    else:
-        # Match-all probe: unfiltered dataset total.
-        response = http.get_with_backoff(
-            client, _URL, params=params, min_interval=2.5
-        )
-        response.raise_for_status()
-        result = response.json().get("result")
-        if not isinstance(result, dict):
-            return None
-        return _total(result)
-    hits = 0
+def _matched(
+    query: str, client: httpx.Client
+) -> Iterator[tuple[list, int, str]]:
+    """Each candidate page's records plus the dataset total; the candidate
+    filter is ``q`` and phrase containment happens record-side, exactly as
+    ``count`` does."""
+    phrase = _normalize(query)
+    params = {"resource_id": RESOURCE_ID, "q": query}
     offset = 0
     for _ in range(_MAX_PAGES):
         page = params | {"limit": _PAGE, "offset": offset}
@@ -72,15 +68,51 @@ def count(query: str, region: str, client: httpx.Client) -> int | None:
         response.raise_for_status()
         result = response.json().get("result")
         if not isinstance(result, dict):
-            return None
+            return
         total = _total(result)
         if total is None:
-            return None
+            return
         records = result.get("records") or []
+        yield records, total, phrase
+        offset += len(records)
+        if not records or offset >= total:
+            return
+
+
+def count(query: str, region: str, client: httpx.Client) -> int | None:
+    if not _normalize(query):
+        # Match-all probe: unfiltered dataset total.
+        params = {"resource_id": RESOURCE_ID, "limit": 1}
+        response = http.get_with_backoff(
+            client, _URL, params=params, min_interval=2.5
+        )
+        response.raise_for_status()
+        result = response.json().get("result")
+        if not isinstance(result, dict):
+            return None
+        return _total(result)
+    hits = 0
+    valid = False
+    for records, _total_, phrase in _matched(query, client):
+        valid = True
         hits += sum(
             1 for r in records if phrase in _normalize(_record_text(r))
         )
-        offset += len(records)
-        if not records or offset >= total:
-            break
-    return hits
+    return hits if valid else None
+
+
+def search(query: str, region: str, client: httpx.Client) -> Iterator[SourceItem]:
+    """The exact-phrase matched records as items. The datastore has no
+    per-record page, so ``url`` anchors the row inside the dataset URL."""
+    if not _normalize(query):
+        return
+    for records, _total_, phrase in _matched(query, client):
+        for record in records:
+            if phrase not in _normalize(_record_text(record)):
+                continue
+            sid = str(record.get("tender_no") or record.get("_id") or "")
+            yield SourceItem(
+                source_id=sid,
+                url=f"{_URL}?resource_id={RESOURCE_ID}#row={sid}" if sid else "",
+                text=_record_text(record),
+            )

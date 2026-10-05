@@ -15,8 +15,11 @@ An empty query omits ``was`` for the sanity guard's match-all probe.
 
 from __future__ import annotations
 
+from collections.abc import Iterator
+
 import httpx
 
+from lsa.contracts import SourceItem
 from lsa.sources import http
 from lsa.sources.phrase import escaped
 
@@ -26,10 +29,12 @@ REGIONS = ("EU",)
 
 _URL = "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs"
 _API_KEY = "jobboerse-jobsuche"
+_DETAIL = "https://www.arbeitsagentur.de/jobsuche/jobdetail/"
+_PAGE = 100
 
 
-def count(query: str, region: str, client: httpx.Client) -> int | None:
-    params: dict = {"size": 1}
+def _page(query: str, client: httpx.Client, page: int, size: int) -> dict:
+    params: dict = {"size": size, "page": page}
     if (phrase := escaped(query)) is not None:
         params["was"] = phrase
     response = http.get_with_backoff(
@@ -39,9 +44,41 @@ def count(query: str, region: str, client: httpx.Client) -> int | None:
         headers={"X-API-Key": _API_KEY},
     )
     response.raise_for_status()
-    total = response.json().get("maxErgebnisse")
+    return response.json()
+
+
+def count(query: str, region: str, client: httpx.Client) -> int | None:
+    total = _page(query, client, page=1, size=1).get("maxErgebnisse")
     if isinstance(total, int | float):
         return int(total)
     if isinstance(total, str) and total.isdigit():
         return int(total)
     return None
+
+
+def _item(job: dict) -> SourceItem:
+    jid = str(job.get("hashId") or job.get("refnr") or "")
+    parts = [
+        job.get("titel"),
+        job.get("arbeitgeber"),
+        (job.get("arbeitsort") or {}).get("ort"),
+        job.get("aktuelleVeroeffentlichungsdatum"),
+        job.get("beruf"),
+    ]
+    return SourceItem(
+        source_id=jid,
+        url=f"{_DETAIL}{jid}" if jid else "",
+        text=" ".join(str(p) for p in parts if p),
+    )
+
+
+def search(query: str, region: str, client: httpx.Client) -> Iterator[SourceItem]:
+    """Paged ``stellenangebote`` rows; a short page marks the last page."""
+    page = 1
+    while True:
+        jobs = _page(query, client, page, _PAGE).get("stellenangebote") or []
+        for job in jobs:
+            yield _item(job)
+        if len(jobs) < _PAGE:
+            return
+        page += 1

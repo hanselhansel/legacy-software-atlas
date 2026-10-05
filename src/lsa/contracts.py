@@ -2,7 +2,9 @@
 
 CountRecord is one row per (source, query) count run; its count is None when the
 source gives no total, never 0. EvidenceRow is one row per fetched item kept as
-evidence; its excerpt is at most 30 words. Both validate on construction.
+evidence; its excerpt is at most 30 words. SourceItem is one fetched item: the
+source's native id, the page URL, and the full text before windowing.
+CountRecord and EvidenceRow validate on construction.
 """
 
 from __future__ import annotations
@@ -41,6 +43,18 @@ class CountRecord:
         _check_region(self.region)
         if self.count is not None and self.count < 0:
             raise ValueError("count must be None or a non-negative int")
+
+
+@dataclass(frozen=True)
+class SourceItem:
+    """One fetched item: ``source_id`` is the native id at the source (""
+    when the item has none, e.g. a listing page), ``url`` its canonical page
+    or API URL, ``text`` the full extracted text. The fetch layer windows
+    and hashes it."""
+
+    source_id: str
+    url: str
+    text: str
 
 
 @dataclass(frozen=True)

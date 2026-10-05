@@ -99,3 +99,58 @@ def test_count_429_then_success(mock_client, no_sleep):
     client = mock_client(handler)
     assert arbeitsagentur.count("as400", "EU", client) == 12
     assert len(calls) == 2
+
+
+def test_search_pages_stellenangebote_and_maps_items(mock_client, no_sleep):
+    pages = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        params = dict(request.url.params)
+        pages.append(params["page"])
+        jobs = (
+            [
+                {
+                    "hashId": "10000-1198581490-S",
+                    "refnr": "10000-1198581490-S",
+                    "titel": "COBOL Entwickler",
+                    "arbeitgeber": "bank ag",
+                    "arbeitsort": {"ort": "Frankfurt"},
+                    "aktuelleVeroeffentlichungsdatum": "2026-01-01",
+                }
+                for _ in range(arbeitsagentur._PAGE)
+            ]
+            if params["page"] == "1"
+            else []
+        )
+        return httpx.Response(
+            200, json={"maxErgebnisse": 51, "stellenangebote": jobs}
+        )
+
+    client = mock_client(handler)
+    items = list(arbeitsagentur.search("cobol", "EU", client))
+    assert pages == ["1", "2"]
+    item = items[0]
+    assert item.source_id == "10000-1198581490-S"
+    assert item.url == (
+        "https://www.arbeitsagentur.de/jobsuche/jobdetail/10000-1198581490-S"
+    )
+    assert "COBOL Entwickler" in item.text
+    assert "bank ag" in item.text
+    assert "Frankfurt" in item.text
+
+
+def test_search_sends_key_and_escaped_phrase(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["params"] = dict(request.url.params)
+        seen["api_key"] = request.headers.get("x-api-key")
+        return httpx.Response(
+            200, json={"maxErgebnisse": 0, "stellenangebote": []}
+        )
+
+    client = mock_client(handler)
+    assert list(arbeitsagentur.search("z/TPF", "EU", client)) == []
+    assert seen["params"]["was"] == '"z\\/TPF"'
+    assert seen["params"]["page"] == "1"
+    assert seen["api_key"] == "jobboerse-jobsuche"
