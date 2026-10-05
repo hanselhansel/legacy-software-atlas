@@ -118,12 +118,18 @@ def _dispatch(args, p, qs, budgets, usd_per_token, price_version, items) -> None
 
 
 def _jev(args, *, items=None, client=None) -> None:
-    p = _resolve_pass(load_passes(args.passes), args.pass_name)
-    qs = question_set(p.name, args.questions)
+    try:
+        p = _resolve_pass(load_passes(args.passes), args.pass_name)
+        qs = question_set(p.name, args.questions)
+    except (PassUnknown, KeyError) as exc:
+        raise SystemExit(str(exc)) from exc
     budgets = load_budgets(args.budgets)
     usd_per_token, price_version = _price(args.prices, args.model)
     if items is None:
-        items = load_items(p.family, args.items, args.raw)
+        try:
+            items = load_items(p.family, args.items, args.raw)
+        except (FileNotFoundError, ValueError) as exc:
+            raise SystemExit(str(exc)) from exc
     pending, done_n = _pending(args, qs, items)
     limit = getattr(args, "n", None)
     est = jest.estimate_run(

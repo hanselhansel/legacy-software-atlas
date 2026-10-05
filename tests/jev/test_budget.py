@@ -1,6 +1,5 @@
 """Budget guard: per-pass cap, account cap, cumulative ledger, lock."""
 
-import json
 import subprocess
 import sys
 

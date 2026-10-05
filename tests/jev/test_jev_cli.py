@@ -113,7 +113,7 @@ def test_pass_name_resolves_by_slug(tmp_path, capsys):
 def test_unknown_pass_lists_valid_choices(tmp_path):
     budgets_file(tmp_path)
     args = args_for(tmp_path, "jev", "run", "--pass", "nope")
-    with pytest.raises(Exception, match="unknown pass"):
+    with pytest.raises(SystemExit, match="unknown pass"):
         _jev(args, items=ITEMS, client=client())
 
 

@@ -41,9 +41,11 @@ def test_append_and_read_roundtrip(tmp_path):
 
 
 def test_unknown_fields_rejected(tmp_path):
-    with Ledger(tmp_path / "l.jsonl") as led:
-        with pytest.raises(KeyError, match="unknown ledger fields"):
-            led.append({**row(), "api_key": "no"})
+    with (
+        Ledger(tmp_path / "l.jsonl") as led,
+        pytest.raises(KeyError, match="unknown ledger fields"),
+    ):
+        led.append({**row(), "api_key": "no"})
 
 
 def test_unresolved_pending_counts_as_unknown(tmp_path):
