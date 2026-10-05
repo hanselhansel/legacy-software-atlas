@@ -1,46 +1,52 @@
-# Jev passes, one per count family (spec section 7, plan 1 task 4).
-# Values are filled from measured samples before the gate: tokens_per_item from
-# a per-family text sample and prefilter_keep from the free prefilters' keep
-# rate. Until then every pass falls back to the default tokens per item and the
-# estimate flags tokens_measured = false.
-# Packing defaults: items_per_call = 5, overhead_tokens_per_call = 120.
+# Jev passes for the pre-Jev gate (plan 1, task 4). One entry per question per family.
+# tokens_per_item is the text WINDOW sent to Jev, not the full page: titles plus the first
+# N words that mention the matched system. Vendor stories were measured at 705 tokens per
+# page and job pages at 2,318 (30-page samples); both are cut to the window below.
+# Counts are per query, so items matching several queries are counted more than once:
+# every figure here is an upper bound.
 
 [[pass]]
-name = "procurement"
+name = "tenders: legacy system in use, being replaced, or neither"
 family = "procurement"
 prefilter_keep = 1.0
+tokens_per_item = 200
 
 [[pass]]
-name = "jobs"
+name = "tenders: which category"
+family = "procurement"
+prefilter_keep = 1.0
+tokens_per_item = 200
+
+[[pass]]
+name = "job APIs: industry, segment, legacy in use"
 family = "jobs"
 prefilter_keep = 1.0
+tokens_per_item = 300
+items_per_call = 2
 
 [[pass]]
-name = "vendor"
+name = "job pages: industry, segment, legacy in use"
+family = "jobs-pages"
+prefilter_keep = 1.0
+tokens_per_item = 300
+items_per_call = 2
+
+[[pass]]
+name = "vendor stories: category, in use or replaced, segment, region"
 family = "vendor"
-prefilter_keep = 1.0
+prefilter_keep = 0.5
+tokens_per_item = 530
+items_per_call = 1
 
 [[pass]]
-name = "integrator"
+name = "SI stories: category, in use or replaced, segment, region"
 family = "integrator"
-prefilter_keep = 1.0
+prefilter_keep = 0.5
+tokens_per_item = 530
+items_per_call = 1
 
 [[pass]]
-name = "events"
-family = "events"
-prefilter_keep = 1.0
-
-[[pass]]
-name = "reviews"
-family = "reviews"
-prefilter_keep = 1.0
-
-[[pass]]
-name = "social"
-family = "social"
-prefilter_keep = 1.0
-
-[[pass]]
-name = "hn"
+name = "HN: firsthand pain and reason to stay"
 family = "hn"
 prefilter_keep = 1.0
+tokens_per_item = 190

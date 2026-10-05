@@ -1,0 +1,93 @@
+{
+  "passes": [
+    {
+      "name": "tenders: legacy system in use, being replaced, or neither",
+      "items_counted": 10035,
+      "items_sent": 10035,
+      "calls": 2007,
+      "input_tokens": 2247840,
+      "usd": 0.09440928000000001,
+      "tokens_measured": true
+    },
+    {
+      "name": "tenders: which category",
+      "items_counted": 10035,
+      "items_sent": 10035,
+      "calls": 2007,
+      "input_tokens": 2247840,
+      "usd": 0.09440928000000001,
+      "tokens_measured": true
+    },
+    {
+      "name": "job APIs: industry, segment, legacy in use",
+      "items_counted": 3693,
+      "items_sent": 3693,
+      "calls": 1847,
+      "input_tokens": 1329540,
+      "usd": 0.055840680000000004,
+      "tokens_measured": true
+    },
+    {
+      "name": "job pages: industry, segment, legacy in use",
+      "items_counted": 97477,
+      "items_sent": 97477,
+      "calls": 48739,
+      "input_tokens": 35091780,
+      "usd": 1.47385476,
+      "tokens_measured": true
+    },
+    {
+      "name": "vendor stories: category, in use or replaced, segment, region",
+      "items_counted": 22637,
+      "items_sent": 11319,
+      "calls": 11319,
+      "input_tokens": 7357350,
+      "usd": 0.3090087,
+      "tokens_measured": true
+    },
+    {
+      "name": "SI stories: category, in use or replaced, segment, region",
+      "items_counted": 3846,
+      "items_sent": 1923,
+      "calls": 1923,
+      "input_tokens": 1249950,
+      "usd": 0.0524979,
+      "tokens_measured": true
+    },
+    {
+      "name": "HN: firsthand pain and reason to stay",
+      "items_counted": 3197,
+      "items_sent": 3197,
+      "calls": 640,
+      "input_tokens": 684230,
+      "usd": 0.02873766,
+      "tokens_measured": true
+    }
+  ],
+  "total_usd": 2.10875826,
+  "target_usd": 25.0,
+  "within_target": true,
+  "uncounted_sources": [
+    "careersgov-sg",
+    "ellucian.com",
+    "epic.com",
+    "eures",
+    "finastra.com",
+    "indeed-au",
+    "indeed-my",
+    "infosys.com",
+    "itviec",
+    "jobstreet-id",
+    "jobstreet-my",
+    "jobstreet-ph",
+    "jobthai",
+    "kalibrr",
+    "oraclehealth.com",
+    "sap.com",
+    "servicenow.com",
+    "tcs.com",
+    "ted",
+    "topcv",
+    "tylertech.com"
+  ]
+}
