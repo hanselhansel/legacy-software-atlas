@@ -632,6 +632,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     register_awards(sub)
     register_jev(sub)
+
+    from lsa.apps.cli import register as register_apps
+
+    register_apps(sub)
     return parser
 
 
