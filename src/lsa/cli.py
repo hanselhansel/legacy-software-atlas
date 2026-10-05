@@ -630,6 +630,10 @@ def build_parser() -> argparse.ArgumentParser:
     from lsa.jev.cli import register as register_jev
 
     register_jev(sub)
+
+    from lsa.apps.cli import register as register_apps
+
+    register_apps(sub)
     return parser
 
 
