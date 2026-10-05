@@ -1,0 +1,353 @@
+# Jev question sets, one per [[pass]] in configs/passes.toml, keyed by pass name.
+# Types: "choice" (criteria is an option -> description table),
+#        "score" (criteria is an ordered rubric list),
+#        "probability" (no criteria; the answer is a 0..1 probability, sent to
+#                       TypeSafe as its "noul" wire type).
+# Instructions refer to the item's text window as `item`. A packed call sends
+# items_per_call items at once and rewrites `item` to the slot key i1, i2, ...
+# (spec section 7; plan 2, task 2). Choice lists come from spec sections 1 and 7:
+# categories are the 35 kept rows of research/categories.csv, segments are spec
+# question 5, reasons to stay are spec question 4, regions are spec section 4
+# plus "other" and "unclear" fallbacks.
+
+["tenders: legacy system in use, being replaced, or neither"]
+version = 1
+
+["tenders: legacy system in use, being replaced, or neither".questions.system_status]
+type = "choice"
+instructions = "`item` is a tender or contract notice. Does it name a legacy system as currently in use, as being replaced, or neither?"
+
+["tenders: legacy system in use, being replaced, or neither".questions.system_status.criteria]
+in_use = "A legacy system is named as in use or being kept (for example extended, maintained or re-procured as-is)."
+being_replaced = "A legacy system is named and is being replaced, migrated, retired or modernised."
+neither = "No legacy system is named, or the notice is not about a system in use."
+
+["tenders: which category"]
+version = 1
+
+["tenders: which category".questions.category]
+type = "choice"
+instructions = "`item` is a tender or contract notice. Which legacy software category does it belong to?"
+
+["tenders: which category".questions.category.criteria]
+agriculture-commodity = "Agriculture and commodity trading"
+airline-pss = "Airline reservations and passenger service"
+capital-markets-trading-clearing = "Capital markets trading, clearing and brokerage back-office"
+card-payments-processing = "Card issuing and payments processing"
+construction-project-accounting = "Construction project accounting"
+cooperative-rural-microfinance-banking = "Cooperative, rural and microfinance banking (core + ERP for small lenders)"
+core-banking = "Core banking"
+courts-justice = "Courts and justice case management"
+ehr-hospital = "Hospital records (EHR)"
+erp-distribution = "Wholesale distribution ERP"
+erp-manufacturing = "Manufacturing ERP"
+field-service-maintenance = "Field service and maintenance (EAM/CMMS)"
+financial-close-gl = "Financial close and general ledger"
+gov-benefits = "Government benefits and social security"
+gov-licensing-permits = "Licensing, permits and case management"
+gov-tax = "Government tax administration"
+insurance-claims = "Insurance claims management"
+insurance-policy-admin = "Insurance policy administration"
+lab-information = "Laboratory information systems"
+land-registry = "Land and property registry"
+loan-origination-servicing = "Loan origination and servicing"
+mainframe-cobol-general = "Custom COBOL and mainframe applications (cross-industry)"
+medical-billing-rcm = "Medical billing and revenue cycle"
+mortgage-servicing = "Mortgage servicing"
+payroll-hr = "Payroll and HR administration"
+pension-provident-fund-admin = "Pension, provident fund and superannuation administration"
+port-terminal-operating-system = "Port and container terminal operating systems (TOS)"
+procurement-ap = "Procurement and accounts payable"
+retail-pos-merch = "Retail point of sale and merchandising"
+student-information = "Student information systems"
+telecom-bss = "Telecom billing and BSS"
+trade-finance = "Trade finance"
+utility-billing-cis = "Utility billing and customer information"
+warehouse-management = "Warehouse management"
+wealth-portfolio-accounting = "Wealth and portfolio accounting"
+other = "A legacy category that fits none of the above."
+unclear = "The category cannot be told from the text."
+
+["job APIs: industry, segment, legacy in use"]
+version = 1
+
+["job APIs: industry, segment, legacy in use".questions.industry]
+type = "choice"
+instructions = "`item` is a job post. Which industry is the employer in?"
+
+["job APIs: industry, segment, legacy in use".questions.industry.criteria]
+government = "Government or public sector."
+banking_finance = "Banking, lending, payments or other financial services."
+insurance = "Insurance or reinsurance."
+healthcare = "Hospitals, clinics, pharma or other healthcare."
+retail_consumer = "Retail, e-commerce or consumer services."
+manufacturing = "Manufacturing or industrial."
+logistics_transport = "Logistics, freight, ports, airlines or other transport."
+telecom_media = "Telecom, media or internet service."
+utilities_energy = "Utilities, energy or natural resources."
+education = "Schools, universities or training."
+legal = "Law firms, courts or legal services."
+hospitality_travel = "Hotels, restaurants or travel."
+agriculture = "Agriculture or commodity trading."
+technology = "Software, IT services or systems integration."
+other = "A clear industry that fits none of the above."
+unclear = "The industry cannot be told from the post."
+
+["job APIs: industry, segment, legacy in use".questions.segment]
+type = "choice"
+instructions = "`item` is a job post. Which buyer segment is the employer closest to?"
+
+["job APIs: industry, segment, legacy in use".questions.segment.criteria]
+smb = "Small or medium business."
+mid_market = "Mid-market company."
+enterprise = "Large enterprise."
+government = "Government or public sector body."
+other = "A segment that fits none of the above."
+unclear = "The segment cannot be told from the post."
+
+["job APIs: industry, segment, legacy in use".questions.legacy_in_use]
+type = "choice"
+instructions = "`item` is a job post. Does it show the employer runs a legacy system today, is replacing one, or neither?"
+
+["job APIs: industry, segment, legacy in use".questions.legacy_in_use.criteria]
+in_use = "The post asks for skills on, or duties around, a legacy system the employer runs (for example COBOL, RPG, a named legacy suite)."
+being_replaced = "The post is about replacing, migrating off or modernising a named legacy system."
+neither = "No legacy system is named or implied."
+
+["job pages: industry, segment, legacy in use"]
+version = 1
+
+["job pages: industry, segment, legacy in use".questions.industry]
+type = "choice"
+instructions = "`item` is a job post. Which industry is the employer in?"
+
+["job pages: industry, segment, legacy in use".questions.industry.criteria]
+government = "Government or public sector."
+banking_finance = "Banking, lending, payments or other financial services."
+insurance = "Insurance or reinsurance."
+healthcare = "Hospitals, clinics, pharma or other healthcare."
+retail_consumer = "Retail, e-commerce or consumer services."
+manufacturing = "Manufacturing or industrial."
+logistics_transport = "Logistics, freight, ports, airlines or other transport."
+telecom_media = "Telecom, media or internet service."
+utilities_energy = "Utilities, energy or natural resources."
+education = "Schools, universities or training."
+legal = "Law firms, courts or legal services."
+hospitality_travel = "Hotels, restaurants or travel."
+agriculture = "Agriculture or commodity trading."
+technology = "Software, IT services or systems integration."
+other = "A clear industry that fits none of the above."
+unclear = "The industry cannot be told from the post."
+
+["job pages: industry, segment, legacy in use".questions.segment]
+type = "choice"
+instructions = "`item` is a job post. Which buyer segment is the employer closest to?"
+
+["job pages: industry, segment, legacy in use".questions.segment.criteria]
+smb = "Small or medium business."
+mid_market = "Mid-market company."
+enterprise = "Large enterprise."
+government = "Government or public sector body."
+other = "A segment that fits none of the above."
+unclear = "The segment cannot be told from the post."
+
+["job pages: industry, segment, legacy in use".questions.legacy_in_use]
+type = "choice"
+instructions = "`item` is a job post. Does it show the employer runs a legacy system today, is replacing one, or neither?"
+
+["job pages: industry, segment, legacy in use".questions.legacy_in_use.criteria]
+in_use = "The post asks for skills on, or duties around, a legacy system the employer runs (for example COBOL, RPG, a named legacy suite)."
+being_replaced = "The post is about replacing, migrating off or modernising a named legacy system."
+neither = "No legacy system is named or implied."
+
+["vendor stories: category, in use or replaced, segment, region"]
+version = 1
+
+["vendor stories: category, in use or replaced, segment, region".questions.category]
+type = "choice"
+instructions = "`item` is a vendor customer story. Which legacy software category does the story belong to?"
+
+["vendor stories: category, in use or replaced, segment, region".questions.category.criteria]
+agriculture-commodity = "Agriculture and commodity trading"
+airline-pss = "Airline reservations and passenger service"
+capital-markets-trading-clearing = "Capital markets trading, clearing and brokerage back-office"
+card-payments-processing = "Card issuing and payments processing"
+construction-project-accounting = "Construction project accounting"
+cooperative-rural-microfinance-banking = "Cooperative, rural and microfinance banking (core + ERP for small lenders)"
+core-banking = "Core banking"
+courts-justice = "Courts and justice case management"
+ehr-hospital = "Hospital records (EHR)"
+erp-distribution = "Wholesale distribution ERP"
+erp-manufacturing = "Manufacturing ERP"
+field-service-maintenance = "Field service and maintenance (EAM/CMMS)"
+financial-close-gl = "Financial close and general ledger"
+gov-benefits = "Government benefits and social security"
+gov-licensing-permits = "Licensing, permits and case management"
+gov-tax = "Government tax administration"
+insurance-claims = "Insurance claims management"
+insurance-policy-admin = "Insurance policy administration"
+lab-information = "Laboratory information systems"
+land-registry = "Land and property registry"
+loan-origination-servicing = "Loan origination and servicing"
+mainframe-cobol-general = "Custom COBOL and mainframe applications (cross-industry)"
+medical-billing-rcm = "Medical billing and revenue cycle"
+mortgage-servicing = "Mortgage servicing"
+payroll-hr = "Payroll and HR administration"
+pension-provident-fund-admin = "Pension, provident fund and superannuation administration"
+port-terminal-operating-system = "Port and container terminal operating systems (TOS)"
+procurement-ap = "Procurement and accounts payable"
+retail-pos-merch = "Retail point of sale and merchandising"
+student-information = "Student information systems"
+telecom-bss = "Telecom billing and BSS"
+trade-finance = "Trade finance"
+utility-billing-cis = "Utility billing and customer information"
+warehouse-management = "Warehouse management"
+wealth-portfolio-accounting = "Wealth and portfolio accounting"
+other = "A legacy category that fits none of the above."
+unclear = "The category cannot be told from the text."
+
+["vendor stories: category, in use or replaced, segment, region".questions.system_status]
+type = "choice"
+instructions = "`item` is a vendor or integrator customer story. Is a legacy system named as in use, being replaced, or neither?"
+
+["vendor stories: category, in use or replaced, segment, region".questions.system_status.criteria]
+in_use = "A legacy system is named as in use at the customer."
+being_replaced = "A legacy system is named and is being replaced, migrated or retired."
+neither = "No legacy system is named."
+
+["vendor stories: category, in use or replaced, segment, region".questions.segment]
+type = "choice"
+instructions = "`item` is a vendor or integrator customer story. Which buyer segment is the customer closest to?"
+
+["vendor stories: category, in use or replaced, segment, region".questions.segment.criteria]
+smb = "Small or medium business."
+mid_market = "Mid-market company."
+enterprise = "Large enterprise."
+government = "Government or public sector body."
+other = "A segment that fits none of the above."
+unclear = "The segment cannot be told from the story."
+
+["vendor stories: category, in use or replaced, segment, region".questions.region]
+type = "choice"
+instructions = "`item` is a vendor or integrator customer story. Where is the customer based?"
+
+["vendor stories: category, in use or replaced, segment, region".questions.region.criteria]
+US = "United States."
+EU = "European Union member state."
+UK = "United Kingdom."
+SG = "Singapore."
+IN = "India."
+ID = "Indonesia."
+VN = "Vietnam."
+MY = "Malaysia."
+TH = "Thailand."
+PH = "Philippines."
+AU = "Australia."
+other = "A country or region that fits none of the above."
+unclear = "The region cannot be told from the story."
+
+["SI stories: category, in use or replaced, segment, region"]
+version = 1
+
+["SI stories: category, in use or replaced, segment, region".questions.category]
+type = "choice"
+instructions = "`item` is a systems-integrator case study. Which legacy software category does it belong to?"
+
+["SI stories: category, in use or replaced, segment, region".questions.category.criteria]
+agriculture-commodity = "Agriculture and commodity trading"
+airline-pss = "Airline reservations and passenger service"
+capital-markets-trading-clearing = "Capital markets trading, clearing and brokerage back-office"
+card-payments-processing = "Card issuing and payments processing"
+construction-project-accounting = "Construction project accounting"
+cooperative-rural-microfinance-banking = "Cooperative, rural and microfinance banking (core + ERP for small lenders)"
+core-banking = "Core banking"
+courts-justice = "Courts and justice case management"
+ehr-hospital = "Hospital records (EHR)"
+erp-distribution = "Wholesale distribution ERP"
+erp-manufacturing = "Manufacturing ERP"
+field-service-maintenance = "Field service and maintenance (EAM/CMMS)"
+financial-close-gl = "Financial close and general ledger"
+gov-benefits = "Government benefits and social security"
+gov-licensing-permits = "Licensing, permits and case management"
+gov-tax = "Government tax administration"
+insurance-claims = "Insurance claims management"
+insurance-policy-admin = "Insurance policy administration"
+lab-information = "Laboratory information systems"
+land-registry = "Land and property registry"
+loan-origination-servicing = "Loan origination and servicing"
+mainframe-cobol-general = "Custom COBOL and mainframe applications (cross-industry)"
+medical-billing-rcm = "Medical billing and revenue cycle"
+mortgage-servicing = "Mortgage servicing"
+payroll-hr = "Payroll and HR administration"
+pension-provident-fund-admin = "Pension, provident fund and superannuation administration"
+port-terminal-operating-system = "Port and container terminal operating systems (TOS)"
+procurement-ap = "Procurement and accounts payable"
+retail-pos-merch = "Retail point of sale and merchandising"
+student-information = "Student information systems"
+telecom-bss = "Telecom billing and BSS"
+trade-finance = "Trade finance"
+utility-billing-cis = "Utility billing and customer information"
+warehouse-management = "Warehouse management"
+wealth-portfolio-accounting = "Wealth and portfolio accounting"
+other = "A legacy category that fits none of the above."
+unclear = "The category cannot be told from the text."
+
+["SI stories: category, in use or replaced, segment, region".questions.system_status]
+type = "choice"
+instructions = "`item` is a systems-integrator case study. Is a legacy system named as in use, being replaced, or neither?"
+
+["SI stories: category, in use or replaced, segment, region".questions.system_status.criteria]
+in_use = "A legacy system is named as in use at the customer."
+being_replaced = "A legacy system is named and is being replaced, migrated or retired."
+neither = "No legacy system is named."
+
+["SI stories: category, in use or replaced, segment, region".questions.segment]
+type = "choice"
+instructions = "`item` is a systems-integrator case study. Which buyer segment is the customer closest to?"
+
+["SI stories: category, in use or replaced, segment, region".questions.segment.criteria]
+smb = "Small or medium business."
+mid_market = "Mid-market company."
+enterprise = "Large enterprise."
+government = "Government or public sector body."
+other = "A segment that fits none of the above."
+unclear = "The segment cannot be told from the story."
+
+["SI stories: category, in use or replaced, segment, region".questions.region]
+type = "choice"
+instructions = "`item` is a systems-integrator case study. Where is the customer based?"
+
+["SI stories: category, in use or replaced, segment, region".questions.region.criteria]
+US = "United States."
+EU = "European Union member state."
+UK = "United Kingdom."
+SG = "Singapore."
+IN = "India."
+ID = "Indonesia."
+VN = "Vietnam."
+MY = "Malaysia."
+TH = "Thailand."
+PH = "Philippines."
+AU = "Australia."
+other = "A country or region that fits none of the above."
+unclear = "The region cannot be told from the story."
+
+["HN: firsthand pain and reason to stay"]
+version = 1
+
+["HN: firsthand pain and reason to stay".questions.firsthand_pain]
+type = "probability"
+instructions = "Probability that `item` is a firsthand account of pain with a legacy system: the author personally hit a workaround, cost, failure or skills problem involving an older system."
+
+["HN: firsthand pain and reason to stay".questions.reason_to_stay]
+type = "choice"
+instructions = "`item` is a comment about a legacy system. What is the main reason given for staying on it?"
+
+["HN: firsthand pain and reason to stay".questions.reason_to_stay.criteria]
+regulation = "Regulation, certification or audit requirements keep the system in place."
+switching_cost = "Switching cost, migration risk or downtime keeps the system in place."
+contracts = "A long contract, licence or vendor commitment keeps the system in place."
+skills = "Skills or staffing: nobody available knows anything else, or few know the old system."
+data = "Data lock-in: history, formats or integrations make leaving hard."
+other = "A different reason is given."
+not_stated = "No reason to stay is stated."
