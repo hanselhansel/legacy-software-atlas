@@ -85,3 +85,54 @@ def test_count_429_then_success(mock_client, no_sleep):
     client = mock_client(handler)
     assert contracts_finder.count("mainframe", "UK", client) == 71
     assert len(calls) == 2
+
+
+def test_search_pages_notice_list(mock_client, no_sleep):
+    pages = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        body = json.loads(request.read())
+        pages.append(body.get("page"))
+        notices = (
+            [
+                {
+                    "id": f"notice-{i}",
+                    "title": "mainframe support",
+                    "description": "keep the lights on",
+                    "organisationName": "DVLA",
+                    "publishedDate": "2025-03-01",
+                }
+                for i in range(contracts_finder._PAGE)
+            ]
+            if body.get("page") == 1
+            else []
+        )
+        return httpx.Response(
+            200, json={"hitCount": 200, "noticeList": notices}
+        )
+
+    client = mock_client(handler)
+    items = list(contracts_finder.search("mainframe", "UK", client))
+    assert pages == [1, 2]
+    assert len(items) == contracts_finder._PAGE
+    item = items[0]
+    assert item.source_id == "notice-0"
+    assert item.url == (
+        "https://www.contractsfinder.service.gov.uk/notice/notice-0"
+    )
+    assert "mainframe support" in item.text
+    assert "DVLA" in item.text
+
+
+def test_search_sends_keyword_page_and_size(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"hitCount": 0, "noticeList": []})
+
+    client = mock_client(handler)
+    assert list(contracts_finder.search("as400", "UK", client)) == []
+    assert seen["body"]["searchCriteria"]["keyword"] == '"as400"'
+    assert seen["body"]["page"] == 1
+    assert seen["body"]["size"] == contracts_finder._PAGE

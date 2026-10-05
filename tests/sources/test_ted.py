@@ -71,3 +71,53 @@ def test_count_429_then_success(mock_client, no_sleep):
     client = mock_client(handler)
     assert ted.count("cobol", "EU", client) == 7
     assert len(calls) == 2
+
+
+def test_search_pages_notices_and_flattens_multilingual(mock_client, no_sleep):
+    pages = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        body = json.loads(request.read())
+        pages.append(body["page"])
+        if body["page"] == 1:
+            notices = [
+                {
+                    "publication-number": f"000{i}-2026",
+                    "notice-title": {"eng": "core banking refresh"},
+                    "organisation-name-buyer": {"eng": "bank of test"},
+                    "description-lot": {"eng": "replace the ledger"},
+                }
+                for i in range(ted._PAGE)
+            ]
+        else:
+            notices = []
+        return httpx.Response(
+            200, json={"notices": notices, "totalNoticeCount": 5}
+        )
+
+    client = mock_client(handler)
+    items = list(ted.search("core banking", "EU", client))
+    assert pages == [1, 2]
+    item = items[0]
+    assert item.source_id == "0000-2026"
+    assert item.url == "https://ted.europa.eu/en/notice/-/detail/0000-2026"
+    assert "core banking refresh" in item.text
+    assert "bank of test" in item.text
+
+
+def test_search_sends_query_fields_and_page(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"notices": []})
+
+    client = mock_client(handler)
+    assert list(ted.search("core banking", "EU", client)) == []
+    assert seen["body"]["query"] == 'FT="core banking"'
+    assert seen["body"]["limit"] == ted._PAGE
+    assert seen["body"]["page"] == 1
+    assert "publication-number" in seen["body"]["fields"]
+    assert "notice-title" in seen["body"]["fields"]
+    # only TED's enumerated field names; the live API rejects anything else
+    assert set(seen["body"]["fields"]) == set(ted._ITEM_FIELDS)

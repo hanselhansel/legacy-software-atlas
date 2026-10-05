@@ -74,3 +74,66 @@ def test_count_429_then_success(mock_client, no_sleep):
     client = mock_client(handler)
     assert mycareersfuture.count("mainframe", "SG", client) == 18
     assert len(calls) == 2
+
+
+def test_search_pages_results_and_maps_items(mock_client, no_sleep):
+    pages = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        page = int(dict(request.url.params)["page"])
+        pages.append(page)
+        results = (
+            [
+                {
+                    "uuid": f"uuid-{i}",
+                    "title": "cobol developer",
+                    "postedCompany": {"name": "acme bank"},
+                    "description": "<p>maintain the <b>core</b> ledger</p>",
+                    "metadata": {"jobPostId": "MCF-2026-000001"},
+                }
+                for i in range(mycareersfuture._PAGE)
+            ]
+            if page == 0
+            else []
+        )
+        return httpx.Response(200, json={"total": 51, "results": results})
+
+    client = mock_client(handler)
+    items = list(mycareersfuture.search("cobol", "SG", client))
+    assert pages == [0, 1]
+    item = items[0]
+    assert item.source_id == "uuid-0"
+    # jobPostId beats uuid for the public detail URL.
+    assert item.url == "https://www.mycareersfuture.gov.sg/job/mcf-2026-000001"
+    assert "cobol developer" in item.text
+    assert "acme bank" in item.text
+    # description HTML is stripped to visible text
+    assert "<p>" not in item.text
+    assert "maintain the core ledger" in item.text
+
+
+def test_search_falls_back_to_uuid_url(mock_client, no_sleep):
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            200,
+            json={
+                "total": 1,
+                "results": [{"uuid": "abc123", "title": "as400 op"}],
+            },
+        )
+
+    client = mock_client(handler)
+    items = list(mycareersfuture.search("as400", "SG", client))
+    assert items[0].url == "https://www.mycareersfuture.gov.sg/job/abc123"
+
+
+def test_search_empty_results_stops(mock_client, no_sleep):
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        return httpx.Response(200, json={"total": 0, "results": []})
+
+    client = mock_client(handler)
+    assert list(mycareersfuture.search("zzz", "SG", client)) == []
+    assert len(calls) == 1

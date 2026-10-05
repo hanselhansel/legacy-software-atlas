@@ -95,3 +95,60 @@ def test_count_429_then_success(mock_client, no_sleep):
     client = mock_client(handler)
     assert usaspending.count("mainframe", "US", client) == 3818
     assert len(calls) == 2
+
+
+def test_search_pages_each_award_type_group(mock_client, no_sleep):
+    """One paged loop per group: the endpoint refuses mixed type codes."""
+    calls = []
+    row = {
+        "internal_id": 1,
+        "generated_internal_id": "CONT_AWD_9",
+        "Award ID": "FA999",
+        "Recipient Name": "acme systems",
+        "Awarding Agency": "DoD",
+        "Description": "mainframe refresh",
+        "Start Date": "2025-01-01",
+    }
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        body = json.loads(request.read())
+        calls.append(body)
+        first_group = body["filters"]["award_type_codes"] == ["A", "B", "C", "D"]
+        results = [row] if first_group else []
+        return httpx.Response(
+            200, json={"results": results, "page_metadata": {"hasNext": False}}
+        )
+
+    client = mock_client(handler)
+    items = list(usaspending.search("mainframe", "US", client))
+    # one call per group, single-group type codes per call
+    assert len(calls) == len(usaspending._PROCUREMENT_GROUPS)
+    contracts, idvs = (set(g) for g in usaspending._PROCUREMENT_GROUPS)
+    for c in calls:
+        codes = set(c["filters"]["award_type_codes"])
+        assert codes <= contracts or codes <= idvs
+    assert len(items) == 1
+    item = items[0]
+    assert item.source_id == "CONT_AWD_9"
+    assert item.url == "https://www.usaspending.gov/award/CONT_AWD_9"
+    assert "mainframe refresh" in item.text
+    assert "acme systems" in item.text
+
+
+def test_search_posts_to_award_search_not_count(mock_client, no_sleep):
+    seen = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen.append({"url": str(request.url), "body": json.loads(request.read())})
+        return httpx.Response(
+            200, json={"results": [], "page_metadata": {"hasNext": False}}
+        )
+
+    client = mock_client(handler)
+    assert list(usaspending.search("core banking", "US", client)) == []
+    first = seen[0]
+    assert first["url"].endswith("/search/spending_by_award/")
+    assert first["body"]["filters"]["keywords"] == ['"core banking"']
+    assert first["body"]["filters"]["time_period"] == usaspending._TIME_PERIOD
+    assert first["body"]["filters"]["award_type_codes"] == ["A", "B", "C", "D"]
+    assert "Award ID" in first["body"]["fields"]

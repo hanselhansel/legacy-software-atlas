@@ -86,3 +86,52 @@ def test_count_429_then_success(mock_client, no_sleep):
     client = mock_client(handler)
     assert eures.count("as400", "EU", client) == 42
     assert len(calls) == 2
+
+
+def test_search_pages_jvs_and_maps_items(mock_client, no_sleep):
+    pages = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        body = json.loads(request.read())
+        pages.append(body["page"])
+        jvs = (
+            [
+                {
+                    "id": "MjQ1MjkyNyAxOA",
+                    "title": "cobol developer",
+                    "employer": {"name": "bank of eu"},
+                    "description": "maintain the ledger",
+                }
+                for _ in range(eures._PAGE)
+            ]
+            if body["page"] == 1
+            else []
+        )
+        return httpx.Response(200, json={"numberRecords": 99, "jvs": jvs})
+
+    client = mock_client(handler)
+    items = list(eures.search("cobol", "EU", client))
+    assert pages == [1, 2]
+    item = items[0]
+    assert item.source_id == "MjQ1MjkyNyAxOA"
+    assert item.url == (
+        "https://europa.eu/eures/portal/jv-se/jv-details/MjQ1MjkyNyAxOA"
+    )
+    assert "cobol developer" in item.text
+    assert "bank of eu" in item.text
+
+
+def test_search_keeps_quoted_keyword_and_page(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"numberRecords": 0, "jvs": []})
+
+    client = mock_client(handler)
+    assert list(eures.search("core banking", "EU", client)) == []
+    assert seen["body"]["keywords"] == [
+        {"keyword": '"core banking"', "specificSearchCode": "EVERYWHERE"}
+    ]
+    assert seen["body"]["resultsPerPage"] == eures._PAGE
+    assert seen["body"]["page"] == 1

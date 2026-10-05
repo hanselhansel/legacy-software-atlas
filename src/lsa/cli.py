@@ -217,6 +217,66 @@ _COUNTERS = {
 }
 
 
+def _fetch(args: argparse.Namespace) -> None:
+    """`lsa fetch`: page counted queries into data/raw + items.parquet."""
+    from lsa.fetch import common, fetchers
+
+    mod = fetchers().get(args.family)
+    if mod is None:
+        raise SystemExit(
+            f"family {args.family!r} unknown "
+            f"(implemented: {', '.join(sorted(fetchers()))})"
+        )
+    if not args.counts.exists():
+        raise SystemExit(f"counts parquet not found: {args.counts}")
+    rows = common.counted_rows(args.counts, args.family)
+    planned = mod.plan_rows(rows)
+    if args.dry_run:
+        for r in planned:
+            total = "-" if r.count is None else str(r.count)
+            print(
+                f"{r.source:<18} {r.region}  "
+                f"{r.category:<20} count={total:<8} {r.query}"
+            )
+        print(
+            f"dry run: {len(planned)} queries to page "
+            f"({len(rows) - len(planned)} rows skipped), nothing written"
+        )
+        return
+    max_words = common.window_words(args.passes, args.family)
+    raw_dir = paths.RAW / args.family
+    if args.family == "hn":
+        from lsa.sources import hn
+
+        snapshot = args.snapshot or hn.snapshot_path()
+        if not snapshot.exists():
+            raise SystemExit(f"snapshot not found: {snapshot}")
+    from lsa.sources import http
+
+    with http.make_client() as client:
+        produced = mod.fetch(
+            planned,
+            client,
+            sites_path=args.sites,
+            snapshot=args.snapshot,
+            log=print,
+        )
+        item_rows = common.collect_items(
+            args.family,
+            produced,
+            raw_dir=raw_dir,
+            max_words=max_words,
+            fetched_at=_stamp(),
+            limit=args.limit,
+        )
+    items_path = args.items or paths.DERIVED / "items.parquet"
+    if item_rows:
+        out = common.append_items(item_rows, items_path)
+        print(f"wrote {len(item_rows)} items to {out}")
+    else:
+        print("no items; items parquet unchanged")
+
+
 def _count(args: argparse.Namespace) -> None:
     from lsa import count as cnt
 
@@ -416,6 +476,66 @@ def build_parser() -> argparse.ArgumentParser:
         default=paths.RESEARCH / "vendor_sites.csv",
     )
     p_tokens.set_defaults(func=_sample_tokens)
+
+    p_fetch = sub.add_parser(
+        "fetch",
+        help="page counted queries into data/raw items + items.parquet",
+    )
+    p_fetch.add_argument(
+        "--family",
+        required=True,
+        choices=[
+            "procurement",
+            "jobs",
+            "jobs-pages",
+            "vendor",
+            "integrator",
+            "hn",
+        ],
+        help="count family to fetch items for",
+    )
+    p_fetch.add_argument(
+        "--counts",
+        type=Path,
+        default=paths.DERIVED / "counts.parquet",
+        help="counts parquet to page queries from",
+    )
+    p_fetch.add_argument(
+        "--items",
+        type=Path,
+        default=None,
+        help="items parquet to upsert (default: data/derived/items.parquet)",
+    )
+    p_fetch.add_argument(
+        "--passes",
+        type=Path,
+        default=paths.ROOT / "configs" / "passes.toml",
+        help="pass config that sets each family's text window",
+    )
+    p_fetch.add_argument(
+        "--sites",
+        type=Path,
+        default=paths.RESEARCH / "vendor_sites.csv",
+        help="vendor site csv for the story families",
+    )
+    p_fetch.add_argument(
+        "--snapshot",
+        type=Path,
+        default=None,
+        help="override LSA_HN_SNAPSHOT / the default HN snapshot path",
+    )
+    p_fetch.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="cap kept items to N (smoke runs; stops paging early)",
+    )
+    p_fetch.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="print the queries that would be paged; no fetch, no writes",
+    )
+    p_fetch.set_defaults(func=_fetch)
 
     p_est = sub.add_parser(
         "estimate", help="print a Jev cost estimate from counted items"
