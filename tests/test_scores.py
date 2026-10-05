@@ -5,7 +5,8 @@ from lsa.rubric import Rubric
 
 RUBRIC = Rubric(
     weights={"size": 1.0, "pain": 1.0, "ai_fit": 1.0, "lockin": 1.0, "crowding": 1.0},
-    size_bins=(100.0, 1000.0, 10000.0, 100000.0),
+    value_bins_usd=(100e6, 1e9, 5e9, 20e9),
+    buyer_bins=(100.0, 1000.0, 10000.0, 100000.0),
     s3_strong=2.0,
     s3_weak=1.0,
     hn_pain_min_comments=5,

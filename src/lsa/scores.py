@@ -61,7 +61,7 @@ def size_part(
     to the companies-using midpoint when no universe row exists."""
     users_mid = estimate.midpoint()
     mid = universe_mid if universe_mid else users_mid
-    score = 1 + sum(1 for b in rubric.size_bins if mid >= b)
+    score = 1 + sum(1 for b in rubric.buyer_bins if mid >= b)
     evidence = [
         f"possible buyers {mid:g} (buyer universe)" if universe_mid
         else f"estimates: region midpoints sum to {mid:g} companies using"
@@ -71,7 +71,7 @@ def size_part(
             f"{region}: {s.companies_low}-{s.companies_high} grade {s.grade}"
         )
         evidence.extend(s.sources)
-    return ScorePart(score, {"midpoint": mid, "users_midpoint": users_mid, "basis": "buyer_universe" if universe_mid else "companies_using", "bins": list(rubric.size_bins)}, tuple(evidence))
+    return ScorePart(score, {"midpoint": mid, "users_midpoint": users_mid, "basis": "buyer_universe" if universe_mid else "companies_using", "bins": list(rubric.buyer_bins)}, tuple(evidence))
 
 
 def pain_part(
