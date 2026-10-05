@@ -138,16 +138,37 @@ def test_cli_count_unknown_family_exits(tmp_path, monkeypatch):
         main()
 
 
-def _stub_source(source, regions, result=None, raises=False):
-    """Fake source module: constants plus a ``count`` callable."""
+def _stub_source(
+    source,
+    regions,
+    result=None,
+    raises=False,
+    nonsense=0,
+    match_all=10_000,
+    probe_raises=False,
+):
+    """Fake source module: constants plus a ``count`` callable.
+
+    ``count`` returns ``nonsense`` for the sanity-guard nonsense query and
+    ``match_all`` for the empty match-all query, so stubbed runs model a
+    sane API. ``calls`` records every query the guard or run sent.
+    """
     stub = SimpleNamespace(SOURCE=source, FAMILY="procurement", REGIONS=regions)
+    calls = []
 
     def count(query, region, client):
-        if raises:
+        calls.append(query)
+        probes = (cnt.NONSENSE_QUERY, cnt.MATCH_ALL_QUERY)
+        if raises or (probe_raises and query in probes):
             raise RuntimeError(f"{source} exploded")
+        if query == cnt.NONSENSE_QUERY:
+            return nonsense
+        if query == cnt.MATCH_ALL_QUERY:
+            return match_all
         return result
 
     stub.count = count
+    stub.calls = calls
     return stub
 
 
@@ -261,6 +282,78 @@ def test_run_api_counts_none_count_survives_to_parquet(
     assert records[0].count is None
     out = cnt.append_counts(records, tmp_path / "counts.parquet")
     assert pq.read_table(out).to_pylist()[0]["count"] is None
+
+
+def test_run_api_counts_rejects_source_with_nonsense_hits(monkeypatch):
+    """A nonsense probe returning >0 means the source's counts are junk."""
+    flaky = _stub_source("flaky-src", ("US",), result=7, nonsense=5)
+    monkeypatch.setattr(cnt, "API_SOURCES", {"procurement": (flaky,)})
+    records = cnt.run_api_counts(
+        [cnt.QueryRow("cat", "US", "q", "en")],
+        "procurement",
+        client=None,
+        log=lambda m: None,
+    )
+    assert len(records) == 1
+    rec = records[0]
+    assert rec.count is None
+    assert rec.method.endswith("; rejected by sanity guard")
+    # A poisoned source needs no match-all probe.
+    assert flaky.calls == [cnt.NONSENSE_QUERY, "q"]
+
+
+def test_run_api_counts_rejects_count_dominating_match_all(monkeypatch):
+    big = _stub_source("big-src", ("US",), result=2000, match_all=10_000)
+    monkeypatch.setattr(cnt, "API_SOURCES", {"procurement": (big,)})
+    records = cnt.run_api_counts(
+        [cnt.QueryRow("cat", "US", "q", "en")],
+        "procurement",
+        client=None,
+        log=lambda m: None,
+    )
+    assert records[0].count is None
+    assert records[0].method.endswith("; rejected by sanity guard")
+
+
+def test_run_api_counts_keeps_count_below_share_threshold(monkeypatch):
+    ok = _stub_source("ok-src", ("US",), result=1999, match_all=10_000)
+    monkeypatch.setattr(cnt, "API_SOURCES", {"procurement": (ok,)})
+    records = cnt.run_api_counts(
+        [cnt.QueryRow("cat", "US", "q", "en")],
+        "procurement",
+        client=None,
+        log=lambda m: None,
+    )
+    assert records[0].count == 1999
+    assert records[0].method == "ok-src api total"
+
+
+def test_run_api_counts_caches_probe_per_source(monkeypatch):
+    src = _stub_source("cached-src", ("US",), result=3)
+    monkeypatch.setattr(cnt, "API_SOURCES", {"procurement": (src,)})
+    rows = [
+        cnt.QueryRow("a", "US", "q1", "en"),
+        cnt.QueryRow("b", "US", "q2", "en"),
+    ]
+    records = cnt.run_api_counts(
+        rows, "procurement", client=None, log=lambda m: None
+    )
+    assert src.calls == [cnt.NONSENSE_QUERY, cnt.MATCH_ALL_QUERY, "q1", "q2"]
+    assert [r.count for r in records] == [3, 3]
+
+
+def test_run_api_counts_probe_failure_does_not_reject(monkeypatch):
+    """When both probes fail, the guard has no evidence; counts pass."""
+    src = _stub_source("probe-fail", ("US",), result=4, probe_raises=True)
+    monkeypatch.setattr(cnt, "API_SOURCES", {"procurement": (src,)})
+    records = cnt.run_api_counts(
+        [cnt.QueryRow("cat", "US", "q", "en")],
+        "procurement",
+        client=None,
+        log=lambda m: None,
+    )
+    assert records[0].count == 4
+    assert records[0].method == "probe-fail api total"
 
 
 def test_cli_count_api_family_writes_counts(tmp_path, monkeypatch, capsys):

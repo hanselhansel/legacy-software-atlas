@@ -9,6 +9,17 @@ of duplicating it, so a count run stays idempotent.
 ``REGIONS`` contains the row's region, turns the result into a CountRecord
 (``method`` is ``"<source> api total"``), and skips-and-logs any source that
 raises after its own retries, so one bad source never crashes the run.
+
+A sanity guard runs once per source before its first count: it asks the
+source for a nonsense-query count (``NONSENSE_QUERY``) and, unless the
+nonsense probe already disqualifies the source, a match-all total (the
+empty query ``MATCH_ALL_QUERY``, which each module maps to its unfiltered
+request). A source that reports hits for the nonsense query cannot be doing
+exact matching, and a count at or above ``GUARD_MAX_SHARE`` of the match-all
+total is implausible for a niche legacy term; either way the record is kept
+with ``count=None`` and ``method`` suffixed ``; rejected by sanity guard``.
+Probe results are cached per source per run; a probe that fails yields no
+evidence, so counts pass.
 """
 
 from __future__ import annotations
@@ -30,7 +41,24 @@ if TYPE_CHECKING:
 
 UPSERT_KEY = ("source", "region", "category", "query")
 
+# Sanity-guard probes: a query no exact-phrase index should ever match, and
+# the empty query every module maps to its unfiltered match-all request.
+NONSENSE_QUERY = "zqxwv legacy atlas probe"
+MATCH_ALL_QUERY = ""
+# Reject a count that reaches this share of the source's match-all total.
+GUARD_MAX_SHARE = 0.20
+REJECTED_SUFFIX = "; rejected by sanity guard"
+
 API_SOURCES: dict[str, tuple[ModuleType, ...]] = {}
+
+
+@dataclass(frozen=True)
+class _SourceProbe:
+    """Sanity-guard evidence for one source, fetched once per run."""
+
+    nonsense: int | None
+    match_all: int | None
+    poisoned: bool
 
 
 @dataclass(frozen=True)
@@ -103,6 +131,51 @@ def planned_calls(
     ]
 
 
+def _probe_value(
+    mod: ModuleType,
+    query: str,
+    region: str,
+    client: httpx.Client,
+    log: Callable[[str], None],
+) -> int | None:
+    """One guard probe through the source's own ``count``, or None on any
+    failure or implausible value."""
+    try:
+        value = mod.count(query, region, client)
+    except Exception as exc:  # noqa: BLE001 - a failed probe is no evidence
+        log(f"guard {mod.SOURCE} {region} probe {query!r}: {exc}")
+        return None
+    if isinstance(value, bool) or not isinstance(value, int | float):
+        return None
+    return int(value) if value >= 0 else None
+
+
+def _source_probe(
+    mod: ModuleType,
+    region: str,
+    client: httpx.Client,
+    log: Callable[[str], None],
+) -> _SourceProbe:
+    """Nonsense and match-all probe totals for one source."""
+    nonsense = _probe_value(mod, NONSENSE_QUERY, region, client, log)
+    if nonsense is not None and nonsense > 0:
+        return _SourceProbe(nonsense, None, poisoned=True)
+    match_all = _probe_value(mod, MATCH_ALL_QUERY, region, client, log)
+    return _SourceProbe(nonsense, match_all, poisoned=False)
+
+
+def _rejected(count: int | None, probe: _SourceProbe) -> bool:
+    """True when the probe says this count cannot be an exact-phrase total."""
+    if probe.poisoned:
+        return True
+    return (
+        count is not None
+        and probe.match_all is not None
+        and probe.match_all > 0
+        and count >= GUARD_MAX_SHARE * probe.match_all
+    )
+
+
 def run_api_counts(
     queries: list[QueryRow],
     family: str,
@@ -116,6 +189,7 @@ def run_api_counts(
     """
     counted_at = datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
     records = []
+    probes: dict[str, _SourceProbe] = {}
     for row in queries:
         if row.region not in REGIONS:
             log(f"skip {row.region} {row.query!r}: unknown region code")
@@ -123,8 +197,17 @@ def run_api_counts(
         for mod in api_sources(family):
             if row.region not in mod.REGIONS:
                 continue
+            if mod.SOURCE not in probes:
+                probes[mod.SOURCE] = _source_probe(mod, row.region, client, log)
+            probe = probes[mod.SOURCE]
             try:
                 total = mod.count(row.query, row.region, client)
+                rejected = _rejected(total, probe)
+                if rejected:
+                    log(
+                        f"guard rejected {mod.SOURCE} {row.region} "
+                        f"{row.query!r}: count {total}"
+                    )
                 records.append(
                     CountRecord(
                         source=mod.SOURCE,
@@ -133,8 +216,11 @@ def run_api_counts(
                         category=row.category,
                         system="",
                         query=row.query,
-                        count=total,
-                        method=f"{mod.SOURCE} api total",
+                        count=None if rejected else total,
+                        method=(
+                            f"{mod.SOURCE} api total"
+                            + (REJECTED_SUFFIX if rejected else "")
+                        ),
                         counted_at=counted_at,
                     )
                 )
