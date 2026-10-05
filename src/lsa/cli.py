@@ -634,9 +634,13 @@ def build_parser() -> argparse.ArgumentParser:
     register_jev(sub)
 
     from lsa.apps.cli import register as register_apps
+    from lsa.workflows_labour.cli import (
+        register as register_workflows_labour,
+    )
     from lsa.yc import register as register_yc
 
     register_apps(sub)
+    register_workflows_labour(sub)
     register_yc(sub)
     return parser
 
