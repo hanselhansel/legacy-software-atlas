@@ -1,0 +1,422 @@
+[
+{
+"item_id": "ted:319198-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:502637-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:337501-2024",
+"answers": {
+"action": "maintain",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:391018-2020",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:209049-2019",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:153429-2024",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:508106-2024",
+"answers": {
+"action": "extend",
+"category": "utility-billing-cis"
+}
+},
+{
+"item_id": "ted:47609-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "gebiz:SLA000ETT21000024-GPS LANDS (SINGAPORE) PTE LTD",
+"answers": {
+"action": "maintain",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:150202-2022",
+"answers": {
+"action": "extend",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:167630-2019",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:81478-2019",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:32950-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:493240-2026",
+"answers": {
+"action": "maintain",
+"category": "procurement-ap"
+}
+},
+{
+"item_id": "ted:32650-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:9464-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_SP470124F0139_9700_SP470123A0004_9700",
+"answers": {
+"action": "extend",
+"category": "warehouse-management"
+}
+},
+{
+"item_id": "ted:424202-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:609097-2021",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:400927-2023",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:536608-2023",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:77122-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_88310325F00028_8800_NNG15SD24B_8000",
+"answers": {
+"action": "maintain",
+"category": "field-service-maintenance"
+}
+},
+{
+"item_id": "ted:378993-2017",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:267222-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_SP470124F0152_9700_SP470123A0005_9700",
+"answers": {
+"action": "extend",
+"category": "warehouse-management"
+}
+},
+{
+"item_id": "gebiz:PUB000ETT22000017-BAHWAN CYBERTEK PRIVATE LIMITED",
+"answers": {
+"action": "replace",
+"category": "field-service-maintenance"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_SP470124F0179_9700_SP470123A0006_9700",
+"answers": {
+"action": "extend",
+"category": "warehouse-management"
+}
+},
+{
+"item_id": "ted:203098-2018",
+"answers": {
+"action": "extend",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:372514-2016",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:396694-2016",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:372787-2018",
+"answers": {
+"action": "maintain",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:33496-2021",
+"answers": {
+"action": "extend",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:376477-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:316613-2022",
+"answers": {
+"action": "extend",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:203791-2018",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:117525-2018",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_140A2323P0172_1450_-NONE-_-NONE-",
+"answers": {
+"action": "replace",
+"category": "student-information"
+}
+},
+{
+"item_id": "ted:259518-2024",
+"answers": {
+"action": "replace",
+"category": "utility-billing-cis"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_1202SB25M1037_12C2_1202SB25T7293_12C2",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:210220-2023",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:302412-2025",
+"answers": {
+"action": "replace",
+"category": "student-information"
+}
+},
+{
+"item_id": "ted:344396-2016",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:567301-2024",
+"answers": {
+"action": "maintain",
+"category": "utility-billing-cis"
+}
+},
+{
+"item_id": "ted:79379-2022",
+"answers": {
+"action": "replace",
+"category": "ehr-hospital"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_1333ND25PNB190190_1341_-NONE-_-NONE-",
+"answers": {
+"action": "maintain",
+"category": "field-service-maintenance"
+}
+},
+{
+"item_id": "ted:789820-2023",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_140P2125F0045_1443_GS35F688GA_4732",
+"answers": {
+"action": "maintain",
+"category": "field-service-maintenance"
+}
+},
+{
+"item_id": "ted:463319-2016",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:269160-2019",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "gebiz:SLA000ETT21000007-ENVIRONMENTAL RESOURCES MANAGEMENT (S) PTE LTD",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_1202SA25M1129_12C2_1202SA25T9236_12C2",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:99535-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:222160-2017",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:475475-2017",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:446967-2023",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:580925-2026",
+"answers": {
+"action": "replace",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:190000-2019",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "ted:410594-2021",
+"answers": {
+"action": "other",
+"category": "unclear"
+}
+},
+{
+"item_id": "usaspending:CONT_AWD_2033H622C00003_2036_-NONE-_-NONE-",
+"answers": {
+"action": "maintain",
+"category": "wealth-portfolio-accounting"
+}
+}
+]

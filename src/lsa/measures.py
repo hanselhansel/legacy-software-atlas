@@ -87,7 +87,7 @@ __all__ = [
 
 AWARDS_SET = "awards-keep-alive-or-replace@v1"
 REVIEWS_SET = "app-reviews-backend-failure@v1"
-YC_SET = "yc-category@v1"
+YC_SET = "yc-category@v2"  # reworded after the blind audit (docs/reports/jev-audit.md)
 
 
 @dataclass(frozen=True)

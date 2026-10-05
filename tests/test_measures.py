@@ -199,7 +199,7 @@ def test_load_pass_answers(tmp_path):
     rows = [
         {
             "item_id": "yc:1",
-            "question_set": "yc-category@v1",
+            "question_set": "yc-category@v2",
             "question_id": "category",
             "choice": "core-banking",
         },

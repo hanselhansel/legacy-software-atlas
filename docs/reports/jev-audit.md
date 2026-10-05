@@ -60,3 +60,16 @@ it is shifted by +1 before use. Blind sample: 60 tasks, seed 20261005.
 
 Jev rates tasks about half a point more automatable than the labellers. AI fit is therefore used
 to rank categories against each other, never as an absolute claim about what AI can do.
+
+## Plan 3 passes (2026-10-05)
+
+| Pass | Question | Sample | Agreement | Used |
+|---|---|---|---|---|
+| Public awards | action, 5 choices | 60 random | 70% | collapsed to keep-alive (maintain, extend) vs replace vs other: **83%**, used collapsed |
+| Public awards | category | 60 random | 92% | yes |
+| App reviews | backend failure, p >= 0.7 | 30 random + 30 Jev positives | 87% (92% at 0.5) | yes, at 0.7 |
+| YC startups | category v1 | 30 random + 30 Jev in-category | 67% | reworded once |
+| YC startups | category v2 | same labels | **85%** | yes (v2) |
+
+YC v2 was scored against the labels made for v1. Those labels already applied the strict "sells software
+for this job" reading that v2 adds, but they were not re-made with the v2 wording.

@@ -431,11 +431,11 @@ type = "probability"
 instructions = "Probability that `item`, an app review, complains about a backend or system failure: outages, maintenance downtime, failed or delayed transactions, wrong balances or records, sync errors. Design or feature complaints do not count."
 
 ["yc: category"]
-version = 1
+version = 2
 
 ["yc: category".questions.category]
 type = "choice"
-instructions = "`item` describes a startup. Which legacy software category does it mainly sell into? Answer none unless it builds software for that job."
+instructions = "`item` describes a startup. Pick a category only if the startup sells software that does the work of that category for the organisations that run it (for example software for insurers to administer policies, not an insurance product for consumers; software for hospitals to run records, not a patient app or a general clinical AI tool). General AI assistants, developer tools, marketplaces and consumer apps are none. When in doubt, answer none."
 
 ["yc: category".questions.category.criteria]
 agriculture-commodity = "Agriculture and commodity trading"

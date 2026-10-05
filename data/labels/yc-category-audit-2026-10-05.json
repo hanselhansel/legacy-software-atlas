@@ -1,0 +1,362 @@
+[
+{
+"item_id": "yc:30078",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30864",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30131",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30451",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29661",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29435",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30882",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30779",
+"answers": {
+"category": "erp-manufacturing"
+}
+},
+{
+"item_id": "yc:29261",
+"answers": {
+"category": "payroll-hr"
+}
+},
+{
+"item_id": "yc:29425",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29476",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:31341",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30108",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30837",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30102",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:31404",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:33277",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30557",
+"answers": {
+"category": "medical-billing-rcm"
+}
+},
+{
+"item_id": "yc:31139",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30484",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30965",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:31296",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:32650",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30403",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29839",
+"answers": {
+"category": "field-service-maintenance"
+}
+},
+{
+"item_id": "yc:33279",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29196",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:33320",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29650",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30340",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30443",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30322",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30109",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30357",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30067",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30118",
+"answers": {
+"category": "medical-billing-rcm"
+}
+},
+{
+"item_id": "yc:29679",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29339",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:31460",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29823",
+"answers": {
+"category": "field-service-maintenance"
+}
+},
+{
+"item_id": "yc:37434",
+"answers": {
+"category": "ehr-hospital"
+}
+},
+{
+"item_id": "yc:31441",
+"answers": {
+"category": "lab-information"
+}
+},
+{
+"item_id": "yc:29698",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30027",
+"answers": {
+"category": "payroll-hr"
+}
+},
+{
+"item_id": "yc:30192",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:31077",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:31330",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:30754",
+"answers": {
+"category": "medical-billing-rcm"
+}
+},
+{
+"item_id": "yc:31326",
+"answers": {
+"category": "ehr-hospital"
+}
+},
+{
+"item_id": "yc:31466",
+"answers": {
+"category": "erp-manufacturing"
+}
+},
+{
+"item_id": "yc:30706",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:29848",
+"answers": {
+"category": "procurement-ap"
+}
+},
+{
+"item_id": "yc:29258",
+"answers": {
+"category": "ehr-hospital"
+}
+},
+{
+"item_id": "yc:31439",
+"answers": {
+"category": "none"
+}
+},
+{
+"item_id": "yc:31417",
+"answers": {
+"category": "field-service-maintenance"
+}
+},
+{
+"item_id": "yc:29730",
+"answers": {
+"category": "wealth-portfolio-accounting"
+}
+},
+{
+"item_id": "yc:30742",
+"answers": {
+"category": "payroll-hr"
+}
+},
+{
+"item_id": "yc:30636",
+"answers": {
+"category": "gov-licensing-permits"
+}
+},
+{
+"item_id": "yc:31090",
+"answers": {
+"category": "insurance-claims"
+}
+},
+{
+"item_id": "yc:29613",
+"answers": {
+"category": "insurance-claims"
+}
+}
+]

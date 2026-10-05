@@ -5,6 +5,10 @@
   {
    "label": "yc-category@v1",
    "file_sha256": "0d01117aa5ab41356e95c679276a1ec7499b2803f141dded0deb149a2028dbf7"
+  },
+  {
+   "label": "yc-category@v2",
+   "file_sha256": "931acac6a8d60148775048eee5bf1f88bc44c6288931eea1a4d2ae75c124fa77"
   }
  ],
  "price_version": "typesafe-2026-09-28",
