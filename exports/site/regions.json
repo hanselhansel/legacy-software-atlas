@@ -1,0 +1,6144 @@
+{
+  "regions": {
+    "AU": {
+      "summary": {
+        "categories_with_usage": 17,
+        "categories_with_buyers": 32,
+        "total_value_usd": 58482996967
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 295.0,
+            "high": 295.0,
+            "mid": 295.0
+          },
+          "value_usd": {
+            "low": 64133000,
+            "mid": 317028094,
+            "high": 1570580000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 5.0,
+            "high": 8.0,
+            "mid": 6.5
+          },
+          "value_usd": {
+            "low": 64015000,
+            "mid": 239718921,
+            "high": 861600000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 59.0,
+            "high": 68.0,
+            "mid": 63.5
+          },
+          "value_usd": {
+            "low": 124224500,
+            "mid": 470033835,
+            "high": 1777350000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 150.0,
+            "high": 152.0,
+            "mid": 151.0
+          },
+          "value_usd": {
+            "low": 315525000,
+            "mid": 2192191569,
+            "high": 15411280000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 462939.0,
+            "high": 462939.0,
+            "mid": 462939.0
+          },
+          "value_usd": {
+            "low": 1242991215,
+            "mid": 3925540244,
+            "high": 12707675550
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 35.0,
+            "high": 35.0,
+            "mid": 35.0
+          },
+          "value_usd": {
+            "low": 7661500,
+            "mid": 25386023,
+            "high": 88200000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 165.0,
+            "high": 165.0,
+            "mid": 165.0
+          },
+          "value_usd": {
+            "low": 677943750,
+            "mid": 1582621317,
+            "high": 3941850000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 9.0,
+            "high": 9.0,
+            "mid": 9.0
+          },
+          "value_usd": {
+            "low": 3600,
+            "mid": 569210,
+            "high": 90000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 703.0,
+            "high": 1336.0,
+            "mid": 1019.5
+          },
+          "value_usd": {
+            "low": 1725865000,
+            "mid": 8089263306,
+            "high": 50327120000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 70450.0,
+            "high": 70450.0,
+            "mid": 70450.0
+          },
+          "value_usd": {
+            "low": 704500000,
+            "mid": 2227824612,
+            "high": 7045000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 90879.0,
+            "high": 90879.0,
+            "mid": 90879.0
+          },
+          "value_usd": {
+            "low": 1889374410,
+            "mid": 7262155841,
+            "high": 28281544800
+          },
+          "usage": {
+            "companies_low": 3,
+            "companies_high": 9,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "field-service-maintenance": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 5366.0,
+            "high": 5366.0,
+            "mid": 5366.0
+          },
+          "value_usd": {
+            "low": 458793000,
+            "mid": 1776727063,
+            "high": 6948970000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 2000000,
+            "mid": 29154759,
+            "high": 425000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 537.0,
+            "high": 537.0,
+            "mid": 537.0
+          },
+          "value_usd": {
+            "low": 5370000,
+            "mid": 120076850,
+            "high": 2685000000
+          },
+          "usage": {
+            "companies_low": 70,
+            "companies_high": 210,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 9.0,
+            "high": 9.0,
+            "mid": 9.0
+          },
+          "value_usd": {
+            "low": 45000,
+            "mid": 7794229,
+            "high": 1350000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 33.0,
+            "high": 120.0,
+            "mid": 76.5
+          },
+          "value_usd": {
+            "low": 10230000,
+            "mid": 69540587,
+            "high": 324000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 105.0,
+            "high": 114.0,
+            "mid": 109.5
+          },
+          "value_usd": {
+            "low": 84504000,
+            "mid": 245931389,
+            "high": 720480000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "lab-information": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 8.0,
+            "high": 8.0,
+            "mid": 8.0
+          },
+          "value_usd": {
+            "low": 120000,
+            "mid": 9295160,
+            "high": 720000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 145.0,
+            "high": 147.0,
+            "mid": 146.0
+          },
+          "value_usd": {
+            "low": 298265000,
+            "mid": 1162415763,
+            "high": 4530540000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 150.0,
+            "high": 150.0,
+            "mid": 150.0
+          },
+          "value_usd": {
+            "low": 220950000,
+            "mid": 1549487720,
+            "high": 10899000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 704.0,
+            "high": 1337.0,
+            "mid": 1020.5
+          },
+          "value_usd": {
+            "low": 817344000,
+            "mid": 6454722161,
+            "high": 53012050000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 156.0,
+            "high": 158.0,
+            "mid": 157.0
+          },
+          "value_usd": {
+            "low": 644865000,
+            "mid": 2267980292,
+            "high": 7995590000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 5366.0,
+            "high": 996203.0,
+            "mid": 500784.5
+          },
+          "value_usd": {
+            "low": 14590154,
+            "mid": 4394057329,
+            "high": 29079165570
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 58.0,
+            "high": 771.0,
+            "mid": 414.5
+          },
+          "value_usd": {
+            "low": 11939300,
+            "mid": 330211227,
+            "high": 2377378500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 21.0,
+            "high": 26.0,
+            "mid": 23.5
+          },
+          "value_usd": {
+            "low": 26985000,
+            "mid": 88951014,
+            "high": 297050000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 5366.0,
+            "high": 2814778.0,
+            "mid": 1410072.0
+          },
+          "value_usd": {
+            "low": 4689884,
+            "mid": 4231610278,
+            "high": 29071027184
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 156169.0,
+            "high": 156169.0,
+            "mid": 156169.0
+          },
+          "value_usd": {
+            "low": 749611200,
+            "mid": 3787804650,
+            "high": 19469589230
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 220.0,
+            "high": 220.0,
+            "mid": 220.0
+          },
+          "value_usd": {
+            "low": 9559000,
+            "mid": 30553860,
+            "high": 157300000
+          },
+          "usage": {
+            "companies_low": 10,
+            "companies_high": 30,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 340.0,
+            "high": 340.0,
+            "mid": 340.0
+          },
+          "value_usd": {
+            "low": 225889200,
+            "mid": 1137323362,
+            "high": 5885230000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 129.0,
+            "high": 131.0,
+            "mid": 130.0
+          },
+          "value_usd": {
+            "low": 58695000,
+            "mid": 162276956,
+            "high": 452277500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 152.0,
+            "high": 152.0,
+            "mid": 152.0
+          },
+          "value_usd": {
+            "low": 41061280,
+            "mid": 115421121,
+            "high": 340632000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 249289.0,
+            "high": 249289.0,
+            "mid": 249289.0
+          },
+          "value_usd": {
+            "low": 1293809910,
+            "mid": 4179328227,
+            "high": 13656051420
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        }
+      }
+    },
+    "EU": {
+      "summary": {
+        "categories_with_usage": 23,
+        "categories_with_buyers": 30,
+        "total_value_usd": 678896238632
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 3014.0,
+            "high": 3016.0,
+            "mid": 3015.0
+          },
+          "value_usd": {
+            "low": 93012040,
+            "mid": 434661312,
+            "high": 2061737600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 346.0,
+            "high": 346.0,
+            "mid": 346.0
+          },
+          "value_usd": {
+            "low": 1870476000,
+            "mid": 5602129395,
+            "high": 17438400000
+          },
+          "usage": {
+            "companies_low": 9,
+            "companies_high": 27,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 6,
+            "companies_high": 18,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 336.0,
+            "high": 2625.0,
+            "mid": 1480.5
+          },
+          "value_usd": {
+            "low": 210336000,
+            "mid": 5918661926,
+            "high": 70192500000
+          },
+          "usage": {
+            "companies_low": 3,
+            "companies_high": 9,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 232000.0,
+            "high": 4000000.0,
+            "mid": 2116000.0
+          },
+          "value_usd": {
+            "low": 548216000,
+            "mid": 16316112461,
+            "high": 102520000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 2400.0,
+            "high": 2400.0,
+            "mid": 2400.0
+          },
+          "value_usd": {
+            "low": 525360000,
+            "mid": 1740755847,
+            "high": 6048000000
+          },
+          "usage": {
+            "companies_low": 341,
+            "companies_high": 1023,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 114.0,
+            "high": 1914.0,
+            "mid": 1014.0
+          },
+          "value_usd": {
+            "low": 130672500,
+            "mid": 3144819187,
+            "high": 19480692000
+          },
+          "usage": {
+            "companies_low": 16,
+            "companies_high": 48,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 27.0,
+            "high": 44.0,
+            "mid": 35.5
+          },
+          "value_usd": {
+            "low": 10800,
+            "mid": 2245217,
+            "high": 440000000
+          },
+          "usage": {
+            "companies_low": 16,
+            "companies_high": 44,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 40,
+            "companies_high": 120,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 1584768.0,
+            "high": 1624310.0,
+            "mid": 1604539.0
+          },
+          "value_usd": {
+            "low": 22305609600,
+            "mid": 74925011410,
+            "high": 259077445000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 2200000.0,
+            "high": 2200000.0,
+            "mid": 2200000.0
+          },
+          "value_usd": {
+            "low": 21650200000,
+            "mid": 78795433468,
+            "high": 292336000000
+          },
+          "usage": {
+            "companies_low": 16,
+            "companies_high": 48,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 2200000.0,
+            "high": 2200000.0,
+            "mid": 2200000.0
+          },
+          "value_usd": {
+            "low": 4125000000,
+            "mid": 19498727721,
+            "high": 95568000000
+          },
+          "usage": {
+            "companies_low": 5,
+            "companies_high": 15,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 55000.0,
+            "high": 55000.0,
+            "mid": 55000.0
+          },
+          "value_usd": {
+            "low": 5912500000,
+            "mid": 23251982626,
+            "high": 92125000000
+          },
+          "usage": {
+            "companies_low": 5,
+            "companies_high": 15,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 3000.0,
+            "high": 3000.0,
+            "mid": 3000.0
+          },
+          "value_usd": {
+            "low": 6000000000,
+            "mid": 87464278423,
+            "high": 1275000000000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 92247.0,
+            "high": 100000.0,
+            "mid": 96123.5
+          },
+          "value_usd": {
+            "low": 922470000,
+            "mid": 21493868024,
+            "high": 500000000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 27.0,
+            "high": 27.0,
+            "mid": 27.0
+          },
+          "value_usd": {
+            "low": 135000,
+            "mid": 23382686,
+            "high": 4050000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 2124.0,
+            "high": 2124.0,
+            "mid": 2124.0
+          },
+          "value_usd": {
+            "low": 459315000,
+            "mid": 1327579737,
+            "high": 3892230000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 2383.0,
+            "high": 2383.0,
+            "mid": 2383.0
+          },
+          "value_usd": {
+            "low": 1266802800,
+            "mid": 3518252364,
+            "high": 9901365000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 15,
+            "companies_high": 45,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 31.0,
+            "high": 31.0,
+            "mid": 31.0
+          },
+          "value_usd": {
+            "low": 465000,
+            "mid": 36018745,
+            "high": 2790000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 1912.0,
+            "high": 1912.0,
+            "mid": 1912.0
+          },
+          "value_usd": {
+            "low": 1103988800,
+            "mid": 4260239127,
+            "high": 16450848000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 110.0,
+            "high": 110.0,
+            "mid": 110.0
+          },
+          "value_usd": {
+            "low": 314325000,
+            "mid": 2220469271,
+            "high": 15691500000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "medical-billing-rcm": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 1942.0,
+            "high": 1942.0,
+            "mid": 1942.0
+          },
+          "value_usd": {
+            "low": 2290103500,
+            "mid": 8256155677,
+            "high": 30044682000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 66000.0,
+            "high": 33100000.0,
+            "mid": 16583000.0
+          },
+          "value_usd": {
+            "low": 146190000,
+            "mid": 125280807655,
+            "high": 868875000000
+          },
+          "usage": {
+            "companies_low": 6,
+            "companies_high": 18,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 1419.0,
+            "high": 1419.0,
+            "mid": 1419.0
+          },
+          "value_usd": {
+            "low": 1220552850,
+            "mid": 4882584912,
+            "high": 20364778500
+          },
+          "usage": {
+            "companies_low": 13,
+            "companies_high": 39,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 104.0,
+            "high": 329.0,
+            "mid": 216.5
+          },
+          "value_usd": {
+            "low": 60112000,
+            "mid": 308534101,
+            "high": 1223880000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 55000.0,
+            "high": 33500000.0,
+            "mid": 16777500.0
+          },
+          "value_usd": {
+            "low": 45650000,
+            "mid": 47650383976,
+            "high": 326290000000
+          },
+          "usage": {
+            "companies_low": 4,
+            "companies_high": 12,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 5800000.0,
+            "high": 5800000.0,
+            "mid": 5800000.0
+          },
+          "value_usd": {
+            "low": 27376000000,
+            "mid": 137852227071,
+            "high": 705860000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 2500.0,
+            "high": 3500.0,
+            "mid": 3000.0
+          },
+          "value_usd": {
+            "low": 130400000,
+            "mid": 623846757,
+            "high": 5607000000
+          },
+          "usage": {
+            "companies_low": 4,
+            "companies_high": 12,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "telecom-bss": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 1912.0,
+            "high": 1912.0,
+            "mid": 1912.0
+          },
+          "value_usd": {
+            "low": 340336000,
+            "mid": 853749134,
+            "high": 2197844000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 2400.0,
+            "high": 2400.0,
+            "mid": 2400.0
+          },
+          "value_usd": {
+            "low": 430320000,
+            "mid": 1418979157,
+            "high": 6570000000
+          },
+          "usage": {
+            "companies_low": 18,
+            "companies_high": 54,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 21858.0,
+            "high": 21858.0,
+            "mid": 21858.0
+          },
+          "value_usd": {
+            "low": 298143120,
+            "mid": 882327524,
+            "high": 2659681440
+          },
+          "usage": {
+            "companies_low": 20,
+            "companies_high": 60,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 3150.0,
+            "high": 4600.0,
+            "mid": 3875.0
+          },
+          "value_usd": {
+            "low": 266962500,
+            "mid": 912013722,
+            "high": 3047500000
+          },
+          "usage": {
+            "companies_low": 3,
+            "companies_high": 9,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        }
+      }
+    },
+    "ID": {
+      "summary": {
+        "categories_with_usage": 4,
+        "categories_with_buyers": 34,
+        "total_value_usd": 765301718729
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 750.0,
+            "high": 3500.0,
+            "mid": 2125.0
+          },
+          "value_usd": {
+            "low": 269565000,
+            "mid": 3791709649,
+            "high": 31042200000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 16.0,
+            "high": 20.0,
+            "mid": 18.0
+          },
+          "value_usd": {
+            "low": 185648000,
+            "mid": 604697401,
+            "high": 1979000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 112.0,
+            "high": 119.0,
+            "mid": 115.5
+          },
+          "value_usd": {
+            "low": 39894400,
+            "mid": 155462074,
+            "high": 617610000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 105.0,
+            "high": 1444.0,
+            "mid": 774.5
+          },
+          "value_usd": {
+            "low": 8746500,
+            "mid": 385100429,
+            "high": 4580368000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 28430.0,
+            "high": 186534.0,
+            "mid": 107482.0
+          },
+          "value_usd": {
+            "low": 194631780,
+            "mid": 2258418706,
+            "high": 12844731240
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 1345.0,
+            "high": 1518.0,
+            "mid": 1431.5
+          },
+          "value_usd": {
+            "low": 12696800,
+            "mid": 71203973,
+            "high": 578358000
+          },
+          "usage": {
+            "companies_low": 500,
+            "companies_high": 1500,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 105.0,
+            "high": 1618.0,
+            "mid": 861.5
+          },
+          "value_usd": {
+            "low": 15461250,
+            "mid": 399370881,
+            "high": 2867096000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 63246,
+            "high": 10000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 3239.0,
+            "high": 3239.0,
+            "mid": 3239.0
+          },
+          "value_usd": {
+            "low": 4340260000,
+            "mid": 15803352223,
+            "high": 80424370000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 55146.0,
+            "high": 12300000.0,
+            "mid": 6177573.0
+          },
+          "value_usd": {
+            "low": 592819500,
+            "mid": 212973851499,
+            "high": 1371450000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 30072.0,
+            "high": 30072.0,
+            "mid": 30072.0
+          },
+          "value_usd": {
+            "low": 2623782000,
+            "mid": 10305263239,
+            "high": 40897920000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 956.0,
+            "high": 956.0,
+            "mid": 956.0
+          },
+          "value_usd": {
+            "low": 84902360,
+            "mid": 334516335,
+            "high": 1327406000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 2.0,
+            "high": 2.0,
+            "mid": 2.0
+          },
+          "value_usd": {
+            "low": 4000000,
+            "mid": 58309519,
+            "high": 850000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 514.0,
+            "high": 515.0,
+            "mid": 514.5
+          },
+          "value_usd": {
+            "low": 5140000,
+            "mid": 115045697,
+            "high": 2575000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 549.0,
+            "high": 549.0,
+            "mid": 549.0
+          },
+          "value_usd": {
+            "low": 2745000,
+            "mid": 475447947,
+            "high": 82350000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 144.0,
+            "high": 144.0,
+            "mid": 144.0
+          },
+          "value_usd": {
+            "low": 32760000,
+            "mid": 93845277,
+            "high": 272880000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 144.0,
+            "high": 144.0,
+            "mid": 144.0
+          },
+          "value_usd": {
+            "low": 80064000,
+            "mid": 220987229,
+            "high": 617760000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": {
+            "low": 273.0,
+            "high": 11050.0,
+            "mid": 5661.5
+          },
+          "value_usd": {
+            "low": 13493025,
+            "mid": 2742264565,
+            "high": 53188622500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 15000,
+            "mid": 1161895,
+            "high": 90000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 105.0,
+            "high": 1444.0,
+            "mid": 774.5
+          },
+          "value_usd": {
+            "low": 8463000,
+            "mid": 231531611,
+            "high": 1611504000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 105.0,
+            "high": 105.0,
+            "mid": 105.0
+          },
+          "value_usd": {
+            "low": 118912500,
+            "mid": 818325104,
+            "high": 5685750000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 3155.0,
+            "high": 3155.0,
+            "mid": 3155.0
+          },
+          "value_usd": {
+            "low": 2087032500,
+            "mid": 12165833034,
+            "high": 79742625000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 105.0,
+            "high": 1444.0,
+            "mid": 774.5
+          },
+          "value_usd": {
+            "low": 16091250,
+            "mid": 434583260,
+            "high": 3002076000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 26700000.0,
+            "high": 26700000.0,
+            "mid": 26700000.0
+          },
+          "value_usd": {
+            "low": 55936500000,
+            "mid": 193959442416,
+            "high": 682185000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400000,
+            "mid": 3741657,
+            "high": 35000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 1.0,
+            "high": 102.0,
+            "mid": 51.5
+          },
+          "value_usd": {
+            "low": 2740000,
+            "mid": 443703881,
+            "high": 2769300000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 35144.0,
+            "high": 26700000.0,
+            "mid": 13367572.0
+          },
+          "value_usd": {
+            "low": 32227048,
+            "mid": 42219836802,
+            "high": 291136800000
+          },
+          "usage": {
+            "companies_low": 110000,
+            "companies_high": 330000,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 12300000.0,
+            "high": 12300000.0,
+            "mid": 12300000.0
+          },
+          "value_usd": {
+            "low": 53136000000,
+            "mid": 262397568055,
+            "high": 1314255000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 4416.0,
+            "high": 4416.0,
+            "mid": 4416.0
+          },
+          "value_usd": {
+            "low": 86421120,
+            "mid": 296568664,
+            "high": 1541184000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 1431.0,
+            "high": 1431.0,
+            "mid": 1431.0
+          },
+          "value_usd": {
+            "low": 215222400,
+            "mid": 1026062850,
+            "high": 5130135000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 105.0,
+            "high": 105.0,
+            "mid": 105.0
+          },
+          "value_usd": {
+            "low": 29505000,
+            "mid": 77281632,
+            "high": 205065000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 394.0,
+            "high": 399.0,
+            "mid": 396.5
+          },
+          "value_usd": {
+            "low": 31764280,
+            "mid": 195817786,
+            "high": 1896447000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 263.0,
+            "high": 263.0,
+            "mid": 263.0
+          },
+          "value_usd": {
+            "low": 20658650,
+            "mid": 212950346,
+            "high": 3250048800
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 90.0,
+            "high": 90.0,
+            "mid": 90.0
+          },
+          "value_usd": {
+            "low": 10170000,
+            "mid": 28399847,
+            "high": 80280000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        }
+      }
+    },
+    "IN": {
+      "summary": {
+        "categories_with_usage": 6,
+        "categories_with_buyers": 35,
+        "total_value_usd": 3094687775302
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 4518.0,
+            "high": 272237.0,
+            "mid": 138377.5
+          },
+          "value_usd": {
+            "low": 27921240,
+            "mid": 3249144145,
+            "high": 25535830600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 4.0,
+            "high": 6.0,
+            "mid": 5.0
+          },
+          "value_usd": {
+            "low": 70806000,
+            "mid": 252548611,
+            "high": 870600000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 4993.0,
+            "high": 4993.0,
+            "mid": 4993.0
+          },
+          "value_usd": {
+            "low": 348810980,
+            "mid": 1347169321,
+            "high": 5489803500
+          },
+          "usage": {
+            "companies_low": 272,
+            "companies_high": 816,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 119.0,
+            "high": 119.0,
+            "mid": 119.0
+          },
+          "value_usd": {
+            "low": 259598500,
+            "mid": 1759774209,
+            "high": 12174890000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 38724.0,
+            "high": 38724.0,
+            "mid": 38724.0
+          },
+          "value_usd": {
+            "low": 340771200,
+            "mid": 1276023917,
+            "high": 5034120000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 2914.0,
+            "high": 70844.0,
+            "mid": 36879.0
+          },
+          "value_usd": {
+            "low": 130681244,
+            "mid": 1424252526,
+            "high": 23277454600
+          },
+          "usage": {
+            "companies_low": 50485,
+            "companies_high": 70844,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 139.0,
+            "high": 1596.0,
+            "mid": 867.5
+          },
+          "value_usd": {
+            "low": 48719500,
+            "mid": 808756956,
+            "high": 4644360000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 26.0,
+            "mid": 13.5
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 853815,
+            "high": 260000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 360000.0,
+            "high": 570000.0,
+            "mid": 465000.0
+          },
+          "value_usd": {
+            "low": 244080000000,
+            "mid": 1792305803531,
+            "high": 14802900000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 852417.0,
+            "high": 852417.0,
+            "mid": 852417.0
+          },
+          "value_usd": {
+            "low": 9802795500,
+            "mid": 31818917891,
+            "high": 104847291000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 260061.0,
+            "high": 266931.0,
+            "mid": 263496.0
+          },
+          "value_usd": {
+            "low": 6140040210,
+            "mid": 23118659166,
+            "high": 88834636800
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 260061.0,
+            "high": 260061.0,
+            "mid": 260061.0
+          },
+          "value_usd": {
+            "low": 1690396500,
+            "mid": 7277572059,
+            "high": 32195551800
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 2084.0,
+            "high": 2671.0,
+            "mid": 2377.5
+          },
+          "value_usd": {
+            "low": 182506300,
+            "mid": 822664630,
+            "high": 3675963750
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 2000000,
+            "mid": 29154759,
+            "high": 425000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 5051.0,
+            "high": 5051.0,
+            "mid": 5051.0
+          },
+          "value_usd": {
+            "low": 50510000,
+            "mid": 1129437935,
+            "high": 25255000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 33.0,
+            "high": 33.0,
+            "mid": 33.0
+          },
+          "value_usd": {
+            "low": 165000,
+            "mid": 28578838,
+            "high": 4950000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 36.0,
+            "high": 36.0,
+            "mid": 36.0
+          },
+          "value_usd": {
+            "low": 19875000,
+            "mid": 60177314,
+            "high": 183750000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 59.0,
+            "high": 61.0,
+            "mid": 60.0
+          },
+          "value_usd": {
+            "low": 85066200,
+            "mid": 244941767,
+            "high": 707905000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": {
+            "low": 2150.0,
+            "high": 2150.0,
+            "mid": 2150.0
+          },
+          "value_usd": {
+            "low": 201186250,
+            "mid": 698781745,
+            "high": 2914862500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 31.0,
+            "high": 36.0,
+            "mid": 33.5
+          },
+          "value_usd": {
+            "low": 465000,
+            "mid": 38923483,
+            "high": 3240000000
+          },
+          "usage": {
+            "companies_low": 19,
+            "companies_high": 36,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 1498.0,
+            "high": 10340.0,
+            "mid": 5919.0
+          },
+          "value_usd": {
+            "low": 123435200,
+            "mid": 1811550454,
+            "high": 11828960000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 121.0,
+            "high": 121.0,
+            "mid": 121.0
+          },
+          "value_usd": {
+            "low": 224152500,
+            "mid": 1568487813,
+            "high": 11017050000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 159020.0,
+            "high": 363520.0,
+            "mid": 261270.0
+          },
+          "value_usd": {
+            "low": 81179710000,
+            "mid": 969924338832,
+            "high": 10136755200000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 80.0,
+            "high": 80.0,
+            "mid": 80.0
+          },
+          "value_usd": {
+            "low": 174900000,
+            "mid": 619983853,
+            "high": 2210800000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 2120000.0,
+            "high": 3140000.0,
+            "mid": 2630000.0
+          },
+          "value_usd": {
+            "low": 7373360000,
+            "mid": 31726792274,
+            "high": 134329200000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1301.0,
+            "mid": 651.0
+          },
+          "value_usd": {
+            "low": 1718000,
+            "mid": 4345887229,
+            "high": 33904060000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 12.0,
+            "high": 77.0,
+            "mid": 44.5
+          },
+          "value_usd": {
+            "low": 9480000,
+            "mid": 92623729,
+            "high": 444675000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 1850000.0,
+            "high": 2850000.0,
+            "mid": 2350000.0
+          },
+          "value_usd": {
+            "low": 2199650000,
+            "mid": 9527609392,
+            "high": 39523800000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 16000000.0,
+            "high": 16000000.0,
+            "mid": 16000000.0
+          },
+          "value_usd": {
+            "low": 34560000000,
+            "mid": 182665084914,
+            "high": 974800000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 1168.0,
+            "high": 58643.0,
+            "mid": 29905.5
+          },
+          "value_usd": {
+            "low": 32645600,
+            "mid": 3168948774,
+            "high": 41929745000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 5.0,
+            "high": 1562.0,
+            "mid": 783.5
+          },
+          "value_usd": {
+            "low": 433290,
+            "mid": 319700152,
+            "high": 3141884900
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 89.0,
+            "high": 110.0,
+            "mid": 99.5
+          },
+          "value_usd": {
+            "low": 46502500,
+            "mid": 143015035,
+            "high": 437250000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 63.0,
+            "high": 72.0,
+            "mid": 67.5
+          },
+          "value_usd": {
+            "low": 49360500,
+            "mid": 151935870,
+            "high": 622800000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 100000.0,
+            "high": 100000.0,
+            "mid": 100000.0
+          },
+          "value_usd": {
+            "low": 2146000000,
+            "mid": 20804890592,
+            "high": 310752000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 537.0,
+            "high": 537.0,
+            "mid": 537.0
+          },
+          "value_usd": {
+            "low": 45000600,
+            "mid": 124789770,
+            "high": 350768400
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        }
+      }
+    },
+    "MY": {
+      "summary": {
+        "categories_with_usage": 3,
+        "categories_with_buyers": 33,
+        "total_value_usd": 122020793711
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 3460.0,
+            "high": 3962.0,
+            "mid": 3711.0
+          },
+          "value_usd": {
+            "low": 171062400,
+            "mid": 882145710,
+            "high": 4573732800
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 11.0,
+            "high": 11.0,
+            "mid": 11.0
+          },
+          "value_usd": {
+            "low": 100149500,
+            "mid": 291890277,
+            "high": 869550000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 43.0,
+            "high": 45.0,
+            "mid": 44.0
+          },
+          "value_usd": {
+            "low": 94643000,
+            "mid": 653644946,
+            "high": 4614300000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 132272.0,
+            "high": 132272.0,
+            "mid": 132272.0
+          },
+          "value_usd": {
+            "low": 835959040,
+            "mid": 2888114771,
+            "high": 10608214400
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 360.0,
+            "high": 549.0,
+            "mid": 454.5
+          },
+          "value_usd": {
+            "low": 8796240,
+            "mid": 44132628,
+            "high": 291024900
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 46.0,
+            "high": 57.0,
+            "mid": 51.5
+          },
+          "value_usd": {
+            "low": 170372500,
+            "mid": 466898114,
+            "high": 1428420000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 2.0,
+            "mid": 1.5
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 94868,
+            "high": 20000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 2,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 208.0,
+            "high": 355.0,
+            "mid": 281.5
+          },
+          "value_usd": {
+            "low": 444288000,
+            "mid": 1921629938,
+            "high": 11168300000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 475566.0,
+            "high": 475566.0,
+            "mid": 475566.0
+          },
+          "value_usd": {
+            "low": 8013287100,
+            "mid": 27833936517,
+            "high": 100344426000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 54505.0,
+            "high": 54505.0,
+            "mid": 54505.0
+          },
+          "value_usd": {
+            "low": 763615050,
+            "mid": 2796287378,
+            "high": 10454059000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 54505.0,
+            "high": 54505.0,
+            "mid": 54505.0
+          },
+          "value_usd": {
+            "low": 173053375,
+            "mid": 777234613,
+            "high": 3608231000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 1074.0,
+            "high": 1074.0,
+            "mid": 1074.0
+          },
+          "value_usd": {
+            "low": 79288050,
+            "mid": 310102978,
+            "high": 1223017500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 3.0,
+            "high": 3.0,
+            "mid": 3.0
+          },
+          "value_usd": {
+            "low": 6000000,
+            "mid": 87464278,
+            "high": 1275000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 155.0,
+            "high": 155.0,
+            "mid": 155.0
+          },
+          "value_usd": {
+            "low": 1550000,
+            "mid": 34659054,
+            "high": 775000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 151.0,
+            "high": 151.0,
+            "mid": 151.0
+          },
+          "value_usd": {
+            "low": 755000,
+            "mid": 130769836,
+            "high": 22650000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 46.0,
+            "high": 46.0,
+            "mid": 46.0
+          },
+          "value_usd": {
+            "low": 18055000,
+            "mid": 52586540,
+            "high": 155250000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 47.0,
+            "high": 49.0,
+            "mid": 48.0
+          },
+          "value_usd": {
+            "low": 48287800,
+            "mid": 136832313,
+            "high": 390040000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": {
+            "low": 83.0,
+            "high": 83.0,
+            "mid": 83.0
+          },
+          "value_usd": {
+            "low": 10949360,
+            "mid": 46475190,
+            "high": 268023600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 13.0,
+            "high": 14.0,
+            "mid": 13.5
+          },
+          "value_usd": {
+            "low": 195000,
+            "mid": 15685583,
+            "high": 1260000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 54.0,
+            "high": 60.0,
+            "mid": 57.0
+          },
+          "value_usd": {
+            "low": 87372000,
+            "mid": 365799230,
+            "high": 1582800000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 42.0,
+            "high": 42.0,
+            "mid": 42.0
+          },
+          "value_usd": {
+            "low": 84105000,
+            "mid": 588981514,
+            "high": 4139100000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 350.0,
+            "high": 10856.0,
+            "mid": 5603.0
+          },
+          "value_usd": {
+            "low": 18480000,
+            "mid": 1480291597,
+            "high": 16501120000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 40.0,
+            "high": 43.0,
+            "mid": 41.5
+          },
+          "value_usd": {
+            "low": 170100000,
+            "mid": 621798679,
+            "high": 2280290000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 1069831.0,
+            "high": 1200000.0,
+            "mid": 1134915.5
+          },
+          "value_usd": {
+            "low": 7183915165,
+            "mid": 27525822866,
+            "high": 106980000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 10.0,
+            "high": 11.0,
+            "mid": 10.5
+          },
+          "value_usd": {
+            "low": 11040000,
+            "mid": 49039380,
+            "high": 239580000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 7.0,
+            "high": 8.0,
+            "mid": 7.5
+          },
+          "value_usd": {
+            "low": 2800000,
+            "mid": 5809475,
+            "high": 12000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 44000.0,
+            "high": 1130386.0,
+            "mid": 587193.0
+          },
+          "value_usd": {
+            "low": 85030000,
+            "mid": 3803175287,
+            "high": 24631110940
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 475566.0,
+            "high": 475566.0,
+            "mid": 475566.0
+          },
+          "value_usd": {
+            "low": 10081999200,
+            "mid": 46715413309,
+            "high": 218475020400
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 371.0,
+            "high": 382.0,
+            "mid": 376.5
+          },
+          "value_usd": {
+            "low": 18327400,
+            "mid": 49908803,
+            "high": 145160000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "telecom-bss": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 46.0,
+            "high": 46.0,
+            "mid": 46.0
+          },
+          "value_usd": {
+            "low": 22080000,
+            "mid": 60408864,
+            "high": 166290000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 15.0,
+            "high": 19.0,
+            "mid": 17.0
+          },
+          "value_usd": {
+            "low": 17032500,
+            "mid": 52809656,
+            "high": 183350000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 48793.0,
+            "high": 48793.0,
+            "mid": 48793.0
+          },
+          "value_usd": {
+            "low": 428890470,
+            "mid": 1293021610,
+            "high": 3975653640
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 53.0,
+            "high": 92.0,
+            "mid": 72.5
+          },
+          "value_usd": {
+            "low": 10202500,
+            "mid": 37927910,
+            "high": 132020000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        }
+      }
+    },
+    "PH": {
+      "summary": {
+        "categories_with_usage": 2,
+        "categories_with_buyers": 33,
+        "total_value_usd": 157932831923
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 6.0,
+            "high": 9.0,
+            "mid": 7.5
+          },
+          "value_usd": {
+            "low": 76818000,
+            "mid": 276598755,
+            "high": 969300000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 130.0,
+            "high": 160.0,
+            "mid": 145.0
+          },
+          "value_usd": {
+            "low": 25563200,
+            "mid": 106584306,
+            "high": 451680000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 459.0,
+            "high": 459.0,
+            "mid": 459.0
+          },
+          "value_usd": {
+            "low": 119477700,
+            "mid": 757604807,
+            "high": 5040738000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 2239.0,
+            "high": 2239.0,
+            "mid": 2239.0
+          },
+          "value_usd": {
+            "low": 47690700,
+            "mid": 175501403,
+            "high": 689612000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 100.0,
+            "high": 374.0,
+            "mid": 237.0
+          },
+          "value_usd": {
+            "low": 2680000,
+            "mid": 25749564,
+            "high": 213180000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 459.0,
+            "high": 459.0,
+            "mid": 459.0
+          },
+          "value_usd": {
+            "low": 216992250,
+            "mid": 594800134,
+            "high": 1965438000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 63246,
+            "high": 10000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 1341.0,
+            "high": 1348.0,
+            "mid": 1344.5
+          },
+          "value_usd": {
+            "low": 1516671000,
+            "mid": 5767373157,
+            "high": 30505240000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 125257.0,
+            "high": 125257.0,
+            "mid": 125257.0
+          },
+          "value_usd": {
+            "low": 2191997500,
+            "mid": 7533993639,
+            "high": 26930255000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 23571.0,
+            "high": 23571.0,
+            "mid": 23571.0
+          },
+          "value_usd": {
+            "low": 1615084920,
+            "mid": 6390599596,
+            "high": 25494393600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 23571.0,
+            "high": 23571.0,
+            "mid": 23571.0
+          },
+          "value_usd": {
+            "low": 153211500,
+            "mid": 659613133,
+            "high": 2918089800
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 272.0,
+            "high": 282.0,
+            "mid": 277.0
+          },
+          "value_usd": {
+            "low": 36048160,
+            "mid": 146685044,
+            "high": 599391000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 5.0,
+            "high": 5.0,
+            "mid": 5.0
+          },
+          "value_usd": {
+            "low": 10000000,
+            "mid": 145773797,
+            "high": 2125000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 1642.0,
+            "high": 1724.0,
+            "mid": 1683.0
+          },
+          "value_usd": {
+            "low": 16420000,
+            "mid": 376330241,
+            "high": 8620000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 1726.0,
+            "high": 1726.0,
+            "mid": 1726.0
+          },
+          "value_usd": {
+            "low": 8630000,
+            "mid": 1494759847,
+            "high": 258900000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 130.0,
+            "high": 130.0,
+            "mid": 130.0
+          },
+          "value_usd": {
+            "low": 20800000,
+            "mid": 57899069,
+            "high": 163800000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 74.0,
+            "high": 74.0,
+            "mid": 74.0
+          },
+          "value_usd": {
+            "low": 33744000,
+            "mid": 91553775,
+            "high": 252340000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 15000,
+            "mid": 1161895,
+            "high": 90000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 467.0,
+            "high": 467.0,
+            "mid": 467.0
+          },
+          "value_usd": {
+            "low": 113294200,
+            "mid": 433277017,
+            "high": 1660652000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 44.0,
+            "high": 452.0,
+            "mid": 248.0
+          },
+          "value_usd": {
+            "low": 9768000,
+            "mid": 381570288,
+            "high": 4854480000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 1930.0,
+            "high": 1930.0,
+            "mid": 1930.0
+          },
+          "value_usd": {
+            "low": 1034962500,
+            "mid": 6559425592,
+            "high": 45533525000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 221.0,
+            "high": 268.0,
+            "mid": 244.5
+          },
+          "value_usd": {
+            "low": 208126750,
+            "mid": 828444726,
+            "high": 3296668000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 4640.0,
+            "high": 1246373.0,
+            "mid": 625506.5
+          },
+          "value_usd": {
+            "low": 14801600,
+            "mid": 7109831845,
+            "high": 51225930300
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 3.0,
+            "high": 3.0,
+            "mid": 3.0
+          },
+          "value_usd": {
+            "low": 1200000,
+            "mid": 11224972,
+            "high": 105000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 1.0,
+            "high": 3.0,
+            "mid": 2.0
+          },
+          "value_usd": {
+            "low": 2116000,
+            "mid": 13049345,
+            "high": 60930000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 4640.0,
+            "high": 1200000.0,
+            "mid": 602320.0
+          },
+          "value_usd": {
+            "low": 4709600,
+            "mid": 2058620987,
+            "high": 13848000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 125257.0,
+            "high": 125257.0,
+            "mid": 125257.0
+          },
+          "value_usd": {
+            "low": 25552428000,
+            "mid": 115251732430,
+            "high": 521319634000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 1975.0,
+            "high": 2355.0,
+            "mid": 2165.0
+          },
+          "value_usd": {
+            "low": 56376375,
+            "mid": 203840355,
+            "high": 1145707500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 6.0,
+            "high": 6.0,
+            "mid": 6.0
+          },
+          "value_usd": {
+            "low": 42900000,
+            "mid": 232889524,
+            "high": 1269000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 44.0,
+            "high": 63.0,
+            "mid": 53.5
+          },
+          "value_usd": {
+            "low": 16940000,
+            "mid": 55589374,
+            "high": 178290000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 121.0,
+            "high": 140.0,
+            "mid": 130.5
+          },
+          "value_usd": {
+            "low": 33438350,
+            "mid": 107931465,
+            "high": 354725000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 221.0,
+            "high": 239.0,
+            "mid": 230.0
+          },
+          "value_usd": {
+            "low": 10342800,
+            "mid": 31704594,
+            "high": 98372400
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 34.0,
+            "high": 34.0,
+            "mid": 34.0
+          },
+          "value_usd": {
+            "low": 19414000,
+            "mid": 51054003,
+            "high": 134776000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        }
+      }
+    },
+    "SG": {
+      "summary": {
+        "categories_with_usage": 16,
+        "categories_with_buyers": 34,
+        "total_value_usd": 67394811744
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 400.0,
+            "high": 400.0,
+            "mid": 400.0
+          },
+          "value_usd": {
+            "low": 289320000,
+            "mid": 1441261152,
+            "high": 7183200000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 2.0,
+            "high": 3.0,
+            "mid": 2.5
+          },
+          "value_usd": {
+            "low": 50000000,
+            "mid": 176776695,
+            "high": 600000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 300.0,
+            "high": 1560.0,
+            "mid": 930.0
+          },
+          "value_usd": {
+            "low": 133962000,
+            "mid": 1488207906,
+            "high": 9072180000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 152.0,
+            "high": 195.0,
+            "mid": 173.5
+          },
+          "value_usd": {
+            "low": 439432000,
+            "mid": 3460758659,
+            "high": 27161550000
+          },
+          "usage": {
+            "companies_low": 4,
+            "companies_high": 12,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 24000.0,
+            "high": 24000.0,
+            "mid": 24000.0
+          },
+          "value_usd": {
+            "low": 238800000,
+            "mid": 856737443,
+            "high": 3276000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 22.0,
+            "high": 22.0,
+            "mid": 22.0
+          },
+          "value_usd": {
+            "low": 316800,
+            "mid": 1464571,
+            "high": 9570000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 140.0,
+            "high": 155.0,
+            "mid": 147.5
+          },
+          "value_usd": {
+            "low": 789950000,
+            "mid": 1941940055,
+            "high": 5082450000
+          },
+          "usage": {
+            "companies_low": 28,
+            "companies_high": 84,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 63246,
+            "high": 10000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 20.0,
+            "high": 31.0,
+            "mid": 25.5
+          },
+          "value_usd": {
+            "low": 89100000,
+            "mid": 313769439,
+            "high": 1525200000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 57715.0,
+            "high": 57715.0,
+            "mid": 57715.0
+          },
+          "value_usd": {
+            "low": 1010012500,
+            "mid": 3471458225,
+            "high": 12408725000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 9858.0,
+            "high": 9858.0,
+            "mid": 9858.0
+          },
+          "value_usd": {
+            "low": 218847600,
+            "mid": 826338684,
+            "high": 3174276000
+          },
+          "usage": {
+            "companies_low": 17,
+            "companies_high": 51,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 9858.0,
+            "high": 9858.0,
+            "mid": 9858.0
+          },
+          "value_usd": {
+            "low": 64077000,
+            "mid": 275867221,
+            "high": 1220420400
+          },
+          "usage": {
+            "companies_low": 7,
+            "companies_high": 21,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 573.0,
+            "high": 622.0,
+            "mid": 597.5
+          },
+          "value_usd": {
+            "low": 58766880,
+            "mid": 243300136,
+            "high": 1011372000
+          },
+          "usage": {
+            "companies_low": 10,
+            "companies_high": 30,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 2000000,
+            "mid": 29154759,
+            "high": 425000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 1.0,
+            "high": 10.0,
+            "mid": 5.5
+          },
+          "value_usd": {
+            "low": 10000,
+            "mid": 1229837,
+            "high": 50000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 5000,
+            "mid": 866025,
+            "high": 150000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 70.0,
+            "high": 70.0,
+            "mid": 70.0
+          },
+          "value_usd": {
+            "low": 32518750,
+            "mid": 97460678,
+            "high": 295037500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 77.0,
+            "high": 196.0,
+            "mid": 136.5
+          },
+          "value_usd": {
+            "low": 79340800,
+            "mid": 400117322,
+            "high": 1643460000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 15000,
+            "mid": 1161895,
+            "high": 90000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 155.0,
+            "high": 195.0,
+            "mid": 175.0
+          },
+          "value_usd": {
+            "low": 398815000,
+            "mid": 1743534456,
+            "high": 7523100000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 20.0,
+            "high": 20.0,
+            "mid": 20.0
+          },
+          "value_usd": {
+            "low": 54300000,
+            "mid": 383179303,
+            "high": 2706000000
+          },
+          "usage": {
+            "companies_low": 14,
+            "companies_high": 20,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 30.0,
+            "high": 3880.0,
+            "mid": 1955.0
+          },
+          "value_usd": {
+            "low": 1432950,
+            "mid": 469357562,
+            "high": 5347610000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 36.0,
+            "high": 155.0,
+            "mid": 95.5
+          },
+          "value_usd": {
+            "low": 204390000,
+            "mid": 1895087000,
+            "high": 10777150000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 1500.0,
+            "high": 371000.0,
+            "mid": 186250.0
+          },
+          "value_usd": {
+            "low": 7075500,
+            "mid": 3075730608,
+            "high": 21952070000
+          },
+          "usage": {
+            "companies_low": 4,
+            "companies_high": 12,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400000,
+            "mid": 3741657,
+            "high": 35000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 2.0,
+            "high": 2.0,
+            "mid": 2.0
+          },
+          "value_usd": {
+            "low": 6000000,
+            "mid": 18973666,
+            "high": 60000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 2,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 1500.0,
+            "high": 371000.0,
+            "mid": 186250.0
+          },
+          "value_usd": {
+            "low": 2300250,
+            "mid": 971373353,
+            "high": 6604542000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 31271.0,
+            "high": 31271.0,
+            "mid": 31271.0
+          },
+          "value_usd": {
+            "low": 9506384000,
+            "mid": 42755608847,
+            "high": 192668448750
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 11.0,
+            "high": 354.0,
+            "mid": 182.5
+          },
+          "value_usd": {
+            "low": 249700,
+            "mid": 30919073,
+            "high": 715080000
+          },
+          "usage": {
+            "companies_low": 11,
+            "companies_high": 33,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 3.0,
+            "high": 3.0,
+            "mid": 3.0
+          },
+          "value_usd": {
+            "low": 30000000,
+            "mid": 164316767,
+            "high": 900000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 150.0,
+            "high": 152.0,
+            "mid": 151.0
+          },
+          "value_usd": {
+            "low": 91125000,
+            "mid": 254516348,
+            "high": 713640000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 2.0,
+            "high": 18.0,
+            "mid": 10.0
+          },
+          "value_usd": {
+            "low": 1383100,
+            "mid": 18962821,
+            "high": 100372500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 122.0,
+            "high": 15374.0,
+            "mid": 7748.0
+          },
+          "value_usd": {
+            "low": 1549400,
+            "mid": 295390170,
+            "high": 1789533600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 1298.0,
+            "high": 1298.0,
+            "mid": 1298.0
+          },
+          "value_usd": {
+            "low": 103840000,
+            "mid": 286186163,
+            "high": 799568000
+          },
+          "usage": {
+            "companies_low": 3,
+            "companies_high": 9,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        }
+      }
+    },
+    "TH": {
+      "summary": {
+        "categories_with_usage": 6,
+        "categories_with_buyers": 33,
+        "total_value_usd": 322753309838
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 199.0,
+            "high": 199.0,
+            "mid": 199.0
+          },
+          "value_usd": {
+            "low": 23860100,
+            "mid": 116584517,
+            "high": 571926000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 25.0,
+            "high": 26.0,
+            "mid": 25.5
+          },
+          "value_usd": {
+            "low": 163918750,
+            "mid": 490435968,
+            "high": 1506700000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 36.0,
+            "high": 36.0,
+            "mid": 36.0
+          },
+          "value_usd": {
+            "low": 51490800,
+            "mid": 184957544,
+            "high": 670410000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 36.0,
+            "high": 36.0,
+            "mid": 36.0
+          },
+          "value_usd": {
+            "low": 91468800,
+            "mid": 603203024,
+            "high": 4141872000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 108800.0,
+            "high": 141500.0,
+            "mid": 125150.0
+          },
+          "value_usd": {
+            "low": 452608000,
+            "mid": 1762063194,
+            "high": 7089150000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 1677.0,
+            "high": 1690.0,
+            "mid": 1683.5
+          },
+          "value_usd": {
+            "low": 24148800,
+            "mid": 112072990,
+            "high": 735150000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 20.0,
+            "high": 20.0,
+            "mid": 20.0
+          },
+          "value_usd": {
+            "low": 104600000,
+            "mid": 252378423,
+            "high": 680000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 63246,
+            "high": 10000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 664.0,
+            "high": 1356.0,
+            "mid": 1010.0
+          },
+          "value_usd": {
+            "low": 1027208000,
+            "mid": 7077225679,
+            "high": 57681528000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 143000.0,
+            "high": 143000.0,
+            "mid": 143000.0
+          },
+          "value_usd": {
+            "low": 2502500000,
+            "mid": 8601204646,
+            "high": 30745000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 14757.0,
+            "high": 453617.0,
+            "mid": 234187.0
+          },
+          "value_usd": {
+            "low": 100937880,
+            "mid": 5978418299,
+            "high": 43728678800
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 79400.0,
+            "high": 79400.0,
+            "mid": 79400.0
+          },
+          "value_usd": {
+            "low": 258050000,
+            "mid": 1150668622,
+            "high": 5311860000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 858.0,
+            "high": 858.0,
+            "mid": 858.0
+          },
+          "value_usd": {
+            "low": 76198980,
+            "mid": 300224912,
+            "high": 1191333000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 3.0,
+            "high": 3.0,
+            "mid": 3.0
+          },
+          "value_usd": {
+            "low": 6000000,
+            "mid": 87464278,
+            "high": 1275000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 7843.0,
+            "high": 7843.0,
+            "mid": 7843.0
+          },
+          "value_usd": {
+            "low": 78430000,
+            "mid": 1753748115,
+            "high": 39215000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 3.0,
+            "high": 3.0,
+            "mid": 3.0
+          },
+          "value_usd": {
+            "low": 15000,
+            "mid": 2598076,
+            "high": 450000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 73.0,
+            "high": 73.0,
+            "mid": 73.0
+          },
+          "value_usd": {
+            "low": 19892500,
+            "mid": 57051838,
+            "high": 166075000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 80.0,
+            "high": 80.0,
+            "mid": 80.0
+          },
+          "value_usd": {
+            "low": 54384000,
+            "mid": 149933864,
+            "high": 417600000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 15000,
+            "mid": 1161895,
+            "high": 90000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 32.0,
+            "high": 39.0,
+            "mid": 35.5
+          },
+          "value_usd": {
+            "low": 67724800,
+            "mid": 300738346,
+            "high": 1386996000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 17.0,
+            "high": 17.0,
+            "mid": 17.0
+          },
+          "value_usd": {
+            "low": 38887500,
+            "mid": 273319330,
+            "high": 1925250000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 2436.0,
+            "high": 33340.0,
+            "mid": 17888.0
+          },
+          "value_usd": {
+            "low": 201335400,
+            "mid": 10188361913,
+            "high": 138444350000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 992890.0,
+            "high": 2080280.0,
+            "mid": 1536585.0
+          },
+          "value_usd": {
+            "low": 4445168530,
+            "mid": 24482777868,
+            "high": 120177775600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 16.0,
+            "high": 18.0,
+            "mid": 17.0
+          },
+          "value_usd": {
+            "low": 15760000,
+            "mid": 68580295,
+            "high": 318150000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 1.0,
+            "high": 16.0,
+            "mid": 8.5
+          },
+          "value_usd": {
+            "low": 1875000,
+            "mid": 49897185,
+            "high": 294880000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 1505.0,
+            "high": 967210.0,
+            "mid": 484357.5
+          },
+          "value_usd": {
+            "low": 2089692,
+            "mid": 2269227166,
+            "high": 15341885020
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 930000.0,
+            "high": 930000.0,
+            "mid": 930000.0
+          },
+          "value_usd": {
+            "low": 56544000000,
+            "mid": 255426487211,
+            "high": 1157152500000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 154.0,
+            "high": 154.0,
+            "mid": 154.0
+          },
+          "value_usd": {
+            "low": 5980590,
+            "mid": 25375171,
+            "high": 204743000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 96.0,
+            "high": 672.0,
+            "mid": 384.0
+          },
+          "value_usd": {
+            "low": 40798080,
+            "mid": 816434876,
+            "high": 7341264000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 25.0,
+            "high": 32.0,
+            "mid": 28.5
+          },
+          "value_usd": {
+            "low": 15362500,
+            "mid": 50223753,
+            "high": 163664000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 4.0,
+            "high": 4.0,
+            "mid": 4.0
+          },
+          "value_usd": {
+            "low": 3684000,
+            "mid": 10379595,
+            "high": 38000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 827.0,
+            "high": 827.0,
+            "mid": 827.0
+          },
+          "value_usd": {
+            "low": 22535750,
+            "mid": 65931162,
+            "high": 195999000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 49.0,
+            "high": 98.0,
+            "mid": 73.5
+          },
+          "value_usd": {
+            "low": 10897600,
+            "mid": 44116838,
+            "high": 160092800
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        }
+      }
+    },
+    "UK": {
+      "summary": {
+        "categories_with_usage": 7,
+        "categories_with_buyers": 34,
+        "total_value_usd": 88981310095
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 230.0,
+            "high": 230.0,
+            "mid": 230.0
+          },
+          "value_usd": {
+            "low": 41349400,
+            "mid": 203658646,
+            "high": 1005744000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 28.0,
+            "high": 28.0,
+            "mid": 28.0
+          },
+          "value_usd": {
+            "low": 289905000,
+            "mid": 841816916,
+            "high": 2492000000
+          },
+          "usage": {
+            "companies_low": 28,
+            "companies_high": 28,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 3800.0,
+            "high": 3800.0,
+            "mid": 3800.0
+          },
+          "value_usd": {
+            "low": 713260000,
+            "mid": 2642271360,
+            "high": 10060500000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 350.0,
+            "high": 400.0,
+            "mid": 375.0
+          },
+          "value_usd": {
+            "low": 421050000,
+            "mid": 2923930597,
+            "high": 21048000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 370770.0,
+            "high": 370770.0,
+            "mid": 370770.0
+          },
+          "value_usd": {
+            "low": 918768060,
+            "mid": 2960743657,
+            "high": 9743835600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 674.0,
+            "high": 700.0,
+            "mid": 687.0
+          },
+          "value_usd": {
+            "low": 563295500,
+            "mid": 1623445926,
+            "high": 5776400000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 3.0,
+            "mid": 2.0
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 126491,
+            "high": 30000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 206.0,
+            "high": 206.0,
+            "mid": 206.0
+          },
+          "value_usd": {
+            "low": 206000000,
+            "mid": 1527736888,
+            "high": 11330000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 101000.0,
+            "high": 101000.0,
+            "mid": 101000.0
+          },
+          "value_usd": {
+            "low": 1833150000,
+            "mid": 6238623363,
+            "high": 22119000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 130000.0,
+            "high": 130000.0,
+            "mid": 130000.0
+          },
+          "value_usd": {
+            "low": 1340430000,
+            "mid": 4825700772,
+            "high": 17742400000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 130000.0,
+            "high": 130000.0,
+            "mid": 130000.0
+          },
+          "value_usd": {
+            "low": 442000000,
+            "mid": 1944330672,
+            "high": 8879000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 8250.0,
+            "high": 46050.0,
+            "mid": 27150.0
+          },
+          "value_usd": {
+            "low": 365062500,
+            "mid": 4323775873,
+            "high": 26824125000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 3.0,
+            "high": 3.0,
+            "mid": 3.0
+          },
+          "value_usd": {
+            "low": 6000000,
+            "mid": 87464278,
+            "high": 1275000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 331.0,
+            "high": 331.0,
+            "mid": 331.0
+          },
+          "value_usd": {
+            "low": 3310000,
+            "mid": 74013850,
+            "high": 1655000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 297.0,
+            "high": 297.0,
+            "mid": 297.0
+          },
+          "value_usd": {
+            "low": 1485000,
+            "mid": 257209545,
+            "high": 44550000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 408.0,
+            "high": 584.0,
+            "mid": 496.0
+          },
+          "value_usd": {
+            "low": 120360000,
+            "mid": 425582472,
+            "high": 1477520000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 407.0,
+            "high": 511.0,
+            "mid": 459.0
+          },
+          "value_usd": {
+            "low": 307203600,
+            "mid": 962632505,
+            "high": 3004680000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": {
+            "low": 29.0,
+            "high": 29.0,
+            "mid": 29.0
+          },
+          "value_usd": {
+            "low": 1450000,
+            "mid": 14500000,
+            "high": 145000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 3.0,
+            "high": 303.0,
+            "mid": 153.0
+          },
+          "value_usd": {
+            "low": 45000,
+            "mid": 177769936,
+            "high": 27270000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 315.0,
+            "high": 315.0,
+            "mid": 315.0
+          },
+          "value_usd": {
+            "low": 463518000,
+            "mid": 1793905432,
+            "high": 6943680000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 1300.0,
+            "high": 1300.0,
+            "mid": 1300.0
+          },
+          "value_usd": {
+            "low": 1238250000,
+            "mid": 8578372619,
+            "high": 59865000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 207.0,
+            "high": 207.0,
+            "mid": 207.0
+          },
+          "value_usd": {
+            "low": 207000000,
+            "mid": 1603415105,
+            "high": 12420000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 42.0,
+            "high": 1300.0,
+            "mid": 671.0
+          },
+          "value_usd": {
+            "low": 59304000,
+            "mid": 3417348212,
+            "high": 24107200000
+          },
+          "usage": {
+            "companies_low": 30,
+            "companies_high": 90,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 8335.0,
+            "high": 1400000.0,
+            "mid": 704167.5
+          },
+          "value_usd": {
+            "low": 31589650,
+            "mid": 9026296226,
+            "high": 62440000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 5260.0,
+            "high": 5296.0,
+            "mid": 5278.0
+          },
+          "value_usd": {
+            "low": 2900153600,
+            "mid": 11732206552,
+            "high": 49933865600
+          },
+          "usage": {
+            "companies_low": 107,
+            "companies_high": 321,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 51.0,
+            "high": 51.0,
+            "mid": 51.0
+          },
+          "value_usd": {
+            "low": 85425000,
+            "mid": 259691235,
+            "high": 800700000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 8335.0,
+            "high": 5700000.0,
+            "mid": 2854167.5
+          },
+          "value_usd": {
+            "low": 6676335,
+            "mid": 7803452989,
+            "high": 53306400000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 213000.0,
+            "high": 213000.0,
+            "mid": 213000.0
+          },
+          "value_usd": {
+            "low": 1422840000,
+            "mid": 6915459986,
+            "high": 34122600000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 27428.0,
+            "high": 27428.0,
+            "mid": 27428.0
+          },
+          "value_usd": {
+            "low": 406489200,
+            "mid": 4169849925,
+            "high": 55082840000
+          },
+          "usage": {
+            "companies_low": 6897,
+            "companies_high": 20691,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 38.0,
+            "high": 38.0,
+            "mid": 38.0
+          },
+          "value_usd": {
+            "low": 163400000,
+            "mid": 868588253,
+            "high": 4674000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 300.0,
+            "high": 686.0,
+            "mid": 493.0
+          },
+          "value_usd": {
+            "low": 61200000,
+            "mid": 256135458,
+            "high": 927472000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 26.0,
+            "high": 44.0,
+            "mid": 35.0
+          },
+          "value_usd": {
+            "low": 48436700,
+            "mid": 170321773,
+            "high": 561495000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 4250.0,
+            "high": 4250.0,
+            "mid": 4250.0
+          },
+          "value_usd": {
+            "low": 53975000,
+            "mid": 162029972,
+            "high": 494700000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 400.0,
+            "high": 400.0,
+            "mid": 400.0
+          },
+          "value_usd": {
+            "low": 62000000,
+            "mid": 168902610,
+            "high": 464800000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        }
+      }
+    },
+    "US": {
+      "summary": {
+        "categories_with_usage": 29,
+        "categories_with_buyers": 32,
+        "total_value_usd": 3240467831813
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 7922.0,
+            "high": 7922.0,
+            "mid": 7922.0
+          },
+          "value_usd": {
+            "low": 5693541400,
+            "mid": 28377056444,
+            "high": 141502764000
+          },
+          "usage": {
+            "companies_low": 50,
+            "companies_high": 150,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 47.0,
+            "high": 62.0,
+            "mid": 54.5
+          },
+          "value_usd": {
+            "low": 719170500,
+            "mid": 2394656660,
+            "high": 7911200000
+          },
+          "usage": {
+            "companies_low": 13,
+            "companies_high": 39,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 3184.0,
+            "high": 3184.0,
+            "mid": 3184.0
+          },
+          "value_usd": {
+            "low": 858979520,
+            "mid": 3062814104,
+            "high": 11123304000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 8452.0,
+            "high": 8452.0,
+            "mid": 8452.0
+          },
+          "value_usd": {
+            "low": 1245062200,
+            "mid": 6839734907,
+            "high": 41274608000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 953703.0,
+            "high": 953703.0,
+            "mid": 953703.0
+          },
+          "value_usd": {
+            "low": 3748052790,
+            "mid": 12904062357,
+            "high": 46540706400
+          },
+          "usage": {
+            "companies_low": 2413,
+            "companies_high": 7239,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 4287.0,
+            "high": 4287.0,
+            "mid": 4287.0
+          },
+          "value_usd": {
+            "low": 350419380,
+            "mid": 1214710699,
+            "high": 4805727000
+          },
+          "usage": {
+            "companies_low": 3660,
+            "companies_high": 4287,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 8452.0,
+            "high": 8452.0,
+            "mid": 8452.0
+          },
+          "value_usd": {
+            "low": 1984157500,
+            "mid": 6846778355,
+            "high": 29415408000
+          },
+          "usage": {
+            "companies_low": 1665,
+            "companies_high": 4995,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 52.0,
+            "high": 52.0,
+            "mid": 52.0
+          },
+          "value_usd": {
+            "low": 20800,
+            "mid": 3288769,
+            "high": 520000000
+          },
+          "usage": {
+            "companies_low": 52,
+            "companies_high": 52,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 5121.0,
+            "high": 6100.0,
+            "mid": 5610.5
+          },
+          "value_usd": {
+            "low": 25246530000,
+            "mid": 63074133441,
+            "high": 192272000000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 627800.0,
+            "high": 627800.0,
+            "mid": 627800.0
+          },
+          "value_usd": {
+            "low": 26555940000,
+            "mid": 101256734177,
+            "high": 403675400000
+          },
+          "usage": {
+            "companies_low": 6200,
+            "companies_high": 18600,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 61486.0,
+            "high": 239265.0,
+            "mid": 150375.5
+          },
+          "value_usd": {
+            "low": 1307192360,
+            "mid": 12212721205,
+            "high": 75320622000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 7092,
+            "companies_high": 21276,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 21041.0,
+            "high": 21041.0,
+            "mid": 21041.0
+          },
+          "value_usd": {
+            "low": 3419162500,
+            "mid": 13716646973,
+            "high": 55232625000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 109.0,
+            "high": 112.0,
+            "mid": 110.5
+          },
+          "value_usd": {
+            "low": 218000000,
+            "mid": 3221600922,
+            "high": 47600000000
+          },
+          "usage": {
+            "companies_low": 25,
+            "companies_high": 75,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 38736.0,
+            "high": 90837.0,
+            "mid": 64786.5
+          },
+          "value_usd": {
+            "low": 387360000,
+            "mid": 14486701802,
+            "high": 454185000000
+          },
+          "usage": {
+            "companies_low": 360,
+            "companies_high": 1080,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 90891.0,
+            "high": 182930.0,
+            "mid": 136910.5
+          },
+          "value_usd": {
+            "low": 454455000,
+            "mid": 118567971045,
+            "high": 27439500000000
+          },
+          "usage": {
+            "companies_low": 4,
+            "companies_high": 12,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 6228.0,
+            "high": 10451.0,
+            "mid": 8339.5
+          },
+          "value_usd": {
+            "low": 739575000,
+            "mid": 2834438236,
+            "high": 10320362500
+          },
+          "usage": {
+            "companies_low": 750,
+            "companies_high": 2250,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 736.0,
+            "high": 3891.0,
+            "mid": 2313.5
+          },
+          "value_usd": {
+            "low": 446457600,
+            "mid": 3931704335,
+            "high": 18735165000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "lab-information": {
+          "buyers": {
+            "low": 6953.0,
+            "high": 30833.0,
+            "mid": 18893.0
+          },
+          "value_usd": {
+            "low": 1152285925,
+            "mid": 10128136629,
+            "high": 57110424250
+          },
+          "usage": {
+            "companies_low": 192,
+            "companies_high": 576,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 3031.0,
+            "high": 3031.0,
+            "mid": 3031.0
+          },
+          "value_usd": {
+            "low": 45465000,
+            "mid": 3521703757,
+            "high": 272790000000
+          },
+          "usage": {
+            "companies_low": 3031,
+            "companies_high": 3031,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 8452.0,
+            "high": 8452.0,
+            "mid": 8452.0
+          },
+          "value_usd": {
+            "low": 1044376400,
+            "mid": 3945737105,
+            "high": 14968344000
+          },
+          "usage": {
+            "companies_low": 40,
+            "companies_high": 120,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 4223.0,
+            "high": 4223.0,
+            "mid": 4223.0
+          },
+          "value_usd": {
+            "low": 348397500,
+            "mid": 2216598340,
+            "high": 14569350000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 5121.0,
+            "high": 6100.0,
+            "mid": 5610.5
+          },
+          "value_usd": {
+            "low": 9018081000,
+            "mid": 39389889746,
+            "high": 190625000000
+          },
+          "usage": {
+            "companies_low": 1500,
+            "companies_high": 4500,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 4986.0,
+            "high": 8452.0,
+            "mid": 6719.0
+          },
+          "value_usd": {
+            "low": 1407102500,
+            "mid": 6641004784,
+            "high": 30840706000
+          },
+          "usage": {
+            "companies_low": 40,
+            "companies_high": 120,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 20000.0,
+            "high": 5520000.0,
+            "mid": 2770000.0
+          },
+          "value_usd": {
+            "low": 68600000,
+            "mid": 33093935639,
+            "high": 234600000000
+          },
+          "usage": {
+            "companies_low": 2,
+            "companies_high": 6,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 651,
+            "companies_high": 1953,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "port-terminal-operating-system": {
+          "buyers": {
+            "low": 25.0,
+            "high": 50.0,
+            "mid": 37.5
+          },
+          "value_usd": {
+            "low": 16187500,
+            "mid": 60992077,
+            "high": 216250000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 21000.0,
+            "high": 5500000.0,
+            "mid": 2760500.0
+          },
+          "value_usd": {
+            "low": 24360000,
+            "mid": 10899065338,
+            "high": 74140000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 3,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 1000000.0,
+            "high": 1000000.0,
+            "mid": 1000000.0
+          },
+          "value_usd": {
+            "low": 604000000000,
+            "mid": 2708676470428,
+            "high": 12159000000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 3931.0,
+            "high": 5916.0,
+            "mid": 4923.5
+          },
+          "value_usd": {
+            "low": 410789500,
+            "mid": 1489463127,
+            "high": 7809120000
+          },
+          "usage": {
+            "companies_low": 5916,
+            "companies_high": 5916,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "telecom-bss": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 430.0,
+            "high": 4308.0,
+            "mid": 2369.0
+          },
+          "value_usd": {
+            "low": 59775000,
+            "mid": 541177425,
+            "high": 2198671000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 50300.0,
+            "high": 56690.0,
+            "mid": 53495.0
+          },
+          "value_usd": {
+            "low": 3411550000,
+            "mid": 18076043871,
+            "high": 162077297500
+          },
+          "usage": {
+            "companies_low": 3,
+            "companies_high": 9,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 24115.0,
+            "high": 24115.0,
+            "mid": 24115.0
+          },
+          "value_usd": {
+            "low": 1788127250,
+            "mid": 5451703348,
+            "high": 16755102000
+          },
+          "usage": {
+            "companies_low": 30,
+            "companies_high": 90,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 16544.0,
+            "high": 16544.0,
+            "mid": 16544.0
+          },
+          "value_usd": {
+            "low": 471504000,
+            "mid": 1390155768,
+            "high": 4185632000
+          },
+          "usage": {
+            "companies_low": 94,
+            "companies_high": 282,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        }
+      }
+    },
+    "VN": {
+      "summary": {
+        "categories_with_usage": 3,
+        "categories_with_buyers": 34,
+        "total_value_usd": 99865216282
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": {
+            "low": 221.0,
+            "high": 221.0,
+            "mid": 221.0
+          },
+          "value_usd": {
+            "low": 26497900,
+            "mid": 129473258,
+            "high": 635154000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 6.0,
+            "high": 7.0,
+            "mid": 6.5
+          },
+          "value_usd": {
+            "low": 69618000,
+            "mid": 218362950,
+            "high": 692650000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": {
+            "low": 124.0,
+            "high": 124.0,
+            "mid": 124.0
+          },
+          "value_usd": {
+            "low": 183016560,
+            "mid": 643968344,
+            "high": 2277942000
+          },
+          "usage": {
+            "companies_low": 35,
+            "companies_high": 105,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "card-payments-processing": {
+          "buyers": {
+            "low": 33.0,
+            "high": 33.0,
+            "mid": 33.0
+          },
+          "value_usd": {
+            "low": 103636500,
+            "mid": 716474235,
+            "high": 5008410000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "construction-project-accounting": {
+          "buyers": {
+            "low": 46500.0,
+            "high": 68649.0,
+            "mid": 57574.5
+          },
+          "value_usd": {
+            "low": 283185000,
+            "mid": 1225504198,
+            "high": 5416406100
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": {
+            "low": 1176.0,
+            "high": 1183.0,
+            "mid": 1179.5
+          },
+          "value_usd": {
+            "low": 5268480,
+            "mid": 38817584,
+            "high": 386841000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "core-banking": {
+          "buyers": {
+            "low": 33.0,
+            "high": 33.0,
+            "mid": 33.0
+          },
+          "value_usd": {
+            "low": 202661250,
+            "mid": 471198066,
+            "high": 1163910000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "courts-justice": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400,
+            "mid": 63246,
+            "high": 10000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "ehr-hospital": {
+          "buyers": {
+            "low": 1800.0,
+            "high": 1800.0,
+            "mid": 1800.0
+          },
+          "value_usd": {
+            "low": 2088000000,
+            "mid": 11962391236,
+            "high": 80928000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-distribution": {
+          "buyers": {
+            "low": 208995.0,
+            "high": 208995.0,
+            "mid": 208995.0
+          },
+          "value_usd": {
+            "low": 3657412500,
+            "mid": 12570690665,
+            "high": 44933925000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "erp-manufacturing": {
+          "buyers": {
+            "low": 135642.0,
+            "high": 135642.0,
+            "mid": 135642.0
+          },
+          "value_usd": {
+            "low": 1709089200,
+            "mid": 6427980978,
+            "high": 24551202000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "field-service-maintenance": {
+          "buyers": {
+            "low": 135642.0,
+            "high": 135642.0,
+            "mid": 135642.0
+          },
+          "value_usd": {
+            "low": 461182800,
+            "mid": 2028714623,
+            "high": 9264348600
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "financial-close-gl": {
+          "buyers": {
+            "low": 1500.0,
+            "high": 1526.0,
+            "mid": 1513.0
+          },
+          "value_usd": {
+            "low": 86407500,
+            "mid": 338410988,
+            "high": 1337920500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 2000000,
+            "mid": 29154759,
+            "high": 425000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-licensing-permits": {
+          "buyers": {
+            "low": 34.0,
+            "high": 3321.0,
+            "mid": 1677.5
+          },
+          "value_usd": {
+            "low": 340000,
+            "mid": 375100403,
+            "high": 16605000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "gov-tax": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 5000,
+            "mid": 866025,
+            "high": 150000000
+          },
+          "usage": {
+            "companies_low": 1,
+            "companies_high": 1,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "insurance-claims": {
+          "buyers": {
+            "low": 56.0,
+            "high": 86.0,
+            "mid": 71.0
+          },
+          "value_usd": {
+            "low": 11900000,
+            "mid": 42650070,
+            "high": 148350000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "insurance-policy-admin": {
+          "buyers": {
+            "low": 53.0,
+            "high": 85.0,
+            "mid": 69.0
+          },
+          "value_usd": {
+            "low": 26818000,
+            "mid": 95628711,
+            "high": 327250000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "lab-information": {
+          "buyers": {
+            "low": 400.0,
+            "high": 1650.0,
+            "mid": 1025.0
+          },
+          "value_usd": {
+            "low": 20822000,
+            "mid": 433493634,
+            "high": 6487057500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "land-registry": {
+          "buyers": {
+            "low": 34.0,
+            "high": 34.0,
+            "mid": 34.0
+          },
+          "value_usd": {
+            "low": 510000,
+            "mid": 39504430,
+            "high": 3060000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "loan-origination-servicing": {
+          "buyers": {
+            "low": 34.0,
+            "high": 34.0,
+            "mid": 34.0
+          },
+          "value_usd": {
+            "low": 104414000,
+            "mid": 404369519,
+            "high": 1566040000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mainframe-cobol-general": {
+          "buyers": {
+            "low": 33.0,
+            "high": 33.0,
+            "mid": 33.0
+          },
+          "value_usd": {
+            "low": 80190000,
+            "mid": 564455985,
+            "high": 3979800000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "medical-billing-rcm": {
+          "buyers": {
+            "low": 384.0,
+            "high": 1645.0,
+            "mid": 1014.5
+          },
+          "value_usd": {
+            "low": 340473600,
+            "mid": 6479565730,
+            "high": 78552862500
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "mortgage-servicing": {
+          "buyers": {
+            "low": 34.0,
+            "high": 38.0,
+            "mid": 36.0
+          },
+          "value_usd": {
+            "low": 209992500,
+            "mid": 776576290,
+            "high": 2869570000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "payroll-hr": {
+          "buyers": {
+            "low": 859048.0,
+            "high": 1000000.0,
+            "mid": 929524.0
+          },
+          "value_usd": {
+            "low": 3845957896,
+            "mid": 14810329149,
+            "high": 57770000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 400000,
+            "mid": 3741657,
+            "high": 35000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "port-terminal-operating-system": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "procurement-ap": {
+          "buyers": {
+            "low": 827500.0,
+            "high": 859048.0,
+            "mid": 843274.0
+          },
+          "value_usd": {
+            "low": 1148983750,
+            "mid": 3950760067,
+            "high": 13626219376
+          },
+          "usage": {
+            "companies_low": 400000,
+            "companies_high": 859048,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "retail-pos-merch": {
+          "buyers": {
+            "low": 4765.0,
+            "high": 1404765.0,
+            "mid": 704765.0
+          },
+          "value_usd": {
+            "low": 48603000,
+            "mid": 33427782308,
+            "high": 312349497750
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "student-information": {
+          "buyers": {
+            "low": 226.0,
+            "high": 226.0,
+            "mid": 226.0
+          },
+          "value_usd": {
+            "low": 13560000,
+            "mid": 53140481,
+            "high": 402280000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "telecom-bss": {
+          "buyers": {
+            "low": 12.0,
+            "high": 12.0,
+            "mid": 12.0
+          },
+          "value_usd": {
+            "low": 32128800,
+            "mid": 171101550,
+            "high": 921720000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "trade-finance": {
+          "buyers": {
+            "low": 49.0,
+            "high": 99.0,
+            "mid": 74.0
+          },
+          "value_usd": {
+            "low": 29767500,
+            "mid": 124729866,
+            "high": 464805000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "utility-billing-cis": {
+          "buyers": {
+            "low": 1.0,
+            "high": 1.0,
+            "mid": 1.0
+          },
+          "value_usd": {
+            "low": 2406000,
+            "mid": 6274233,
+            "high": 17000000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "warehouse-management": {
+          "buyers": {
+            "low": 34000.0,
+            "high": 34000.0,
+            "mid": 34000.0
+          },
+          "value_usd": {
+            "low": 431800000,
+            "mid": 1296239776,
+            "high": 3957600000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": {
+            "low": 43.0,
+            "high": 43.0,
+            "mid": 43.0
+          },
+          "value_usd": {
+            "low": 2644500,
+            "mid": 7701267,
+            "high": 22747000
+          },
+          "usage": null,
+          "evidence": "buyers only"
+        }
+      }
+    },
+    "global": {
+      "summary": {
+        "categories_with_usage": 30,
+        "categories_with_buyers": 2,
+        "total_value_usd": 25622352964
+      },
+      "categories": {
+        "agriculture-commodity": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 650,
+            "companies_high": 1950,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "airline-pss": {
+          "buyers": {
+            "low": 378.0,
+            "high": 378.0,
+            "mid": 378.0
+          },
+          "value_usd": {
+            "low": 5802583500,
+            "mid": 16700996565,
+            "high": 48686400000
+          },
+          "usage": {
+            "companies_low": 273,
+            "companies_high": 378,
+            "grade": "B"
+          },
+          "evidence": "usage"
+        },
+        "capital-markets-trading-clearing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 20,
+            "companies_high": 60,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "card-payments-processing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 769,
+            "companies_high": 2307,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "construction-project-accounting": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 8043,
+            "companies_high": 24129,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "cooperative-rural-microfinance-banking": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "core-banking": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 2363,
+            "companies_high": 7089,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "courts-justice": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 37,
+            "companies_high": 111,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "ehr-hospital": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "erp-distribution": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 5000,
+            "companies_high": 15000,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "erp-manufacturing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 60100,
+            "companies_high": 180300,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "field-service-maintenance": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 6700,
+            "companies_high": 20100,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "financial-close-gl": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 2525000,
+            "companies_high": 7575000,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-benefits": {
+          "buyers": {
+            "low": 340.0,
+            "high": 340.0,
+            "mid": 340.0
+          },
+          "value_usd": {
+            "low": 612000000,
+            "mid": 8921356399,
+            "high": 130050000000
+          },
+          "usage": {
+            "companies_low": 4,
+            "companies_high": 12,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-licensing-permits": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 470,
+            "companies_high": 1410,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "gov-tax": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 60,
+            "companies_high": 180,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-claims": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 966,
+            "companies_high": 2898,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "insurance-policy-admin": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 2738,
+            "companies_high": 8214,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "lab-information": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "land-registry": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "loan-origination-servicing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 218,
+            "companies_high": 654,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "mainframe-cobol-general": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 5001,
+            "companies_high": 15003,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "medical-billing-rcm": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": null,
+          "evidence": "none"
+        },
+        "mortgage-servicing": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 200,
+            "companies_high": 600,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "payroll-hr": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 1100000,
+            "companies_high": 3300000,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "pension-provident-fund-admin": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 5,
+            "companies_high": 15,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "port-terminal-operating-system": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 685,
+            "companies_high": 2055,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "procurement-ap": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 2506500,
+            "companies_high": 7519500,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "retail-pos-merch": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 860,
+            "companies_high": 2580,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "student-information": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 1500,
+            "companies_high": 4500,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "telecom-bss": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 795,
+            "companies_high": 2385,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "trade-finance": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 525,
+            "companies_high": 1575,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "utility-billing-cis": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 460,
+            "companies_high": 1380,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "warehouse-management": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 4500,
+            "companies_high": 13500,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        },
+        "wealth-portfolio-accounting": {
+          "buyers": null,
+          "value_usd": null,
+          "usage": {
+            "companies_low": 1360,
+            "companies_high": 4080,
+            "grade": "C"
+          },
+          "evidence": "usage"
+        }
+      }
+    }
+  }
+}

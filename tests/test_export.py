@@ -436,7 +436,7 @@ def test_export_shape(tmp_path):
     mk = cat["market"]
     assert mk["basis"] == "market_value"
     assert mk["buyers_mid"] == 4600
-    assert mk["value_mid_usd"] == 420_000_000
+    assert mk["value_mid_usd"] == 395_979_797  # geometric-mean spend midpoints
     assert mk["value_low_usd"] == 250_000_000
     assert mk["value_high_usd"] == 620_000_000
     assert sco["parts"]["size"]["detail"]["basis"] == "market_value"
@@ -450,7 +450,7 @@ def test_export_shape(tmp_path):
     assert lens["segments"]["enterprise"]["buyers"] == 2350
     assert lens["segments"]["mid_market"]["buyable"] is True
     # only mid_market is buyable: 4500 x 0.5 x 30k
-    assert lens["buyable_value_usd"] == 67_500_000
+    assert lens["buyable_value_usd"] == 63_639_610  # geometric-mean spend midpoints
 
     regions = json.loads(result["regions"].read_text())["regions"]
     assert regions["US"]["categories"]["core-banking"]["evidence"] == "usage"
@@ -461,7 +461,7 @@ def test_export_shape(tmp_path):
     assert regions["US"]["summary"] == {
         "categories_with_usage": 1,
         "categories_with_buyers": 1,
-        "total_value_usd": 405_000_000,
+        "total_value_usd": 381_837_662,
     }
 
     cfg = configs / "core-banking.toml"

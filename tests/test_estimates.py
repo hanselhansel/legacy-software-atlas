@@ -319,3 +319,14 @@ def test_slice_caps_low_at_buyer_universe():
     sl = estimates._slice("AU", 2_600_000, 8, {"buyer_universe": 8}, cfg, notes, [])
     assert sl.companies_low == 8 and sl.companies_high == 8
     assert any("capped at buyer universe" in n for n in notes)
+
+
+def test_vendor_sums_skip_loan_counts_and_use_classified_customers():
+    cfg = catconfig.CategoryConfig(slug="x")
+    rows = [
+        {"category": "x", "vendor": "ICE", "product": "MSP", "disclosed_customers": "about 36M loans", "regions": "US", "source": "s", "unit": "accounts_or_loans", "buyers_low": "", "buyers_high": ""},
+        {"category": "x", "vendor": "JKHY", "product": "SilverLake", "disclosed_customers": "520 banks", "regions": "US", "source": "s", "unit": "organisations", "buyers_low": "520", "buyers_high": "520"},
+    ]
+    per, notes = estimates._vendor_sums("x", rows, cfg)
+    assert per["US"]["sum"] == 520
+    assert any("not customers" in n for n in notes)

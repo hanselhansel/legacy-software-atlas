@@ -1,3 +1,5 @@
+import math
+
 import pytest
 
 from lsa import criticality, estimates, market, scores
@@ -137,15 +139,16 @@ def test_value_arithmetic_with_shares_and_spends():
     mv = market.market_value("x", rows, crit)
     assert mv.buyers_low == 1000 and mv.buyers_high == 1200
     assert mv.buyers_mid == 1100
-    # low: 1000 x (0.5x100k + 0.5x10k) = 55M; mid: 1100 x 82.5k = 90.75M
+    # low: 1000 x (0.5x100k + 0.5x10k) = 55M; mid uses the geometric mean of each
+    # spend range: 1100 x (0.5 x sqrt(100k x 200k) + 0.5 x sqrt(10k x 20k))
     # high: 1200 x (0.5x200k + 0.5x20k) = 132M
     assert mv.value_low == 55_000_000
-    assert mv.value_mid == 90_750_000
+    geo = 1100 * (0.5 * math.sqrt(100_000 * 200_000) + 0.5 * math.sqrt(10_000 * 20_000))
+    assert mv.value_mid == pytest.approx(geo)
     assert mv.value_high == 132_000_000
     assert mv.segments["enterprise"].buyers == 550
-    assert mv.segments["enterprise"].value_mid == 82_500_000
-    assert mv.segments["smb"].value_mid == 8_250_000
-    assert mv.regions["US"].value_mid == 90_750_000
+    assert mv.segments["enterprise"].value_mid == pytest.approx(550 * math.sqrt(100_000 * 200_000))
+    assert mv.regions["US"].value_mid == pytest.approx(geo)
 
 
 def test_missing_shares_fall_back_to_best_icp():
@@ -168,7 +171,7 @@ def test_missing_spend_segment_contributes_zero_and_is_noted():
     rows = [_bu_row(shares={"enterprise": 0.8, "government": 0.2})]
     mv = market.market_value("x", rows, crit)
     assert mv.segments["government"].value_mid == 0
-    assert mv.value_mid == pytest.approx(1100 * 0.8 * 150_000)
+    assert mv.value_mid == pytest.approx(1100 * 0.8 * math.sqrt(100_000 * 200_000))
     assert any("no spend data for segment(s) government" in n for n in mv.notes)
 
 

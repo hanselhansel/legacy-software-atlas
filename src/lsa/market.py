@@ -15,6 +15,8 @@ Every assumption lands in ``notes``.
 
 from __future__ import annotations
 
+import math
+
 from dataclasses import dataclass
 
 from lsa import catconfig, criticality, estimates, parse_counts
@@ -163,7 +165,9 @@ def market_value(
                 s_low = s_mid = s_high = 0.0
             else:
                 s_low, s_high = bounds
-                s_mid = (s_low + s_high) / 2
+                # Spend ranges span orders of magnitude, so the typical buyer
+                # sits at the geometric mean, not the arithmetic one.
+                s_mid = math.sqrt(s_low * s_high) if s_low > 0 else s_high / 10
             seg_buyers[seg] = seg_buyers.get(seg, 0.0) + mid * share
             sv = seg_val.setdefault(seg, [0.0, 0.0, 0.0])
             sv[0] += low * share * s_low

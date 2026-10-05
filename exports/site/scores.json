@@ -8,18 +8,27 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 156495.5,
           "users_midpoint": 1400.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 156495.5,
+          "value_usd": {
+            "low": 6700262480.0,
+            "mid": 38942722927.0294,
+            "high": 215682869000.0
+          },
+          "midpoint": 38942722927.0294,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (PH Bureau of Plant Industry rice import clearances (SPSICs); NFA grains business licensing): counts transactions, not buyers"
           ]
         },
         "evidence": [
-          "possible buyers 156496 (buyer universe)",
+          "market value $38,942,722,927 mid (156496 buyers x segment spend)",
           "US: 50-150 grade C",
           "https://agvance.net/about-ssi",
           "https://esmis.nal.usda.gov/sites/default/release-files/xg94hp534/5d86qt759/xp68nc84m/grst0125.pdf",
@@ -108,18 +117,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 178707.5,
           "users_midpoint": 1800.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 178707.5,
+          "value_usd": {
+            "low": 1470910000.0,
+            "mid": 39960211808.904366,
+            "high": 1051620000000.0
+          },
+          "midpoint": 39960211808.904366,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 178708 (buyer universe)",
+          "market value $39,960,211,809 mid (178708 buyers x segment spend)",
           "AU: 70-210 grade C",
           "https://www.infor.com/en-au/products/pathway",
           "https://alga.com.au/about/local-government/facts-and-figures/",
@@ -207,6 +222,117 @@
     }
   },
   {
+    "slug": "airline-pss",
+    "total": 55.0,
+    "total_raw": 4.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "users_midpoint": 399.5,
+          "basis": "market_value",
+          "buyers_mid": 889.0,
+          "value_usd": {
+            "low": 9463108250.0,
+            "mid": 28090629113.62857,
+            "high": 84877400000.0
+          },
+          "midpoint": 28090629113.62857,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ]
+        },
+        "evidence": [
+          "market value $28,090,629,114 mid (889 buyers x segment spend)",
+          "EU: 9-27 grade C",
+          "https://transport.ec.europa.eu/document/download/7d7c51df-f11d-4a0c-815c-28a5ae4264b5_en?filename=eu_air_carriers_by_country_holding_an_active_operating_licence.pdf",
+          "SG: 1-3 grade C",
+          "https://www.caas.gov.sg/industry/aircraft-operators/singapore-air-operator/air-operator-certificate/",
+          "UK: 28-28 grade C",
+          "https://www.videcom.com/videcom-airline-systems.aspx",
+          "https://www.caa.co.uk/commercial-industry/airlines/licensing/licence-types/airline-licence-holders/",
+          "US: 13-39 grade C",
+          "https://www.sec.gov/Archives/edgar/data/0001386355/000104746909002555/a2190554z10-k.htm",
+          "https://www.govinfo.gov/content/pkg/FR-2025-06-17/pdf/2025-10965.pdf",
+          "global: 273-378 grade B",
+          "https://amadeus.com/en/airlines/products/altea-passenger-service-system",
+          "https://amadeus.com/en/airlines/overview",
+          "https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
+          "https://en.wikipedia.org/wiki/Transaction_Processing_Facility",
+          "https://www.iata.org/en/about/members/airline-list/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.automationanywhere.com/company/press-room/automation-anywhere-bot-slashes-flight-cancellation-processing-times-from-20-minutes-to-3-minutes",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.6578260869565216,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://investors.southwest.com/news-events/press-releases/detail/604/southwest-airlines-completes-transition-to-amadeus-alta",
+          "https://www.redbooks.ibm.com/redpapers/pdfs/redp4611.pdf"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 1108440000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Amadeus Nevio (incumbent's own replacement)",
+            "Hitit Computer Services (Crane PSS)",
+            "Coforge Aeronova.AI"
+          ]
+        },
+        "evidence": [
+          "https://www.altexsoft.com/travel-industry-news/fetcherr-raises-42m-targets-new-sectors-with-ai-pricing/ https://techcrunch.com/2024/06/26/fetcherr-lands-90m-to-get-airlines-on-board-with-dynamic-pricing/ https://abcnews.com/GMA/Travel/delta-ai-ticket-pricing-means-air-travel/story?id=124343088 https://www.fetcherr.io/blog",
+          "https://flyr.com/about/ https://flyr.com/resource-hub/flyr-raises-295m-to-rebuild-the-foundation-of-travel-technology/ https://www.globenewswire.com/news-release/2026/05/20/3298155/0/en/flyr-powers-riyadh-air-s-debut-as-world-s-first-full-service-airline-built-for-modern-retailing.html https://traveldistributionnews.com/riyadh-air-just-delivered-the-industrys-first-true-offer-and-order-deployment/ https://www.globenewswire.com/news-release/2026/06/09/3308711/0/en/flyr-and-res2-partner-to-accelerate-order-based-delivery.html",
+          "https://amadeus.com/en/blog/articles/finnair-first-airline-amadeus-nevio-ndc https://amadeus.com/en/newsroom/press-releases/new-era-connected-travel-amadeus-finnair-worlds-first-airline-native-orders",
+          "https://www.ibsplc.com/product/airline-passenger-solutions https://www.apax.com/news-views/apax-funds-make-approximately-450m-investment-in-travel-tech-company-ibs-software/ https://asianaviation.com/skyup-airlines-migrates-to-ibs-softwares-ifly-res/",
+          "https://hitit.com/sites/default/files/2026-09/31.03.2026-Interim-Activity-Report_0.pdf https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
+          "https://investors.coforge.com/hubfs/Press-Release-Intimation-21May-26.pdf?hsLang=en",
+          "https://www.deepair.io/ https://tracxn.com/d/companies/deepair/__Ru2_0hkTdE6HbDTgmywazrXDZs1FLrg4rkvBvewR3N0",
+          "funding unparsed: Amadeus Nevio (incumbent's own replacement), Hitit Computer Services (Crane PSS), Coforge Aeronova.AI"
+        ]
+      }
+    }
+  },
+  {
     "slug": "construction-project-accounting",
     "total": 55.0,
     "total_raw": 4.0,
@@ -215,18 +341,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 4390853.5,
           "users_midpoint": 20912.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 4390853.5,
+          "value_usd": {
+            "low": 8851673785.0,
+            "mid": 46548822351.19746,
+            "high": 216470451290.0
+          },
+          "midpoint": 46548822351.19746,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 4.39085e+06 (buyer universe)",
+          "market value $46,548,822,351 mid (4.39085e+06 buyers x segment spend)",
           "US: 2413-7239 grade C",
           "https://www.erpadvisorsgroup.com/blog/sage-300-cre-end-of-support",
           "https://www.erpresearch.com/en-us/cmic-erp",
@@ -316,18 +448,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 3322585.5,
           "users_midpoint": 120272.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 3322585.5,
+          "value_usd": {
+            "low": 39358593630.0,
+            "mid": 158939558627.44138,
+            "high": 650815733000.0
+          },
+          "midpoint": 158939558627.44138,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 3.32259e+06 (buyer universe)",
+          "market value $158,939,558,627 mid (3.32259e+06 buyers x segment spend)",
           "AU: 3-9 grade C",
           "https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/jul2022-jun2026/8165DC01.xlsx",
           "EU: 16-48 grade C",
@@ -425,18 +563,27 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 299653.5,
           "users_midpoint": 3002.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 299653.5,
+          "value_usd": {
+            "low": 94905851950.0,
+            "mid": 1054715201271.9199,
+            "high": 10756934342500.0
+          },
+          "midpoint": 1054715201271.9199,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (EU Eurostat healthcare resource statistics (beds). No EU hospital-count table found): counts other, not buyers"
           ]
         },
         "evidence": [
-          "possible buyers 299654 (buyer universe)",
+          "market value $1,054,715,201,272 mid (299654 buyers x segment spend)",
           "AU: 1-3 grade C",
           "https://www.itnews.com.au/news/qld-health-risks-patient-admin-system-failure-after-halting-overhaul-534656",
           "https://www.pc.gov.au/ongoing/report-on-government-services/health/public-hospitals/",
@@ -518,6 +665,115 @@
     }
   },
   {
+    "slug": "mortgage-servicing",
+    "total": 55.0,
+    "total_raw": 4.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "users_midpoint": 542.0,
+          "basis": "market_value",
+          "buyers_mid": 10761.0,
+          "value_usd": {
+            "low": 5384975500.0,
+            "mid": 25758962772.703156,
+            "high": 117424732000.0
+          },
+          "midpoint": 25758962772.703156,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (TH Bank of Thailand, Thailand Financial Institutions and Financial Service Providers (depositary corporations)): no buyer count (organisations)"
+          ]
+        },
+        "evidence": [
+          "market value $25,758,962,773 mid (10761 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions",
+          "UK: 30-90 grade C",
+          "https://www.targetgroup.com/our-capabilities/servicing-solutions/",
+          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
+          "US: 40-120 grade C",
+          "https://sagent.com/about/",
+          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 200-600 grade C",
+          "https://www.nucleussoftware.com/about-us/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.009279475982532752,
+          "in_use_share_unweighted": 0.125
+        },
+        "evidence": [
+          "https://files.consumerfinance.gov/f/documents/Mortgage_Servicing_Supervisory_Highlights_11_Final_web_.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.009279475982532752 (unweighted 0.125, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.566666666666666,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.marketscreener.com/quote/stock/BLACK-KNIGHT-INC-37958698/news/Black-Knight-Financial-Services-Inc-and-Cenlar-FSB-Sign-Five-Year-Renewal-for-LoanSphere-MSP-35213747/",
+          "https://freehire.me/jobs/senior-mainframe-developer-intercontinental-exchange-holdings-inc-mbjskvl3",
+          "regulation reason to stay: Regulators expect extensive testing and validation before a servicer changes major systems (PennyMac complaint)."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 686500000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Sagent (Dara)",
+            "PennyMac (Servicing Systems Environment, in-house)"
+          ]
+        },
+        "evidence": [
+          "https://finance.yahoo.com/real-estate/articles/carrington-completes-acquisition-valon-mortgage-100000792.html https://www.housingwire.com/articles/rithm-valon-mortgage-servicing/ https://www.housingwire.com/articles/mortgage-servicing-startup-valon-100m-series-c-funding/",
+          "https://pulse2.com/kastle-raises-24-million-series-a-to-build-ai-workforce-for-consumer-lending/ https://coverager.com/kastle-raises-24-million/ https://www.nationalmortgagenews.com/news/kastle-ai-integrates-with-ices-mortgage-servicing-system https://www.housingwire.com/articles/carrington-kastle-ai-partnership/ https://www.housingwire.com/articles/new-american-funding-kastle/ https://www.kastle.ai/ https://www.ycombinator.com/companies/kastle https://www.ycombinator.com/launches/Ld4-kastle-ai-servicing-for-mortgage-lending",
+          "https://www.seiright.com/ https://www.ycombinator.com/companies/sei-ai",
+          "https://www.nationalmortgagenews.com/news/mr-cooper-gains-20-stake-in-sagent https://www.nationalmortgagenews.com/news/sharmas-promotion-at-sagent-sets-up-next-phase-for-dara https://sagent.com/2025/10/01/from-the-source-servicing-at-the-scale-of-the-wake-of-rockets-move/ https://sagent.com/2026/08/13/six-keys-to-tuning-up-the-15-trillion-servicing-sector/ https://sagent.com/2026/04/09/evergreen-home-loans-selects-dara-by-sagent-to-power-modern-end-to-end-mortgage-servicing/ https://sagent.com/2026/03/02/land-home-financial-services-will-deploy-dara-by-sagent-to-modernize-end-to-end-mortgage-servicing/ https://sagent.com/2026/02/16/click-n-close-to-deploy-dara-by-sagent-to-power-core-consumer-and-default-servicing/",
+          "https://www.housingwire.com/articles/brace-picks-up-15-7-million-in-series-b-funding-round/ https://press.stavvy.com/stavvy-acquires-brace https://fintech.global/2023/08/02/startup-stavvy-acquires-mortgage-servicing-rival-brace/",
+          "https://www.thoughtmachine.net/press-releases/together-selects-thought-machine-to-modernise-technology-stack",
+          "https://s201.q4cdn.com/340896660/files/doc_presentations/2019/11/2019-Servicing-Systems-Environment-FAQ.pdf",
+          "funding unparsed: Sagent (Dara), PennyMac (Servicing Systems Environment, in-house)"
+        ]
+      }
+    }
+  },
+  {
     "slug": "core-banking",
     "total": 50.0,
     "total_raw": 3.0,
@@ -526,18 +782,24 @@
       "size": {
         "score": 4,
         "detail": {
-          "midpoint": 12758.0,
           "users_midpoint": 8148.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 12758.0,
+          "value_usd": {
+            "low": 4904826000.0,
+            "mid": 18133007412.948185,
+            "high": 76446024000.0
+          },
+          "midpoint": 18133007412.948185,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 12758 (buyer universe)",
+          "market value $18,133,007,413 mid (12758 buyers x segment spend)",
           "AU: 1-3 grade B",
           "https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions",
           "EU: 16-48 grade C",
@@ -632,18 +894,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 10444312.0,
           "users_midpoint": 22402.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 10444312.0,
+          "value_usd": {
+            "low": 79170024200.0,
+            "mid": 489452246642.8828,
+            "high": 2383576467000.0
+          },
+          "midpoint": 489452246642.8828,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 1.04443e+07 (buyer universe)",
+          "market value $489,452,246,643 mid (1.04443e+07 buyers x segment spend)",
           "SG: 1-3 grade C",
           "https://data.gov.sg/datasets/d_38d62de582eb7ee2c58d1bba4cd4132d/view",
           "US: 6200-18600 grade C",
@@ -733,18 +1001,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 116210.0,
           "users_midpoint": 5050034.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 116210.0,
+          "value_usd": {
+            "low": 10759636230.0,
+            "mid": 45565037557.410866,
+            "high": 191497123750.0
+          },
+          "midpoint": 45565037557.410866,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 116210 (buyer universe)",
+          "market value $45,565,037,557 mid (116210 buyers x segment spend)",
           "EU: 5-15 grade C",
           "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251209-2",
           "SG: 10-30 grade C",
@@ -828,58 +1102,76 @@
     }
   },
   {
-    "slug": "mortgage-servicing",
+    "slug": "gov-benefits",
     "total": 50.0,
     "total_raw": 3.0,
     "flags": [],
     "parts": {
       "size": {
-        "score": 4,
+        "score": 5,
         "detail": {
-          "midpoint": 10761.0,
-          "users_midpoint": 542.0,
-          "basis": "buyer_universe",
+          "users_midpoint": 68.0,
+          "basis": "market_value",
+          "buyers_mid": 3470.5,
+          "value_usd": {
+            "low": 6870000000.0,
+            "mid": 100190330933.17937,
+            "high": 1461150000000.0
+          },
+          "midpoint": 100190330933.17937,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "no spend data for segment(s) enterprise, mid_market; those shares add no value"
           ]
         },
         "evidence": [
-          "possible buyers 10761 (buyer universe)",
-          "AU: 1-3 grade C",
-          "https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions",
-          "UK: 30-90 grade C",
-          "https://www.targetgroup.com/our-capabilities/servicing-solutions/",
-          "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
-          "US: 40-120 grade C",
-          "https://sagent.com/about/",
-          "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
-          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
-          "global: 200-600 grade C",
-          "https://www.nucleussoftware.com/about-us/"
+          "market value $100,190,330,933 mid (3470.5 buyers x segment spend)",
+          "AU: 1-1 grade C",
+          "https://www.itnews.com.au/news/centrelink-it-system-risks-largely-managed-during-wpit-overhaul-553896",
+          "EU: 2-6 grade C",
+          "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/digitalisation-social-security-coordination/electronic-exchange-social-security-information-eessi_en",
+          "SG: 1-1 grade B",
+          "https://www.accenture.com/sg-en/case-studies/public-service/social-security-securing-life-goals",
+          "https://www.asean-ssa.org/member-institutions/singapore/",
+          "TH: 1-3 grade C",
+          "https://www.asean-ssa.org/member-institutions/thailand/",
+          "UK: 1-3 grade C",
+          "https://www.oneadvanced.com/resources/dwp-completes-large-scale-modernisation-project-for-nations-benefit-systems/",
+          "https://www.gov.uk/government/publications/dwp-statistical-summary-policies-and-statements/housing-benefit-caseload-and-flows-statistics-methodology-statement",
+          "US: 25-75 grade C",
+          "https://kffhealthnews.org/news/article/medicaid-deloitte-run-eligibility-systems-plagued-by-errors/",
+          "https://www.macpac.gov/medicaid-101/",
+          "https://www.gao.gov/assets/gao-22-104251.pdf",
+          "global: 4-12 grade C",
+          "https://en.wikipedia.org/wiki/Model_204",
+          "https://www.microfocus.com/de-de/media/success-story/german_pension_fund_baden_wurttemberg_ss_de.pdf",
+          "https://en.wikipedia.org/wiki/International_Social_Security_Association"
         ]
       },
       "pain": {
-        "score": 2,
+        "score": 3,
         "detail": {
           "s3": "weak",
           "s3_points": 1.0,
           "hn_pain_comments": 0,
-          "in_use_share": 0.009279475982532752,
-          "in_use_share_unweighted": 0.125
+          "in_use_share": 0.4567901234567901,
+          "in_use_share_unweighted": 0.18181818181818182
         },
         "evidence": [
-          "https://files.consumerfinance.gov/f/documents/Mortgage_Servicing_Supervisory_Highlights_11_Final_web_.pdf",
+          "https://www.nao.org.uk/wp-content/uploads/2021/09/Investigation-into-underpayments-of-State-Pension-Summary.pdf",
           "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.009279475982532752 (unweighted 0.125, need 0.3)"
+          "job posts legacy in use, weighted share 0.4567901234567901 (unweighted 0.18181818181818182, need 0.3)"
         ]
       },
       "ai_fit": {
         "score": 4,
         "detail": {
-          "mean": 3.566666666666666,
+          "mean": 3.7139130434782603,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -889,40 +1181,42 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 4,
         "detail": {
-          "s2": "weak",
-          "s2_points": 1.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": true
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "strong",
+          "s4_hit": true,
+          "regulation_reason_hit": false
         },
         "evidence": [
-          "https://www.marketscreener.com/quote/stock/BLACK-KNIGHT-INC-37958698/news/Black-Knight-Financial-Services-Inc-and-Cenlar-FSB-Sign-Five-Year-Renewal-for-LoanSphere-MSP-35213747/",
-          "https://freehire.me/jobs/senior-mainframe-developer-intercontinental-exchange-holdings-inc-mbjskvl3",
-          "regulation reason to stay: Regulators expect extensive testing and validation before a servicer changes major systems (PennyMac complaint)."
+          "https://www.nao.org.uk/wp-content/uploads/2024/02/progress-in-implementing-universal-credit-report.pdf",
+          "https://files.gao.gov/reports/GAO-25-107795/index.html ; https://www.gao.gov/products/gao-23-105478"
         ]
       },
       "crowding": {
-        "score": 4,
+        "score": 5,
         "detail": {
-          "challengers": 7,
-          "funding_usd": 686500000.0,
+          "challengers": 14,
+          "funding_usd": 720300000.0,
           "funding_over": 500000000.0,
-          "unparsed": [
-            "Sagent (Dara)",
-            "PennyMac (Servicing Systems Environment, in-house)"
-          ]
+          "unparsed": []
         },
         "evidence": [
-          "https://finance.yahoo.com/real-estate/articles/carrington-completes-acquisition-valon-mortgage-100000792.html https://www.housingwire.com/articles/rithm-valon-mortgage-servicing/ https://www.housingwire.com/articles/mortgage-servicing-startup-valon-100m-series-c-funding/",
-          "https://pulse2.com/kastle-raises-24-million-series-a-to-build-ai-workforce-for-consumer-lending/ https://coverager.com/kastle-raises-24-million/ https://www.nationalmortgagenews.com/news/kastle-ai-integrates-with-ices-mortgage-servicing-system https://www.housingwire.com/articles/carrington-kastle-ai-partnership/ https://www.housingwire.com/articles/new-american-funding-kastle/ https://www.kastle.ai/ https://www.ycombinator.com/companies/kastle https://www.ycombinator.com/launches/Ld4-kastle-ai-servicing-for-mortgage-lending",
-          "https://www.seiright.com/ https://www.ycombinator.com/companies/sei-ai",
-          "https://www.nationalmortgagenews.com/news/mr-cooper-gains-20-stake-in-sagent https://www.nationalmortgagenews.com/news/sharmas-promotion-at-sagent-sets-up-next-phase-for-dara https://sagent.com/2025/10/01/from-the-source-servicing-at-the-scale-of-the-wake-of-rockets-move/ https://sagent.com/2026/08/13/six-keys-to-tuning-up-the-15-trillion-servicing-sector/ https://sagent.com/2026/04/09/evergreen-home-loans-selects-dara-by-sagent-to-power-modern-end-to-end-mortgage-servicing/ https://sagent.com/2026/03/02/land-home-financial-services-will-deploy-dara-by-sagent-to-modernize-end-to-end-mortgage-servicing/ https://sagent.com/2026/02/16/click-n-close-to-deploy-dara-by-sagent-to-power-core-consumer-and-default-servicing/",
-          "https://www.housingwire.com/articles/brace-picks-up-15-7-million-in-series-b-funding-round/ https://press.stavvy.com/stavvy-acquires-brace https://fintech.global/2023/08/02/startup-stavvy-acquires-mortgage-servicing-rival-brace/",
-          "https://www.thoughtmachine.net/press-releases/together-selects-thought-machine-to-modernise-technology-stack",
-          "https://s201.q4cdn.com/340896660/files/doc_presentations/2019/11/2019-Servicing-Systems-Environment-FAQ.pdf",
-          "funding unparsed: Sagent (Dara), PennyMac (Servicing Systems Environment, in-house)"
+          "https://pulse2.com/fortuna-health-18-million-raised-for-consumer-medicaid-navigation-platform/ https://www.ycombinator.com/companies/fortuna-health https://www.fortunahealth.com/resources/unite-us-and-fortuna-health-partnership",
+          "https://www.causeartist.com/blog/turnout-raises-35m-to-build-an-ai-advocate-for-every-american https://www.prnewswire.com/news-releases/turnout-secures-21m-in-seed-funding-to-fuel-mission-to-simplify-government-bureaucracy-302558564.html",
+          "https://www.chcf.org/blog/2026/07/16/how-ai-powered-outreach-is-helping-californians-keep-their-medi-cal-coverage/ https://www.ycombinator.com/companies/careforce https://timesofsandiego.com/tech/2026/08/10/ai-medicaid-enrollment-concerns/ https://www.latinotimes.org/2026/09/ai-is-being-used-to-boost-medicaid-enrollment-but-not-without-concerns/",
+          "https://www.navapbc.com/nava-timeline https://www.navapbc.com/news/nava-acquires-beam https://www.prnewswire.com/news-releases/nava-acquires-beam-to-accelerate-modern-open-benefits-delivery-302677811.html https://www.route-fifty.com/artificial-intelligence/2026/03/open-source-ai-assistant-shows-promise-california-caseworkers-service-delivery/412378/",
+          "https://techcrunch.com/2022/11/17/beam-raises-6-4m-to-help-citizens-access-safety-net-funds/ https://www.navapbc.com/news/nava-acquires-beam",
+          "https://www.prnewswire.com/news-releases/aidkit-2025-impact-report-signals-shift-as-state-and-local-agencies-take-larger-role-in-disaster-aid-302743860.html https://www.causeartist.com/blog/aidkit-ready-disaster-cash-assistance",
+          "https://www.cardyai.com/about-us https://www.thesaasnews.com/news/cardinality-ai-raises-12-5-million-in-series-b https://www.prnewswire.com/news-releases/cardycares-cardinalityais-healthcare-solutions-suite-302555238.html",
+          "https://www.hyperscience.ai/newsroom/snap-benefit-processing-enters-ai-era-hyperscience-unveils-single-platform-solution-to-address-increased-hr-1-mandates/",
+          "https://www.housingwire.com/articles/checkr-acquires-truv-mortgage-government-income-verification/ https://truv.com/public-sector",
+          "https://www.prnewswire.com/news-releases/unite-us-announces-it-has-raised-150m-to-scale-nationwide-social-care-infrastructure-301247923.html https://uniteus.com/press/ny-social-care-networks-unite-us-1115-medicaid-waiver-alignment/ https://www.fortunahealth.com/resources/unite-us-and-fortuna-health-partnership",
+          "https://en.wikipedia.org/wiki/Propel_(company) https://www.propel.app/insights/using-ai-to-help-snap-recipients-diagnose-and-restore-lost-benefits/ https://www.propel.app/blog/ai-can-strengthen-our-safety-net-these-leaders-are-learning-how/",
+          "https://techcrunch.com/2022/02/24/promise-government-installment-plans-raises-25m/ https://www.promise-pay.com/government https://en.wikipedia.org/wiki/Phaedra_Ellis-Lamkins",
+          "https://inc42.com/buzz/haqdarshak-raises-funding-to-enable-easy-information-access-through-technology/ https://reports.weforum.org/docs/WEF_The_Art_of_AI_for_Impact_Haqdarshak_2026.pdf",
+          "https://www.route-fifty.com/management/2024/07/nonprofits-abrupt-closure-puts-access-public-benefits-risk/397968/"
         ]
       }
     }
@@ -936,18 +1230,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 54300733.0,
           "users_midpoint": 2200024.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 54300733.0,
+          "value_usd": {
+            "low": 79067748495.0,
+            "mid": 474485823874.2796,
+            "high": 2369614141470.0
+          },
+          "midpoint": 474485823874.2796,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 5.43007e+07 (buyer universe)",
+          "market value $474,485,823,874 mid (5.43007e+07 buyers x segment spend)",
           "EU: 6-18 grade C",
           "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251013-2",
           "SG: 4-12 grade C",
@@ -1042,18 +1342,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 42223206.0,
           "users_midpoint": 5862536.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 42223206.0,
+          "value_usd": {
+            "low": 3556366559.5,
+            "mid": 135385115634.6552,
+            "high": 887519784520.0
+          },
+          "midpoint": 135385115634.6552,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 4.22232e+07 (buyer universe)",
+          "market value $135,385,115,635 mid (4.22232e+07 buyers x segment spend)",
           "AU: 1-3 grade C",
           "https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits/latest-release",
           "EU: 4-12 grade C",
@@ -1155,18 +1461,24 @@
       "size": {
         "score": 3,
         "detail": {
-          "midpoint": 5461.5,
           "users_midpoint": 1052.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 5461.5,
+          "value_usd": {
+            "low": 771288500.0,
+            "mid": 2579103846.4261026,
+            "high": 8105268500.0
+          },
+          "midpoint": 2579103846.4261026,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 5461.5 (buyer universe)",
+          "market value $2,579,103,846 mid (5461.5 buyers x segment spend)",
           "UK: 1-3 grade C",
           "https://www.cgi.com/sites/default/files/2025-04/cgi-trade360-short-overview-brochure-2025.pdf",
           "https://www.bankofengland.co.uk/prudential-regulation/authorisations/which-firms-does-the-pra-regulate",
@@ -1244,52 +1556,46 @@
     }
   },
   {
-    "slug": "courts-justice",
+    "slug": "card-payments-processing",
     "total": 45.0,
     "total_raw": 2.0,
     "flags": [],
     "parts": {
       "size": {
-        "score": 2,
+        "score": 5,
         "detail": {
-          "midpoint": 118.5,
-          "users_midpoint": 165.5,
-          "basis": "buyer_universe",
+          "users_midpoint": 1556.0,
+          "basis": "market_value",
+          "buyers_mid": 12097.5,
+          "value_usd": {
+            "low": 3308976200.0,
+            "mid": 26211079307.2992,
+            "high": 210648516000.0
+          },
+          "midpoint": 26211079307.2992,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 118.5 (buyer universe)",
-          "AU: 1-3 grade C",
-          "https://www.itnews.com.au/news/justicelink-to-unify-nsw-courts-98567",
-          "https://courts.nsw.gov.au/about-us/about-the-courts-and-tribunals.html",
-          "EU: 16-44 grade C",
-          "https://www.bmjv.de/DE/themen/digitales/digitalisierung_justiz/digitalisierungsinitiative/laendervorhaben/_doc/artikel_vorhaben_02_gefa.html",
-          "https://eucrim.eu/news/cepej-2024-report-on-european-judicial-systems/",
-          "IN: 1-3 grade C",
-          "https://services.ecourts.gov.in/ecourtindia_v6/?p=about_us/index",
-          "MY: 1-2 grade B",
-          "https://www.bernama.com/en/news.php?id=2505009",
-          "PH: 1-1 grade B",
-          "https://3ieimpact.org/sites/default/files/2021-02/SC-PWP-IE-brief.pdf",
-          "SG: 1-1 grade B",
-          "https://www.crimsonlogic.com/case-study-crimsonlogic-elitigation",
-          "UK: 1-3 grade B",
-          "https://www.nao.org.uk/reports/new-it-systems-for-magistrates-courts-the-libra-project/",
-          "https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service/about",
-          "US: 52-52 grade C",
-          "https://investors.tylertech.com/news/news-details/2024/Tyler-Technologies-to-Enhance-Court-Case-Accessibility-and-Efficiency-for-the-Commonwealth-of-Kentucky/default.aspx",
-          "https://www.linkedin.com/company/justice-systems-inc.",
-          "https://equivant-court.com/about-us/",
-          "https://thecourtmanager.org/articles/rising-to-the-challenge-deploying-a-multi-agency-integrated-case-management-system-the-spokane-experience/",
-          "https://www.uscourts.gov/data-news/judiciary-news/2026/03/10/judges-outline-accelerated-modernization-case-management-system",
-          "https://bjs.ojp.gov/content/pub/pdf/sco11.pdf",
-          "global: 37-111 grade C",
-          "https://www.sec.gov/Archives/edgar/data/783412/000143774925038836/djco20250930_10k.htm"
+          "market value $26,211,079,307 mid (12097.5 buyers x segment spend)",
+          "EU: 3-9 grade C",
+          "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260213~590707b254.en.html",
+          "SG: 4-12 grade C",
+          "https://eservices.mas.gov.sg/fid/institution?sector=Banking",
+          "TH: 1-3 grade C",
+          "https://en.wikipedia.org/wiki/List_of_banks_in_Thailand",
+          "US: 1-3 grade C",
+          "https://www.fdic.gov/quarterly-banking-profile/quarterly-banking-profile-second-quarter-2026.pdf",
+          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
+          "global: 769-2307 grade C",
+          "https://www.mphasis.com/home/thought-leadership/blog/mainframe-based-credit-card-products.html",
+          "https://www.aciworldwide.com/about-aci/history",
+          "https://www.hps-worldwide.com/about-hps",
+          "https://vir.com.vn/opening-way-for-digital-payments-71356.html"
         ]
       },
       "pain": {
@@ -1297,20 +1603,20 @@
         "detail": {
           "s3": "weak",
           "s3_points": 1.0,
-          "hn_pain_comments": 3,
-          "in_use_share": 0.0,
-          "in_use_share_unweighted": 0.0
+          "hn_pain_comments": 1,
+          "in_use_share": 0.018072289156626505,
+          "in_use_share_unweighted": 0.17391304347826086
         },
         "evidence": [
-          "https://hiepro.ehawaii.gov/resources/108209/ATTACHMENT%207-Attachment%207%20Judiciary%20Technical%20Background%20and%20Current%20Systems.pdf",
-          "hn firsthand pain >= 0.7: 3 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+          "https://rivero.tech/blog/issuer-banks-reconcile-mastercard-dispute-fund-movements-guide",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.018072289156626505 (unweighted 0.17391304347826086, need 0.3)"
         ]
       },
       "ai_fit": {
         "score": 4,
         "detail": {
-          "mean": 3.56375,
+          "mean": 3.5195833333333333,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -1320,41 +1626,45 @@
         ]
       },
       "lockin": {
-        "score": 3,
+        "score": 4,
         "detail": {
           "s2": "strong",
           "s2_points": 2.0,
           "s4": "weak",
           "s4_hit": false,
-          "regulation_reason_hit": false
+          "regulation_reason_hit": true
         },
         "evidence": [
-          "https://www.courts.state.md.us/media/news/2024/pr20240506 ; https://www.bmjv.de/DE/themen/digitales/digitalisierung_justiz/digitalisierungsinitiative/laendervorhaben/_doc/artikel_vorhaben_02_gefa.html",
-          "https://www.law.georgetown.edu/tech-institute/wp-content/uploads/sites/42/2023/02/Judicial-Innovation-Fellowship-Roadmap-1.pdf"
+          "https://www.americanbanker.com/payments/news/bank-of-america-returns-its-consumer-card-portfolio-to-tsys ; https://www.sec.gov/Archives/edgar/data/0000721683/000072168304000062/chaserelease.htm ; TSYS 10-K FY2007 https://www.sec.gov/Archives/edgar/data/0000721683/000095014408001510/g11668exv13w1.htm",
+          "https://www.bmc.com/blogs/mainframe-survey-financial-services-key-takeaways/ ; https://www.itjobboard.co.uk/job/16225533/visionplus-developer-cobol-and-cics/",
+          "regulation reason to stay: Scheme certifications, regulatory reporting and fraud and collections integrations are built up over decades around the core."
         ]
       },
       "crowding": {
-        "score": 3,
+        "score": 5,
         "detail": {
-          "challengers": 7,
-          "funding_usd": 8239000.0,
+          "challengers": 12,
+          "funding_usd": 2398000000.0,
           "funding_over": 500000000.0,
           "unparsed": [
-            "jAI (MinutaIA)",
-            "Gotiva (Grupo Interjato)",
-            "eCourtDate",
-            "CaseLines (Thomson Reuters Case Center)"
+            "Marqeta",
+            "Enfuce"
           ]
         },
         "evidence": [
-          "https://www.abajournal.com/news/article/clio-acquires-learned-hand-an-ai-company-for-courts-and-judges https://www.artificiallawyer.com/2026/09/30/clio-buys-learned-hand-as-judiciary-strategy-expands/ https://www.prnewswire.com/news-releases/clio-acquires-learned-hand-302893566.html https://www.lawnext.com/2026/09/clio-acquires-learned-hand-giving-its-new-judiciary-business-an-existing-product.html https://calmatters.org/economy/technology/2026/05/ai-los-angeles-riverside-courts/ https://www.beri.net/article/clio-learned-hand-acquisition-judiciary-ai-courts-bench-memo-data-segregation-conflict https://www.theamericancounsel.com/when-courts-adopt-ai-in-the-dark-privacy-legitimacy-and-the-democratic-stakes-of-los-angeless-learned-hand-experiment/ https://venturecapitaltracker.com/2026-clio-acquires-learned-hand-judiciary-ai",
-          "https://www.direitonews.com.br/2026/02/minutaia-atinge-10-milhoes-minutas-juridicas-ia-direito-brasileiro-consolida.html https://www.jai.com.br/ https://conjur.com.br/2026-ago-27/jusbrasil-anuncia-aquisicao-do-minutaia/ https://aws.amazon.com/marketplace/pp/prodview-h6unzzc3xrbeq",
-          "https://ssir.org/articles/entry/legal-tech-nonprofit-court-ai-injustices-india-court-system https://www.orfonline.org/expert-speak/global-ai-impact-commons-stories-adalat-ai https://www.adalat.ai/impact",
-          "https://techcrunch.com/2022/09/06/justicetext-raises-2-2m-to-increase-transparency-in-criminal-evidence-gathering https://peopleofcolorintech.com/articles/justicetext-raises-3m-to-support-public-defenders-with-ai/ https://www.justicetext.com/press",
-          "https://tiinside.com.br/21/09/2026/gotiva-lanca-plataforma-de-ia-juridica-integrada-aos-sistemas-do-judiciario/",
-          "https://getlatka.com/companies/ecourtdate",
-          "https://www.lawtimesnews.com/practice-areas/litigation/thomson-reuters-acquires-cloud-based-platform-caselines-enabling-courts-to-operate-virtually/332518",
-          "funding unparsed: jAI (MinutaIA), Gotiva (Grupo Interjato), eCourtDate, CaseLines (Thomson Reuters Case Center)"
+          "https://www.sec.gov/Archives/edgar/data/0001522540/000152254026000061/mqearningsrelease-q2x2026.htm https://www.sec.gov/Archives/edgar/data/1522540/000152254026000017/mq-20251231.htm",
+          "https://en.wikipedia.org/wiki/Zeta_(company) https://financialit.net/news/payments/zeta-unveils-ai-capabilities-card-issuers-within-tachyon https://www.zeta.tech/in/press/zeta-funding-omni-stack",
+          "https://www.pismo.io/blog/visa-to-acquire-pismo/ https://www.pymnts.com/visa/2026/visas-pismo-helps-vivi-money-launch-new-financial-platform/ https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.20301.html",
+          "https://www.thredd.ai/ https://www.pymnts.com/news/artificial-intelligence/2026/thredd-visa-enableai-powered-card-payments-eu/ https://techcrunch.com/2022/01/13/global-processing-services-adds-100m-to-its-coffers-to-grow-its-embedded-finance-and-api-payments-platform/",
+          "https://en.wikipedia.org/wiki/Highnote_(platform) https://highnote.com/blog/highnote-powers-a-new-era-of-commercial-card-issuing-for-online-travel",
+          "https://theheadandtale.com/fintech-news/m2p-fintech-fy25-revenue-up-33--losses-surge-by-91-/ https://www.crowdfundinsider.com/2026/08/297029-maybank-ageas-1-18b-deal-leads-this-weeks-fundings-and-acquisitions/ https://entrackr.com/2024/09/m2p-fintech-raises-over-100-mn-in-primary-and-secondary-funding/",
+          "https://www.lithic.com/ https://www.pymnts.com/news/artificial-intelligence/2026/lithic-everything-payments-assumes-about-shopping-is-about-to-break/",
+          "https://www.embeddedfinanceindex.com/vendors/enfuce",
+          "https://techcrunch.com/2021/11/16/justt-comes-out-of-stealth-with-70m-in-funding-to-help-online-merchants-fight-false-chargebacks-with-ai https://pulse2.com/justt-ai-based-chargeback-management-company-raises-30-million-series-c/",
+          "https://www.chargeflow.io/blog/chargeflow-raises-35m-series-a-to-transform-chargeback-management",
+          "https://www.prnewswire.com/news-releases/pagos-transforms-payments-data-from-harmonized-to-ai-ready-302703312.html",
+          "https://rye.com/blog/agentic-commerce-startups",
+          "funding unparsed: Marqeta, Enfuce"
         ]
       }
     }
@@ -1368,18 +1678,27 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 479536.5,
           "users_midpoint": 88.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 479536.5,
+          "value_usd": {
+            "low": 280763922000.0,
+            "mid": 1907842678836.9941,
+            "high": 15319061758000.0
+          },
+          "midpoint": 1907842678836.9941,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (EU Eurostat healthcare resource statistics): counts other, not buyers"
           ]
         },
         "evidence": [
-          "possible buyers 479536 (buyer universe)",
+          "market value $1,907,842,678,837 mid (479536 buyers x segment spend)",
           "AU: 1-3 grade C",
           "https://www.itnews.com.au/news/qld-health-risks-patient-admin-system-failure-after-halting-overhaul-534656",
           "https://pp.aihw.gov.au/hospitals/overview/hospitals-at-a-glance",
@@ -1471,18 +1790,29 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 2893037.0,
           "users_midpoint": 27608.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 2893037.0,
+          "value_usd": {
+            "low": 7366971175.0,
+            "mid": 33612728662.812202,
+            "high": 158965501600.0
+          },
+          "midpoint": 33612728662.812202,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (US US Census Bureau, 2022 Economic Census Sector 31-33 Manufacturing (EC2231BASIC) / County Business Patterns): counts other, not buyers",
+            "universe skip (ID BPS Statistik Industri Manufaktur (Survei Tahunan Perusahaan Industri Manufaktur, large and medium establishments / IBS)): counts other, not buyers",
+            "universe skip (AU ABS Counts of Australian Businesses, including Entries and Exits (ANZSIC Division C Manufacturing)): counts other, not buyers"
           ]
         },
         "evidence": [
-          "possible buyers 2.89304e+06 (buyer universe)",
+          "market value $33,612,728,663 mid (2.89304e+06 buyers x segment spend)",
           "EU: 5-15 grade C",
           "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_the_manufacturing_sector",
           "SG: 7-21 grade C",
@@ -1573,18 +1903,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 139707.5,
           "users_midpoint": 135.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 139707.5,
+          "value_usd": {
+            "low": 468440000.0,
+            "mid": 120990244099.21446,
+            "high": 27859050000000.0
+          },
+          "midpoint": 120990244099.21446,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 139708 (buyer universe)",
+          "market value $120,990,244,099 mid (139708 buyers x segment spend)",
           "AU: 1-3 grade C",
           "https://www.payrolltax.gov.au/",
           "ID: 1-3 grade C",
@@ -1683,18 +2019,24 @@
       "size": {
         "score": 3,
         "detail": {
-          "midpoint": 3308.0,
           "users_midpoint": 3065.5,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 3308.0,
+          "value_usd": {
+            "low": 47325000.0,
+            "mid": 3843548672.77624,
+            "high": 311490000000.0
+          },
+          "midpoint": 3843548672.77624,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 3308 (buyer universe)",
+          "market value $3,843,548,673 mid (3308 buyers x segment spend)",
           "AU: 1-3 grade C",
           "https://www.titlesqld.com.au/wp-content/uploads/2026/04/ltpm-part-00.pdf",
           "https://www.arnecc.gov.au/about_us/membership/",
@@ -1794,18 +2136,24 @@
       "size": {
         "score": 4,
         "detail": {
-          "midpoint": 18287.0,
           "users_midpoint": 516.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 18287.0,
+          "value_usd": {
+            "low": 3813666400.0,
+            "mid": 16453098060.751919,
+            "high": 70053464000.0
+          },
+          "midpoint": 16453098060.751919,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 18287 (buyer universe)",
+          "market value $16,453,098,061 mid (18287 buyers x segment spend)",
           "US: 40-120 grade C",
           "https://sagent.com/about/",
           "https://www.fdic.gov/news/press-releases/2026/fdic-insured-institutions-reported-return-assets-137-percent-and-net",
@@ -1897,6 +2245,241 @@
     }
   },
   {
+    "slug": "pension-provident-fund-admin",
+    "total": 45.0,
+    "total_raw": 2.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 5,
+        "detail": {
+          "users_midpoint": 1555.0,
+          "basis": "market_value",
+          "buyers_mid": 7796.0,
+          "value_usd": {
+            "low": 4163563750.0,
+            "mid": 21430959539.206184,
+            "high": 107347812600.0
+          },
+          "midpoint": 21430959539.206184,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (US DOL EBSA Form 5500 Private Pension Plan Bulletin): counts other, not buyers",
+            "universe unparsed (US Census Bureau Annual Survey of Public Pensions (state and locally administered DB systems)): no buyer count (organisations)"
+          ]
+        },
+        "evidence": [
+          "market value $21,430,959,539 mid (7796 buyers x segment spend)",
+          "EU: 13-39 grade C",
+          "https://www.eiopa.europa.eu/document/download/83b77884-0677-4a06-9976-4fa006b79b01_en?filename=IORPs+Landscape+Factsheet+2024.pdf",
+          "IN: 1-3 grade C",
+          "https://currentaffairs.adda247.com/epfo-launches-cites-2-01-platform-fy26-pf-interest-to-be-credited-by-july-15/",
+          "SG: 1-1 grade B",
+          "https://www.cpf.gov.sg/content/dam/web/member/infohub/documents/CPF%20Annual%20Report%202024%20Part%201.pdf",
+          "UK: 107-321 grade C",
+          "https://heywood.com/products/pension-administration/altair",
+          "https://democracy.eastsussex.gov.uk/documents/s16606/Item%2014%20Appendix%202%20-%20Pensions%20Software%20Market%20Review.pdf",
+          "https://www.thepensionsregulator.gov.uk/en/document-library/research-and-analysis/occupational-defined-benefit-landscape-in-the-uk-2025",
+          "US: 651-1953 grade C",
+          "https://www.wealthmanagement.com/rpa-news/fis-new-cloud-based-record-keeping-system-could-unlock-the-potential-of-401-k-plans",
+          "https://www.prnewswire.com/news-releases/vitech-systems-group-and-international-union-of-painters-and-allied-trades-industry-pension-fund-elevate-partnership-with-v3locity-a-pioneering-advance-in-cloud-native-pension-administration-302020217.html",
+          "global: 5-15 grade C",
+          "https://www.bravurasolutions.com/wp-content/uploads/2025/07/Sonata-factsheet-July2025.pdf",
+          "https://www.sagitec.com/pension-software-company/press-releases/washington-state-department-of-retirement-systems-awards-pension-modernization-project-to-sagitec-solutions"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://www.sagitec.com/hubfs/docs/Neospin-TRS-case-study.pdf?hsLang=en-au",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.7023076923076923,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.calstrs.com/files/f37ce6df1/TRB+2024-11+Item+09.00++Pension+Solution+Project+Update.pdf",
+          "https://www.computerworld.com/article/1392782/cobol-based-system-for-160-billion-pension-fund-is-a-political-football.html",
+          "regulation reason to stay: Regulatory and fiduciary risk: payment errors to retirees are highly visible, and boards prefer incumbent stability"
+        ]
+      },
+      "crowding": {
+        "score": 5,
+        "detail": {
+          "challengers": 13,
+          "funding_usd": 1821750000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "SinglepointAI",
+            "Warren",
+            "Sagitec Solutions",
+            "Vitech Systems Group (V3locity)"
+          ]
+        },
+        "evidence": [
+          "https://stax.ai/resources/stax-ai-raises-funding-to-11-65m-marking-new-era-for-retirement-tpa-industry/ https://www.stax.ai/resources/8-of-the-top-10-retirement-tpas-choose-stax-ai-to-power-administration-and-growth https://blog.neotribe.vc/ai-for-retirement/ https://www.tryfinch.com/blog/staxai",
+          "https://www.finsmes.com/2025/10/aboon-raises-17-5m-in-seed-funding.html https://www.prnewswire.com/news-releases/edward-jones-kicks-off-development-of-groundbreaking-retirement-plan-management-tech-302893024.html",
+          "https://www.singlepointai.com/faq.html https://www.stocktitan.net/news/VOYA/voya-financial-and-singlepoint-ai-advance-retirement-plan-onboarding-iy8mp2ce5uas.html",
+          "https://www.startup.eu/investments/warren-10-m-seed-06-2026 https://motivepartners.com/content/why-we-invested-in-warren",
+          "https://www.alleywatch.com/2026/02/vestwell-retirement-infrastructure-workplace-savings-platform-ira-employment-aaron-schumm/",
+          "https://humaninterest.com/pressroom/articles/human-interest-announces-401k-solutions-for-ubs-financial-advisors/ https://sacra.com/c/human-interest/",
+          "https://techcrunch.com/2023/05/15/uk-pension-platform-smart-nabs-95m/ https://www.pensionsage.com/pa/Smart-Pension-surpasses-10bn-AUM.php https://www.pensionsage.com/pa/Smart-pension-acquires-Evolve-pensions.php",
+          "https://www.abc.net.au/news/2026-03-27/grow-inc-super-fund-admin-provider-hesta-serious-financial-woes/106358950 https://dealroom.co/news/147540-mufg-moves-to-acquire-australian-super-tech-firm-grow-inc/",
+          "https://www.pensionsage.com/pa/Penfold-surpasses-1bn-in-assets-under-administration-amid-growing-demand-for-digital-pensions.php https://greshamhouseventures.com/portfolio/penfold/",
+          "https://ffnews.com/news/festina-finance-secures-25m-growth-investment-to-scale-european-pension-tech",
+          "https://www.sagitec.com/pension-software-company/press-releases/sagitec-secures-contract-to-modernize-a-retirement-system-for-a-state-wide-pension-fund-in-the-u.s https://www.sagitec.com/pension-software-company/press-releases/washington-state-department-of-retirement-systems-awards-pension-modernization-project-to-sagitec-solutions",
+          "https://www.prnewswire.com/news-releases/vitech-systems-group-and-international-union-of-painters-and-allied-trades-industry-pension-fund-elevate-partnership-with-v3locity-a-pioneering-advance-in-cloud-native-pension-administration-302020217.html https://myupp.ca/upp-selects-vitechs-v3locity-to-administer-new-integrated-pension-system/",
+          "https://techfundingnews.com/arca-digital-1m-seed-pension-tech-spain/",
+          "funding unparsed: SinglepointAI, Warren, Sagitec Solutions, Vitech Systems Group (V3locity)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "port-terminal-operating-system",
+    "total": 45.0,
+    "total_raw": 2.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 1373.5,
+          "basis": "market_value",
+          "buyers_mid": 444.5,
+          "value_usd": {
+            "low": 213720500.0,
+            "mid": 1342225708.4082875,
+            "high": 6179665000.0
+          },
+          "midpoint": 1342225708.4082875,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (VN Government decision listing Vietnam's seaports (Prime Minister's decision, 2022)): no buyer count (sites)"
+          ]
+        },
+        "evidence": [
+          "market value $1,342,225,708 mid (444.5 buyers x segment spend)",
+          "EU: 1-3 grade C",
+          "https://www.eca.europa.eu/lists/ecadocuments/sr16_23/sr_maritime_en.pdf",
+          "SG: 1-2 grade B",
+          "https://arxiv.org/pdf/1904.13251",
+          "https://www.mpa.gov.sg/port-marine-ops/operations/port-infrastructure/terminals",
+          "global: 685-2055 grade C",
+          "https://kaleris.com/news/northport-partners-with-kaleris-to-enhance-terminal-operating-system/",
+          "https://www.globenewswire.com/en/news-release/2012/04/05/1771866/0/en/50th-site-now-live-with-Navis-SPARCS-N4-investments-continue-in-port-automation-technologies.html",
+          "https://www.yict.com.cn/about-event/milestones.html?locale=en_US",
+          "https://tideworks.com/about-us/",
+          "https://itea4.org/organisation/total-soft-bank-ltd-1.html",
+          "https://rbs-tops.com/how-it-all-started/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://tideworks.com/tos-of-the-future-port-strategy/ ; https://www.portwiseconsultancy.com/blog/which-software-helps-with-efficient-berth-planning/",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 2.873333333333333,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://gaports.com/n4/n4-faqs/ ; https://www.apmterminals.com/en/news/news-releases/2020/200611-covid-19-brings-unexpected-benefits-to-apm-terminals-global-tos-roll-out ; https://www.apmterminals.com/en/aarhus/practical-information/news/2022/220519-preparing-for-the-future-with-new-operating-system",
+          "https://kitalent.com/articles/rijeka-port-talent-gap ; https://kitalent.com/articles/genoa-maritime-logistics-talent"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 8,
+          "funding_usd": 34600000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Loadmaster.ai",
+            "Westwell (Shanghai Westwell Lab)",
+            "Octopi (Cetus Labs), now Octopi by Navis",
+            "ILCS (PT Integrasi Logistik Cipta Solusi), TOS Nusantara"
+          ]
+        },
+        "evidence": [
+          "https://portchain.com/insights/100-terminals-join-the-portchain-connect-network-0 https://portchain.com/insights/hapag-lloyds-collaboration-with-portchain-on-ai-fleet-planning https://smartmaritimenetwork.com/2026/03/18/cice-veracruz-joins-portchain-to-improve-berth-alignment/ https://tracxn.com/d/companies/portchain/__Ut5ISEOklWVXqAT7kAD578ViQ25dMIY4ZU3yoW7Kx8U https://tracxn.com/d/trending-business-models/startups-in-port-management-software/__M832-cLRlD1H_RZo9hHdN4VpRueprJ0KKFUd8d6Ob2c/companies",
+          "https://loadmaster.ai/about-us/ https://loadmaster.ai/ https://loadmaster.ai/terminalcontrol-tos/",
+          "https://tracxn.com/d/companies/avlino/__0NcWT9m47aCD4jJSjLLkQhZTK7_Dl3n0sNNRgtZNLls https://en.portnews.ru/news/310267/ https://avlino.com/2025/04/15/new-product-names-to-match-avlinos-strategic-positioning/ https://colombo-plan.org/wp-content/uploads/2026/02/Presentation-3-Avlino-Ramana-Jampala.pdf https://avlino.com/",
+          "https://equalocean.com/news/2023061519783-westwell-launches-next-gen-digital-intelligent-port-operating-platform-toc https://en.westwell-lab.com/resources/CaseStudies/westwell-port-automation-solutions-at-toc https://en.westwell-lab.com/resources/Blogs/intelligent-terminal-scheduling https://cnmra.com/a-glimpse-of-13-representative-chinese-autonomous-driving-companies-in-2025/ https://www.wipo.int/en/web/ip-advantage/w/stories/westwell-china-making-global-container-logistics-more-sustainable",
+          "https://maritime-executive.com/article/investors-support-ai-platform-to-enhance-terminal-operations https://container-news.com/container-logistics-ai-solution-raises-almost-us1-million-in-funding/ https://startupsreal.com/eyard-raises-e800k-in-a-seed-round-led-by-mundi-ventures/ https://www.empresia.es/persona/fernandez-pena-curbera-pablo/",
+          "https://www.freightwaves.com/news/port-report-long-beach-terminals-seek-solutions-to-truck-fluidity https://www.freightwaves.com/news/bluecargo-raises-11m-to-bring-visibility-to-drayage-fees https://www.bluecargo.io/",
+          "https://www.kalmarglobal.com/news--insights/press_releases/2019/cargotecs-navis-acquires-octopi-a-terminal-operating-system-for-small-container-and-mixed-cargo-terminals https://www.thescxchange.com/articles/4663-octopi-by-navis-announces-expanded-customer-base",
+          "https://windonesia.com/article/ilcs-pelindo-tpk-implement-tos-nusantara-at-port-of-sorong https://mimbarmaritim.com/2025/07/22/perkuat-digitalisasi-nasional-ilcs-dukung-implementasi-tos-nusantara-di-pelabuhan-sorong/",
+          "funding unparsed: Loadmaster.ai, Westwell (Shanghai Westwell Lab), Octopi (Cetus Labs), now Octopi by Navis, ILCS (PT Integrasi Logistik Cipta Solusi), TOS Nusantara"
+        ]
+      }
+    }
+  },
+  {
     "slug": "retail-pos-merch",
     "total": 45.0,
     "total_raw": 2.0,
@@ -1905,18 +2488,24 @@
       "size": {
         "score": 5,
         "detail": {
-          "midpoint": 37736028.0,
           "users_midpoint": 1722.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 37736028.0,
+          "value_usd": {
+            "low": 822977865400.0,
+            "mid": 3795871639207.394,
+            "high": 17609472290130.0
+          },
+          "midpoint": 3795871639207.394,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 3.7736e+07 (buyer universe)",
+          "market value $3,795,871,639,207 mid (3.7736e+07 buyers x segment spend)",
           "EU: 1-3 grade C",
           "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Businesses_in_distributive_trade_sector",
           "global: 860-2580 grade C",
@@ -2009,18 +2598,24 @@
       "size": {
         "score": 4,
         "detail": {
-          "midpoint": 72997.0,
           "users_midpoint": 22760.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 72997.0,
+          "value_usd": {
+            "low": 1170798485.0,
+            "mid": 10142414989.898878,
+            "high": 114740159500.0
+          },
+          "midpoint": 10142414989.898878,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 72997 (buyer universe)",
+          "market value $10,142,414,990 mid (72997 buyers x segment spend)",
           "AU: 10-30 grade C",
           "https://www.tribalgroup.com/news/a-five-year-contract-with-the-callista-group",
           "https://en.wikipedia.org/wiki/Tertiary_Education_Quality_and_Standards_Agency",
@@ -2116,973 +2711,32 @@
     }
   },
   {
-    "slug": "warehouse-management",
-    "total": 45.0,
-    "total_raw": 2.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 5,
-        "detail": {
-          "midpoint": 491373.0,
-          "users_midpoint": 9100.0,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 491373 (buyer universe)",
-          "EU: 20-60 grade C",
-          "https://fr.wikipedia.org/wiki/Hardis",
-          "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sbs_ovw_act?geo=EU27_2020&nace_r2=H521&indic_sbs=ENT_NR&format=JSON&lang=en",
-          "US: 30-90 grade C",
-          "https://www.bls.gov/iag/tgs/iag493.htm",
-          "global: 4500-13500 grade C",
-          "https://www.itjungle.com/2009/12/15/fhs121509-story02/",
-          "https://www.koerber.com/en/about-us/news-and-press/highjump-acquisition"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 4,
-          "in_use_share": 0.0,
-          "in_use_share_unweighted": 0.0
-        },
-        "evidence": [
-          "https://www.ivanti.com/company/press-releases/2021/ivanti-velocity-a-market-leading-mobile-enterprise-application-software-provides-capabilities-for-further-expansion-to-supercharge-supply-chain-warehouse-operations ; https://www.kardex.com/en-us/blog/integrated-warehouse-system-statistics",
-          "hn firsthand pain >= 0.7: 4 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 2,
-        "detail": {
-          "mean": 2.4985714285714287,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 2,
-        "detail": {
-          "s2": "weak",
-          "s2_points": 1.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": false
-        },
-        "evidence": [
-          "https://www.nextgov.com/modernization/2023/01/defense-logistics-agency-shift-warehouse-management-commercial-software/381544/",
-          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/"
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "challengers": 12,
-          "funding_usd": 563400000.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "Unicommerce (Uniware)"
-          ]
-        },
-        "evidence": [
-          "https://retailtechinnovationhub.com/home/2026/3/12/backops-bags-26-million-series-a-to-build-ai-powered-operating-system-for-supply-chains https://backops.com/articles/series-a-announcement https://gradientvc.substack.com/p/backops-series-a https://www.finsmes.com/2024/10/backops-ai-raises-2m-in-pre-seed-funding.html https://www.finsmes.com/2026/09/backops-raises-42m-in-series-b-funding.html https://pulse2.com/backops-raises-42-million-series-b/",
-          "https://techcrunch.com/2026/03/24/doss-raises-55m-for-ai-inventory-management-that-plugs-into-erp/ https://www.doss.com/news/announcing-our-18m-series-a https://theaiinsider.tech/2026/03/26/doss-raises-55m-series-b-to-build-ai-native-inventory-layer-for-modern-erp-systems/",
-          "https://www.prnewswire.com/news-releases/conduit-raises-6m-to-build-the-ai-operating-system-for-dock-and-yard-operations-302723320.html https://briefglance.com/articles/conduit-raises-6m-to-build-an-ai-operating-system-for-warehouse-yards",
-          "https://www.destroai.com/newsroom/destro-raises-8m https://siliconangle.com/2026/09/30/destro-ai-raises-8m-to-coordinate-mixed-robot-fleets-in-enterprise-warehouses/",
-          "https://www.ycombinator.com/companies/retailready https://roughdraftatlanta.com/2024/12/22/sarah-hamer-forbes-30-under-30/",
-          "https://techcrunch.com/2026/02/09/gather-ai-maker-of-curious-warehouse-drones-lands-40m-led-by-keith-blocks-firm/ https://dronelife.com/2026/02/10/gather-ai-raises-40-million-for-warehousing-tech/",
-          "https://www.thesaasnews.com/news/dexory-raises-165-million-in-series-c https://en.ain.ua/2025/10/15/dexory-raises-165m/ https://www.uktech.news/ai/warehouse-robot-dexory-funding-20230627",
-          "https://www.getox.com/about",
-          "https://deposco.com/ https://deposco.com/blog/deposco-secures-35-million-in-new-growth-funding-led-by-newspring/",
-          "https://www.logiwa.com/press-release/logiwa-raises-16-4m-in-series-b-funding-as-company-aims-to-modernize-the-wms-market https://www.logiwa.com/company/press-news/press-releases",
-          "https://unicommerce.com/Unicommerce-Investor-Presentation-Q4FY25.pdf https://entrackr.com/fintrackr/unicommerce-posts-rs-51-cr-revenue-and-rs-47-cr-profit-in-q1-fy27-12258215 https://inc42.com/buzz/unicommerce-q1-profit-increases-20-yoy-to-4-7-cr/ https://www.investorstack.in/earnings-calls/uniecom",
-          "https://www.finsmes.com/2020/10/anchanto-raises-s16-6m-in-series-c-funding.html",
-          "funding unparsed: Unicommerce (Uniware)"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "wealth-portfolio-accounting",
-    "total": 45.0,
-    "total_raw": 2.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "midpoint": 22967.0,
-          "users_midpoint": 2920.0,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 22967 (buyer universe)",
-          "EU: 3-9 grade C",
-          "https://www.efama.org/sites/default/files/files/asset-management-report-2024_0.pdf",
-          "SG: 3-9 grade C",
-          "https://www.mas.gov.sg/-/media/mas-media-library/publications/singapore-asset-management-survey/asset-management-survey-report-2024.pdf",
-          "US: 94-282 grade C",
-          "https://www.sec.gov/Archives/edgar/data/350894/000035089417000010/seic-123116form10xk.htm",
-          "https://www.investmentadviser.org/wp-content/uploads/2026/06/Snapshot-2026.pdf",
-          "global: 1360-4080 grade C",
-          "https://www.kitces.com/blog/portfolio-management-trading-rebalancing-software-review-fintech-competition-addressable-market-size/",
-          "https://www.avaloq.com/about",
-          "https://en.wikipedia.org/wiki/SimCorp"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 0,
-          "in_use_share": 0.0007663913913913914,
-          "in_use_share_unweighted": 0.07894736842105263
-        },
-        "evidence": [
-          "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/documents/campaign/the-north-america-family-office-report-2024.pdf",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0007663913913913914 (unweighted 0.07894736842105263, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.859565217391304,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "s2": "weak",
-          "s2_points": 1.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": true
-        },
-        "evidence": [
-          "https://www.sec.gov/Archives/edgar/data/350894/000035089417000010/seic-123116form10xk.htm",
-          "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/events/approved/reinvent-2025/reinvent/2024/slides/fsi/FSI312_Replatforming-for-reinvention-Modernizing-mainframes-at-Goldman-Sachs.pdf",
-          "regulation reason to stay: Regulatory reporting and custodian feeds are already wired and certified"
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "challengers": 15,
-          "funding_usd": 10729200128.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "Arcesium"
-          ]
-        },
-        "evidence": [
-          "https://www.globenewswire.com/news-release/2026/09/16/3363158/0/en/ridgeline-raises-250m-series-e-valuing-ai-native-fintech-at-1-425-billion.html https://www.wealthmanagement.com/advisor-support-platforms/investment-management-platform-ridgeline-raises-250m-series-e",
-          "https://addepar.com/blog/addepar-powers-9-trillion-in-assets-with-data-and-native-ai https://www.finsmes.com/2025/05/addepar-raises-230m-in-series-g-funding-at-3-25-billion-valuation.html",
-          "https://cwan.com/press-releases/clearwater-analytics-completes-8-4-billion-take-private-acquisition-by-permira-and-warburg-pincus/",
-          "https://masttro.com/ai-info-page",
-          "https://eton-solutions.com/news/eton-solutions-secures-58m-series-c-to-bring-ai-driven-wealth-management-technology-to-the-worlds-leading-family-offices-pes-and-funds/",
-          "https://en.wikipedia.org/wiki/Arcesium https://www.alternativeswatch.com/2025/12/15/arcesium-aquata-launch-new-ai-features/ https://fintech.global/2026/05/20/arcesium-launches-ai-platform-for-institutional-investment/",
-          "https://www.fundguard.com/mondrian-partners-with-fundguard-cloud-native-investment-accounting/ https://www.finsmes.com/2024/03/fundguard-closes-100m-in-series-c-funding.html",
-          "https://www.wealthmanagement.com/advisor-support-platforms/alts-platform-arch-raises-52m-in-series-b-round https://www.oakhcft.com/news/arch-raises-52m-series-b-to-modernize-private-markets-infrastructure https://fintech.global/2026/09/30/arch-extends-ai-platform-into-pre-investment-diligence/",
-          "https://www.marketsmedia.com/goldman-sachs-leads-canoe-intelligences-36m-funding-round/",
-          "https://www.gic.com.sg/uploads/2025/04/Altruist-Raises-152M-Series-F-Led-by-GIC-to-Accelerate-Innovation-for-Growth-Oriented-RIAs.pdf https://riabiz.com/a/2026/3/18/altruist-again-has-staggering-ai-news-1600-ria-firms-subscribe-to-hazel-in-one-month-and-pipeline-suggests-1500-advisors-will-join-per-month-for-next-nine-months-ceo-says https://wealthtechtoday.com/2026/08/26/vanguard-altruist-acquisition-hazel/ https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/vanguard-announcement-qa-august-2026.html",
-          "https://research.contrary.com/company/vise https://www.wealthmanagement.com/financial-technology/a-frank-chat-with-the-founders-of-vise https://www.sourcery.vc/p/breaking-vise-hits-22b-in-platform https://www.prnewswire.com/news-releases/vise-partners-with-bitwise-to-introduce-crypto-model-portfolios-for-advisors-302888480.html https://vise.com/learn/vise-partners-with-55b-newedge-to-deliver-personalized-portfolios-at-scale",
-          "https://www.landytech.com/",
-          "https://pulse2.com/asseta-ai-4-2-million-seed-funding/ https://alleywatch.com/2025/11/asseta-ai-family-office-accounting-ai-infrastructure-multi-entity-financial-management-dean-palmiter/",
-          "https://www.wealthmanagement.com/ria-news/savvy-wealth-raises-100m-valuation-hits-600m https://www.investmentnews.com/goria/custodian/savvy-wealth-opens-its-custodial-platform-to-outside-rias/268321",
-          "https://www.wealthmanagement.com/ria-news/ai-native-wealth-manager-arca-raises-64m https://riabiz.com/a/2026/6/27/an-ria-is-stripping-out-software-from-1-billion-plus-of-acquisitions-with-a-new-485-million-raise-and-sky-high-praise-but-critics-say-arca-wealth-mostly-has-a-new-narrative-for-an-existing-business-model",
-          "funding unparsed: Arcesium"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "airline-pss",
-    "total": 40.0,
-    "total_raw": 1.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 2,
-        "detail": {
-          "midpoint": 889.0,
-          "users_midpoint": 399.5,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 889 (buyer universe)",
-          "EU: 9-27 grade C",
-          "https://transport.ec.europa.eu/document/download/7d7c51df-f11d-4a0c-815c-28a5ae4264b5_en?filename=eu_air_carriers_by_country_holding_an_active_operating_licence.pdf",
-          "SG: 1-3 grade C",
-          "https://www.caas.gov.sg/industry/aircraft-operators/singapore-air-operator/air-operator-certificate/",
-          "UK: 28-28 grade C",
-          "https://www.videcom.com/videcom-airline-systems.aspx",
-          "https://www.caa.co.uk/commercial-industry/airlines/licensing/licence-types/airline-licence-holders/",
-          "US: 13-39 grade C",
-          "https://www.sec.gov/Archives/edgar/data/0001386355/000104746909002555/a2190554z10-k.htm",
-          "https://www.govinfo.gov/content/pkg/FR-2025-06-17/pdf/2025-10965.pdf",
-          "global: 273-378 grade B",
-          "https://amadeus.com/en/airlines/products/altea-passenger-service-system",
-          "https://amadeus.com/en/airlines/overview",
-          "https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
-          "https://en.wikipedia.org/wiki/Transaction_Processing_Facility",
-          "https://www.iata.org/en/about/members/airline-list/"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 0,
-          "in_use_share": 0.0,
-          "in_use_share_unweighted": 0.0
-        },
-        "evidence": [
-          "https://www.automationanywhere.com/company/press-room/automation-anywhere-bot-slashes-flight-cancellation-processing-times-from-20-minutes-to-3-minutes",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.6578260869565216,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": false
-        },
-        "evidence": [
-          "https://investors.southwest.com/news-events/press-releases/detail/604/southwest-airlines-completes-transition-to-amadeus-alta",
-          "https://www.redbooks.ibm.com/redpapers/pdfs/redp4611.pdf"
-        ]
-      },
-      "crowding": {
-        "score": 4,
-        "detail": {
-          "challengers": 7,
-          "funding_usd": 1108440000.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "Amadeus Nevio (incumbent's own replacement)",
-            "Hitit Computer Services (Crane PSS)",
-            "Coforge Aeronova.AI"
-          ]
-        },
-        "evidence": [
-          "https://www.altexsoft.com/travel-industry-news/fetcherr-raises-42m-targets-new-sectors-with-ai-pricing/ https://techcrunch.com/2024/06/26/fetcherr-lands-90m-to-get-airlines-on-board-with-dynamic-pricing/ https://abcnews.com/GMA/Travel/delta-ai-ticket-pricing-means-air-travel/story?id=124343088 https://www.fetcherr.io/blog",
-          "https://flyr.com/about/ https://flyr.com/resource-hub/flyr-raises-295m-to-rebuild-the-foundation-of-travel-technology/ https://www.globenewswire.com/news-release/2026/05/20/3298155/0/en/flyr-powers-riyadh-air-s-debut-as-world-s-first-full-service-airline-built-for-modern-retailing.html https://traveldistributionnews.com/riyadh-air-just-delivered-the-industrys-first-true-offer-and-order-deployment/ https://www.globenewswire.com/news-release/2026/06/09/3308711/0/en/flyr-and-res2-partner-to-accelerate-order-based-delivery.html",
-          "https://amadeus.com/en/blog/articles/finnair-first-airline-amadeus-nevio-ndc https://amadeus.com/en/newsroom/press-releases/new-era-connected-travel-amadeus-finnair-worlds-first-airline-native-orders",
-          "https://www.ibsplc.com/product/airline-passenger-solutions https://www.apax.com/news-views/apax-funds-make-approximately-450m-investment-in-travel-tech-company-ibs-software/ https://asianaviation.com/skyup-airlines-migrates-to-ibs-softwares-ifly-res/",
-          "https://hitit.com/sites/default/files/2026-09/31.03.2026-Interim-Activity-Report_0.pdf https://hitit.com/themes/hitit/documents/Hitit-30.09.2025-interim-activity-report.pdf",
-          "https://investors.coforge.com/hubfs/Press-Release-Intimation-21May-26.pdf?hsLang=en",
-          "https://www.deepair.io/ https://tracxn.com/d/companies/deepair/__Ru2_0hkTdE6HbDTgmywazrXDZs1FLrg4rkvBvewR3N0",
-          "funding unparsed: Amadeus Nevio (incumbent's own replacement), Hitit Computer Services (Crane PSS), Coforge Aeronova.AI"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "capital-markets-trading-clearing",
-    "total": 40.0,
-    "total_raw": 1.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "midpoint": 13391.0,
-          "users_midpoint": 670.0,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 13391 (buyer universe)",
-          "AU: 1-3 grade C",
-          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
-          "https://www.asx.com.au/content/dam/asx/participants/lists-of-participants/asx-trading-participant.pdf",
-          "EU: 6-18 grade C",
-          "IN: 272-816 grade C",
-          "https://www.moneylife.in/article/sebi-slaps-rs25-lakh-penalty-on-mcx-for-delay-in-disclosures-linked-to-63-moons-contract/77238.html",
-          "https://www.moneylife.in/article/nse-pulls-plug-from-its-now-trading-software-63-moons-offers-its-odin-at-50-percentage-discount/60586.html",
-          "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=30",
-          "US: 1-3 grade C",
-          "https://www.finra.org/media-center/blog/four-insights-from-finras-2026-industry-snapshot",
-          "VN: 35-105 grade C",
-          "https://fss.com.vn/en/capital-market/",
-          "https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/asia-pacific/ho-chi-minh-stock-exchange/topics/overview-of-exchange",
-          "global: 20-60 grade C",
-          "https://www.broadridge.com/about/history"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 1,
-          "in_use_share": 0.0,
-          "in_use_share_unweighted": 0.0
-        },
-        "evidence": [
-          "https://www.thetradenews.com/tradeplus/sell-side-stuck-at-a-crossroad-between-manual-processes-and-dominating-automation/",
-          "hn firsthand pain >= 0.7: 1 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.907200000000001,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 4,
-        "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": true
-        },
-        "evidence": [
-          "https://www.moneylife.in/article/sebi-slaps-rs25-lakh-penalty-on-mcx-for-delay-in-disclosures-linked-to-63-moons-contract/77238.html ; ASX release 17 Nov 2022 ; Broadridge FY2026 10-K",
-          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
-          "regulation reason to stay: Regulators gate cutover. SEBI asked MCX on 28 Sep 2023 to hold its planned 3 Oct go-live, and the RBA/ASIC oversee CHESS milestones, so switching takes regulatory sign-off and mock trading."
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "challengers": 10,
-          "funding_usd": 1701800000.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "TovenAI",
-            "Tata Consultancy Services (TCS BaNCS / Commodity Derivatives Platform)"
-          ]
-        },
-        "evidence": [
-          "https://www.renaissancecapital.com/IPO-Center/News/117142/Capital-markets-platform-Clear-Street-officially-withdraws-$351-million-IPO https://www.clearstreet.io/news/blog/the-new-clear-street-trading-app-goes-live-placing-groundbreaking-technology-into-the-hands-of-sophisticated-individual-traders https://www.clearstreet.io/news/blog/this-is-only-the-beginning",
-          "https://alpaca.markets/blog/alpaca-raises-150-million-at-a-1-15b-valuation-to-build-the-global-standard-for-brokerage-infrastructure/ https://pulse2.com/alpaca-raises-135-million-to-scale-agent-first-brokerage-infrastructure/",
-          "https://www.prnewswire.com/news-releases/drivewealth-raises-450m-series-d-valuing-the-company-at-2-85b-301359564.html https://www.drivewealth.com/category/press-releases/ https://sacra.com/c/drivewealth/",
-          "https://investors.statestreet.com/investor-news-events/press-releases/news-details/2025/State-Street-Corporation-and-Apex-Fintech-Solutions-Announce-Strategic-Partnership-to-Address-Growing-Global-Wealth-Market-Opportunity/default.aspx https://apexfintechsolutions.com/products/wealth-management/apex-direct-brokerage-as-a-service-with-cloud-native-tech/",
-          "https://www.accessfintech.com/",
-          "https://finance.yahoo.com/sectors/technology/articles/next-investors-invests-transient-ai-123000254.html https://www.finsmes.com/2026/09/transient-ai-receives-investment-from-nasdaq-ventures.html",
-          "https://www.thesaasnews.com/news/ingenuity-trading-raises-4-8m-seed/ https://ingenuity.trading/about",
-          "https://www.ycombinator.com/companies/tovenai",
-          "https://www.ledgerinsights.com/asx-pauses-dlt-settlement-chess/ https://www.ledgerinsights.com/bnp-paribas-goldman-dtcc-join-135m-funding-of-canton-developer-digital-asset/",
-          "https://www.businesstoday.in/markets/stocks/story/mcx-to-shift-to-new-trading-platform-on-october-3-shares-hit-52-week-high-400006-2023-09-28",
-          "funding unparsed: TovenAI, Tata Consultancy Services (TCS BaNCS / Commodity Derivatives Platform)"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "card-payments-processing",
-    "total": 40.0,
-    "total_raw": 1.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "midpoint": 12097.5,
-          "users_midpoint": 1556.0,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 12097.5 (buyer universe)",
-          "EU: 3-9 grade C",
-          "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260213~590707b254.en.html",
-          "SG: 4-12 grade C",
-          "https://eservices.mas.gov.sg/fid/institution?sector=Banking",
-          "TH: 1-3 grade C",
-          "https://en.wikipedia.org/wiki/List_of_banks_in_Thailand",
-          "US: 1-3 grade C",
-          "https://www.fdic.gov/quarterly-banking-profile/quarterly-banking-profile-second-quarter-2026.pdf",
-          "https://ncua.gov/files/publications/analysis/quarterly-data-summary-2026-Q2.pdf",
-          "global: 769-2307 grade C",
-          "https://www.mphasis.com/home/thought-leadership/blog/mainframe-based-credit-card-products.html",
-          "https://www.aciworldwide.com/about-aci/history",
-          "https://www.hps-worldwide.com/about-hps",
-          "https://vir.com.vn/opening-way-for-digital-payments-71356.html"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 1,
-          "in_use_share": 0.018072289156626505,
-          "in_use_share_unweighted": 0.17391304347826086
-        },
-        "evidence": [
-          "https://rivero.tech/blog/issuer-banks-reconcile-mastercard-dispute-fund-movements-guide",
-          "hn firsthand pain >= 0.7: 1 comments (need 5)",
-          "job posts legacy in use, weighted share 0.018072289156626505 (unweighted 0.17391304347826086, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.5195833333333333,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 4,
-        "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": true
-        },
-        "evidence": [
-          "https://www.americanbanker.com/payments/news/bank-of-america-returns-its-consumer-card-portfolio-to-tsys ; https://www.sec.gov/Archives/edgar/data/0000721683/000072168304000062/chaserelease.htm ; TSYS 10-K FY2007 https://www.sec.gov/Archives/edgar/data/0000721683/000095014408001510/g11668exv13w1.htm",
-          "https://www.bmc.com/blogs/mainframe-survey-financial-services-key-takeaways/ ; https://www.itjobboard.co.uk/job/16225533/visionplus-developer-cobol-and-cics/",
-          "regulation reason to stay: Scheme certifications, regulatory reporting and fraud and collections integrations are built up over decades around the core."
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "challengers": 12,
-          "funding_usd": 2398000000.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "Marqeta",
-            "Enfuce"
-          ]
-        },
-        "evidence": [
-          "https://www.sec.gov/Archives/edgar/data/0001522540/000152254026000061/mqearningsrelease-q2x2026.htm https://www.sec.gov/Archives/edgar/data/1522540/000152254026000017/mq-20251231.htm",
-          "https://en.wikipedia.org/wiki/Zeta_(company) https://financialit.net/news/payments/zeta-unveils-ai-capabilities-card-issuers-within-tachyon https://www.zeta.tech/in/press/zeta-funding-omni-stack",
-          "https://www.pismo.io/blog/visa-to-acquire-pismo/ https://www.pymnts.com/visa/2026/visas-pismo-helps-vivi-money-launch-new-financial-platform/ https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.20301.html",
-          "https://www.thredd.ai/ https://www.pymnts.com/news/artificial-intelligence/2026/thredd-visa-enableai-powered-card-payments-eu/ https://techcrunch.com/2022/01/13/global-processing-services-adds-100m-to-its-coffers-to-grow-its-embedded-finance-and-api-payments-platform/",
-          "https://en.wikipedia.org/wiki/Highnote_(platform) https://highnote.com/blog/highnote-powers-a-new-era-of-commercial-card-issuing-for-online-travel",
-          "https://theheadandtale.com/fintech-news/m2p-fintech-fy25-revenue-up-33--losses-surge-by-91-/ https://www.crowdfundinsider.com/2026/08/297029-maybank-ageas-1-18b-deal-leads-this-weeks-fundings-and-acquisitions/ https://entrackr.com/2024/09/m2p-fintech-raises-over-100-mn-in-primary-and-secondary-funding/",
-          "https://www.lithic.com/ https://www.pymnts.com/news/artificial-intelligence/2026/lithic-everything-payments-assumes-about-shopping-is-about-to-break/",
-          "https://www.embeddedfinanceindex.com/vendors/enfuce",
-          "https://techcrunch.com/2021/11/16/justt-comes-out-of-stealth-with-70m-in-funding-to-help-online-merchants-fight-false-chargebacks-with-ai https://pulse2.com/justt-ai-based-chargeback-management-company-raises-30-million-series-c/",
-          "https://www.chargeflow.io/blog/chargeflow-raises-35m-series-a-to-transform-chargeback-management",
-          "https://www.prnewswire.com/news-releases/pagos-transforms-payments-data-from-harmonized-to-ai-ready-302703312.html",
-          "https://rye.com/blog/agentic-commerce-startups",
-          "funding unparsed: Marqeta, Enfuce"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "gov-benefits",
-    "total": 40.0,
-    "total_raw": 1.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 3,
-        "detail": {
-          "midpoint": 3470.5,
-          "users_midpoint": 68.0,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 3470.5 (buyer universe)",
-          "AU: 1-1 grade C",
-          "https://www.itnews.com.au/news/centrelink-it-system-risks-largely-managed-during-wpit-overhaul-553896",
-          "EU: 2-6 grade C",
-          "https://employment-social-affairs.ec.europa.eu/policies-and-activities/moving-working-europe/eu-social-security-coordination/digitalisation-social-security-coordination/electronic-exchange-social-security-information-eessi_en",
-          "SG: 1-1 grade B",
-          "https://www.accenture.com/sg-en/case-studies/public-service/social-security-securing-life-goals",
-          "https://www.asean-ssa.org/member-institutions/singapore/",
-          "TH: 1-3 grade C",
-          "https://www.asean-ssa.org/member-institutions/thailand/",
-          "UK: 1-3 grade C",
-          "https://www.oneadvanced.com/resources/dwp-completes-large-scale-modernisation-project-for-nations-benefit-systems/",
-          "https://www.gov.uk/government/publications/dwp-statistical-summary-policies-and-statements/housing-benefit-caseload-and-flows-statistics-methodology-statement",
-          "US: 25-75 grade C",
-          "https://kffhealthnews.org/news/article/medicaid-deloitte-run-eligibility-systems-plagued-by-errors/",
-          "https://www.macpac.gov/medicaid-101/",
-          "https://www.gao.gov/assets/gao-22-104251.pdf",
-          "global: 4-12 grade C",
-          "https://en.wikipedia.org/wiki/Model_204",
-          "https://www.microfocus.com/de-de/media/success-story/german_pension_fund_baden_wurttemberg_ss_de.pdf",
-          "https://en.wikipedia.org/wiki/International_Social_Security_Association"
-        ]
-      },
-      "pain": {
-        "score": 3,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 0,
-          "in_use_share": 0.4567901234567901,
-          "in_use_share_unweighted": 0.18181818181818182
-        },
-        "evidence": [
-          "https://www.nao.org.uk/wp-content/uploads/2021/09/Investigation-into-underpayments-of-State-Pension-Summary.pdf",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.4567901234567901 (unweighted 0.18181818181818182, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.7139130434782603,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 4,
-        "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
-          "s4": "strong",
-          "s4_hit": true,
-          "regulation_reason_hit": false
-        },
-        "evidence": [
-          "https://www.nao.org.uk/wp-content/uploads/2024/02/progress-in-implementing-universal-credit-report.pdf",
-          "https://files.gao.gov/reports/GAO-25-107795/index.html ; https://www.gao.gov/products/gao-23-105478"
-        ]
-      },
-      "crowding": {
-        "score": 5,
-        "detail": {
-          "challengers": 14,
-          "funding_usd": 720300000.0,
-          "funding_over": 500000000.0,
-          "unparsed": []
-        },
-        "evidence": [
-          "https://pulse2.com/fortuna-health-18-million-raised-for-consumer-medicaid-navigation-platform/ https://www.ycombinator.com/companies/fortuna-health https://www.fortunahealth.com/resources/unite-us-and-fortuna-health-partnership",
-          "https://www.causeartist.com/blog/turnout-raises-35m-to-build-an-ai-advocate-for-every-american https://www.prnewswire.com/news-releases/turnout-secures-21m-in-seed-funding-to-fuel-mission-to-simplify-government-bureaucracy-302558564.html",
-          "https://www.chcf.org/blog/2026/07/16/how-ai-powered-outreach-is-helping-californians-keep-their-medi-cal-coverage/ https://www.ycombinator.com/companies/careforce https://timesofsandiego.com/tech/2026/08/10/ai-medicaid-enrollment-concerns/ https://www.latinotimes.org/2026/09/ai-is-being-used-to-boost-medicaid-enrollment-but-not-without-concerns/",
-          "https://www.navapbc.com/nava-timeline https://www.navapbc.com/news/nava-acquires-beam https://www.prnewswire.com/news-releases/nava-acquires-beam-to-accelerate-modern-open-benefits-delivery-302677811.html https://www.route-fifty.com/artificial-intelligence/2026/03/open-source-ai-assistant-shows-promise-california-caseworkers-service-delivery/412378/",
-          "https://techcrunch.com/2022/11/17/beam-raises-6-4m-to-help-citizens-access-safety-net-funds/ https://www.navapbc.com/news/nava-acquires-beam",
-          "https://www.prnewswire.com/news-releases/aidkit-2025-impact-report-signals-shift-as-state-and-local-agencies-take-larger-role-in-disaster-aid-302743860.html https://www.causeartist.com/blog/aidkit-ready-disaster-cash-assistance",
-          "https://www.cardyai.com/about-us https://www.thesaasnews.com/news/cardinality-ai-raises-12-5-million-in-series-b https://www.prnewswire.com/news-releases/cardycares-cardinalityais-healthcare-solutions-suite-302555238.html",
-          "https://www.hyperscience.ai/newsroom/snap-benefit-processing-enters-ai-era-hyperscience-unveils-single-platform-solution-to-address-increased-hr-1-mandates/",
-          "https://www.housingwire.com/articles/checkr-acquires-truv-mortgage-government-income-verification/ https://truv.com/public-sector",
-          "https://www.prnewswire.com/news-releases/unite-us-announces-it-has-raised-150m-to-scale-nationwide-social-care-infrastructure-301247923.html https://uniteus.com/press/ny-social-care-networks-unite-us-1115-medicaid-waiver-alignment/ https://www.fortunahealth.com/resources/unite-us-and-fortuna-health-partnership",
-          "https://en.wikipedia.org/wiki/Propel_(company) https://www.propel.app/insights/using-ai-to-help-snap-recipients-diagnose-and-restore-lost-benefits/ https://www.propel.app/blog/ai-can-strengthen-our-safety-net-these-leaders-are-learning-how/",
-          "https://techcrunch.com/2022/02/24/promise-government-installment-plans-raises-25m/ https://www.promise-pay.com/government https://en.wikipedia.org/wiki/Phaedra_Ellis-Lamkins",
-          "https://inc42.com/buzz/haqdarshak-raises-funding-to-enable-easy-information-access-through-technology/ https://reports.weforum.org/docs/WEF_The_Art_of_AI_for_Impact_Haqdarshak_2026.pdf",
-          "https://www.route-fifty.com/management/2024/07/nonprofits-abrupt-closure-puts-access-public-benefits-risk/397968/"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "lab-information",
-    "total": 40.0,
-    "total_raw": 1.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 4,
-        "detail": {
-          "midpoint": 27841.5,
-          "users_midpoint": 416.0,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 27841.5 (buyer universe)",
-          "AU: 1-3 grade C",
-          "https://www.pulseit.news/australian-digital-health/sunquest-to-roll-out-68-5m-queensland-health-pathology-system-replacement/",
-          "EU: 15-45 grade C",
-          "US: 192-576 grade C",
-          "https://www.captodayonline.com/2020/ProductGuides/11-20_CAPTODAY_LIS.pdf",
-          "https://www.cms.gov/regulations-and-guidance/legislation/clia/downloads/statupda.pdf"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 0,
-          "in_use_share": 0.0,
-          "in_use_share_unweighted": 0.0
-        },
-        "evidence": [
-          "https://academic.oup.com/jamia/article/26/3/269/5287977",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 2.9156,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 4,
-        "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": true
-        },
-        "evidence": [
-          "https://assets.publishing.service.gov.uk/media/569e34bee5274a112c000030/Full_text_decision_Roper-CliniSys.pdf",
-          "https://www.captodayonline.com/lab-information-systems-where-the-needs-are-greatest/",
-          "regulation reason to stay: Regulated validation: every LIS change must be revalidated under CLIA/CAP/ISO 15189, so switching costs are high"
-        ]
-      },
-      "crowding": {
-        "score": 4,
-        "detail": {
-          "challengers": 11,
-          "funding_usd": 1800000.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "elea (Elea.ai GmbH)",
-            "Flabs",
-            "MarginLogic Health AI",
-            "Scispot",
-            "Proscia",
-            "PathAI",
-            "Paige",
-            "Onymos (DocKnow)",
-            "LigoLab",
-            "CrelioHealth (formerly LiveHealth)"
-          ]
-        },
-        "evidence": [
-          "https://techcrunch.com/2025/03/12/elea-ai-is-chasing-the-healthcare-productivity-opportunity-by-targeting-pathology-labs-legacy-systems/ https://tech.eu/2025/03/12/elea-raises-4m-for-automoated-pathology-platform-to-speed-up-diagnoses/ https://www.elea.health/",
-          "https://flabslis.com/ https://tracxn.com/d/companies/flabs/__EruOZxGAlfpPSXGRihHsJpSy7Il9RoGQSSN92tl-ZKw",
-          "https://www.zaya.ai/zaya-ai-the-start-up-that-brings-artificial-intelligence-to-pathology-diagnosis-launch-a-seed-round-of-600000-euros/ https://lumeadigital.com/lumea-partners-with-zayaai-to-make-a-digitally-enabled-lis-globally-accessible/",
-          "https://clpmag.com/lab-essentials/lab-automation/ligolab-marginlogic-ai-lab-data-entry-integration/ https://mlhealthai.com/",
-          "https://www.scispot.com/blog/scispot-series-a-funding https://betakit.com/scispot-closes-8-million-usd-series-a-to-become-the-operating-layer-for-life-sciences-labs/ https://www.scispot.com/molecular-diagnostics",
-          "https://proscia.com/press-release/proscia-raises-50m-to-advance-ai-driven-pathology-and-deliver-the-future-of-precision-medicine https://proscia.com/press-release/proscia-cements-leadership-in-diagnostic-pathology-with-400-growth-in-daily-cases https://proscia.com/press-release/unilabs-advances-digital-pathology-across-europe-with-proscia",
-          "https://www.pathai.com/ap-lab-solutions https://tracxn.com/d/companies/pathai/__EKVHLLZHuSMeEeOv2jza0bAYsz7_EPlbYjHpiUuz2q0 https://www.ligolab.com/post/bridging-lis-systems-and-digital-pathology-a-scalable-integration-from-ligolab-and-pathai",
-          "https://www.medtechdive.com/news/tempus-paige-buyout-acquisition-ai/758589/",
-          "https://onymos.com/ https://aijourn.com/onymos-and-vanta-diagnostics-collaborate-to-scale-intelligent-lab-intake/",
-          "https://www.ligolab.com/industry-insights/why-ligolabs-funding-choice-nearly-two-decades-ago-continues-to-benefit-the-company-and-its-customer https://www.ligolab.com/post/documenting-the-avero-diagnostic-move-from-a-legacy-lab-rcm-system-to-ligolabs-all-in-one-lab-informatics-platform https://www.globenewswire.com/news-release/2026/09/08/3358041/0/en/ligolab-marks-successful-adlm-2026-participation-with-strong-industry-engagement-around-integrated-lis-and-rcm.html",
-          "https://creliohealth.com/assets/all-brochures/Company-Profile-International-USA.pdf https://blog.creliohealth.com/unlock-unprecedented-speed-welcome-to-the-30-second-lab-with-creliohealth-ai-requisition/",
-          "funding unparsed: elea (Elea.ai GmbH), Flabs, MarginLogic Health AI, Scispot, Proscia, PathAI, Paige, Onymos (DocKnow), LigoLab, CrelioHealth (formerly LiveHealth)"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "port-terminal-operating-system",
-    "total": 40.0,
-    "total_raw": 1.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 2,
-        "detail": {
-          "midpoint": 444.5,
-          "users_midpoint": 1373.5,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 444.5 (buyer universe)",
-          "EU: 1-3 grade C",
-          "https://www.eca.europa.eu/lists/ecadocuments/sr16_23/sr_maritime_en.pdf",
-          "SG: 1-2 grade B",
-          "https://arxiv.org/pdf/1904.13251",
-          "https://www.mpa.gov.sg/port-marine-ops/operations/port-infrastructure/terminals",
-          "global: 685-2055 grade C",
-          "https://kaleris.com/news/northport-partners-with-kaleris-to-enhance-terminal-operating-system/",
-          "https://www.globenewswire.com/en/news-release/2012/04/05/1771866/0/en/50th-site-now-live-with-Navis-SPARCS-N4-investments-continue-in-port-automation-technologies.html",
-          "https://www.yict.com.cn/about-event/milestones.html?locale=en_US",
-          "https://tideworks.com/about-us/",
-          "https://itea4.org/organisation/total-soft-bank-ltd-1.html",
-          "https://rbs-tops.com/how-it-all-started/"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 0,
-          "in_use_share": 0.0,
-          "in_use_share_unweighted": 0.0
-        },
-        "evidence": [
-          "https://tideworks.com/tos-of-the-future-port-strategy/ ; https://www.portwiseconsultancy.com/blog/which-software-helps-with-efficient-berth-planning/",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 3,
-        "detail": {
-          "mean": 2.873333333333333,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 3,
-        "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": false
-        },
-        "evidence": [
-          "https://gaports.com/n4/n4-faqs/ ; https://www.apmterminals.com/en/news/news-releases/2020/200611-covid-19-brings-unexpected-benefits-to-apm-terminals-global-tos-roll-out ; https://www.apmterminals.com/en/aarhus/practical-information/news/2022/220519-preparing-for-the-future-with-new-operating-system",
-          "https://kitalent.com/articles/rijeka-port-talent-gap ; https://kitalent.com/articles/genoa-maritime-logistics-talent"
-        ]
-      },
-      "crowding": {
-        "score": 3,
-        "detail": {
-          "challengers": 8,
-          "funding_usd": 34600000.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "Loadmaster.ai",
-            "Westwell (Shanghai Westwell Lab)",
-            "Octopi (Cetus Labs), now Octopi by Navis",
-            "ILCS (PT Integrasi Logistik Cipta Solusi), TOS Nusantara"
-          ]
-        },
-        "evidence": [
-          "https://portchain.com/insights/100-terminals-join-the-portchain-connect-network-0 https://portchain.com/insights/hapag-lloyds-collaboration-with-portchain-on-ai-fleet-planning https://smartmaritimenetwork.com/2026/03/18/cice-veracruz-joins-portchain-to-improve-berth-alignment/ https://tracxn.com/d/companies/portchain/__Ut5ISEOklWVXqAT7kAD578ViQ25dMIY4ZU3yoW7Kx8U https://tracxn.com/d/trending-business-models/startups-in-port-management-software/__M832-cLRlD1H_RZo9hHdN4VpRueprJ0KKFUd8d6Ob2c/companies",
-          "https://loadmaster.ai/about-us/ https://loadmaster.ai/ https://loadmaster.ai/terminalcontrol-tos/",
-          "https://tracxn.com/d/companies/avlino/__0NcWT9m47aCD4jJSjLLkQhZTK7_Dl3n0sNNRgtZNLls https://en.portnews.ru/news/310267/ https://avlino.com/2025/04/15/new-product-names-to-match-avlinos-strategic-positioning/ https://colombo-plan.org/wp-content/uploads/2026/02/Presentation-3-Avlino-Ramana-Jampala.pdf https://avlino.com/",
-          "https://equalocean.com/news/2023061519783-westwell-launches-next-gen-digital-intelligent-port-operating-platform-toc https://en.westwell-lab.com/resources/CaseStudies/westwell-port-automation-solutions-at-toc https://en.westwell-lab.com/resources/Blogs/intelligent-terminal-scheduling https://cnmra.com/a-glimpse-of-13-representative-chinese-autonomous-driving-companies-in-2025/ https://www.wipo.int/en/web/ip-advantage/w/stories/westwell-china-making-global-container-logistics-more-sustainable",
-          "https://maritime-executive.com/article/investors-support-ai-platform-to-enhance-terminal-operations https://container-news.com/container-logistics-ai-solution-raises-almost-us1-million-in-funding/ https://startupsreal.com/eyard-raises-e800k-in-a-seed-round-led-by-mundi-ventures/ https://www.empresia.es/persona/fernandez-pena-curbera-pablo/",
-          "https://www.freightwaves.com/news/port-report-long-beach-terminals-seek-solutions-to-truck-fluidity https://www.freightwaves.com/news/bluecargo-raises-11m-to-bring-visibility-to-drayage-fees https://www.bluecargo.io/",
-          "https://www.kalmarglobal.com/news--insights/press_releases/2019/cargotecs-navis-acquires-octopi-a-terminal-operating-system-for-small-container-and-mixed-cargo-terminals https://www.thescxchange.com/articles/4663-octopi-by-navis-announces-expanded-customer-base",
-          "https://windonesia.com/article/ilcs-pelindo-tpk-implement-tos-nusantara-at-port-of-sorong https://mimbarmaritim.com/2025/07/22/perkuat-digitalisasi-nasional-ilcs-dukung-implementasi-tos-nusantara-di-pelabuhan-sorong/",
-          "funding unparsed: Loadmaster.ai, Westwell (Shanghai Westwell Lab), Octopi (Cetus Labs), now Octopi by Navis, ILCS (PT Integrasi Logistik Cipta Solusi), TOS Nusantara"
-        ]
-      }
-    }
-  },
-  {
-    "slug": "telecom-bss",
-    "total": 40.0,
-    "total_raw": 1.0,
-    "flags": [],
-    "parts": {
-      "size": {
-        "score": 3,
-        "detail": {
-          "midpoint": 2997.5,
-          "users_midpoint": 1594.0,
-          "basis": "buyer_universe",
-          "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
-          ]
-        },
-        "evidence": [
-          "possible buyers 2997.5 (buyer universe)",
-          "EU: 2-6 grade C",
-          "global: 795-2385 grade C",
-          "https://www.sec.gov/Archives/edgar/data/1062579/000119312525319187/dox-20250930.htm",
-          "https://en.wikipedia.org/wiki/Business_Support_and_Control_System",
-          "https://en.wikipedia.org/wiki/Portal_Software",
-          "https://en.wikipedia.org/wiki/NetCracker_Technology"
-        ]
-      },
-      "pain": {
-        "score": 2,
-        "detail": {
-          "s3": "weak",
-          "s3_points": 1.0,
-          "hn_pain_comments": 0,
-          "in_use_share": 0.0,
-          "in_use_share_unweighted": 0.0
-        },
-        "evidence": [
-          "https://www.cambridgemc.com/the-complexity-tax ; https://www.subex.com/article/what-is-revenue-assurance-the-ultimate-revenue-assurance-guide-for-telecom-operators/",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
-        ]
-      },
-      "ai_fit": {
-        "score": 4,
-        "detail": {
-          "mean": 3.577727272727273,
-          "answered": 12,
-          "unanswered": [],
-          "tasks": 12
-        },
-        "evidence": [
-          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
-        ]
-      },
-      "lockin": {
-        "score": 4,
-        "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
-          "s4": "weak",
-          "s4_hit": false,
-          "regulation_reason_hit": true
-        },
-        "evidence": [
-          "https://www.sec.gov/Archives/edgar/data/1005757/000100575725000006/csgs-20250904.htm ; https://ir.csgi.com/press-releases/press-release-details/2024/CSG-Announces-Six-Year-Contract-Renewal-with-Comcast/default.aspx ; https://www.prnewswire.com/news-releases/globe-selects-amdocs-for-strategic-bss-transformation-project-under-seven-year-agreement-149718635.html",
-          "https://aws.amazon.com/blogs/industries/aws-mainframe-modernization-transforming-telco-from-legacy-constraints-to-digital-innovation/",
-          "regulation reason to stay: Billing is revenue-critical. A failed cutover hits cash and the regulator at once, so operators run parallel systems and byte-for-byte output comparisons (updraftworks case: a 14-month migration of a 30-year COBOL system)."
-        ]
-      },
-      "crowding": {
-        "score": 4,
-        "detail": {
-          "challengers": 9,
-          "funding_usd": 121200000.0,
-          "funding_over": 500000000.0,
-          "unparsed": [
-            "Totogi",
-            "Sierra",
-            "Circles (CirclesX)",
-            "Wavelo (Tucows)"
-          ]
-        },
-        "evidence": [
-          "https://totogi.com/newsroom/press-releases/tier-1-southeast-asian-operator-selects-totogis-telco-ontology-as-foundation-for-ai-strategy/ https://totogi.com/newsroom/press-releases/totogi-ends-the-era-of-billion-dollar-bss-failures-with-ai-that-actually-works/ https://www.telecomtv.com/content/ai/totogi-signs-strategic-bss-deal-with-a-major-tier-one-european-service-provider-54433/ https://itbrief.asia/story/totogi-ontology-goes-live-in-seven-telecoms-deployments https://www.lightreading.com/oss-bss-cx/totogi-lands-bss-deal-with-zain-sudan-at-ericsson-s-likely-expense https://www.lightreading.com/oss-bss-cx/totogi-flaunts-charging-deal-progress-with-nzs-2degrees https://www.telecomtv.com/content/ai/major-telecom-names-launch-the-ai-native-telecom-accelerator-anta-55741/",
-          "https://www.jmi.com/gaiia-raises-40-million-series-b-led-by-jmi-equity-to-modernize-the-operating-system-for-communications-service-providers/ https://ventureburn.com/gaiia-raises-40m-to-expand-ai-telecom-platform/",
-          "https://www.globenewswire.com/news-release/2026/09/23/3367463/34554/en/liberty-global-signs-strategic-partnership-with-sierra-to-rollout-ai-powered-customer-experiences-across-telecoms-businesses.html https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/ https://telecomtv.com/content/ai/the-week-in-ai-native-telco-19-25-sept-2026-56343/amp",
-          "https://www.calcalistech.com/ctechnews/article/mzl1gy8tx https://www.wonderful.ai/case-studies/telecommunication",
-          "https://www.lightreading.com/finance/singapore-s-circles-targets-nasdaq-listing-as-it-doubles-down-on-us-expansion https://finance.yahoo.com/technology/articles/circles-group-spinning-off-digital-094941913.html https://www.prnewswire.com/apac/news-releases/circles-and-huawei-sign-strategic-collaboration-to-advance-ai-native-digital-telecom-solutions-globally-302719537.html",
-          "https://en.wikipedia.org/wiki/Gigs https://techcrunch.com/2024/12/12/gigs-mvno-73m-mobile-network-services/",
-          "https://en.wikipedia.org/wiki/LotusFlare https://lotusflare.com/news/ericsson-and-lotusflare-announce-equity-investment-and-strategic-partnership/",
-          "https://www.sec.gov/Archives/edgar/data/0000909494/000090949426000003/tcx-20260630.htm",
-          "https://www.telecomtv.com/content/digital-platforms-services/amdocs-matrixx-ride-bss-consolidation-wave-54599/",
-          "funding unparsed: Totogi, Sierra, Circles (CirclesX), Wavelo (Tucows)"
-        ]
-      }
-    }
-  },
-  {
     "slug": "utility-billing-cis",
-    "total": 40.0,
-    "total_raw": 1.0,
+    "total": 45.0,
+    "total_raw": 2.0,
     "flags": [],
     "parts": {
       "size": {
-        "score": 4,
+        "score": 5,
         "detail": {
-          "midpoint": 56708.5,
           "users_midpoint": 962.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 56708.5,
+          "value_usd": {
+            "low": 4070436710.0,
+            "mid": 20324877348.287796,
+            "high": 172762119000.0
+          },
+          "midpoint": 20324877348.287796,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 56708.5 (buyer universe)",
+          "market value $20,324,877,348 mid (56708.5 buyers x segment spend)",
           "EU: 18-54 grade C",
           "https://www.eurelectric.org/events/power-talks-2400-distribution-system-operators-one-european-entity/",
           "US: 3-9 grade C",
@@ -3172,40 +2826,40 @@
     }
   },
   {
-    "slug": "cooperative-rural-microfinance-banking",
-    "total": 35.0,
-    "total_raw": 0.0,
+    "slug": "warehouse-management",
+    "total": 45.0,
+    "total_raw": 2.0,
     "flags": [],
     "parts": {
       "size": {
-        "score": 4,
+        "score": 5,
         "detail": {
-          "midpoint": 48609.0,
-          "users_midpoint": 66320.0,
-          "basis": "buyer_universe",
+          "users_midpoint": 9100.0,
+          "basis": "market_value",
+          "buyers_mid": 491373.0,
+          "value_usd": {
+            "low": 6495832350.0,
+            "mid": 34675517319.740875,
+            "high": 357584742300.0
+          },
+          "midpoint": 34675517319.740875,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 48609 (buyer universe)",
-          "EU: 341-1023 grade C",
-          "https://atruvia.de/pressemitteilungen/17-02-2020-nach-drei-jahren-serienmigration-nutzen-jetzt-alle-volks-und-raiffeisenbanken-ein-gemeinsames-it-verfahren",
-          "https://www.eacb.coop/en/european-association-of-co-operative-banks.html",
-          "ID: 500-1500 grade C",
-          "https://ussi-software.com/profile-2/",
-          "https://ojk.go.id/en/berita-dan-kegiatan/siaran-pers/Pages/OJK-Issues-Regulation-On-Information-Technology-Implementation-For-BPR-And-BPRS-Digital-Security.aspx",
-          "IN: 50485-70844 grade B",
-          "https://www.kiya.ai/wp-content/uploads/2019/01/Brochure-Corporate1.pdf",
-          "https://www.indiancooperative.com/co-op-news-snippets/computerization-51k-pacs-onboarded-68k-secure-sanction-letters/",
-          "https://indianpsu.com/urban-cooperative-banks-growth-fy25-rbi/",
-          "US: 3660-4287 grade B",
-          "https://www.sec.gov/Archives/edgar/data/779152/000077915221000073/jkhy-20210630.htm",
-          "https://www.itjungle.com/2009/12/08/fhs120809-story01/",
-          "https://ncua.gov/newsroom/press-release/2026/ncua-releases-fourth-quarter-2025-credit-union-system-performance-data"
+          "market value $34,675,517,320 mid (491373 buyers x segment spend)",
+          "EU: 20-60 grade C",
+          "https://fr.wikipedia.org/wiki/Hardis",
+          "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sbs_ovw_act?geo=EU27_2020&nace_r2=H521&indic_sbs=ENT_NR&format=JSON&lang=en",
+          "US: 30-90 grade C",
+          "https://www.bls.gov/iag/tgs/iag493.htm",
+          "global: 4500-13500 grade C",
+          "https://www.itjungle.com/2009/12/15/fhs121509-story02/",
+          "https://www.koerber.com/en/about-us/news-and-press/highjump-acquisition"
         ]
       },
       "pain": {
@@ -3213,20 +2867,20 @@
         "detail": {
           "s3": "weak",
           "s3_points": 1.0,
-          "hn_pain_comments": 0,
+          "hn_pain_comments": 4,
           "in_use_share": 0.0,
           "in_use_share_unweighted": 0.0
         },
         "evidence": [
-          "https://techcrunch.com/2015/05/20/oradian/ ; https://technology.inquirer.net/86869/financial-technology-startup-targets-rural-banking-sector",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "https://www.ivanti.com/company/press-releases/2021/ivanti-velocity-a-market-leading-mobile-enterprise-application-software-provides-capabilities-for-further-expansion-to-supercharge-supply-chain-warehouse-operations ; https://www.kardex.com/en-us/blog/integrated-warehouse-system-statistics",
+          "hn firsthand pain >= 0.7: 4 comments (need 5)",
           "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
         ]
       },
       "ai_fit": {
-        "score": 3,
+        "score": 2,
         "detail": {
-          "mean": 2.9486363636363637,
+          "mean": 2.4985714285714287,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -3236,87 +2890,93 @@
         ]
       },
       "lockin": {
-        "score": 4,
+        "score": 2,
         "detail": {
-          "s2": "strong",
-          "s2_points": 2.0,
+          "s2": "weak",
+          "s2_points": 1.0,
           "s4": "weak",
           "s4_hit": false,
-          "regulation_reason_hit": true
+          "regulation_reason_hit": false
         },
         "evidence": [
-          "https://www.sec.gov/Archives/edgar/data/779152/000077915221000073/jkhy-20210630.htm ; https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/ ; https://atruvia.de/pressemitteilungen/17-02-2020-nach-drei-jahren-serienmigration-nutzen-jetzt-alle-volks-und-raiffeisenbanken-ein-gemeinsames-it-verfahren",
-          "https://www.itjungle.com/2021/09/29/the-ibm-i-and-its-rpg-decade-of-crisis/ ; https://www.ilo.org/resource/news/joint-study-ilo-and-ojk-reveals-urgent-need-digital-transformation-rural",
-          "regulation reason to stay: Vendors bundle regulatory reporting (POJK compliance) into the core, which raises switching risk"
+          "https://www.nextgov.com/modernization/2023/01/defense-logistics-agency-shift-warehouse-management-commercial-software/381544/",
+          "https://www.itjungle.com/2026/02/02/skills-displaces-cybersecurity-as-top-concern-for-ibm-i-shops/"
         ]
       },
       "crowding": {
         "score": 5,
         "detail": {
-          "challengers": 13,
-          "funding_usd": 697380000.0,
+          "challengers": 12,
+          "funding_usd": 563400000.0,
           "funding_over": 500000000.0,
           "unparsed": [
-            "Oradian (Instafin)",
-            "incuto",
-            "Neowise (Decentro subsidiary)",
-            "PearlPay"
+            "Unicommerce (Uniware)"
           ]
         },
         "evidence": [
-          "https://techcrunch.com/2026/03/16/fuse-raises-25m-to-disrupt-aging-loan-origination-systems-used-by-u-s-credit-unions/ https://theaiinsider.tech/2026/03/20/fuse-raises-25m-to-build-ai-native-loan-origination-platform-for-credit-unions/ https://fintech.global/2026/03/18/fuse-launches-5m-rescue-fund-for-credit-unions/ https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-builds-alliance-with-fuse-to-give-auto-and-equipment-lenders-a-faster-path",
-          "https://www.posh.ai/press/posh-raises-4-15m-in-cuso-round https://www.posh.ai/press/posh-ai-announces-strategic-funding-led-by-curql-to-accelerate-responsible-generative-ai-innovation-and-welcomes-dave-tucker-to-the-board-of-directors https://curql.com/press/curql-fund-credit-unions-lead-round-of-funding-for-posh-ai https://www.posh.ai/press/posh-introduces-outreach-proactive-ai-agents-that-help-financial-institutions-capture-revenue-and-enhance-service",
-          "https://techcrunch.com/2024/10/22/interface-ai-raises-30m-to-help-banks-field-customer-requests/ https://www.globenewswire.com/news-release/2025/11/18/3190216/0/en/interface-ai-Unveils-Industry-First-Agentic-BankGPT-Platform-that-Moves-CX-from-Convenience-to-Outcomes.html",
-          "https://www.zest.ai/company/announcements/zest-ai-announces-200-million-growth-investment-from-insight-partners/ https://www.zest.ai/company/announcements/zest-ai-doubles-down-on-credit-union-market-for-ai-underwriting/",
-          "https://tech.eu/2021/12/09/mambu-mambos-on-over-to-e235-million-in-new-raise-at-e4-9-billion-valuation/ https://en.wikipedia.org/wiki/Mambu_(company)",
-          "https://techcrunch.com/2015/05/20/oradian/ https://www.finsmes.com/2018/02/oradian-receives-investment-from-goodwell.html https://technext24.com/2024/11/29/oradian-plans-for-financial-inclusion/ https://fintechnews.ph/73414/ai/ai-native-core-banking-oradian/",
-          "https://www.thesaasnews.com/news/nymbus-raises-70-million-in-series-d https://www.nymbus.com/press/gesa-credit-union-backs-nymbus-to-drive-sustainable-growth/ https://www.prnewswire.com/news-releases/nymbus-wins-credit-union-times-luminaries-award-for-innovative-core-conversion-with-michigan-state-university-federal-credit-union-302621478.html",
-          "https://www.incuto.com/newsandviews/incuto-investment https://www.incuto.com/newsandviews",
-          "https://technode.global/2024/01/09/indonesias-komunal-raises-5-5m-in-series-a-funding-round-led-by-sumitomo-corporation-equity-asia/ https://www.cnbcindonesia.com/tech/20260123181342-37-704895/komunal-group-tutup-tahun-2025-dengan-stabilitas-kinerja-yang-terjaga",
-          "https://inc42.com/buzz/y-combinator-backed-decentro-acquires-saas-fintech-neowise-technologies/ https://decentro.tech/blog/microfinance-software/",
-          "https://launchbaseafrica.com/2024/08/26/fintech-startup-rubyx-secures-446k-debt-funding-from-proparco-to-boost-african-microfinance-innovation/ https://www.proparco.fr/en/actualites/rubyx-rolls-out-its-lending-service-african-microfinance-institutions-and-startups",
-          "https://ensibuuko.com/",
-          "https://pearlpay.com/pearlpay-partners-with-rural-banks-in-pangasinan/ https://www.manilatimes.net/2020/01/10/public-square/pearlpay-partners-with-rural-banks-in-pangasinan/673175/",
-          "funding unparsed: Oradian (Instafin), incuto, Neowise (Decentro subsidiary), PearlPay"
+          "https://retailtechinnovationhub.com/home/2026/3/12/backops-bags-26-million-series-a-to-build-ai-powered-operating-system-for-supply-chains https://backops.com/articles/series-a-announcement https://gradientvc.substack.com/p/backops-series-a https://www.finsmes.com/2024/10/backops-ai-raises-2m-in-pre-seed-funding.html https://www.finsmes.com/2026/09/backops-raises-42m-in-series-b-funding.html https://pulse2.com/backops-raises-42-million-series-b/",
+          "https://techcrunch.com/2026/03/24/doss-raises-55m-for-ai-inventory-management-that-plugs-into-erp/ https://www.doss.com/news/announcing-our-18m-series-a https://theaiinsider.tech/2026/03/26/doss-raises-55m-series-b-to-build-ai-native-inventory-layer-for-modern-erp-systems/",
+          "https://www.prnewswire.com/news-releases/conduit-raises-6m-to-build-the-ai-operating-system-for-dock-and-yard-operations-302723320.html https://briefglance.com/articles/conduit-raises-6m-to-build-an-ai-operating-system-for-warehouse-yards",
+          "https://www.destroai.com/newsroom/destro-raises-8m https://siliconangle.com/2026/09/30/destro-ai-raises-8m-to-coordinate-mixed-robot-fleets-in-enterprise-warehouses/",
+          "https://www.ycombinator.com/companies/retailready https://roughdraftatlanta.com/2024/12/22/sarah-hamer-forbes-30-under-30/",
+          "https://techcrunch.com/2026/02/09/gather-ai-maker-of-curious-warehouse-drones-lands-40m-led-by-keith-blocks-firm/ https://dronelife.com/2026/02/10/gather-ai-raises-40-million-for-warehousing-tech/",
+          "https://www.thesaasnews.com/news/dexory-raises-165-million-in-series-c https://en.ain.ua/2025/10/15/dexory-raises-165m/ https://www.uktech.news/ai/warehouse-robot-dexory-funding-20230627",
+          "https://www.getox.com/about",
+          "https://deposco.com/ https://deposco.com/blog/deposco-secures-35-million-in-new-growth-funding-led-by-newspring/",
+          "https://www.logiwa.com/press-release/logiwa-raises-16-4m-in-series-b-funding-as-company-aims-to-modernize-the-wms-market https://www.logiwa.com/company/press-news/press-releases",
+          "https://unicommerce.com/Unicommerce-Investor-Presentation-Q4FY25.pdf https://entrackr.com/fintrackr/unicommerce-posts-rs-51-cr-revenue-and-rs-47-cr-profit-in-q1-fy27-12258215 https://inc42.com/buzz/unicommerce-q1-profit-increases-20-yoy-to-4-7-cr/ https://www.investorstack.in/earnings-calls/uniecom",
+          "https://www.finsmes.com/2020/10/anchanto-raises-s16-6m-in-series-c-funding.html",
+          "funding unparsed: Unicommerce (Uniware)"
         ]
       }
     }
   },
   {
-    "slug": "insurance-claims",
-    "total": 35.0,
-    "total_raw": 0.0,
+    "slug": "capital-markets-trading-clearing",
+    "total": 40.0,
+    "total_raw": 1.0,
     "flags": [],
     "parts": {
       "size": {
         "score": 4,
         "detail": {
-          "midpoint": 11606.0,
-          "users_midpoint": 3438.0,
-          "basis": "buyer_universe",
+          "users_midpoint": 670.0,
+          "basis": "market_value",
+          "buyers_mid": 13391.0,
+          "value_usd": {
+            "low": 2479201960.0,
+            "mid": 10101468795.136465,
+            "high": 41540779500.0
+          },
+          "midpoint": 10101468795.136465,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (EU ESMA MiFID investment firms register (registers.esma.europa.eu)): no buyer count (organisations)",
+            "universe unparsed (MY Bursa Malaysia list of Participating Organisations): no buyer count (organisations)"
           ]
         },
         "evidence": [
-          "possible buyers 11606 (buyer universe)",
+          "market value $10,101,468,795 mid (13391 buyers x segment spend)",
           "AU: 1-3 grade C",
-          "https://www.apra.gov.au/registers/list-registered-life-insurers-and-friendly-societies",
-          "TH: 2-6 grade C",
-          "https://www.thailandstarterkit.com/money/insurance-company-thailand/",
-          "US: 750-2250 grade C",
-          "https://dxc.com/platforms/assure/dxc-assure-claims",
-          "https://insurity.com/press-release/insurity-becomes-largest-cloud-software-vendor-serving-400-pc-insurers-cloud",
-          "https://content.naic.org/sites/default/files/publications-key-facts-market-trends-new-york.pdf",
-          "global: 966-2898 grade C",
-          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm",
-          "https://www.guidewire.com/products/core-products/insurancesuite/claimcenter-claims-management-software",
-          "https://announcements.asx.com.au/asxpdf/20230823/pdf/05sxxcjb4gzrw5.pdf",
-          "https://www.sec.gov/Archives/edgar/data/1160951/000095017022020470/dct-20220831.htm",
-          "https://www.majesco.com/press/majesco-delivers-record-fy25/"
+          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
+          "https://www.asx.com.au/content/dam/asx/participants/lists-of-participants/asx-trading-participant.pdf",
+          "EU: 6-18 grade C",
+          "IN: 272-816 grade C",
+          "https://www.moneylife.in/article/sebi-slaps-rs25-lakh-penalty-on-mcx-for-delay-in-disclosures-linked-to-63-moons-contract/77238.html",
+          "https://www.moneylife.in/article/nse-pulls-plug-from-its-now-trading-software-63-moons-offers-its-odin-at-50-percentage-discount/60586.html",
+          "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=30",
+          "US: 1-3 grade C",
+          "https://www.finra.org/media-center/blog/four-insights-from-finras-2026-industry-snapshot",
+          "VN: 35-105 grade C",
+          "https://fss.com.vn/en/capital-market/",
+          "https://resourcehub.bakermckenzie.com/en/resources/cross-border-listings-guide/asia-pacific/ho-chi-minh-stock-exchange/topics/overview-of-exchange",
+          "global: 20-60 grade C",
+          "https://www.broadridge.com/about/history"
         ]
       },
       "pain": {
@@ -3324,20 +2984,20 @@
         "detail": {
           "s3": "weak",
           "s3_points": 1.0,
-          "hn_pain_comments": 0,
-          "in_use_share": 0.001694915254237288,
-          "in_use_share_unweighted": 0.23076923076923078
+          "hn_pain_comments": 1,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
         },
         "evidence": [
-          "https://assets.lloyds.com/media/472b74ba-fe3b-47d6-aa7b-d37c2ba2e179/lloyds-blueprint-two.pdf",
-          "hn firsthand pain >= 0.7: 0 comments (need 5)",
-          "job posts legacy in use, weighted share 0.001694915254237288 (unweighted 0.23076923076923078, need 0.3)"
+          "https://www.thetradenews.com/tradeplus/sell-side-stuck-at-a-crossroad-between-manual-processes-and-dominating-automation/",
+          "hn firsthand pain >= 0.7: 1 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
         ]
       },
       "ai_fit": {
-        "score": 3,
+        "score": 4,
         "detail": {
-          "mean": 3.2116000000000002,
+          "mean": 3.907200000000001,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -3356,66 +3016,187 @@
           "regulation_reason_hit": true
         },
         "evidence": [
-          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm ; https://www.sec.gov/Archives/edgar/data/885740/000101376225003193/ea0235334-20f_sapiens.htm",
-          "https://www.dig-in.com/opinion/insurance-it-leaders-have-an-ai-infrastructure-problem",
-          "regulation reason to stay: Claims systems link to policy admin, payments, reserving, reinsurance, fraud tools and regulator reporting, so a swap touches many integrations."
+          "https://www.moneylife.in/article/sebi-slaps-rs25-lakh-penalty-on-mcx-for-delay-in-disclosures-linked-to-63-moons-contract/77238.html ; ASX release 17 Nov 2022 ; Broadridge FY2026 10-K",
+          "https://rba.gov.au/payments-and-infrastructure/financial-market-infrastructure/clearing-and-settlement-facilities/assessments/2022-2023/special-topic-the-current-chess.html",
+          "regulation reason to stay: Regulators gate cutover. SEBI asked MCX on 28 Sep 2023 to hold its planned 3 Oct go-live, and the RBA/ASIC oversee CHESS milestones, so switching takes regulatory sign-off and mock trading."
         ]
       },
       "crowding": {
         "score": 5,
         "detail": {
-          "challengers": 18,
-          "funding_usd": 2848400000.0,
+          "challengers": 10,
+          "funding_usd": 1701800000.0,
           "funding_over": 500000000.0,
           "unparsed": [
-            "Sprout.ai"
+            "TovenAI",
+            "Tata Consultancy Services (TCS BaNCS / Commodity Derivatives Platform)"
           ]
         },
         "evidence": [
-          "https://beinsure.com/news/insurtech-reserv-raises-125mn/",
-          "https://www.assured.com/about https://www.assured.com/ https://www.iconiq.com/growth/insights/which-insurance-ai-companies-will-matter-in-ten-years",
-          "https://coverager.com/liberate-raises-50-million/ https://www.liberate.ai/news/branch-selects-liberates-voice-ai-for-fnol-and-digital-customer-experience https://fivesigmalabs.com/blog/liberate-and-five-sigma-forge-a-strategic-partnership-in-insurance-claims-automation-with-voice-ai/",
-          "https://beinsure.com/news/pace-raises-46-mn-for-ai-insurance-operations/ https://fortune.com/2026/01/27/exclusive-pace-raises-10-million-sequoia-enterprise-ai-collides-with-insurance",
-          "https://beinsure.com/news/claimsorted-raises-13-3m/",
-          "https://www.alleywatch.com/2025/11/avallon-insurance-claims-automation-ai-agents-tpa-cornelius-schramm/",
-          "https://elysian.is/media/all/elysian-raises-6m-seed-round-to-redefine-insurance-claims-services-with-ai-native-platform",
-          "https://fintech.global/2024/10/22/agentech-raises-3m-to-revolutionise-insurance-claims-with-ai-driven-solutions/ https://coverager.com/mid-america-catastrophe-services-taps-agentech-to-power-a-new-era-of-ai-driven-claims-accuracy-and-speed/",
-          "https://www.carriermanagement.com/news/2024/12/23/269761.htm https://collisionweek.com/2025/01/07/ccc-completes-acquisition-evolutioniq/ https://www.standard.com/get-to-know-standard/newsroom/press-releases/standard-expands-partnership-evolutioniq-improve-disability-claims-experience",
-          "https://fivesigmalabs.com/press/starr-modernizes-pc-and-specialty-claims-with-five-sigmas-ai-claims-platform-and-clive/ https://fivesigmalabs.com/press/five-sigma-named-a-luminary-in-celents-2026-north-america-pc-claims-systems-report/ https://fivesigmalabs.com/blog/liberate-and-five-sigma-forge-a-strategic-partnership-in-insurance-claims-automation-with-voice-ai/",
-          "https://www.prnewswire.com/news-releases/aspire-general-insurance-selects-snapsheet-as-the-claims-management-system-to-support-their-next-phase-of-growth-302616632.html https://www.snapsheetclaims.com/post/kin-insurance-selects-snapsheet-to-deploy-end-to-end-claims-management-platform https://www.snapsheetclaims.com/products/snapsheet-ai https://getlatka.com/companies/snapsheetclaims.com",
-          "https://www.shift-technology.com/en-gb/resources/press/shift-technology-unveils-agentic-ai-powered-shift-claims https://www.shift-technology.com/resources/press/shift-technology-launches-ai-claims-platform https://www.builtinboston.com/articles/shift-technology-raises-220m-1b-valuation",
-          "https://getlatka.com/companies/tractable.ai https://tractable.ai/geico-partners-with-tractable-to-accelerate-accident-recovery-with-ai/",
-          "https://claraanalytics.com/news/clara-analytics-raises-24m-in-series-c-funding-accelerating-ai-adoption-for-insurance-claims/",
-          "https://sprout.ai/resource/sprout-ai-raises-5-4m-from-global-investors-to-transform-claims-processing/ https://sprout.ai/resource/metlife-partners-with-sprout-ai-to-accelerate-claims-automation-across-global-markets/ https://www.insurancebusinessmag.com/uk/news/claims/sprout-ai-announces-successful-funding-for-claims-transformation-465131.aspx",
-          "https://betakit.com/owl-co-raises-30-million-in-series-b-to-scale-insurance-claim-monitoring-solution/ https://owl.co/about",
-          "https://www.wisedocs.ai/blogs/wisedocs-technology-market-leader-for-the-insurance-industry-closes-12-7m-oversubscribed-series-a-as-it-more-than-doubles-customer-base https://betakit.com/ai-powered-medical-record-reviewer-wisedocs-closes-12-7-million-cad-series-a-round/",
-          "https://coverager.com/adesso-acquires-claims-automation-startup-omnius/",
-          "funding unparsed: Sprout.ai"
+          "https://www.renaissancecapital.com/IPO-Center/News/117142/Capital-markets-platform-Clear-Street-officially-withdraws-$351-million-IPO https://www.clearstreet.io/news/blog/the-new-clear-street-trading-app-goes-live-placing-groundbreaking-technology-into-the-hands-of-sophisticated-individual-traders https://www.clearstreet.io/news/blog/this-is-only-the-beginning",
+          "https://alpaca.markets/blog/alpaca-raises-150-million-at-a-1-15b-valuation-to-build-the-global-standard-for-brokerage-infrastructure/ https://pulse2.com/alpaca-raises-135-million-to-scale-agent-first-brokerage-infrastructure/",
+          "https://www.prnewswire.com/news-releases/drivewealth-raises-450m-series-d-valuing-the-company-at-2-85b-301359564.html https://www.drivewealth.com/category/press-releases/ https://sacra.com/c/drivewealth/",
+          "https://investors.statestreet.com/investor-news-events/press-releases/news-details/2025/State-Street-Corporation-and-Apex-Fintech-Solutions-Announce-Strategic-Partnership-to-Address-Growing-Global-Wealth-Market-Opportunity/default.aspx https://apexfintechsolutions.com/products/wealth-management/apex-direct-brokerage-as-a-service-with-cloud-native-tech/",
+          "https://www.accessfintech.com/",
+          "https://finance.yahoo.com/sectors/technology/articles/next-investors-invests-transient-ai-123000254.html https://www.finsmes.com/2026/09/transient-ai-receives-investment-from-nasdaq-ventures.html",
+          "https://www.thesaasnews.com/news/ingenuity-trading-raises-4-8m-seed/ https://ingenuity.trading/about",
+          "https://www.ycombinator.com/companies/tovenai",
+          "https://www.ledgerinsights.com/asx-pauses-dlt-settlement-chess/ https://www.ledgerinsights.com/bnp-paribas-goldman-dtcc-join-135m-funding-of-canton-developer-digital-asset/",
+          "https://www.businesstoday.in/markets/stocks/story/mcx-to-shift-to-new-trading-platform-on-october-3-shares-hit-52-week-high-400006-2023-09-28",
+          "funding unparsed: TovenAI, Tata Consultancy Services (TCS BaNCS / Commodity Derivatives Platform)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "courts-justice",
+    "total": 40.0,
+    "total_raw": 1.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 1,
+        "detail": {
+          "users_midpoint": 165.5,
+          "basis": "market_value",
+          "buyers_mid": 118.5,
+          "value_usd": {
+            "low": 38400.0,
+            "mid": 7494598.054599059,
+            "high": 1410000000.0
+          },
+          "midpoint": 7494598.054599059,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ]
+        },
+        "evidence": [
+          "market value $7,494,598 mid (118.5 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.itnews.com.au/news/justicelink-to-unify-nsw-courts-98567",
+          "https://courts.nsw.gov.au/about-us/about-the-courts-and-tribunals.html",
+          "EU: 16-44 grade C",
+          "https://www.bmjv.de/DE/themen/digitales/digitalisierung_justiz/digitalisierungsinitiative/laendervorhaben/_doc/artikel_vorhaben_02_gefa.html",
+          "https://eucrim.eu/news/cepej-2024-report-on-european-judicial-systems/",
+          "IN: 1-3 grade C",
+          "https://services.ecourts.gov.in/ecourtindia_v6/?p=about_us/index",
+          "MY: 1-2 grade B",
+          "https://www.bernama.com/en/news.php?id=2505009",
+          "PH: 1-1 grade B",
+          "https://3ieimpact.org/sites/default/files/2021-02/SC-PWP-IE-brief.pdf",
+          "SG: 1-1 grade B",
+          "https://www.crimsonlogic.com/case-study-crimsonlogic-elitigation",
+          "UK: 1-3 grade B",
+          "https://www.nao.org.uk/reports/new-it-systems-for-magistrates-courts-the-libra-project/",
+          "https://www.gov.uk/government/organisations/hm-courts-and-tribunals-service/about",
+          "US: 52-52 grade C",
+          "https://investors.tylertech.com/news/news-details/2024/Tyler-Technologies-to-Enhance-Court-Case-Accessibility-and-Efficiency-for-the-Commonwealth-of-Kentucky/default.aspx",
+          "https://www.linkedin.com/company/justice-systems-inc.",
+          "https://equivant-court.com/about-us/",
+          "https://thecourtmanager.org/articles/rising-to-the-challenge-deploying-a-multi-agency-integrated-case-management-system-the-spokane-experience/",
+          "https://www.uscourts.gov/data-news/judiciary-news/2026/03/10/judges-outline-accelerated-modernization-case-management-system",
+          "https://bjs.ojp.gov/content/pub/pdf/sco11.pdf",
+          "global: 37-111 grade C",
+          "https://www.sec.gov/Archives/edgar/data/783412/000143774925038836/djco20250930_10k.htm"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 3,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://hiepro.ehawaii.gov/resources/108209/ATTACHMENT%207-Attachment%207%20Judiciary%20Technical%20Background%20and%20Current%20Systems.pdf",
+          "hn firsthand pain >= 0.7: 3 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.56375,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": false
+        },
+        "evidence": [
+          "https://www.courts.state.md.us/media/news/2024/pr20240506 ; https://www.bmjv.de/DE/themen/digitales/digitalisierung_justiz/digitalisierungsinitiative/laendervorhaben/_doc/artikel_vorhaben_02_gefa.html",
+          "https://www.law.georgetown.edu/tech-institute/wp-content/uploads/sites/42/2023/02/Judicial-Innovation-Fellowship-Roadmap-1.pdf"
+        ]
+      },
+      "crowding": {
+        "score": 3,
+        "detail": {
+          "challengers": 7,
+          "funding_usd": 8239000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "jAI (MinutaIA)",
+            "Gotiva (Grupo Interjato)",
+            "eCourtDate",
+            "CaseLines (Thomson Reuters Case Center)"
+          ]
+        },
+        "evidence": [
+          "https://www.abajournal.com/news/article/clio-acquires-learned-hand-an-ai-company-for-courts-and-judges https://www.artificiallawyer.com/2026/09/30/clio-buys-learned-hand-as-judiciary-strategy-expands/ https://www.prnewswire.com/news-releases/clio-acquires-learned-hand-302893566.html https://www.lawnext.com/2026/09/clio-acquires-learned-hand-giving-its-new-judiciary-business-an-existing-product.html https://calmatters.org/economy/technology/2026/05/ai-los-angeles-riverside-courts/ https://www.beri.net/article/clio-learned-hand-acquisition-judiciary-ai-courts-bench-memo-data-segregation-conflict https://www.theamericancounsel.com/when-courts-adopt-ai-in-the-dark-privacy-legitimacy-and-the-democratic-stakes-of-los-angeless-learned-hand-experiment/ https://venturecapitaltracker.com/2026-clio-acquires-learned-hand-judiciary-ai",
+          "https://www.direitonews.com.br/2026/02/minutaia-atinge-10-milhoes-minutas-juridicas-ia-direito-brasileiro-consolida.html https://www.jai.com.br/ https://conjur.com.br/2026-ago-27/jusbrasil-anuncia-aquisicao-do-minutaia/ https://aws.amazon.com/marketplace/pp/prodview-h6unzzc3xrbeq",
+          "https://ssir.org/articles/entry/legal-tech-nonprofit-court-ai-injustices-india-court-system https://www.orfonline.org/expert-speak/global-ai-impact-commons-stories-adalat-ai https://www.adalat.ai/impact",
+          "https://techcrunch.com/2022/09/06/justicetext-raises-2-2m-to-increase-transparency-in-criminal-evidence-gathering https://peopleofcolorintech.com/articles/justicetext-raises-3m-to-support-public-defenders-with-ai/ https://www.justicetext.com/press",
+          "https://tiinside.com.br/21/09/2026/gotiva-lanca-plataforma-de-ia-juridica-integrada-aos-sistemas-do-judiciario/",
+          "https://getlatka.com/companies/ecourtdate",
+          "https://www.lawtimesnews.com/practice-areas/litigation/thomson-reuters-acquires-cloud-based-platform-caselines-enabling-courts-to-operate-virtually/332518",
+          "funding unparsed: jAI (MinutaIA), Gotiva (Grupo Interjato), eCourtDate, CaseLines (Thomson Reuters Case Center)"
         ]
       }
     }
   },
   {
     "slug": "insurance-policy-admin",
-    "total": 35.0,
-    "total_raw": 0.0,
+    "total": 40.0,
+    "total_raw": 1.0,
     "flags": [],
     "parts": {
       "size": {
-        "score": 3,
+        "score": 4,
         "detail": {
-          "midpoint": 5876.5,
           "users_midpoint": 5480.0,
-          "basis": "buyer_universe",
+          "basis": "market_value",
+          "buyers_mid": 5876.5,
+          "value_usd": {
+            "low": 2512672800.0,
+            "mid": 9998515574.136833,
+            "high": 36718045000.0
+          },
+          "midpoint": 9998515574.136833,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
           ]
         },
         "evidence": [
-          "possible buyers 5876.5 (buyer universe)",
+          "market value $9,998,515,574 mid (5876.5 buyers x segment spend)",
           "AU: 1-3 grade C",
           "https://www.apra.gov.au/registers/list-general-insurance",
           "US: 1-3 grade C",
@@ -3509,26 +3290,155 @@
     }
   },
   {
-    "slug": "mainframe-cobol-general",
-    "total": 35.0,
-    "total_raw": 0.0,
+    "slug": "lab-information",
+    "total": 40.0,
+    "total_raw": 1.0,
     "flags": [],
     "parts": {
       "size": {
-        "score": 3,
+        "score": 4,
         "detail": {
-          "midpoint": 6369.0,
-          "users_midpoint": 10033.0,
-          "basis": "buyer_universe",
+          "users_midpoint": 416.0,
+          "basis": "market_value",
+          "buyers_mid": 27841.5,
+          "value_usd": {
+            "low": 1400186560.0,
+            "mid": 14063651763.41291,
+            "high": 120113990350.0
+          },
+          "midpoint": 14063651763.41291,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (EU Eurostat healthcare resource statistics (hospital beds)): counts other, not buyers",
+            "universe skip (SG MOH Healthcare Services Act (HCSA) Clinical Laboratory Service licence): counts other, not buyers",
+            "universe skip (TH DMSc Bureau of Laboratory Quality Standards: list of MOPH-standard and ISO 15189 medical laboratories): counts other, not buyers",
+            "universe skip (PH DOH Health Facilities and Services Regulatory Bureau (HFSRB) list of licensed clinical laboratories): counts other, not buyers",
+            "universe skip (AU Services Australia Approved Pathology Authorities / accredited pathology laboratories (NPAAC/NATA)): counts other, not buyers"
           ]
         },
         "evidence": [
-          "possible buyers 6369 (buyer universe)",
+          "market value $14,063,651,763 mid (27841.5 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.pulseit.news/australian-digital-health/sunquest-to-roll-out-68-5m-queensland-health-pathology-system-replacement/",
+          "EU: 15-45 grade C",
+          "US: 192-576 grade C",
+          "https://www.captodayonline.com/2020/ProductGuides/11-20_CAPTODAY_LIS.pdf",
+          "https://www.cms.gov/regulations-and-guidance/legislation/clia/downloads/statupda.pdf"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://academic.oup.com/jamia/article/26/3/269/5287977",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 2.9156,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://assets.publishing.service.gov.uk/media/569e34bee5274a112c000030/Full_text_decision_Roper-CliniSys.pdf",
+          "https://www.captodayonline.com/lab-information-systems-where-the-needs-are-greatest/",
+          "regulation reason to stay: Regulated validation: every LIS change must be revalidated under CLIA/CAP/ISO 15189, so switching costs are high"
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 11,
+          "funding_usd": 1800000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "elea (Elea.ai GmbH)",
+            "Flabs",
+            "MarginLogic Health AI",
+            "Scispot",
+            "Proscia",
+            "PathAI",
+            "Paige",
+            "Onymos (DocKnow)",
+            "LigoLab",
+            "CrelioHealth (formerly LiveHealth)"
+          ]
+        },
+        "evidence": [
+          "https://techcrunch.com/2025/03/12/elea-ai-is-chasing-the-healthcare-productivity-opportunity-by-targeting-pathology-labs-legacy-systems/ https://tech.eu/2025/03/12/elea-raises-4m-for-automoated-pathology-platform-to-speed-up-diagnoses/ https://www.elea.health/",
+          "https://flabslis.com/ https://tracxn.com/d/companies/flabs/__EruOZxGAlfpPSXGRihHsJpSy7Il9RoGQSSN92tl-ZKw",
+          "https://www.zaya.ai/zaya-ai-the-start-up-that-brings-artificial-intelligence-to-pathology-diagnosis-launch-a-seed-round-of-600000-euros/ https://lumeadigital.com/lumea-partners-with-zayaai-to-make-a-digitally-enabled-lis-globally-accessible/",
+          "https://clpmag.com/lab-essentials/lab-automation/ligolab-marginlogic-ai-lab-data-entry-integration/ https://mlhealthai.com/",
+          "https://www.scispot.com/blog/scispot-series-a-funding https://betakit.com/scispot-closes-8-million-usd-series-a-to-become-the-operating-layer-for-life-sciences-labs/ https://www.scispot.com/molecular-diagnostics",
+          "https://proscia.com/press-release/proscia-raises-50m-to-advance-ai-driven-pathology-and-deliver-the-future-of-precision-medicine https://proscia.com/press-release/proscia-cements-leadership-in-diagnostic-pathology-with-400-growth-in-daily-cases https://proscia.com/press-release/unilabs-advances-digital-pathology-across-europe-with-proscia",
+          "https://www.pathai.com/ap-lab-solutions https://tracxn.com/d/companies/pathai/__EKVHLLZHuSMeEeOv2jza0bAYsz7_EPlbYjHpiUuz2q0 https://www.ligolab.com/post/bridging-lis-systems-and-digital-pathology-a-scalable-integration-from-ligolab-and-pathai",
+          "https://www.medtechdive.com/news/tempus-paige-buyout-acquisition-ai/758589/",
+          "https://onymos.com/ https://aijourn.com/onymos-and-vanta-diagnostics-collaborate-to-scale-intelligent-lab-intake/",
+          "https://www.ligolab.com/industry-insights/why-ligolabs-funding-choice-nearly-two-decades-ago-continues-to-benefit-the-company-and-its-customer https://www.ligolab.com/post/documenting-the-avero-diagnostic-move-from-a-legacy-lab-rcm-system-to-ligolabs-all-in-one-lab-informatics-platform https://www.globenewswire.com/news-release/2026/09/08/3358041/0/en/ligolab-marks-successful-adlm-2026-participation-with-strong-industry-engagement-around-integrated-lis-and-rcm.html",
+          "https://creliohealth.com/assets/all-brochures/Company-Profile-International-USA.pdf https://blog.creliohealth.com/unlock-unprecedented-speed-welcome-to-the-30-second-lab-with-creliohealth-ai-requisition/",
+          "funding unparsed: elea (Elea.ai GmbH), Flabs, MarginLogic Health AI, Scispot, Proscia, PathAI, Paige, Onymos (DocKnow), LigoLab, CrelioHealth (formerly LiveHealth)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "mainframe-cobol-general",
+    "total": 40.0,
+    "total_raw": 1.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 10033.0,
+          "basis": "market_value",
+          "buyers_mid": 6369.0,
+          "value_usd": {
+            "low": 2732238000.0,
+            "mid": 19143247287.86984,
+            "high": 135332280000.0
+          },
+          "midpoint": 19143247287.86984,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "no spend data for segment(s) smb; those shares add no value"
+          ]
+        },
+        "evidence": [
+          "market value $19,143,247,288 mid (6369 buyers x segment spend)",
           "AU: 1-3 grade C",
           "https://www.apra.gov.au/register-of-authorised-deposit-taking-institutions",
           "EU: 2-6 grade C",
@@ -3618,42 +3528,43 @@
     }
   },
   {
-    "slug": "pension-provident-fund-admin",
-    "total": 35.0,
-    "total_raw": 0.0,
+    "slug": "telecom-bss",
+    "total": 40.0,
+    "total_raw": 1.0,
     "flags": [],
     "parts": {
       "size": {
         "score": 3,
         "detail": {
-          "midpoint": 7796.0,
-          "users_midpoint": 1555.0,
-          "basis": "buyer_universe",
+          "users_midpoint": 1594.0,
+          "basis": "market_value",
+          "buyers_mid": 2997.5,
+          "value_usd": {
+            "low": 750771770.0,
+            "mid": 4736417333.407552,
+            "high": 29263233900.0
+          },
+          "midpoint": 4736417333.407552,
           "bins": [
-            100.0,
-            1000.0,
-            10000.0,
-            100000.0
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (US FCC Form 499 Filer Database (interstate telecom carriers and interconnected VoIP providers registered with USAC)): no buyer count (organisations)",
+            "universe unparsed (EU BEREC General Authorization Database (GADB): notifications of ECN/ECS providers to national regulators): no buyer count (organisations)",
+            "universe unparsed (MY MCMC CMA Registers: lists of NFP, NSP, ASP and CASP licensees): no buyer count (organisations)"
           ]
         },
         "evidence": [
-          "possible buyers 7796 (buyer universe)",
-          "EU: 13-39 grade C",
-          "https://www.eiopa.europa.eu/document/download/83b77884-0677-4a06-9976-4fa006b79b01_en?filename=IORPs+Landscape+Factsheet+2024.pdf",
-          "IN: 1-3 grade C",
-          "https://currentaffairs.adda247.com/epfo-launches-cites-2-01-platform-fy26-pf-interest-to-be-credited-by-july-15/",
-          "SG: 1-1 grade B",
-          "https://www.cpf.gov.sg/content/dam/web/member/infohub/documents/CPF%20Annual%20Report%202024%20Part%201.pdf",
-          "UK: 107-321 grade C",
-          "https://heywood.com/products/pension-administration/altair",
-          "https://democracy.eastsussex.gov.uk/documents/s16606/Item%2014%20Appendix%202%20-%20Pensions%20Software%20Market%20Review.pdf",
-          "https://www.thepensionsregulator.gov.uk/en/document-library/research-and-analysis/occupational-defined-benefit-landscape-in-the-uk-2025",
-          "US: 651-1953 grade C",
-          "https://www.wealthmanagement.com/rpa-news/fis-new-cloud-based-record-keeping-system-could-unlock-the-potential-of-401-k-plans",
-          "https://www.prnewswire.com/news-releases/vitech-systems-group-and-international-union-of-painters-and-allied-trades-industry-pension-fund-elevate-partnership-with-v3locity-a-pioneering-advance-in-cloud-native-pension-administration-302020217.html",
-          "global: 5-15 grade C",
-          "https://www.bravurasolutions.com/wp-content/uploads/2025/07/Sonata-factsheet-July2025.pdf",
-          "https://www.sagitec.com/pension-software-company/press-releases/washington-state-department-of-retirement-systems-awards-pension-modernization-project-to-sagitec-solutions"
+          "market value $4,736,417,333 mid (2997.5 buyers x segment spend)",
+          "EU: 2-6 grade C",
+          "global: 795-2385 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1062579/000119312525319187/dox-20250930.htm",
+          "https://en.wikipedia.org/wiki/Business_Support_and_Control_System",
+          "https://en.wikipedia.org/wiki/Portal_Software",
+          "https://en.wikipedia.org/wiki/NetCracker_Technology"
         ]
       },
       "pain": {
@@ -3666,7 +3577,7 @@
           "in_use_share_unweighted": 0.0
         },
         "evidence": [
-          "https://www.sagitec.com/hubfs/docs/Neospin-TRS-case-study.pdf?hsLang=en-au",
+          "https://www.cambridgemc.com/the-complexity-tax ; https://www.subex.com/article/what-is-revenue-assurance-the-ultimate-revenue-assurance-guide-for-telecom-operators/",
           "hn firsthand pain >= 0.7: 0 comments (need 5)",
           "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
         ]
@@ -3674,7 +3585,7 @@
       "ai_fit": {
         "score": 4,
         "detail": {
-          "mean": 3.7023076923076923,
+          "mean": 3.577727272727273,
           "answered": 12,
           "unanswered": [],
           "tasks": 12
@@ -3693,39 +3604,390 @@
           "regulation_reason_hit": true
         },
         "evidence": [
-          "https://www.calstrs.com/files/f37ce6df1/TRB+2024-11+Item+09.00++Pension+Solution+Project+Update.pdf",
-          "https://www.computerworld.com/article/1392782/cobol-based-system-for-160-billion-pension-fund-is-a-political-football.html",
-          "regulation reason to stay: Regulatory and fiduciary risk: payment errors to retirees are highly visible, and boards prefer incumbent stability"
+          "https://www.sec.gov/Archives/edgar/data/1005757/000100575725000006/csgs-20250904.htm ; https://ir.csgi.com/press-releases/press-release-details/2024/CSG-Announces-Six-Year-Contract-Renewal-with-Comcast/default.aspx ; https://www.prnewswire.com/news-releases/globe-selects-amdocs-for-strategic-bss-transformation-project-under-seven-year-agreement-149718635.html",
+          "https://aws.amazon.com/blogs/industries/aws-mainframe-modernization-transforming-telco-from-legacy-constraints-to-digital-innovation/",
+          "regulation reason to stay: Billing is revenue-critical. A failed cutover hits cash and the regulator at once, so operators run parallel systems and byte-for-byte output comparisons (updraftworks case: a 14-month migration of a 30-year COBOL system)."
+        ]
+      },
+      "crowding": {
+        "score": 4,
+        "detail": {
+          "challengers": 9,
+          "funding_usd": 121200000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Totogi",
+            "Sierra",
+            "Circles (CirclesX)",
+            "Wavelo (Tucows)"
+          ]
+        },
+        "evidence": [
+          "https://totogi.com/newsroom/press-releases/tier-1-southeast-asian-operator-selects-totogis-telco-ontology-as-foundation-for-ai-strategy/ https://totogi.com/newsroom/press-releases/totogi-ends-the-era-of-billion-dollar-bss-failures-with-ai-that-actually-works/ https://www.telecomtv.com/content/ai/totogi-signs-strategic-bss-deal-with-a-major-tier-one-european-service-provider-54433/ https://itbrief.asia/story/totogi-ontology-goes-live-in-seven-telecoms-deployments https://www.lightreading.com/oss-bss-cx/totogi-lands-bss-deal-with-zain-sudan-at-ericsson-s-likely-expense https://www.lightreading.com/oss-bss-cx/totogi-flaunts-charging-deal-progress-with-nzs-2degrees https://www.telecomtv.com/content/ai/major-telecom-names-launch-the-ai-native-telecom-accelerator-anta-55741/",
+          "https://www.jmi.com/gaiia-raises-40-million-series-b-led-by-jmi-equity-to-modernize-the-operating-system-for-communications-service-providers/ https://ventureburn.com/gaiia-raises-40m-to-expand-ai-telecom-platform/",
+          "https://www.globenewswire.com/news-release/2026/09/23/3367463/34554/en/liberty-global-signs-strategic-partnership-with-sierra-to-rollout-ai-powered-customer-experiences-across-telecoms-businesses.html https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/ https://telecomtv.com/content/ai/the-week-in-ai-native-telco-19-25-sept-2026-56343/amp",
+          "https://www.calcalistech.com/ctechnews/article/mzl1gy8tx https://www.wonderful.ai/case-studies/telecommunication",
+          "https://www.lightreading.com/finance/singapore-s-circles-targets-nasdaq-listing-as-it-doubles-down-on-us-expansion https://finance.yahoo.com/technology/articles/circles-group-spinning-off-digital-094941913.html https://www.prnewswire.com/apac/news-releases/circles-and-huawei-sign-strategic-collaboration-to-advance-ai-native-digital-telecom-solutions-globally-302719537.html",
+          "https://en.wikipedia.org/wiki/Gigs https://techcrunch.com/2024/12/12/gigs-mvno-73m-mobile-network-services/",
+          "https://en.wikipedia.org/wiki/LotusFlare https://lotusflare.com/news/ericsson-and-lotusflare-announce-equity-investment-and-strategic-partnership/",
+          "https://www.sec.gov/Archives/edgar/data/0000909494/000090949426000003/tcx-20260630.htm",
+          "https://www.telecomtv.com/content/digital-platforms-services/amdocs-matrixx-ride-bss-consolidation-wave-54599/",
+          "funding unparsed: Totogi, Sierra, Circles (CirclesX), Wavelo (Tucows)"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "wealth-portfolio-accounting",
+    "total": 40.0,
+    "total_raw": 1.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 2920.0,
+          "basis": "market_value",
+          "buyers_mid": 22967.0,
+          "value_usd": {
+            "low": 1002635700.0,
+            "mid": 3051247899.1757307,
+            "high": 9378184200.0
+          },
+          "midpoint": 3051247899.1757307,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe skip (AU ASIC Financial Advisers Register): counts people, not buyers"
+          ]
+        },
+        "evidence": [
+          "market value $3,051,247,899 mid (22967 buyers x segment spend)",
+          "EU: 3-9 grade C",
+          "https://www.efama.org/sites/default/files/files/asset-management-report-2024_0.pdf",
+          "SG: 3-9 grade C",
+          "https://www.mas.gov.sg/-/media/mas-media-library/publications/singapore-asset-management-survey/asset-management-survey-report-2024.pdf",
+          "US: 94-282 grade C",
+          "https://www.sec.gov/Archives/edgar/data/350894/000035089417000010/seic-123116form10xk.htm",
+          "https://www.investmentadviser.org/wp-content/uploads/2026/06/Snapshot-2026.pdf",
+          "global: 1360-4080 grade C",
+          "https://www.kitces.com/blog/portfolio-management-trading-rebalancing-software-review-fintech-competition-addressable-market-size/",
+          "https://www.avaloq.com/about",
+          "https://en.wikipedia.org/wiki/SimCorp"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0007663913913913914,
+          "in_use_share_unweighted": 0.07894736842105263
+        },
+        "evidence": [
+          "https://www.rbcwealthmanagement.com/assets/wp-content/uploads/documents/campaign/the-north-america-family-office-report-2024.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0007663913913913914 (unweighted 0.07894736842105263, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 4,
+        "detail": {
+          "mean": 3.859565217391304,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 3,
+        "detail": {
+          "s2": "weak",
+          "s2_points": 1.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/350894/000035089417000010/seic-123116form10xk.htm",
+          "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/events/approved/reinvent-2025/reinvent/2024/slides/fsi/FSI312_Replatforming-for-reinvention-Modernizing-mainframes-at-Goldman-Sachs.pdf",
+          "regulation reason to stay: Regulatory reporting and custodian feeds are already wired and certified"
+        ]
+      },
+      "crowding": {
+        "score": 5,
+        "detail": {
+          "challengers": 15,
+          "funding_usd": 10729200128.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Arcesium"
+          ]
+        },
+        "evidence": [
+          "https://www.globenewswire.com/news-release/2026/09/16/3363158/0/en/ridgeline-raises-250m-series-e-valuing-ai-native-fintech-at-1-425-billion.html https://www.wealthmanagement.com/advisor-support-platforms/investment-management-platform-ridgeline-raises-250m-series-e",
+          "https://addepar.com/blog/addepar-powers-9-trillion-in-assets-with-data-and-native-ai https://www.finsmes.com/2025/05/addepar-raises-230m-in-series-g-funding-at-3-25-billion-valuation.html",
+          "https://cwan.com/press-releases/clearwater-analytics-completes-8-4-billion-take-private-acquisition-by-permira-and-warburg-pincus/",
+          "https://masttro.com/ai-info-page",
+          "https://eton-solutions.com/news/eton-solutions-secures-58m-series-c-to-bring-ai-driven-wealth-management-technology-to-the-worlds-leading-family-offices-pes-and-funds/",
+          "https://en.wikipedia.org/wiki/Arcesium https://www.alternativeswatch.com/2025/12/15/arcesium-aquata-launch-new-ai-features/ https://fintech.global/2026/05/20/arcesium-launches-ai-platform-for-institutional-investment/",
+          "https://www.fundguard.com/mondrian-partners-with-fundguard-cloud-native-investment-accounting/ https://www.finsmes.com/2024/03/fundguard-closes-100m-in-series-c-funding.html",
+          "https://www.wealthmanagement.com/advisor-support-platforms/alts-platform-arch-raises-52m-in-series-b-round https://www.oakhcft.com/news/arch-raises-52m-series-b-to-modernize-private-markets-infrastructure https://fintech.global/2026/09/30/arch-extends-ai-platform-into-pre-investment-diligence/",
+          "https://www.marketsmedia.com/goldman-sachs-leads-canoe-intelligences-36m-funding-round/",
+          "https://www.gic.com.sg/uploads/2025/04/Altruist-Raises-152M-Series-F-Led-by-GIC-to-Accelerate-Innovation-for-Growth-Oriented-RIAs.pdf https://riabiz.com/a/2026/3/18/altruist-again-has-staggering-ai-news-1600-ria-firms-subscribe-to-hazel-in-one-month-and-pipeline-suggests-1500-advisors-will-join-per-month-for-next-nine-months-ceo-says https://wealthtechtoday.com/2026/08/26/vanguard-altruist-acquisition-hazel/ https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/vanguard-announcement-qa-august-2026.html",
+          "https://research.contrary.com/company/vise https://www.wealthmanagement.com/financial-technology/a-frank-chat-with-the-founders-of-vise https://www.sourcery.vc/p/breaking-vise-hits-22b-in-platform https://www.prnewswire.com/news-releases/vise-partners-with-bitwise-to-introduce-crypto-model-portfolios-for-advisors-302888480.html https://vise.com/learn/vise-partners-with-55b-newedge-to-deliver-personalized-portfolios-at-scale",
+          "https://www.landytech.com/",
+          "https://pulse2.com/asseta-ai-4-2-million-seed-funding/ https://alleywatch.com/2025/11/asseta-ai-family-office-accounting-ai-infrastructure-multi-entity-financial-management-dean-palmiter/",
+          "https://www.wealthmanagement.com/ria-news/savvy-wealth-raises-100m-valuation-hits-600m https://www.investmentnews.com/goria/custodian/savvy-wealth-opens-its-custodial-platform-to-outside-rias/268321",
+          "https://www.wealthmanagement.com/ria-news/ai-native-wealth-manager-arca-raises-64m https://riabiz.com/a/2026/6/27/an-ria-is-stripping-out-software-from-1-billion-plus-of-acquisitions-with-a-new-485-million-raise-and-sky-high-praise-but-critics-say-arca-wealth-mostly-has-a-new-narrative-for-an-existing-business-model",
+          "funding unparsed: Arcesium"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "insurance-claims",
+    "total": 35.0,
+    "total_raw": 0.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 4,
+        "detail": {
+          "users_midpoint": 3438.0,
+          "basis": "market_value",
+          "buyers_mid": 11606.0,
+          "value_usd": {
+            "low": 1485281250.0000002,
+            "mid": 5118811816.925887,
+            "high": 17399255000.0
+          },
+          "midpoint": 5118811816.925887,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ]
+        },
+        "evidence": [
+          "market value $5,118,811,817 mid (11606 buyers x segment spend)",
+          "AU: 1-3 grade C",
+          "https://www.apra.gov.au/registers/list-registered-life-insurers-and-friendly-societies",
+          "TH: 2-6 grade C",
+          "https://www.thailandstarterkit.com/money/insurance-company-thailand/",
+          "US: 750-2250 grade C",
+          "https://dxc.com/platforms/assure/dxc-assure-claims",
+          "https://insurity.com/press-release/insurity-becomes-largest-cloud-software-vendor-serving-400-pc-insurers-cloud",
+          "https://content.naic.org/sites/default/files/publications-key-facts-market-trends-new-york.pdf",
+          "global: 966-2898 grade C",
+          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm",
+          "https://www.guidewire.com/products/core-products/insurancesuite/claimcenter-claims-management-software",
+          "https://announcements.asx.com.au/asxpdf/20230823/pdf/05sxxcjb4gzrw5.pdf",
+          "https://www.sec.gov/Archives/edgar/data/1160951/000095017022020470/dct-20220831.htm",
+          "https://www.majesco.com/press/majesco-delivers-record-fy25/"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.001694915254237288,
+          "in_use_share_unweighted": 0.23076923076923078
+        },
+        "evidence": [
+          "https://assets.lloyds.com/media/472b74ba-fe3b-47d6-aa7b-d37c2ba2e179/lloyds-blueprint-two.pdf",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.001694915254237288 (unweighted 0.23076923076923078, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 3.2116000000000002,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/1528396/000152839625000221/gwre-20250731.htm ; https://www.sec.gov/Archives/edgar/data/885740/000101376225003193/ea0235334-20f_sapiens.htm",
+          "https://www.dig-in.com/opinion/insurance-it-leaders-have-an-ai-infrastructure-problem",
+          "regulation reason to stay: Claims systems link to policy admin, payments, reserving, reinsurance, fraud tools and regulator reporting, so a swap touches many integrations."
+        ]
+      },
+      "crowding": {
+        "score": 5,
+        "detail": {
+          "challengers": 18,
+          "funding_usd": 2848400000.0,
+          "funding_over": 500000000.0,
+          "unparsed": [
+            "Sprout.ai"
+          ]
+        },
+        "evidence": [
+          "https://beinsure.com/news/insurtech-reserv-raises-125mn/",
+          "https://www.assured.com/about https://www.assured.com/ https://www.iconiq.com/growth/insights/which-insurance-ai-companies-will-matter-in-ten-years",
+          "https://coverager.com/liberate-raises-50-million/ https://www.liberate.ai/news/branch-selects-liberates-voice-ai-for-fnol-and-digital-customer-experience https://fivesigmalabs.com/blog/liberate-and-five-sigma-forge-a-strategic-partnership-in-insurance-claims-automation-with-voice-ai/",
+          "https://beinsure.com/news/pace-raises-46-mn-for-ai-insurance-operations/ https://fortune.com/2026/01/27/exclusive-pace-raises-10-million-sequoia-enterprise-ai-collides-with-insurance",
+          "https://beinsure.com/news/claimsorted-raises-13-3m/",
+          "https://www.alleywatch.com/2025/11/avallon-insurance-claims-automation-ai-agents-tpa-cornelius-schramm/",
+          "https://elysian.is/media/all/elysian-raises-6m-seed-round-to-redefine-insurance-claims-services-with-ai-native-platform",
+          "https://fintech.global/2024/10/22/agentech-raises-3m-to-revolutionise-insurance-claims-with-ai-driven-solutions/ https://coverager.com/mid-america-catastrophe-services-taps-agentech-to-power-a-new-era-of-ai-driven-claims-accuracy-and-speed/",
+          "https://www.carriermanagement.com/news/2024/12/23/269761.htm https://collisionweek.com/2025/01/07/ccc-completes-acquisition-evolutioniq/ https://www.standard.com/get-to-know-standard/newsroom/press-releases/standard-expands-partnership-evolutioniq-improve-disability-claims-experience",
+          "https://fivesigmalabs.com/press/starr-modernizes-pc-and-specialty-claims-with-five-sigmas-ai-claims-platform-and-clive/ https://fivesigmalabs.com/press/five-sigma-named-a-luminary-in-celents-2026-north-america-pc-claims-systems-report/ https://fivesigmalabs.com/blog/liberate-and-five-sigma-forge-a-strategic-partnership-in-insurance-claims-automation-with-voice-ai/",
+          "https://www.prnewswire.com/news-releases/aspire-general-insurance-selects-snapsheet-as-the-claims-management-system-to-support-their-next-phase-of-growth-302616632.html https://www.snapsheetclaims.com/post/kin-insurance-selects-snapsheet-to-deploy-end-to-end-claims-management-platform https://www.snapsheetclaims.com/products/snapsheet-ai https://getlatka.com/companies/snapsheetclaims.com",
+          "https://www.shift-technology.com/en-gb/resources/press/shift-technology-unveils-agentic-ai-powered-shift-claims https://www.shift-technology.com/resources/press/shift-technology-launches-ai-claims-platform https://www.builtinboston.com/articles/shift-technology-raises-220m-1b-valuation",
+          "https://getlatka.com/companies/tractable.ai https://tractable.ai/geico-partners-with-tractable-to-accelerate-accident-recovery-with-ai/",
+          "https://claraanalytics.com/news/clara-analytics-raises-24m-in-series-c-funding-accelerating-ai-adoption-for-insurance-claims/",
+          "https://sprout.ai/resource/sprout-ai-raises-5-4m-from-global-investors-to-transform-claims-processing/ https://sprout.ai/resource/metlife-partners-with-sprout-ai-to-accelerate-claims-automation-across-global-markets/ https://www.insurancebusinessmag.com/uk/news/claims/sprout-ai-announces-successful-funding-for-claims-transformation-465131.aspx",
+          "https://betakit.com/owl-co-raises-30-million-in-series-b-to-scale-insurance-claim-monitoring-solution/ https://owl.co/about",
+          "https://www.wisedocs.ai/blogs/wisedocs-technology-market-leader-for-the-insurance-industry-closes-12-7m-oversubscribed-series-a-as-it-more-than-doubles-customer-base https://betakit.com/ai-powered-medical-record-reviewer-wisedocs-closes-12-7-million-cad-series-a-round/",
+          "https://coverager.com/adesso-acquires-claims-automation-startup-omnius/",
+          "funding unparsed: Sprout.ai"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "cooperative-rural-microfinance-banking",
+    "total": 30.0,
+    "total_raw": -1.0,
+    "flags": [],
+    "parts": {
+      "size": {
+        "score": 3,
+        "detail": {
+          "users_midpoint": 66320.0,
+          "basis": "market_value",
+          "buyers_mid": 48609.0,
+          "value_usd": {
+            "low": 1068029244.0,
+            "mid": 4698546405.904394,
+            "high": 36433505500.0
+          },
+          "midpoint": 4698546405.904394,
+          "bins": [
+            100000000.0,
+            1000000000.0,
+            5000000000.0,
+            20000000000.0
+          ],
+          "notes": [
+            "universe unparsed (UK Bank of England / PRA credit union quarterly statistics (CQ returns)): no buyer count (organisations)"
+          ]
+        },
+        "evidence": [
+          "market value $4,698,546,406 mid (48609 buyers x segment spend)",
+          "EU: 341-1023 grade C",
+          "https://atruvia.de/pressemitteilungen/17-02-2020-nach-drei-jahren-serienmigration-nutzen-jetzt-alle-volks-und-raiffeisenbanken-ein-gemeinsames-it-verfahren",
+          "https://www.eacb.coop/en/european-association-of-co-operative-banks.html",
+          "ID: 500-1500 grade C",
+          "https://ussi-software.com/profile-2/",
+          "https://ojk.go.id/en/berita-dan-kegiatan/siaran-pers/Pages/OJK-Issues-Regulation-On-Information-Technology-Implementation-For-BPR-And-BPRS-Digital-Security.aspx",
+          "IN: 50485-70844 grade B",
+          "https://www.kiya.ai/wp-content/uploads/2019/01/Brochure-Corporate1.pdf",
+          "https://www.indiancooperative.com/co-op-news-snippets/computerization-51k-pacs-onboarded-68k-secure-sanction-letters/",
+          "https://indianpsu.com/urban-cooperative-banks-growth-fy25-rbi/",
+          "US: 3660-4287 grade B",
+          "https://www.sec.gov/Archives/edgar/data/779152/000077915221000073/jkhy-20210630.htm",
+          "https://www.itjungle.com/2009/12/08/fhs120809-story01/",
+          "https://ncua.gov/newsroom/press-release/2026/ncua-releases-fourth-quarter-2025-credit-union-system-performance-data"
+        ]
+      },
+      "pain": {
+        "score": 2,
+        "detail": {
+          "s3": "weak",
+          "s3_points": 1.0,
+          "hn_pain_comments": 0,
+          "in_use_share": 0.0,
+          "in_use_share_unweighted": 0.0
+        },
+        "evidence": [
+          "https://techcrunch.com/2015/05/20/oradian/ ; https://technology.inquirer.net/86869/financial-technology-startup-targets-rural-banking-sector",
+          "hn firsthand pain >= 0.7: 0 comments (need 5)",
+          "job posts legacy in use, weighted share 0.0 (unweighted 0.0, need 0.3)"
+        ]
+      },
+      "ai_fit": {
+        "score": 3,
+        "detail": {
+          "mean": 2.9486363636363637,
+          "answered": 12,
+          "unanswered": [],
+          "tasks": 12
+        },
+        "evidence": [
+          "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
+        ]
+      },
+      "lockin": {
+        "score": 4,
+        "detail": {
+          "s2": "strong",
+          "s2_points": 2.0,
+          "s4": "weak",
+          "s4_hit": false,
+          "regulation_reason_hit": true
+        },
+        "evidence": [
+          "https://www.sec.gov/Archives/edgar/data/779152/000077915221000073/jkhy-20210630.htm ; https://www.kansascityfed.org/research/payments-system-research-briefings/market-structure-of-core-banking-services-providers/ ; https://atruvia.de/pressemitteilungen/17-02-2020-nach-drei-jahren-serienmigration-nutzen-jetzt-alle-volks-und-raiffeisenbanken-ein-gemeinsames-it-verfahren",
+          "https://www.itjungle.com/2021/09/29/the-ibm-i-and-its-rpg-decade-of-crisis/ ; https://www.ilo.org/resource/news/joint-study-ilo-and-ojk-reveals-urgent-need-digital-transformation-rural",
+          "regulation reason to stay: Vendors bundle regulatory reporting (POJK compliance) into the core, which raises switching risk"
         ]
       },
       "crowding": {
         "score": 5,
         "detail": {
           "challengers": 13,
-          "funding_usd": 1821750000.0,
+          "funding_usd": 697380000.0,
           "funding_over": 500000000.0,
           "unparsed": [
-            "SinglepointAI",
-            "Warren",
-            "Sagitec Solutions",
-            "Vitech Systems Group (V3locity)"
+            "Oradian (Instafin)",
+            "incuto",
+            "Neowise (Decentro subsidiary)",
+            "PearlPay"
           ]
         },
         "evidence": [
-          "https://stax.ai/resources/stax-ai-raises-funding-to-11-65m-marking-new-era-for-retirement-tpa-industry/ https://www.stax.ai/resources/8-of-the-top-10-retirement-tpas-choose-stax-ai-to-power-administration-and-growth https://blog.neotribe.vc/ai-for-retirement/ https://www.tryfinch.com/blog/staxai",
-          "https://www.finsmes.com/2025/10/aboon-raises-17-5m-in-seed-funding.html https://www.prnewswire.com/news-releases/edward-jones-kicks-off-development-of-groundbreaking-retirement-plan-management-tech-302893024.html",
-          "https://www.singlepointai.com/faq.html https://www.stocktitan.net/news/VOYA/voya-financial-and-singlepoint-ai-advance-retirement-plan-onboarding-iy8mp2ce5uas.html",
-          "https://www.startup.eu/investments/warren-10-m-seed-06-2026 https://motivepartners.com/content/why-we-invested-in-warren",
-          "https://www.alleywatch.com/2026/02/vestwell-retirement-infrastructure-workplace-savings-platform-ira-employment-aaron-schumm/",
-          "https://humaninterest.com/pressroom/articles/human-interest-announces-401k-solutions-for-ubs-financial-advisors/ https://sacra.com/c/human-interest/",
-          "https://techcrunch.com/2023/05/15/uk-pension-platform-smart-nabs-95m/ https://www.pensionsage.com/pa/Smart-Pension-surpasses-10bn-AUM.php https://www.pensionsage.com/pa/Smart-pension-acquires-Evolve-pensions.php",
-          "https://www.abc.net.au/news/2026-03-27/grow-inc-super-fund-admin-provider-hesta-serious-financial-woes/106358950 https://dealroom.co/news/147540-mufg-moves-to-acquire-australian-super-tech-firm-grow-inc/",
-          "https://www.pensionsage.com/pa/Penfold-surpasses-1bn-in-assets-under-administration-amid-growing-demand-for-digital-pensions.php https://greshamhouseventures.com/portfolio/penfold/",
-          "https://ffnews.com/news/festina-finance-secures-25m-growth-investment-to-scale-european-pension-tech",
-          "https://www.sagitec.com/pension-software-company/press-releases/sagitec-secures-contract-to-modernize-a-retirement-system-for-a-state-wide-pension-fund-in-the-u.s https://www.sagitec.com/pension-software-company/press-releases/washington-state-department-of-retirement-systems-awards-pension-modernization-project-to-sagitec-solutions",
-          "https://www.prnewswire.com/news-releases/vitech-systems-group-and-international-union-of-painters-and-allied-trades-industry-pension-fund-elevate-partnership-with-v3locity-a-pioneering-advance-in-cloud-native-pension-administration-302020217.html https://myupp.ca/upp-selects-vitechs-v3locity-to-administer-new-integrated-pension-system/",
-          "https://techfundingnews.com/arca-digital-1m-seed-pension-tech-spain/",
-          "funding unparsed: SinglepointAI, Warren, Sagitec Solutions, Vitech Systems Group (V3locity)"
+          "https://techcrunch.com/2026/03/16/fuse-raises-25m-to-disrupt-aging-loan-origination-systems-used-by-u-s-credit-unions/ https://theaiinsider.tech/2026/03/20/fuse-raises-25m-to-build-ai-native-loan-origination-platform-for-credit-unions/ https://fintech.global/2026/03/18/fuse-launches-5m-rescue-fund-for-credit-unions/ https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-builds-alliance-with-fuse-to-give-auto-and-equipment-lenders-a-faster-path",
+          "https://www.posh.ai/press/posh-raises-4-15m-in-cuso-round https://www.posh.ai/press/posh-ai-announces-strategic-funding-led-by-curql-to-accelerate-responsible-generative-ai-innovation-and-welcomes-dave-tucker-to-the-board-of-directors https://curql.com/press/curql-fund-credit-unions-lead-round-of-funding-for-posh-ai https://www.posh.ai/press/posh-introduces-outreach-proactive-ai-agents-that-help-financial-institutions-capture-revenue-and-enhance-service",
+          "https://techcrunch.com/2024/10/22/interface-ai-raises-30m-to-help-banks-field-customer-requests/ https://www.globenewswire.com/news-release/2025/11/18/3190216/0/en/interface-ai-Unveils-Industry-First-Agentic-BankGPT-Platform-that-Moves-CX-from-Convenience-to-Outcomes.html",
+          "https://www.zest.ai/company/announcements/zest-ai-announces-200-million-growth-investment-from-insight-partners/ https://www.zest.ai/company/announcements/zest-ai-doubles-down-on-credit-union-market-for-ai-underwriting/",
+          "https://tech.eu/2021/12/09/mambu-mambos-on-over-to-e235-million-in-new-raise-at-e4-9-billion-valuation/ https://en.wikipedia.org/wiki/Mambu_(company)",
+          "https://techcrunch.com/2015/05/20/oradian/ https://www.finsmes.com/2018/02/oradian-receives-investment-from-goodwell.html https://technext24.com/2024/11/29/oradian-plans-for-financial-inclusion/ https://fintechnews.ph/73414/ai/ai-native-core-banking-oradian/",
+          "https://www.thesaasnews.com/news/nymbus-raises-70-million-in-series-d https://www.nymbus.com/press/gesa-credit-union-backs-nymbus-to-drive-sustainable-growth/ https://www.prnewswire.com/news-releases/nymbus-wins-credit-union-times-luminaries-award-for-innovative-core-conversion-with-michigan-state-university-federal-credit-union-302621478.html",
+          "https://www.incuto.com/newsandviews/incuto-investment https://www.incuto.com/newsandviews",
+          "https://technode.global/2024/01/09/indonesias-komunal-raises-5-5m-in-series-a-funding-round-led-by-sumitomo-corporation-equity-asia/ https://www.cnbcindonesia.com/tech/20260123181342-37-704895/komunal-group-tutup-tahun-2025-dengan-stabilitas-kinerja-yang-terjaga",
+          "https://inc42.com/buzz/y-combinator-backed-decentro-acquires-saas-fintech-neowise-technologies/ https://decentro.tech/blog/microfinance-software/",
+          "https://launchbaseafrica.com/2024/08/26/fintech-startup-rubyx-secures-446k-debt-funding-from-proparco-to-boost-african-microfinance-innovation/ https://www.proparco.fr/en/actualites/rubyx-rolls-out-its-lending-service-african-microfinance-institutions-and-startups",
+          "https://ensibuuko.com/",
+          "https://pearlpay.com/pearlpay-partners-with-rural-banks-in-pangasinan/ https://www.manilatimes.net/2020/01/10/public-square/pearlpay-partners-with-rural-banks-in-pangasinan/673175/",
+          "funding unparsed: Oradian (Instafin), incuto, Neowise (Decentro subsidiary), PearlPay"
         ]
       }
     }
