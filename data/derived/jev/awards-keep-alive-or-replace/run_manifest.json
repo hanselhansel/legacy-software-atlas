@@ -1,0 +1,14 @@
+{
+ "pass": "awards-keep-alive-or-replace",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "awards-keep-alive-or-replace@v1",
+   "file_sha256": "98c3df02a021be59fa4ebfc5ff31222ba3525c1287437b992c15c6a97776a91c"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 1.5,
+ "git_commit": "f05ff13fdc361402ef14d9d10471c535cece3186",
+ "started_at": "2026-10-05T12:23:36.127999+00:00"
+}

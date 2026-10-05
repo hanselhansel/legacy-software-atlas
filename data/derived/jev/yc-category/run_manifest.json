@@ -1,0 +1,14 @@
+{
+ "pass": "yc-category",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "yc-category@v1",
+   "file_sha256": "0d01117aa5ab41356e95c679276a1ec7499b2803f141dded0deb149a2028dbf7"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.3,
+ "git_commit": "b547dedcf3d86b85fafb1a9797e8a481e0ed15cc",
+ "started_at": "2026-10-05T12:42:49.195409+00:00"
+}

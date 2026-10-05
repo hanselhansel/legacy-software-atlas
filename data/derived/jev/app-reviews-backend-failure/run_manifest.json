@@ -1,0 +1,14 @@
+{
+ "pass": "app-reviews-backend-failure",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "app-reviews-backend-failure@v1",
+   "file_sha256": "bbd10053daaa829cd0740c2f76c713cd970dd1d336cb023b6bf331263ed10c77"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 1.5,
+ "git_commit": "b547dedcf3d86b85fafb1a9797e8a481e0ed15cc",
+ "started_at": "2026-10-05T12:40:10.161393+00:00"
+}
