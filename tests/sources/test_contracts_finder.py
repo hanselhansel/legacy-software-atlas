@@ -25,7 +25,47 @@ def test_count_reads_hit_count(mock_client, no_sleep):
         "https://www.contractsfinder.service.gov.uk"
         "/api/rest/2/search_notices/json"
     )
-    assert seen["body"]["searchCriteria"]["keyword"] == "mainframe"
+    assert seen["body"]["searchCriteria"]["keyword"] == '"mainframe"'
+
+
+def test_count_sends_quoted_phrase_keyword(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"hitCount": 846})
+
+    client = mock_client(handler)
+    contracts_finder.count("mortgage servicing platform", "UK", client)
+    assert seen["body"]["searchCriteria"]["keyword"] == (
+        '"mortgage servicing platform"'
+    )
+
+
+def test_count_quotes_special_chars(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"hitCount": 0})
+
+    client = mock_client(handler)
+    contracts_finder.count("z/TPF d'art", "UK", client)
+    assert seen["body"]["searchCriteria"]["keyword"] == '"z/TPF d\'art"'
+
+
+def test_count_empty_query_sends_empty_criteria(mock_client, no_sleep):
+    """Empty query is the match-all probe: no keyword filter."""
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"hitCount": 612724})
+
+    client = mock_client(handler)
+    assert contracts_finder.count("", "UK", client) == 612724
+    assert "keyword" not in seen["body"]["searchCriteria"]
+    assert "queryString" not in seen["body"]["searchCriteria"]
 
 
 def test_count_missing_hit_count_returns_none(mock_client, no_sleep):

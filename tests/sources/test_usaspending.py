@@ -33,11 +33,49 @@ def test_count_sums_procurement_award_groups(mock_client, no_sleep):
     assert seen["url"] == (
         "https://api.usaspending.gov/api/v2/search/spending_by_award_count/"
     )
-    assert seen["body"]["filters"]["keywords"] == ["mainframe"]
+    assert seen["body"]["filters"]["keywords"] == ['"mainframe"']
     # Same FY2025 window the sources.csv live test verified.
     assert seen["body"]["filters"]["time_period"] == [
         {"start_date": "2024-10-01", "end_date": "2025-09-30"}
     ]
+
+
+def test_count_sends_quoted_phrase_keywords(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"results": dict(RESULTS)})
+
+    client = mock_client(handler)
+    usaspending.count("core banking", "US", client)
+    assert seen["body"]["filters"]["keywords"] == ['"core banking"']
+
+
+def test_count_quotes_special_chars(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"results": dict(RESULTS)})
+
+    client = mock_client(handler)
+    usaspending.count("z/TPF d'art", "US", client)
+    assert seen["body"]["filters"]["keywords"] == ['"z/TPF d\'art"']
+
+
+def test_count_empty_query_omits_keywords(mock_client, no_sleep):
+    """Empty query is the match-all probe: no keywords filter at all."""
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"results": dict(RESULTS)})
+
+    client = mock_client(handler)
+    usaspending.count("", "US", client)
+    assert "keywords" not in seen["body"]["filters"]
+    assert seen["body"]["filters"]["time_period"]
 
 
 def test_count_missing_results_returns_none(mock_client, no_sleep):

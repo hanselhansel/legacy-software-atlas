@@ -22,8 +22,34 @@ def test_count_reads_total_notice_count(mock_client, no_sleep):
     client = mock_client(handler)
     assert ted.count("core banking", "EU", client) == 44
     assert seen["url"] == "https://api.ted.europa.eu/v3/notices/search"
-    assert seen["body"]["query"] == 'FT~"core banking"'
+    # '=' is the exact-match operator; '~' stems multilingual fields.
+    assert seen["body"]["query"] == 'FT="core banking"'
     assert seen["body"]["limit"] == 1
+
+
+def test_count_quotes_special_chars(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"totalNoticeCount": 0})
+
+    client = mock_client(handler)
+    ted.count("z/TPF d'art", "EU", client)
+    assert seen["body"]["query"] == 'FT="z/TPF d\'art"'
+
+
+def test_count_empty_query_is_match_all(mock_client, no_sleep):
+    """Empty query maps to a publication-date match-all for the guard."""
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"totalNoticeCount": 7063501})
+
+    client = mock_client(handler)
+    assert ted.count("", "EU", client) == 7063501
+    assert seen["body"]["query"] == "publication-date >= 20000101"
 
 
 def test_count_missing_total_returns_none(mock_client, no_sleep):
