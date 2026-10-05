@@ -23,11 +23,11 @@ being_replaced = "A legacy system is named and is being replaced, migrated, reti
 neither = "No legacy system is named, or the notice is not about a system in use."
 
 ["tenders: which category"]
-version = 1
+version = 2
 
 ["tenders: which category".questions.category]
 type = "choice"
-instructions = "`item` is a tender or contract notice. Which legacy software category does it belong to?"
+instructions = "`item` is a tender or contract notice. Which software category is it mainly about? Pick a category only if the notice buys, maintains or replaces software for that job; a passing mention of a product name is not enough. Otherwise answer unclear."
 
 ["tenders: which category".questions.category.criteria]
 agriculture-commodity = "Agriculture and commodity trading"
@@ -65,11 +65,11 @@ trade-finance = "Trade finance"
 utility-billing-cis = "Utility billing and customer information"
 warehouse-management = "Warehouse management"
 wealth-portfolio-accounting = "Wealth and portfolio accounting"
-other = "A legacy category that fits none of the above."
+other = "Clearly about a software category that fits none of the above."
 unclear = "The category cannot be told from the text."
 
 ["job APIs: industry, segment, legacy in use"]
-version = 1
+version = 2
 
 ["job APIs: industry, segment, legacy in use".questions.industry]
 type = "choice"
@@ -95,7 +95,7 @@ unclear = "The industry cannot be told from the post."
 
 ["job APIs: industry, segment, legacy in use".questions.segment]
 type = "choice"
-instructions = "`item` is a job post. Which buyer segment is the employer closest to?"
+instructions = "`item` is a job post. Which buyer segment is the employer closest to? Answer unclear unless the text states the size (staff, revenue, branches) or names an organisation whose size is widely known."
 
 ["job APIs: industry, segment, legacy in use".questions.segment.criteria]
 smb = "Small or medium business."
@@ -115,7 +115,7 @@ being_replaced = "The post is about replacing, migrating off or modernising a na
 neither = "No legacy system is named or implied."
 
 ["job pages: industry, segment, legacy in use"]
-version = 1
+version = 2
 
 ["job pages: industry, segment, legacy in use".questions.industry]
 type = "choice"
@@ -141,7 +141,7 @@ unclear = "The industry cannot be told from the post."
 
 ["job pages: industry, segment, legacy in use".questions.segment]
 type = "choice"
-instructions = "`item` is a job post. Which buyer segment is the employer closest to?"
+instructions = "`item` is a job post. Which buyer segment is the employer closest to? Answer unclear unless the text states the size (staff, revenue, branches) or names an organisation whose size is widely known."
 
 ["job pages: industry, segment, legacy in use".questions.segment.criteria]
 smb = "Small or medium business."
@@ -161,11 +161,11 @@ being_replaced = "The post is about replacing, migrating off or modernising a na
 neither = "No legacy system is named or implied."
 
 ["vendor stories: category, in use or replaced, segment, region"]
-version = 1
+version = 2
 
 ["vendor stories: category, in use or replaced, segment, region".questions.category]
 type = "choice"
-instructions = "`item` is a vendor customer story. Which legacy software category does the story belong to?"
+instructions = "`item` is a customer story. Which software category is the project mainly about? Pick a category only if the story is about software for that job; otherwise answer unclear."
 
 ["vendor stories: category, in use or replaced, segment, region".questions.category.criteria]
 agriculture-commodity = "Agriculture and commodity trading"
@@ -203,7 +203,7 @@ trade-finance = "Trade finance"
 utility-billing-cis = "Utility billing and customer information"
 warehouse-management = "Warehouse management"
 wealth-portfolio-accounting = "Wealth and portfolio accounting"
-other = "A legacy category that fits none of the above."
+other = "Clearly about a software category that fits none of the above."
 unclear = "The category cannot be told from the text."
 
 ["vendor stories: category, in use or replaced, segment, region".questions.system_status]
@@ -217,7 +217,7 @@ neither = "No legacy system is named."
 
 ["vendor stories: category, in use or replaced, segment, region".questions.segment]
 type = "choice"
-instructions = "`item` is a vendor or integrator customer story. Which buyer segment is the customer closest to?"
+instructions = "`item` is a vendor or integrator customer story. Which buyer segment is the customer closest to? Answer unclear unless the text states the size (staff, revenue, branches) or names an organisation whose size is widely known."
 
 ["vendor stories: category, in use or replaced, segment, region".questions.segment.criteria]
 smb = "Small or medium business."
@@ -229,7 +229,7 @@ unclear = "The segment cannot be told from the story."
 
 ["vendor stories: category, in use or replaced, segment, region".questions.region]
 type = "choice"
-instructions = "`item` is a vendor or integrator customer story. Where is the customer based?"
+instructions = "`item` is a vendor or integrator customer story. Where is the customer based? Answer unclear unless the text names the customer's country or city."
 
 ["vendor stories: category, in use or replaced, segment, region".questions.region.criteria]
 US = "United States."
@@ -247,11 +247,11 @@ other = "A country or region that fits none of the above."
 unclear = "The region cannot be told from the story."
 
 ["SI stories: category, in use or replaced, segment, region"]
-version = 1
+version = 2
 
 ["SI stories: category, in use or replaced, segment, region".questions.category]
 type = "choice"
-instructions = "`item` is a systems-integrator case study. Which legacy software category does it belong to?"
+instructions = "`item` is a customer story. Which software category is the project mainly about? Pick a category only if the story is about software for that job; otherwise answer unclear."
 
 ["SI stories: category, in use or replaced, segment, region".questions.category.criteria]
 agriculture-commodity = "Agriculture and commodity trading"
@@ -289,7 +289,7 @@ trade-finance = "Trade finance"
 utility-billing-cis = "Utility billing and customer information"
 warehouse-management = "Warehouse management"
 wealth-portfolio-accounting = "Wealth and portfolio accounting"
-other = "A legacy category that fits none of the above."
+other = "Clearly about a software category that fits none of the above."
 unclear = "The category cannot be told from the text."
 
 ["SI stories: category, in use or replaced, segment, region".questions.system_status]
@@ -303,7 +303,7 @@ neither = "No legacy system is named."
 
 ["SI stories: category, in use or replaced, segment, region".questions.segment]
 type = "choice"
-instructions = "`item` is a systems-integrator case study. Which buyer segment is the customer closest to?"
+instructions = "`item` is a systems-integrator case study. Which buyer segment is the customer closest to? Answer unclear unless the text states the size (staff, revenue, branches) or names an organisation whose size is widely known."
 
 ["SI stories: category, in use or replaced, segment, region".questions.segment.criteria]
 smb = "Small or medium business."
@@ -315,7 +315,7 @@ unclear = "The segment cannot be told from the story."
 
 ["SI stories: category, in use or replaced, segment, region".questions.region]
 type = "choice"
-instructions = "`item` is a systems-integrator case study. Where is the customer based?"
+instructions = "`item` is a systems-integrator case study. Where is the customer based? Answer unclear unless the text names the customer's country or city."
 
 ["SI stories: category, in use or replaced, segment, region".questions.region.criteria]
 US = "United States."

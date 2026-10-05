@@ -5,6 +5,10 @@
   {
    "label": "vendor-stories-category-in-use-or-replaced-segment-region@v1",
    "file_sha256": "4bf9c7d36b2a5311f01430e28209c09f866bfc7416fe5b3ce752dfbd5b8b2b26"
+  },
+  {
+   "label": "vendor-stories-category-in-use-or-replaced-segment-region@v2",
+   "file_sha256": "5cd2cfc67333a7066a0547cc93ef4aa00139ca147d16eaf01441901df5c84962"
   }
  ],
  "price_version": "typesafe-2026-09-28",

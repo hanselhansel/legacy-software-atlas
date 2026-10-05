@@ -1,0 +1,542 @@
+[
+{
+"item_id": "cognizant.com:2f8f9d955f6c71f5",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:410b38ce60156ecc",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:39dcdcb8e61608a3",
+"answers": {
+"category": "insurance-policy-admin",
+"system_status": "being_replaced",
+"segment": "enterprise",
+"region": "US"
+}
+},
+{
+"item_id": "cognizant.com:b7cb147bc0c12b5d",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:c4e7cace8686e96e",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:78051a4a186498c1",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:4d8c14151a1a2d74",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:3a56a0c078a4a9da",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:1c2aa4ea8f99a08e",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:697765a93a1e6e15",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:91a7f9f20c4207c9",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:3c7734bd10d143b2",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:34752e1614bb752d",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "US"
+}
+},
+{
+"item_id": "deloitte.com:3e799bd6457492b1",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:b22deff3a77d0314",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:60fb1decb6898884",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:dc30a2e83405dfa9",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:f3db7303ed2e679b",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:ba74c38e3f5f3dc9",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:a81f430abcef74ca",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:2c5ea685dd4cc97d",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:85fbee8a5bee061e",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:f6b8bddd12a6bb50",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:1b9ffe969c9d5936",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:e2ca8f2e69062665",
+"answers": {
+"category": "cooperative-rural-microfinance-banking",
+"system_status": "neither",
+"segment": "mid_market",
+"region": "IN"
+}
+},
+{
+"item_id": "cognizant.com:7bffd6d862e3aa6b",
+"answers": {
+"category": "other",
+"system_status": "in_use",
+"segment": "mid_market",
+"region": "other"
+}
+},
+{
+"item_id": "wipro.com:e955f7f38e563350",
+"answers": {
+"category": "field-service-maintenance",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "EU"
+}
+},
+{
+"item_id": "cognizant.com:80e0959027d5b1f5",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:f01d5fd49d584c7e",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "government",
+"region": "UK"
+}
+},
+{
+"item_id": "wipro.com:5d8696c30474f27d",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:fb9bf9ad90856481",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:06cb2f4af6f1016b",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:95b5e98f4c3e2532",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:3cc125827291f185",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:f1e46dd7016dfb73",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:c76095a93c198020",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:147cfbf7a867ae71",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:4d3edf5b06e60abe",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:cb0680a239d9cd52",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:339e3b42991931a2",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:513e41047817547b",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:b31e498f05f5aec5",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:db5ff38c2a2e009d",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:a8abc1163f46f506",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:00b796d5bcb6f2e8",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:a455aab7cc6651d5",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:cb70fabb9a555880",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:57a54bdf5bfcf29a",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "wipro.com:212d157934039b85",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:061cb727c2d9ea0a",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:ce6b320e906df84a",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:579fdbc4c3aac473",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:2da41732010cf958",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:b887b0b265e9d451",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:a17ed09ced4be6c5",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:548036223fa39045",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:20d88dfac10f4b0f",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "deloitte.com:ed008187080d960b",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "capgemini.com:33b0ba67bb98cddc",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "cognizant.com:f19764f581a08813",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+}
+]

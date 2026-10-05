@@ -5,6 +5,10 @@
   {
    "label": "job-apis-industry-segment-legacy-in-use@v1",
    "file_sha256": "7aad6fc70c7eed593734820bf0e87a3a238fb5442319637d6ff58ff842f3c419"
+  },
+  {
+   "label": "job-apis-industry-segment-legacy-in-use@v2",
+   "file_sha256": "272ea7857b873c881657718fe5cded6730de7c967ec4d0e2ae93d7b084813231"
   }
  ],
  "price_version": "typesafe-2026-09-28",

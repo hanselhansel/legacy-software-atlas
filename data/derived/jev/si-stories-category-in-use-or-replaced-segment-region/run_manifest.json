@@ -5,6 +5,10 @@
   {
    "label": "si-stories-category-in-use-or-replaced-segment-region@v1",
    "file_sha256": "f4f93e6e81327ec6e343b65461c9568912188a18556eeb5691fa197f84742bdf"
+  },
+  {
+   "label": "si-stories-category-in-use-or-replaced-segment-region@v2",
+   "file_sha256": "0e773f01483dd0f250a19826200495a887b3c7b10936192570c765ca01871f00"
   }
  ],
  "price_version": "typesafe-2026-09-28",

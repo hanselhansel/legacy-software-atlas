@@ -5,6 +5,10 @@
   {
    "label": "job-pages-industry-segment-legacy-in-use@v1",
    "file_sha256": "25d85fabad4a1c10951207c2787c6eb9144a77d14c3084188cdc3041e4d535b2"
+  },
+  {
+   "label": "job-pages-industry-segment-legacy-in-use@v2",
+   "file_sha256": "db3b3349ea9ca03f22bbb03e1f60e14bb15d7ab3714c94790ed680836aaa82bc"
   }
  ],
  "price_version": "typesafe-2026-09-28",

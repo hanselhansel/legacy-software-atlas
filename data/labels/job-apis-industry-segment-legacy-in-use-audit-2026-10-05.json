@@ -1,0 +1,482 @@
+[
+{
+"item_id": "mycareersfuture:4947aeabbc0f19d539e819dfbfb6105f",
+"answers": {
+"industry": "utilities_energy",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:9a32fe014016274dd3e3be75eda484f9",
+"answers": {
+"industry": "technology",
+"segment": "unclear",
+"legacy_in_use": "being_replaced"
+}
+},
+{
+"item_id": "mycareersfuture:5020b485e6046e0f4642bbc86c11893e",
+"answers": {
+"industry": "manufacturing",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:6bff4ec522be9b10fb0863142a66c2a9",
+"answers": {
+"industry": "banking_finance",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:27a75262f7af3812503f55be150064bd",
+"answers": {
+"industry": "manufacturing",
+"segment": "enterprise",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:18c834e2eec912431a6a595a2650684a",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:9b20351fc14eb32af610595941ceb13b",
+"answers": {
+"industry": "technology",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:93869e058e01eef474c9e9441a01fc6e",
+"answers": {
+"industry": "healthcare",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:03f23065914261f77b65b81828dfdea5",
+"answers": {
+"industry": "logistics_transport",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:17c495aacd1b7025d6cd390df5761e7e",
+"answers": {
+"industry": "technology",
+"segment": "enterprise",
+"legacy_in_use": "being_replaced"
+}
+},
+{
+"item_id": "mycareersfuture:1dffc5449505dde61f6adce89781e39b",
+"answers": {
+"industry": "hospitality_travel",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:c558f3786303ced7139b51af626b6788",
+"answers": {
+"industry": "legal",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:4dface558908c15798b1c1132cbf20de",
+"answers": {
+"industry": "technology",
+"segment": "mid_market",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:968107eb1031313754c19a1d1140d73c",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:4c7049c01a6d523012c4f9d6fdccf657",
+"answers": {
+"industry": "utilities_energy",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:c85f6eb6fab5af54a43283f9e8655203",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:f1ba85fb790d048973dff3544dd3b3cc",
+"answers": {
+"industry": "technology",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:7ab6e1342c15a5a9e96dd7bf7c4619df",
+"answers": {
+"industry": "technology",
+"segment": "mid_market",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:b1f07f24aa0c360f5742549935e96466",
+"answers": {
+"industry": "technology",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:707747f240dd6dee01b68deb5ac0de19",
+"answers": {
+"industry": "manufacturing",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:a4a2bf29a0f8a134d2841abed46df2a8",
+"answers": {
+"industry": "healthcare",
+"segment": "government",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:c405170efcce31bc487dbb42cfc6447d",
+"answers": {
+"industry": "manufacturing",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:eb6a26513a76def4216d7033aa162ade",
+"answers": {
+"industry": "healthcare",
+"segment": "government",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:6694268796ba753e3b13ba78ff871032",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:380bf63570de132329465b7d60d14282",
+"answers": {
+"industry": "manufacturing",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:01f3b4e976e3e75da9ef1950aa3d2ec3",
+"answers": {
+"industry": "utilities_energy",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:f3bedb58a73e6d79a882e2ccffb59ae2",
+"answers": {
+"industry": "banking_finance",
+"segment": "enterprise",
+"legacy_in_use": "being_replaced"
+}
+},
+{
+"item_id": "mycareersfuture:261dd765a8722e11552cced7ed613c9d",
+"answers": {
+"industry": "technology",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:644842c12a0dc980b99e000659e84b40",
+"answers": {
+"industry": "technology",
+"segment": "enterprise",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:6e568119cd4ae27e8355d5249a813a42",
+"answers": {
+"industry": "healthcare",
+"segment": "government",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:652fbe5b19f3773daff772fe860a1de0",
+"answers": {
+"industry": "manufacturing",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:4ff9635c9ff3f38ab8965720396cc245",
+"answers": {
+"industry": "unclear",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:662bb15a7bc8363014d2c9da5a27bd03",
+"answers": {
+"industry": "banking_finance",
+"segment": "enterprise",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:4866b9667350838b8545acdf1d45ea1b",
+"answers": {
+"industry": "manufacturing",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:26449ac9294075b61f74ef5cd447b601",
+"answers": {
+"industry": "legal",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:0c5a7784a9175e33c74742db9e51de0d",
+"answers": {
+"industry": "manufacturing",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:d236756230e27099ee076afb9245dbb6",
+"answers": {
+"industry": "utilities_energy",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:35efe2678279ac753c04e8c084fb34c3",
+"answers": {
+"industry": "technology",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:cf152bf8be26f1a206c3b8a3ee9686ab",
+"answers": {
+"industry": "unclear",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:28558bee04db5da6064013aca834ce19",
+"answers": {
+"industry": "banking_finance",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:46fc5852f0f525a33676ee1528b8f7c9",
+"answers": {
+"industry": "healthcare",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:56a7f54c8c30a5ddd52752cee6df0f4c",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:ab494e51f95d20f80f03e044d1c077eb",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:c547dbd9a4cd6c11186e2eb3a5d677e7",
+"answers": {
+"industry": "logistics_transport",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:c530286a19aa991d4b4cf87404895e1c",
+"answers": {
+"industry": "unclear",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:d2edf95c91b2eef469e0944091fc2e4a",
+"answers": {
+"industry": "technology",
+"segment": "mid_market",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:8c1fc9d6f882052c90f21722ea345d1e",
+"answers": {
+"industry": "unclear",
+"segment": "enterprise",
+"legacy_in_use": "being_replaced"
+}
+},
+{
+"item_id": "mycareersfuture:3bb2a3b50c129045fa3a4c5c0f24ec48",
+"answers": {
+"industry": "healthcare",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:03046ed8eda24bcf020120ca51b00bf2",
+"answers": {
+"industry": "healthcare",
+"segment": "government",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:ce0cb2af97aa23afabbf6a250af24ae1",
+"answers": {
+"industry": "legal",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:c9cde902bc56f22f5226c1042c754dd3",
+"answers": {
+"industry": "technology",
+"segment": "unclear",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:2b5d6197db0576a8e6dd0677fbc4493e",
+"answers": {
+"industry": "unclear",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:9378c6e9f78fbe0518e0e339fd9518b2",
+"answers": {
+"industry": "logistics_transport",
+"segment": "unclear",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:822018265c26d8289ddba901633e664b",
+"answers": {
+"industry": "manufacturing",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:ad73d117878ee9f795265841f81cb5b5",
+"answers": {
+"industry": "technology",
+"segment": "enterprise",
+"legacy_in_use": "in_use"
+}
+},
+{
+"item_id": "mycareersfuture:248bb5c4e2fa97757fd5a3b0f1c7f3f0",
+"answers": {
+"industry": "banking_finance",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:73b74b0cb1b320742587708e0949625e",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:d46ee46ef96901f005d5474db0ee8255",
+"answers": {
+"industry": "technology",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:9ec44b0002cdf7f23e72831267ed9de4",
+"answers": {
+"industry": "healthcare",
+"segment": "enterprise",
+"legacy_in_use": "neither"
+}
+},
+{
+"item_id": "mycareersfuture:5885c18e965ae931e106f83aca53aa4a",
+"answers": {
+"industry": "legal",
+"segment": "smb",
+"legacy_in_use": "neither"
+}
+}
+]

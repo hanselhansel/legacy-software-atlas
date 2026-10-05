@@ -17,8 +17,8 @@ def test_every_pass_has_a_question_set():
     sets = jq.question_sets(QUESTIONS)
     assert pass_names == set(sets)
     for qs in sets.values():
-        assert qs.version == 1
-        assert qs.label == f"{qs.slug}@v1"
+        assert qs.version >= 1
+        assert qs.label == f"{qs.slug}@v{qs.version}"
         assert len(qs.sha256) == 64
         assert qs.questions
 

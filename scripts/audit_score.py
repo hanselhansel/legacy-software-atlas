@@ -1,6 +1,6 @@
 """Score a Jev pass against blind agent labels.
 
-Usage: uv run python scripts/audit_score.py <pass-slug> <labels.json>
+Usage: uv run python scripts/audit_score.py <pass-slug> <labels.json> [question-set version]
 labels.json is a list of {"item_id", "answers": {question_id: bool | option}}.
 Probability answers count as yes at >= 0.5. Prints agreement per question and,
 for probability questions, precision and recall of Jev's yes against the labels.
@@ -12,11 +12,12 @@ import sys
 import duckdb
 
 
-def main(slug: str, labels_path: str) -> None:
+def main(slug: str, labels_path: str, version: str | None = None) -> None:
     labels = {x["item_id"]: x["answers"] for x in json.load(open(labels_path))}
     rows = duckdb.sql(
         f"select item_id, question_id, qtype, probability, choice "
-        f"from 'data/derived/jev/{slug}/answers/*.parquet'"
+        f"from 'data/derived/jev/{slug}/answers/*.parquet' "
+        + (f"where question_set = '{slug}@v{version}'" if version else "")
     ).fetchall()
     by_q: dict[str, list[tuple]] = {}
     for item, q, qtype, prob, choice in rows:
@@ -37,4 +38,4 @@ def main(slug: str, labels_path: str) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)

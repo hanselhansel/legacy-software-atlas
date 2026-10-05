@@ -5,6 +5,10 @@
   {
    "label": "tenders-which-category@v1",
    "file_sha256": "3eb27af908a6c294f43d8d7bde74e230da356676b52b4eb32494c04cff03fcc2"
+  },
+  {
+   "label": "tenders-which-category@v2",
+   "file_sha256": "02090e5ba790819a55a6162cf417fe0db6959ba104effb40b73b833be3e33bce"
   }
  ],
  "price_version": "typesafe-2026-09-28",
