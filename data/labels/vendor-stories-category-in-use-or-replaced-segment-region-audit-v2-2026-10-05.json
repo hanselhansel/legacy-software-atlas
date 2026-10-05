@@ -1,0 +1,542 @@
+[
+{
+"item_id": "guidewire.com:112e107459d23644",
+"answers": {
+"category": "insurance-policy-admin",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "kaleris.com:e17fa7103c740853",
+"answers": {
+"category": "port-terminal-operating-system",
+"system_status": "in_use",
+"segment": "unclear",
+"region": "other"
+}
+},
+{
+"item_id": "guidewire.com:97ea9a0745dfa123",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "unclear"
+}
+},
+{
+"item_id": "infor.com:40cb80207319c435",
+"answers": {
+"category": "payroll-hr",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "unclear"
+}
+},
+{
+"item_id": "epicor.com:2c0e0fd5a2e1936e",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "blueyonder.com:a2058148eea4a813",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "manh.com:0383d01f84aa52fc",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "kaleris.com:91e6e5454d63ed11",
+"answers": {
+"category": "port-terminal-operating-system",
+"system_status": "neither",
+"segment": "unclear",
+"region": "other"
+}
+},
+{
+"item_id": "amdocs.com:60ac7bbf119a603d",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "blueyonder.com:9da177a19e05e159",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "unclear"
+}
+},
+{
+"item_id": "blueyonder.com:d7b2f7bc2506b923",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "unclear"
+}
+},
+{
+"item_id": "sapiens.com:dbace5d37d697646",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "guidewire.com:56d4bc3526d16fdf",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "kaleris.com:c0b4c514bdb7cdab",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "unclear"
+}
+},
+{
+"item_id": "guidewire.com:3c2f6fcbab22a237",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "temenos.com:345375a6c2a83be7",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "workday.com:9eb46b33583a53e1",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "infor.com:f457a5ecfc06ceb6",
+"answers": {
+"category": "erp-manufacturing",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "oracle.com:97654b53500f4a2e",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "US"
+}
+},
+{
+"item_id": "infor.com:73d57ebfb28a9f50",
+"answers": {
+"category": "gov-licensing-permits",
+"system_status": "neither",
+"segment": "government",
+"region": "AU"
+}
+},
+{
+"item_id": "manh.com:8c80cf37172abe3a",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "sapiens.com:c18c9ba25597ae31",
+"answers": {
+"category": "insurance-policy-admin",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "workday.com:3355f849aa40ed5e",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "ibm.com:eb5824d720654e63",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "fisglobal.com:54f7e3f581374cf2",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "unclear",
+"region": "IN"
+}
+},
+{
+"item_id": "amdocs.com:2e749a7a5cbf14b2",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "workday.com:c8779337e3a2cc5d",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "epicor.com:11df515face37473",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "ibm.com:d3c35a74b2b138d4",
+"answers": {
+"category": "other",
+"system_status": "being_replaced",
+"segment": "unclear",
+"region": "EU"
+}
+},
+{
+"item_id": "infor.com:4b3cd4100a2c9b38",
+"answers": {
+"category": "erp-distribution",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "ibm.com:d49b57fa3225be54",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "unclear"
+}
+},
+{
+"item_id": "guidewire.com:92525be163543759",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "ibm.com:e1b1556a6a5819d6",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "mid_market",
+"region": "EU"
+}
+},
+{
+"item_id": "guidewire.com:0ad0bdf018520b39",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "epicor.com:13ece86c04de8188",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "amdocs.com:c99a6fa559869124",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "temenos.com:91e2b6070fee5673",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "fisglobal.com:1f852531957dc310",
+"answers": {
+"category": "core-banking",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "US"
+}
+},
+{
+"item_id": "temenos.com:5d011de665f0b268",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "epicor.com:32764ef869de2347",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "fisglobal.com:f0b4c49cd7d07370",
+"answers": {
+"category": "card-payments-processing",
+"system_status": "in_use",
+"segment": "mid_market",
+"region": "US"
+}
+},
+{
+"item_id": "guidewire.com:c21a97607bcda8e4",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "oracle.com:1023a56d988051c1",
+"answers": {
+"category": "financial-close-gl",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "other"
+}
+},
+{
+"item_id": "sapiens.com:d4a075963cf18e93",
+"answers": {
+"category": "insurance-policy-admin",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "other"
+}
+},
+{
+"item_id": "sapiens.com:cc8d77e896c0eec4",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "temenos.com:acc48b034745f807",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "jackhenry.com:e449ccfc6e1877ed",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "fisglobal.com:5ce481f08840bcc4",
+"answers": {
+"category": "other",
+"system_status": "being_replaced",
+"segment": "other",
+"region": "UK"
+}
+},
+{
+"item_id": "amdocs.com:46f96674131b6ae0",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "temenos.com:5215ca57f3229c1e",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "temenos.com:3cd97c075842b339",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "epicor.com:8f335c10b12a4426",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "kaleris.com:80ae61ce8575bf22",
+"answers": {
+"category": "other",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "US"
+}
+},
+{
+"item_id": "jackhenry.com:707d0f12c0ce4a3d",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "oracle.com:32c71c45ef57bc76",
+"answers": {
+"category": "field-service-maintenance",
+"system_status": "neither",
+"segment": "enterprise",
+"region": "other"
+}
+},
+{
+"item_id": "duckcreek.com:78cb61f1d1540a20",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "infor.com:9ac977c0d9d71806",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "government",
+"region": "AU"
+}
+},
+{
+"item_id": "temenos.com:ff181f12cc2b3269",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "manh.com:480b677d3948e1f9",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+},
+{
+"item_id": "guidewire.com:e28d3d1f8679ae21",
+"answers": {
+"category": "unclear",
+"system_status": "neither",
+"segment": "unclear",
+"region": "unclear"
+}
+}
+]
