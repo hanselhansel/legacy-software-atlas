@@ -129,9 +129,10 @@ def ai_fit_part(
             None, {"status": reason, "tasks": len(rows)}, tuple(ev)
         )
 
-    def cand(task: str) -> list[str]:
+    def cand(task: str, t: dict) -> list[str]:
         slugified = re.sub(r"[^a-z0-9]+", "-", task.lower()).strip("-")
         return [
+            str(t.get("task_id", "")),
             f"task:{slug}:{slugified}",
             f"{slug}:{task}",
             task,
@@ -141,14 +142,15 @@ def ai_fit_part(
     missing: list[str] = []
     for t in rows:
         row = next(
-            (answers[c] for c in cand(t.get("task", "")) if c in answers),
+            (answers[c] for c in cand(t.get("task", ""), t) if c in answers),
             None,
         )
         if row is None or row.get("score") is None:
             missing.append(t.get("task", ""))
             continue
         w = rubric.share_weights.get(str(t.get("share", "")).lower(), 1.0)
-        num += float(row["score"]) * w
+        # Jev returns the score on a 0..4 scale (docs/reports/jev-audit.md); shift to 1..5.
+        num += (float(row["score"]) + AI_FIT_SCORE_OFFSET) * w
         den += w
     if den == 0:
         return ScorePart(
@@ -279,6 +281,9 @@ def combine(
     )
     scaled = 0.0 if hi == lo else 100.0 * (raw - lo) / (hi - lo)
     return raw, round(scaled, 1), tuple(flags)
+
+
+AI_FIT_SCORE_OFFSET = 1.0
 
 
 def load_task_answers(jev_root: Path | None = None) -> dict[str, dict]:

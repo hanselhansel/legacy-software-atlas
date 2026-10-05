@@ -106,11 +106,9 @@
     },
     "scores": {
       "slug": "agriculture-commodity",
-      "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -149,10 +147,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.6743478260869566,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -396,11 +396,9 @@
     },
     "scores": {
       "slug": "airline-pss",
-      "total": 31.2,
-      "total_raw": -3.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 40.0,
+      "total_raw": 1.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 2,
@@ -445,10 +443,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.6578260869565216,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -724,11 +724,9 @@
     },
     "scores": {
       "slug": "capital-markets-trading-clearing",
-      "total": 31.2,
-      "total_raw": -3.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 40.0,
+      "total_raw": 1.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -777,10 +775,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.907200000000001,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -1036,11 +1036,9 @@
     },
     "scores": {
       "slug": "card-payments-processing",
-      "total": 31.2,
-      "total_raw": -3.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 40.0,
+      "total_raw": 1.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -1086,10 +1084,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.5195833333333333,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -1306,11 +1306,9 @@
     },
     "scores": {
       "slug": "construction-project-accounting",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 60.0,
+      "total_raw": 5.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -1350,10 +1348,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 4.129565217391305,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -1622,11 +1622,9 @@
     },
     "scores": {
       "slug": "cooperative-rural-microfinance-banking",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 45.0,
+      "total_raw": 2.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -1672,10 +1670,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 2.9486363636363637,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -1997,11 +1997,9 @@
     },
     "scores": {
       "slug": "core-banking",
-      "total": 37.5,
-      "total_raw": -2.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 45.0,
+      "total_raw": 2.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -2053,10 +2051,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.5532000000000004,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -2390,11 +2390,9 @@
     },
     "scores": {
       "slug": "courts-justice",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 60.0,
+      "total_raw": 5.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -2446,10 +2444,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.56375,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -2703,10 +2703,8 @@
     "scores": {
       "slug": "ehr-hospital",
       "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -2750,10 +2748,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.348750000000001,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -2976,10 +2976,8 @@
     "scores": {
       "slug": "erp-distribution",
       "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -3020,10 +3018,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.217826086956521,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -3274,11 +3274,9 @@
     },
     "scores": {
       "slug": "erp-manufacturing",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -3322,10 +3320,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.139,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -3575,10 +3575,8 @@
     "scores": {
       "slug": "field-service-maintenance",
       "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -3619,10 +3617,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 2.9840909090909093,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -3884,11 +3884,9 @@
     },
     "scores": {
       "slug": "financial-close-gl",
-      "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -3932,10 +3930,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.925652173913043,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -4265,11 +4265,9 @@
     },
     "scores": {
       "slug": "gov-benefits",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 60.0,
+      "total_raw": 5.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -4323,10 +4321,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.7139130434782603,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -4581,11 +4581,9 @@
     },
     "scores": {
       "slug": "gov-licensing-permits",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 60.0,
+      "total_raw": 5.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -4631,10 +4629,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.5883333333333334,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -4912,11 +4912,9 @@
     },
     "scores": {
       "slug": "gov-tax",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 45.0,
+      "total_raw": 2.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -4965,10 +4963,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.4556,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -5210,11 +5210,9 @@
     },
     "scores": {
       "slug": "insurance-claims",
-      "total": 31.2,
-      "total_raw": -3.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 35.0,
+      "total_raw": 0.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -5261,10 +5259,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.2116000000000002,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -5505,11 +5505,9 @@
     },
     "scores": {
       "slug": "insurance-policy-admin",
-      "total": 37.5,
-      "total_raw": -2.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 45.0,
+      "total_raw": 2.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -5552,10 +5550,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.8276,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -5790,11 +5790,9 @@
     },
     "scores": {
       "slug": "lab-information",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 45.0,
+      "total_raw": 2.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -5834,10 +5832,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 2.9156,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -6158,11 +6158,9 @@
     },
     "scores": {
       "slug": "land-registry",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 60.0,
+      "total_raw": 5.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -6215,10 +6213,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.8917391304347815,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -6435,11 +6435,9 @@
     },
     "scores": {
       "slug": "loan-origination-servicing",
-      "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -6482,10 +6480,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.625555555555556,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -6805,11 +6805,9 @@
     },
     "scores": {
       "slug": "mainframe-cobol-general",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -6857,10 +6855,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.7060000000000004,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -7091,11 +7091,9 @@
     },
     "scores": {
       "slug": "medical-billing-rcm",
-      "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -7136,10 +7134,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.887407407407408,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -7380,11 +7380,9 @@
     },
     "scores": {
       "slug": "mortgage-servicing",
-      "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -7429,10 +7427,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.566666666666666,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -7705,11 +7705,9 @@
     },
     "scores": {
       "slug": "payroll-hr",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -7755,10 +7753,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 4.07,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -8089,11 +8089,9 @@
     },
     "scores": {
       "slug": "pension-provident-fund-admin",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -8143,10 +8141,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.7023076923076923,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -8350,11 +8350,9 @@
     },
     "scores": {
       "slug": "port-terminal-operating-system",
-      "total": 37.5,
-      "total_raw": -2.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 40.0,
+      "total_raw": 1.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 2,
@@ -8395,10 +8393,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 2.873333333333333,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -8662,11 +8662,9 @@
     },
     "scores": {
       "slug": "procurement-ap",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -8712,10 +8710,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.675384615384615,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -8978,11 +8978,9 @@
     },
     "scores": {
       "slug": "retail-pos-merch",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -9022,10 +9020,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 3,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.070909090909091,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -9342,11 +9342,9 @@
     },
     "scores": {
       "slug": "student-information",
-      "total": 37.5,
-      "total_raw": -2.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 45.0,
+      "total_raw": 2.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -9397,10 +9395,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.970869565217391,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -9637,11 +9637,9 @@
     },
     "scores": {
       "slug": "telecom-bss",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -9681,10 +9679,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.577727272727273,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -9892,11 +9892,9 @@
     },
     "scores": {
       "slug": "trade-finance",
-      "total": 50.0,
-      "total_raw": 0.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 55.0,
+      "total_raw": 4.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 3,
@@ -9936,10 +9934,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.605909090909091,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -10198,11 +10198,9 @@
     },
     "scores": {
       "slug": "utility-billing-cis",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 5,
@@ -10250,10 +10248,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.6118181818181814,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -10486,11 +10486,9 @@
     },
     "scores": {
       "slug": "warehouse-management",
-      "total": 56.2,
-      "total_raw": 1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -10532,10 +10530,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 2,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 2.4985714285714287,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"
@@ -10799,11 +10799,9 @@
     },
     "scores": {
       "slug": "wealth-portfolio-accounting",
-      "total": 43.8,
-      "total_raw": -1.0,
-      "flags": [
-        "ai_fit_missing"
-      ],
+      "total": 50.0,
+      "total_raw": 3.0,
+      "flags": [],
       "parts": {
         "size": {
           "score": 4,
@@ -10850,10 +10848,12 @@
           ]
         },
         "ai_fit": {
-          "score": null,
+          "score": 4,
           "detail": {
-            "status": "pass missing",
-            "tasks": 0
+            "mean": 3.859565217391304,
+            "answered": 12,
+            "unanswered": [],
+            "tasks": 12
           },
           "evidence": [
             "jev pass tasks-ai-fit: question ai_fit, research/tasks.csv"

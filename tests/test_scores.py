@@ -166,14 +166,21 @@ def test_ai_fit_weighted_mean():
         {"category": "x", "task": "c", "share": "medium"},
     ]
     answers = {
-        "task:x:a": {"score": 5, "question_id": "ai_fit"},
-        "x:b": {"score": 1, "question_id": "ai_fit"},
-        "task:x:c": {"score": 3, "question_id": "ai_fit"},
+        "task:x:a": {"score": 4, "question_id": "ai_fit"},
+        "x:b": {"score": 0, "question_id": "ai_fit"},
+        "task:x:c": {"score": 2, "question_id": "ai_fit"},
     }
-    # (5*3 + 1*1 + 3*2) / (3+1+2) = 22/6 = 3.667 -> 4
+    # Jev scores are 0..4 and shift by +1: (5*3 + 1*1 + 3*2) / (3+1+2) = 22/6 = 3.667 -> 4
     part = scores.ai_fit_part(tasks, answers, "x", RUBRIC, pass_present=True)
     assert part.score == 4
     assert part.detail["mean"] == pytest.approx(22 / 6)
+
+
+def test_ai_fit_matches_task_id_column():
+    tasks = [{"category": "x", "task_id": "task:x:00", "task": "a", "share": "high"}]
+    answers = {"task:x:00": {"score": 3.4, "question_id": "ai_fit"}}
+    part = scores.ai_fit_part(tasks, answers, "x", RUBRIC, pass_present=True)
+    assert part.score == 4
 
 
 def test_ai_fit_missing_pass():
