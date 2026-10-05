@@ -18,6 +18,8 @@ log = logging.getLogger(__name__)
 
 WORDS_TO_TOKENS = 1.33
 
+_API_FAMILIES = ("procurement", "jobs")
+
 
 def _stamp() -> str:
     return datetime.now(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -42,6 +44,39 @@ def _count_hn(args: argparse.Namespace) -> list:
     if args.limit:
         terms = terms[: args.limit]
     return hn.count_terms(snapshot, terms)
+
+
+def _count_api(args: argparse.Namespace, cnt) -> None:
+    if not args.queries.exists():
+        raise SystemExit(f"queries csv not found: {args.queries}")
+    queries = cnt.load_queries(args.queries)
+    if args.limit is not None:
+        queries = queries[: args.limit]
+    if args.dry_run:
+        covered = set()
+        for row, mod in cnt.planned_calls(queries, args.family):
+            covered.add(row)
+            print(
+                f"{mod.SOURCE:<16} {row.region}  "
+                f"{row.category:<20} {row.query}"
+            )
+        for row in queries:
+            if row not in covered:
+                print(
+                    f"(no source)      {row.region}  "
+                    f"{row.category:<20} {row.query}"
+                )
+        return
+    from lsa.sources import http
+
+    with http.make_client() as client:
+        records = cnt.run_api_counts(queries, args.family, client)
+    print(cnt.format_table(records))
+    if records:
+        out = cnt.append_counts(records, args.counts)
+        print(f"wrote {len(records)} rows to {out}")
+    else:
+        print("no records; counts parquet unchanged")
 
 
 def _planned(source, family, region, category, system, query, stamp):
@@ -185,11 +220,14 @@ _COUNTERS = {
 def _count(args: argparse.Namespace) -> None:
     from lsa import count as cnt
 
+    if args.family in _API_FAMILIES:
+        _count_api(args, cnt)
+        return
     counter = _COUNTERS.get(args.family)
     if counter is None:
         raise SystemExit(
             f"family {args.family!r} unknown "
-            f"(implemented: {', '.join(sorted(_COUNTERS))})"
+            f"(implemented: {', '.join(sorted([*_COUNTERS, *_API_FAMILIES]))})"
         )
     if args.family == "hn":
         records = counter(args)
@@ -323,7 +361,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--queries",
         type=Path,
         default=paths.RESEARCH / "count_queries.csv",
-        help="category,region,query,lang csv for jobs-pages and reddit",
+        help="category,region,query,lang csv for api and page families",
     )
     p_count.add_argument(
         "--sites",
@@ -352,7 +390,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--limit",
         type=int,
         default=None,
-        help="cap query rows (jobs-pages, reddit) or sites (vendor)",
+        help="cap query rows or sites to the first N (smoke runs)",
     )
     p_count.set_defaults(func=_count)
 

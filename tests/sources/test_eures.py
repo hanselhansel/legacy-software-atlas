@@ -1,0 +1,47 @@
+"""Tests for the EURES counter (plan 1, task 3, lane B)."""
+
+from __future__ import annotations
+
+import json
+
+import httpx
+
+from lsa.sources import eures
+
+
+def test_count_reads_number_records(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["url"] = str(request.url)
+        seen["body"] = json.loads(request.read())
+        return httpx.Response(200, json={"numberRecords": 2314})
+
+    client = mock_client(handler)
+    assert eures.count("cobol", "EU", client) == 2314
+    assert seen["url"] == (
+        "https://europa.eu/eures/api/jv-searchengine"
+        "/public/jv-search/search"
+    )
+    keywords = seen["body"]["keywords"]
+    assert keywords == [{"keyword": "cobol", "specificSearchCode": "EVERYWHERE"}]
+    assert seen["body"]["resultsPerPage"] == 1
+
+
+def test_count_missing_number_records_returns_none(mock_client, no_sleep):
+    client = mock_client(lambda r: httpx.Response(200, json={}))
+    assert eures.count("cobol", "EU", client) is None
+
+
+def test_count_429_then_success(mock_client, no_sleep):
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        if len(calls) == 1:
+            return httpx.Response(429)
+        return httpx.Response(200, json={"numberRecords": 42})
+
+    client = mock_client(handler)
+    assert eures.count("as400", "EU", client) == 42
+    assert len(calls) == 2
