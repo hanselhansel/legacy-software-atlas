@@ -1,4 +1,8 @@
 category,region,query,lang
+core-banking,VN,core banking,en
+core-banking,VN,ngân hàng lõi,vi
+core-banking,TH,core banking,en
+mainframe-cobol-general,AU,cobol,en
 core-banking,US,mainframe,en
 core-banking,EU,core banking,en
 erp,SG,sap,en

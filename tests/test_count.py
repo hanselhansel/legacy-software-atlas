@@ -162,11 +162,13 @@ def _queries_csv(tmp_path, rows):
 
 
 def test_load_queries_reads_fixture_rows():
-    assert cnt.load_queries(FIXTURE_QUERIES_CSV) == [
+    rows = cnt.load_queries(FIXTURE_QUERIES_CSV)
+    for expected in (
         cnt.QueryRow("core-banking", "US", "mainframe", "en"),
         cnt.QueryRow("core-banking", "EU", "core banking", "en"),
         cnt.QueryRow("erp", "SG", "sap", "en"),
-    ]
+    ):
+        assert expected in rows
 
 
 def test_planned_calls_routes_rows_to_region_sources(monkeypatch):

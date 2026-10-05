@@ -1,0 +1,32 @@
+vendor,domain,story_path_regex,categories
+SAP,sap.com,^/about/customer-stories/[\w-]+\.html$,ehr-hospital;erp-manufacturing;field-service-maintenance;financial-close-gl;gov-tax;insurance-claims;insurance-policy-admin;medical-billing-rcm;payroll-hr;procurement-ap;utility-billing-cis;warehouse-management
+Oracle,oracle.com,^/customers/[\w-]+/$,core-banking;erp-manufacturing;financial-close-gl;payroll-hr;procurement-ap;retail-pos-merch;student-information;telecom-bss;utility-billing-cis
+Oracle Health,oraclehealth.com,^/customers/[\w-]+/$,ehr-hospital;lab-information;medical-billing-rcm
+IBM,ibm.com,^/case-studies/[\w-]+/?$,airline-pss;erp-manufacturing;field-service-maintenance;gov-benefits;gov-tax;mainframe-cobol-general;payroll-hr;retail-pos-merch
+Temenos,temenos.com,^/success-story/[\w-]+/$,core-banking;wealth-portfolio-accounting
+Finastra,finastra.com,^/customer-stories/[\w-]+/?$,core-banking;loan-origination-servicing;trade-finance
+FIS,fisglobal.com,^/insights/fis-client-stories/[\w-]+/?$,card-payments-processing;core-banking;loan-origination-servicing;pension-provident-fund-admin;wealth-portfolio-accounting
+Fiserv,fiserv.com,^/en/insights/case-studies/[\w-]+\.html$,card-payments-processing;cooperative-rural-microfinance-banking;core-banking;loan-origination-servicing;mortgage-servicing
+Jack Henry,jackhenry.com,^/resources/case-stud(?:y|ies)/[\w-]+/?$,cooperative-rural-microfinance-banking;core-banking
+Guidewire,guidewire.com,^/customers/success-stories/[\w-]+/?$,insurance-claims;insurance-policy-admin
+Duck Creek,duckcreek.com,^/customer/[\w-]+/$,insurance-claims;insurance-policy-admin
+Sapiens,sapiens.com,^/(?:[a-z]{2}/)?(?:resources/case-studies|testimonials)/[\w-]+/?$,insurance-claims;insurance-policy-admin
+Infosys,infosys.com,^/(?:industries|services)/[\w-]+/case-studies/[\w-]+\.html$,core-banking;gov-tax;payroll-hr
+Tata Consultancy Services,tcs.com,/case-study/[\w-]+/?$,core-banking
+Accenture,accenture.com,^/us-en/case-studies[\w-]*/[\w-]+/[\w-]+/?$,gov-benefits;gov-tax
+Wipro,wipro.com,/(?:success-stories|case-studies)/[\w-]+/?$,
+Cognizant,cognizant.com,^/us/en/case-studies/[\w-]+/?$,
+Capgemini,capgemini.com,/(?:[\w-]+/)?news/client-stories/[\w-]+/?$,gov-tax
+Deloitte,deloitte.com,/case-studies/[\w-]+\.html$,gov-benefits
+Epic,epic.com,^/customers/[\w-]+/?$,ehr-hospital;lab-information;medical-billing-rcm
+Infor,infor.com,^/customer-stories/[\w-]+/?$,erp-distribution;erp-manufacturing;field-service-maintenance;financial-close-gl;gov-licensing-permits;payroll-hr
+Epicor,epicor.com,^/en-us/resources/success-stories/[\w-]+/[\w-]+/?$,erp-distribution;erp-manufacturing;retail-pos-merch
+Ellucian,ellucian.com,^/customer-stories/[\w-]+/?$,student-information
+Tyler Technologies,tylertech.com,^/[Ss]uccess[Ss]tories/[\w-]+/?$,courts-justice;gov-licensing-permits;land-registry;utility-billing-cis
+Amdocs,amdocs.com,^/insights/case-study/[\w-]+/?$,telecom-bss
+Manhattan Associates,manh.com,^/customer-stories/[\w-]+/?$,warehouse-management
+Blue Yonder,blueyonder.com,^/customers/[\w-]+/?$,retail-pos-merch;warehouse-management
+Kaleris,kaleris.com,^/case-study/[\w-]+/$,port-terminal-operating-system
+Workday,workday.com,^/en-us/customer-stories/[\w-]+/[\w-]+\.html$,
+ServiceNow,servicenow.com,^/(?:[a-z]{2}/)?customers/[\w-]+(?:\.html)?/?$,
+UiPath,uipath.com,^/resources/automation-case-studies/[\w-]+/?$,
