@@ -16,7 +16,6 @@ Every assumption lands in ``notes``.
 from __future__ import annotations
 
 import math
-
 from dataclasses import dataclass
 
 from lsa import catconfig, criticality, estimates, parse_counts
