@@ -1,0 +1,758 @@
+category,region,query
+agriculture-commodity,US,Agvance
+agriculture-commodity,US,AGRIS grain accounting
+agriculture-commodity,US,Merchant Ag
+agriculture-commodity,US,AgTrax
+agriculture-commodity,US,grain accounting
+agriculture-commodity,US,CTRM
+agriculture-commodity,EU,CTRM
+agriculture-commodity,EU,Openlink Endur
+agriculture-commodity,EU,SAP Commodity Management
+agriculture-commodity,EU,Agiboo
+agriculture-commodity,EU,Agrarhandel Software
+agriculture-commodity,UK,CTRM
+agriculture-commodity,UK,Openlink Endur
+agriculture-commodity,UK,TriplePoint
+agriculture-commodity,SG,CTRM
+agriculture-commodity,SG,Openlink Endur
+agriculture-commodity,SG,SAP Commodity Management
+agriculture-commodity,SG,TriplePoint
+agriculture-commodity,AU,CTRM
+agriculture-commodity,AU,Openlink Endur
+agriculture-commodity,AU,AgriDigital
+agriculture-commodity,AU,grain accounting
+airline-pss,US,z/TPF
+airline-pss,US,TPF assembler
+airline-pss,US,Amadeus Altea
+airline-pss,US,SabreSonic
+airline-pss,US,Navitaire
+airline-pss,US,passenger service system
+airline-pss,EU,passenger service system
+airline-pss,EU,Amadeus Altea
+airline-pss,EU,z/TPF
+airline-pss,EU,Navitaire
+airline-pss,EU,departure control system
+airline-pss,EU,Reservierungssystem Airline
+airline-pss,UK,Videcom
+airline-pss,UK,Amadeus Altea
+airline-pss,UK,passenger service system
+airline-pss,UK,Navitaire
+airline-pss,SG,Amadeus Altea
+airline-pss,SG,Navitaire
+airline-pss,SG,passenger service system
+airline-pss,SG,departure control system
+airline-pss,AU,Amadeus Altea
+airline-pss,AU,Navitaire
+airline-pss,AU,passenger service system
+airline-pss,AU,z/TPF
+capital-markets-trading-clearing,US,Broadridge BPS
+capital-markets-trading-clearing,US,broker-dealer back office
+capital-markets-trading-clearing,US,clearing operations COBOL
+capital-markets-trading-clearing,US,self-clearing conversion
+capital-markets-trading-clearing,UK,Broadridge Gloss
+capital-markets-trading-clearing,UK,post-trade settlement analyst
+capital-markets-trading-clearing,UK,stockbroker back office
+capital-markets-trading-clearing,EU,Wertpapierabwicklung
+capital-markets-trading-clearing,EU,back office titres
+capital-markets-trading-clearing,EU,post-trade back office
+capital-markets-trading-clearing,SG,stockbroking back office
+capital-markets-trading-clearing,SG,CDP settlement operations
+capital-markets-trading-clearing,SG,securities operations analyst
+capital-markets-trading-clearing,AU,CHESS settlement
+capital-markets-trading-clearing,AU,stockbroking operations
+capital-markets-trading-clearing,AU,CHESS replacement
+card-payments-processing,US,VisionPLUS
+card-payments-processing,US,TSYS TS2
+card-payments-processing,US,BASE24
+card-payments-processing,US,Fiserv Optis
+card-payments-processing,US,card processing conversion
+card-payments-processing,EU,VisionPLUS
+card-payments-processing,EU,BASE24
+card-payments-processing,EU,PowerCARD
+card-payments-processing,EU,Way4
+card-payments-processing,EU,Kartenmanagementsystem
+card-payments-processing,EU,système monétique
+card-payments-processing,UK,VisionPLUS
+card-payments-processing,UK,BASE24
+card-payments-processing,UK,TS2 card
+card-payments-processing,UK,card issuing platform
+card-payments-processing,SG,VisionPLUS
+card-payments-processing,SG,BASE24
+card-payments-processing,SG,Way4
+card-payments-processing,SG,card management system
+card-payments-processing,AU,VisionPLUS
+card-payments-processing,AU,BASE24
+card-payments-processing,AU,TS2 TSYS
+card-payments-processing,AU,card issuing platform
+construction-project-accounting,US,Sage 300 CRE
+construction-project-accounting,US,Timberline
+construction-project-accounting,US,Viewpoint Vista
+construction-project-accounting,US,Viewpoint Spectrum
+construction-project-accounting,US,Foundation Software
+construction-project-accounting,US,CMiC
+construction-project-accounting,US,construction accounting ERP
+construction-project-accounting,UK,COINS ERP
+construction-project-accounting,UK,Progress OpenEdge
+construction-project-accounting,UK,Viewpoint Vista
+construction-project-accounting,UK,Eque2
+construction-project-accounting,UK,construction ERP
+construction-project-accounting,EU,Bausoftware ERP
+construction-project-accounting,EU,Nevaris
+construction-project-accounting,EU,RIB iTWO
+construction-project-accounting,EU,logiciel comptabilité BTP
+construction-project-accounting,EU,construction ERP
+construction-project-accounting,AU,Jobpac
+construction-project-accounting,AU,Viewpoint Vista
+construction-project-accounting,AU,Access Coins
+construction-project-accounting,AU,construction ERP
+construction-project-accounting,SG,construction accounting software
+construction-project-accounting,SG,construction ERP
+construction-project-accounting,SG,progress claim accountant
+cooperative-rural-microfinance-banking,US,Symitar
+cooperative-rural-microfinance-banking,US,Episys PowerOn
+cooperative-rural-microfinance-banking,US,Jack Henry SilverLake
+cooperative-rural-microfinance-banking,US,Fiserv DNA
+cooperative-rural-microfinance-banking,US,credit union core conversion
+cooperative-rural-microfinance-banking,US,Fiserv Premier
+cooperative-rural-microfinance-banking,EU,agree21
+cooperative-rural-microfinance-banking,EU,Kernbankensystem Genossenschaftsbank
+cooperative-rural-microfinance-banking,EU,banca credito cooperativo informatica
+cooperative-rural-microfinance-banking,EU,cooperative bank core banking
+cooperative-rural-microfinance-banking,UK,credit union core system
+cooperative-rural-microfinance-banking,UK,credit union IT
+cooperative-rural-microfinance-banking,UK,credit union software
+cooperative-rural-microfinance-banking,SG,credit cooperative system
+cooperative-rural-microfinance-banking,SG,co-operative loan system
+cooperative-rural-microfinance-banking,SG,cooperative IT executive
+cooperative-rural-microfinance-banking,AU,mutual bank core banking
+cooperative-rural-microfinance-banking,AU,customer-owned bank core
+cooperative-rural-microfinance-banking,AU,credit union core platform
+core-banking,US,Symitar
+core-banking,US,Jack Henry SilverLake
+core-banking,US,Fiserv DNA
+core-banking,US,Fiserv Premier
+core-banking,US,core conversion
+core-banking,US,IBM i RPG
+core-banking,EU,Temenos T24
+core-banking,EU,Kernbankensystem
+core-banking,EU,core banking
+core-banking,EU,Finastra Equation
+core-banking,EU,système bancaire central
+core-banking,UK,Temenos Transact
+core-banking,UK,core banking
+core-banking,UK,COBOL developer
+core-banking,UK,Finastra Equation
+core-banking,SG,Temenos T24
+core-banking,SG,Finacle
+core-banking,SG,AS400 developer
+core-banking,SG,core banking
+core-banking,AU,core banking
+core-banking,AU,COBOL developer
+core-banking,AU,Temenos
+core-banking,AU,Ultracs
+courts-justice,US,Tyler Odyssey
+courts-justice,US,Enterprise Justice
+courts-justice,US,CM/ECF
+courts-justice,US,Journal Technologies eCourt
+courts-justice,US,CourtView
+courts-justice,US,court case management system
+courts-justice,UK,Common Platform HMCTS
+courts-justice,UK,Libra magistrates
+courts-justice,UK,court case management
+courts-justice,EU,forumSTAR
+courts-justice,EU,EUREKA-Fach
+courts-justice,EU,Fachverfahren Justiz
+courts-justice,EU,Cassiopée justice
+courts-justice,EU,processo civile telematico
+courts-justice,SG,eLitigation
+courts-justice,SG,court case management
+courts-justice,AU,Courtlink Victoria
+courts-justice,AU,JusticeLink NSW
+courts-justice,AU,court case management
+ehr-hospital,US,Epic analyst
+ehr-hospital,US,Cerner CCL developer
+ehr-hospital,US,MEDITECH analyst
+ehr-hospital,US,MUMPS developer
+ehr-hospital,US,VistA developer
+ehr-hospital,US,EHR replacement RFP
+ehr-hospital,UK,EPR analyst
+ehr-hospital,UK,electronic patient record
+ehr-hospital,UK,Cerner Millennium
+ehr-hospital,UK,Epic analyst
+ehr-hospital,EU,SAP IS-H
+ehr-hospital,EU,i.s.h.med
+ehr-hospital,EU,Krankenhausinformationssystem
+ehr-hospital,EU,KIS Ausschreibung
+ehr-hospital,EU,Epic EPD
+ehr-hospital,SG,Epic analyst
+ehr-hospital,SG,Sunrise Clinical Manager
+ehr-hospital,SG,NGEMR
+ehr-hospital,AU,Epic analyst
+ehr-hospital,AU,Cerner Millennium
+ehr-hospital,AU,HBCIS
+ehr-hospital,AU,patient administration system
+erp-distribution,US,Prophet 21
+erp-distribution,US,Epicor Eclipse
+erp-distribution,US,Infor SX.e
+erp-distribution,US,Infor A+ RPG
+erp-distribution,US,DDI Inform
+erp-distribution,US,CloudSuite Distribution
+erp-distribution,EU,Warenwirtschaftssystem Großhandel
+erp-distribution,EU,SAP Business One Großhandel
+erp-distribution,EU,ERP négoce
+erp-distribution,EU,ERP groothandel
+erp-distribution,EU,ERP distribuzione all'ingrosso
+erp-distribution,UK,Prophet 21
+erp-distribution,UK,Epicor BisTrack
+erp-distribution,UK,Kerridge K8
+erp-distribution,UK,wholesale distribution ERP
+erp-distribution,SG,SAP Business One
+erp-distribution,SG,distribution ERP
+erp-distribution,SG,Dynamics GP
+erp-distribution,AU,Pronto Xi
+erp-distribution,AU,Epicor BisTrack
+erp-distribution,AU,Prophet 21
+erp-distribution,AU,MYOB Advanced wholesale
+erp-manufacturing,US,SAP ECC PP
+erp-manufacturing,US,JD Edwards World
+erp-manufacturing,US,Infor XA
+erp-manufacturing,US,BPCS
+erp-manufacturing,US,QAD Progress
+erp-manufacturing,US,Epicor Vantage
+erp-manufacturing,US,RPG IBM i
+erp-manufacturing,EU,SAP ECC PP
+erp-manufacturing,EU,Infor LN
+erp-manufacturing,EU,Baan
+erp-manufacturing,EU,RPG Entwickler AS400
+erp-manufacturing,EU,S/4HANA Fertigung
+erp-manufacturing,EU,développeur RPG AS400
+erp-manufacturing,UK,SAP ECC manufacturing
+erp-manufacturing,UK,Infor LN
+erp-manufacturing,UK,Epicor ERP
+erp-manufacturing,UK,RPG IBM i
+erp-manufacturing,SG,SAP ECC
+erp-manufacturing,SG,SAP PP consultant
+erp-manufacturing,SG,Epicor ERP
+erp-manufacturing,SG,AS400 developer
+erp-manufacturing,AU,SAP ECC
+erp-manufacturing,AU,JD Edwards
+erp-manufacturing,AU,Pronto Xi
+erp-manufacturing,AU,Epicor ERP
+erp-manufacturing,AU,RPG IBM i
+field-service-maintenance,US,Maximo
+field-service-maintenance,US,SAP PM planner
+field-service-maintenance,US,CMMS administrator
+field-service-maintenance,US,HxGN EAM
+field-service-maintenance,US,CMMS RFP
+field-service-maintenance,EU,Maximo
+field-service-maintenance,EU,SAP PM Instandhaltung
+field-service-maintenance,EU,GMAO
+field-service-maintenance,EU,Instandhaltungssoftware
+field-service-maintenance,EU,GMAO mantenimiento
+field-service-maintenance,EU,onderhoudsbeheer software
+field-service-maintenance,UK,Maximo
+field-service-maintenance,UK,SAP PM
+field-service-maintenance,UK,CAFM
+field-service-maintenance,UK,CMMS
+field-service-maintenance,UK,asset management system
+field-service-maintenance,SG,Maximo
+field-service-maintenance,SG,CMMS
+field-service-maintenance,SG,SAP PM
+field-service-maintenance,SG,asset management system
+field-service-maintenance,AU,Maximo
+field-service-maintenance,AU,SAP PM planner
+field-service-maintenance,AU,CMMS
+field-service-maintenance,AU,enterprise asset management
+financial-close-gl,US,SAP FICO
+financial-close-gl,US,Oracle EBS financials
+financial-close-gl,US,JD Edwards
+financial-close-gl,US,Hyperion HFM
+financial-close-gl,US,Dynamics GP
+financial-close-gl,US,PeopleSoft Financials
+financial-close-gl,EU,SAP FI/CO Berater
+financial-close-gl,EU,SAP ECC Finanzbuchhaltung
+financial-close-gl,EU,consultant SAP FI
+financial-close-gl,EU,Oracle EBS GL
+financial-close-gl,EU,HFM consolidation
+financial-close-gl,UK,SunSystems
+financial-close-gl,UK,Dynamics GP
+financial-close-gl,UK,SAP FICO
+financial-close-gl,UK,Oracle EBS finance
+financial-close-gl,UK,HFM
+financial-close-gl,SG,SAP FICO
+financial-close-gl,SG,SunSystems
+financial-close-gl,SG,Oracle EBS
+financial-close-gl,SG,Dynamics GP
+financial-close-gl,AU,JD Edwards
+financial-close-gl,AU,SAP FICO
+financial-close-gl,AU,Oracle EBS
+financial-close-gl,AU,Dynamics GP
+gov-benefits,US,COBOL unemployment insurance
+gov-benefits,US,Curam developer
+gov-benefits,US,integrated eligibility system
+gov-benefits,US,Medicaid eligibility system
+gov-benefits,US,SSA COBOL
+gov-benefits,US,UI modernization
+gov-benefits,EU,COBOL Rentenversicherung
+gov-benefits,EU,rvDialog
+gov-benefits,EU,COBOL UWV
+gov-benefits,EU,COBOL CNAV
+gov-benefits,EU,COBOL INPS
+gov-benefits,EU,EESSI
+gov-benefits,UK,DWP COBOL
+gov-benefits,UK,DWP mainframe
+gov-benefits,UK,Curam
+gov-benefits,UK,Housing Benefit system
+gov-benefits,UK,VME COBOL
+gov-benefits,SG,CPF COBOL
+gov-benefits,SG,CPF mainframe
+gov-benefits,SG,social assistance system
+gov-benefits,AU,Model 204
+gov-benefits,AU,Centrelink ISIS
+gov-benefits,AU,Services Australia mainframe
+gov-benefits,AU,WPIT
+gov-licensing-permits,US,Accela
+gov-licensing-permits,US,EnerGov
+gov-licensing-permits,US,Naviline
+gov-licensing-permits,US,Infor Hansen
+gov-licensing-permits,US,TRAKiT
+gov-licensing-permits,US,permitting software
+gov-licensing-permits,UK,Idox Uniform
+gov-licensing-permits,UK,Northgate M3
+gov-licensing-permits,UK,NEC Assure
+gov-licensing-permits,UK,planning back office system
+gov-licensing-permits,EU,Baugenehmigung Software
+gov-licensing-permits,EU,VTH-systeem
+gov-licensing-permits,EU,logiciel urbanisme
+gov-licensing-permits,EU,Cart@ds
+gov-licensing-permits,EU,licencias urbanísticas software
+gov-licensing-permits,SG,CORENET X
+gov-licensing-permits,SG,GoBusiness Licensing
+gov-licensing-permits,SG,CORENET
+gov-licensing-permits,AU,Infor Pathway
+gov-licensing-permits,AU,TechnologyOne Property Rating
+gov-licensing-permits,AU,Civica Authority
+gov-tax,US,GenTax
+gov-tax,US,Individual Master File
+gov-tax,US,COBOL department of revenue
+gov-tax,US,integrated tax system
+gov-tax,US,property tax system
+gov-tax,EU,GenTax
+gov-tax,EU,KONSENS Steuerverwaltung
+gov-tax,EU,Belastingdienst COBOL
+gov-tax,EU,DGFiP COBOL
+gov-tax,EU,system podatkowy KAS
+gov-tax,UK,HMRC ETMP
+gov-tax,UK,HMRC COBOL
+gov-tax,UK,revenues and benefits system
+gov-tax,UK,council tax system
+gov-tax,SG,IRAS tax system
+gov-tax,SG,tax administration system
+gov-tax,SG,GeBIZ IRAS
+gov-tax,AU,ATO COBOL
+gov-tax,AU,Integrated Core Processing
+gov-tax,AU,revenue office system
+insurance-claims,US,Guidewire ClaimCenter
+insurance-claims,US,RISKMASTER
+insurance-claims,US,Duck Creek Claims
+insurance-claims,US,claims system replacement
+insurance-claims,US,COBOL insurance claims
+insurance-claims,US,FINEOS
+insurance-claims,EU,Guidewire ClaimCenter
+insurance-claims,EU,Schadensystem Versicherung
+insurance-claims,EU,gestion des sinistres logiciel
+insurance-claims,EU,gestione sinistri COBOL
+insurance-claims,EU,Sapiens IDIT
+insurance-claims,EU,Fadata INSIS
+insurance-claims,UK,Guidewire ClaimCenter
+insurance-claims,UK,claims bordereaux
+insurance-claims,UK,Lloyd's ECF claims
+insurance-claims,UK,claims handling system
+insurance-claims,SG,Guidewire ClaimCenter
+insurance-claims,SG,AS400 insurance
+insurance-claims,SG,claims system insurer
+insurance-claims,AU,Guidewire ClaimCenter
+insurance-claims,AU,FINEOS claims
+insurance-claims,AU,claims management system
+insurance-claims,AU,COBOL insurer
+insurance-policy-admin,US,Guidewire PolicyCenter
+insurance-policy-admin,US,Duck Creek Policy
+insurance-policy-admin,US,CyberLife COBOL
+insurance-policy-admin,US,Sapiens ALIS
+insurance-policy-admin,US,policy administration COBOL
+insurance-policy-admin,EU,Guidewire PolicyCenter
+insurance-policy-admin,EU,Bestandsführung COBOL Versicherung
+insurance-policy-admin,EU,Sapiens IDIT
+insurance-policy-admin,EU,COBOL assurance vie
+insurance-policy-admin,UK,Guidewire PolicyCenter
+insurance-policy-admin,UK,Life/400
+insurance-policy-admin,UK,TCS BaNCS insurance
+insurance-policy-admin,UK,insurance COBOL developer
+insurance-policy-admin,SG,LifeAsia
+insurance-policy-admin,SG,AS400 insurance
+insurance-policy-admin,SG,Guidewire PolicyCenter
+insurance-policy-admin,AU,Guidewire PolicyCenter
+insurance-policy-admin,AU,insurance COBOL mainframe
+insurance-policy-admin,AU,policy administration system
+lab-information,US,Sunquest analyst
+lab-information,US,Epic Beaker analyst
+lab-information,US,Cerner PathNet
+lab-information,US,SoftLab administrator
+lab-information,US,LIS analyst
+lab-information,US,laboratory information system
+lab-information,UK,WinPath
+lab-information,UK,LIMS manager pathology
+lab-information,UK,Telepath LIMS
+lab-information,UK,laboratory information management system
+lab-information,EU,Laborinformationssystem
+lab-information,EU,système d'information de laboratoire
+lab-information,EU,sistema informativo laboratorio
+lab-information,EU,laboratoriuminformatiesysteem
+lab-information,EU,sistema información laboratorio
+lab-information,EU,GLIMS
+lab-information,SG,laboratory information system
+lab-information,SG,LIS analyst
+lab-information,SG,Sunquest
+lab-information,AU,Auslab
+lab-information,AU,laboratory information system
+lab-information,AU,LIS analyst pathology
+lab-information,AU,Sunquest
+land-registry,US,land records system
+land-registry,US,recorder of deeds
+land-registry,US,Eagle Recorder
+land-registry,US,AS/400 county
+land-registry,UK,HM Land Registry
+land-registry,UK,Land Registry mainframe
+land-registry,UK,local land charges
+land-registry,EU,land registry system
+land-registry,EU,Grundbuch Software
+land-registry,EU,kadaster applicatiebeheer
+land-registry,EU,catasto sistema informativo
+land-registry,SG,INLIS
+land-registry,SG,Singapore Land Authority
+land-registry,AU,Automated Titles System
+land-registry,AU,land titles system
+land-registry,AU,Advara
+loan-origination-servicing,US,Black Knight MSP
+loan-origination-servicing,US,Encompass administrator
+loan-origination-servicing,US,Loan IQ
+loan-origination-servicing,US,mortgage servicing COBOL
+loan-origination-servicing,US,loan origination system RFP
+loan-origination-servicing,US,nCino administrator
+loan-origination-servicing,EU,Loan IQ
+loan-origination-servicing,EU,ACBS loan servicing
+loan-origination-servicing,EU,Kreditplattform Ablösung
+loan-origination-servicing,EU,gestion des prêts
+loan-origination-servicing,EU,loan management system tender
+loan-origination-servicing,UK,Loan IQ London
+loan-origination-servicing,UK,mortgage servicing platform
+loan-origination-servicing,UK,building society mortgage system
+loan-origination-servicing,UK,loan management system
+loan-origination-servicing,SG,Loan IQ Singapore
+loan-origination-servicing,SG,FinnOne
+loan-origination-servicing,SG,loan origination system
+loan-origination-servicing,AU,Loan IQ Sydney
+loan-origination-servicing,AU,loan origination system
+loan-origination-servicing,AU,mortgage servicing platform
+mainframe-cobol-general,US,COBOL developer
+mainframe-cobol-general,US,mainframe CICS
+mainframe-cobol-general,US,z/OS system programmer
+mainframe-cobol-general,US,mainframe modernization
+mainframe-cobol-general,EU,COBOL Entwickler
+mainframe-cobol-general,EU,Host-Entwickler
+mainframe-cobol-general,EU,développeur COBOL
+mainframe-cobol-general,EU,programador COBOL
+mainframe-cobol-general,EU,COBOL ontwikkelaar
+mainframe-cobol-general,EU,sviluppatore COBOL
+mainframe-cobol-general,UK,COBOL developer
+mainframe-cobol-general,UK,mainframe engineer
+mainframe-cobol-general,UK,CICS DB2
+mainframe-cobol-general,UK,mainframe modernisation
+mainframe-cobol-general,SG,COBOL developer
+mainframe-cobol-general,SG,mainframe analyst
+mainframe-cobol-general,SG,mainframe
+mainframe-cobol-general,AU,COBOL developer
+mainframe-cobol-general,AU,mainframe engineer
+mainframe-cobol-general,AU,Unisys ClearPath
+mainframe-cobol-general,AU,mainframe modernisation
+medical-billing-rcm,US,Epic Resolute
+medical-billing-rcm,US,revenue cycle analyst
+medical-billing-rcm,US,Soarian Financials
+medical-billing-rcm,US,MEDITECH patient accounting
+medical-billing-rcm,US,medical billing specialist
+medical-billing-rcm,EU,SAP IS-H
+medical-billing-rcm,EU,Patientenabrechnung
+medical-billing-rcm,EU,KIS Abrechnung
+medical-billing-rcm,EU,Epic Resolute
+medical-billing-rcm,UK,Epic Resolute
+medical-billing-rcm,UK,overseas visitor charging
+medical-billing-rcm,UK,private patient billing
+medical-billing-rcm,UK,patient administration system
+medical-billing-rcm,SG,Epic Resolute
+medical-billing-rcm,SG,NGEMR
+medical-billing-rcm,SG,medical billing
+medical-billing-rcm,SG,patient billing executive
+medical-billing-rcm,AU,webPAS
+medical-billing-rcm,AU,TrakCare
+medical-billing-rcm,AU,patient billing officer
+medical-billing-rcm,AU,HBCIS
+mortgage-servicing,US,MSP mortgage servicing
+mortgage-servicing,US,Black Knight MSP
+mortgage-servicing,US,LoanServ
+mortgage-servicing,US,FICS Mortgage Servicer
+mortgage-servicing,US,mortgage servicing COBOL
+mortgage-servicing,US,servicing system conversion
+mortgage-servicing,EU,mortgage servicing platform
+mortgage-servicing,EU,Hypothekenverwaltung Software
+mortgage-servicing,EU,hypotheekadministratie systeem
+mortgage-servicing,EU,gestión hipotecaria software
+mortgage-servicing,UK,Phoebus mortgage
+mortgage-servicing,UK,mortgage administration system
+mortgage-servicing,UK,mortgage servicing platform
+mortgage-servicing,UK,building society COBOL
+mortgage-servicing,SG,mortgage loan servicing
+mortgage-servicing,SG,FinnOne
+mortgage-servicing,SG,COBOL bank
+mortgage-servicing,AU,home loan servicing
+mortgage-servicing,AU,loan servicing platform
+mortgage-servicing,AU,COBOL mainframe bank
+payroll-hr,US,PeopleSoft HCM
+payroll-hr,US,SAP HCM payroll
+payroll-hr,US,Kronos Workforce Central
+payroll-hr,US,Infor Lawson payroll
+payroll-hr,US,COBOL payroll
+payroll-hr,EU,SAP HCM payroll
+payroll-hr,EU,SAP HR Abrechnung
+payroll-hr,EU,SAP HCM paie
+payroll-hr,EU,nómina SAP HCM
+payroll-hr,EU,SAP HCM loonadministratie
+payroll-hr,UK,SAP HR payroll
+payroll-hr,UK,Oracle EBS HRMS
+payroll-hr,UK,NHS ESR
+payroll-hr,UK,iTrent payroll
+payroll-hr,UK,ResourceLink payroll
+payroll-hr,SG,SAP HCM payroll
+payroll-hr,SG,PeopleSoft HRMS
+payroll-hr,SG,Oracle HRMS
+payroll-hr,AU,SAP HCM payroll
+payroll-hr,AU,Chris21 payroll
+payroll-hr,AU,Aurion payroll
+payroll-hr,AU,PeopleSoft HCM
+payroll-hr,AU,Kronos Workforce Central
+pension-provident-fund-admin,US,OmniPlus
+pension-provident-fund-admin,US,OmniScript
+pension-provident-fund-admin,US,Relius
+pension-provident-fund-admin,US,pension administration system
+pension-provident-fund-admin,US,Neospin
+pension-provident-fund-admin,US,V3locity
+pension-provident-fund-admin,US,PensionGold
+pension-provident-fund-admin,UK,Altair pensions
+pension-provident-fund-admin,UK,Hartlink
+pension-provident-fund-admin,UK,Compendia pensions
+pension-provident-fund-admin,UK,Civica UPM
+pension-provident-fund-admin,UK,pensions administration software
+pension-provident-fund-admin,EU,pensioenadministratie
+pension-provident-fund-admin,EU,Pensionsverwaltung Software
+pension-provident-fund-admin,EU,pension administration system
+pension-provident-fund-admin,AU,Bravura Sonata
+pension-provident-fund-admin,AU,GBST Composer
+pension-provident-fund-admin,AU,superannuation administration
+pension-provident-fund-admin,SG,CPF Board system
+pension-provident-fund-admin,SG,pension administration
+pension-provident-fund-admin,SG,provident fund system
+port-terminal-operating-system,US,Navis N4
+port-terminal-operating-system,US,Tideworks Mainsail
+port-terminal-operating-system,US,terminal operating system
+port-terminal-operating-system,US,N4 Groovy
+port-terminal-operating-system,EU,Navis N4
+port-terminal-operating-system,EU,terminal operating system
+port-terminal-operating-system,EU,Terminalbetriebssystem
+port-terminal-operating-system,EU,sistema operativo terminal
+port-terminal-operating-system,EU,CATOS
+port-terminal-operating-system,UK,Navis N4
+port-terminal-operating-system,UK,terminal operating system
+port-terminal-operating-system,UK,CargoesTOS
+port-terminal-operating-system,SG,CITOS
+port-terminal-operating-system,SG,terminal operating system
+port-terminal-operating-system,SG,Navis N4
+port-terminal-operating-system,AU,Navis N4
+port-terminal-operating-system,AU,terminal operating system
+port-terminal-operating-system,AU,RBS TOPS
+port-terminal-operating-system,AU,TOS analyst
+procurement-ap,US,SAP MM
+procurement-ap,US,Oracle EBS Payables
+procurement-ap,US,JD Edwards accounts payable
+procurement-ap,US,SAP Ariba
+procurement-ap,US,PeopleSoft AP
+procurement-ap,EU,SAP MM Einkauf
+procurement-ap,EU,Kreditorenbuchhaltung SAP
+procurement-ap,EU,comptabilité fournisseurs SAP
+procurement-ap,EU,Basware
+procurement-ap,EU,purchase-to-pay
+procurement-ap,UK,purchase ledger SAP
+procurement-ap,UK,Oracle EBS purchasing
+procurement-ap,UK,Basware
+procurement-ap,UK,purchase to pay
+procurement-ap,SG,SAP MM
+procurement-ap,SG,accounts payable SAP
+procurement-ap,SG,Oracle EBS
+procurement-ap,AU,SAP ECC accounts payable
+procurement-ap,AU,MYOB AccountRight
+procurement-ap,AU,TechnologyOne
+procurement-ap,AU,Oracle EBS
+retail-pos-merch,US,Oracle Xstore
+retail-pos-merch,US,Oracle Retail RMS
+retail-pos-merch,US,JDA MMS
+retail-pos-merch,US,Toshiba 4690
+retail-pos-merch,US,SurePOS ACE
+retail-pos-merch,US,NCR Retalix
+retail-pos-merch,EU,Oracle Xstore
+retail-pos-merch,EU,SAP IS-Retail
+retail-pos-merch,EU,Kassensystem Entwickler
+retail-pos-merch,EU,Oracle Retail RMS
+retail-pos-merch,EU,LS Nav
+retail-pos-merch,EU,logiciel caisse magasin
+retail-pos-merch,UK,Xstore EPOS
+retail-pos-merch,UK,Toshiba 4690
+retail-pos-merch,UK,Oracle Retail RMS
+retail-pos-merch,UK,JDA MMS
+retail-pos-merch,UK,EPOS replacement
+retail-pos-merch,SG,Oracle Xstore
+retail-pos-merch,SG,Oracle Retail RMS
+retail-pos-merch,SG,JDA MMS
+retail-pos-merch,SG,AS400 retail
+retail-pos-merch,AU,Oracle Xstore
+retail-pos-merch,AU,Toshiba 4690
+retail-pos-merch,AU,Oracle Retail RMS
+retail-pos-merch,AU,JDA MMS
+student-information,US,Ellucian Banner
+student-information,US,Ellucian Colleague
+student-information,US,PeopleSoft Campus Solutions
+student-information,US,Jenzabar
+student-information,US,PowerSchool SIS
+student-information,US,Workday Student
+student-information,US,student information system
+student-information,UK,SITS Vision
+student-information,UK,Tribal SITS
+student-information,UK,SIMS MIS
+student-information,UK,student records system
+student-information,UK,Tribal ebs
+student-information,EU,student information system
+student-information,EU,Campus-Management-System
+student-information,EU,HISinOne
+student-information,EU,OSIRIS studentvolgsysteem
+student-information,EU,Apogée scolarité
+student-information,EU,Pegaso Esse3
+student-information,SG,student information system
+student-information,SG,SITS Vision
+student-information,SG,PeopleSoft Campus Solutions
+student-information,AU,Callista
+student-information,AU,student management system
+student-information,AU,TechnologyOne Student
+student-information,AU,PeopleSoft Campus Solutions
+student-information,AU,SITS Vision
+telecom-bss,US,Amdocs billing
+telecom-bss,US,Oracle BRM
+telecom-bss,US,CSG ACP
+telecom-bss,US,BSCS
+telecom-bss,US,telecom billing COBOL
+telecom-bss,US,BSS transformation
+telecom-bss,EU,BSCS iX
+telecom-bss,EU,Oracle BRM
+telecom-bss,EU,Amdocs
+telecom-bss,EU,Netcracker
+telecom-bss,EU,Abrechnungssystem Telekommunikation
+telecom-bss,EU,système de facturation télécom
+telecom-bss,UK,Amdocs billing
+telecom-bss,UK,Oracle BRM
+telecom-bss,UK,Kenan billing
+telecom-bss,UK,BSS transformation
+telecom-bss,SG,Amdocs
+telecom-bss,SG,Oracle BRM
+telecom-bss,SG,telecom billing system
+telecom-bss,AU,Amdocs billing
+telecom-bss,AU,Oracle BRM
+telecom-bss,AU,BSS transformation
+telecom-bss,AU,telecommunications billing system
+trade-finance,US,Trade Innovation Finastra
+trade-finance,US,Surecomp IMEX
+trade-finance,US,letter of credit system
+trade-finance,US,trade finance analyst
+trade-finance,EU,Surecomp DOKA
+trade-finance,EU,Akkreditiv Software
+trade-finance,EU,crédit documentaire logiciel
+trade-finance,EU,trade finance platform
+trade-finance,UK,TI Plus
+trade-finance,UK,CGI Trade360
+trade-finance,UK,trade finance systems
+trade-finance,SG,Eximbills
+trade-finance,SG,Surecomp IMEX
+trade-finance,SG,trade finance systems
+trade-finance,AU,trade finance platform
+trade-finance,AU,bank guarantee system
+trade-finance,AU,Trade Innovation
+utility-billing-cis,US,SAP IS-U
+utility-billing-cis,US,Oracle CC&B
+utility-billing-cis,US,utility billing CIS
+utility-billing-cis,US,CIS Infinity
+utility-billing-cis,US,Tyler Incode
+utility-billing-cis,EU,SAP IS-U Berater
+utility-billing-cis,EU,S/4HANA Utilities
+utility-billing-cis,EU,Abrechnungssystem Stadtwerke
+utility-billing-cis,EU,Oracle CC&B
+utility-billing-cis,EU,logiciel facturation énergie
+utility-billing-cis,UK,SAP IS-U
+utility-billing-cis,UK,Junifer
+utility-billing-cis,UK,Gentrack Velocity
+utility-billing-cis,UK,Kraken Technologies
+utility-billing-cis,SG,SAP IS-U
+utility-billing-cis,SG,Oracle CC&B
+utility-billing-cis,SG,utility billing system
+utility-billing-cis,AU,SAP IS-U
+utility-billing-cis,AU,Gentrack Velocity
+utility-billing-cis,AU,Hansen Banner
+utility-billing-cis,AU,Oracle CC&B
+warehouse-management,US,SAP EWM consultant
+warehouse-management,US,Manhattan WMOS
+warehouse-management,US,Blue Yonder WMS
+warehouse-management,US,RPG warehouse developer
+warehouse-management,US,warehouse management system
+warehouse-management,EU,SAP EWM Berater
+warehouse-management,EU,Lagerverwaltungssystem
+warehouse-management,EU,consultant WMS Reflex
+warehouse-management,EU,logiciel WMS
+warehouse-management,EU,warehouse management system
+warehouse-management,UK,SAP EWM consultant
+warehouse-management,UK,Blue Yonder WMS
+warehouse-management,UK,WMS analyst
+warehouse-management,UK,warehouse management system
+warehouse-management,SG,SAP EWM
+warehouse-management,SG,WMS analyst
+warehouse-management,SG,warehouse management system
+warehouse-management,AU,SAP EWM consultant
+warehouse-management,AU,Manhattan SCALE
+warehouse-management,AU,warehouse management system
+wealth-portfolio-accounting,US,Advent Axys
+wealth-portfolio-accounting,US,Advent APX
+wealth-portfolio-accounting,US,InvestOne
+wealth-portfolio-accounting,US,SEI TRUST 3000
+wealth-portfolio-accounting,US,portfolio accounting analyst
+wealth-portfolio-accounting,US,Addepar
+wealth-portfolio-accounting,EU,Avaloq
+wealth-portfolio-accounting,EU,SimCorp Dimension
+wealth-portfolio-accounting,EU,Triple'A Plus
+wealth-portfolio-accounting,EU,Avaloq Entwickler
+wealth-portfolio-accounting,EU,Wertschriftenbuchhaltung
+wealth-portfolio-accounting,EU,comptabilité titres
+wealth-portfolio-accounting,UK,Avaloq
+wealth-portfolio-accounting,UK,SimCorp Dimension
+wealth-portfolio-accounting,UK,Advent Geneva
+wealth-portfolio-accounting,UK,SEI Wealth Platform
+wealth-portfolio-accounting,SG,Avaloq
+wealth-portfolio-accounting,SG,Triple'A Plus
+wealth-portfolio-accounting,SG,Temenos WealthSuite
+wealth-portfolio-accounting,SG,portfolio management system
+wealth-portfolio-accounting,AU,SimCorp
+wealth-portfolio-accounting,AU,Avaloq
+wealth-portfolio-accounting,AU,portfolio accounting
+wealth-portfolio-accounting,AU,Advent Axys
