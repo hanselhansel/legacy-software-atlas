@@ -1,3 +1,5 @@
+# Mechanical Orchard
+
 ## Summary
 
 Mechanical Orchard (MO) replaces custom COBOL, JCL, CICS and Db2 workloads on IBM mainframes with modern code that the customer owns and can run on a public cloud [1][2][3]. It does not translate source line by line. It records what the running system takes in and puts out, has AI write replacement code in small slices, and cuts a slice over only when its outputs match the old ones byte for byte [4][5]. MO says it was founded in October 2022. It reported more than $10 million of revenue and a profit for 2023, and has about 100 staff [5][6][3][9]. SEC filings suggest it had raised roughly $95 million to $102 million by January 2026; the range depends on whether the seed is already counted in the Series A filing (inferred) [7][8]. It has publicly retired applications, not whole mainframes [10][11]. The lesson: once AI makes code cheap, the scarce product is proof of equivalence, and the old system's own behaviour is the cheapest specification a challenger can get.

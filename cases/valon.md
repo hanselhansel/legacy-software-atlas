@@ -1,3 +1,5 @@
+# Valon
+
 ## Summary
 
 Valon replaces the mortgage servicing system of record, a market National Mortgage News describes as a duopoly of ICE's MSP and Sagent [1]. It wrote its own cloud core, licensed its own servicer in all 50 states, and ran about 810,000 loans on it before selling that servicer to Carrington, which adopts ValonOS as its core platform [2][3][4][5]. Newrez agreed in January 2026 to move all its servicing, over 4 million homeowners, onto ValonOS from 2027. But Newrez is leaving an in-house system, not MSP, and no MSP shop has publicly confirmed a move [6][7][8][9]. The lesson: in a regulated core market, running the business on your own software can be the sales pitch. Once the proof has done its job, it can be sold to a customer.

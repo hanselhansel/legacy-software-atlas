@@ -1,3 +1,5 @@
+# Adaptive
+
 ## Summary
 
 Adaptive replaces the clerical work, spreadsheets and point tools around a contractor's general ledger, not the ledger itself [1][2]. Its AI agents read bills, code them to job and cost code, chase lien waivers and field updates by voice, text or email, and send human-approved entries to QuickBooks, Sage Intacct, Foundation or Acumatica [1][2]. It grew from about 10 paying customers in January 2023 to 750+ construction companies with $5M to $1B in revenue, 40+ accounting firms and $57M raised by September 2026, with revenue undisclosed [3][1]. The lesson: start below the construction ERP's floor with a one-sided overlay on the ledger small firms already use, then climb, but treat replacing the ledger as a separate bet that Adaptive has not yet made [2].

@@ -1,3 +1,5 @@
+# bloop (cautionary case)
+
 ## Summary
 
 bloop, a London startup from Y Combinator's Summer 2021 batch, tried to move COBOL applications at banks and other large enterprises off the mainframe by converting them into readable Java [1][2]. It ran COBOL through a static transpiler, used LLMs to refactor the output, tested every change against the original program's behavior, and sold the work as fixed-price pilots [3][4]. It ran this business for about a year from its March 2024 launch, earned at least one six-figure payment, named no customer publicly, pivoted to the developer tool Vibe Kanban in June 2025 and shut down on 10 April 2026 [5][6]. The lesson: Louis put bank sales cycles at 18 to 24 months. A small team living on 2021 funding, with no experienced enterprise seller, could not wait that long, even though Louis says the technology worked [5][7].

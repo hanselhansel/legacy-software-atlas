@@ -1,3 +1,5 @@
+# Rillet
+
 ## Summary
 
 Rillet is a new general ledger and finance ERP that takes venture-backed companies off QuickBooks, NetSuite, Sage Intacct and some older enterprise ledgers [1]. It pulls transactions straight from tools such as Stripe, Salesforce and Brex [2]. It keeps the accounting math deterministic [3] and uses AI for intake and review, with a human approving every entry [4]. Its own CPAs run migrations that it says take 4 to 6 weeks [2][5]. By August 2026 it claimed 600+ customers in 60 countries and a $1B valuation, yet only about 30% came from NetSuite or Sage Intacct, roughly 180 companies against NetSuite's 43,000 (inferred) [6][7][1][8]. The lesson: a system of record cannot be sold as a feature wedge, so Rillet aimed at a moment, the month a company outgrows QuickBooks, and bought trust with accountants on its own payroll (inferred).

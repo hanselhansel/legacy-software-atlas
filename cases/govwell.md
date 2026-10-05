@@ -1,3 +1,5 @@
+# GovWell
+
 ## Summary
 
 GovWell replaces the permitting, licensing, planning and code-enforcement system of record in small US cities and counties, displacing paper, ERP add-on modules, small-vendor permitting tools and, at least once, Accela [1][2][3]. It sells a cloud platform that its own staff configure and launch in weeks (3 to 11 in its published examples), priced per module, with AI features shipping by mid-2025 [4][5][6]. Founded in April 2023, it reports more than 200 agencies in 40+ states and has raised $34.5 million, including a $25 million Series A led by Insight Partners in May 2026 [7][8][9]. The lesson: it won on deployment speed, service and council-vote procurement before AI led its marketing, and that playbook is untested in RFP-driven cities above about 100,000 people (inferred) [10][11][12].

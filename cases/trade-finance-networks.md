@@ -1,3 +1,5 @@
+# Contour, we.trade and Marco Polo (cautionary case)
+
 ## Summary
 
 Contour, we.trade and Marco Polo were bank-backed blockchain networks, started from 2017, that set out to replace paper letters of credit (LCs) and paper-heavy open-account trade finance [1][2][3]. Each tried to put the buyer, the seller and both of their banks on one shared ledger, so documents and payment promises moved as data instead of couriered paper [4][5][6]. All three failed as consortia. we.trade went into liquidation in June 2022 and Marco Polo in February 2023. Contour's bank owners pulled funding in October 2023, when it was running at about 60-70 transactions a month. Meanwhile AI document-checking overlays such as Cleareye and Traydstream signed J.P. Morgan, Lloyds, NatWest, Deutsche Bank and Citi, and built integrations with the Finastra, CGI and Surecomp systems banks already ran [7][8][9][10][11][12][13][14][15][16]. The lesson: a product that pays back inside one bank's operations team gets bought, and one that pays back only when every counterparty switches at once does not (inferred).

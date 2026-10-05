@@ -1,3 +1,5 @@
+# AKASA
+
 ## Summary
 
 AKASA sells AI that runs on top of Epic and other hospital billing systems and does work that revenue cycle staff and coding vendors do today [1][2][3]. Founded in 2018 as Alpha Health, it first automated claim-status checks with machine learning plus remote human experts, then rebuilt itself in 2024 around language models fine-tuned on each hospital's records for coding and documentation [4][5][6][7]. By October 2026 its customers held $180B+ in net patient revenue and about 1 in 10 US inpatient discharges. That month it launched autonomous inpatient coding, which no named customer yet runs in production (inferred) [8]. The lesson: in hospital billing, the money goes to overlays that own a hard, auditable judgment step. Olive AI automated clicks and shut down. Thoughtful AI's stand-alone service was wound down inside its new parent [9][10][11][12].
