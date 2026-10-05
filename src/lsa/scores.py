@@ -49,19 +49,29 @@ def _cap5(x: float) -> int:
     return max(1, min(5, round(x)))
 
 
-def size_part(estimate: estimates.CategoryEstimate, rubric: Rubric) -> ScorePart:
-    """Midpoint of companies-using ranges summed over regions, binned."""
-    mid = estimate.midpoint()
+def size_part(
+    estimate: estimates.CategoryEstimate,
+    rubric: Rubric,
+    universe_mid: float | None = None,
+) -> ScorePart:
+    """Possible buyers: the buyer-universe midpoint summed over regions, binned.
+
+    Vendor disclosures are too sparse to count users (many name one customer),
+    so size measures the organisations a challenger could sell to. Falls back
+    to the companies-using midpoint when no universe row exists."""
+    users_mid = estimate.midpoint()
+    mid = universe_mid if universe_mid else users_mid
     score = 1 + sum(1 for b in rubric.size_bins if mid >= b)
     evidence = [
-        f"estimates: region midpoints sum to {mid:g} companies using"
+        f"possible buyers {mid:g} (buyer universe)" if universe_mid
+        else f"estimates: region midpoints sum to {mid:g} companies using"
     ]
     for region, s in estimate.regions.items():
         evidence.append(
             f"{region}: {s.companies_low}-{s.companies_high} grade {s.grade}"
         )
         evidence.extend(s.sources)
-    return ScorePart(score, {"midpoint": mid, "bins": list(rubric.size_bins)}, tuple(evidence))
+    return ScorePart(score, {"midpoint": mid, "users_midpoint": users_mid, "basis": "buyer_universe" if universe_mid else "companies_using", "bins": list(rubric.size_bins)}, tuple(evidence))
 
 
 def pain_part(
@@ -326,6 +336,7 @@ class ScoreInputs:
     ai_answers: dict[str, dict] = field(default_factory=dict)
     ai_pass_present: bool = False
     config: catconfig.CategoryConfig | None = None
+    universe_mid: float | None = None
 
 
 def score_category(
@@ -335,7 +346,7 @@ def score_category(
     rubric = rubric or load_rubric()
     cfg = inp.config or catconfig.CategoryConfig(slug=slug)
     parts = {
-        "size": size_part(inp.estimate, rubric),
+        "size": size_part(inp.estimate, rubric, inp.universe_mid),
         "pain": pain_part(
             inp.signs.get("s3", "not_met"),
             inp.hn_pain_comments,

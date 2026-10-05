@@ -98,10 +98,13 @@ def _universe(
         if unit and unit not in BUYER_UNITS:
             notes.append(f"universe skip ({region} {register}): counts {unit}, not buyers")
             continue
-        if row.get("buyers_low"):
-            low = float(row["buyers_low"])
-            high = float(row.get("buyers_high") or row["buyers_low"])
-            pnotes = [f"classified buyers ({unit})"]
+        if unit:
+            # Classified rows never fall back to parsing the free text, which
+            # may hold tonnage, people or money.
+            lo, hi = row.get("buyers_low") or row.get("buyers_high"), row.get("buyers_high") or row.get("buyers_low")
+            low = float(lo) if lo else None
+            high = float(hi) if hi else None
+            pnotes = [f"classified buyers ({unit})" if lo else f"no buyer count ({unit})"]
         else:
             low, high, pnotes = parse_counts.parse_sum_or_range(
                 row.get("approx_count", "")
@@ -142,6 +145,14 @@ def _vendor_sums(
         year = parse_counts.parse_year(row.get("disclosed_customers", ""))
         if key in cfg.vendor_overrides:
             count, pnotes = cfg.vendor_overrides[key], ["override"]
+        elif row.get("unit") and row["unit"] not in BUYER_UNITS:
+            notes.append(f"vendor skip ({key}): counts {row['unit']}, not customers")
+            continue
+        elif row.get("unit"):
+            # Classified rows: the low end is the customer count; blank means undisclosed.
+            raw = row.get("buyers_low", "")
+            count = float(raw) if raw else None
+            pnotes = [f"classified customers ({row['unit']})"]
         else:
             count, pnotes = parse_counts.parse_first_count(
                 row.get("disclosed_customers", "")

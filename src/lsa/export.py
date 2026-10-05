@@ -171,6 +171,8 @@ def score_inputs(
         for k in ("s1", "s2", "s3", "s4")
     }
     weighted, unweighted = scores.job_in_use_share(items, slug)
+    uni, _ = estimates._universe(slug, estimates.load_csv(paths.RESEARCH / "buyer_universe.csv"), cfg)
+    universe_mid = sum((v["low"] + v["high"]) / 2 for v in uni.values()) or None
     return scores.ScoreInputs(
         estimate=estimate,
         signs=signs,
@@ -184,6 +186,7 @@ def score_inputs(
         ai_answers=ai_answers,
         ai_pass_present=ai_pass_present,
         config=cfg,
+        universe_mid=universe_mid,
     )
 
 
