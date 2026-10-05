@@ -52,7 +52,6 @@ def api_sources(family: str) -> tuple[ModuleType, ...]:
     if not API_SOURCES:
         from lsa.sources import (
             arbeitsagentur,
-            boamp,
             contracts_finder,
             eures,
             gebiz,
@@ -69,7 +68,7 @@ def api_sources(family: str) -> tuple[ModuleType, ...]:
                     ted,
                     contracts_finder,
                     gebiz,
-                    boamp,
+                    # boamp left out: its robots.txt disallows /api/ (spec 5.2).
                 ),
                 "jobs": (
                     mycareersfuture,
