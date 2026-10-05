@@ -1,0 +1,12 @@
+# Fixed FX rates to USD for awards.value_usd (plan 3, lane L).
+# Approximate mid-market rates captured on as_of; refreshed by hand, never
+# at fetch time, so every row in awards.parquet converts at one dated rate.
+
+as_of = "2026-10-05"
+
+[rates]
+USD = 1.0
+EUR = 1.17
+GBP = 1.34
+AUD = 0.66
+SGD = 0.78

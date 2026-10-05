@@ -627,8 +627,10 @@ def build_parser() -> argparse.ArgumentParser:
     )
     p_exp.set_defaults(func=_export)
 
+    from lsa.awards.cli import register as register_awards
     from lsa.jev.cli import register as register_jev
 
+    register_awards(sub)
     register_jev(sub)
     return parser
 
