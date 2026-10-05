@@ -20,10 +20,14 @@ value_bins_usd = [100000000, 1000000000, 5000000000, 20000000000]
 buyer_bins = [100, 1000, 10000, 100000]
 
 [pain]
-s3_strong = 2.0
-s3_weak = 1.0
-hn_pain_min_comments = 5
-legacy_in_use_share = 0.30
+min_awards = 3
+min_reviews = 2
+min_apps = 2
+min_cases = 2
+failure_yes = 0.7
+s3_strong = 5
+s3_weak = 3
+s3_other = 1
 
 [ai_fit]
 [ai_fit.share_weights]
@@ -32,14 +36,14 @@ medium = 2.0
 low = 1.0
 
 [lockin]
-s2_strong = 2.0
-s2_weak = 1.0
-s4_strong = 1.0
-regulation_reason = 1.0
+min_awards = 3
+min_cases = 2
+noncompetitive = ["negotiated_no_competition", "direct"]
+regulator_true = 5
+regulator_false = 1
 
 [crowding]
-count_bins = [2, 5, 9]
-funding_usd_over = 500000000
+traction_status = "traction"
 """
 
 ITEM_SCHEMA = {
@@ -142,6 +146,8 @@ def _research_dir(tmp_path: Path) -> Path:
                 "strategy",
                 "traction",
                 "source",
+                "ai_native",
+                "status",
             ],
         )
         w.writeheader()
@@ -156,7 +162,111 @@ def _research_dir(tmp_path: Path) -> Path:
                     "strategy": "overlay",
                     "traction": "t",
                     "source": "https://e",
+                    "ai_native": "True",
+                    "status": "traction",
                 }
+            ]
+        )
+    with open(r / "replacement_cases.csv", "w", newline="") as f:
+        w = csv.DictWriter(
+            f,
+            fieldnames=[
+                "category",
+                "buyer",
+                "region",
+                "system_from",
+                "system_to",
+                "start_year",
+                "end_year",
+                "duration_months",
+                "cost_usd",
+                "outcome",
+                "source",
+            ],
+        )
+        w.writeheader()
+        w.writerows(
+            [
+                {
+                    "category": "core-banking",
+                    "duration_months": "30",
+                    "outcome": "cancelled_or_rolled_back",
+                },
+                {
+                    "category": "core-banking",
+                    "duration_months": "20",
+                    "outcome": "completed_on_time",
+                },
+            ]
+        )
+    with open(r / "regulator_approval.csv", "w", newline="") as f:
+        w = csv.DictWriter(
+            f,
+            fieldnames=["category", "regulator_approval_required", "note"],
+        )
+        w.writeheader()
+        w.writerows(
+            [
+                {
+                    "category": "core-banking",
+                    "regulator_approval_required": "True",
+                    "note": "license required",
+                }
+            ]
+        )
+    with open(r / "ai_native_rounds_24m.csv", "w", newline="") as f:
+        w = csv.DictWriter(
+            f,
+            fieldnames=[
+                "category",
+                "company",
+                "hq",
+                "date",
+                "amount_usd",
+                "round",
+                "workflow_id",
+                "source",
+            ],
+        )
+        w.writeheader()
+        w.writerows(
+            [
+                {
+                    "category": "core-banking",
+                    "company": "Ch1",
+                    "amount_usd": "10000000",
+                    "workflow_id": "core-banking:wf_a",
+                }
+            ]
+        )
+    with open(r / "workflows.csv", "w", newline="") as f:
+        w = csv.DictWriter(
+            f,
+            fieldnames=[
+                "category",
+                "workflow_id",
+                "workflow",
+                "description",
+                "touches_core",
+            ],
+        )
+        w.writeheader()
+        w.writerows(
+            [
+                {
+                    "category": "core-banking",
+                    "workflow_id": "core-banking:wf_a",
+                    "workflow": "Reconciliation",
+                    "description": "match ledgers",
+                    "touches_core": "False",
+                },
+                {
+                    "category": "core-banking",
+                    "workflow_id": "core-banking:wf_core",
+                    "workflow": "Posting",
+                    "description": "post to the ledger",
+                    "touches_core": "True",
+                },
             ]
         )
     with open(r / "buyer_universe.csv", "w", newline="") as f:
@@ -275,6 +385,18 @@ def _items_parquet(tmp_path: Path) -> Path:
     rows = [
         dict(ITEM_SCHEMA),
         dict(ITEM_SCHEMA, item_id="x:2", url="https://example.test/job/2"),
+        dict(
+            ITEM_SCHEMA,
+            item_id="rev:1",
+            family="app_reviews",
+            url="https://example.test/rev/1",
+        ),
+        dict(
+            ITEM_SCHEMA,
+            item_id="rev:2",
+            family="app_reviews",
+            url="https://example.test/rev/2",
+        ),
     ]
     path = tmp_path / "items.parquet"
     pq.write_table(
@@ -300,15 +422,46 @@ def _items_parquet(tmp_path: Path) -> Path:
     return path
 
 
+_ANSWER_SCHEMA = pa.schema(
+    [
+        ("run_id", pa.string()),
+        ("item_id", pa.string()),
+        ("question_set", pa.string()),
+        ("question_id", pa.string()),
+        ("qtype", pa.string()),
+        ("probability", pa.float64()),
+        ("choice", pa.string()),
+        ("score", pa.float64()),
+        ("probabilities_json", pa.string()),
+        ("confidence", pa.float64()),
+        ("model_returned", pa.string()),
+        ("request_id", pa.string()),
+        ("logical_call_id", pa.string()),
+    ]
+)
+
+
+def _ans_row(item_id, question_set, question_id, choice=None, probability=None, score=None):
+    return {
+        "run_id": "test",
+        "item_id": item_id,
+        "question_set": question_set,
+        "question_id": question_id,
+        "qtype": "choice",
+        "probability": probability,
+        "choice": choice,
+        "score": score,
+        "probabilities_json": "{}",
+        "confidence": 0.9,
+        "model_returned": "test",
+        "request_id": "r",
+        "logical_call_id": "l",
+    }
+
+
 def _jev_root(tmp_path: Path) -> Path:
-    """Two v2 job answers marking both items in_use, segment enterprise."""
-    answers_dir = (
-        tmp_path
-        / "jev"
-        / "job-apis-industry-segment-legacy-in-use"
-        / "answers"
-    )
-    answers_dir.mkdir(parents=True)
+    """v2 job answers (in_use, enterprise) plus the lane O award and
+    app-review pass answers."""
     qs = "job-apis-industry-segment-legacy-in-use@v2"
     rows = []
     for item_id in ("x:1", "x:2"):
@@ -316,47 +469,91 @@ def _jev_root(tmp_path: Path) -> Path:
             ("legacy_in_use", "in_use"),
             ("segment", "enterprise"),
         ):
-            rows.append(
-                {
-                    "run_id": "test",
-                    "item_id": item_id,
-                    "question_set": qs,
-                    "question_id": qid,
-                    "qtype": "choice",
-                    "probability": None,
-                    "choice": choice,
-                    "score": None,
-                    "probabilities_json": "{}",
-                    "confidence": 0.9,
-                    "model_returned": "test",
-                    "request_id": "r",
-                    "logical_call_id": "l",
-                }
-            )
+            rows.append(_ans_row(item_id, qs, qid, choice=choice))
+    answers_dir = (
+        tmp_path
+        / "jev"
+        / "job-apis-industry-segment-legacy-in-use"
+        / "answers"
+    )
+    answers_dir.mkdir(parents=True)
     pq.write_table(
-        pa.Table.from_pylist(
-            rows,
-            schema=pa.schema(
-                [
-                    ("run_id", pa.string()),
-                    ("item_id", pa.string()),
-                    ("question_set", pa.string()),
-                    ("question_id", pa.string()),
-                    ("qtype", pa.string()),
-                    ("probability", pa.float64()),
-                    ("choice", pa.string()),
-                    ("score", pa.float64()),
-                    ("probabilities_json", pa.string()),
-                    ("confidence", pa.float64()),
-                    ("model_returned", pa.string()),
-                    ("request_id", pa.string()),
-                    ("logical_call_id", pa.string()),
-                ]
-            ),
-        ),
+        pa.Table.from_pylist(rows, schema=_ANSWER_SCHEMA),
         answers_dir / "part-000.parquet",
     )
+
+    awards_qs = "awards-keep-alive-or-replace@v1"
+    award_rows = []
+    actions = {"aw:1": "maintain", "aw:2": "extend", "aw:3": "replace", "aw:4": "maintain"}
+    for aid, action in actions.items():
+        award_rows.append(
+            _ans_row(aid, awards_qs, "action", choice=action)
+        )
+        award_rows.append(
+            _ans_row(aid, awards_qs, "category", choice="core-banking")
+        )
+    adir = tmp_path / "jev" / "awards-keep-alive-or-replace" / "answers"
+    adir.mkdir(parents=True)
+    pq.write_table(
+        pa.Table.from_pylist(award_rows, schema=_ANSWER_SCHEMA),
+        adir / "part-000.parquet",
+    )
+
+    reviews_qs = "app-reviews-backend-failure@v1"
+    review_rows = [
+        _ans_row("rev:1", reviews_qs, "backend_failure", probability=0.9),
+        _ans_row("rev:2", reviews_qs, "backend_failure", probability=0.2),
+    ]
+    rdir = tmp_path / "jev" / "app-reviews-backend-failure" / "answers"
+    rdir.mkdir(parents=True)
+    pq.write_table(
+        pa.Table.from_pylist(review_rows, schema=_ANSWER_SCHEMA),
+        rdir / "part-000.parquet",
+    )
     return tmp_path / "jev"
+
+
+def _derived_dir(tmp_path: Path) -> Path:
+    d = tmp_path / "derived"
+    d.mkdir()
+    pq.write_table(
+        pa.Table.from_pylist(
+            [
+                {
+                    "award_id": "aw:1",
+                    "duration_months": 12.0,
+                    "procedure": "open",
+                },
+                {
+                    "award_id": "aw:2",
+                    "duration_months": 24.0,
+                    "procedure": "direct",
+                },
+                {
+                    "award_id": "aw:3",
+                    "duration_months": 48.0,
+                    "procedure": "negotiated_no_competition",
+                },
+                {
+                    "award_id": "aw:4",
+                    "duration_months": 36.0,
+                    "procedure": "restricted",
+                },
+            ]
+        ),
+        d / "awards.parquet",
+    )
+    pq.write_table(
+        pa.Table.from_pylist(
+            [
+                {"category": "core-banking", "apple_id": "1", "rating": 2.0, "status": "ok"},
+                {"category": "core-banking", "apple_id": "1", "rating": 4.0, "status": "ok"},
+                {"category": "core-banking", "apple_id": "2", "rating": 3.0, "status": "ok"},
+            ]
+        ),
+        d / "apps.parquet",
+    )
+    return d
 
 
 def test_export_shape(tmp_path):
@@ -374,6 +571,7 @@ def test_export_shape(tmp_path):
         rubric_path=rubric,
         items_path=items,
         jev_root=_jev_root(tmp_path),
+        derived_dir=_derived_dir(tmp_path),
     )
 
     cat_path = result["categories"]
@@ -420,17 +618,73 @@ def test_export_shape(tmp_path):
         assert set(part) == {"score", "detail", "evidence"}
     assert sco["parts"]["ai_fit"]["score"] is None
     assert "ai_fit_missing" in sco["flags"]
-    # pain: 1 + s3 weak 1 + in-use share 1.0 (>= 0.30) + 0 hn = 3
-    assert sco["parts"]["pain"]["score"] == 3
-    # lockin: 1 + s2 strong 2 + s4 strong 1 + regulation reason 1 = 5
-    assert sco["parts"]["lockin"]["score"] == 5
-    # crowding: 1 challenger -> 1
+
+    # Lane O parts: one kept category -> every ranked sub-score is quintile 1.
+    pain_subs = sco["parts"]["pain"]["detail"]["sub_scores"]
+    assert set(pain_subs) == {
+        "keep_alive_share",
+        "backend_failure_share",
+        "app_rating_inverted",
+        "failed_rate",
+        "s3_grade",
+    }
+    assert pain_subs["s3_grade"] == {"raw": "weak", "n": 1, "score": 3}
+    assert pain_subs["keep_alive_share"]["raw"] == 0.75  # 3 keep / 4 counted
+    assert pain_subs["failed_rate"] == {"raw": 0.5, "n": 2, "score": 1}
+    # pain = round(mean(1, 1, 1, 1, 3)) = 1
+    assert sco["parts"]["pain"]["score"] == 1
+    assert sco["parts"]["pain"]["detail"]["mean"] == 1.4
+
+    lockin_subs = sco["parts"]["lockin"]["detail"]["sub_scores"]
+    assert set(lockin_subs) == {
+        "award_duration_months",
+        "noncompetitive_share",
+        "replacement_duration_months",
+        "regulator_approval",
+    }
+    assert lockin_subs["regulator_approval"] == {
+        "raw": True, "n": 1, "score": 5
+    }
+    assert lockin_subs["award_duration_months"]["raw"] == 30.0
+    assert lockin_subs["noncompetitive_share"]["raw"] == 0.5
+    assert lockin_subs["replacement_duration_months"]["raw"] == 25.0
+    # lockin = round(mean(1, 1, 1, 5)) = 2
+    assert sco["parts"]["lockin"]["score"] == 2
+
+    crowd_subs = sco["parts"]["crowding"]["detail"]["sub_scores"]
+    assert set(crowd_subs) == {
+        "ai_native_traction",
+        "funding_per_billion",
+        "yc_2024_plus",
+    }
+    assert crowd_subs["ai_native_traction"]["raw"] == 1.0
+    # no market_size.csv in the fixture -> funding cannot be normalized
+    assert crowd_subs["funding_per_billion"]["score"] is None
+    # no yc-category pass -> no data
+    assert crowd_subs["yc_2024_plus"]["score"] is None
     assert sco["parts"]["crowding"]["score"] == 1
     assert 0 <= sco["total"] <= 100
 
     assert len(scores_list) == 1
     assert scores_list[0]["slug"] == "core-banking"
     assert scores_list[0]["flags"] == sco["flags"]
+
+    # workflows.json: sorted by opportunity index desc; wf_a has the round
+    # crowding, wf_core carries the touches_core penalty; they tie at -1.
+    wf_path = result["workflows"]
+    assert wf_path.name == "workflows.json"
+    wf = json.loads(wf_path.read_text())
+    assert [w["workflow_id"] for w in wf] == [
+        "core-banking:wf_a",
+        "core-banking:wf_core",
+    ]
+    assert wf[0]["crowding"] == 1
+    assert wf[1]["crowding"] == 0
+    assert wf[0]["pain"] == 1  # category pain part score
+    assert wf[0]["touches_core"] is False
+    assert wf[1]["touches_core"] is True
+    idx = [w["opportunity_index"] for w in wf]
+    assert idx == sorted(idx, reverse=True)
 
     # market value: US 4500 buyers x (0.5x150k + 0.5x30k) + UK 100 x 150k
     mk = cat["market"]
@@ -487,6 +741,7 @@ def test_export_config_not_overwritten(tmp_path):
         rubric_path=rubric,
         items_path=items,
         jev_root=tmp_path / "jev",
+        derived_dir=tmp_path / "derived",
     )
     assert "multiplier = 10.0" in cfg.read_text()
     cats = json.loads(

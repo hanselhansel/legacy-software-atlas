@@ -13,6 +13,9 @@ labelled items and the score inputs once, then writes:
 - ``exports/site/regions.json``: every study region x kept category with
   possible buyers, market value, the usage estimate when one exists and an
   evidence level, plus a per-region summary.
+- ``exports/site/workflows.json``: the lane O workflow rows from
+  ``research/workflows.csv`` sorted by opportunity index descending
+  (see ``lsa.workflows``).
 
 Missing per-category TOML files under ``configs/categories/`` are generated
 with the documented defaults first; existing files are read, never
@@ -31,10 +34,12 @@ from lsa import (
     estimates,
     labels,
     market,
+    measures,
     paths,
     score_inputs,
     scores,
     topdown,
+    workflows,
 )
 
 DESK = "desk-research-2026-10-05.json"
@@ -166,45 +171,60 @@ def build_category(
 
 
 def _score_inputs(
-    slug: str,
-    desk: dict | None,
-    regrade_row: dict | None,
     estimate: estimates.CategoryEstimate,
-    items: list[labels.LabelledItem],
-    challenger_rows: list[dict],
     tasks: list[dict],
     ai_answers: dict[str, dict],
     ai_pass_present: bool,
-    cfg: catconfig.CategoryConfig,
+    sub_scores: dict[str, list[measures.SubScore]],
     mv: market.MarketValue | None = None,
 ) -> score_inputs.ScoreInputs:
     """Assemble everything ``score_category`` consumes for one slug."""
-    desk = desk or {}
-    signs = {
-        k: ((regrade_row or {}).get(k) or {}).get("grade", "not_met")
-        for k in ("s1", "s2", "s3", "s4")
-    }
-    sign_evidence = {
-        k: ((regrade_row or {}).get(k) or {}).get("source", "")
-        for k in ("s1", "s2", "s3", "s4")
-    }
-    weighted, unweighted = score_inputs.job_in_use_share(items, slug)
     universe_mid = mv.buyers_mid if mv and mv.buyers_mid else None
     return score_inputs.ScoreInputs(
         estimate=estimate,
-        signs=signs,
-        sign_evidence=sign_evidence,
-        reasons_to_stay=list(desk.get("reasons_to_stay", [])),
-        challengers=challenger_rows,
-        hn_pain_comments=score_inputs.hn_pain_comments(items, slug),
-        in_use_share=weighted,
-        labelled_share=unweighted,
         tasks=tasks,
         ai_answers=ai_answers,
         ai_pass_present=ai_pass_present,
-        config=cfg,
         universe_mid=universe_mid,
         market=mv,
+        measures=sub_scores,
+    )
+
+
+def _measure_data(
+    cats: list[dict],
+    regrade: dict[str, dict],
+    research: Path,
+    derived: Path,
+    jev_root: Path,
+    items_path: Path,
+    challengers: dict[str, list[dict]],
+    rounds: list[dict] | None,
+) -> measures.MeasureData:
+    """Load every lane O measure source once (absent files -> None)."""
+    s3 = {
+        c["slug"]: _sign_block(regrade.get(c["slug"]), c)["s3"]["grade"]
+        for c in cats
+    }
+    return measures.MeasureData(
+        s3=s3,
+        awards=measures.load_parquet(derived / "awards.parquet"),
+        award_answers=measures.load_pass_answers(jev_root, measures.AWARDS_SET),
+        review_categories=measures.item_categories(items_path, "app_reviews"),
+        review_answers=measures.load_pass_answers(
+            jev_root, measures.REVIEWS_SET
+        ),
+        apps=measures.load_parquet(derived / "apps.parquet"),
+        cases=measures.load_csv(research / "replacement_cases.csv"),
+        regulator=measures.regulator_map(
+            measures.load_csv(research / "regulator_approval.csv")
+        ),
+        challengers=challengers,
+        rounds=rounds,
+        legacy_mid=measures.legacy_midpoints(
+            measures.load_csv(research / "market_size.csv")
+        ),
+        yc_answers=measures.load_pass_answers(jev_root, measures.YC_SET),
     )
 
 
@@ -216,12 +236,16 @@ def run_export(
     rubric_path: Path | None = None,
     items_path: Path | None = None,
     jev_root: Path | None = None,
+    derived_dir: Path | None = None,
     only: frozenset[str] | None = None,
 ) -> dict:
     """Generate missing configs, score every kept category, write the JSON."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     research = Path(research_dir or paths.RESEARCH)
+    derived = Path(derived_dir or paths.DERIVED)
+    jev = Path(jev_root or derived / "jev")
+    items_p = Path(items_path) if items_path else derived / "items.parquet"
 
     cats = load_categories(research / "categories.csv")
     if only is not None:
@@ -236,9 +260,16 @@ def run_export(
     topdown_rows = topdown.load(research / "market_size.csv")
     tasks = score_inputs.load_tasks(research / "tasks.csv")
     ai_answers = score_inputs.load_task_answers(jev_root)
-    ai_root = Path(jev_root or paths.DERIVED / "jev") / score_inputs.AI_FIT_PASS
-    ai_present = ai_root.exists()
+    ai_present = (jev / score_inputs.AI_FIT_PASS).exists()
     rubric = scores.load_rubric(rubric_path)
+    rounds = measures.load_csv(research / "ai_native_rounds_24m.csv")
+    sub_map = measures.collect(
+        [c["slug"] for c in cats],
+        _measure_data(
+            cats, regrade, research, derived, jev, items_p, challengers, rounds
+        ),
+        rubric.measures,
+    )
 
     written_configs = []
     cat_objs, score_objs = [], []
@@ -264,16 +295,11 @@ def run_export(
             topdown_rows.get(slug),
         )
         inp = _score_inputs(
-            slug,
-            desk.get(slug),
-            regrade.get(slug),
             est,
-            items,
-            challengers.get(slug, []),
             tasks,
             ai_answers,
             ai_present,
-            cfg,
+            sub_map.get(slug, {}),
             mv,
         )
         sc = scores.score_category(slug, inp, rubric)
@@ -292,11 +318,19 @@ def run_export(
         region_data.append((slug, est, mv))
 
     score_objs.sort(key=lambda s: s["total"], reverse=True)
+    wf_scores = workflows.score_workflows(
+        workflows.load_workflows(research / "workflows.csv"),
+        workflows.load_metrics(derived / "workflows.parquet"),
+        workflows.rounds_by_workflow(rounds or []),
+        {s["slug"]: s["parts"]["pain"]["score"] for s in score_objs},
+        {s["slug"]: s["parts"]["ai_fit"]["score"] for s in score_objs},
+    )
     site = out_dir / "site"
     site.mkdir(exist_ok=True)
     cat_path = site / "categories.json"
     sco_path = site / "scores.json"
     reg_path = site / "regions.json"
+    wf_path = site / "workflows.json"
     cat_path.write_text(
         json.dumps(cat_objs, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
@@ -312,15 +346,20 @@ def run_export(
         + "\n",
         encoding="utf-8",
     )
+    wf_path.write_text(
+        json.dumps(wf_scores, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
     return {
         "categories": cat_path,
         "scores": sco_path,
         "regions": reg_path,
+        "workflows": wf_path,
         "configs": written_configs,
     }
 
 
 def print_summary(result: dict) -> None:
-    for name in ("categories", "scores", "regions"):
+    for name in ("categories", "scores", "regions", "workflows"):
         print(f"wrote {result[name]}")
     print(f"{len(result['configs'])} category configs checked")

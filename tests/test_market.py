@@ -9,17 +9,7 @@ RUBRIC = Rubric(
     weights={"size": 1.0, "pain": 1.0, "ai_fit": 1.0, "lockin": 1.0, "crowding": 1.0},
     value_bins_usd=(100e6, 1e9, 5e9, 20e9),
     buyer_bins=(100.0, 1000.0, 10000.0, 100000.0),
-    s3_strong=2.0,
-    s3_weak=1.0,
-    hn_pain_min_comments=5,
-    legacy_in_use_share=0.30,
     share_weights={"high": 3.0, "medium": 2.0, "low": 1.0},
-    s2_strong=2.0,
-    s2_weak=1.0,
-    s4_strong=1.0,
-    regulation_reason=1.0,
-    count_bins=(2.0, 5.0, 9.0),
-    funding_usd_over=500_000_000.0,
 )
 
 

@@ -1,15 +1,16 @@
-"""Five-part opportunity scores per category (plan 2, task 6).
+"""Five-part opportunity scores per category (plan 3, lane O).
 
 The parts and their evidence are exactly ``configs/rubric.toml`` (spec
 section 8): size is market value (buyer-universe buyers x segment spend
 from ``research/criticality.csv``, binned on ``value_bins_usd``) and falls
 back to the buyer-count midpoint on ``buyer_bins`` when a category has no
-spend data; pain from the S3 grade, HN firsthand-pain comments at p >= 0.7
-and the weighted share of job posts showing the legacy system in use;
-ai_fit the share-weighted mean of the ``tasks-ai-fit`` Jev pass over
-``research/tasks.csv``; lockin from the S2 and S4 grades plus a
-regulation/certification reason to stay; crowding from the challenger
-count and disclosed funding.
+spend data; ai_fit is the share-weighted mean of the ``tasks-ai-fit`` Jev
+pass over ``research/tasks.csv``. Pain, lock-in and crowding are the lane O
+means of sub-scores computed by ``lsa.measures``: each sub-score is a raw
+measurement ranked across the categories into quintiles 1..5 (or a direct
+score for the S3 grade and regulator approval), and the part is the
+rounded mean of the available sub-scores (half up, like ``ai_fit``) with
+every sub-score, its raw value and its input count in the detail.
 
 Every part scores 1 to 5. The opportunity total is the weighted
 ``size + pain + ai_fit - lockin - crowding`` rescaled to 0..100 over the
@@ -23,7 +24,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
-from lsa import catconfig, estimates, labels, market, parse_counts
+from lsa import estimates, market, measures
 from lsa.rubric import Rubric, load_rubric
 from lsa.score_inputs import AI_FIT_PASS, ScoreInputs
 
@@ -44,10 +45,6 @@ class CategoryScore:
     total_raw: float
     total: float
     flags: tuple[str, ...] = ()
-
-
-def _cap5(x: float) -> int:
-    return max(1, min(5, round(x)))
 
 
 def size_part(
@@ -106,44 +103,33 @@ def size_part(
     return ScorePart(score, detail, tuple(evidence))
 
 
-def pain_part(
-    s3: str,
-    hn_pain_comments: int,
-    in_use_share: float | None,
-    labelled_share: float | None,
-    rubric: Rubric,
-    evidence: list[str] | None = None,
-) -> ScorePart:
-    """1 + S3 points + HN pain bonus + in-use share bonus, capped at 5."""
-    pts = {"strong": rubric.s3_strong, "weak": rubric.s3_weak}.get(s3, 0.0)
-    hn_hit = hn_pain_comments >= rubric.hn_pain_min_comments
-    share_hit = (
-        in_use_share is not None
-        and in_use_share >= rubric.legacy_in_use_share
-    )
-    score = _cap5(1 + pts + hn_hit + share_hit)
-    ev = list(evidence or [])
-    ev.append(
-        f"hn firsthand pain >= {labels.HN_PAIN_YES}: {hn_pain_comments} "
-        f"comments (need {rubric.hn_pain_min_comments})"
-    )
-    ev.append(
-        "job posts legacy in use, weighted share "
-        f"{in_use_share if in_use_share is not None else 'n/a'} "
-        f"(unweighted {labelled_share if labelled_share is not None else 'n/a'}, "
-        f"need {rubric.legacy_in_use_share})"
-    )
-    return ScorePart(
-        score,
-        {
-            "s3": s3,
-            "s3_points": pts,
-            "hn_pain_comments": hn_pain_comments,
-            "in_use_share": in_use_share,
-            "in_use_share_unweighted": labelled_share,
-        },
-        tuple(ev),
-    )
+def measure_part(subs: list[measures.SubScore] | None) -> ScorePart:
+    """Round-half-up mean of available sub-scores for one lane O part.
+
+    The detail lists every sub-score with its raw value, input count ``n``
+    and quintile (None when the sub-score had no usable data); ``mean``
+    is the unrounded mean of the available scores. Evidence is one line
+    per sub-score that contributed. ``int(mean + 0.5)`` matches the
+    round-half-up convention ``ai_fit_part`` uses.
+    """
+    subs = subs or []
+    detail: dict = {
+        "sub_scores": {
+            s.name: {"raw": s.raw, "n": s.n, "score": s.score}
+            for s in subs
+        }
+    }
+    available = [s for s in subs if s.score is not None]
+    if not available:
+        detail["status"] = "no sub-scores with data"
+        return ScorePart(None, detail, ())
+    mean = sum(s.score for s in available) / len(available)
+    detail["mean"] = mean
+    evidence = [
+        f"{s.name}: raw {s.raw} (n={s.n}) -> {s.score}"
+        for s in available
+    ]
+    return ScorePart(int(mean + 0.5), detail, tuple(evidence))
 
 
 def ai_fit_part(
@@ -214,86 +200,6 @@ def ai_fit_part(
     )
 
 
-def lockin_part(
-    s2: str,
-    s4: str,
-    reasons_to_stay: list[str],
-    regulation_patterns: tuple[str, ...],
-    rubric: Rubric,
-    evidence: list[str] | None = None,
-) -> ScorePart:
-    """1 + S2 points + S4-strong point + regulation reason point, cap 5."""
-    pts = {"strong": rubric.s2_strong, "weak": rubric.s2_weak}.get(s2, 0.0)
-    s4_hit = s4 == "strong"
-    hits = [
-        r
-        for r in reasons_to_stay
-        if any(p.lower() in r.lower() for p in regulation_patterns)
-    ]
-    reg_hit = bool(hits)
-    score = _cap5(
-        1 + pts + s4_hit * rubric.s4_strong + reg_hit * rubric.regulation_reason
-    )
-    ev = list(evidence or [])
-    if reg_hit:
-        ev.append(f"regulation reason to stay: {hits[0]}")
-    return ScorePart(
-        score,
-        {
-            "s2": s2,
-            "s2_points": pts,
-            "s4": s4,
-            "s4_hit": s4_hit,
-            "regulation_reason_hit": reg_hit,
-        },
-        tuple(ev),
-    )
-
-
-def crowding_part(
-    rows: list[dict],
-    funding_overrides: dict[str, float],
-    exclude: tuple[str, ...],
-    rubric: Rubric,
-) -> ScorePart:
-    """Challenger-count bin plus a funding bonus, capped at 5."""
-    kept = [
-        r
-        for r in rows
-        if not any(e in r.get("company", "") for e in exclude)
-    ]
-    n = len(kept)
-    score = 1 + sum(1 for b in rubric.count_bins if n >= b)
-    parsed: dict[str, float] = {}
-    unparsed: list[str] = []
-    for r in kept:
-        company = r.get("company", "")
-        if company in funding_overrides:
-            parsed[company] = funding_overrides[company]
-            continue
-        usd = parse_counts.parse_usd(r.get("funding_usd", ""))
-        if usd is None:
-            unparsed.append(company)
-        else:
-            parsed[company] = usd
-    funding = sum(parsed.values())
-    funded = funding > rubric.funding_usd_over
-    score = _cap5(score + funded)
-    ev = [r["source"] for r in kept if r.get("source")]
-    if unparsed:
-        ev.append("funding unparsed: " + ", ".join(unparsed))
-    return ScorePart(
-        score,
-        {
-            "challengers": n,
-            "funding_usd": funding,
-            "funding_over": rubric.funding_usd_over,
-            "unparsed": unparsed,
-        },
-        tuple(ev),
-    )
-
-
 def combine(
     parts: dict[str, ScorePart], weights: dict[str, float]
 ) -> tuple[float, float, tuple[str, ...]]:
@@ -333,41 +239,18 @@ def score_category(
 ) -> CategoryScore:
     """All five parts plus the rescaled opportunity total."""
     rubric = rubric or load_rubric()
-    cfg = inp.config or catconfig.CategoryConfig(slug=slug)
+    subs = inp.measures or {}
     parts = {
         "size": size_part(
             inp.estimate, rubric, inp.universe_mid, inp.market
         ),
-        "pain": pain_part(
-            inp.signs.get("s3", "not_met"),
-            inp.hn_pain_comments,
-            inp.in_use_share,
-            inp.labelled_share,
-            rubric,
-            [inp.sign_evidence["s3"]] if inp.sign_evidence.get("s3") else [],
-        ),
+        "pain": measure_part(subs.get("pain")),
         "ai_fit": ai_fit_part(
             inp.tasks, inp.ai_answers, slug, rubric,
             pass_present=inp.ai_pass_present,
         ),
-        "lockin": lockin_part(
-            inp.signs.get("s2", "not_met"),
-            inp.signs.get("s4", "not_met"),
-            inp.reasons_to_stay,
-            cfg.regulation_patterns,
-            rubric,
-            [
-                inp.sign_evidence[k]
-                for k in ("s2", "s4")
-                if inp.sign_evidence.get(k)
-            ],
-        ),
-        "crowding": crowding_part(
-            inp.challengers,
-            cfg.funding_overrides,
-            cfg.challenger_exclude,
-            rubric,
-        ),
+        "lockin": measure_part(subs.get("lockin")),
+        "crowding": measure_part(subs.get("crowding")),
     }
     raw, scaled, flags = combine(parts, rubric.weights)
     return CategoryScore(
