@@ -61,11 +61,11 @@ def test_measure_part_rounds_mean_of_available():
     assert part.score == 3
 
 
-def test_measure_part_rounds_half_up():
+def test_measure_part_keeps_one_decimal():
     subs = [_sub("a", 4, 1.0, 1), _sub("b", 3, 2.0, 1)]
-    assert scores.measure_part(subs).score == 4  # 3.5 -> 4
-    subs = [_sub("a", 4, 1.0, 1), _sub("b", 1, 2.0, 1)]
-    assert scores.measure_part(subs).score == 3  # 2.5 -> 3 (half up)
+    assert scores.measure_part(subs).score == 3.5
+    subs = [_sub("a", 4, 1.0, 1), _sub("b", 1, 2.0, 1), _sub("c", 1, 2.0, 1)]
+    assert scores.measure_part(subs).score == 2.0
 
 
 def test_measure_part_detail_lists_every_sub_score():

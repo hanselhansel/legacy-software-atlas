@@ -255,3 +255,15 @@ def test_collect_assembles_parts(tmp_path):
     assert ka.score is None and ka.n == 1 and ka.raw is None
     s3x = {s.name: s for s in out2["x"]["pain"]}["s3_grade"]
     assert s3x.score is None   # no s3 row for x -> no data
+
+
+def test_funding_per_billion_skips_company_wide_and_exit_rounds():
+    from lsa import measures_raw
+
+    rounds = [
+        {"category": "x", "amount_usd": "100000000", "scope": "category_specific"},
+        {"category": "x", "amount_usd": "900000000", "scope": "company_wide"},
+        {"category": "x", "amount_usd": "", "scope": "exit_or_stake"},
+    ]
+    out = measures_raw.funding_per_billion(rounds, {"x": 2e9})
+    assert out["x"] == (50_000_000.0, 1)

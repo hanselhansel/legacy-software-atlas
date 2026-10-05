@@ -198,6 +198,10 @@ def funding_per_billion(
         slug = (r.get("category") or "").strip()
         if not slug:
             continue
+        # Horizontal companies (general AI agents, foundation models) and
+        # exits are not money aimed at this category (research column scope).
+        if (r.get("scope") or "category_specific") != "category_specific":
+            continue
         n[slug] += 1
         try:
             total[slug] += float(r.get("amount_usd") or 0)

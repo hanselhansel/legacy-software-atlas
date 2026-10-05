@@ -631,8 +631,8 @@ def test_export_shape(tmp_path):
     assert pain_subs["s3_grade"] == {"raw": "weak", "n": 1, "score": 3}
     assert pain_subs["keep_alive_share"]["raw"] == 0.75  # 3 keep / 4 counted
     assert pain_subs["failed_rate"] == {"raw": 0.5, "n": 2, "score": 1}
-    # pain = round(mean(1, 1, 1, 1, 3)) = 1
-    assert sco["parts"]["pain"]["score"] == 1
+        # pain = mean(1, 1, 1, 1, 3) = 1.4, kept to one decimal
+    assert sco["parts"]["pain"]["score"] == 1.4
     assert sco["parts"]["pain"]["detail"]["mean"] == 1.4
 
     lockin_subs = sco["parts"]["lockin"]["detail"]["sub_scores"]
@@ -680,7 +680,7 @@ def test_export_shape(tmp_path):
     ]
     assert wf[0]["crowding"] == 1
     assert wf[1]["crowding"] == 0
-    assert wf[0]["pain"] == 1  # category pain part score
+    assert wf[0]["pain"] == 1.4  # category pain part score (one decimal)
     assert wf[0]["touches_core"] is False
     assert wf[1]["touches_core"] is True
     idx = [w["opportunity_index"] for w in wf]

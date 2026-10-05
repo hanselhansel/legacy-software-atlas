@@ -109,8 +109,8 @@ def measure_part(subs: list[measures.SubScore] | None) -> ScorePart:
     The detail lists every sub-score with its raw value, input count ``n``
     and quintile (None when the sub-score had no usable data); ``mean``
     is the unrounded mean of the available scores. Evidence is one line
-    per sub-score that contributed. ``int(mean + 0.5)`` matches the
-    round-half-up convention ``ai_fit_part`` uses.
+    per sub-score that contributed. The part keeps one decimal so
+    half-way means do not flip on rounding.
     """
     subs = subs or []
     detail: dict = {
@@ -129,7 +129,9 @@ def measure_part(subs: list[measures.SubScore] | None) -> ScorePart:
         f"{s.name}: raw {s.raw} (n={s.n}) -> {s.score}"
         for s in available
     ]
-    return ScorePart(int(mean + 0.5), detail, tuple(evidence))
+    # One decimal, not a whole number: 15 lock-in means sat exactly on a half,
+    # so whole-number rounding decided results (report v3, section 12).
+    return ScorePart(round(mean, 1), detail, tuple(evidence))
 
 
 def ai_fit_part(
