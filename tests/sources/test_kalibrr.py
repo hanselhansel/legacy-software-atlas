@@ -17,7 +17,33 @@ def test_count_reads_count_and_maps_country(mock_client, no_sleep):
     client = mock_client(handler)
     assert kalibrr.count("core banking", "ID", client) == 95
     assert seen["params"]["country"] == "Indonesia"
-    assert seen["params"]["text"] == "core banking"
+    assert seen["params"]["text"] == '"core banking"'
+
+
+def test_count_quotes_special_chars(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["params"] = dict(request.url.params)
+        return httpx.Response(200, json={"count": 0})
+
+    client = mock_client(handler)
+    kalibrr.count("z/TPF d'art", "ID", client)
+    assert seen["params"]["text"] == '"z/TPF d\'art"'
+
+
+def test_count_empty_query_omits_text(mock_client, no_sleep):
+    """Empty query is the match-all probe: no text filter."""
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["params"] = dict(request.url.params)
+        return httpx.Response(200, json={"count": 50000})
+
+    client = mock_client(handler)
+    assert kalibrr.count("", "ID", client) == 50000
+    assert "text" not in seen["params"]
+    assert seen["params"]["country"] == "Indonesia"
 
 
 def test_count_ph_maps_to_philippines(mock_client, no_sleep):

@@ -16,8 +16,45 @@ def test_count_reads_total(mock_client, no_sleep):
 
     client = mock_client(handler)
     assert mycareersfuture.count("cobol", "SG", client) == 23
-    assert seen["params"]["search"] == "cobol"
+    assert seen["params"]["search"] == '"cobol"'
     assert seen["params"]["limit"] == "1"
+
+
+def test_count_sends_quoted_phrase(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["params"] = dict(request.url.params)
+        return httpx.Response(200, json={"total": 151})
+
+    client = mock_client(handler)
+    mycareersfuture.count("core banking", "SG", client)
+    assert seen["params"]["search"] == '"core banking"'
+
+
+def test_count_quotes_special_chars(mock_client, no_sleep):
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["params"] = dict(request.url.params)
+        return httpx.Response(200, json={"total": 0})
+
+    client = mock_client(handler)
+    mycareersfuture.count("z/TPF d'art", "SG", client)
+    assert seen["params"]["search"] == '"z/TPF d\'art"'
+
+
+def test_count_empty_query_omits_search(mock_client, no_sleep):
+    """Empty query is the match-all probe: no search filter."""
+    seen = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen["params"] = dict(request.url.params)
+        return httpx.Response(200, json={"total": 40000})
+
+    client = mock_client(handler)
+    assert mycareersfuture.count("", "SG", client) == 40000
+    assert "search" not in seen["params"]
 
 
 def test_count_missing_total_returns_none(mock_client, no_sleep):
