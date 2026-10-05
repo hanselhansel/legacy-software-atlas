@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 
 from lsa import paths
+from lsa.fetch.common import safe_name
 
 _TEXT_KEYS = ("text", "text_window", "window")
 
@@ -53,7 +54,7 @@ def load_items(
             continue
         item_id = str(row["item_id"])
         try:
-            text = _raw_text(rr / family / f"{item_id}.json")
+            text = _raw_text(rr / family / f"{safe_name(item_id)}.json")
         except FileNotFoundError:
             missing.append(item_id)
             continue
