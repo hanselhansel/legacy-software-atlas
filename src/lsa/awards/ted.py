@@ -34,7 +34,9 @@ _FIELDS = [
     "notice-title",
     "notice-type",
     "organisation-name-buyer",
+    "buyer-name",
     "description-lot",
+    "description-glo",
     "publication-date",
     "procedure-type",
     "classification-cpv",
@@ -127,9 +129,12 @@ def _notice_row(notice: dict, row: QueryRow) -> AwardRow:
         region=row.region,
         category_hint=row.category,
         query=row.query,
-        buyer=_pick(notice.get("organisation-name-buyer")),
+        buyer=_pick(notice.get("organisation-name-buyer"))
+        or _pick(notice.get("buyer-name")),
         title=_pick(notice.get("notice-title")),
-        text=_pick(notice.get("description-lot")),
+        text=_pick(notice.get("description-lot"))
+        or _pick(notice.get("description-glo"))
+        or _pick(notice.get("notice-title")),
         value=value,
         currency=currency,
         start_date=_date(notice.get("contract-duration-start-date-lot")),
