@@ -1,0 +1,14 @@
+{
+ "pass": "tasks-ai-fit",
+ "model": "jev-1.13.0",
+ "question_sets": [
+  {
+   "label": "tasks-ai-fit@v1",
+   "file_sha256": "240827348117e42c903b6db819a696fb3313b82fa368611ff3c6c08609422ea2"
+  }
+ ],
+ "price_version": "typesafe-2026-09-28",
+ "cap_usd": 0.05,
+ "git_commit": "6d7f743adbfece21497634791e26687f72f3f40e",
+ "started_at": "2026-10-05T04:47:10.782526+00:00"
+}

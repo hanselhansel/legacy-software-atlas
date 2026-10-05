@@ -50,3 +50,9 @@ name = "HN: firsthand pain and reason to stay"
 family = "hn"
 prefilter_keep = 1.0
 tokens_per_item = 190
+
+[[pass]]
+name = "tasks: ai fit"
+family = "tasks"
+prefilter_keep = 1.0
+tokens_per_item = 40

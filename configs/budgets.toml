@@ -20,5 +20,6 @@ worst_case_tokens_per_unknown_attempt = 4000
 "vendor-stories-category-in-use-or-replaced-segment-region" = 0.90
 "si-stories-category-in-use-or-replaced-segment-region" = 0.20
 "hn-firsthand-pain-and-reason-to-stay" = 0.15
+"tasks-ai-fit" = 0.05
 # Caps are about 2.5x each pass's estimate in docs/reports/2026-10-05-pre-jev.md.
 # Unallocated reserve for pilots, the audit replay and reruns: 8.00 - 5.55 = 2.45.

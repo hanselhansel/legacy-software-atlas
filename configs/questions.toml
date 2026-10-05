@@ -351,3 +351,17 @@ skills = "Skills or staffing: nobody available knows anything else, or few know 
 data = "Data lock-in: history, formats or integrations make leaving hard."
 other = "A different reason is given."
 not_stated = "No reason to stay is stated."
+
+["tasks: ai fit"]
+version = 1
+
+["tasks: ai fit".questions.ai_fit]
+type = "score"
+instructions = "`item` is one recurring work task in a business that runs legacy software. How much of this task could AI software do today: reading documents, extracting and checking data, sorting and routing, filling forms, reconciling records, or drafting routine messages?"
+criteria = [
+  "1: almost none; the task is physical, relational or a high-stakes judgment.",
+  "2: a small part, such as looking up or summarising information for a person.",
+  "3: about half; AI prepares the work and a person decides or acts.",
+  "4: most of it; a person only reviews exceptions.",
+  "5: nearly all of it; the task is reading, matching, entering or reconciling data.",
+]

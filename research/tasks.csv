@@ -1,0 +1,421 @@
+task_id,category,task,share
+task:agriculture-commodity:00,agriculture-commodity,"Weigh inbound grain trucks on the scale, record gross/tare tickets, and key the scale ticket into the receiving/settlement screen.",high
+task:agriculture-commodity:01,agriculture-commodity,"Pull probe samples and grade loads for moisture, test weight, foreign material and damage, then enter grade factors and discounts against the ticket.",high
+task:agriculture-commodity:02,agriculture-commodity,"Negotiate and book cash, forward, basis and deferred-price contracts with growers over phone or at the counter, then key contract terms into the contract module.",high
+task:agriculture-commodity:03,agriculture-commodity,Apply delivered tickets against open grower contracts and resolve over/under-deliveries and split loads.,medium
+task:agriculture-commodity:04,agriculture-commodity,"Calculate and issue grower settlement checks with drying, shrink, storage and checkoff deductions, plus lien and assignment holders on the check.",medium
+task:agriculture-commodity:05,agriculture-commodity,Hedge net long/short positions on the futures exchange and reconcile the daily position report against broker statements.,medium
+task:agriculture-commodity:06,agriculture-commodity,"Run daily bin inventory, shrink and quality-blend reconciliation between book inventory and physical bin measurements.",medium
+task:agriculture-commodity:07,agriculture-commodity,"Schedule and load outbound rail cars, barges or trucks, then create bills of lading and shipment certs against sales contracts.",medium
+task:agriculture-commodity:08,agriculture-commodity,"Post daily bids and basis updates to growers via board, SMS and website from the futures price plus the merchandiser's margin.",low
+task:agriculture-commodity:09,agriculture-commodity,"Maintain grower master data: farm splits, landlord shares, W-9s, liens and FSA/CCC loan assignments.",low
+task:agriculture-commodity:10,agriculture-commodity,Reconcile warehouse receipts and regulatory storage obligations for state or federal warehouse examiner audits.,low
+task:agriculture-commodity:11,agriculture-commodity,Manage margin calls and credit exposure on deferred-payment and delayed-price contracts with accounting and the bank.,low
+task:airline-pss:00,airline-pss,"Check in passengers at the counter or kiosk-assist, verify travel documents (passport, visa, APIS), assign seats and print boarding passes and bag tags in the DCS.",high
+task:airline-pss:01,airline-pss,"Rebook, reroute and reissue tickets for passengers disrupted by delays, cancellations or misconnects using cryptic GDS/PSS commands.",high
+task:airline-pss:02,airline-pss,"Handle reservation-center calls to create, modify or cancel PNRs, quote fares, and collect change fees or fare differences.",high
+task:airline-pss:03,airline-pss,"Board flights at the gate: scan boarding passes, handle standby and upgrade lists, offload no-shows and reconcile the passenger count for close-out.",medium
+task:airline-pss:04,airline-pss,"Manage oversold flights by soliciting volunteers, negotiating denied-boarding compensation and issuing vouchers.",medium
+task:airline-pss:05,airline-pss,"Process ticket exchanges, refunds and EMDs, applying fare rules and waivers manually when the auto-pricer fails.",medium
+task:airline-pss:06,airline-pss,"Handle irregular-operations queues: work schedule-change, waitlist and ticketing-time-limit queues in the PSS to clear PNRs.",medium
+task:airline-pss:07,airline-pss,"Coordinate load and balance and the passenger/bag manifest with ramp, load control and the crew before departure.",medium
+task:airline-pss:08,airline-pss,"Handle special-service requests such as wheelchairs, unaccompanied minors, pets and medical clearances, coordinating with ground staff.",low
+task:airline-pss:09,airline-pss,"Load and maintain fares, schedules and inventory/availability (RBD) controls, and file changes to ATPCO and the PSS.",low
+task:airline-pss:10,airline-pss,Reconcile ticket sales and flown coupons for revenue accounting and resolve BSP/ARC agency debit memos.,low
+task:airline-pss:11,airline-pss,"Trace mishandled baggage in WorldTracer, take lost-bag reports from passengers and arrange delivery or interim expense payouts.",low
+task:capital-markets-trading-clearing:00,capital-markets-trading-clearing,"Match and confirm executed trades with counterparties and brokers, chasing unmatched or mis-booked trades by phone, email or platform.",high
+task:capital-markets-trading-clearing:01,capital-markets-trading-clearing,"Book or amend trades in the trade-capture/OMS screen, including manual entry of voice or OTC trades and allocations across client accounts.",high
+task:capital-markets-trading-clearing:02,capital-markets-trading-clearing,"Investigate and resolve settlement breaks and failed trades with custodians, CSDs and counterparties ahead of cut-off.",high
+task:capital-markets-trading-clearing:03,capital-markets-trading-clearing,"Reconcile daily positions and cash against custodian, clearing-house and prime-broker statements and clear the exceptions.",high
+task:capital-markets-trading-clearing:04,capital-markets-trading-clearing,"Calculate and meet daily margin calls (initial and variation) with the CCP, and agree or dispute collateral calls with counterparties.",medium
+task:capital-markets-trading-clearing:05,capital-markets-trading-clearing,"Maintain security, counterparty and SSI static data, including verifying standing settlement instructions by callback.",medium
+task:capital-markets-trading-clearing:06,capital-markets-trading-clearing,"Process corporate actions (dividends, splits, elections), notify clients and submit elections before deadlines.",medium
+task:capital-markets-trading-clearing:07,capital-markets-trading-clearing,"Produce regulatory trade and transaction reports (EMIR, MiFIR, CAT, Dodd-Frank) and fix rejected submissions.",medium
+task:capital-markets-trading-clearing:08,capital-markets-trading-clearing,"Run end-of-day P&L and mark-to-market, and investigate valuation and price breaks between front office and risk.",medium
+task:capital-markets-trading-clearing:09,capital-markets-trading-clearing,"Monitor pre-trade and intraday risk and credit limits, and approve or escalate limit breaches with traders and risk managers.",low
+task:capital-markets-trading-clearing:10,capital-markets-trading-clearing,"Handle client queries on statements, fees, trade status and failed settlements by phone and email.",low
+task:capital-markets-trading-clearing:11,capital-markets-trading-clearing,"Calculate and invoice clearing, brokerage and exchange fees, then reconcile fee bills from exchanges and brokers.",low
+task:card-payments-processing:00,card-payments-processing,"Work chargeback and dispute queues: gather merchant evidence, apply network reason codes and submit representments or pre-arbitration within network deadlines.",high
+task:card-payments-processing:01,card-payments-processing,"Reconcile daily network settlement files (Visa, Mastercard) against the authorization log and general ledger, then resolve out-of-balance items.",high
+task:card-payments-processing:02,card-payments-processing,"Review fraud alerts and suspicious-transaction queues, call cardholders to verify activity, and block or reissue cards.",high
+task:card-payments-processing:03,card-payments-processing,"Handle cardholder and merchant calls about declines, disputed charges, fees, and lost or stolen cards.",high
+task:card-payments-processing:04,card-payments-processing,"Underwrite and onboard merchants: review applications, KYB/KYC documents, and processing history, then set up MIDs, pricing and terminals.",medium
+task:card-payments-processing:05,card-payments-processing,"Investigate exception items such as unmatched clearing records, duplicate presentments and late presentments, and post manual adjustments.",medium
+task:card-payments-processing:06,card-payments-processing,"Monitor merchant risk by reviewing high-chargeback and high-refund merchants, setting reserves or holds, and negotiating with merchants.",medium
+task:card-payments-processing:07,card-payments-processing,"Process card issuance and plastics: approve applications, set credit limits, and manage embossing, PIN mailers and returned mail.",medium
+task:card-payments-processing:08,card-payments-processing,"Post manual credits, fee reversals and goodwill adjustments approved by supervisors.",low
+task:card-payments-processing:09,card-payments-processing,"Load network bulletins and mandated rule changes (interchange tables, BIN ranges, reason codes) into the processing configuration and test them.",low
+task:card-payments-processing:10,card-payments-processing,"Deploy, swap and troubleshoot POS terminals with merchants over the phone or via field technicians.",low
+task:card-payments-processing:11,card-payments-processing,"Prepare PCI DSS, scheme compliance and regulatory reports and gather evidence for auditors.",low
+task:construction-project-accounting:00,construction-project-accounting,"Key subcontractor and supplier invoices into AP, coding each line to job, cost code and cost type, and match it to PO, subcontract and delivery tickets.",high
+task:construction-project-accounting:01,construction-project-accounting,"Collect field timecards from foremen and enter crew hours by job, phase and cost code, applying union rates, prevailing wage and fringe for certified payroll.",high
+task:construction-project-accounting:02,construction-project-accounting,"Prepare monthly progress billings (AIA G702/G703 pay applications) with schedule of values, retainage and stored materials, then negotiate approvals with the owner or GC.",high
+task:construction-project-accounting:03,construction-project-accounting,"Chase and track lien waivers (conditional and unconditional), insurance certificates and compliance docs from subs before releasing payment.",medium
+task:construction-project-accounting:04,construction-project-accounting,"Process change orders: price them with the PM, log pending and approved COs, and update contract and budget values.",medium
+task:construction-project-accounting:05,construction-project-accounting,"Run monthly job cost reviews with project managers to update cost-to-complete, forecast margin and percent-complete (WIP schedule).",medium
+task:construction-project-accounting:06,construction-project-accounting,Produce the monthly WIP report and over/under-billing analysis for bonding companies and lenders.,medium
+task:construction-project-accounting:07,construction-project-accounting,Prepare and file certified payroll reports (WH-347) and union fringe remittance reports.,medium
+task:construction-project-accounting:08,construction-project-accounting,"Track retainage receivable and payable, then bill and collect retention at substantial completion and closeout.",low
+task:construction-project-accounting:09,construction-project-accounting,Code equipment usage and fuel charges to jobs and reconcile equipment rates against actual cost.,low
+task:construction-project-accounting:10,construction-project-accounting,Call owners and GCs to collect overdue receivables and manage preliminary notices and lien deadlines.,low
+task:construction-project-accounting:11,construction-project-accounting,"Set up new jobs: enter contract, budget, cost codes, tax jurisdiction and subcontract commitments in the system.",low
+task:cooperative-rural-microfinance-banking:00,cooperative-rural-microfinance-banking,"Run field or group meetings to collect loan repayments and savings in cash, record them in passbooks or paper collection sheets, then key them into the branch system.",high
+task:cooperative-rural-microfinance-banking:01,cooperative-rural-microfinance-banking,"Visit applicants' homes, farms or businesses to appraise loans: assess cash flow, verify collateral or group guarantees, and fill paper application forms.",high
+task:cooperative-rural-microfinance-banking:02,cooperative-rural-microfinance-banking,"Follow up on overdue borrowers through phone calls and repeat field visits, negotiating rescheduled repayment plans.",high
+task:cooperative-rural-microfinance-banking:03,cooperative-rural-microfinance-banking,"Serve members at the teller counter: deposits, withdrawals, passbook updates and loan disbursements, often with intermittent connectivity.",medium
+task:cooperative-rural-microfinance-banking:04,cooperative-rural-microfinance-banking,"Onboard and KYC new members: collect ID copies, photos and thumbprints, form or verify borrower groups, and enter member records.",medium
+task:cooperative-rural-microfinance-banking:05,cooperative-rural-microfinance-banking,"Reconcile branch cash at end of day against system totals and field collection sheets, then transport cash to the bank or vault.",medium
+task:cooperative-rural-microfinance-banking:06,cooperative-rural-microfinance-banking,"Hold loan committee reviews to approve or reject applications and set amounts, terms and group-liability conditions.",medium
+task:cooperative-rural-microfinance-banking:07,cooperative-rural-microfinance-banking,"Compute and post interest, penalties and dividends on member shares, often with spreadsheet calculations outside the core system.",low
+task:cooperative-rural-microfinance-banking:08,cooperative-rural-microfinance-banking,"Prepare portfolio-at-risk, loan-loss provisioning and regulatory returns for the cooperative regulator or apex body.",low
+task:cooperative-rural-microfinance-banking:09,cooperative-rural-microfinance-banking,"Run financial literacy and member-education sessions in villages, and attend general meetings and board elections.",low
+task:cooperative-rural-microfinance-banking:10,cooperative-rural-microfinance-banking,Reconcile mobile-money and agent-network transactions against the core ledger.,low
+task:cooperative-rural-microfinance-banking:11,cooperative-rural-microfinance-banking,"Process insurance claims tied to loans (credit-life, crop insurance) after a member death or crop failure, including document collection.",low
+task:core-banking:00,core-banking,"Serve customers at the branch teller counter: cash deposits, withdrawals, cheque deposits, transfers and balancing the teller drawer.",high
+task:core-banking:01,core-banking,"Open accounts and onboard customers: collect and verify KYC and CDD documents, screen against sanctions lists, and key customer data into the CIF.",high
+task:core-banking:02,core-banking,"Handle contact-center and branch customer queries on balances, fees, disputed transactions, card blocks and statements.",high
+task:core-banking:03,core-banking,"Reconcile GL suspense, nostro/vostro and clearing accounts daily, then investigate and clear aged open items.",high
+task:core-banking:04,core-banking,"Review and disposition AML transaction-monitoring alerts, then file SARs/STRs where warranted.",medium
+task:core-banking:05,core-banking,"Process loan origination paperwork: credit review, collateral documentation, approval routing and disbursement setup.",medium
+task:core-banking:06,core-banking,"Process cheque clearing, returned items, stop payments and exceptions from inward and outward clearing files.",medium
+task:core-banking:07,core-banking,"Execute payments operations: repair failed SWIFT/ACH/RTGS payments, verify high-value payments by callback and release queues before cut-off.",medium
+task:core-banking:08,core-banking,"Maintain customer and account records: address changes, signatory and mandate updates, dormancy reactivation and deceased-estate handling.",medium
+task:core-banking:09,core-banking,"Run and monitor end-of-day and end-of-month batch, then resolve batch failures and interest or fee calculation exceptions.",low
+task:core-banking:10,core-banking,"Collect on delinquent loans by calling borrowers, negotiating restructures and tracking the collateral repossession process.",low
+task:core-banking:11,core-banking,"Prepare regulatory and central-bank returns (liquidity, capital, large exposures) from core-system extracts and spreadsheets.",low
+task:courts-justice:00,courts-justice,"Intake new case filings (paper at the counter or e-filed), check them for required forms, signatures and fees, then docket them into the case management system with a case number and party records.",high
+task:courts-justice:01,courts-justice,"Staff the public counter and phones, answering litigant, attorney and agency questions on case status, forms and deadlines, and looking up dockets for them without giving legal advice.",high
+task:courts-justice:02,courts-justice,"Act as in-court clerk: sit in the courtroom, swear witnesses, mark and log exhibits, and record minute entries, rulings and dispositions in the system in real time.",high
+task:courts-justice:03,courts-justice,"Calendar hearings by coordinating judge, courtroom, interpreter and party availability, entering continuances and reschedules, and generating hearing notices.",medium
+task:courts-justice:04,courts-justice,"Draft orders, judgments, warrants, summonses and subpoenas from templates, route them for judge signature, then issue, serve or recall them and update the docket.",medium
+task:courts-justice:05,courts-justice,Reject or flag deficient filings and send deficiency notices to filers telling them how to cure them.,medium
+task:courts-justice:06,courts-justice,"Receipt filing fees, fines, restitution and bail at the cashier window, then balance the cash drawer against the daily receipts report and post the deposit.",medium
+task:courts-justice:07,courts-justice,"Report criminal and traffic dispositions to the state criminal history repository and DMV, and correct rejected transmissions.",medium
+task:courts-justice:08,courts-justice,"Manage physical case files and evidence: pull, refile and retrieve from offsite storage, keep chain of custody on exhibits, and scan legacy paper into the system.",medium
+task:courts-justice:09,courts-justice,"Track unpaid fines and payment plans, issue failure-to-pay or failure-to-appear notices, and trigger license suspensions or referral to collections.",low
+task:courts-justice:10,courts-justice,"Fulfill records requests and certified copies, redacting sealed, juvenile or confidential information before release.",low
+task:courts-justice:11,courts-justice,"Run jury management: mail summonses, process excuse and deferral requests, check jurors in on the day, and process juror pay.",low
+task:ehr-hospital:00,ehr-hospital,"Provide direct bedside care: assess patients, give medications and treatments, do procedures, help with mobility and hygiene, and respond to deteriorating patients.",high
+task:ehr-hospital:01,ehr-hospital,"Document nursing assessments, vitals, intake and output, and care notes in EHR flowsheets, often from paper or memory at the end of the shift.",high
+task:ehr-hospital:02,ehr-hospital,"Write physician and APP progress notes, H&Ps and discharge summaries in the EHR, often copying forward and editing the prior day's note.",high
+task:ehr-hospital:03,ehr-hospital,"Enter orders through CPOE, reconcile home medications at admission and discharge, and clear or override drug-interaction and best-practice alerts.",medium
+task:ehr-hospital:04,ehr-hospital,"Scan patient wristbands and medications at the bedside, while pharmacists verify and fix medication orders in the pharmacy queue.",medium
+task:ehr-hospital:05,ehr-hospital,"Coordinate care through shift handoffs, huddles, paging consultants, rounding with the team, and updating patients and families on the plan.",medium
+task:ehr-hospital:06,ehr-hospital,"Work the clinician inbox: review and acknowledge lab and imaging results, answer patient portal messages, and sign refill requests and pended orders.",medium
+task:ehr-hospital:07,ehr-hospital,"Register patients at the front desk or ED: capture demographics, scan ID and insurance cards, run eligibility checks, and fix duplicate medical record numbers.",medium
+task:ehr-hospital:08,ehr-hospital,"Code finished encounters by abstracting the chart into ICD-10 and CPT codes, capture charges, and clear claim scrubber edits and documentation queries to physicians.",medium
+task:ehr-hospital:09,ehr-hospital,"Obtain prior authorizations and work denials by calling payers, assembling clinical documentation, and faxing or uploading it to payer portals.",low
+task:ehr-hospital:10,ehr-hospital,"Plan discharges: arrange skilled nursing or home health placement, fax referral packets, educate patients, and schedule follow-up appointments.",low
+task:ehr-hospital:11,ehr-hospital,"Run health information management work: scan and index outside paper records, chase unsigned or incomplete notes, and process release-of-information requests.",low
+task:erp-distribution:00,erp-distribution,"Take customer orders by phone, email, fax or EDI exception and re-key them into the order entry screen, checking price, stock and credit status.",high
+task:erp-distribution:01,erp-distribution,"Pick, pack and stage orders in the warehouse from printed pick tickets or RF scanners, and resolve shorts and substitutions.",high
+task:erp-distribution:02,erp-distribution,"Receive inbound freight: unload trucks, count and inspect against the PO, label, put away, and post receipts in the ERP.",medium
+task:erp-distribution:03,erp-distribution,"Plan replenishment by reviewing reorder and min/max reports, negotiating with vendors, cutting POs, and chasing late shipments.",medium
+task:erp-distribution:04,erp-distribution,"Answer customer service calls on order status, backorders, expedites and delivery problems, and promise ship dates.",medium
+task:erp-distribution:05,erp-distribution,"Plan delivery routes and dispatch trucks, drive and deliver, collect proof of delivery, and close out manifests.",medium
+task:erp-distribution:06,erp-distribution,"Run cycle counts and physical inventories, investigate variances, and post inventory adjustments.",medium
+task:erp-distribution:07,erp-distribution,"Match vendor invoices against the PO and receiver (three-way match), resolve price and quantity discrepancies, and release them for payment.",medium
+task:erp-distribution:08,erp-distribution,"Apply customer cash to open invoices, make collections calls, and release or place credit holds on orders.",medium
+task:erp-distribution:09,erp-distribution,"Visit and call customers for outside and inside sales, build quotes in the system, and follow up to convert them to orders.",low
+task:erp-distribution:10,erp-distribution,"Maintain pricing: load vendor cost changes, customer contract prices and promotions, and track rebates and chargebacks in spreadsheets.",low
+task:erp-distribution:11,erp-distribution,"Process returns and RMAs: authorize, receive and inspect returned goods, restock or scrap them, and issue credit memos.",low
+task:erp-manufacturing:00,erp-manufacturing,"Run machines, assemble and fabricate parts on the shop floor per work order travelers, including setups and changeovers.",high
+task:erp-manufacturing:01,erp-manufacturing,"Record labor time, quantities completed and scrap against work orders on time tickets or shop floor terminals, and correct bad transactions.",medium
+task:erp-manufacturing:02,erp-manufacturing,"Schedule production by reviewing MRP output, sequencing jobs on work centers, expediting hot orders, and rebalancing capacity in Excel outside the ERP.",medium
+task:erp-manufacturing:03,erp-manufacturing,"Plan and buy materials by acting on MRP messages, cutting POs, chasing suppliers for late material, and managing shortages.",medium
+task:erp-manufacturing:04,erp-manufacturing,"Handle material: kit and issue components to jobs, move work-in-process between operations, receive and put away purchased parts, and fix backflush errors.",medium
+task:erp-manufacturing:05,erp-manufacturing,"Inspect quality with first-article, in-process and final checks, record results, write nonconformance reports, and drive corrective actions.",medium
+task:erp-manufacturing:06,erp-manufacturing,"Quote and estimate jobs, enter customer orders, and commit promise dates based on capacity and material availability.",medium
+task:erp-manufacturing:07,erp-manufacturing,"Maintain bills of material and routings and process engineering change orders, keeping drawings and revisions in sync.",low
+task:erp-manufacturing:08,erp-manufacturing,"Perform preventive and breakdown maintenance on production equipment, and log downtime causes.",low
+task:erp-manufacturing:09,erp-manufacturing,"Pack and ship finished goods, print labels and packing lists, and attach certificates of conformance.",low
+task:erp-manufacturing:10,erp-manufacturing,"Count inventory cyclically and physically, and reconcile system on-hand to the floor.",low
+task:erp-manufacturing:11,erp-manufacturing,"Close out job costs, analyze labor, material and overhead variances against standard, and update standard costs.",low
+task:field-service-maintenance:00,field-service-maintenance,"Travel to customer sites and physically perform repairs, installations and preventive maintenance on equipment.",high
+task:field-service-maintenance:01,field-service-maintenance,"Diagnose faults on site, decide whether to repair or replace, and build a quote for the customer.",high
+task:field-service-maintenance:02,field-service-maintenance,"Take incoming service calls, triage urgency and warranty or contract status, and create work orders.",medium
+task:field-service-maintenance:03,field-service-maintenance,"Dispatch and route technicians on the dispatch board, matching skills and parts, and reshuffle the day around emergencies and no-shows.",medium
+task:field-service-maintenance:04,field-service-maintenance,"Close out work orders by recording labor hours, parts used, findings and customer signature, often on paper tickets that the office re-keys later.",medium
+task:field-service-maintenance:05,field-service-maintenance,"Manage parts: look up part numbers, order from suppliers, pick up at supply houses, and track and replenish truck or van stock.",medium
+task:field-service-maintenance:06,field-service-maintenance,"Talk with customers on site: explain the problem and fix, sell service agreements and upgrades, and collect payment.",medium
+task:field-service-maintenance:07,field-service-maintenance,"Invoice completed jobs from tickets, chase unpaid invoices, and file warranty claims with equipment manufacturers.",medium
+task:field-service-maintenance:08,field-service-maintenance,Schedule recurring preventive maintenance and compliance inspections from service agreements and asset lists.,low
+task:field-service-maintenance:09,field-service-maintenance,"Handle callbacks and return visits for incomplete or failed repairs, and escalate to senior techs or the OEM.",low
+task:field-service-maintenance:10,field-service-maintenance,"Update asset and equipment history records, including serial numbers, meter readings and service history.",low
+task:field-service-maintenance:11,field-service-maintenance,"Complete safety, permit and regulatory paperwork such as refrigerant logs, backflow tests and lockout records, and keep technician certifications current.",low
+task:financial-close-gl:00,financial-close-gl,"Reconcile bank, subledger and balance sheet accounts to the GL each period in spreadsheets, and investigate and clear reconciling items.",high
+task:financial-close-gl:01,financial-close-gl,"Prepare and post journal entries for accruals, prepaids, reclasses and allocations, usually built in Excel and uploaded to the GL.",high
+task:financial-close-gl:02,financial-close-gl,"Chase budget owners and other departments for missing invoices, accrual estimates, coding corrections and supporting documents.",medium
+task:financial-close-gl:03,financial-close-gl,"Run flux and variance analysis comparing actuals to the prior period and budget, and write explanations for management.",medium
+task:financial-close-gl:04,financial-close-gl,"Reconcile intercompany balances, settle mismatches between entities, and book eliminations.",medium
+task:financial-close-gl:05,financial-close-gl,"Run consolidation and foreign currency translation, and build the consolidated reporting package.",medium
+task:financial-close-gl:06,financial-close-gl,"Review and approve journal entries and reconciliations, sign off on checklist steps, and track close-calendar status.",medium
+task:financial-close-gl:07,financial-close-gl,Prepare financial statements and management or board reporting decks from GL extracts.,medium
+task:financial-close-gl:08,financial-close-gl,"Support external auditors by answering prepared-by-client requests, pulling samples and support, and walking auditors through controls in meetings.",medium
+task:financial-close-gl:09,financial-close-gl,"Account for fixed assets: capitalize additions from AP, run depreciation, and record disposals and impairments.",low
+task:financial-close-gl:10,financial-close-gl,"Maintain deferred revenue and revenue recognition schedules, and test cutoff at period end.",low
+task:financial-close-gl:11,financial-close-gl,"Maintain the chart of accounts, cost center hierarchy and reporting mappings as the business changes.",low
+task:gov-benefits:00,gov-benefits,"Interview applicants and recipients in person or by phone to collect household, income and expense information and explain program rules.",high
+task:gov-benefits:01,gov-benefits,"Key paper or online applications into the eligibility system screen by screen, and fix data that did not transfer from the portal.",high
+task:gov-benefits:02,gov-benefits,"Request, receive, scan and index verification documents such as pay stubs, IDs and leases, and check them against data matches (wage, SSA, IRS).",high
+task:gov-benefits:03,gov-benefits,"Run eligibility determination and benefit calculation, override or work around system errors, and authorize the case.",medium
+task:gov-benefits:04,gov-benefits,"Process renewals, redeterminations and periodic reports before deadlines to avoid lapses in coverage.",medium
+task:gov-benefits:05,gov-benefits,"Process reported changes in address, income or household composition, and recalculate benefits.",medium
+task:gov-benefits:06,gov-benefits,"Answer call center and lobby inquiries on case status, missing documents and benefit amounts, often explaining notices people did not understand.",medium
+task:gov-benefits:07,gov-benefits,Work pending-workload queues and timeliness reports to prioritize cases close to federal processing deadlines.,medium
+task:gov-benefits:08,gov-benefits,"Generate and correct client notices, and prepare evidence packets and testify at fair hearings and appeals.",low
+task:gov-benefits:09,gov-benefits,"Investigate suspected fraud and overpayments, establish claims, and set up repayment or recoupment.",low
+task:gov-benefits:10,gov-benefits,"Refer clients to employment and training programs, child support, and community or crisis services, and follow up on compliance and sanctions.",low
+task:gov-benefits:11,gov-benefits,"Review a sample of cases for quality control and supervisor approval, and correct errors those reviews find.",low
+task:gov-licensing-permits:00,gov-licensing-permits,"Intake clerk checks paper, emailed or portal applications for completeness, keys applicant, contractor and parcel data into the permit system, and issues a case number or deficiency letter.",high
+task:gov-licensing-permits:01,gov-licensing-permits,"Plans examiner reviews submitted drawings and site plans against building, zoning and fire codes, writes markup comments, and records approve/revise/deny in the system.",high
+task:gov-licensing-permits:02,gov-licensing-permits,"Field inspector drives to job sites or businesses, physically inspects work or premises, records pass/fail and correction notes on paper or a tablet, then enters results back into the permit record.",high
+task:gov-licensing-permits:03,gov-licensing-permits,"Counter, phone and email staff answer applicant questions about requirements, fees and status, looking up the case in the legacy screens and explaining next steps.",medium
+task:gov-licensing-permits:04,gov-licensing-permits,"Coordinator routes applications to other departments (fire, health, planning, utilities) for sign-off and chases overdue reviews by phone and email.",medium
+task:gov-licensing-permits:05,gov-licensing-permits,"Scheduler takes inspection requests by phone or IVR and builds daily inspector routes, re-keying requests into the inspection calendar.",medium
+task:gov-licensing-permits:06,gov-licensing-permits,"Cashier calculates fees from the fee schedule (often manually for valuation-based fees), takes payment, posts receipts, and reconciles the daily cash drawer to the system and bank deposit.",medium
+task:gov-licensing-permits:07,gov-licensing-permits,"Licensing staff send renewal notices, verify continuing education, insurance and bond certificates, and process renewals or lapses.",medium
+task:gov-licensing-permits:08,gov-licensing-permits,"Code enforcement officers investigate complaints on site, decide whether a violation exists, issue notices of violation, and prepare cases for hearings.",medium
+task:gov-licensing-permits:09,gov-licensing-permits,"Staff verify applicant qualifications by checking state contractor license lookups, background checks and prior violations before approval.",low
+task:gov-licensing-permits:10,gov-licensing-permits,"Clerk prints and mails or emails permits, licenses and certificates of occupancy, and posts placards or tags.",low
+task:gov-licensing-permits:11,gov-licensing-permits,"Records staff scan and archive paper files, fulfill public records requests, and compile monthly permit activity reports for state agencies and council.",low
+task:gov-tax:00,gov-tax,"Mailroom and data-entry staff open paper returns, payments and correspondence, scan them, and key return line items into the tax processing system.",high
+task:gov-tax:01,gov-tax,"Examiners work error and exception queues for returns that failed validation (math errors, mismatched IDs, missing schedules), correcting data or sending notices to taxpayers.",high
+task:gov-tax:02,gov-tax,"Contact center agents take taxpayer calls about balances, notices, refunds and payment plans, looking up accounts across multiple legacy screens.",high
+task:gov-tax:03,gov-tax,"Auditors select cases, request books and records, analyze returns against third-party data, conduct field or desk audits, and propose assessments.",high
+task:gov-tax:04,gov-tax,"Payment processors post lockbox and electronic payments, research and reapply misapplied or unidentified payments, and reconcile deposits against bank files.",medium
+task:gov-tax:05,gov-tax,"Collections officers contact delinquent taxpayers, negotiate installment agreements, and file liens, levies or warrants, including field visits to businesses.",medium
+task:gov-tax:06,gov-tax,"Refund reviewers screen flagged refunds for identity theft and fraud, verify identity, and release or hold refunds.",medium
+task:gov-tax:07,gov-tax,"Staff review abatement, penalty waiver and appeal requests, judging reasonable cause and adjusting the account.",medium
+task:gov-tax:08,gov-tax,"Property appraisers visit parcels to update building characteristics and values, and enter changes into the assessment roll.",medium
+task:gov-tax:09,gov-tax,"Registration staff set up new business tax accounts, update addresses and ownership, and close inactive accounts.",low
+task:gov-tax:10,gov-tax,"Analysts and IT staff configure annual rate tables, form changes and law changes in the system and test them before filing season.",low
+task:gov-tax:11,gov-tax,Revenue accountants reconcile collections to the general ledger and compute distributions to localities and funds.,low
+task:insurance-claims:00,insurance-claims,"Intake rep takes first notice of loss by phone, email or web form, keys loss details into the claims system, and creates the claim and initial reserve.",high
+task:insurance-claims:01,insurance-claims,"Adjuster investigates the loss by contacting the insured, claimant and witnesses, taking recorded statements, and ordering police, fire or medical reports.",high
+task:insurance-claims:02,insurance-claims,"Field adjuster or appraiser inspects the damaged property or vehicle in person, photographs it, writes an estimate in an estimating tool, and re-enters totals into the claim file.",high
+task:insurance-claims:03,insurance-claims,"Adjuster negotiates settlement amounts with claimants, attorneys, contractors or body shops and documents the agreed figure.",high
+task:insurance-claims:04,insurance-claims,"Adjuster verifies coverage by looking up the policy in the policy admin system and comparing terms, limits, deductibles and exclusions to the loss facts.",medium
+task:insurance-claims:05,insurance-claims,"Adjuster sets and revises reserves as new information arrives, and seeks supervisor authority for amounts above their limit.",medium
+task:insurance-claims:06,insurance-claims,"Claims assistant indexes incoming mail, photos, invoices and medical bills into the claim file and updates the diary.",medium
+task:insurance-claims:07,insurance-claims,"Staff issue claim payments, verify payees and lienholders or mortgagees, and void or reissue checks.",medium
+task:insurance-claims:08,insurance-claims,Injury adjuster or nurse reviewer evaluates medical records and bills against treatment guidelines to value bodily injury claims.,medium
+task:insurance-claims:09,insurance-claims,"Adjuster screens claims for fraud indicators and refers suspicious files to SIU, which investigates with interviews and database checks.",low
+task:insurance-claims:10,insurance-claims,"Recovery staff pursue subrogation against at-fault parties and dispose of salvage, tracking recoveries against the claim.",low
+task:insurance-claims:11,insurance-claims,"Litigation specialist assigns defense counsel, reviews legal bills, and manages litigated claims through mediation or trial.",low
+task:insurance-policy-admin:00,insurance-policy-admin,"New business staff key application data from agent ACORD forms, emails and spreadsheets into the policy system to create a submission.",high
+task:insurance-policy-admin:01,insurance-policy-admin,"Underwriter evaluates the risk, orders MVRs, loss runs or inspection reports, and decides to accept, decline or modify terms and price.",high
+task:insurance-policy-admin:02,insurance-policy-admin,"Service staff process midterm endorsements (add a vehicle, change address, update coverage) and recalculate premium.",high
+task:insurance-policy-admin:03,insurance-policy-admin,"Customer and agent service reps answer calls and emails on coverage, billing and document requests, looking up policies across screens.",high
+task:insurance-policy-admin:04,insurance-policy-admin,Rater runs quotes in the system and manually rates risks or overrides rates where the legacy system cannot handle the class or state.,medium
+task:insurance-policy-admin:05,insurance-policy-admin,"Staff issue policies by generating declarations and forms, quality-checking them, and printing, mailing or emailing documents.",medium
+task:insurance-policy-admin:06,insurance-policy-admin,"Renewal team reviews the renewal list, re-underwrites flagged accounts, and sends non-renewal or conditional renewal notices within state deadlines.",medium
+task:insurance-policy-admin:07,insurance-policy-admin,"Staff process non-pay cancellations, reinstatements and rewrites, producing state-mandated notices.",medium
+task:insurance-policy-admin:08,insurance-policy-admin,"Premium accounting staff post payments, reconcile agency statements, and calculate and pay commissions.",medium
+task:insurance-policy-admin:09,insurance-policy-admin,"Loss control inspector visits insured properties or businesses, assesses hazards, and writes recommendations back to the underwriter.",low
+task:insurance-policy-admin:10,insurance-policy-admin,"Product and IT staff configure new rates, rules and forms in the system after regulatory filings and test them.",low
+task:insurance-policy-admin:11,insurance-policy-admin,Analysts produce statistical and regulatory reports and reinsurance bordereaux from policy data.,low
+task:lab-information:00,lab-information,"Accessioner receives specimens, checks them against paper or electronic requisitions, keys patient and test orders into the LIS, and applies barcode labels.",high
+task:lab-information:01,lab-information,"Processor physically centrifuges, aliquots and sorts specimens and delivers them to the correct bench or analyzer.",high
+task:lab-information:02,lab-information,"Technologist loads samples onto analyzers, runs QC, and monitors runs for flags and instrument errors.",high
+task:lab-information:03,lab-information,"Technologist reviews instrument results, applies delta and range checks, orders repeats or dilutions, and verifies results for release.",high
+task:lab-information:04,lab-information,"Technologist manually reads and enters results for non-interfaced work such as microscopy, microbiology plates and manual assays.",medium
+task:lab-information:05,lab-information,"Staff run and record QC and calibrations, review Levey-Jennings charts, and document corrective actions.",medium
+task:lab-information:06,lab-information,"Technologist phones critical values to clinicians, documents read-back, and records the call in the LIS.",medium
+task:lab-information:07,lab-information,"Staff resolve problem specimens (mislabeled, hemolyzed, missing orders) by calling collection sites and arranging recollection or order correction.",medium
+task:lab-information:08,lab-information,"Technologist performs instrument maintenance and troubleshooting, and logs downtime.",medium
+task:lab-information:09,lab-information,"Staff package send-out tests for reference labs, create manifests, and re-key returned results into the LIS.",low
+task:lab-information:10,lab-information,"Supervisor manages reagent and supply inventory, tracks lot numbers and expiry, and places orders.",low
+task:lab-information:11,lab-information,"Quality staff maintain accreditation documentation, run proficiency testing, and prepare for CAP or CLIA inspections.",low
+task:land-registry:00,land-registry,"Intake clerk receives lodged deeds, mortgages and releases over the counter, by mail or e-recording, checks fees, assigns a document number, and scans the document.",high
+task:land-registry:01,land-registry,"Examiner checks each document for legal sufficiency (signatures, notarization, legal description, chain of title) against the existing register.",high
+task:land-registry:02,land-registry,"Indexer keys grantor, grantee, document type, parcel ID and legal description into the index.",high
+task:land-registry:03,land-registry,Registrar updates the title register or ownership record and issues certificates of title or recorded copies.,medium
+task:land-registry:04,land-registry,Staff issue rejection notices or requisitions to lawyers and conveyancers and process corrected resubmissions.,medium
+task:land-registry:05,land-registry,"Mapping staff update cadastral maps in GIS for subdivisions, splits and merges from plats and surveys.",medium
+task:land-registry:06,land-registry,Counter staff help title searchers and the public run searches and produce certified copies.,medium
+task:land-registry:07,land-registry,"Cashier collects recording fees and transfer taxes, reconciles daily receipts, and remits taxes to the state or county.",medium
+task:land-registry:08,land-registry,Surveyors verify boundary surveys in the field and help resolve boundary discrepancies.,low
+task:land-registry:09,land-registry,"Staff handle caveats, court orders, fraud alerts and ownership disputes, applying holds or notations to titles.",low
+task:land-registry:10,land-registry,Back-file staff scan and index historical books and redact personal identifiers from images.,low
+task:land-registry:11,land-registry,Staff send ownership change extracts to the assessor and tax office and reconcile mismatches.,low
+task:loan-origination-servicing:00,loan-origination-servicing,"Loan officer takes the borrower application by phone, branch or web, keys it into the LOS, pulls credit, and quotes rates.",high
+task:loan-origination-servicing:01,loan-origination-servicing,"Processor collects and indexes borrower documents (pay stubs, bank statements, tax returns) and chases missing items by phone and email.",high
+task:loan-origination-servicing:02,loan-origination-servicing,"Processor orders and verifies third-party items (appraisal, title, flood, VOE calls to employers) and clears conditions.",high
+task:loan-origination-servicing:03,loan-origination-servicing,"Underwriter analyzes income, DTI, credit and collateral, decides approve, suspend or decline, and sets conditions.",high
+task:loan-origination-servicing:04,loan-origination-servicing,"Collections and loss mitigation staff call delinquent borrowers, collect financials, and negotiate forbearance, repayment plans or modifications.",high
+task:loan-origination-servicing:05,loan-origination-servicing,"Closer prepares closing disclosures and loan documents, coordinates with title and settlement agents, and funds the wire.",medium
+task:loan-origination-servicing:06,loan-origination-servicing,"Post-closing staff check file completeness, ship files to investors, and chase trailing documents such as recorded mortgages and final title policies.",medium
+task:loan-origination-servicing:07,loan-origination-servicing,"Servicing staff process payments, research exceptions, and reconcile custodial accounts against the servicing system.",medium
+task:loan-origination-servicing:08,loan-origination-servicing,"Escrow staff pay property taxes and insurance, run annual escrow analyses, and handle shortage or surplus letters.",medium
+task:loan-origination-servicing:09,loan-origination-servicing,"Customer service reps handle calls for payoff quotes, statements, and payment and escrow questions.",medium
+task:loan-origination-servicing:10,loan-origination-servicing,Boarding staff re-key or map new loan terms from the LOS into the servicing system and fix boarding errors.,low
+task:loan-origination-servicing:11,loan-origination-servicing,Default staff manage foreclosure and bankruptcy referrals with attorneys and prepare monthly investor reporting and remittances.,low
+task:mainframe-cobol-general:00,mainframe-cobol-general,"Operations staff monitor overnight batch job streams in the scheduler (CA-7, Control-M, TWS) and restart or rerun abended jobs from the correct checkpoint using run books.",high
+task:mainframe-cobol-general:01,mainframe-cobol-general,"Business users re-key transactions from paper forms, faxes, or emailed spreadsheets into green-screen CICS/3270 entry panels, field by field.",high
+task:mainframe-cobol-general:02,mainframe-cobol-general,Clerks reconcile daily batch output reports and control totals against downstream ledgers or partner files and chase down out-of-balance items.,high
+task:mainframe-cobol-general:03,mainframe-cobol-general,"Staff look up customer or account records across several 3270 screens to answer phone, email, or walk-in inquiries, copying values into notes or emails.",high
+task:mainframe-cobol-general:04,mainframe-cobol-general,"Users export mainframe reports (spool, report distribution, flat files) and rebuild them in Excel to produce management or regulatory reports.",medium
+task:mainframe-cobol-general:05,mainframe-cobol-general,"Analysts investigate and correct rejected or suspended records from edit/error reports, deciding the right fix and re-entering corrections.",medium
+task:mainframe-cobol-general:06,mainframe-cobol-general,"Developers make small COBOL/JCL changes for rule, rate, or table updates, then test and promote them through change control.",medium
+task:mainframe-cobol-general:07,mainframe-cobol-general,"Staff prepare and transmit inbound/outbound files with partners and banks, verify receipt, and handle failed or late transmissions by phone and email.",medium
+task:mainframe-cobol-general:08,mainframe-cobol-general,"Supervisors approve overrides, exceptions, and high-value transactions after reviewing supporting documents and applying judgment on policy.",medium
+task:mainframe-cobol-general:09,mainframe-cobol-general,"Operators handle print, mailing, and physical output (statements, checks, notices) including printer jobs, insert/fold, and mailroom handoff.",low
+task:mainframe-cobol-general:10,mainframe-cobol-general,"Staff answer auditor and regulator requests by pulling historical records, screen prints, and job logs as evidence.",low
+task:mainframe-cobol-general:11,mainframe-cobol-general,"Teams coordinate with vendors and internal IT on incidents, capacity, and outages through tickets, calls, and negotiation over priorities and SLAs.",low
+task:medical-billing-rcm:00,medical-billing-rcm,"Front-desk staff register patients, scan IDs and insurance cards, and key demographics and coverage into the practice management system.",high
+task:medical-billing-rcm:01,medical-billing-rcm,"Staff verify eligibility and benefits by checking payer portals or calling payers, then record copay, deductible, and coverage notes on the account.",high
+task:medical-billing-rcm:02,medical-billing-rcm,"Coders read clinical documentation and assign CPT, ICD-10, and HCPCS codes with modifiers, querying physicians when notes are unclear.",high
+task:medical-billing-rcm:03,medical-billing-rcm,"Billers scrub and submit claims, fix clearinghouse edit rejections, and resubmit corrected claims.",high
+task:medical-billing-rcm:04,medical-billing-rcm,"Denial specialists work denied and underpaid claims from the A/R worklist, determine root cause, and file appeals with supporting records.",high
+task:medical-billing-rcm:05,medical-billing-rcm,"Staff call payers on hold for long periods to check claim status, argue reprocessing, and document call reference numbers.",medium
+task:medical-billing-rcm:06,medical-billing-rcm,"Payment posters post ERA/835 remittances and manually key paper EOBs and lockbox checks, then reconcile deposits to the bank.",medium
+task:medical-billing-rcm:07,medical-billing-rcm,"Staff obtain prior authorizations by completing payer forms or portals, faxing clinicals, and tracking approval numbers and expirations.",medium
+task:medical-billing-rcm:08,medical-billing-rcm,"Patient account reps take calls from patients about bills, explain balances, set up payment plans, and take payments.",medium
+task:medical-billing-rcm:09,medical-billing-rcm,Charge entry staff key charges from superbills or reconcile charge capture against the schedule to find missing charges.,medium
+task:medical-billing-rcm:10,medical-billing-rcm,"Staff manage credit balances and refunds to patients and payers, researching overpayments and processing refund requests.",low
+task:medical-billing-rcm:11,medical-billing-rcm,"Managers run A/R aging, denial, and collection reports, then negotiate payer contract issues and send accounts to collections.",low
+task:mortgage-servicing:00,mortgage-servicing,"Customer service reps answer borrower calls about payments, escrow, payoffs, and statements by navigating servicing screens (e.g., Black Knight MSP).",high
+task:mortgage-servicing:01,mortgage-servicing,"Collectors call delinquent borrowers, negotiate promises to pay or repayment plans, and log contact notes and outcomes.",high
+task:mortgage-servicing:02,mortgage-servicing,"Loss mitigation staff collect and review hardship packages (income docs, bank statements), chase missing documents, and evaluate modification or forbearance eligibility.",high
+task:mortgage-servicing:03,mortgage-servicing,"Cashiering staff post payments, research and apply unidentified or misapplied payments, and reconcile daily cash to custodial accounts.",medium
+task:mortgage-servicing:04,mortgage-servicing,"Escrow analysts run annual escrow analyses, handle shortages and surpluses, and answer borrower disputes about payment changes.",medium
+task:mortgage-servicing:05,mortgage-servicing,"Staff pay property taxes and hazard insurance from escrow, track bills and lapses, and place force-placed insurance when coverage lapses.",medium
+task:mortgage-servicing:06,mortgage-servicing,"Payoff clerks prepare payoff quotes, process payoffs, and release liens by preparing and recording satisfaction documents with counties.",medium
+task:mortgage-servicing:07,mortgage-servicing,"Default staff refer loans to foreclosure attorneys, track timelines and milestones, and coordinate property inspections and preservation vendors.",medium
+task:mortgage-servicing:08,mortgage-servicing,"Staff research and respond to qualified written requests, complaints, and CFPB/regulator inquiries within statutory deadlines.",medium
+task:mortgage-servicing:09,mortgage-servicing,Boarding staff onboard transferred-in loans by mapping and keying data from prior-servicer files and fixing data exceptions.,low
+task:mortgage-servicing:10,mortgage-servicing,"Investor reporting staff reconcile and remit monthly to investors (Fannie, Freddie, Ginnie) and clear reporting exceptions.",low
+task:mortgage-servicing:11,mortgage-servicing,"Staff process ARM rate changes, borrower name or address changes, and assumptions, keying updates and sending required notices.",low
+task:payroll-hr:00,payroll-hr,"Payroll clerks collect and key timesheets, overtime, and attendance exceptions from managers into the payroll system each pay cycle.",high
+task:payroll-hr:01,payroll-hr,"Staff enter new hires, terminations, transfers, and pay rate changes from paper or emailed forms into HR and payroll records.",high
+task:payroll-hr:02,payroll-hr,"Payroll staff run pre-payroll reports, check variances against the prior period, and fix errors before finalizing the run.",high
+task:payroll-hr:03,payroll-hr,"HR and payroll staff answer employee questions about pay, deductions, leave balances, and tax forms by phone, email, and in person.",high
+task:payroll-hr:04,payroll-hr,"Staff process off-cycle payments, manual checks, retro pay, and corrections when employees are paid wrongly.",medium
+task:payroll-hr:05,payroll-hr,"Benefits staff enroll employees in plans, key elections, and reconcile carrier invoices and deduction files against enrollment.",medium
+task:payroll-hr:06,payroll-hr,Staff prepare and file payroll tax returns and statutory contributions and reconcile tax liabilities to the general ledger.,medium
+task:payroll-hr:07,payroll-hr,"Staff process garnishments, levies, and child support orders, calculating deductions and remitting to agencies.",medium
+task:payroll-hr:08,payroll-hr,"HR staff conduct onboarding, collect signed documents and I-9 or right-to-work checks, and file personnel records.",medium
+task:payroll-hr:09,payroll-hr,"HR generalists handle employee relations cases, investigations, disciplinary meetings, and exit interviews.",medium
+task:payroll-hr:10,payroll-hr,"Staff produce year-end W-2 or equivalent forms, headcount, and labor cost reports, often rebuilt in Excel.",low
+task:payroll-hr:11,payroll-hr,"Staff maintain pay codes, tax tables, and union or policy rule changes in the system and test their effect on pay.",low
+task:pension-provident-fund-admin:00,pension-provident-fund-admin,"Contribution staff receive employer contribution files or paper schedules, key or load them, and reconcile them against bank receipts.",high
+task:pension-provident-fund-admin:01,pension-provident-fund-admin,"Staff chase employers for late, missing, or short contributions and calculate and assess late penalties.",high
+task:pension-provident-fund-admin:02,pension-provident-fund-admin,"Member service staff answer member calls and counter visits about balances, statements, eligibility, and withdrawals.",high
+task:pension-provident-fund-admin:03,pension-provident-fund-admin,"Benefit officers process withdrawal, retirement, death, and disability claims by verifying documents and identity and calculating payouts.",high
+task:pension-provident-fund-admin:04,pension-provident-fund-admin,"Staff register new members and employers and update member data (names, nominees, bank details) from paper forms.",medium
+task:pension-provident-fund-admin:05,pension-provident-fund-admin,Staff investigate and merge duplicate member accounts and correct misallocated contributions with historical backdated adjustments.,medium
+task:pension-provident-fund-admin:06,pension-provident-fund-admin,"Finance staff run benefit payment batches, reconcile bank payment files, and handle returned or failed payments.",medium
+task:pension-provident-fund-admin:07,pension-provident-fund-admin,"Staff run annual interest or dividend crediting, produce member statements, and handle complaints about errors.",medium
+task:pension-provident-fund-admin:08,pension-provident-fund-admin,"Compliance staff conduct employer inspections or audits on site, reviewing payroll records for under-declared wages.",medium
+task:pension-provident-fund-admin:09,pension-provident-fund-admin,"Staff process special withdrawals such as housing, medical, or education, judging eligibility from supporting documents.",medium
+task:pension-provident-fund-admin:10,pension-provident-fund-admin,"Staff prepare regulatory, actuarial, and board reports by extracting data and assembling it in spreadsheets.",low
+task:pension-provident-fund-admin:11,pension-provident-fund-admin,"Staff handle legal cases, recovery actions against defaulting employers, and appeals from members.",low
+task:port-terminal-operating-system:00,port-terminal-operating-system,Vessel planners build stowage and discharge/load plans from BAPLIE files and coordinate changes with shipping lines.,high
+task:port-terminal-operating-system:01,port-terminal-operating-system,"Yard planners allocate stacking positions and manage yard congestion, deciding moves and housekeeping shifts.",high
+task:port-terminal-operating-system:02,port-terminal-operating-system,"Equipment operators (quay crane, straddle, RTG, reach stacker) execute container moves from work orders on vehicle terminals.",high
+task:port-terminal-operating-system:03,port-terminal-operating-system,"Gate clerks process trucks at the gate by checking documents, seals, and container damage and keying or confirming transactions in the TOS.",high
+task:port-terminal-operating-system:04,port-terminal-operating-system,"Control room staff dispatch equipment and resolve exceptions such as wrong container location, missing box, or equipment breakdown by radio.",high
+task:port-terminal-operating-system:05,port-terminal-operating-system,"Checkers and tally clerks physically verify container numbers, seals, and damage on the quay and yard and correct mismatched records.",medium
+task:port-terminal-operating-system:06,port-terminal-operating-system,"Documentation staff process booking, release, and customs hold information from EDI and email and fix rejected EDI messages.",medium
+task:port-terminal-operating-system:07,port-terminal-operating-system,Berth planners schedule vessel windows and negotiate berth allocation with lines and agents when vessels arrive off schedule.,medium
+task:port-terminal-operating-system:08,port-terminal-operating-system,"Staff manage reefer plug-ins, temperature monitoring, and dangerous goods and out-of-gauge handling compliance.",medium
+task:port-terminal-operating-system:09,port-terminal-operating-system,"Billing staff compile storage, handling, and ancillary charges, invoice lines and consignees, and handle tariff disputes.",medium
+task:port-terminal-operating-system:10,port-terminal-operating-system,"Staff coordinate inspections with customs and other agencies, moving boxes to inspection areas and recording outcomes.",low
+task:port-terminal-operating-system:11,port-terminal-operating-system,"Staff produce productivity reports (moves per hour, dwell time) and reconcile vessel move counts with lines after departure.",low
+task:procurement-ap:00,procurement-ap,"AP clerks receive vendor invoices by mail, email, or PDF and manually key header and line data into the AP system.",high
+task:procurement-ap:01,procurement-ap,AP staff perform two- and three-way matching of invoices to POs and goods receipts and resolve price and quantity variances.,high
+task:procurement-ap:02,procurement-ap,Staff chase approvers internally for invoice and requisition approvals and route exceptions by email.,high
+task:procurement-ap:03,procurement-ap,AP staff answer vendor calls and emails about payment status and remittance and resolve disputes.,high
+task:procurement-ap:04,procurement-ap,"Buyers convert requisitions into purchase orders, select suppliers, and get quotes for spot buys.",medium
+task:procurement-ap:05,procurement-ap,"Procurement staff negotiate prices, terms, and contracts with suppliers and run RFQ and RFP events.",medium
+task:procurement-ap:06,procurement-ap,"Staff onboard and maintain vendor master data, including bank detail verification calls and tax forms, to prevent fraud.",medium
+task:procurement-ap:07,procurement-ap,"AP staff prepare payment runs, select invoices for early-pay discounts or holds, and release payment files to the bank.",medium
+task:procurement-ap:08,procurement-ap,"Receiving staff physically receive and inspect goods, then record goods receipts or report shortages and damage.",medium
+task:procurement-ap:09,procurement-ap,Staff reconcile vendor statements against the AP ledger and investigate duplicate payments and missing credits.,medium
+task:procurement-ap:10,procurement-ap,Staff perform month-end accruals for received-not-invoiced items and AP aging reconciliation to the GL.,low
+task:procurement-ap:11,procurement-ap,Staff expedite late orders by calling suppliers and manage supplier performance and quality issues.,low
+task:retail-pos-merch:00,retail-pos-merch,"Cashier rings up customer purchases at the register: scans items, applies coupons and loyalty discounts, takes cash or card, and produces a receipt and a posted sales transaction.",high
+task:retail-pos-merch:01,retail-pos-merch,"Associate stocks shelves from the backroom and delivery cages, rotates product, and resets fixtures to printed planograms, physically filling gaps flagged on the replenishment list.",high
+task:retail-pos-merch:02,retail-pos-merch,"Service desk clerk handles returns, exchanges and price disputes, checking receipts or looking up the original sale, and keys refunds or manager override codes into the POS.",medium
+task:retail-pos-merch:03,retail-pos-merch,"Floor associate helps customers find products, checks on-hand and other-store stock on the lookup screen, and places special or ship-to-home orders.",medium
+task:retail-pos-merch:04,retail-pos-merch,"Receiver unloads vendor and DC deliveries, checks cartons against the PO or ASN, and posts receipts, shortages and damage claims in the system.",medium
+task:retail-pos-merch:05,retail-pos-merch,"Associate prints shelf labels and promo signs from the weekly price-change batch, hangs them, and audits shelf price against the POS scan price.",medium
+task:retail-pos-merch:06,retail-pos-merch,"Inventory team runs cycle counts and the annual physical count with handheld scanners, investigates variances and shrink, and posts inventory adjustments.",medium
+task:retail-pos-merch:07,retail-pos-merch,"Merchandise planner exports sell-through and stock reports to Excel, decides markdowns and promotions, and keys the resulting price events back into the system.",medium
+task:retail-pos-merch:08,retail-pos-merch,"Head cashier counts tills at shift close, reconciles them to the POS Z-report, logs over/short, and prepares the bank deposit and safe log.",low
+task:retail-pos-merch:09,retail-pos-merch,"Store manager reviews the system's suggested replenishment order and adjusts quantities by judgment for local events, weather and display needs before transmitting it.",low
+task:retail-pos-merch:10,retail-pos-merch,"Buyer or item-setup clerk creates new SKUs in the item master from vendor spreadsheets: cost, retail, UPC, hierarchy, tax code and supplier link.",low
+task:retail-pos-merch:11,retail-pos-merch,"Buyer negotiates cost, allowances and terms with vendors, then reconciles vendor deal claims, chargebacks and deductions against the promotion records.",low
+task:student-information:00,student-information,"Registrar staff answer counter, phone and email questions from students and parents about records, holds, schedules and deadlines, looking each answer up across several SIS screens.",high
+task:student-information:01,student-information,"Registration staff process add/drop and override forms, enrolling students into sections and keying prerequisite, capacity and time-conflict overrides.",high
+task:student-information:02,student-information,"Admissions or enrollment clerk keys application, transcript and residency data from forms and PDFs into a new student record and verifies the supporting documents.",medium
+task:student-information:03,student-information,"Scheduler builds the master schedule or timetable, assigning sections to rooms, times and instructors and resolving conflicts by hand, often in a spreadsheet first.",medium
+task:student-information:04,student-information,"Teachers or attendance clerks record daily attendance, call parents about absences, and enter excuse codes and truancy follow-ups.",medium
+task:student-information:05,student-information,"Faculty enter term grades and registrar staff run grade posting, process grade-change and incomplete forms, and recalculate GPA and academic standing.",medium
+task:student-information:06,student-information,"Advisors and evaluators enter transfer credit equivalencies and run degree audits, manually patching exceptions, then meet with students to plan courses and clear them for graduation.",medium
+task:student-information:07,student-information,"Records staff produce official transcripts and enrollment or degree verifications for students, employers and other schools, including stamping, signing and mailing the paper copies.",medium
+task:student-information:08,student-information,"Institutional research or district staff extract enrollment, demographic and completion data, clean and reconcile it in Excel, and submit state and federal compliance reports (IPEDS, state counts).",medium
+task:student-information:09,student-information,"Records clerk processes FERPA releases, name and address changes, and placing or lifting registration holds, filing the signed paperwork.",low
+task:student-information:10,student-information,"Student accounts staff reconcile tuition charges, fee assessments and financial aid disbursements between the SIS and the finance system, and place or lift financial holds.",low
+task:student-information:11,student-information,"Special education or disability services staff maintain IEP or 504 accommodation records, run eligibility meetings, and push accommodation notices to instructors.",low
+task:telecom-bss:00,telecom-bss,"Care agent handles inbound calls and chats about bills, plan changes, outages and cancellations, toggling across CRM, billing and network screens and offering retention deals.",high
+task:telecom-bss:01,telecom-bss,"Sales or order-entry agent keys new activations, upgrades, moves and number ports: checks serviceability, assigns numbers and SIMs, and submits orders to provisioning.",high
+task:telecom-bss:02,telecom-bss,"Order-fallout team investigates orders stuck between CRM, provisioning and billing, then manually re-keys or pushes them through and contacts the customer about the delay.",medium
+task:telecom-bss:03,telecom-bss,"Billing specialist investigates disputed charges against usage and rating records, then issues credits or adjustments within approval limits.",medium
+task:telecom-bss:04,telecom-bss,"Collections agent works the delinquency queue, calls customers, sets payment arrangements, and triggers suspend or restore of service.",medium
+task:telecom-bss:05,telecom-bss,"Retail store rep sells devices and plans in person, processes trade-ins and financing, activates phones, and counts handset inventory.",medium
+task:telecom-bss:06,telecom-bss,"Dispatcher schedules field technicians for installs and repairs, and the technician completes the physical install and closes the work order with equipment serials.",medium
+task:telecom-bss:07,telecom-bss,"Billing operations analyst runs bill-cycle QA, reviewing sample bills and rating exceptions and holding or correcting accounts before bills release.",medium
+task:telecom-bss:08,telecom-bss,"Product or catalog analyst configures new price plans, bundles and promotions across the catalog, rating and CRM systems and tests them before launch.",low
+task:telecom-bss:09,telecom-bss,Mediation or revenue-assurance analyst reprocesses rejected usage records (CDRs) and reconciles interconnect and roaming settlement files against partner invoices.,low
+task:telecom-bss:10,telecom-bss,"Porting desk coordinates number port-ins and port-outs with other carriers, resolving rejects caused by account or PIN mismatches.",low
+task:telecom-bss:11,telecom-bss,"Regulatory and tax staff prepare telecom tax, USF and complaint reports from billing extracts and respond to regulator inquiries.",low
+task:trade-finance:00,trade-finance,"Document checker examines presented LC documents (bills of lading, invoices, insurance, certificates of origin) against LC terms and UCP 600 and records any discrepancies in the system.",high
+task:trade-finance:01,trade-finance,"Compliance officer screens LC parties, vessels, ports and goods for sanctions, dual-use and trade-based money laundering red flags and investigates hits.",high
+task:trade-finance:02,trade-finance,"Operations officer keys import LC applications from client forms or portal PDFs into the trade system, checks wording, and releases the MT700 SWIFT message.",medium
+task:trade-finance:03,trade-finance,"Operations staff authenticate incoming SWIFT LCs, advise or add confirmation to export LCs, and notify the beneficiary with the advice package.",medium
+task:trade-finance:04,trade-finance,"Officer notifies clients of discrepancies and negotiates waivers or rejections with applicants and correspondent banks by phone, email and SWIFT MT734/MT799.",medium
+task:trade-finance:05,trade-finance,"Guarantees team drafts and issues bank guarantees and standby LCs, negotiates non-standard wording with legal and the client, and handles claims.",medium
+task:trade-finance:06,trade-finance,"Settlement staff process reimbursement claims and payments (MT103/MT202), book FX and fees, and reconcile nostro accounts.",medium
+task:trade-finance:07,trade-finance,Relationship manager advises corporate clients on structuring and pricing trade deals and gathers KYC and onboarding documents.,medium
+task:trade-finance:08,trade-finance,"Officer processes LC amendments (MT707), tracks beneficiary acceptance, and updates the outstanding liability.",low
+task:trade-finance:09,trade-finance,"Credit or operations staff check and book each transaction against the client's trade facility limits, cash margin or collateral, and get approval for any excess.",low
+task:trade-finance:10,trade-finance,"Collections officer handles documentary collections, releasing documents against payment or acceptance and chasing unpaid drawees.",low
+task:trade-finance:11,trade-finance,"Back-office clerk logs, scans, couriers and archives original paper trade documents and keeps the physical document vault in order.",low
+task:utility-billing-cis:00,utility-billing-cis,"Meter reader walks or drives routes to read meters on a handheld, uploads reads, and billing staff review high, low and estimated read exceptions.",high
+task:utility-billing-cis:01,utility-billing-cis,"Billing analyst works the bill-exception queue, correcting reads, rate codes or account setup on held bills before releasing them.",high
+task:utility-billing-cis:02,utility-billing-cis,"Call-center rep handles customer calls about high bills, payment arrangements, outages and account questions, explaining usage history from CIS screens.",high
+task:utility-billing-cis:03,utility-billing-cis,"Customer service staff key start, stop and transfer-of-service orders for move-ins and move-outs, including deposits and final bills.",medium
+task:utility-billing-cis:04,utility-billing-cis,"Dispatcher issues field service orders for connects, disconnects, meter exchanges and investigations, and technicians do the physical work and close the orders.",medium
+task:utility-billing-cis:05,utility-billing-cis,"Collections staff send shutoff notices, apply regulatory protections such as medical certificates and winter moratoria, then schedule disconnections and reconnections.",medium
+task:utility-billing-cis:06,utility-billing-cis,"Payment processing clerk posts lockbox, agent and online payments, fixes misapplied payments, and reconciles daily cash to the general ledger.",medium
+task:utility-billing-cis:07,utility-billing-cis,"Large-account or commercial billing specialist hand-calculates and checks complex bills (demand, time-of-use, net metering, multi-meter) and corrects the CIS output.",low
+task:utility-billing-cis:08,utility-billing-cis,Rate analyst configures tariff changes from a rate case decision in the CIS and runs parallel test bills to confirm the new calculations.,low
+task:utility-billing-cis:09,utility-billing-cis,"Meter asset staff track meter inventory, testing and AMI communication failures, and resync records between the meter data system and the CIS.",low
+task:utility-billing-cis:10,utility-billing-cis,"Assistance-program staff enroll low-income customers, post agency pledges and grants, and apply discount rates to accounts.",low
+task:utility-billing-cis:11,utility-billing-cis,"Regulatory staff respond to utility commission complaints and compile billing, disconnection and arrears reports for regulators.",low
+task:warehouse-management:00,warehouse-management,"Picker walks or drives to locations from RF-gun prompts or paper pick lists, picks units or cases, and confirms each pick by scan.",high
+task:warehouse-management:01,warehouse-management,"Packer and shipper pack orders, weigh and label cartons, manifest with the carrier, and load outbound trailers.",high
+task:warehouse-management:02,warehouse-management,"Receiver unloads inbound trailers, checks quantities and condition against the ASN or PO, labels pallets with license plates, and keys receipts and damage.",medium
+task:warehouse-management:03,warehouse-management,Forklift operator moves received pallets to putaway locations and runs replenishment moves from reserve to pick faces as the system directs.,medium
+task:warehouse-management:04,warehouse-management,"Inventory control clerk runs cycle counts, investigates location and quantity variances, and posts adjustments in the WMS.",medium
+task:warehouse-management:05,warehouse-management,"Shift supervisor plans and releases pick waves, assigns workers to zones by judgment of volume and cutoff times, and rebalances labor during the shift.",medium
+task:warehouse-management:06,warehouse-management,"Inventory or systems staff resolve exceptions such as short picks, wrong locations and WMS-to-ERP interface failures, re-keying orders or inventory transactions by hand.",medium
+task:warehouse-management:07,warehouse-management,"Dock scheduler books carrier appointments, manages yard and door assignments, and handles late or unscheduled trucks by phone.",low
+task:warehouse-management:08,warehouse-management,"Returns processor inspects returned goods, grades their condition, and restocks, refurbishes or disposes of them while recording the disposition.",low
+task:warehouse-management:09,warehouse-management,"Value-added services crew kits, assembles, relabels or bundles products to work orders.",low
+task:warehouse-management:10,warehouse-management,Inventory analyst maintains item dimensions and location master data and runs slotting analysis in Excel to move fast movers closer to shipping.,low
+task:warehouse-management:11,warehouse-management,Supervisor or trainer runs safety checks on equipment and trains new and temp workers on RF screens and pick procedures.,low
+task:wealth-portfolio-accounting:00,wealth-portfolio-accounting,"Operations analyst reconciles daily positions, transactions and cash in the portfolio accounting system against custodian feeds and researches and clears breaks.",high
+task:wealth-portfolio-accounting:01,wealth-portfolio-accounting,"Reporting team produces quarterly client performance reports, checks returns and holdings for errors, and assembles and distributes the report packages.",high
+task:wealth-portfolio-accounting:02,wealth-portfolio-accounting,"Advisor meets clients to review performance and financial plans, learn about goals and life changes, and explain fees and allocations.",medium
+task:wealth-portfolio-accounting:03,wealth-portfolio-accounting,"Operations staff process corporate actions (dividends, splits, mergers, voluntary elections) and fix the cost basis and holdings they affect.",medium
+task:wealth-portfolio-accounting:04,wealth-portfolio-accounting,"Pricing analyst validates vendor security prices and manually prices illiquid, private and hard-to-value holdings.",medium
+task:wealth-portfolio-accounting:05,wealth-portfolio-accounting,"Alternatives analyst keys capital calls, distributions and NAV statements from private fund PDFs into the accounting system.",medium
+task:wealth-portfolio-accounting:06,wealth-portfolio-accounting,"Onboarding specialist collects account paperwork and custodial forms, initiates ACATS and other asset transfers, and sets up the account and its fee schedule in the system.",medium
+task:wealth-portfolio-accounting:07,wealth-portfolio-accounting,"Service associate processes withdrawals, wires and journals, doing verbal callback verification and getting approval for each one.",medium
+task:wealth-portfolio-accounting:08,wealth-portfolio-accounting,"Portfolio manager or advisor reviews model drift and cash needs, decides on rebalancing, and generates and submits trades.",medium
+task:wealth-portfolio-accounting:09,wealth-portfolio-accounting,"Billing analyst calculates AUM-based advisory fees, handles household groupings and fee exceptions, and produces invoices or custodian fee debit files.",low
+task:wealth-portfolio-accounting:10,wealth-portfolio-accounting,Tax staff reconcile cost basis and realized gains to custodian 1099s and support tax-loss harvesting and accountant requests.,low
+task:wealth-portfolio-accounting:11,wealth-portfolio-accounting,"Compliance officer reviews trades, client communications and books and records for regulatory exams and Form ADV updates.",low
