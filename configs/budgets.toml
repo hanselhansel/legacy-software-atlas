@@ -3,7 +3,7 @@
 # Only Hansel sets account_total, at the pre-Jev gate (plan 1, task 5). Until then
 # it stays 0.00 and no paid call is allowed.
 
-account_total = 0.00
+account_total = 8.00   # Hansel 2026-10-05: loaded $10 of credit, approved running; $2 kept unspent
 
 # Worst-case billed input tokens for an attempt whose usage never arrives
 # (timeout or 5xx). Unknown charges settle at max(this, 2 x estimated tokens).
@@ -13,10 +13,12 @@ worst_case_tokens_per_unknown_attempt = 4000
 # runs collapsed to '-'). A pass with no entry, or 0.00, may not spend.
 # Only Hansel sets these.
 [caps]
-"tenders-legacy-system-in-use-being-replaced-or-neither" = 0.00
-"tenders-which-category" = 0.00
-"job-apis-industry-segment-legacy-in-use" = 0.00
-"job-pages-industry-segment-legacy-in-use" = 0.00
-"vendor-stories-category-in-use-or-replaced-segment-region" = 0.00
-"si-stories-category-in-use-or-replaced-segment-region" = 0.00
-"hn-firsthand-pain-and-reason-to-stay" = 0.00
+"tenders-legacy-system-in-use-being-replaced-or-neither" = 0.30
+"tenders-which-category" = 0.30
+"job-apis-industry-segment-legacy-in-use" = 0.20
+"job-pages-industry-segment-legacy-in-use" = 3.50
+"vendor-stories-category-in-use-or-replaced-segment-region" = 0.90
+"si-stories-category-in-use-or-replaced-segment-region" = 0.20
+"hn-firsthand-pain-and-reason-to-stay" = 0.15
+# Caps are about 2.5x each pass's estimate in docs/reports/2026-10-05-pre-jev.md.
+# Unallocated reserve for pilots, the audit replay and reruns: 8.00 - 5.55 = 2.45.

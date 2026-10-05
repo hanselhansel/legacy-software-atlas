@@ -236,12 +236,12 @@ def test_committed_by_pass_counts_unknown_and_pending():
     assert out["b"] == pytest.approx(WORST * PRICE)
 
 
-def test_repo_budgets_config_refuses_everything():
-    """configs/budgets.toml as committed: account_total 0.00, all caps 0.00."""
+def test_repo_budgets_config_stays_inside_the_gate():
+    """configs/budgets.toml as set at the gate: total 8.00, caps sum inside it."""
     from lsa import paths
 
     cfg = load_budgets()
-    assert cfg["account_total"] == 0.0
+    assert 0.0 < cfg["account_total"] <= 8.0
     assert cfg["worst_case_tokens_per_unknown_attempt"] > 0
-    assert set(cfg["caps"]) and all(v == 0.0 for v in cfg["caps"].values())
+    assert set(cfg["caps"]) and sum(cfg["caps"].values()) <= cfg["account_total"]
     assert paths.ROOT  # silence unused import lint
